@@ -220,6 +220,29 @@ final _wordPattern = RegExp(r"[\p{L}\p{N}]+", unicode: true);
 final _sentenceBreak = RegExp(r'(?<=[.!?\u2026])\s+');
 final _whitespace = RegExp(r'\s+');
 
+/// Markdown escapes the reader leaves in plain text, such as `\[24\]`.
+final _markdownEscape = RegExp(r'\\([\\`*_{}\[\]()#+\-.!])');
+
+/// Reference markers such as `[24]`, `[nb 1]` or `[edit]`. They are links to a
+/// bibliography, not part of the sentence, and read as noise in a quote.
+final _citationMarker = RegExp(
+  r'\[\s*(?:\d{1,3}|(?:nb|note|edit|citation needed)[^\]]{0,12})\s*\]',
+  caseSensitive: false,
+);
+
+/// Turns reader markdown-ish text into clean prose.
+///
+/// Readability keeps inline links as `[24]` and escapes the brackets when it
+/// converts to plain text, so quoted sentences arrived as "domestic forms be
+/// used (2004)\[24\]". Unescaping and dropping the reference markers makes the
+/// summary read like the article instead of like its source markup.
+String cleanReaderText(String text) {
+  return text
+      .replaceAllMapped(_markdownEscape, (match) => match.group(1) ?? '')
+      .replaceAll(_citationMarker, '')
+      .replaceAll(RegExp(r'[ \t]{2,}'), ' ');
+}
+
 /// Lower-case word tokens longer than two characters, minus stop words.
 ///
 /// Numbers are kept when they are meaningful (years, versions), but a token
@@ -268,7 +291,9 @@ String _stem(String token) {
 /// list item on its own line; treating a whole paragraph as one sentence makes
 /// summaries read like an abstract rather than like the page.
 List<String> splitSentences(String text) {
-  final normalized = text.replaceAll('\r\n', '\n').replaceAll('\r', '\n');
+  final normalized = cleanReaderText(
+    text,
+  ).replaceAll('\r\n', '\n').replaceAll('\r', '\n');
   final sentences = <String>[];
 
   for (final block in normalized.split(

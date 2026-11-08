@@ -178,9 +178,13 @@ List<SharedTerm> commonTerms(List<List<String>> tokenizedDocuments) {
   if (tokenizedDocuments.length < 2) return const [];
 
   final counts = <String, int>{};
+  final occurrences = <String, int>{};
   for (final tokens in tokenizedDocuments) {
     for (final term in tokens.toSet()) {
       counts[term] = (counts[term] ?? 0) + 1;
+    }
+    for (final term in tokens) {
+      occurrences[term] = (occurrences[term] ?? 0) + 1;
     }
   }
 
@@ -190,7 +194,16 @@ List<SharedTerm> commonTerms(List<List<String>> tokenizedDocuments) {
           .where((entry) => entry.value == required)
           .map((entry) => (term: entry.key, documents: entry.value))
           .toList()
-        ..sort((a, b) => a.term.compareTo(b.term));
+        // Alphabetical order put whichever themes happened to start with "a"
+        // on the chip row. Ranking by how often the corpus uses the term
+        // surfaces the actual subject ("cat", "domestic") instead.
+        ..sort((a, b) {
+          final byOccurrences = (occurrences[b.term] ?? 0).compareTo(
+            occurrences[a.term] ?? 0,
+          );
+          if (byOccurrences != 0) return byOccurrences;
+          return a.term.compareTo(b.term);
+        });
 
   return shared;
 }
@@ -215,7 +228,9 @@ List<String> uniqueTerms(
     counts[term] = (counts[term] ?? 0) + 1;
   }
 
-  final ranked = counts.entries.toList()
+  // A term used once is often a reference author or a stray place name; the
+  // terms that really distinguish a page keep coming back.
+  final ranked = counts.entries.where((entry) => entry.value >= 2).toList()
     ..sort((a, b) => b.value.compareTo(a.value));
   return ranked.take(limit).map((entry) => entry.key).toList();
 }
