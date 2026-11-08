@@ -71,6 +71,7 @@ class ExtractiveSummarizer {
       sentences,
       tokenized,
       maxSentences: maxSentences,
+      title: title,
     );
 
     return PageInsight(
@@ -89,30 +90,50 @@ class ExtractiveSummarizer {
     List<String> sentences,
     List<List<String>> tokenized, {
     required int maxSentences,
+    String? title,
   }) {
     if (sentences.length <= maxSentences) {
       return List<int>.generate(sentences.length, (index) => index);
     }
 
     final scores = _textRank(tokenized);
+    final space = TfIdfSpace.fromTokens(tokenized);
 
-    // Position matters a little: pages lead with their thesis, and a pure
-    // graph score sometimes promotes a well-connected aside near the end.
+    // Sentences that echo the title are usually the thesis; give them a modest
+    // lift without letting a title word dominate the whole ranking.
+    final titleTokens = title == null ? const <String>[] : tokenize(title);
+    final titleSet = titleTokens.toSet();
+
     final ranked = List<int>.generate(sentences.length, (index) => index)
       ..sort((a, b) {
-        final scoreA = scores[a] * (1 + 0.15 / (1 + a));
-        final scoreB = scores[b] * (1 + 0.15 / (1 + b));
+        final overlapA = tokenized[a].where(titleSet.contains).length;
+        final overlapB = tokenized[b].where(titleSet.contains).length;
+        final bonusA = titleSet.isEmpty
+            ? 0.0
+            : overlapA / titleSet.length * 0.25;
+        final bonusB = titleSet.isEmpty
+            ? 0.0
+            : overlapB / titleSet.length * 0.25;
+        final scoreA = (scores[a] + bonusA) * (1 + 0.15 / (1 + a));
+        final scoreB = (scores[b] + bonusB) * (1 + 0.15 / (1 + b));
         return scoreB.compareTo(scoreA);
       });
 
     final selected = <int>[];
-    final space = TfIdfSpace.fromTokens(tokenized);
+    // The opening sentence is almost always the lede; keep it unless it is a
+    // near-duplicate of something we already picked.
+    if (sentences.isNotEmpty) {
+      selected.add(0);
+    }
+
     for (final index in ranked) {
       if (selected.length >= maxSentences) break;
+      if (selected.contains(index)) continue;
 
-      // Two sentences that say the same thing are one bullet, not two.
+      // Maximal marginal relevance: skip a sentence that mostly repeats one we
+      // already have, using a slightly stricter bar than before.
       final duplicate = selected.any(
-        (chosen) => space.similarityBetween(chosen, index) > 0.82,
+        (chosen) => space.similarityBetween(chosen, index) > 0.72,
       );
       if (duplicate) continue;
 

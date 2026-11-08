@@ -212,6 +212,9 @@ const _stopWords = <String>{
   'sin',
   'que',
   'en',
+  'may',
+  'one',
+  'well',
 };
 
 bool isStopWord(String token) => _stopWords.contains(token);
@@ -264,8 +267,35 @@ List<String> tokenize(String text, {bool removeStopWords = true}) {
 /// Full stemming is out of scope; collapsing the common plural and gerund
 /// suffixes is enough for sentence overlap and keyword grouping to agree on
 /// "server" / "servers" and "running" / "run".
+final _noStemWords = <String>{
+  'species',
+  'series',
+  'crisis',
+  'analysis',
+  'basis',
+  'thesis',
+  'oasis',
+  'premise',
+  'surmise',
+  'this',
+  'thus',
+  'plus',
+  'less',
+  'mass',
+  'pass',
+  'boss',
+  'kiss',
+  'loss',
+  'toss',
+  'bass',
+  'class',
+  'glass',
+  'grass',
+};
+
 String _stem(String token) {
-  if (token.length <= 4) return token;
+  if (_noStemWords.contains(token)) return token;
+  if (token.length <= 3) return token;
   if (token.endsWith('ies') && token.length > 5) {
     return '${token.substring(0, token.length - 3)}y';
   }
@@ -306,7 +336,29 @@ List<String> splitSentences(String text) {
       for (final candidate in trimmed.split(_sentenceBreak)) {
         final sentence = candidate.replaceAll(_whitespace, ' ').trim();
         if (sentence.isEmpty) continue;
-        if (_wordPattern.allMatches(sentence).length < 3) continue;
+        if (_wordPattern.allMatches(sentence).length < 8) continue;
+
+        // Drop sentence fragments: a sentence that starts with a lowercase
+        // letter is almost always a continuation that lost its head.
+        final firstLetter = sentence.runes
+            .map((code) => String.fromCharCode(code))
+            .firstWhere(
+              (char) => RegExp(r'[A-Za-z]').hasMatch(char),
+              orElse: () => '',
+            );
+        if (firstLetter.isNotEmpty &&
+            firstLetter == firstLetter.toLowerCase()) {
+          continue;
+        }
+
+        final lower = sentence.toLowerCase();
+        if (lower.contains('see also') ||
+            lower.contains('this article') ||
+            lower.contains('disambiguation') ||
+            lower.startsWith('for the ') && lower.contains('see ')) {
+          continue;
+        }
+
         sentences.add(sentence);
       }
     }
