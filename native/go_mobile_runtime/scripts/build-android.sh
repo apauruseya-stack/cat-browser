@@ -232,6 +232,7 @@ ndk_host_tag="linux-x86_64"
 case "$(uname -s)" in
   Darwin) ndk_host_tag="darwin-x86_64" ;;
   Linux) ndk_host_tag="linux-x86_64" ;;
+  MINGW*|MSYS*|CYGWIN*) ndk_host_tag="windows-x86_64" ;;
   *)
     echo "Unsupported host OS for Android NDK: $(uname -s)" >&2
     exit 1
@@ -277,9 +278,9 @@ require (
 	github.com/tladesignz/IPtProxy.git v0.0.0
 )
 
-replace github.com/sagernet/sing-box => $SING_BOX_SOURCE
-replace github.com/tladesignz/IPtProxy.git => $IPTPROXY_SOURCE/IPtProxy.go
-replace www.bamsoftware.com/git/dnstt.git => $DNSTT_SOURCE
+replace github.com/sagernet/sing-box => "$SING_BOX_SOURCE"
+replace github.com/tladesignz/IPtProxy.git => "$IPTPROXY_SOURCE/IPtProxy.go"
+replace www.bamsoftware.com/git/dnstt.git => "$DNSTT_SOURCE"
 EOF
 
 cat > "$WORK_DIR/tools.go" <<'EOF'
