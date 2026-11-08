@@ -18,6 +18,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 import 'package:flutter/material.dart';
+import 'package:weblibre/core/design/glass_theme.dart';
 import 'package:weblibre/features/geckoview/features/tabs/utils/container_colors.dart';
 import 'package:weblibre/features/geckoview/features/tabs/utils/container_icons.dart';
 import 'package:weblibre/presentation/widgets/uri_breadcrumb.dart';
@@ -54,7 +55,7 @@ class UrlListTile extends StatelessWidget {
 
   static const iconSize = 32.0;
   static const _badgeWidth = 56.0;
-  static const _borderRadius = BorderRadius.all(Radius.circular(12.0));
+  static const _borderRadius = BorderRadius.all(Radius.circular(18.0));
 
   @override
   Widget build(BuildContext context) {
@@ -68,15 +69,15 @@ class UrlListTile extends StatelessWidget {
           )
         : null;
 
-    return Container(
+    return GlassPanel(
       margin: const EdgeInsets.symmetric(vertical: 3.0, horizontal: 4.0),
-      decoration: BoxDecoration(
-        color: containerPalette?.surfaceColor,
-        borderRadius: _borderRadius,
-        border: containerPalette != null
-            ? Border.all(color: containerPalette.outlineColor)
-            : null,
-      ),
+      borderRadius: _borderRadius,
+      color: containerPalette?.surfaceColor,
+      borderColor: containerPalette?.outlineColor,
+      // Rows stack in long lists: the ambient wall already shows through the
+      // panel fill, and a shadow per row would both cost a layer each and make
+      // the list read as a pile of loose cards.
+      shadow: false,
       child: Material(
         color: Colors.transparent,
         borderRadius: _borderRadius,

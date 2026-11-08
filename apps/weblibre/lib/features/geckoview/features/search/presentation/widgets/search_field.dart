@@ -23,6 +23,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:weblibre/core/design/glass_theme.dart';
 import 'package:weblibre/features/bangs/data/models/bang_data.dart';
 import 'package:weblibre/features/geckoview/features/search/domain/providers/engine_suggestions.dart';
 import 'package:weblibre/features/geckoview/features/search/domain/providers/search_source_policy.dart';
@@ -228,16 +229,10 @@ class SearchField extends HookConsumerWidget {
       );
     }
 
-    final theme = Theme.of(context);
-    final colorScheme = theme.colorScheme;
-
-    return Container(
+    return GlassPanel(
       margin: const EdgeInsets.symmetric(horizontal: 8.0),
-      decoration: BoxDecoration(
-        color: colorScheme.surfaceContainerHigh,
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: colorScheme.outlineVariant),
-      ),
+      borderRadius: BorderRadius.circular(18),
+      shadow: false,
       child: AutoSuggestTextField(
         controller: textEditingController,
         suggestion: suggestion,
@@ -272,6 +267,9 @@ class SearchField extends HookConsumerWidget {
           completion.value = null;
         },
         decoration: InputDecoration(
+          // The GlassPanel already paints the fill and edge; the theme's
+          // filled decoration would layer a second translucent wash over it.
+          filled: false,
           border: InputBorder.none,
           contentPadding: const EdgeInsetsDirectional.fromSTEB(12, 12, 0, 12),
           prefixIcon: (showBangIcon && activeBang != null)

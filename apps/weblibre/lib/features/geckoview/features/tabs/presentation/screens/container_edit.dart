@@ -388,7 +388,7 @@ class ContainerEditScreen extends HookConsumerWidget {
                                     color: colorScheme.primary,
                                     shape: BoxShape.circle,
                                     border: Border.all(
-                                      color: theme.scaffoldBackgroundColor,
+                                      color: theme.colorScheme.surface,
                                       width: 2,
                                     ),
                                   ),

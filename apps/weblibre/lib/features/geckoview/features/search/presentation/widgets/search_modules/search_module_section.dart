@@ -20,8 +20,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:sliver_tools/sliver_tools.dart';
-import 'package:weblibre/core/design/app_colors.dart';
-import 'package:weblibre/core/design/wallpaper_surface.dart';
+import 'package:weblibre/core/design/glass_theme.dart';
 import 'package:weblibre/features/geckoview/features/search/domain/providers/search_module_order.dart';
 import 'package:weblibre/features/geckoview/features/search/domain/providers/search_modules_view.dart';
 import 'package:weblibre/features/geckoview/features/search/presentation/widgets/module_surface_scope.dart';
@@ -191,23 +190,18 @@ class SearchModuleSection extends ConsumerWidget {
     );
 
     if (card) {
-      final colorScheme = Theme.of(context).colorScheme;
+      final glass = GlassTheme.of(context);
 
       return SliverPadding(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
         sliver: DecoratedSliver(
           decoration: BoxDecoration(
-            // Not fully opaque: the home surface's aura gradient and any
-            // wallpaper behind it should still read through the card. Broad and
-            // sparsely typeset, so it takes the lighter of the two levels.
-            color: colorScheme.surfaceContainer.wallpaperBroad,
+            // Translucent glass over the wall, like the reference start page's
+            // grouped cards: the wallpaper (when set) and the wall still read
+            // through, and the hairline edge is what defines the card.
+            color: glass.panel,
             borderRadius: BorderRadius.circular(28),
-            border: Border.all(
-              color: Color.alphaBlend(
-                AppColors.brandGrey.withValues(alpha: 0.18),
-                colorScheme.outlineVariant,
-              ),
-            ),
+            border: Border.all(color: glass.border),
           ),
           sliver: SliverPadding(
             padding: const EdgeInsets.all(16),

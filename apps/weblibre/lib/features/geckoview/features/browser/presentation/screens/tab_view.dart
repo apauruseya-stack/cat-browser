@@ -20,6 +20,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:weblibre/core/design/glass_theme.dart';
 import 'package:weblibre/core/routing/routes.dart';
 import 'package:weblibre/features/geckoview/features/browser/presentation/controllers/tab_view_controllers.dart';
 import 'package:weblibre/features/geckoview/features/browser/presentation/widgets/tab_view/tab_grid_view.dart';
@@ -68,9 +69,18 @@ class TabViewScreen extends HookConsumerWidget {
     // The screen covers the system bars, and the browser under it would
     // otherwise style them for its own colors. The action bar styles the
     // navigation bar over this, where it is behind it.
+    //
+    // Opaque, and the wall's base colour rather than the scaffold's: the
+    // scaffold is transparent app-wide so the glass wall shows through, and a
+    // transparent system-bar region here would expose the browser behind it.
     return BrowserSystemBarsRegion(
-      color: Theme.of(context).scaffoldBackgroundColor,
+      color: GlassTheme.of(context).wallBase,
       child: Dialog.fullscreen(
+        // The dialog sits above the browser, so it cannot use the theme's
+        // translucent dialog fill: the live page would show through it. Paint
+        // the wall's opaque base instead, and let the tray's own glass rows
+        // carry the treatment.
+        backgroundColor: GlassTheme.of(context).wallBase,
         child: Scaffold(
           body: SafeArea(
             // The header and the action bar run behind the system bars, as in

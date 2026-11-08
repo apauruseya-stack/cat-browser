@@ -40,10 +40,10 @@ class ModuleSurfaceScope extends InheritedWidget {
   /// has content scrolling underneath it and therefore *must* be opaque, while
   /// an unpinned header never covers anything and so needs no backdrop at all.
   ///
-  /// The search screen pins on `canvasColor`: its result lists are long, and
-  /// the header tells you which module you are looking at. The browser home
-  /// does not pin. Its sections are short, and on the `BrowserPage` aura
-  /// gradient an opaque band per header stacks into a set of slabs cutting
+  /// The search screen pins on the glass chrome fill: its result lists are
+  /// long, and the header tells you which module you are looking at. The
+  /// browser home does not pin. Its sections are short, and on the `BrowserPage`
+  /// glass wall an opaque band per header stacks into a set of slabs cutting
   /// across the backdrop — with several short or collapsed modules in a row,
   /// the bands land next to each other and the surface reads as stripes.
   final Color? pinnedHeaderBackgroundColor;

@@ -26,6 +26,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:weblibre/core/design/glass_theme.dart';
 import 'package:weblibre/core/design/window_size_class.dart';
 import 'package:weblibre/core/providers/navigation_bar.dart';
 import 'package:weblibre/features/addons/domain/providers.dart'
@@ -1052,8 +1053,13 @@ class BrowserTabBarView extends StatelessWidget {
         onHorizontalDragEnd: onHorizontalDragEnd,
         onVerticalDragStart: onVerticalDragStart,
         onVerticalDragEnd: onVerticalDragEnd,
-        child: ColoredBox(
+        child: GlassBarSurface(
           color: effectiveBackgroundColor,
+          axis: Axis.vertical,
+          // The rail is drawn beside the page: its hairline belongs on the
+          // edge facing the content, not across its own top and bottom.
+          borderTop: !railOnLeft,
+          borderBottom: railOnLeft,
           child: Column(
             children: [
               // Actions and address field at the top, where a large-screen
@@ -1106,8 +1112,11 @@ class BrowserTabBarView extends StatelessWidget {
         onHorizontalDragEnd: onHorizontalDragEnd,
         onVerticalDragStart: onVerticalDragStart,
         onVerticalDragEnd: onVerticalDragEnd,
-        child: ColoredBox(
+        child: GlassBarSurface(
           color: effectiveBackgroundColor,
+          axis: Axis.vertical,
+          borderTop: !railOnLeft,
+          borderBottom: railOnLeft,
           child: Column(
             children: [
               // Literal section order (switcher → URL+actions → contextual);
@@ -1164,7 +1173,7 @@ class BrowserTabBarView extends StatelessWidget {
       onHorizontalDragEnd: onHorizontalDragEnd,
       onVerticalDragStart: onVerticalDragStart,
       onVerticalDragEnd: onVerticalDragEnd,
-      child: ColoredBox(
+      child: GlassBarSurface(
         color: effectiveBackgroundColor,
         child: Column(
           mainAxisSize: MainAxisSize.min,

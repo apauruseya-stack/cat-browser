@@ -21,6 +21,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_mozilla_components/flutter_mozilla_components.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:weblibre/core/design/glass_theme.dart';
 import 'package:weblibre/core/providers/app_localizations.dart';
 import 'package:weblibre/core/providers/router.dart';
 import 'package:weblibre/domain/services/app_initialization.dart';
@@ -106,8 +107,10 @@ class MainApp extends HookConsumerWidget {
                   maxSystemScale: maxSystemScale,
                   boldText: boldText,
                   reduceMotionMode: reduceMotionMode,
-                  child: NavigationBarStyle(
-                    child: child ?? const SizedBox.shrink(),
+                  child: GlassWall(
+                    child: NavigationBarStyle(
+                      child: child ?? const SizedBox.shrink(),
+                    ),
                   ),
                 ),
               );
@@ -159,12 +162,14 @@ class MainApp extends HookConsumerWidget {
                 maxSystemScale: maxSystemScale,
                 boldText: boldText,
                 reduceMotionMode: reduceMotionMode,
-                child: NavigationBarStyle(
-                  child: MultiFingerTapGuard(
-                    child: _SyncEventListener(
-                      child: _DownloadStoppedListener(
-                        child: _StrictContainerBlockListener(
-                          child: child ?? const SizedBox.shrink(),
+                child: GlassWall(
+                  child: NavigationBarStyle(
+                    child: MultiFingerTapGuard(
+                      child: _SyncEventListener(
+                        child: _DownloadStoppedListener(
+                          child: _StrictContainerBlockListener(
+                            child: child ?? const SizedBox.shrink(),
+                          ),
                         ),
                       ),
                     ),
@@ -198,8 +203,10 @@ class MainApp extends HookConsumerWidget {
                 maxSystemScale: maxSystemScale,
                 boldText: boldText,
                 reduceMotionMode: reduceMotionMode,
-                child: NavigationBarStyle(
-                  child: child ?? const SizedBox.shrink(),
+                child: GlassWall(
+                  child: NavigationBarStyle(
+                    child: child ?? const SizedBox.shrink(),
+                  ),
                 ),
               ),
             );

@@ -105,7 +105,10 @@ class TabBarPreviewHeaderDelegate extends SliverPersistentHeaderDelegate {
     bool overlapsContent,
   ) {
     return ColoredBox(
-      color: backgroundColor ?? Theme.of(context).scaffoldBackgroundColor,
+      // Scaffold backgrounds are transparent app-wide, so fall back to the
+      // opaque scheme surface: this header floats above the preview card while
+      // it scrolls and must not show it through.
+      color: backgroundColor ?? Theme.of(context).colorScheme.surface,
       child: Padding(
         padding: padding,
         child: TabBarPreviewCard(

@@ -25,7 +25,7 @@ import 'package:flutter_material_design_icons/flutter_material_design_icons.dart
 import 'package:flutter_reorderable_grid_view/widgets/custom_draggable.dart';
 import 'package:flutter_reorderable_grid_view/widgets/reorderable_builder.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:weblibre/core/design/wallpaper_surface.dart';
+import 'package:weblibre/core/design/glass_theme.dart';
 import 'package:weblibre/features/geckoview/features/search/domain/providers/empty_state_content.dart';
 import 'package:weblibre/features/geckoview/features/search/domain/providers/search_modules_view.dart';
 import 'package:weblibre/features/geckoview/features/search/presentation/dialogs/edit_top_site_dialog.dart';
@@ -257,10 +257,8 @@ class _TopSitesGrid extends ConsumerWidget {
 /// they did once, when the "+" was the only translucent one among solid tiles.
 ///
 /// The fill is deliberately not opaque: this grid paints straight onto the home
-/// surface, so a wallpaper and the aura gradient behind it read through the
-/// cells the way they read through a module card. It takes the denser of the
-/// two wallpaper-surface levels, because a tile label is the smallest type on
-/// the surface and sits directly over the image.
+/// surface, so the glass wall reads through the cells the way it reads through
+/// a module card. No shadow: a grid of tiles is a plane, not a pile of cards.
 class _TopSiteTileSurface extends StatelessWidget {
   final VoidCallback? onTap;
   final VoidCallback? onLongPress;
@@ -272,18 +270,13 @@ class _TopSiteTileSurface extends StatelessWidget {
     this.onLongPress,
   });
 
-  static const borderRadius = BorderRadius.all(Radius.circular(12.0));
+  static const borderRadius = BorderRadius.all(Radius.circular(16.0));
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-
-    return DecoratedBox(
-      decoration: BoxDecoration(
-        color: colorScheme.surfaceContainerHigh.wallpaperDense,
-        borderRadius: borderRadius,
-        border: Border.all(color: colorScheme.wallpaperOutline),
-      ),
+    return GlassPanel(
+      borderRadius: borderRadius,
+      shadow: false,
       // Transparent so the ink splash rides on the decoration above rather
       // than painting a second, opaque layer over it.
       child: Material(
@@ -295,6 +288,58 @@ class _TopSiteTileSurface extends StatelessWidget {
           onTap: onTap,
           onLongPress: onLongPress,
           child: child,
+        ),
+      ),
+    );
+  }
+}
+
+/// A favicon on a soft gradient chip, following the Glass Browser shortcuts
+/// grid: the gradient gives the usually square, often transparent favicon
+/// something to sit on, and its hue is derived from the host so neighbouring
+/// shortcuts do not all read as the same tile.
+class _ShortcutIconChip extends StatelessWidget {
+  final Uri uri;
+  final double size;
+
+  const _ShortcutIconChip({required this.uri, required this.size});
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final hue = (uri.host.hashCode % 360).abs().toDouble();
+    final start = HSLColor.fromAHSL(
+      1,
+      hue,
+      isDark ? 0.38 : 0.62,
+      isDark ? 0.34 : 0.82,
+    );
+    final end = HSLColor.fromAHSL(
+      1,
+      (hue + 40) % 360,
+      isDark ? 0.38 : 0.62,
+      isDark ? 0.24 : 0.68,
+    );
+
+    return SizedBox.square(
+      dimension: size,
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [start.toColor(), end.toColor()],
+          ),
+          borderRadius: const BorderRadius.all(Radius.circular(13.0)),
+          border: Border.all(
+            color: Colors.white.withValues(alpha: isDark ? 0.10 : 0.5),
+          ),
+        ),
+        child: Padding(
+          padding: EdgeInsets.all(size * 0.16),
+          child: RepaintBoundary(
+            child: UrlIcon([uri], iconSize: size * 0.68),
+          ),
         ),
       ),
     );
@@ -666,18 +711,9 @@ class _TopSiteGridTileState extends State<_TopSiteGridTile> {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       Align(
-                        child: SizedBox.square(
-                          dimension: iconSize,
-                          child: RepaintBoundary(
-                            child: ClipRRect(
-                              borderRadius: const BorderRadius.all(
-                                Radius.circular(8.0),
-                              ),
-                              child: UrlIcon([
-                                widget.item.url,
-                              ], iconSize: iconSize),
-                            ),
-                          ),
+                        child: _ShortcutIconChip(
+                          uri: widget.item.url,
+                          size: iconSize,
                         ),
                       ),
                       const SizedBox(height: gap),

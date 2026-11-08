@@ -139,12 +139,13 @@ class BrowserHome extends ConsumerWidget {
     );
 
     return BrowserPage(
-      // The wallpaper sits over the aura backdrop and under everything else.
-      // The aura keeps painting beneath it rather than being switched off:
+      // The wallpaper sits over the glass wall and under everything else.
+      // The wall keeps painting beneath it rather than being switched off:
       // an image that has gone missing (a profile restored from an older
       // archive, storage cleared underneath us) then degrades to the plain
-      // home surface instead of a blank one, and the aura is a raster-cached
-      // static picture, so the cost of it being covered is a single fill.
+      // glass home surface instead of a blank one, and the wall is a
+      // raster-cached static picture, so the cost of it being covered is a
+      // single fill.
       child: HomeWallpaperBackdrop(
         // The viewport, not just its first sliver, has to clear the status bar:
         // BrowserSystemBars fills that inset with an opaque strip painted over

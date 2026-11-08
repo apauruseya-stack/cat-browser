@@ -47,6 +47,7 @@ import 'package:nullability/nullability.dart';
 import 'package:simple_intent_receiver/simple_intent_receiver.dart' as sir;
 import 'package:weblibre/core/design/app_colors.dart';
 import 'package:weblibre/core/design/dynamic_color_scheme.dart';
+import 'package:weblibre/core/design/glass_theme.dart';
 import 'package:weblibre/core/design/window_size_class.dart';
 import 'package:weblibre/core/error_observer.dart';
 import 'package:weblibre/core/filesystem.dart';
@@ -182,17 +183,207 @@ const _noAnimationPageTransitionsTheme =
       },
     );
 
-/// Menus get the rounded corners dialogs and sheets already have (#651);
-/// Material 3 leaves them at a near-square 4dp.
-const _menuShape = RoundedRectangleBorder(
-  borderRadius: BorderRadius.all(Radius.circular(12)),
-);
+/// One theme builder for both brightnesses, so the glass treatment cannot
+/// drift between light and dark.
+///
+/// The scaffold goes transparent: the app shell paints a [GlassWall] behind
+/// every route, and letting it through is what turns the translucent panels
+/// from flat grey into glass. Screens that need an opaque surface still paint
+/// one themselves (a page, a preview, the tab tray).
+ThemeData _buildGlassTheme({
+  required ColorScheme colorScheme,
+  required AppColors appColors,
+  required bool pureBlack,
+  required bool disableAnimations,
+  required bool showModalBarrier,
+}) {
+  final isDark = colorScheme.brightness == Brightness.dark;
+  final glass = isDark
+      ? (pureBlack ? GlassTheme.darkOled : GlassTheme.dark)
+      : GlassTheme.light;
 
-const _popupMenuTheme = PopupMenuThemeData(shape: _menuShape);
-
-const _menuTheme = MenuThemeData(
-  style: MenuStyle(shape: WidgetStatePropertyAll(_menuShape)),
-);
+  return ThemeData(
+    useMaterial3: true,
+    colorScheme: colorScheme,
+    scaffoldBackgroundColor: Colors.transparent,
+    // Kept opaque: browser sheets and trays are painted straight over live page
+    // content, where a translucent canvas would let the page show through.
+    canvasColor: colorScheme.surface,
+    pageTransitionsTheme: disableAnimations
+        ? _noAnimationPageTransitionsTheme
+        : const NavigationBarProtectedPageTransitionsTheme(),
+    dialogTheme: DialogThemeData(
+      backgroundColor: glass.panelStrong,
+      surfaceTintColor: Colors.transparent,
+      elevation: 0,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(glass.radius + 8),
+        side: BorderSide(color: glass.border),
+      ),
+      barrierColor: showModalBarrier ? null : Colors.transparent,
+      // Material specifies a maximum dialog width but Flutter does not apply
+      // one, so a dialog with long content stretches to fill a tablet or
+      // desktop window. Unconditional because it cannot bind on a phone: the
+      // dialog's own inset padding already leaves less than this.
+      constraints: const BoxConstraints(maxWidth: ContentWidth.dialog),
+    ),
+    bottomSheetTheme: BottomSheetThemeData(
+      backgroundColor: glass.panelStrong,
+      modalBackgroundColor: glass.panelStrong,
+      surfaceTintColor: Colors.transparent,
+      elevation: 0,
+      modalElevation: 0,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(
+          top: Radius.circular(glass.radius + 6),
+        ),
+        side: BorderSide(color: glass.border),
+      ),
+      clipBehavior: Clip.antiAlias,
+      modalBarrierColor: showModalBarrier ? null : Colors.transparent,
+    ),
+    appBarTheme: AppBarTheme(
+      // Near-opaque rather than fully transparent: app bars sit over scrolling
+      // lists on every settings-style screen, and a clear strip would let rows
+      // collide with the title. The search screen overrides this where its
+      // field floats over its own list.
+      backgroundColor: glass.chrome,
+      surfaceTintColor: Colors.transparent,
+      foregroundColor: colorScheme.onSurface,
+      elevation: 0,
+      scrolledUnderElevation: 0,
+      systemOverlayStyle: isDark
+          ? SystemUiOverlayStyle.light
+          : SystemUiOverlayStyle.dark,
+    ),
+    popupMenuTheme: PopupMenuThemeData(
+      color: glass.panelStrong,
+      surfaceTintColor: Colors.transparent,
+      elevation: 8,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+    ),
+    menuTheme: MenuThemeData(
+      style: MenuStyle(
+        backgroundColor: WidgetStatePropertyAll(glass.panelStrong),
+        surfaceTintColor: const WidgetStatePropertyAll(Colors.transparent),
+        elevation: const WidgetStatePropertyAll(8),
+        shape: WidgetStatePropertyAll(
+          RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+        ),
+      ),
+    ),
+    cardTheme: CardThemeData(
+      color: glass.panel,
+      surfaceTintColor: Colors.transparent,
+      elevation: 0,
+      margin: const EdgeInsets.symmetric(vertical: 6),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(24),
+        side: BorderSide(color: glass.border),
+      ),
+    ),
+    chipTheme: ChipThemeData(
+      backgroundColor: glass.panel,
+      selectedColor: Color.alphaBlend(
+        colorScheme.primaryContainer.withValues(alpha: 0.7),
+        glass.panel,
+      ),
+      surfaceTintColor: Colors.transparent,
+      side: BorderSide(color: glass.border),
+      shape: const StadiumBorder(),
+      elevation: 0,
+      pressElevation: 0,
+    ),
+    inputDecorationTheme: InputDecorationTheme(
+      filled: true,
+      fillColor: glass.panel,
+      hintStyle: TextStyle(color: colorScheme.onSurfaceVariant),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(18),
+        borderSide: BorderSide(color: glass.border),
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(18),
+        borderSide: BorderSide(color: glass.border),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(18),
+        borderSide: BorderSide(color: colorScheme.primary, width: 1.5),
+      ),
+    ),
+    listTileTheme: ListTileThemeData(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+      tileColor: glass.panel,
+      selectedTileColor: Color.alphaBlend(
+        colorScheme.primaryContainer.withValues(alpha: 0.55),
+        glass.panel,
+      ),
+      iconColor: colorScheme.onSurfaceVariant,
+    ),
+    dividerTheme: DividerThemeData(
+      color: glass.border.withValues(alpha: 0.6),
+      space: 1,
+      thickness: 1,
+    ),
+    snackBarTheme: SnackBarThemeData(
+      backgroundColor: glass.panelStrong,
+      contentTextStyle: TextStyle(color: colorScheme.onSurface),
+      behavior: SnackBarBehavior.floating,
+      elevation: 0,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(22),
+        side: BorderSide(color: glass.border),
+      ),
+    ),
+    filledButtonTheme: FilledButtonThemeData(
+      style: FilledButton.styleFrom(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+      ),
+    ),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+      ),
+    ),
+    outlinedButtonTheme: OutlinedButtonThemeData(
+      style: OutlinedButton.styleFrom(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        side: BorderSide(color: glass.border),
+      ),
+    ),
+    floatingActionButtonTheme: FloatingActionButtonThemeData(
+      backgroundColor: glass.panelStrong,
+      foregroundColor: colorScheme.onSurface,
+      elevation: 0,
+      focusElevation: 0,
+      hoverElevation: 0,
+      highlightElevation: 0,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(20),
+        side: BorderSide(color: glass.border),
+      ),
+    ),
+    navigationBarTheme: NavigationBarThemeData(
+      backgroundColor: glass.panelStrong,
+      surfaceTintColor: Colors.transparent,
+      elevation: 0,
+      height: 68,
+      indicatorColor: colorScheme.primaryContainer.withValues(alpha: 0.6),
+    ),
+    navigationRailTheme: NavigationRailThemeData(
+      backgroundColor: glass.panelStrong,
+      indicatorColor: colorScheme.primaryContainer.withValues(alpha: 0.6),
+      elevation: 0,
+    ),
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      backgroundColor: glass.panelStrong,
+      elevation: 0,
+      type: BottomNavigationBarType.fixed,
+    ),
+    extensions: <ThemeExtension<dynamic>>[appColors, glass],
+  );
+}
 
 /// Starts a long-lived service provider **and keeps it reacting**.
 ///
@@ -830,51 +1021,19 @@ class _MainWidget extends HookConsumerWidget {
 
         return MainApp(
           key: rootKey,
-          theme: ThemeData(
-            useMaterial3: true,
+          theme: _buildGlassTheme(
             colorScheme: lightColorScheme,
-            pageTransitionsTheme: disableAnimations
-                ? _noAnimationPageTransitionsTheme
-                : const NavigationBarProtectedPageTransitionsTheme(),
-            dialogTheme: DialogThemeData(
-              barrierColor: showModalBarrier ? null : Colors.transparent,
-              // Material specifies a maximum dialog width but Flutter does not
-              // apply one, so a dialog with long content stretches to fill a
-              // tablet or desktop window. Unconditional because it cannot bind
-              // on a phone: the dialog's own inset padding already leaves less
-              // than this.
-              constraints: const BoxConstraints(maxWidth: ContentWidth.dialog),
-            ),
-            bottomSheetTheme: BottomSheetThemeData(
-              modalBarrierColor: showModalBarrier ? null : Colors.transparent,
-            ),
-            popupMenuTheme: _popupMenuTheme,
-            menuTheme: _menuTheme,
-            extensions: const <ThemeExtension<dynamic>>[AppColors.light],
+            appColors: AppColors.light,
+            pureBlack: false,
+            disableAnimations: disableAnimations,
+            showModalBarrier: showModalBarrier,
           ),
-          darkTheme: ThemeData(
-            useMaterial3: true,
+          darkTheme: _buildGlassTheme(
             colorScheme: darkColorScheme,
-            pageTransitionsTheme: disableAnimations
-                ? _noAnimationPageTransitionsTheme
-                : const NavigationBarProtectedPageTransitionsTheme(),
-            dialogTheme: DialogThemeData(
-              barrierColor: showModalBarrier ? null : Colors.transparent,
-              // Material specifies a maximum dialog width but Flutter does not
-              // apply one, so a dialog with long content stretches to fill a
-              // tablet or desktop window. Unconditional because it cannot bind
-              // on a phone: the dialog's own inset padding already leaves less
-              // than this.
-              constraints: const BoxConstraints(maxWidth: ContentWidth.dialog),
-            ),
-            bottomSheetTheme: BottomSheetThemeData(
-              modalBarrierColor: showModalBarrier ? null : Colors.transparent,
-            ),
-            popupMenuTheme: _popupMenuTheme,
-            menuTheme: _menuTheme,
-            extensions: <ThemeExtension<dynamic>>[
-              if (pureBlack) AppColors.darkOled else AppColors.dark,
-            ],
+            appColors: pureBlack ? AppColors.darkOled : AppColors.dark,
+            pureBlack: pureBlack,
+            disableAnimations: disableAnimations,
+            showModalBarrier: showModalBarrier,
           ),
           themeMode: themeMode,
           locale: appLocale,

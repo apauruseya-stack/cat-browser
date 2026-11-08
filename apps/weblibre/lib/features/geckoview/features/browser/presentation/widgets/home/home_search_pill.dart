@@ -21,6 +21,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:weblibre/core/design/glass_theme.dart';
 import 'package:weblibre/core/routing/routes.dart';
 import 'package:weblibre/features/user/domain/repositories/general_settings.dart';
 import 'package:weblibre/l10n/generated/app_localizations.dart';
@@ -40,8 +41,9 @@ import 'package:weblibre/presentation/widgets/speech_to_text_button.dart';
 /// Neither auto-submits: speech recognition misfires, and a scanned code is
 /// untrusted input that should not navigate on its own.
 ///
-/// Rendered pinned by the home surface, so it is opaque and carries a shadow:
-/// the module list scrolls underneath it.
+/// Rendered pinned by the home surface, so it is frosted rather than plain
+/// translucent: the module list scrolls underneath it and the blur keeps the
+/// rows behind the pill from showing through the placeholder text.
 class HomeSearchPill extends ConsumerWidget {
   const HomeSearchPill({super.key});
 
@@ -74,56 +76,57 @@ class HomeSearchPill extends ConsumerWidget {
 
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 4, 16, 12),
-      child: Material(
-        color: colorScheme.surfaceContainerHigh,
-        surfaceTintColor: Colors.transparent,
-        shadowColor: colorScheme.shadow,
-        elevation: 3,
-        borderRadius: BorderRadius.circular(28),
-        clipBehavior: Clip.antiAlias,
-        child: Row(
-          children: [
-            Expanded(
-              child: InkWell(
-                onTap: openSearch,
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 16, 8, 16),
-                  child: Row(
-                    children: [
-                      Icon(Icons.search, color: colorScheme.onSurfaceVariant),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: Text(
-                          l10n.browser_searchOrEnterUrl,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: theme.textTheme.bodyLarge?.copyWith(
-                            color: colorScheme.onSurfaceVariant,
+      child: GlassPanel(
+        borderRadius: BorderRadius.circular(26),
+        blur: true,
+        padding: const EdgeInsets.zero,
+        child: Material(
+          type: MaterialType.transparency,
+          child: Row(
+            children: [
+              Expanded(
+                child: InkWell(
+                  borderRadius: BorderRadius.circular(26),
+                  onTap: openSearch,
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 15, 8, 15),
+                    child: Row(
+                      children: [
+                        Icon(Icons.search, color: colorScheme.onSurfaceVariant),
+                        const SizedBox(width: 12),
+                        Expanded(
+                          child: Text(
+                            l10n.browser_searchOrEnterUrl,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: theme.textTheme.bodyLarge?.copyWith(
+                              color: colorScheme.onSurfaceVariant,
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),
-            ),
-            QrScannerButton(
-              onScanResult: (scanResult) {
-                final code = scanResult?.code;
-                if (code == null || !context.mounted) return;
+              QrScannerButton(
+                onScanResult: (scanResult) {
+                  final code = scanResult?.code;
+                  if (code == null || !context.mounted) return;
 
-                openSearch(code);
-              },
-            ),
-            SpeechToTextButton(
-              onTextReceived: (text) {
-                if (!context.mounted) return;
+                  openSearch(code);
+                },
+              ),
+              SpeechToTextButton(
+                onTextReceived: (text) {
+                  if (!context.mounted) return;
 
-                openSearch(text);
-              },
-            ),
-            const SizedBox(width: 4),
-          ],
+                  openSearch(text);
+                },
+              ),
+              const SizedBox(width: 4),
+            ],
+          ),
         ),
       ),
     );

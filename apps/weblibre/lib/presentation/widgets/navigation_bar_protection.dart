@@ -19,6 +19,7 @@
  */
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:weblibre/core/design/glass_theme.dart';
 import 'package:weblibre/core/providers/navigation_bar.dart';
 import 'package:weblibre/core/routing/routes.dart';
 
@@ -49,8 +50,10 @@ class NavigationBarProtection extends ConsumerWidget {
 
     // The same widgets either way, so a change (a rotation, another navigation
     // mode) keeps the screen's state.
+    // The scaffold is transparent now (the glass wall shows through it), so the
+    // band under the buttons has to resolve to an opaque surface itself.
     return ColoredBox(
-      color: Theme.of(context).scaffoldBackgroundColor,
+      color: GlassTheme.of(context).wallBase,
       child: SafeArea(
         left: false,
         top: false,

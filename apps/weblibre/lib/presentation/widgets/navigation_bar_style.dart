@@ -20,6 +20,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:weblibre/core/design/glass_theme.dart';
 import 'package:weblibre/core/providers/navigation_bar.dart';
 
 /// The navigation bar style for every screen that doesn't set its own.
@@ -39,7 +40,16 @@ class NavigationBarStyle extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final background = Theme.of(context).scaffoldBackgroundColor;
+    final theme = Theme.of(context);
+    final background = theme.scaffoldBackgroundColor;
+
+    // The scaffold is transparent now so the glass wall can show through it.
+    // A fully transparent navigation bar would make Flutter guess the icon
+    // brightness from black, so resolve it against the surface underneath.
+    final barColor = background.a < 0.01
+        ? GlassTheme.of(context).wallBase
+        : background;
+
     final navigationBarOutsideFlutter = ref.watch(
       navigationBarLayoutControllerProvider.select(
         (layout) => layout.outsideFlutter,
@@ -51,12 +61,12 @@ class NavigationBarStyle extends ConsumerWidget {
       // route's app bar asks for.
       value: SystemUiOverlayStyle(
         systemNavigationBarColor: navigationBarOutsideFlutter
-            ? background
+            ? barColor
             : Colors.transparent,
         systemNavigationBarDividerColor: Colors.transparent,
         systemNavigationBarContrastEnforced: false,
         systemNavigationBarIconBrightness:
-            ThemeData.estimateBrightnessForColor(background) == Brightness.dark
+            ThemeData.estimateBrightnessForColor(barColor) == Brightness.dark
             ? Brightness.light
             : Brightness.dark,
       ),

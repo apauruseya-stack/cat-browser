@@ -26,6 +26,7 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:weblibre/core/design/app_colors.dart';
+import 'package:weblibre/core/design/glass_theme.dart';
 import 'package:weblibre/core/routing/routes.dart';
 import 'package:weblibre/features/bangs/data/models/bang_data.dart';
 import 'package:weblibre/features/bangs/data/models/web_search_bang.dart';
@@ -135,7 +136,6 @@ class SearchScreen extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
     final appColors = AppColors.of(context);
-    final colorScheme = Theme.of(context).colorScheme;
     final formKey = useMemoized(() => GlobalKey<FormState>());
 
     final createChildTabsOption = ref.watch(
@@ -999,7 +999,9 @@ class SearchScreen extends HookConsumerWidget {
             pinned: true,
             automaticallyImplyLeading: false,
             leading: closeButton,
-            backgroundColor: colorScheme.surface,
+            // The glass wall behind the route is the background; an opaque
+            // app-bar tint would cut a flat band across it.
+            backgroundColor: Colors.transparent,
             scrolledUnderElevation: 0,
             shadowColor: Colors.transparent,
             surfaceTintColor: Colors.transparent,
@@ -1106,14 +1108,19 @@ class SearchScreen extends HookConsumerWidget {
             key: formKey,
             child: ModuleSurfaceScope(
               surface: activeSurface,
-              pinnedHeaderBackgroundColor: Theme.of(context).canvasColor,
+              pinnedHeaderBackgroundColor: GlassTheme.of(context).chrome,
               reversed: reverseList,
               child: !fieldAtBottom
                   ? keyboardHidingScrollView
                   : BottomFieldLayout(
                       body: keyboardHidingScrollView,
-                      footer: ColoredBox(
-                        color: colorScheme.surface,
+                      footer: GlassPanel(
+                        // A near-opaque chrome fill rather than plain glass:
+                        // the field floats over the list, and its own text has
+                        // to stay legible while rows scroll behind it.
+                        color: GlassTheme.of(context).chrome,
+                        borderRadius: BorderRadius.zero,
+                        shadow: false,
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
