@@ -17,8 +17,10 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
+import 'package:crypto/crypto.dart';
 import 'package:weblibre/features/ai/domain/models/ai_models.dart';
 import 'package:weblibre/features/ai/domain/services/local_ai_engine.dart';
+import 'dart:convert';
 
 /// Inputs for one summary run on a background isolate.
 class SummarizeTask {
@@ -35,6 +37,12 @@ class SummarizeTask {
     required this.source,
     this.maxSentences = 6,
   });
+
+  /// Stable key for caching: hash of the text and the requested length.
+  String get cacheKey {
+    final bytes = utf8.encode('$maxSentences\x00$text');
+    return sha256.convert(bytes).toString();
+  }
 }
 
 /// Runs on a worker isolate: TextRank over a long article blocks the UI

@@ -28,6 +28,7 @@ import 'package:weblibre/features/ai/domain/models/ai_models.dart';
 import 'package:weblibre/features/ai/domain/providers.dart';
 import 'package:weblibre/features/ai/domain/services/ai_page_text.dart';
 import 'package:weblibre/features/ai/domain/services/ai_tasks.dart';
+import 'package:weblibre/features/ai/domain/services/summary_cache.dart';
 import 'package:weblibre/features/ai/presentation/widgets/ai_gate.dart';
 import 'package:weblibre/features/ai/presentation/widgets/tab_compare_sheet.dart';
 import 'package:weblibre/features/user/domain/repositories/general_settings.dart';
@@ -85,7 +86,12 @@ class _PageSummarySheet extends HookConsumerWidget {
 
     final future = useMemoized<Future<PageInsight?>?>(() {
       if (task == null) return null;
-      return compute(runSummarizeTask, task);
+      final cached = SummaryCache.get(task.cacheKey);
+      if (cached != null) return Future<PageInsight?>.value(cached);
+      return compute(runSummarizeTask, task).then((insight) {
+        if (insight != null) SummaryCache.put(task.cacheKey, insight);
+        return insight;
+      });
     }, [task]);
 
     final summary = useFuture(future);
@@ -126,7 +132,13 @@ class _PageSummarySheet extends HookConsumerWidget {
               insight: insight,
               container: container,
               compareEnabled: compareEnabled,
-              onRegenerate: () => revision.value++,
+              onRegenerate: () {
+                final currentTask = task;
+                if (currentTask != null) {
+                  SummaryCache.remove(currentTask.cacheKey);
+                }
+                revision.value++;
+              },
             );
     }
 

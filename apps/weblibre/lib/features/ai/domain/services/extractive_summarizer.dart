@@ -47,11 +47,16 @@ class ExtractiveSummarizer {
     required String source,
     int maxSentences = 6,
   }) {
-    final clipped = text.length > maxInputCharacters
-        ? text.substring(0, maxInputCharacters)
-        : text;
-    final sentences = splitSentences(clipped);
-    final wordCount = countWords(clipped);
+    final allSentences = splitSentences(text);
+    // Long pages would make the sentence graph quadratic and slow. Instead of
+    // blindly clipping the first N characters (which drops the tail of the
+    // article), sample sentences evenly across the whole text so the summary
+    // still covers the ending.
+    const maxSentencesForGraph = 220;
+    final sentences = allSentences.length <= maxSentencesForGraph
+        ? allSentences
+        : _sampleSentences(allSentences, maxSentencesForGraph);
+    final wordCount = countWords(text);
 
     if (sentences.isEmpty) {
       return PageInsight(
@@ -84,6 +89,23 @@ class ExtractiveSummarizer {
       readingMinutes: wordCount == 0 ? 0 : math.max(1, wordCount ~/ 220),
       source: source,
     );
+  }
+
+  /// Samples [target] sentences evenly from [all], always keeping the first and
+  /// last so the summary still reflects the article's opening and conclusion.
+  static List<String> _sampleSentences(List<String> all, int target) {
+    if (all.length <= target) return all;
+    final result = <String>[];
+    final step = (all.length - 1) / (target - 1);
+    for (var i = 0; i < target; i++) {
+      final index = (i * step).round().clamp(0, all.length - 1);
+      if (result.isEmpty || result.last != all[index]) {
+        result.add(all[index]);
+      }
+    }
+    if (result.first != all.first) result.insert(0, all.first);
+    if (result.last != all.last) result.add(all.last);
+    return result;
   }
 
   List<int> _selectSentences(
