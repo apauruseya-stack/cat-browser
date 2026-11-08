@@ -164,7 +164,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get about_copyright => 'Copyright © Fabian Freund, 2024-2026';
 
   @override
-  String get about_geckoVersionTitle => 'Gecko-Version';
+  String get about_componentVersionsTitle => 'Komponentenversionen';
 
   @override
   String get about_notAvailable => 'k. A.';
@@ -722,7 +722,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get addons_desktopCompatibilityWarning =>
-      'Desktop-Erweiterungen werden nicht für Mobilgeräte geprüft. Manche funktionieren unter Android womöglich nicht, stürzen ab oder verhalten sich unerwartet.';
+      'Desktop-Erweiterungen werden nicht f├╝r Mobilger├ñte gepr├╝ft. Manche funktionieren unter Android wom├╢glich nicht, st├╝rzen ab oder verhalten sich unerwartet.';
 
   @override
   String get addons_actionInstall => 'Installieren';
@@ -752,7 +752,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get addons_actionCheckForUpdatesButton => 'Nach Updates suchen';
 
   @override
-  String get addons_actionCheckingForUpdates => 'Suche nach Updates …';
+  String get addons_actionCheckingForUpdates => 'Suche nach Updates ΓÇª';
 
   @override
   String get addons_actionLearnMore => 'Mehr erfahren';
@@ -767,7 +767,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get addons_sectionDisabled => 'Deaktiviert';
 
   @override
-  String get addons_sectionUnsupported => 'Nicht unterstützt';
+  String get addons_sectionUnsupported => 'Nicht unterst├╝tzt';
 
   @override
   String get addons_sectionDetails => 'Details';
@@ -782,7 +782,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get addons_sectionUpdates => 'Updates';
 
   @override
-  String get addons_sectionAboutExtension => 'Über diese Erweiterung';
+  String get addons_sectionAboutExtension => '├£ber diese Erweiterung';
 
   @override
   String get addons_sectionTechnicalPermissions => 'Technische Berechtigungen';
@@ -814,7 +814,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get addons_updateChecksStarted =>
-      'Update-Prüfung für installierte Erweiterungen im Hintergrund gestartet';
+      'Update-Pr├╝fung f├╝r installierte Erweiterungen im Hintergrund gestartet';
 
   @override
   String get addons_statusInstalled => 'Installiert';
@@ -823,7 +823,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get addons_statusDisabled => 'Deaktiviert';
 
   @override
-  String get addons_statusAvailable => 'Verfügbar';
+  String get addons_statusAvailable => 'Verf├╝gbar';
 
   @override
   String get addons_chipPrivateBrowsing => 'Privates Surfen';
@@ -845,7 +845,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get addons_autoUpdateNeedsManualRun =>
-      'Bevor automatische Updates aktiviert werden können, einmal manuell aktualisieren und die App neu starten.';
+      'Bevor automatische Updates aktiviert werden k├╢nnen, einmal manuell aktualisieren und die App neu starten.';
 
   @override
   String get addons_autoUpdateAllow =>
@@ -853,14 +853,14 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get addons_autoUpdateDisabledForExtension =>
-      'Updates im Hintergrund sind für diese Erweiterung deaktiviert.';
+      'Updates im Hintergrund sind f├╝r diese Erweiterung deaktiviert.';
 
   @override
   String get addons_switchEnabledTitle => 'Aktiviert';
 
   @override
   String get addons_switchEnabledSubtitleAllow =>
-      'Diese Erweiterung in Cat Browser ausführen lassen.';
+      'Diese Erweiterung in Cat Browser ausf├╝hren lassen.';
 
   @override
   String get addons_switchEnabledSubtitleCannot =>
@@ -871,7 +871,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get addons_switchPrivateBrowsingSubtitle =>
-      'Diese Erweiterung in privaten Tabs ausführen lassen.';
+      'Diese Erweiterung in privaten Tabs ausf├╝hren lassen.';
 
   @override
   String get addons_switchAutoUpdateTitle => 'Automatische Updates';
@@ -889,25 +889,25 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get addons_menuExtensionSettingsSubtitleTab =>
-      'Die Einstellungsseite der Erweiterung in einem Browser-Tab öffnen';
+      'Die Einstellungsseite der Erweiterung in einem Browser-Tab ├╢ffnen';
 
   @override
   String get addons_menuExtensionSettingsSubtitleInline =>
-      'Die Einstellungsseite der Erweiterung öffnen';
+      'Die Einstellungsseite der Erweiterung ├╢ffnen';
 
   @override
-  String get addons_menuFilterListsTitle => 'Filterlisten & Härtungen';
+  String get addons_menuFilterListsTitle => 'Filterlisten';
 
   @override
   String get addons_menuFilterListsSubtitle =>
-      'Filterlisten verwalten und Cat Browser-Härtungen anwenden';
+      'Filterlisten verwalten und Cat Browser-H├ñrtungen anwenden';
 
   @override
   String get addons_permissionsTitle => 'Berechtigungen';
 
   @override
   String addons_updateAvailable(String from, String to) {
-    return 'Update verfügbar: $from → $to';
+    return 'Update verf├╝gbar: $from ΓåÆ $to';
   }
 
   @override
@@ -916,11 +916,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String addons_lastChecked(String date) {
-    return 'Zuletzt geprüft: $date';
+    return 'Zuletzt gepr├╝ft: $date';
   }
 
   @override
-  String get addons_noUpdateAvailable => 'Kein Update verfügbar';
+  String get addons_noUpdateAvailable => 'Kein Update verf├╝gbar';
 
   @override
   String get addons_noRemoteUpdateSource =>
@@ -928,10 +928,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get addons_updateCheckFailed =>
-      'Update-Prüfung konnte nicht gestartet werden.';
+      'Update-Pr├╝fung konnte nicht gestartet werden.';
 
   @override
-  String get addons_updateAvailableDialogTitle => 'Update verfügbar';
+  String get addons_updateAvailableDialogTitle => 'Update verf├╝gbar';
 
   @override
   String addons_updateConfirmContent(String name, String from, String to) {
@@ -942,7 +942,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get addons_noDescriptionProvided => 'Keine Beschreibung vorhanden.';
 
   @override
-  String get addons_loadingDescription => 'Beschreibung wird geladen …';
+  String get addons_loadingDescription => 'Beschreibung wird geladen ΓÇª';
 
   @override
   String get addons_fieldAuthor => 'Autor';
@@ -963,7 +963,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get addons_fieldAddonListing => 'Store-Eintrag';
 
   @override
-  String get addons_fieldSize => 'Größe';
+  String get addons_fieldSize => 'Gr├╢├ƒe';
 
   @override
   String get addons_fieldCategories => 'Kategorien';
@@ -978,7 +978,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get addons_fieldReviews => 'Bewertungen';
 
   @override
-  String get addons_fieldPrivacyPolicy => 'Datenschutzerklärung';
+  String get addons_fieldPrivacyPolicy => 'Datenschutzerkl├ñrung';
 
   @override
   String get addons_linkViewOnAmo => 'Auf addons.mozilla.org ansehen';
@@ -1015,11 +1015,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get addons_noSpecialPermissions =>
-      'Keine besonderen Berechtigungen aufgeführt';
+      'Keine besonderen Berechtigungen aufgef├╝hrt';
 
   @override
   String get addons_noTranslatedPermissionDetails =>
-      'Diese Erweiterung stellt derzeit keine übersetzten Berechtigungsdetails bereit.';
+      'Diese Erweiterung stellt derzeit keine ├╝bersetzten Berechtigungsdetails bereit.';
 
   @override
   String addons_versionSentence(String version) {
@@ -1078,7 +1078,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get addons_noUpdateChecksRecorded =>
-      'Noch keine Update-Prüfungen erfasst';
+      'Noch keine Update-Pr├╝fungen erfasst';
 
   @override
   String get addons_statusBlocklisted =>
@@ -1094,30 +1094,30 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get addons_statusSoftBlockedEnabled =>
-      'Diese Erweiterung ist eingeschränkt gesperrt. Solange sie aktiviert bleibt, ist Vorsicht geboten.';
+      'Diese Erweiterung ist eingeschr├ñnkt gesperrt. Solange sie aktiviert bleibt, ist Vorsicht geboten.';
 
   @override
   String get addons_statusSoftBlockedDisabled =>
-      'Diese Erweiterung ist eingeschränkt gesperrt, kann aber wieder aktiviert werden.';
+      'Diese Erweiterung ist eingeschr├ñnkt gesperrt, kann aber wieder aktiviert werden.';
 
   @override
   String get addons_statusUnsupported =>
-      'Diese Erweiterung ist installiert, wird von Cat Browser derzeit aber nicht unterstützt.';
+      'Diese Erweiterung ist installiert, wird von Cat Browser derzeit aber nicht unterst├╝tzt.';
 
   @override
-  String get addons_permissionBookmarks => 'Lesezeichen lesen und ändern';
+  String get addons_permissionBookmarks => 'Lesezeichen lesen und ├ñndern';
 
   @override
   String get addons_permissionBrowserSettings =>
-      'Browsereinstellungen lesen und ändern';
+      'Browsereinstellungen lesen und ├ñndern';
 
   @override
   String get addons_permissionBrowsingData =>
-      'Neuesten Browserverlauf, Cookies und zugehörige Daten löschen';
+      'Neuesten Browserverlauf, Cookies und zugeh├╢rige Daten l├╢schen';
 
   @override
   String get addons_permissionClipboardRead =>
-      'Kopierte und eingefügte Daten lesen';
+      'Kopierte und eingef├╝gte Daten lesen';
 
   @override
   String get addons_permissionClipboardWrite =>
@@ -1125,7 +1125,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get addons_permissionContextualIdentities =>
-      'Auf Container-Tabs zugreifen und diese ändern';
+      'Auf Container-Tabs zugreifen und diese ├ñndern';
 
   @override
   String get addons_permissionCookies =>
@@ -1133,11 +1133,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get addons_permissionDownloads =>
-      'Dateien herunterladen und den Download-Verlauf lesen und ändern';
+      'Dateien herunterladen und den Download-Verlauf lesen und ├ñndern';
 
   @override
   String get addons_permissionDownloadsOpen =>
-      'Auf das Gerät heruntergeladene Dateien öffnen';
+      'Auf das Ger├ñt heruntergeladene Dateien ├╢ffnen';
 
   @override
   String get addons_permissionFind => 'Den Text aller offenen Tabs lesen';
@@ -1150,7 +1150,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get addons_permissionManagement =>
-      'Nutzung von Erweiterungen überwachen und Themes verwalten';
+      'Nutzung von Erweiterungen ├╝berwachen und Themes verwalten';
 
   @override
   String get addons_permissionNativeMessaging =>
@@ -1165,7 +1165,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get addons_permissionPrivacy =>
-      'Datenschutzeinstellungen lesen und ändern';
+      'Datenschutzeinstellungen lesen und ├ñndern';
 
   @override
   String get addons_permissionProxy =>
@@ -1173,7 +1173,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get addons_permissionSessions =>
-      'Auf kürzlich geschlossene Tabs zugreifen';
+      'Auf k├╝rzlich geschlossene Tabs zugreifen';
 
   @override
   String get addons_permissionTabs => 'Auf Browser-Tabs zugreifen';
@@ -1186,15 +1186,27 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get addons_permissionWebNavigation =>
-      'Während der Navigation auf Browseraktivität zugreifen';
+      'W├ñhrend der Navigation auf Browseraktivit├ñt zugreifen';
 
   @override
   String get addons_permissionAllUrls => 'Auf Daten aller Websites zugreifen';
 
   @override
   String addons_permissionAccessDataFor(String host) {
-    return 'Auf Daten für $host zugreifen';
+    return 'Auf Daten f├╝r $host zugreifen';
   }
+
+  @override
+  String get addons_updatePermissionsTitle =>
+      'Update ben├╢tigt neue Berechtigungen';
+
+  @override
+  String get addons_updatePermissionsBody =>
+      'Die neue Version fordert die folgenden Berechtigungen an. Sie wird installiert, sobald diese erlaubt sind.';
+
+  @override
+  String get addons_updateNeedsPermissions =>
+      'Dieses Update fordert neue Berechtigungen an, die vor der Installation erlaubt werden m├╝ssen.';
 
   @override
   String appLinks_bannerTitleNamed(String appName) {
@@ -1484,7 +1496,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get browserActions_hardReloadDescription =>
-      'Die aktuelle Seite unter Umgehung des Caches neu laden';
+      'Die Seite neu laden und alles erneut herunterladen';
 
   @override
   String get browserActions_scrollTopTitle => 'Zum Anfang';
@@ -1972,11 +1984,11 @@ class AppLocalizationsDe extends AppLocalizations {
   String get browserActions_showProfilesDescription => 'Profile verwalten';
 
   @override
-  String get browserActions_showProxySettingsTitle => 'Proxy';
+  String get browserActions_showProxySettingsTitle => 'Verbindungen';
 
   @override
   String get browserActions_showProxySettingsDescription =>
-      'Proxy-Einstellungen öffnen';
+      'Verbindungseinstellungen öffnen';
 
   @override
   String get browserActions_showTorTitle => 'Tor';
@@ -2172,7 +2184,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get browserActions_showProxySettingsKeywords =>
-      'VPN, sing-box, SOCKS, Verbindung, Netzwerk';
+      'Proxy, Tor, VPN, sing-box, SOCKS, Verbindung, Netzwerk';
 
   @override
   String get browserActions_showTorKeywords =>
@@ -2541,9 +2553,6 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get browser_actionSelect => 'Auswählen';
-
-  @override
-  String get browser_actionKeep => 'Behalten';
 
   @override
   String get browser_actionInstall => 'Installieren';
@@ -2943,7 +2952,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get browser_dataTypeSiteDataSubtitle =>
-      'Offline-Speicher, Datenbanken, lokale Dateien';
+      'Daten, die Websites auf dem Gerät speichern, etwa für die Offline-Nutzung';
 
   @override
   String get browser_dataTypeCookies => 'Cookies';
@@ -3503,14 +3512,20 @@ class AppLocalizationsDe extends AppLocalizations {
   String get browser_permissionNotification => 'Benachrichtigungen';
 
   @override
-  String get browser_permissionPersistentStorage => 'Dauerhafter Speicher';
+  String get browser_permissionPersistentStorage =>
+      'Gespeicherte Website-Daten schützen';
+
+  @override
+  String get browser_permissionPersistentStorageDescription =>
+      'Website-Daten auch bei wenig freiem Speicherplatz behalten.';
 
   @override
   String get browser_permissionCrossOriginStorage =>
-      'Websiteübergreifender Speicher';
+      'Cookies auf anderen Websites';
 
   @override
-  String get browser_permissionMediaKeySystem => 'Media Key System (DRM)';
+  String get browser_permissionMediaKeySystem =>
+      'Geschützte Inhalte abspielen (DRM)';
 
   @override
   String get browser_tabReorderBlockedMessage =>
@@ -3684,8 +3699,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get contextualToolbar_longPressOpenSettings => 'Einstellungen öffnen';
 
   @override
-  String get contextualToolbar_longPressHardRefresh =>
-      'Vollständig neu laden (Cache umgehen)';
+  String get contextualToolbar_longPressHardRefresh => 'Vollständig neu laden';
 
   @override
   String get contextualToolbar_longPressShowTranslationOptions =>
@@ -3944,6 +3958,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get menu_profileTapToSwitch => 'Tippen, um das Profil zu wechseln';
 
   @override
+  String get menu_profileManageCurrent => 'Profil sperren und sichern';
+
+  @override
   String get menu_profileSyncComplete => 'Synchronisierung abgeschlossen';
 
   @override
@@ -4178,7 +4195,7 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get menu_connectionProxySettings => 'Proxy-Einstellungen';
+  String get menu_connectionProxySettings => 'Verbindungseinstellungen';
 
   @override
   String get menu_connectionUnused => 'Von keiner Route verwendet';
@@ -4684,7 +4701,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get openLinkTools_restoreDefaultsContent =>
-      'Dadurch werden die Einstellungen der URL-Bereinigung zurückgesetzt und der lokal gespeicherte Katalog entfernt.';
+      'Dadurch werden die Einstellungen der URL-Bereinigung zurückgesetzt und heruntergeladene Regeln entfernt.';
 
   @override
   String get openLinkTools_actionRestore => 'Wiederherstellen';
@@ -4790,7 +4807,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get openLinkTools_urlCleanerSettingsSubtitle =>
-      'Verhalten der URL-Bereinigung, Aktualisierung des Regelkatalogs und Quellenangabe.';
+      'Was aus Links entfernt wird, Regel-Updates und Quellenangaben.';
 
   @override
   String get openLinkTools_urlCleanerDescriptionBody =>
@@ -4806,7 +4823,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get openLinkTools_urlCleanerEnabledSubtitle =>
-      'Tracking-Parameter aus URLs entfernen';
+      'Tracking-Teile aus Links entfernen';
 
   @override
   String get openLinkTools_autoApplyTitle => 'Automatisch anwenden';
@@ -4828,18 +4845,18 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get openLinkTools_allowReferralSubtitle =>
-      'Tracking-Parameter für Empfehlungs- und Partnerprogramme behalten';
+      'Empfehlungs- und Partnercodes in Links behalten';
 
   @override
   String get openLinkTools_autoUpdateCatalogTitle =>
-      'Katalog automatisch aktualisieren';
+      'Regeln automatisch aktualisieren';
 
   @override
   String get openLinkTools_autoUpdateCatalogSubtitle =>
       'Wöchentlich nach Regelaktualisierungen suchen';
 
   @override
-  String get openLinkTools_updateCatalogTitle => 'Katalog aktualisieren';
+  String get openLinkTools_updateCatalogTitle => 'Regeln aktualisieren';
 
   @override
   String get openLinkTools_lastUpdateNotAvailable =>
@@ -4861,7 +4878,7 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get openLinkTools_catalogUpdatedMessage => 'Katalog aktualisiert';
+  String get openLinkTools_catalogUpdatedMessage => 'Regeln aktualisiert';
 
   @override
   String openLinkTools_updateFailedWithError(String error) {
@@ -4874,7 +4891,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get openLinkTools_restoreDefaultsButtonSubtitle =>
-      'Auf den mitgelieferten Katalog und die Standardeinstellungen zurücksetzen';
+      'Zu den mitgelieferten Regeln und Standardeinstellungen zurückkehren';
 
   @override
   String get openLinkTools_clearUrlAttributionText =>
@@ -4898,7 +4915,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get openLinkTools_urlCleanerBehaviorSectionTitle => 'Verhalten';
 
   @override
-  String get openLinkTools_urlCleanerCatalogSectionTitle => 'Katalog';
+  String get openLinkTools_urlCleanerCatalogSectionTitle => 'Regeln';
 
   @override
   String get openLinkTools_indexUrlCleanerUpdateCatalogSubtitle =>
@@ -5409,6 +5426,9 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get tabs_addSiteHint => 'example.com oder *.example.com';
+
+  @override
+  String get tabs_addSiteHintSingle => 'example.com';
 
   @override
   String get tabs_addSiteHelperText =>
@@ -6113,75 +6133,58 @@ class AppLocalizationsDe extends AppLocalizations {
   String get keyboardShortcuts_actionCustomize => 'Anpassen';
 
   @override
+  String get keyboardShortcuts_actionShowAll => 'Alle anzeigen';
+
+  @override
   String get keyboardShortcuts_actionReassign => 'Neu zuweisen';
 
   @override
   String get keyboardShortcuts_actionRestore => 'Wiederherstellen';
 
   @override
-  String get onboarding_actionPrevious => 'Zurück';
+  String get onboarding_actionPrevious => 'Zur├╝ck';
 
   @override
   String get onboarding_actionNext => 'Weiter';
-
-  @override
-  String get onboarding_actionRestore => 'Wiederherstellen';
 
   @override
   String get onboarding_restoreTargetUnreadable =>
       'Dieses Profil konnte nicht gelesen werden, daher kann nichts darin wiederhergestellt werden.';
 
   @override
-  String get onboarding_welcomeBackTitle => 'Willkommen zurück!';
+  String get onboarding_welcomeBackTitle => 'Willkommen zur├╝ck!';
 
   @override
   String get onboarding_welcomeReadyTitle => 'Cat Browser ist bereit';
-
-  @override
-  String get onboarding_chooseExperience => 'Art der Einrichtung wählen:';
-
-  @override
-  String get onboarding_modeExpressTitle => 'Schnellstart';
-
-  @override
-  String get onboarding_modeExpressSubtitle =>
-      'Empfohlene Standardeinstellungen verwenden und lossurfen.';
-
-  @override
-  String get onboarding_modeDetailedTitle => 'Individuelle Einrichtung';
-
-  @override
-  String get onboarding_modeDetailedSubtitle =>
-      'DNS, Symbolleiste, Erweiterungen und mehr einrichten.';
 
   @override
   String get onboarding_modeRestoreTitle => 'Aus Sicherung wiederherstellen';
 
   @override
   String get onboarding_modeRestoreSubtitle =>
-      'Ein Profil aus einer verschlüsselten Sicherungsdatei importieren.';
+      'Ein Profil aus einer verschl├╝sselten Sicherungsdatei importieren.';
 
   @override
-  String get onboarding_updateNoticeTitle => 'Vieles hat sich geändert!';
+  String get onboarding_updateNoticeTitle => 'Vieles hat sich ge├ñndert!';
 
   @override
   String get onboarding_updateNoticeBody =>
-      'Dieses Update enthält wesentliche Änderungen, die eine Überprüfung der Einstellungen erfordern. Bitte die folgenden Seiten durchgehen und die Konfiguration prüfen.';
+      'Dieses Update ├ñndert vieles. Die n├ñchsten Seiten f├╝hren durch die Einstellungen.';
 
   @override
   String get onboarding_updateNoticeExtensions =>
-      'Wegen bekannter Migrationsprobleme nach diesem Update bitte die Erweiterungen erneut prüfen.';
+      'Manche Erweiterungen sollten nach diesem Update noch einmal gepr├╝ft werden.';
 
   @override
   String get onboarding_updateNoticeSettingsPreserved =>
-      'Bestehende Einstellungen werden nur überschrieben, wenn sie während dieser Einrichtung ausdrücklich geändert werden.';
+      'Die Einstellungen bleiben, wie sie sind, solange sie hier nicht ge├ñndert werden.';
 
   @override
   String get onboarding_eulaAcceptance =>
-      'Ich habe die <eula>EULA</eula> und die <privacy>Datenschutzerklärung</privacy> gelesen und akzeptiere sie.';
+      'Ich habe die <eula>EULA</eula> und die <privacy>Datenschutzerkl├ñrung</privacy> gelesen und akzeptiere sie.';
 
   @override
-  String get onboarding_privacyPolicy => 'Datenschutzerklärung';
+  String get onboarding_privacyPolicy => 'Datenschutzerkl├ñrung';
 
   @override
   String get onboarding_eulaDocumentTitle => 'Endbenutzer-Lizenzvertrag';
@@ -6190,46 +6193,39 @@ class AppLocalizationsDe extends AppLocalizations {
   String get onboarding_aiFeaturesTitle => 'KI-Funktionen';
 
   @override
-  String get onboarding_aiOnDeviceTitle => 'KI auf dem Gerät';
-
-  @override
   String get onboarding_aiOnDeviceSubtitle =>
-      'Lokale Funktionen auf dem Gerät, darunter Themenvorschläge für Container und Tab-Vorschläge';
+      'Schl├ñgt direkt auf dem Ger├ñt vor, wie Tabs gruppiert und benannt werden';
 
   @override
   String get onboarding_aiWarningTitle => 'Gut zu wissen';
 
   @override
   String get onboarding_aiWarningPoint1 =>
-      'Cat Browser nutzt ein lokales KI-Modell, das die Titel offener Tabs analysiert und vorschlägt, in welchen Containern die Tabs gruppiert und wie diese Container benannt werden könnten. Die gesamte Verarbeitung findet ausschließlich auf dem Gerät statt.';
+      'Cat Browser nutzt ein lokales KI-Modell, das die Titel offener Tabs analysiert und vorschl├ñgt, in welchen Containern die Tabs gruppiert und wie diese Container benannt werden k├╢nnten. Die gesamte Verarbeitung findet ausschlie├ƒlich auf dem Ger├ñt statt.';
 
   @override
   String get onboarding_aiWarningPoint2 =>
-      'KI-Funktionen laufen vollständig im Browser, alle Daten bleiben auf dem Gerät. Die lokale Verarbeitung schützt die Privatsphäre und liefert schnellere Vorschläge für Container-Gruppen und -Namen. Dieses Verhalten lässt sich jederzeit in den Einstellungen anpassen.';
+      'KI-Funktionen laufen vollst├ñndig auf diesem Ger├ñt, alle Daten bleiben darauf.';
 
   @override
   String get onboarding_aiWarningPoint3 =>
-      'KI kann Fehler machen – vorgeschlagene Gruppennamen und Tab-Auswahlen daher bitte prüfen.';
+      'KI kann Fehler machen ΓÇô vorgeschlagene Gruppennamen und Tab-Auswahlen daher bitte pr├╝fen.';
 
   @override
-  String get onboarding_searchTitle => 'Suche';
+  String get onboarding_searchDefaultProviderLabel => 'Suchmaschine';
 
   @override
-  String get onboarding_searchDefaultProviderLabel => 'Standard-Suchanbieter';
+  String get onboarding_searchMore => 'Alle Suchmaschinen';
 
   @override
-  String get onboarding_searchMore => 'Weitere suchen';
-
-  @override
-  String get onboarding_searchDefaultAutocompleteLabel =>
-      'Standard-Anbieter für Suchvorschläge';
+  String get onboarding_searchDefaultAutocompleteLabel => 'Suchvorschl├ñge';
 
   @override
   String get onboarding_searchLoadFailedTitle =>
       'Suchmaschinen konnten nicht geladen werden';
 
   @override
-  String get onboarding_dohTitle => 'DNS über HTTPS';
+  String get onboarding_dohTitle => 'Sicheres DNS';
 
   @override
   String get onboarding_permissionsTitle => 'Berechtigungen';
@@ -6239,7 +6235,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get onboarding_permissionsNotificationsSubtitle =>
-      'Erforderlich für Benachrichtigungen über Downloads';
+      'Damit WebLibre den Fortschritt von Downloads anzeigen kann';
 
   @override
   String get onboarding_permissionsDefaultBrowserTitle => 'Standardbrowser';
@@ -6249,18 +6245,12 @@ class AppLocalizationsDe extends AppLocalizations {
       'Cat Browser als Standardbrowser festlegen';
 
   @override
-  String get onboarding_privacyTitle => 'Datenschutz & Härtung';
-
-  @override
-  String get onboarding_privacyBrowserLanguagesTitle => 'Browsersprachen';
+  String get onboarding_privacyBrowserLanguagesTitle =>
+      'Sprachen f├╝r Websites';
 
   @override
   String get onboarding_privacyBrowserLanguagesSubtitle =>
-      'Sprachpräferenzen festlegen, die Websites mitgeteilt werden';
-
-  @override
-  String get onboarding_multipleLanguagesDetectedTitle =>
-      'Mehrere Sprachen erkannt';
+      'In welchen Sprachen Websites angezeigt werden sollen';
 
   @override
   String onboarding_multipleLanguagesWarning(int count, String locales) {
@@ -6269,58 +6259,51 @@ class AppLocalizationsDe extends AppLocalizations {
       locale: localeName,
       other: 'Im Browser sind $count Sprachen eingestellt ($locales).',
     );
-    return '$_temp0 Websites können diese eindeutige Sprachkombination nutzen, um den Browser per Fingerprinting im gesamten Web wiederzuerkennen und zu verfolgen.';
+    return '$_temp0 Websites k├╢nnen diese Kombination nutzen, um dich wiederzuerkennen.';
   }
 
   @override
   String get onboarding_multipleLanguagesSuggestion =>
-      'Die Browsersprachen am besten auf eine einzige reduzieren, um die Angriffsfläche für Fingerprinting zu verkleinern.';
+      'Mit nur einer Sprache bist du schwerer von anderen zu unterscheiden.';
 
   @override
-  String get onboarding_reviewLanguages => 'Sprachen prüfen';
+  String get onboarding_reviewLanguages => 'Sprachen pr├╝fen';
 
   @override
   String get onboarding_webEngineHardeningTitle =>
-      'Vollständige Härtung der Web-Engine';
+      'Empfohlene Sicherheitseinstellungen';
 
   @override
   String get onboarding_webEngineHardeningSubtitle =>
-      'Alle empfohlenen Sicherheitseinstellungen auf die Web-Engine anwenden';
+      'Schaltet alle von WebLibre empfohlenen Sicherheitseinstellungen ein';
 
   @override
   String get onboarding_fingerprintProtectionTitle =>
-      'Verstärkter Fingerprinting-Schutz';
+      'Merkmale verbergen, die dieses Ger├ñt erkennbar machen';
 
   @override
   String get onboarding_fingerprintProtectionSubtitle =>
-      'Umfassende Standardeinstellungen für den Fingerprinting-Schutz laden';
+      'Websites sehen dann ├╝bliche Werte, wodurch du ohne Cookies schwerer wiederzuerkennen bist (Fingerprinting)';
 
   @override
-  String get onboarding_compatibilityWarningTitle => 'Kompatibilitätswarnung';
+  String get onboarding_compatibilityWarningTitle =>
+      'Manche Websites funktionieren eventuell nicht';
 
   @override
   String get onboarding_fingerprintWarningPoint1 =>
-      'Der verstärkte Fingerprinting-Schutz aktiviert über 60 Schutzziele, darunter Canvas-Randomisierung, Navigator-Spoofing, Maskierung von Mediengeräten und mehr.';
+      'Dabei ├ñndern sich ├╝ber 60 Details, die Websites auslesen k├╢nnen, etwa wie Grafiken gezeichnet werden und welche Kameras und Mikrofone angeschlossen sind.';
 
   @override
   String get onboarding_fingerprintWarningPoint2 =>
-      'Dadurch können Websites fehlerhaft oder unerwartet funktionieren. Einzelne Schutzziele lassen sich in den Einstellungen anpassen.';
-
-  @override
-  String get onboarding_localNetworkProtectionTitle =>
-      'Schutz des lokalen Netzwerks';
-
-  @override
-  String get onboarding_localNetworkProtectionSubtitle =>
-      'Websites können versuchen, das eigene Gerät und andere Geräte im Heimnetz zu erreichen, etwa Router, Drucker oder Smart-Home-Geräte. Bekannte Tracker werden dabei standardmäßig automatisch blockiert.';
+      'Wenn eine Website nicht richtig funktioniert, lassen sich einzelne Schutzma├ƒnahmen in den Einstellungen anpassen.';
 
   @override
   String get onboarding_blockAllLocalNetworkTitle =>
-      'Alle Anfragen ins lokale Netzwerk blockieren';
+      'Vor lokalen Verbindungen fragen';
 
   @override
   String get onboarding_blockAllLocalNetworkSubtitle =>
-      'Vor jedem Zugriff einer Website auf Geräte im Heimnetz um Erlaubnis fragen, nicht nur bei bekannten Trackern';
+      'Websites m├╝ssen fragen, bevor sie sich mit Apps auf diesem Ger├ñt oder Ger├ñten im Netzwerk verbinden';
 
   @override
   String get onboarding_toolbarLayoutTitle => 'Symbolleiste & Layout';
@@ -6330,19 +6313,281 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get onboarding_ublockDescription =>
-      'uBlock Origin (uBO) ist ein CPU- und speichersparender **Inhaltsblocker mit breitem Spektrum** von **Raymond Hill** und als Browsererweiterung für Cat Browser verfügbar.\n\nStandardmäßig blockiert er Werbung, Tracker, Krypto-Miner, Pop-ups, lästige Anti-Blocker, Malware-Seiten und mehr – mithilfe von **EasyList, EasyPrivacy, Peter Lowe\'s Blocklist, Online Malicious URL Blocklist und den uBO-Filterlisten**.\n\nViele weitere Listen stehen zur Verfügung, um zusätzliche Inhalte zu blockieren.';
+      'uBlock Origin (uBO) ist ein CPU- und speichersparender **Inhaltsblocker mit breitem Spektrum** von **Raymond Hill** und als Browsererweiterung f├╝r Cat Browser verf├╝gbar.\n\nStandardm├ñ├ƒig blockiert er Werbung, Tracker, Krypto-Miner, Pop-ups, l├ñstige Anti-Blocker, Malware-Seiten und mehr ΓÇô mithilfe von **EasyList, EasyPrivacy, Peter Lowe\'s Blocklist, Online Malicious URL Blocklist und den uBO-Filterlisten**.\n\nViele weitere Listen stehen zur Verf├╝gung, um zus├ñtzliche Inhalte zu blockieren.';
 
   @override
-  String get onboarding_ublockInstallTitle =>
-      'Erweiterung uBlock Origin installieren';
+  String get onboarding_ublockInstallTitle => 'uBlock Origin installieren';
 
   @override
   String get onboarding_ublockApplyDefaultsTitle =>
-      'Optimierte Standardeinstellungen anwenden';
+      'Empfohlene Filter verwenden';
 
   @override
   String get onboarding_ublockApplyDefaultsSubtitle =>
-      'Härtungs-Filterlisten von Cat Browser aktivieren.';
+      'H├ñrtungs-Filterlisten von Cat Browser aktivieren.';
+
+  @override
+  String get onboarding_welcomeTitle => 'Willkommen bei WebLibre';
+
+  @override
+  String get onboarding_aiUseOnDeviceTitle => 'KI auf dem Ger├ñt verwenden';
+
+  @override
+  String get onboarding_severalLanguagesTitle => 'Mehrere Sprachen eingestellt';
+
+  @override
+  String get onboarding_ublockInstallSubtitle =>
+      'Blockiert Werbung, Tracker und sch├ñdliche Websites';
+
+  @override
+  String get onboarding_presetTitle => 'Wie viel soll WebLibre zeigen?';
+
+  @override
+  String get onboarding_presetAverageTitle => 'Einfach surfen';
+
+  @override
+  String get onboarding_presetAverageSubtitle =>
+      'Privat soll es sein, nicht kompliziert';
+
+  @override
+  String get onboarding_presetAveragePoint1 =>
+      'Tabs, Lesezeichen, Verlauf und Leseansicht';
+
+  @override
+  String get onboarding_presetAveragePoint2 =>
+      'Blockiert Werbung und Tracker mit uBlock Origin';
+
+  @override
+  String get onboarding_presetAveragePoint3 =>
+      'Such-K├╝rzel, Erweiterungen und ├£bersetzung von Seiten';
+
+  @override
+  String get onboarding_presetAveragePoint4 =>
+      'Firefox Sync mit deinen anderen Ger├ñten';
+
+  @override
+  String get onboarding_presetAdvancedTitle => 'Bastelmodus';
+
+  @override
+  String get onboarding_presetAdvancedSubtitle =>
+      'Ich richte mir Dinge gern selbst ein';
+
+  @override
+  String get onboarding_presetAdvancedPoint1 =>
+      'Container und isolierte Tabs f├╝r getrennte Cookies und Anmeldungen';
+
+  @override
+  String get onboarding_presetAdvancedPoint2 =>
+      'Tor-, VPN- und Proxy-Verbindungen';
+
+  @override
+  String get onboarding_presetAdvancedPoint3 =>
+      'Tab-Baum, Gesten und Anpassung von Symbolleiste & Men├╝';
+
+  @override
+  String get onboarding_presetAdvancedPoint4 =>
+      'Erweiterte Datenschutz-Einstellungen und Optionen f├╝r KI auf dem Ger├ñt';
+
+  @override
+  String get onboarding_presetExpertTitle => 'Expertenmodus';
+
+  @override
+  String get onboarding_presetExpertSubtitle =>
+      'Ich will jede Einstellung und jede Option';
+
+  @override
+  String get onboarding_presetExpertPoint1 =>
+      'H├ñrtungsgruppen und Fingerprinting-Ausnahmen';
+
+  @override
+  String get onboarding_presetExpertPoint2 =>
+      'Routing je Container, DNS-├£berschreibung und mehrere Tunnel';
+
+  @override
+  String get onboarding_presetExpertPoint3 =>
+      'Optionen f├╝r JavaScript, User-Agent und Zertifikate';
+
+  @override
+  String get onboarding_yourSetupTitle => 'Einrichtung im ├£berblick';
+
+  @override
+  String get onboarding_yourSetupProtections =>
+      'Tracker-Blockierung und verschl├╝sselte Verbindungen';
+
+  @override
+  String get onboarding_yourSetupLocalNetwork =>
+      'Websites fragen vor lokalen Verbindungen';
+
+  @override
+  String onboarding_yourSetupHistoryRetention(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days Tage',
+      one: '1 Tag',
+    );
+    return 'Der Verlauf wird $_temp0 aufbewahrt';
+  }
+
+  @override
+  String get onboarding_yourSetupHiddenForNowTitle => 'Vorerst ausgeblendet';
+
+  @override
+  String get onboarding_presetChangeLater =>
+      'Funktionen lassen sich jederzeit unter Einstellungen > Funktionsauswahl ein- oder ausblenden.';
+
+  @override
+  String get onboarding_presetAdvancedIncludes =>
+      'Alles aus ΓÇ₧Einfach surfenΓÇ£, dazu:';
+
+  @override
+  String get onboarding_presetExpertIncludes =>
+      'Alles aus ΓÇ₧BastelmodusΓÇ£, dazu:';
+
+  @override
+  String get onboarding_goalKeepAccountsApart => 'Konten trennen';
+
+  @override
+  String get onboarding_goalLockBrowser => 'Browser sperren';
+
+  @override
+  String get onboarding_goalSetUpConnections =>
+      'Tor, ein VPN oder einen Proxy einrichten';
+
+  @override
+  String get onboarding_goalSyncDevices =>
+      'Mit anderen Ger├ñten synchronisieren';
+
+  @override
+  String get onboarding_goalKeepAccountsApartSubtitle =>
+      'Mehrere Konten derselben Website nutzen, jedes in einem eigenen Container';
+
+  @override
+  String get onboarding_goalLockBrowserSubtitle =>
+      'Mit ΓÇ₧FertigΓÇ£ Ger├ñtesperre oder Passwort einrichten';
+
+  @override
+  String get onboarding_goalSetUpConnectionsSubtitle =>
+      'Die Verbindungseinstellungen ├╢ffnen sich mit ΓÇ₧FertigΓÇ£. Verbunden wird erst, wenn du eine Verbindung startest.';
+
+  @override
+  String get onboarding_goalSyncDevicesSubtitle =>
+      'Mit ΓÇ₧FertigΓÇ£ bei Firefox Sync anmelden';
+
+  @override
+  String get onboarding_customizeGroupPrivacy => 'Datenschutz & Sicherheit';
+
+  @override
+  String get onboarding_customizeGroupTabs => 'Tabs & Profile';
+
+  @override
+  String get onboarding_customizeGroupConnections => 'Verbindungen';
+
+  @override
+  String get onboarding_customizeGroupLayout => 'Layout & Eingabe';
+
+  @override
+  String get onboarding_customizeSaveFailed =>
+      'Die Auswahl der angezeigten Funktionen konnte nicht gespeichert werden. Erneut versuchen.';
+
+  @override
+  String get onboarding_customizeGroupOther => 'Weitere Funktionen';
+
+  @override
+  String get onboarding_customizeHomeSections => 'Bereiche der Startseite';
+
+  @override
+  String get onboarding_customizeNewTabSections => 'Bereiche des neuen Tabs';
+
+  @override
+  String get onboarding_commitFailed =>
+      'Die Einrichtung konnte nicht gespeichert werden. Bitte erneut versuchen.';
+
+  @override
+  String get onboarding_restoreRequiresEula =>
+      'Zuerst EULA und Datenschutzerkl├ñrung akzeptieren.';
+
+  @override
+  String get onboarding_setupStepFailedUBlock =>
+      'uBlock Origin konnte nicht installiert werden. WebLibre versucht es beim n├ñchsten Start erneut.';
+
+  @override
+  String get onboarding_setupStepFailedFilters =>
+      'Die empfohlenen Filter f├╝r uBlock Origin konnten nicht eingeschaltet werden. WebLibre versucht es beim n├ñchsten Start erneut.';
+
+  @override
+  String get onboarding_setupStepFailedHardening =>
+      'Einige der empfohlenen Sicherheitseinstellungen konnten nicht eingeschaltet werden. WebLibre versucht es beim n├ñchsten Start erneut.';
+
+  @override
+  String get onboarding_searchStepTitle => 'Suche';
+
+  @override
+  String get onboarding_layoutStepTitle => 'Layout';
+
+  @override
+  String get onboarding_layoutCustomizeFurtherTitle => 'Weiter anpassen';
+
+  @override
+  String get onboarding_layoutReassurance =>
+      'Automatisch passt f├╝r die meisten Ger├ñte. All das l├ñsst sich sp├ñter in den Einstellungen ├ñndern.';
+
+  @override
+  String get onboarding_toolbarLayoutSubtitle =>
+      'Schaltfl├ñchen, Men├╝, Tableiste und automatisches Ausblenden';
+
+  @override
+  String get onboarding_yourChoicesTitle => 'Deine Auswahl';
+
+  @override
+  String get onboarding_tabBarPositionTitle => 'Position der Tableiste';
+
+  @override
+  String get onboarding_yourChoicesSuggestionsOff => 'Aus';
+
+  @override
+  String get onboarding_yourSetupOnDoneTitle =>
+      'Wird mit ΓÇ₧FertigΓÇ£ eingeschaltet';
+
+  @override
+  String get onboarding_ublockInstallOnDoneSubtitle =>
+      'Wird mit ΓÇ₧FertigΓÇ£ installiert und fragt nach seinen Berechtigungen';
+
+  @override
+  String get onboarding_privacySecurityRowSubtitle =>
+      'Lokale Verbindungen, Fingerprinting, sicheres DNS und Sprachen f├╝r Websites';
+
+  @override
+  String get onboarding_addToSetupTitle => 'Zur Einrichtung hinzuf├╝gen';
+
+  @override
+  String get onboarding_showHideFeaturesAction =>
+      'Funktionen ein- oder ausblenden';
+
+  @override
+  String get onboarding_showHideFeaturesCaption =>
+      'Solange eine Funktion ausgeblendet ist, gelten ihre Standardeinstellungen. Eigene ├änderungen gelten wieder, sobald sie eingeblendet wird.';
+
+  @override
+  String onboarding_dohCurrentSubtitle(String mode, String provider) {
+    return '$mode mit $provider';
+  }
+
+  @override
+  String get onboarding_presetChangeResetVisibility =>
+      'Eigene Ein- und Ausblendungen wurden durch die Vorgaben dieser Auswahl ersetzt.';
+
+  @override
+  String onboarding_presetChangeStopsApplyingTitle(String preset) {
+    return 'Zu ΓÇ₧$presetΓÇ£ wechseln?';
+  }
+
+  @override
+  String get onboarding_presetChangeStopsApplyingContent =>
+      'Diese Auswahl blendet Funktionen aus, deren Einstellungen ge├ñndert wurden. Solange sie ausgeblendet sind, gelten f├╝r diese Einstellungen die Standardwerte. Die ├änderungen bleiben erhalten und gelten wieder, sobald die Funktionen eingeblendet werden.';
+
+  @override
+  String get onboarding_presetChangeConfirm => 'Wechseln';
 
   @override
   String get proxy_actionChange => 'Ändern';
@@ -6577,6 +6822,11 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get proxy_protocolFixedHelper =>
       'Das Protokoll kann nach dem Erstellen eines Profils nicht mehr geändert werden.';
+
+  @override
+  String proxy_protocolFromImportHelper(String featureName) {
+    return 'Durch den Import festgelegt. Zum Eingeben einer Verbindung von Hand „$featureName“ unter Einstellungen > Funktionsauswahl anzeigen.';
+  }
 
   @override
   String get proxy_customOutboundLabel => 'Eigenes Outbound';
@@ -7652,7 +7902,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_unmountGeckoViewSubtitle =>
-      'Die Web-Engine aus dem Speicher entfernen, solange eine Vollbildansicht (etwa Einstellungen, Tabs oder Suche) geöffnet ist, und bei der Rückkehr neu aufbauen. Das gibt in der Zwischenzeit Ressourcen frei. Die Rückkehr zur Seite erfordert das erneute Anbinden der Engine und kann ein Flackern oder Neuladen verursachen – es wird also Leistung gegen Speicher getauscht, statt ein Problem zu beheben. Unter Android 12 und älter wird die Engine immer entladen.';
+      'Die Web-Engine aus dem Speicher entfernen, solange eine Vollbildansicht (etwa Einstellungen, Tabs oder Suche) ge├╢ffnet ist, und bei der R├╝ckkehr neu aufbauen. Das gibt in der Zwischenzeit Ressourcen frei. Die R├╝ckkehr zur Seite erfordert das erneute Anbinden der Engine und kann ein Flackern oder Neuladen verursachen ΓÇô es wird also Leistung gegen Speicher getauscht, statt ein Problem zu beheben. Unter Android 12 und ├ñlter wird die Engine immer entladen.';
 
   @override
   String get settings_iconCacheTitle => 'Symbol-Cache';
@@ -7661,13 +7911,13 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settings_iconCacheKeywords => 'Favicons, Cache, Symbole';
 
   @override
-  String get settings_iconCacheSubtitle => 'Gespeicherte Favicons';
+  String get settings_iconCacheSubtitle => 'Gespeicherte Website-Symbole';
 
   @override
-  String get settings_iconCacheSizeLabel => 'Größe';
+  String get settings_iconCacheSizeLabel => 'Gr├╢├ƒe';
 
   @override
-  String get settings_clearingAction => 'Wird gelöscht';
+  String get settings_clearingAction => 'Wird gel├╢scht';
 
   @override
   String get settings_mlDownloadsTitle => 'ML-Downloads';
@@ -7680,19 +7930,19 @@ class AppLocalizationsDe extends AppLocalizations {
       'Heruntergeladene KI-Modelle und Laufzeitdateien';
 
   @override
-  String get settings_mlDownloadsClearDialogTitle => 'ML-Downloads löschen?';
+  String get settings_mlDownloadsClearDialogTitle => 'ML-Downloads l├╢schen?';
 
   @override
   String get settings_mlDownloadsClearDialogContent =>
-      'Dadurch werden heruntergeladene KI-Modelle und ONNX-Laufzeitdateien dieses Profils gelöscht. Sie werden bei Bedarf erneut heruntergeladen. Vor einem erneuten Versuch der ML-Funktionen Cat Browser neu starten.';
+      'Dadurch werden heruntergeladene KI-Modelle und ONNX-Laufzeitdateien dieses Profils gel├╢scht. Sie werden bei Bedarf erneut heruntergeladen. Vor einem erneuten Versuch der ML-Funktionen Cat Browser neu starten.';
 
   @override
   String get settings_mlDownloadsClearedMessage =>
-      'ML-Downloads gelöscht. Vor einem erneuten Versuch Cat Browser neu starten.';
+      'ML-Downloads gel├╢scht. Vor einem erneuten Versuch Cat Browser neu starten.';
 
   @override
   String settings_mlDownloadsClearFailedMessage(String error) {
-    return 'ML-Downloads konnten nicht gelöscht werden: $error';
+    return 'ML-Downloads konnten nicht gel├╢scht werden: $error';
   }
 
   @override
@@ -7703,7 +7953,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_errorLogsSubtitle =>
-      'Protokolle für Fehlerberichte ansehen und kopieren';
+      'Protokolle f├╝r Fehlerberichte ansehen und kopieren';
 
   @override
   String get settings_dartVmTitle => 'Dart VM';
@@ -7721,15 +7971,15 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settings_serviceUrlCopiedMessage => 'Service-URL kopiert';
 
   @override
-  String get settings_resetUiTitle => 'Oberfläche zurücksetzen';
+  String get settings_resetUiTitle => 'Oberfl├ñche zur├╝cksetzen';
 
   @override
   String get settings_resetUiKeywords =>
-      'Oberfläche aktualisieren, UI neu laden';
+      'Oberfl├ñche aktualisieren, UI neu laden';
 
   @override
   String get settings_resetUiSubtitle =>
-      'Die gesamte Browseroberfläche neu aufbauen';
+      'Die gesamte Browseroberfl├ñche neu aufbauen';
 
   @override
   String get settings_addonCollectionTitle => 'Eigene Erweiterungssammlung';
@@ -7772,27 +8022,27 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_addonCollectionSaveRestartSubtitle =>
-      'Die eigene Sammlung übernehmen und den Browser neu starten';
+      'Die eigene Sammlung ├╝bernehmen und den Browser neu starten';
 
   @override
   String get settings_bangSettingsTitle => 'Bang-Einstellungen';
 
   @override
-  String get settings_bangSettingsKeywords => 'Kürzel, Bangs, Abkürzungen';
+  String get settings_bangSettingsKeywords => 'K├╝rzel, Bangs, Abk├╝rzungen';
 
   @override
   String get settings_bangSettingsSubtitle =>
-      'Bang-Kürzel, ihre Nutzung und Quellen sowie Synchronisierung bei Bedarf.';
+      'Bang-K├╝rzel, ihre Nutzung und Quellen sowie Synchronisierung bei Bedarf.';
 
   @override
-  String get settings_bangFrequenciesTitle => 'Bang-Häufigkeiten';
+  String get settings_bangFrequenciesTitle => 'Bang-H├ñufigkeiten';
 
   @override
   String get settings_bangFrequenciesKeywords => 'Nutzung, Empfehlungen';
 
   @override
   String get settings_bangFrequenciesSubtitle =>
-      'Erfasste Nutzung für Bang-Empfehlungen';
+      'Erfasste Nutzung f├╝r Bang-Empfehlungen';
 
   @override
   String get settings_browsingTitle => 'Surfen';
@@ -7802,14 +8052,14 @@ class AppLocalizationsDe extends AppLocalizations {
       'Tabs, Navigation, App-Links und Small-Web-Verhalten.';
 
   @override
-  String get settings_newTabDefaultTitle => 'Standard für neue Tabs';
+  String get settings_newTabDefaultTitle => 'Standard f├╝r neue Tabs';
 
   @override
   String get settings_newTabDefaultKeywords => 'normal, privat, isoliert';
 
   @override
   String get settings_newTabDefaultSubtitle =>
-      'Die Standardart für manuell erstellte Tabs festlegen';
+      'Die Standardart f├╝r manuell erstellte Tabs festlegen';
 
   @override
   String get settings_tabTypeRegularLabel => 'Normal';
@@ -7821,14 +8071,14 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settings_tabTypeIsolatedLabel => 'Isoliert';
 
   @override
-  String get settings_smallWebTabDefaultTitle => 'Standard-Tab für Small Web';
+  String get settings_smallWebTabDefaultTitle => 'Standard-Tab f├╝r Small Web';
 
   @override
   String get settings_smallWebTabDefaultKeywords => 'normal, privat, isoliert';
 
   @override
   String get settings_smallWebTabDefaultSubtitle =>
-      'Die Tab-Art festlegen, die beim Öffnen von Small Web verwendet wird';
+      'Die Tab-Art festlegen, die beim ├ûffnen von Small Web verwendet wird';
 
   @override
   String get settings_externalLinkHandlingTitle => 'Umgang mit externen Links';
@@ -7839,60 +8089,60 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_externalLinkHandlingSubtitle =>
-      'Festlegen, wie externe Links in Cat Browser geöffnet werden';
+      'Festlegen, wie externe Links in Cat Browser ge├╢ffnet werden';
 
   @override
   String get settings_promptOptionLabel => 'Nachfragen';
 
   @override
   String get settings_externalLinkPromptSubtitle =>
-      'Nachfragen, wie externe Links geöffnet werden sollen';
+      'Nachfragen, wie externe Links ge├╢ffnet werden sollen';
 
   @override
   String get settings_externalLinkRegularSubtitle =>
-      'Externe Links in einem normalen Tab öffnen';
+      'Externe Links in einem normalen Tab ├╢ffnen';
 
   @override
   String get settings_externalLinkPrivateSubtitle =>
-      'Externe Links in einem privaten Tab öffnen';
+      'Externe Links in einem privaten Tab ├╢ffnen';
 
   @override
   String get settings_externalLinkIsolatedSubtitle =>
-      'Externe Links in einem isolierten Tab öffnen';
+      'Externe Links in einem isolierten Tab ├╢ffnen';
 
   @override
-  String get settings_bookmarkOpenBehaviorTitle => 'Öffnen von Lesezeichen';
+  String get settings_bookmarkOpenBehaviorTitle => '├ûffnen von Lesezeichen';
 
   @override
   String get settings_bookmarkOpenBehaviorKeywords =>
-      'Lesezeichen, öffnen, Custom Tab, isoliert';
+      'Lesezeichen, ├╢ffnen, Custom Tab, isoliert';
 
   @override
   String get settings_bookmarkOpenBehaviorSubtitle =>
-      'Festlegen, wie ein Lesezeichen beim Antippen geöffnet wird';
+      'Festlegen, wie ein Lesezeichen beim Antippen ge├╢ffnet wird';
 
   @override
   String get settings_bookmarkOpenPromptSubtitle =>
-      'Nachfragen, wie das Lesezeichen geöffnet werden soll';
+      'Nachfragen, wie das Lesezeichen ge├╢ffnet werden soll';
 
   @override
   String get settings_bookmarkOpenRegularSubtitle =>
-      'Das Lesezeichen in einem normalen Tab öffnen';
+      'Das Lesezeichen in einem normalen Tab ├╢ffnen';
 
   @override
   String get settings_bookmarkOpenPrivateSubtitle =>
-      'Das Lesezeichen in einem privaten Tab öffnen';
+      'Das Lesezeichen in einem privaten Tab ├╢ffnen';
 
   @override
   String get settings_customTabOptionLabel => 'Custom Tab';
 
   @override
   String get settings_bookmarkOpenCustomTabSubtitle =>
-      'Das Lesezeichen in einem schlanken Custom Tab öffnen';
+      'Das Lesezeichen in einem schlanken Custom Tab ├╢ffnen';
 
   @override
   String get settings_bookmarkOpenIsolatedSubtitle =>
-      'Das Lesezeichen in einem isolierten Tab öffnen';
+      'Das Lesezeichen in einem isolierten Tab ├╢ffnen';
 
   @override
   String get settings_tabListDirectionTitle => 'Reihenfolge der Tab-Liste';
@@ -7908,7 +8158,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settings_directionNewestFirstLabel => 'Neueste zuerst';
 
   @override
-  String get settings_directionOldestFirstLabel => 'Älteste zuerst';
+  String get settings_directionOldestFirstLabel => '├älteste zuerst';
 
   @override
   String get settings_tabBarDirectionTitle => 'Reihenfolge der Tableiste';
@@ -7925,14 +8175,14 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_childTabPlacementKeywords =>
-      'Unter-Tabs, neuer Tab, Position, Reihenfolge, Listenende, nach übergeordnetem Tab';
+      'Unter-Tabs, neuer Tab, Position, Reihenfolge, Listenende, nach ├╝bergeordnetem Tab';
 
   @override
   String get settings_childTabPlacementSubtitle =>
-      'Festlegen, ob ein aus einem anderen Tab geöffneter Tab direkt nach diesem oder am Ende eingefügt wird. Der öffnende Tab wird in beiden Fällen gemerkt, die Baumansicht ist also nicht betroffen.';
+      'Festlegen, ob ein aus einem anderen Tab ge├╢ffneter Tab direkt nach diesem oder am Ende eingef├╝gt wird. Der ├╢ffnende Tab wird in beiden F├ñllen gemerkt, die Baumansicht ist also nicht betroffen.';
 
   @override
-  String get settings_childTabAfterOpenerLabel => 'Nach dem öffnenden Tab';
+  String get settings_childTabAfterOpenerLabel => 'Nach dem ├╢ffnenden Tab';
 
   @override
   String get settings_childTabAtEndLabel => 'Am Ende';
@@ -7945,28 +8195,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_createChildTabsSubtitle =>
-      'Eine Schaltfläche zum Erstellen eines Unter-Tabs unter dem aktuellen Tab anzeigen (nur Baumansicht)';
-
-  @override
-  String get settings_showContainerUiTitle => 'Container-Oberfläche anzeigen';
-
-  @override
-  String get settings_showContainerUiKeywords => 'Container';
-
-  @override
-  String get settings_showContainerUiSubtitle =>
-      'Container-Auswahl, -Menüs und -Verwaltung anzeigen';
-
-  @override
-  String get settings_showIsolatedTabUiTitle =>
-      'Oberfläche für isolierte Tabs anzeigen';
-
-  @override
-  String get settings_showIsolatedTabUiKeywords => 'isolierte Tabs';
-
-  @override
-  String get settings_showIsolatedTabUiSubtitle =>
-      'Optionen zum Erstellen isolierter Tabs in der Oberfläche anzeigen';
+      'Eine Schaltfl├ñche zum Erstellen eines Unter-Tabs unter dem aktuellen Tab anzeigen (nur Baumansicht)';
 
   @override
   String get settings_backgroundTabBehaviorTitle =>
@@ -7978,7 +8207,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_backgroundTabBehaviorSubtitle =>
-      'Gilt, wenn eine Aktion einen neuen Tab im Hintergrund öffnet, z. B. „In neuem Tab öffnen“ oder das Klonen eines Tabs';
+      'Gilt, wenn eine Aktion einen neuen Tab im Hintergrund ├╢ffnet, z. B. ΓÇ₧In neuem Tab ├╢ffnenΓÇ£ oder das Klonen eines Tabs';
 
   @override
   String get settings_backgroundTabPromptTitle =>
@@ -7986,14 +8215,14 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_backgroundTabPromptSubtitle =>
-      'Den aktuellen Tab behalten und einen Hinweis mit der Aktion „Wechseln“ anzeigen';
+      'Den aktuellen Tab behalten und einen Hinweis mit der Aktion ΓÇ₧WechselnΓÇ£ anzeigen';
 
   @override
   String get settings_backgroundTabSwitchTitle => 'Sofort wechseln';
 
   @override
   String get settings_backgroundTabSwitchSubtitle =>
-      'Direkt zum neu geöffneten Tab springen';
+      'Direkt zum neu ge├╢ffneten Tab springen';
 
   @override
   String get settings_tabBarSwipesTitle => 'Wischgesten auf der Tableiste';
@@ -8004,100 +8233,100 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_tabBarSwipesSubtitle =>
-      'Unter „Gesten“ festlegen, was jede Wischgeste bewirkt';
+      'Unter ΓÇ₧GestenΓÇ£ festlegen, was jede Wischgeste bewirkt';
 
   @override
-  String get settings_sequentialTabNavigationTitle => 'Tab-für-Tab-Navigation';
+  String get settings_sequentialTabNavigationTitle => 'Tab-f├╝r-Tab-Navigation';
 
   @override
   String get settings_sequentialTabNavigationKeywords =>
-      'Gesten, wischen, nächster Tab, vorheriger Tab, Container, Schleife, umbrechen';
+      'Gesten, wischen, n├ñchster Tab, vorheriger Tab, Container, Schleife, umbrechen';
 
   @override
   String get settings_sequentialTabNavigationSubtitle =>
-      'Gilt für das Wischen auf der Tableiste und die Gesten für nächsten/vorherigen Tab';
+      'Gilt f├╝r das Wischen auf der Tableiste und die Gesten f├╝r n├ñchsten/vorherigen Tab';
 
   @override
   String get settings_continueIntoNextContainerTitle =>
-      'In nächsten Container weitergehen';
+      'In n├ñchsten Container weitergehen';
 
   @override
   String get settings_continueIntoNextContainerSubtitle =>
-      'Über den ersten oder letzten Tab eines Containers hinaus geht es im benachbarten Container weiter. Ausgeschaltet bleibt die Navigation im aktuellen Container.';
+      '├£ber den ersten oder letzten Tab eines Containers hinaus geht es im benachbarten Container weiter. Ausgeschaltet bleibt die Navigation im aktuellen Container.';
 
   @override
   String get settings_loopAroundTitle => 'Im Kreis';
 
   @override
   String get settings_loopAroundSubtitle =>
-      'Über den letzten Tab hinaus geht es beim ersten weiter und umgekehrt.';
+      '├£ber den letzten Tab hinaus geht es beim ersten weiter und umgekehrt.';
 
   @override
-  String get settings_openLinksInAppsTitle => 'Links in Apps öffnen';
+  String get settings_openLinksInAppsTitle => 'Links in Apps ├╢ffnen';
 
   @override
   String get settings_openLinksInAppsKeywords => 'App-Links, externe Apps';
 
   @override
   String get settings_openLinksInAppsSubtitle =>
-      'Festlegen, wie Links behandelt werden, die sich in anderen Apps öffnen lassen';
+      'Festlegen, wie Links behandelt werden, die sich in anderen Apps ├╢ffnen lassen';
 
   @override
   String get settings_appLinksAlwaysTitle => 'Immer';
 
   @override
   String get settings_appLinksAlwaysSubtitle =>
-      'Links immer ohne Nachfrage in ihren nativen Apps öffnen';
+      'Links immer ohne Nachfrage in ihren nativen Apps ├╢ffnen';
 
   @override
-  String get settings_appLinksAskTitle => 'Vor dem Öffnen fragen';
+  String get settings_appLinksAskTitle => 'Vor dem ├ûffnen fragen';
 
   @override
   String get settings_appLinksAskSubtitle =>
-      'Vor dem Öffnen von Links in Apps nachfragen';
+      'Vor dem ├ûffnen von Links in Apps nachfragen';
 
   @override
   String get settings_appLinksNeverTitle => 'Nie';
 
   @override
   String get settings_appLinksNeverSubtitle =>
-      'Links immer im Browser statt in Apps öffnen';
+      'Links immer im Browser statt in Apps ├╢ffnen';
 
   @override
   String get settings_waitForAnswerTitle => 'Auf Antwort warten';
 
   @override
   String get settings_waitForAnswerSubtitle =>
-      'Die Seite während der Nachfrage anhalten, statt sie im Hintergrund zu laden. Die Website wird nur kontaktiert, wenn du im Browser bleibst.';
+      'Die Seite w├ñhrend der Nachfrage anhalten, statt sie im Hintergrund zu laden. Die Website wird nur kontaktiert, wenn du im Browser bleibst.';
 
   @override
   String get settings_offerAppStoreFallbackTitle =>
-      'App-Store als Ausweichlösung anbieten';
+      'App-Store als Ausweichl├╢sung anbieten';
 
   @override
   String get settings_offerAppStoreFallbackSubtitle =>
-      'Verweist ein Link auf eine nicht installierte App und gibt es keine Web-Alternative, das Öffnen des App-Stores anbieten';
+      'Verweist ein Link auf eine nicht installierte App und gibt es keine Web-Alternative, das ├ûffnen des App-Stores anbieten';
 
   @override
   String get settings_allowLoginAppCallbacksTitle =>
-      'Anmelde-Rückrufe an Apps erlauben';
+      'Anmelde-R├╝ckrufe an Apps erlauben';
 
   @override
   String get settings_allowLoginAppCallbacksSubtitle =>
-      'Apps, die einen Custom Tab geöffnet haben, ihren Anmelde-Rückruf erhalten lassen – auch wenn Links nie in Apps geöffnet werden sollen';
+      'Apps, die einen Custom Tab ge├╢ffnet haben, ihren Anmelde-R├╝ckruf erhalten lassen ΓÇô auch wenn Links nie in Apps ge├╢ffnet werden sollen';
 
   @override
   String get settings_appLinkContainerFallbackName => 'Container';
 
   @override
-  String get settings_appLinkOverrideModeAlways => 'Immer in Apps öffnen';
+  String get settings_appLinkOverrideModeAlways => 'Immer in Apps ├╢ffnen';
 
   @override
-  String get settings_appLinkOverrideModeAsk => 'Fragt vor dem Öffnen';
+  String get settings_appLinkOverrideModeAsk => 'Fragt vor dem ├ûffnen';
 
   @override
   String get settings_appLinkOverrideModeNever =>
-      'Behält Links immer im Browser';
+      'Beh├ñlt Links immer im Browser';
 
   @override
   String get settings_appLinkContainerOverridesHeader =>
@@ -8111,7 +8340,7 @@ class AppLocalizationsDe extends AppLocalizations {
       other: '$count gespeicherte Regeln',
       one: '1 gespeicherte Regel',
     );
-    return '$mode · $_temp0';
+    return '$mode ┬╖ $_temp0';
   }
 
   @override
@@ -8119,7 +8348,7 @@ class AppLocalizationsDe extends AppLocalizations {
       'Gespeicherte Website-Regeln';
 
   @override
-  String get settings_appLinkRuleAlwaysOpenLabel => 'Immer in der App öffnen';
+  String get settings_appLinkRuleAlwaysOpenLabel => 'Immer in der App ├╢ffnen';
 
   @override
   String get settings_appLinkRuleAlwaysKeepLabel => 'Immer im Browser behalten';
@@ -8137,7 +8366,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_globalDesktopModeSubtitle =>
-      'Neue Tabs standardmäßig im Desktop-Modus öffnen. Über das Seitenmenü lässt sich der Desktop-Modus weiterhin pro Tab umschalten.';
+      'Neue Tabs standardm├ñ├ƒig im Desktop-Modus ├╢ffnen. ├£ber das Seitenmen├╝ l├ñsst sich der Desktop-Modus weiterhin pro Tab umschalten.';
 
   @override
   String get settings_desktopModeSitesTitle => 'Websites im Desktop-Modus';
@@ -8169,7 +8398,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_pullToRefreshDistanceSubtitle =>
-      'Wie weit nach unten gezogen werden muss, bis die Seite neu lädt, im Verhältnis zum Standard';
+      'Wie weit nach unten gezogen werden muss, bis die Seite neu l├ñdt, im Verh├ñltnis zum Standard';
 
   @override
   String get settings_customTabsTitle => 'Custom Tabs';
@@ -8180,17 +8409,18 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_customTabsSubtitle =>
-      'Andere Apps Links in einem schlanken In-App-Tab öffnen lassen. Ausgeschaltet öffnen sich diese Links und geteilte URLs als normale Tabs im Hauptbrowser.';
+      'Andere Apps Links in einem schlanken In-App-Tab ├╢ffnen lassen. Ausgeschaltet ├╢ffnen sich diese Links und geteilte URLs als normale Tabs im Hauptbrowser.';
 
   @override
-  String get settings_doubleBackCloseTabTitle => 'Zweimal Zurück schließt Tab';
+  String get settings_doubleBackCloseTabTitle =>
+      'Zweimal Zur├╝ck schlie├ƒt Tab';
 
   @override
-  String get settings_doubleBackCloseTabKeywords => 'Zurück-Taste, Zurück';
+  String get settings_doubleBackCloseTabKeywords => 'Zur├╝ck-Taste, Zur├╝ck';
 
   @override
   String get settings_doubleBackCloseTabSubtitle =>
-      'Aktiviert schließt zweimaliges Drücken der Zurück-Taste den Tab. Deaktiviert navigiert die Zurück-Taste nur durch den Seitenverlauf.';
+      'Aktiviert schlie├ƒt zweimaliges Dr├╝cken der Zur├╝ck-Taste den Tab. Deaktiviert navigiert die Zur├╝ck-Taste nur durch den Seitenverlauf.';
 
   @override
   String get settings_allowNonManifestPwaInstallTitle =>
@@ -8201,7 +8431,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_allowNonManifestPwaInstallSubtitle =>
-      'Installieren von Websites ohne PWA-Manifest als eigenständige Apps erlauben';
+      'Jede Website als App installieren lassen, auch solche, die nicht daf├╝r gemacht sind';
 
   @override
   String get settings_urlCleanerTitle => 'URL-Bereinigung';
@@ -8211,10 +8441,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_urlCleanerSubtitle =>
-      'Regeln zum Entfernen von Tracking und Katalogaktualisierungen';
+      'Tracking-Teile aus Links entfernen';
 
   @override
-  String get settings_unshortenerTitle => 'Kurzlink-Auflösung';
+  String get settings_unshortenerTitle => 'Kurzlink-Aufl├╢sung';
 
   @override
   String get settings_unshortenerKeywords =>
@@ -8222,22 +8452,18 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_unshortenerSubtitle =>
-      'Auflösung von Kurzlinks und API-Token';
+      'Aufl├╢sung von Kurzlinks und API-Token';
 
   @override
   String get settings_contextualToolbarSearchHint =>
-      'Schaltflächen der Symbolleiste suchen';
+      'Schaltfl├ñchen der Symbolleiste suchen';
 
   @override
   String get settings_contextualToolbarTitleDefault => 'Symbolleiste anpassen';
 
   @override
   String get settings_contextualToolbarTitleQuickSwitcher =>
-      'Schaltflächen des Wechslers anpassen';
-
-  @override
-  String get settings_contextualToolbarResetToDefaults =>
-      'Auf Standard zurücksetzen';
+      'Schaltfl├ñchen des Wechslers anpassen';
 
   @override
   String get settings_contextualToolbarEnabledSection => 'Aktiviert';
@@ -8247,20 +8473,20 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_contextualToolbarNoEnabledButtons =>
-      'Keine Schaltflächen aktiviert. Unten eine Schaltfläche einschalten, um sie zu aktivieren.';
+      'Keine Schaltfl├ñchen aktiviert. Unten eine Schaltfl├ñche einschalten, um sie zu aktivieren.';
 
   @override
   String settings_contextualToolbarNoEnabledButtonsMatch(String query) {
-    return 'Keine aktivierten Schaltflächen passen zu „$query“.';
+    return 'Keine aktivierten Schaltfl├ñchen passen zu ΓÇ₧$queryΓÇ£.';
   }
 
   @override
   String get settings_contextualToolbarAllButtonsEnabled =>
-      'Alle Schaltflächen sind aktiviert.';
+      'Alle Schaltfl├ñchen sind aktiviert.';
 
   @override
   String settings_contextualToolbarNoDisabledButtonsMatch(String query) {
-    return 'Keine deaktivierten Schaltflächen passen zu „$query“.';
+    return 'Keine deaktivierten Schaltfl├ñchen passen zu ΓÇ₧$queryΓÇ£.';
   }
 
   @override
@@ -8268,32 +8494,32 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_longPressNoneDescription =>
-      'Standard für diese Schaltfläche: Gedrückthalten bewirkt nichts weiter';
+      'Standard f├╝r diese Schaltfl├ñche: Gedr├╝ckthalten bewirkt nichts weiter';
 
   @override
   String get settings_longPressDefaultDescription =>
-      'Standard für diese Schaltfläche';
+      'Standard f├╝r diese Schaltfl├ñche';
 
   @override
-  String get settings_longPressTitle => 'Langes Drücken';
+  String get settings_longPressTitle => 'Langes Dr├╝cken';
 
   @override
   String get settings_longPressDescription =>
-      'Was das Gedrückthalten der Schaltfläche bewirkt';
+      'Was das Gedr├╝ckthalten der Schaltfl├ñche bewirkt';
 
   @override
   String get settings_fallbackGreyOutLabel => 'Ausgrauen';
 
   @override
   String get settings_fallbackGreyOutDescription =>
-      'Diese Schaltfläche ausgegraut stehen lassen';
+      'Diese Schaltfl├ñche ausgegraut stehen lassen';
 
   @override
-  String get settings_fallbackIfUnavailableTitle => 'Wenn nicht verfügbar';
+  String get settings_fallbackIfUnavailableTitle => 'Wenn nicht verf├╝gbar';
 
   @override
   String get settings_fallbackIfUnavailableDescription =>
-      'Wird stattdessen angezeigt, solange diese Schaltfläche nicht nutzbar ist';
+      'Wird stattdessen angezeigt, solange diese Schaltfl├ñche nicht nutzbar ist';
 
   @override
   String get settings_customTrackingProtectionTitle =>
@@ -8301,14 +8527,15 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_customTrackingProtectionSubtitle =>
-      'Eigene Einstellungen für Cookies, Inhalte, Tracker und Fingerprinting.';
+      'Eigene Einstellungen f├╝r Cookies, Inhalte, Tracker und Fingerprinting.';
 
   @override
-  String get settings_fixMajorIssuesTitle => 'Größere Website-Probleme beheben';
+  String get settings_fixMajorIssuesTitle =>
+      'Gr├╢├ƒere Website-Probleme beheben';
 
   @override
   String get settings_fixMajorIssuesSubtitle =>
-      'Ausnahmen anwenden, die nötig sind, um größere Fehlfunktionen von Websites zu vermeiden (empfohlen)';
+      'Ausnahmen anwenden, die n├╢tig sind, um gr├╢├ƒere Fehlfunktionen von Websites zu vermeiden (empfohlen)';
 
   @override
   String get settings_fixMinorIssuesTitle =>
@@ -8316,7 +8543,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_fixMinorIssuesSubtitle =>
-      'Ausnahmen anwenden, um kleinere Probleme zu beheben und Komfortfunktionen zu ermöglichen';
+      'Ausnahmen anwenden, um kleinere Probleme zu beheben und Komfortfunktionen zu erm├╢glichen';
 
   @override
   String get settings_blockCookiesTitle => 'Cookies blockieren';
@@ -8330,11 +8557,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_cookiePolicyTotalProtectionLabel =>
-      'Vollständiger Cookie-Schutz (empfohlen)';
+      'Vollst├ñndiger Cookie-Schutz (empfohlen)';
 
   @override
   String get settings_cookiePolicyCrossSiteTrackersLabel =>
-      'Websiteübergreifende Tracker und Social-Media-Tracker';
+      'Website├╝bergreifende Tracker und Social-Media-Tracker';
 
   @override
   String get settings_cookiePolicyUnvisitedLabel => 'Nicht besuchte Websites';
@@ -8345,7 +8572,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_cookiePolicyAllCookiesLabel =>
-      'Alle Cookies (kann Websites beeinträchtigen)';
+      'Alle Cookies (kann Websites beeintr├ñchtigen)';
 
   @override
   String get settings_blockTrackingContentTitle =>
@@ -8377,28 +8604,28 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_cryptominersSubtitle =>
-      'Skripte blockieren, die das Gerät zum Schürfen von Kryptowährung nutzen';
+      'Skripte blockieren, die das Ger├ñt zum Sch├╝rfen von Kryptow├ñhrung nutzen';
 
   @override
   String get settings_knownFingerprintersTitle => 'Bekannte Fingerprinter';
 
   @override
   String get settings_knownFingerprintersSubtitle =>
-      'Skripte blockieren, die Informationen sammeln, um das Gerät eindeutig zu identifizieren';
+      'Skripte blockieren, die Informationen sammeln, um das Ger├ñt eindeutig zu identifizieren';
 
   @override
   String get settings_redirectTrackersTitle => 'Weiterleitungs-Tracker';
 
   @override
   String get settings_redirectTrackersSubtitle =>
-      'Tracker blockieren, die Daten über zwischengeschaltete URL-Weiterleitungen sammeln';
+      'Tracker blockieren, die Daten ├╝ber zwischengeschaltete URL-Weiterleitungen sammeln';
 
   @override
   String get settings_suspectedFingerprintersTitle => 'Vermutete Fingerprinter';
 
   @override
   String get settings_suspectedFingerprintersSubtitle =>
-      'Weitere Fingerprinting-Techniken blockieren, die zur Verfolgung genutzt werden könnten';
+      'Weitere Fingerprinting-Techniken blockieren, die zur Verfolgung genutzt werden k├╢nnten';
 
   @override
   String get settings_desktopModeSitesScreenTitle =>
@@ -8406,18 +8633,18 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_desktopModeSitesScreenDescription =>
-      'Diese Websites laden abweichend vom Standard immer im Desktop-Modus. Subdomains sind eingeschlossen („example.com“ umfasst z. B. auch „m.example.com“).';
+      'Diese Websites laden abweichend vom Standard immer im Desktop-Modus. Subdomains sind eingeschlossen (ΓÇ₧example.comΓÇ£ umfasst z. B. auch ΓÇ₧m.example.comΓÇ£).';
 
   @override
   String get settings_desktopModeSitesEmptyLabel =>
-      'Keine Websites hinzugefügt.';
+      'Keine Websites hinzugef├╝gt.';
 
   @override
-  String get settings_dohTitle => 'DNS über HTTPS';
+  String get settings_dohTitle => 'Sicheres DNS';
 
   @override
   String get settings_dohSubtitle =>
-      'Schutzstufe für verschlüsseltes DNS und Auswahl des Resolvers.';
+      'Wie Website-Abfragen verschl├╝sselt werden und von wem';
 
   @override
   String get settings_errorLogsCopiedMessage => 'Protokolle kopiert';
@@ -8429,7 +8656,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settings_errorLogsCopyTooltip => 'Protokolle kopieren';
 
   @override
-  String get settings_errorLogsEmptyLabel => 'Keine Protokolle verfügbar';
+  String get settings_errorLogsEmptyLabel => 'Keine Protokolle verf├╝gbar';
 
   @override
   String get settings_experimentalTitle => 'Experimentell';
@@ -8448,7 +8675,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_isolatedContentProcessSubtitle =>
-      'Webinhalte in einem isolierten Prozess ausführen. Erfordert einen Neustart der App.';
+      'Webinhalte in einem isolierten Prozess ausf├╝hren. Erfordert einen Neustart der App.';
 
   @override
   String get settings_appZygoteProcessTitle => 'App-Zygote-Prozess';
@@ -8476,7 +8703,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_manageExtensionsSubtitle =>
-      'Installierte, deaktivierte, verfügbare und nicht unterstützte Erweiterungen durchsuchen';
+      'Installierte, deaktivierte, verf├╝gbare und nicht unterst├╝tzte Erweiterungen durchsuchen';
 
   @override
   String get settings_customCollectionTitle => 'Eigene Sammlung';
@@ -8496,7 +8723,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_automaticUpdatesSubtitle =>
-      'Alle 12 Stunden automatisch nach Updates für Erweiterungen suchen und sie installieren';
+      'Alle 12 Stunden automatisch nach Updates f├╝r Erweiterungen suchen und sie installieren';
 
   @override
   String settings_failedToLoadMessage(String error) {
@@ -8512,11 +8739,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_allowUnsignedExtensionsSubtitle =>
-      'Nicht signierte Erweiterungen wurden nicht von Mozilla geprüft';
+      'Nicht signierte Erweiterungen wurden nicht von Mozilla gepr├╝ft';
 
   @override
   String get settings_allowUnsignedWarningText =>
-      'Nicht signierte Erweiterungen nur aus vertrauenswürdigen Quellen installieren. Sie können Schadcode enthalten.';
+      'Nicht signierte Erweiterungen nur aus vertrauensw├╝rdigen Quellen installieren. Sie k├╢nnen Schadcode enthalten.';
 
   @override
   String get settings_allowUnsignedConfirmDialogTitle =>
@@ -8524,15 +8751,15 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_allowUnsignedConfirmWarningBold =>
-      'Warnung: Dies schwächt die Sicherheit des Browsers erheblich.';
+      'Warnung: Dies schw├ñcht die Sicherheit des Browsers erheblich.';
 
   @override
   String get settings_allowUnsignedConfirmBody =>
-      'Nicht signierte Erweiterungen umgehen die Sicherheitsprüfung von Mozilla. Schädliche Erweiterungen können:\n\n• Alles lesen und ändern, was auf einer beliebigen Website angezeigt wird\n• Passwörter, Bankdaten und persönliche Daten stehlen\n• Die Browseraktivität unbemerkt überwachen\n• Weitere Schadsoftware auf dem Gerät installieren';
+      'Nicht signierte Erweiterungen umgehen die Sicherheitspr├╝fung von Mozilla. Sch├ñdliche Erweiterungen k├╢nnen:\n\nΓÇó Alles lesen und ├ñndern, was auf einer beliebigen Website angezeigt wird\nΓÇó Passw├╢rter, Bankdaten und pers├╢nliche Daten stehlen\nΓÇó Die Browseraktivit├ñt unbemerkt ├╝berwachen\nΓÇó Weitere Schadsoftware auf dem Ger├ñt installieren';
 
   @override
   String get settings_allowUnsignedConfirmFooter =>
-      'Nur aktivieren, wenn eine selbst entwickelte Erweiterung installiert werden soll oder der Quelle uneingeschränkt vertraut wird.';
+      'Nur aktivieren, wenn eine selbst entwickelte Erweiterung installiert werden soll oder der Quelle uneingeschr├ñnkt vertraut wird.';
 
   @override
   String get settings_allowAction => 'Erlauben';
@@ -8547,7 +8774,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_fingerprintProtectionKeywords =>
-      'Datenschutz, Fingerabdruck, Privatsphäre';
+      'Datenschutz, Fingerabdruck, Privatsph├ñre, Ger├ñt schwerer wiedererkennbar machen';
 
   @override
   String get settings_fingerprintSearchHint =>
@@ -8557,14 +8784,15 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settings_loadDefaultsAction => 'Standard laden';
 
   @override
-  String get settings_loadHardenedDefaultsAction => 'Gehärteten Standard laden';
+  String get settings_loadHardenedDefaultsAction =>
+      'Geh├ñrteten Standard laden';
 
   @override
   String get settings_fingerprintOverrideTargetsSection => 'Schutzziele';
 
   @override
   String get settings_fingerprintInvalidOverride =>
-      'Die gespeicherten Fingerprinting-Schutzziele haben kein gültiges Format';
+      'Die gespeicherten Fingerprinting-Schutzziele haben kein g├╝ltiges Format';
 
   @override
   String get settings_fingerprintUnknownTarget =>
@@ -8585,19 +8813,19 @@ class AppLocalizationsDe extends AppLocalizations {
       'Eine Adresse eingeben, sonst wird stattdessen die Startseite angezeigt';
 
   @override
-  String get settings_homeTargetUrlInvalidError => 'Keine gültige Adresse';
+  String get settings_homeTargetUrlInvalidError => 'Keine g├╝ltige Adresse';
 
   @override
   String get settings_applyWhenLastTabClosesTitle =>
-      'Beim Schließen des letzten Tabs anwenden';
+      'Beim Schlie├ƒen des letzten Tabs anwenden';
 
   @override
   String get settings_applyWhenLastTabClosesKeywords =>
-      'schließen, letzter Tab, Container';
+      'schlie├ƒen, letzter Tab, Container';
 
   @override
   String get settings_applyWhenLastTabClosesSubtitle =>
-      'Nach dem Schließen des letzten Tabs in einem Container dort bleiben, statt einen Tab von woanders zu öffnen';
+      'Nach dem Schlie├ƒen des letzten Tabs in einem Container dort bleiben, statt einen Tab von woanders zu ├╢ffnen';
 
   @override
   String settings_homeSearchBarCurrentlyLabel(String value) {
@@ -8609,15 +8837,15 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_wallpaperKeywords =>
-      'Hintergrundbild, Hintergrund, Bild, Foto, Wallpaper, Unschärfe, abdunkeln, Startseite';
+      'Hintergrundbild, Hintergrund, Bild, Foto, Wallpaper, Unsch├ñrfe, abdunkeln, Startseite';
 
   @override
   String get settings_wallpaperSetSubtitle =>
-      'Für die Startseite ist ein Hintergrundbild festgelegt';
+      'F├╝r die Startseite ist ein Hintergrundbild festgelegt';
 
   @override
   String get settings_wallpaperUnsetSubtitle =>
-      'Ein Hintergrundbild für die Startseite festlegen';
+      'Ein Hintergrundbild f├╝r die Startseite festlegen';
 
   @override
   String get settings_customizeHomeSectionsTitle =>
@@ -8625,11 +8853,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_customizeHomeSectionsKeywords =>
-      'Startseite, Bereiche, Verknüpfungen, Zitat, Schnellaktionen, anordnen';
+      'Startseite, Bereiche, Verkn├╝pfungen, Zitat, Schnellaktionen, anordnen';
 
   @override
   String get settings_customizeHomeSectionsSubtitle =>
-      'Auswählen und anordnen, was die Startseite anzeigt';
+      'Ausw├ñhlen und anordnen, was die Startseite anzeigt';
 
   @override
   String get settings_customizeNewTabSectionsTitle =>
@@ -8637,71 +8865,69 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_customizeNewTabSectionsKeywords =>
-      'neuer Tab, Bereiche, Verknüpfungen, anordnen';
+      'neuer Tab, Bereiche, Verkn├╝pfungen, anordnen';
 
   @override
   String get settings_customizeNewTabSectionsSubtitle =>
-      'Auswählen und anordnen, was die Seite für neue Tabs anzeigt';
+      'Ausw├ñhlen und anordnen, was die Seite f├╝r neue Tabs anzeigt';
 
   @override
-  String get settings_browserLanguagesTitle => 'Browsersprachen';
+  String get settings_browserLanguagesTitle => 'Sprachen f├╝r Websites';
 
   @override
   String get settings_browserLanguagesKeywords =>
-      'Sprache, Gebietsschema, Locale';
+      'Browsersprachen, Sprache, Gebietsschema, Locale';
 
   @override
-  String get settings_browserLanguagesSearchHint =>
-      'Gebietsschemas nach Kennung suchen';
+  String get settings_browserLanguagesSearchHint => 'Sprachen suchen';
 
   @override
-  String get settings_languageRegionSettingsSection =>
-      'Sprach- & Regionseinstellungen';
+  String get settings_languageRegionSettingsSection => 'Sprachen';
 
   @override
   String get settings_browserLanguagePreferenceLabel =>
-      'Sprachpräferenz des Browsers';
+      'Sprache, in der Websites angezeigt werden k├╢nnen';
 
   @override
-  String get settings_customLocaleSection => 'Eigenes Gebietsschema';
+  String get settings_customLocaleSection => 'Andere Sprache';
 
   @override
-  String get settings_addCustomLocaleTitle =>
-      'Eigenes Gebietsschema hinzufügen';
+  String get settings_addCustomLocaleTitle => 'Weitere Sprache hinzuf├╝gen';
 
   @override
-  String get settings_addCustomLocaleKeywords => 'Sprachkennung, Locale-Tag';
+  String get settings_addCustomLocaleKeywords =>
+      'Sprachkennung, Sprachcode, Locale-Tag';
 
   @override
   String get settings_addCustomLocaleSubtitle =>
-      'Eine Kennung wie en-US eingeben';
+      'Einen Sprachcode wie en-US eingeben';
 
   @override
-  String get settings_customLocaleFieldLabel => 'Eigenes Gebietsschema';
+  String get settings_customLocaleFieldLabel => 'Sprachcode';
 
   @override
-  String get settings_invalidLocaleError => 'Ungültige Gebietsschema-Kennung';
+  String get settings_invalidLocaleError => 'Das ist kein g├╝ltiger Sprachcode';
 
   @override
   String get settings_homeTargetHomeLabel => 'Startseite';
 
   @override
-  String get settings_homeTargetResumeLastTabLabel => 'Zuletzt geöffneter Tab';
+  String get settings_homeTargetResumeLastTabLabel => 'Zuletzt ge├╢ffneter Tab';
 
   @override
   String get settings_homeTargetCustomUrlLabel => 'Eigene Adresse';
 
   @override
   String get settings_homeTargetHomeDescription =>
-      'Verknüpfungen und die ausgewählten Bereiche anzeigen';
+      'Verkn├╝pfungen und die ausgew├ñhlten Bereiche anzeigen';
 
   @override
   String get settings_homeTargetResumeLastTabDescription =>
-      'Dort weitermachen, wo du aufgehört hast';
+      'Dort weitermachen, wo du aufgeh├╢rt hast';
 
   @override
   String get settings_homeTargetCustomUrlDescription =>
-      'Eine bestimmte Seite öffnen';
+      'Eine bestimmte Seite ├╢ffnen';
 
   @override
   String get settings_homeSearchBarAutoLabel => 'Der Tableiste folgen';
@@ -8718,7 +8944,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_homeSearchBarTopDescription =>
-      'Eine angeheftete Suchleiste über den Bereichen der Startseite';
+      'Eine angeheftete Suchleiste ├╝ber den Bereichen der Startseite';
 
   @override
   String get settings_homeSearchBarTabBarDescription =>
@@ -8756,11 +8982,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_backupProfileKeywords =>
-      'Sicherung, Backup, Archiv, exportieren, speichern, verschlüsselt, wiederherstellen';
+      'Sicherung, Backup, Archiv, exportieren, speichern, verschl├╝sselt, wiederherstellen';
 
   @override
   String settings_backupProfileSubtitleReady(String name) {
-    return '„$name“ in eine verschlüsselte Sicherungsdatei schreiben';
+    return 'ΓÇ₧$nameΓÇ£ in eine verschl├╝sselte Sicherungsdatei schreiben';
   }
 
   @override
@@ -8773,21 +8999,21 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_settingsTransferTileKeywords =>
-      'exportieren, importieren, Einstellungen, übertragen, teilen, Zwischenablage, json, kopieren, migrieren';
+      'exportieren, importieren, Einstellungen, ├╝bertragen, teilen, Zwischenablage, json, kopieren, migrieren';
 
   @override
   String get settings_settingsTransferTileSubtitle =>
       'Einstellungen in eine Datei oder die Zwischenablage schreiben und wieder einlesen';
 
   @override
-  String get settings_uiZoomTitle => 'Zoom der Oberfläche';
+  String get settings_uiZoomTitle => 'Zoom der Oberfl├ñche';
 
   @override
-  String get settings_uiZoomKeywords => 'Skalierung, Zoom, Größe';
+  String get settings_uiZoomKeywords => 'Skalierung, Zoom, Gr├╢├ƒe';
 
   @override
   String get settings_uiZoomSubtitle =>
-      'Die Oberfläche verkleinern oder vergrößern';
+      'Die Oberfl├ñche verkleinern oder vergr├╢├ƒern';
 
   @override
   String get settings_disableAnimationsTitle => 'Animationen deaktivieren';
@@ -8800,11 +9026,11 @@ class AppLocalizationsDe extends AppLocalizations {
       'Bewegung reduzieren und App-Animationen ausschalten';
 
   @override
-  String get settings_showModalBarrierTitle => 'Hintergrund abdunkeln';
+  String get settings_showModalBarrierTitle => 'Hinter Dialogen abdunkeln';
 
   @override
   String get settings_showModalBarrierKeywords =>
-      'Dialoge, Bottom Sheets, Overlay, Modal';
+      'Dialoge, Bottom Sheets, Overlay, Modal, Modal Barrier, Hintergrund abdunkeln';
 
   @override
   String get settings_showModalBarrierSubtitle =>
@@ -8812,15 +9038,15 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_showSearchCloseButtonTitle =>
-      'Schließen-Schaltfläche anzeigen';
+      'Schlie├ƒen-Schaltfl├ñche anzeigen';
 
   @override
   String get settings_showSearchCloseButtonKeywords =>
-      'zurück, schließen, ausblenden, E-Ink, eink, Barrierefreiheit, neuer Tab';
+      'zur├╝ck, schlie├ƒen, ausblenden, E-Ink, eink, Barrierefreiheit, neuer Tab';
 
   @override
   String get settings_showSearchCloseButtonSubtitle =>
-      'Eine Schaltfläche hinzufügen, um die Such- oder Neuer-Tab-Seite ohne Zurück-Geste zu schließen. Nützlich auf Geräten ohne Zurück-Taste.';
+      'Eine Schaltfl├ñche hinzuf├╝gen, um die Such- oder Neuer-Tab-Seite ohne Zur├╝ck-Geste zu schlie├ƒen. N├╝tzlich auf Ger├ñten ohne Zur├╝ck-Taste.';
 
   @override
   String get settings_pureBlackTitle => 'Reines Schwarz (OLED)';
@@ -8858,18 +9084,18 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_appLanguageTranslationsNote =>
-      'Die Übersetzungen sind neu und können unvollständig oder ungenau sein. Deshalb bleibt Cat Browser auf Englisch, bis du eine andere Sprache auswählst. Mit „Systemstandard“ folgt die App der Sprache des Geräts.';
+      'Die ├£bersetzungen sind neu und k├╢nnen unvollst├ñndig oder ungenau sein. Deshalb bleibt Cat Browser auf Englisch, bis du eine andere Sprache ausw├ñhlst. Mit ΓÇ₧SystemstandardΓÇ£ folgt die App der Sprache des Ger├ñts.';
 
   @override
   String get settings_refreshRateTitle => 'Bildwiederholrate';
 
   @override
   String get settings_refreshRateKeywords =>
-      'fps, hz, hertz, Bildrate, Framerate, 60hz, 90hz, 120hz, flüssig, hohe Bildwiederholrate, Anzeigemodus';
+      'fps, hz, hertz, Bildrate, Framerate, 60hz, 90hz, 120hz, fl├╝ssig, hohe Bildwiederholrate, Anzeigemodus';
 
   @override
   String get settings_refreshRateSubtitle =>
-      '„Hoch“ für möglichst flüssiges Scrollen und flüssige Animationen auf Bildschirmen mit 90 oder 120 Hz wählen oder „Niedrig“, um Akku zu sparen.';
+      'ΓÇ₧HochΓÇ£ f├╝r m├╢glichst fl├╝ssiges Scrollen und fl├╝ssige Animationen auf Bildschirmen mit 90 oder 120 Hz w├ñhlen oder ΓÇ₧NiedrigΓÇ£, um Akku zu sparen.';
 
   @override
   String get settings_refreshRateModeSystem => 'System';
@@ -8893,7 +9119,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String settings_downloadFolderSubtitleUnavailable(String folderName) {
-    return 'Nicht mehr verfügbar – speichert im Download-Ordner des Systems ($folderName)';
+    return 'Nicht mehr verf├╝gbar ΓÇô speichert im Download-Ordner des Systems ($folderName)';
   }
 
   @override
@@ -8926,27 +9152,27 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_preferredDownloadManagerSubtitleNotSet =>
-      'Nicht festgelegt – beim nächsten Download in der Auswahl „Immer diese App verwenden“ ankreuzen';
+      'Nicht festgelegt ΓÇô beim n├ñchsten Download in der Auswahl ΓÇ₧Immer diese App verwendenΓÇ£ ankreuzen';
 
   @override
   String settings_preferredDownloadManagerSubtitleThisApp(String appName) {
-    return '$appName, mit Bestätigung vor jedem Download';
+    return '$appName, mit Best├ñtigung vor jedem Download';
   }
 
   @override
   String settings_preferredDownloadManagerSubtitleUnavailable(
     String packageName,
   ) {
-    return 'Nicht mehr installiert ($packageName) – fragt jedes Mal';
+    return 'Nicht mehr installiert ($packageName) ΓÇô fragt jedes Mal';
   }
 
   @override
   String get settings_preferredDownloadManagerSubtitleExternalOff =>
-      'Nicht festgelegt – nur mit externem Download-Manager verwendet';
+      'Nicht festgelegt ΓÇô nur mit externem Download-Manager verwendet';
 
   @override
   String settings_preferredDownloadManagerSubtitleInactive(String appName) {
-    return '$appName – nicht verwendet, solange der externe Download-Manager aus ist';
+    return '$appName ΓÇô nicht verwendet, solange der externe Download-Manager aus ist';
   }
 
   @override
@@ -8968,18 +9194,18 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settings_appearanceSectionTitle => 'Erscheinungsbild';
 
   @override
-  String get settings_indexThemeSubtitle => 'System, hell oder dunkel wählen';
+  String get settings_indexThemeSubtitle => 'System, hell oder dunkel w├ñhlen';
 
   @override
   String get settings_indexAppLanguageTitle => 'App-Sprache';
 
   @override
   String get settings_indexAppLanguageKeywords =>
-      'Sprache, Gebietsschema, Übersetzung, Oberflächensprache, Deutsch';
+      'Sprache, Gebietsschema, ├£bersetzung, Oberfl├ñchensprache, Deutsch';
 
   @override
   String get settings_indexAppLanguageSubtitle =>
-      'Die Sprache der Cat Browser-Oberfläche auswählen';
+      'Die Sprache der Cat Browser-Oberfl├ñche ausw├ñhlen';
 
   @override
   String get settings_indexRefreshRateSubtitle =>
@@ -8987,7 +9213,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_indexShowCloseButtonSubtitle =>
-      'Eine Schaltfläche hinzufügen, um die Such- oder Neuer-Tab-Seite ohne Zurück-Geste zu schließen';
+      'Eine Schaltfl├ñche hinzuf├╝gen, um die Such- oder Neuer-Tab-Seite ohne Zur├╝ck-Geste zu schlie├ƒen';
 
   @override
   String get settings_profileSectionTitle => 'Profil';
@@ -8997,11 +9223,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_indexBackupProfileSubtitle =>
-      'Eine verschlüsselte Sicherung des verwendeten Profils erstellen';
+      'Eine verschl├╝sselte Sicherung des verwendeten Profils erstellen';
 
   @override
   String get settings_indexSettingsTransferSubtitle =>
-      'Einstellungen zwischen Profilen oder Geräten übertragen oder an einen Fehlerbericht anhängen';
+      'Einstellungen zwischen Profilen oder Ger├ñten ├╝bertragen oder an einen Fehlerbericht anh├ñngen';
 
   @override
   String get settings_downloadsSectionTitle => 'Downloads';
@@ -9012,10 +9238,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_indexPreferredDownloadManagerSubtitle =>
-      'Die App, die Downloads ohne Nachfrage übernimmt';
+      'Die App, die Downloads ohne Nachfrage ├╝bernimmt';
 
   @override
-  String get settings_contentIdentitySectionTitle => 'Inhalte & Identität';
+  String get settings_contentIdentitySectionTitle => 'Inhalte & Identit├ñt';
 
   @override
   String get settings_contentIdentitySectionKeywords => 'Engine';
@@ -9026,7 +9252,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_indexUserAgentSubtitle =>
-      'Den User-Agent-String des Browsers überschreiben';
+      'Den User-Agent-String des Browsers ├╝berschreiben';
 
   @override
   String get settings_indexEnterpriseRootsSubtitle =>
@@ -9043,7 +9269,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_indexUnmountGeckoViewSubtitle =>
-      'Die Web-Engine nach einer Überlagerung neu aufbauen, statt sie bereitzuhalten';
+      'Die Web-Engine nach einer ├£berlagerung neu aufbauen, statt sie bereitzuhalten';
 
   @override
   String get settings_tabsSectionTitle => 'Tabs';
@@ -9058,22 +9284,22 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_indexChildTabPlacementSubtitle =>
-      'Festlegen, wo aus einem anderen Tab geöffnete Tabs eingefügt werden';
+      'Festlegen, wo aus einem anderen Tab ge├╢ffnete Tabs eingef├╝gt werden';
 
   @override
   String get settings_indexCreateChildTabsSubtitle =>
-      'Eine Schaltfläche anzeigen, die einen Unter-Tab unter dem aktuellen Tab hinzufügt';
+      'Eine Schaltfl├ñche anzeigen, die einen Unter-Tab unter dem aktuellen Tab hinzuf├╝gt';
 
   @override
   String get settings_indexBackgroundTabBehaviorSubtitle =>
-      'Festlegen, was passiert, nachdem ein Tab im Hintergrund geöffnet wurde';
+      'Festlegen, was passiert, nachdem ein Tab im Hintergrund ge├╢ffnet wurde';
 
   @override
   String get settings_navigationSectionTitle => 'Navigation';
 
   @override
   String get settings_indexDoubleBackCloseTabSubtitle =>
-      'Zum Schließen des aktuellen Tabs zweimal die Zurück-Taste drücken';
+      'Zum Schlie├ƒen des aktuellen Tabs zweimal die Zur├╝ck-Taste dr├╝cken';
 
   @override
   String get settings_indexTabBarSwipesSubtitle =>
@@ -9081,60 +9307,60 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_indexSequentialTabNavigationSubtitle =>
-      'Festlegen, wo das Durchblättern der Tabs endet';
+      'Festlegen, wo das Durchbl├ñttern der Tabs endet';
 
   @override
   String get settings_indexOpenLinksInAppsSubtitle =>
-      'Festlegen, wie Links zu externen Apps geöffnet werden';
+      'Festlegen, wie Links zu externen Apps ge├╢ffnet werden';
 
   @override
   String get settings_desktopModeSectionTitle => 'Desktop-Modus';
 
   @override
   String get settings_indexGlobalDesktopModeSubtitle =>
-      'Neue Tabs standardmäßig im Desktop-Modus öffnen';
+      'Neue Tabs standardm├ñ├ƒig im Desktop-Modus ├╢ffnen';
 
   @override
   String get settings_homeScreenSectionTitle => 'Startbildschirm';
 
   @override
   String get settings_indexAllowNonManifestPwaInstallSubtitle =>
-      'Websites ohne Manifest als Apps installieren lassen';
+      'Jede Website als App installieren';
 
   @override
   String get settings_externalLinksSectionTitle => 'Externe Links';
 
   @override
   String get settings_indexCustomTabsSubtitle =>
-      'Andere Apps Links in einem schlanken In-App-Tab statt im Hauptbrowser öffnen lassen';
+      'Andere Apps Links in einem schlanken In-App-Tab statt im Hauptbrowser ├╢ffnen lassen';
 
   @override
   String get settings_bookmarksSectionTitle => 'Lesezeichen';
 
   @override
-  String get settings_resolverSettingsSectionTitle => 'Resolver-Einstellungen';
+  String get settings_resolverSettingsSectionTitle => 'Anbieter-Einstellungen';
 
   @override
-  String get settings_indexDnsOverHttpsResolverTitle => 'DNS über HTTPS';
+  String get settings_indexDnsOverHttpsResolverTitle => 'Sicheres DNS';
 
   @override
   String get settings_indexDnsOverHttpsResolverKeywords =>
-      'doh, Resolver, DNS-Anbieter, eigener Resolver';
+      'dns over https, dns ├╝ber https, doh, Resolver, DNS-Anbieter, eigener Resolver';
 
   @override
   String get settings_indexDnsOverHttpsResolverSubtitle =>
-      'Schutzstufe, Anbieterauswahl und gespeicherte eigene Resolver';
+      'Schutzstufe, Anbieter und eigene Anbieter';
 
   @override
   String get settings_runtimeStartupSectionTitle => 'Laufzeit & Start';
 
   @override
   String get settings_indexIsolatedContentProcessSubtitle =>
-      'Webinhalte in einem isolierten Prozess ausführen';
+      'Webinhalte in einem isolierten Prozess ausf├╝hren';
 
   @override
   String get settings_indexAppZygoteProcessSubtitle =>
-      'Den Inhaltsdienst für einen schnelleren isolierten Start vorladen';
+      'Den Inhaltsdienst f├╝r einen schnelleren isolierten Start vorladen';
 
   @override
   String get settings_startupSectionTitle => 'Start';
@@ -9152,22 +9378,22 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_indexHomeTargetSubtitle =>
-      'Beim Start und nach dem Schließen des letzten Tabs';
+      'Beim Start und nach dem Schlie├ƒen des letzten Tabs';
 
   @override
   String get settings_indexHomeTargetOnLastTabClosedSubtitle =>
-      'Andernfalls wird stattdessen ein Tab aus einem anderen Container geöffnet';
+      'Andernfalls wird stattdessen ein Tab aus einem anderen Container ge├╢ffnet';
 
   @override
   String get settings_homeAppearanceSectionTitle => 'Erscheinungsbild';
 
   @override
   String get settings_homeAppearanceSectionKeywords =>
-      'Startseite, Hintergrundbild, Hintergrund, Bild, Unschärfe, abdunkeln';
+      'Startseite, Hintergrundbild, Hintergrund, Bild, Unsch├ñrfe, abdunkeln';
 
   @override
   String get settings_indexWallpaperSubtitle =>
-      'Ein Hintergrundbild für die Startseite';
+      'Ein Hintergrundbild f├╝r die Startseite';
 
   @override
   String get settings_layoutSectionTitle => 'Layout';
@@ -9194,7 +9420,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_indexSearchFieldPlacementKeywords =>
-      'Suche, Suchfeld, Eingabe, Position, Adresse, URL, bearbeiten, oben, unten, Tableiste, neuer Tab, einhändig, Daumen';
+      'Suche, Suchfeld, Eingabe, Position, Adresse, URL, bearbeiten, oben, unten, Tableiste, neuer Tab, einh├ñndig, Daumen';
 
   @override
   String get settings_indexSearchFieldPlacementSubtitle =>
@@ -9216,11 +9442,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_searchFieldPlacementTopDescription =>
-      'Vorschläge stehen unter dem Feld';
+      'Vorschl├ñge stehen unter dem Feld';
 
   @override
   String get settings_searchFieldPlacementBottomDescription =>
-      'In Daumenreichweite, Vorschläge darüber, der beste direkt am Feld';
+      'In Daumenreichweite, Vorschl├ñge dar├╝ber, der beste direkt am Feld';
 
   @override
   String get settings_searchFieldRowTitle => 'Suchfeld';
@@ -9235,7 +9461,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_indexAllowlistExceptionsSubtitle =>
-      'Kompatibilitätsausnahmen für größere und kleinere Website-Probleme';
+      'Kompatibilit├ñtsausnahmen f├╝r gr├╢├ƒere und kleinere Website-Probleme';
 
   @override
   String get settings_cookiesSectionTitle => 'Cookies';
@@ -9317,14 +9543,14 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settings_securitySectionTitle => 'Sicherheit';
 
   @override
-  String get settings_actionResetToDefaults => 'Auf Standard zurücksetzen';
+  String get settings_actionResetToDefaults => 'Auf Standard zur├╝cksetzen';
 
   @override
-  String get settings_menuLayoutTitle => 'Menü anpassen';
+  String get settings_menuLayoutTitle => 'Men├╝ anpassen';
 
   @override
   String get settings_menuLayoutHintSections =>
-      'Zum Anordnen ziehen. Einen Bereich ausschalten, um ihn im Menü auszublenden.';
+      'Zum Anordnen ziehen. Einen Bereich ausschalten, um ihn im Men├╝ auszublenden.';
 
   @override
   String get settings_menuLayoutHintSectionItems =>
@@ -9332,11 +9558,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_menuLayoutHintSubItems =>
-      'Ziehen, um die Zeilen anzuordnen, die dieser Eintrag öffnet.';
+      'Ziehen, um die Zeilen anzuordnen, die dieser Eintrag ├╢ffnet.';
 
   @override
   String get settings_moduleSurfaceHint =>
-      'Zum Anordnen ziehen. Einen Bereich ausschalten, um ihn hier auszublenden, ohne die andere Seite zu ändern.';
+      'Zum Anordnen ziehen. Einen Bereich ausschalten, um ihn hier auszublenden, ohne die andere Seite zu ├ñndern.';
 
   @override
   String get settings_moduleSurfaceTitleHome => 'Startseite anpassen';
@@ -9348,18 +9574,18 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settings_homeSearchBarRowTitle => 'Suchleiste';
 
   @override
-  String get settings_proxyTitle => 'Proxy';
+  String get settings_proxyTitle => 'Verbindungen';
 
   @override
   String get settings_proxySubtitle =>
-      'Proxy-Verbindungen verwalten und festlegen, welche Tabs sie nutzen.';
+      'Tor-, VPN- und Proxy-Verbindungen verwalten und festlegen, welche Tabs sie nutzen.';
 
   @override
   String get settings_proxyConnectionsTitle => 'Proxy-Verbindungen';
 
   @override
   String get settings_proxyConnectionsKeywords =>
-      'sing-box, socks, vpn, wireguard, tor, onion, Brücken, bridges, obfs4, snowflake';
+      'sing-box, socks, vpn, wireguard, tor, onion, Br├╝cken, bridges, obfs4, snowflake';
 
   @override
   String get settings_proxyConnectionsSubtitle =>
@@ -9374,28 +9600,28 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_proxyRoutingSubtitle =>
-      'Festlegen, welcher Proxy normale und private Tabs übernimmt';
+      'Festlegen, welcher Proxy normale und private Tabs ├╝bernimmt';
 
   @override
   String get settings_proxyLogsTitle => 'Proxy-Protokolle';
 
   @override
   String get settings_proxyLogsKeywords =>
-      'Protokoll, Protokollierung, Logs, Diagnose, Debug, Trace, ausführlich, Fehlersuche, Stufe';
+      'Protokoll, Protokollierung, Logs, Diagnose, Debug, Trace, ausf├╝hrlich, Fehlersuche, Stufe';
 
   @override
   String get settings_toolbarLayoutTitle => 'Symbolleiste & Layout';
 
   @override
   String get settings_toolbarLayoutSearchHint =>
-      'Einstellungen für Symbolleiste und Layout durchsuchen';
+      'Einstellungen f├╝r Symbolleiste und Layout durchsuchen';
 
   @override
   String get settings_privacySecurityTitle => 'Datenschutz & Sicherheit';
 
   @override
   String get settings_privacySecuritySubtitle =>
-      'Tracking-Schutz, Fingerprinting, Browserdaten und Netzwerkhärtung.';
+      'Tracking-Schutz, Browserdaten und Sicherheit.';
 
   @override
   String get settings_trackingProtectionExceptionsTitle =>
@@ -9410,44 +9636,44 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_autoDeleteBrowsingDataTitle =>
-      'Browserdaten automatisch löschen';
+      'Browserdaten automatisch l├╢schen';
 
   @override
   String get settings_autoDeleteBrowsingDataKeywords =>
-      'inkognito, privater Modus, beenden, schließen, beim Beenden löschen, Daten löschen, incognito, quit';
+      'inkognito, privater Modus, beenden, schlie├ƒen, beim Beenden l├╢schen, Daten l├╢schen, incognito, quit';
 
   @override
   String get settings_autoDeleteBrowsingDataSubtitle =>
-      'Ausgewählte Browserdaten beim Beenden oder bei jedem Start von Cat Browser löschen';
+      'Ausgew├ñhlte Browserdaten beim Beenden oder bei jedem Start von Cat Browser l├╢schen';
 
   @override
   String get settings_autoDeleteBrowsingDataQuitOnlySubtitle =>
-      'Ausgewählte Browserdaten beim Beenden von Cat Browser löschen';
+      'Ausgew├ñhlte Browserdaten beim Beenden von Cat Browser l├╢schen';
 
   @override
-  String get settings_autoDeleteOnStartTitle => 'Auch beim Start löschen';
+  String get settings_autoDeleteOnStartTitle => 'Auch beim Start l├╢schen';
 
   @override
   String get settings_autoDeleteOnStartSubtitle =>
-      'Erfasst Sitzungen, die ohne „Beenden“ endeten, etwa wenn Cat Browser weggewischt oder von Android im Hintergrund geschlossen wurde. Ausgeschaltet bleiben deren Daten bis zum nächsten Beenden.';
+      'Erfasst Sitzungen, die ohne ΓÇ₧BeendenΓÇ£ endeten, etwa wenn Cat Browser weggewischt oder von Android im Hintergrund geschlossen wurde. Ausgeschaltet bleiben deren Daten bis zum n├ñchsten Beenden.';
 
   @override
   String get settings_confirmBeforeQuitTitle => 'Vor dem Beenden nachfragen';
 
   @override
   String get settings_confirmBeforeQuitKeywords =>
-      'beenden, schließen, bestätigen, Bestätigung, Dialog, nicht mehr fragen';
+      'beenden, schlie├ƒen, best├ñtigen, Best├ñtigung, Dialog, nicht mehr fragen';
 
   @override
   String get settings_confirmBeforeQuitSubtitle =>
-      'Nachfragen, bevor „Beenden“ Cat Browser schließt. Langes Drücken auf „Beenden“ überspringt die Frage.';
+      'Nachfragen, bevor ΓÇ₧BeendenΓÇ£ Cat Browser schlie├ƒt. Langes Dr├╝cken auf ΓÇ₧BeendenΓÇ£ ├╝berspringt die Frage.';
 
   @override
   String get settings_trackingProtectionExceptionsSearchHint =>
       'Ausnahme-URLs durchsuchen';
 
   @override
-  String get settings_trackingProtectionExceptionsDeleteAll => 'Alle löschen';
+  String get settings_trackingProtectionExceptionsDeleteAll => 'Alle l├╢schen';
 
   @override
   String get settings_trackingProtectionExceptionsSectionTitle =>
@@ -9467,7 +9693,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_trackingProtectionExceptionsEmptySubtitle =>
-      'Zu den Ausnahmen hinzugefügte Websites erscheinen hier';
+      'Zu den Ausnahmen hinzugef├╝gte Websites erscheinen hier';
 
   @override
   String get settings_trackingProtectionExceptionsErrorTitle =>
@@ -9475,7 +9701,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String settings_trackingProtectionExceptionsDeleteAllFailed(String error) {
-    return 'Ausnahmen konnten nicht gelöscht werden: $error';
+    return 'Ausnahmen konnten nicht gel├╢scht werden: $error';
   }
 
   @override
@@ -9484,31 +9710,32 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get settings_deleteBrowsingDataTileTitle => 'Browserdaten löschen';
+  String get settings_deleteBrowsingDataTileTitle => 'Browserdaten l├╢schen';
 
   @override
-  String get settings_deleteBrowsingDataTileKeywords => 'Daten löschen, leeren';
+  String get settings_deleteBrowsingDataTileKeywords =>
+      'Daten l├╢schen, leeren';
 
   @override
-  String get settings_autoClearHistoryTitle => 'Verlauf automatisch löschen';
+  String get settings_autoClearHistoryTitle => 'Verlauf automatisch l├╢schen';
 
   @override
   String get settings_autoClearHistoryKeywords => 'Aufbewahrung des Verlaufs';
 
   @override
   String get settings_autoClearHistorySubtitle =>
-      'Browserverlauf, der älter als der gewählte Zeitraum ist, automatisch löschen';
+      'Browserverlauf, der ├ñlter als der gew├ñhlte Zeitraum ist, automatisch l├╢schen';
 
   @override
   String get settings_autoClearUnassignedTabsTitle =>
-      'Nicht zugeordnete Tabs automatisch schließen';
+      'Nicht zugeordnete Tabs automatisch schlie├ƒen';
 
   @override
-  String get settings_autoClearUnassignedTabsKeywords => 'Tabs aufräumen';
+  String get settings_autoClearUnassignedTabsKeywords => 'Tabs aufr├ñumen';
 
   @override
   String get settings_autoClearUnassignedTabsSubtitle =>
-      'Nicht zugeordnete Tabs, die älter als der gewählte Zeitraum sind, automatisch schließen';
+      'Nicht zugeordnete Tabs, die ├ñlter als der gew├ñhlte Zeitraum sind, automatisch schlie├ƒen';
 
   @override
   String get settings_durationNever => 'Nie';
@@ -9560,18 +9787,18 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_allowPrivateTabScreenshotsOverriddenSubtitle =>
-      'Wird vom Screenshot-Schutz überschrieben, der Aufnahmen in allen Tabs blockiert.';
+      'Wird vom Screenshot-Schutz ├╝berschrieben, der Aufnahmen in allen Tabs blockiert.';
 
   @override
   String get settings_allowPrivateTabScreenshotsSubtitle =>
-      'Private Tabs können als Screenshot oder Bildschirmaufnahme erfasst werden und erscheinen in der Vorschau des App-Wechslers.';
+      'Private Tabs k├╢nnen als Screenshot oder Bildschirmaufnahme erfasst werden und erscheinen in der Vorschau des App-Wechslers.';
 
   @override
-  String get settings_httpsOnlyModeTitle =>
-      'Unsichere HTTP-Verbindungen blockieren';
+  String get settings_httpsOnlyModeTitle => 'Nur sichere Verbindungen (HTTPS)';
 
   @override
-  String get settings_httpsOnlyModeKeywords => 'nur https, https only';
+  String get settings_httpsOnlyModeKeywords =>
+      'nur https, https only, unsichere Verbindungen';
 
   @override
   String get settings_httpsOnlyModeDisabledLabel => 'Aus';
@@ -9583,11 +9810,11 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settings_httpsOnlyModePrivateOnlyLabel => 'Nur privat';
 
   @override
-  String get settings_dnsOverHttpsTileTitle => 'DNS über HTTPS';
+  String get settings_dnsOverHttpsTileTitle => 'Sicheres DNS';
 
   @override
   String get settings_enhancedTrackingProtectionTitle =>
-      'Verbesserter Schutz vor Aktivitätenverfolgung';
+      'Verbesserter Schutz vor Aktivit├ñtenverfolgung';
 
   @override
   String get settings_enhancedTrackingProtectionKeywords =>
@@ -9601,14 +9828,14 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_trackingProtectionStandardSubtitle =>
-      'Bietet eine Balance zwischen Schutz und Kompatibilität, indem weniger Tracker-Kategorien blockiert werden.';
+      'Bietet eine Balance zwischen Schutz und Kompatibilit├ñt, indem weniger Tracker-Kategorien blockiert werden.';
 
   @override
   String get settings_trackingProtectionStrictLabel => 'Streng';
 
   @override
   String get settings_trackingProtectionStrictSubtitle =>
-      'Blockiert mehr Tracker-Kategorien einschließlich Tracking-Inhalten, kann aber manche Websites beeinträchtigen.';
+      'Blockiert mehr Tracker-Kategorien einschlie├ƒlich Tracking-Inhalten, kann aber manche Websites beeintr├ñchtigen.';
 
   @override
   String get settings_trackingProtectionCustomLabel => 'Benutzerdefiniert';
@@ -9626,7 +9853,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_trackerStatisticsSubtitle =>
-      'Blockierte Tracker täglich nach Kategorie zählen. Gespeichert werden nur Anzahl und Datum, keine besuchten Websites. Das Löschen des Browserverlaufs löscht auch diese Statistik. Erfordert einen Neustart der App.';
+      'Blockierte Tracker t├ñglich nach Kategorie z├ñhlen. Gespeichert werden nur Anzahl und Datum, keine besuchten Websites. Das L├╢schen des Browserverlaufs l├╢scht auch diese Statistik. Erfordert einen Neustart der App.';
 
   @override
   String get settings_bounceTrackingProtectionTitle =>
@@ -9638,7 +9865,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_bounceTrackingProtectionSubtitle =>
-      'Blockiert Weiterleitungs-Tracker, die über zwischengeschaltete URL-Weiterleitungen zwischen Websites Daten sammeln';
+      'Blockiert Weiterleitungs-Tracker, die ├╝ber zwischengeschaltete URL-Weiterleitungen zwischen Websites Daten sammeln';
 
   @override
   String get settings_queryParameterStrippingTitle =>
@@ -9650,7 +9877,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_queryParameterStrippingSubtitle =>
-      'Entfernt Tracking-Parameter aus URLs, um websiteübergreifendes Tracking zu verhindern';
+      'Entfernt Tracking-Parameter aus URLs, um website├╝bergreifendes Tracking zu verhindern';
 
   @override
   String get settings_queryParameterStrippingDisabledLabel => 'Aus';
@@ -9663,15 +9890,15 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_uBlockFilterListsTileTitle =>
-      'uBlock-Filterlisten & Härtungen';
+      'Filterlisten von uBlock Origin';
 
   @override
   String get settings_uBlockFilterListsTileKeywords =>
-      'ublock, Filter, Werbeblocker';
+      'ublock, Filter, Werbeblocker, H├ñrtungen';
 
   @override
   String get settings_uBlockFilterListsTileSubtitle =>
-      'Filterlisten verwalten und Cat Browser-Härtungen anwenden';
+      'Filterlisten verwalten und Cat Browser-H├ñrtungen anwenden';
 
   @override
   String get settings_fissionEnabledTitle => 'Fission (Website-Isolierung)';
@@ -9682,7 +9909,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_fissionEnabledSubtitle =>
-      'Isoliert jede Website in einem eigenen Betriebssystemprozess für mehr Sicherheit. Erfordert einen Neustart der App.';
+      'Isoliert jede Website in einem eigenen Betriebssystemprozess f├╝r mehr Sicherheit. Erfordert einen Neustart der App.';
 
   @override
   String get settings_safeBrowsingMalwareTitle =>
@@ -9694,7 +9921,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_safeBrowsingMalwareSubtitle =>
-      'Vor gefährlichen Websites und schädlichen Downloads warnen.';
+      'Vor gef├ñhrlichen Websites und sch├ñdlichen Downloads warnen.';
 
   @override
   String get settings_safeBrowsingPhishingTitle =>
@@ -9706,25 +9933,25 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_safeBrowsingPhishingSubtitle =>
-      'Vor betrügerischen Websites und Anmeldeseiten warnen.';
+      'Vor betr├╝gerischen Websites und Anmeldeseiten warnen.';
 
   @override
-  String get settings_extensionsWebApiTitle => 'Web-API für Erweiterungen';
+  String get settings_extensionsWebApiTitle => 'Web-API f├╝r Erweiterungen';
 
   @override
   String get settings_extensionsWebApiKeywords => 'Erweiterungs-API';
 
   @override
   String get settings_extensionsWebApiSubtitle =>
-      'Die mozAddonManager-API für Webinhalte und Erweiterungsseiten bereitstellen. Erfordert einen Neustart der App.';
+      'Die mozAddonManager-API f├╝r Webinhalte und Erweiterungsseiten bereitstellen. Erfordert einen Neustart der App.';
 
   @override
   String get settings_appOpeningProtectionSectionHeader =>
-      'Schutz vor Öffnen durch Apps';
+      'Schutz vor ├ûffnen durch Apps';
 
   @override
   String get settings_blockAppsOpeningBrowserTitle =>
-      'Apps am Öffnen des Browsers hindern';
+      'Apps am ├ûffnen des Browsers hindern';
 
   @override
   String get settings_blockAppsOpeningBrowserKeywords =>
@@ -9732,7 +9959,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_blockAppsOpeningBrowserSubtitle =>
-      'Vor dem Öffnen von Links, die andere Apps an Cat Browser senden, nachfragen.';
+      'Vor dem ├ûffnen von Links, die andere Apps an Cat Browser senden, nachfragen.';
 
   @override
   String get settings_managedAppsSectionHeader => 'Verwaltete Apps';
@@ -9750,11 +9977,11 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settings_managedAppActionBlock => 'Blockieren';
 
   @override
-  String get settings_browserLanguagesTileTitle => 'Browsersprachen';
+  String get settings_browserLanguagesTileTitle => 'Sprachen f├╝r Websites';
 
   @override
   String get settings_browserLanguagesTileSubtitle =>
-      'Sprachpräferenzen festlegen, die Websites mitgeteilt werden';
+      'In welchen Sprachen Websites angezeigt werden sollen';
 
   @override
   String get settings_fingerprintProtectionTileTitle => 'Fingerprinting-Schutz';
@@ -9771,61 +9998,62 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_resistFingerprintingTileSubtitle =>
-      'Erweiterte Härtung gegen Fingerprinting';
+      'Erweiterte H├ñrtung gegen Fingerprinting';
 
   @override
-  String get settings_lnaEnabledTitle => 'Zugriff auf das lokale Netzwerk';
+  String get settings_lnaEnabledTitle => 'Lokale Apps und Ger├ñte sch├╝tzen';
 
   @override
-  String get settings_lnaEnabledKeywords => 'lan, lokales Netzwerk, Heimnetz';
+  String get settings_lnaEnabledKeywords =>
+      'lan, lokales Netzwerk, Heimnetz, localhost, lokale Verbindungen';
 
   @override
   String get settings_lnaEnabledSubtitle =>
-      'Blockieren von Zugriffen auf das lokale Netzwerk und seine Geräte aktivieren';
+      'Steuern, ob Websites sich mit Apps auf diesem Ger├ñt oder mit Ger├ñten im Netzwerk verbinden d├╝rfen';
 
   @override
-  String get settings_lnaBlockingTitle =>
-      'Anfragen ins lokale Netzwerk blockieren';
+  String get settings_lnaBlockingTitle => 'Vor lokalen Verbindungen fragen';
 
   @override
-  String get settings_lnaBlockingKeywords => 'lan, lokales Netzwerk, Heimnetz';
+  String get settings_lnaBlockingKeywords =>
+      'lan, lokales Netzwerk, Heimnetz, localhost, lokale Verbindungen blockieren';
 
   @override
   String get settings_lnaBlockingSubtitle =>
-      'Anfragen von Webseiten an Adressen im lokalen Netzwerk blockieren';
+      'Websites m├╝ssen fragen, bevor sie sich mit Apps auf diesem Ger├ñt oder mit Ger├ñten im Netzwerk verbinden';
 
   @override
   String get settings_lnaBlockTrackersTitle =>
-      'Tracker im lokalen Netzwerk blockieren';
+      'Lokale Verbindungen von Trackern blockieren';
 
   @override
   String get settings_lnaBlockTrackersKeywords =>
-      'lan, lokales Netzwerk, Heimnetz';
+      'lan, lokales Netzwerk, Heimnetz, localhost';
 
   @override
   String get settings_lnaBlockTrackersSubtitle =>
-      'Trackern den Zugriff auf Ressourcen im lokalen Netzwerk verwehren';
+      'Bekannte Tracker k├╢nnen sich nicht mit Apps auf diesem Ger├ñt oder mit Ger├ñten im Netzwerk verbinden';
 
   @override
   String get settings_transferTitle => 'Exportieren & Importieren';
 
   @override
-  String get settings_transferChangeExportFolder => 'Exportordner ändern';
+  String get settings_transferChangeExportFolder => 'Exportordner ├ñndern';
 
   @override
   String get settings_transferIntro =>
-      'Einstellungen zwischen Profilen oder Geräten übertragen oder an einen Fehlerbericht anhängen. Übertragen werden nur Einstellungen – keine Tabs, kein Verlauf, keine Lesezeichen oder Zugangsdaten. Um diese zu übertragen, das gesamte Profil sichern.';
+      'Einstellungen zwischen Profilen oder Ger├ñten ├╝bertragen oder an einen Fehlerbericht anh├ñngen. ├£bertragen werden nur Einstellungen ΓÇô keine Tabs, kein Verlauf, keine Lesezeichen oder Zugangsdaten. Um diese zu ├╝bertragen, das gesamte Profil sichern.';
 
   @override
   String get settings_transferDeviceOnlyNote =>
-      'Websuche-Einstellungen, Layout von Startseite und neuem Tab, Menüreihenfolge und angeheftete Add-ons bleiben auf diesem Gerät';
+      'Websuche-Einstellungen, Layout von Startseite und neuem Tab, Men├╝reihenfolge und angeheftete Add-ons bleiben auf diesem Ger├ñt';
 
   @override
   String get settings_transferExportSectionTitle => 'Exportieren';
 
   @override
   String get settings_transferExportSectionSubtitle =>
-      'Die ausgewählten Bereiche in eine lesbare Datei exportieren';
+      'Die ausgew├ñhlten Bereiche in eine lesbare Datei exportieren';
 
   @override
   String get settings_transferSaveFileButton => 'Datei speichern';
@@ -9835,13 +10063,13 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_transferImportSectionSubtitle =>
-      'Nach dem Öffnen der Datei auswählen, welche Einstellungen übernommen werden';
+      'Nach dem ├ûffnen der Datei ausw├ñhlen, welche Einstellungen ├╝bernommen werden';
 
   @override
-  String get settings_transferOpenFileButton => 'Datei öffnen';
+  String get settings_transferOpenFileButton => 'Datei ├╢ffnen';
 
   @override
-  String get settings_transferPasteButton => 'Einfügen';
+  String get settings_transferPasteButton => 'Einf├╝gen';
 
   @override
   String settings_transferExportFolderChanged(String name) {
@@ -9855,7 +10083,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_transferExportFolderGone =>
-      'Der Exportordner existiert nicht mehr. Erneut einen auswählen und noch einmal versuchen.';
+      'Der Exportordner existiert nicht mehr. Erneut einen ausw├ñhlen und noch einmal versuchen.';
 
   @override
   String settings_transferSaveFailed(String error) {
@@ -9873,7 +10101,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_transferImportNothingApplicable =>
-      'Dieser Export enthält nichts, was diese Cat Browser-Version übernehmen kann.';
+      'Dieser Export enth├ñlt nichts, was diese Cat Browser-Version ├╝bernehmen kann.';
 
   @override
   String get settings_transferImportedSuccess => 'Einstellungen importiert';
@@ -9909,11 +10137,12 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get settings_transferSectionGeckoPrefsTitle => 'Gecko-Präferenzen';
+  String get settings_transferSectionGeckoPrefsTitle =>
+      'Einstellungen der Web-Engine';
 
   @override
   String get settings_transferSectionGeckoPrefsDescription =>
-      'Von Hand geänderte erweiterte Engine-Präferenzen';
+      'Von Hand ge├ñnderte erweiterte Engine-Pr├ñferenzen';
 
   @override
   String get settings_importErrorNotJson => 'Dies ist keine JSON-Datei.';
@@ -9933,36 +10162,36 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_importErrorNoSettings =>
-      'Der Export enthält keine Einstellungen.';
+      'Der Export enth├ñlt keine Einstellungen.';
 
   @override
   String settings_importErrorMalformedSection(String section) {
-    return 'Der Bereich „$section“ ist fehlerhaft.';
+    return 'Der Bereich ΓÇ₧$sectionΓÇ£ ist fehlerhaft.';
   }
 
   @override
   String settings_importErrorMalformedField(String field) {
-    return 'Das Feld „$field“ des Exports ist fehlerhaft.';
+    return 'Das Feld ΓÇ₧$fieldΓÇ£ des Exports ist fehlerhaft.';
   }
 
   @override
   String settings_importErrorUnreadablePrefsLine(String section, String line) {
-    return 'Der Bereich „$section“ enthält eine Zeile, die Cat Browser nicht lesen kann: „$line“. Ein Import würde Präferenzen zurücksetzen, statt sie wiederherzustellen.';
+    return 'Der Bereich ΓÇ₧$sectionΓÇ£ enth├ñlt eine Zeile, die Cat Browser nicht lesen kann: ΓÇ₧$lineΓÇ£. Ein Import w├╝rde Pr├ñferenzen zur├╝cksetzen, statt sie wiederherzustellen.';
   }
 
   @override
   String settings_importErrorNotPrefsSnapshot(String section) {
-    return 'Der Bereich „$section“ ist kein Präferenz-Snapshot von Cat Browser.';
+    return 'Der Bereich ΓÇ₧$sectionΓÇ£ ist kein Pr├ñferenz-Snapshot von Cat Browser.';
   }
 
   @override
   String settings_importErrorMissingSchemaVersion(String section) {
-    return 'Der Bereich „$section“ gibt keine Schemaversion an.';
+    return 'Der Bereich ΓÇ₧$sectionΓÇ£ gibt keine Schemaversion an.';
   }
 
   @override
   String settings_importErrorUnreadablePref(String section, String pref) {
-    return 'Der Bereich „$section“ enthält eine Präferenz, die Cat Browser nicht zurücklesen konnte: „$pref“.';
+    return 'Der Bereich ΓÇ₧$sectionΓÇ£ enth├ñlt eine Pr├ñferenz, die Cat Browser nicht zur├╝cklesen konnte: ΓÇ₧$prefΓÇ£.';
   }
 
   @override
@@ -9971,12 +10200,12 @@ class AppLocalizationsDe extends AppLocalizations {
     int version,
     int supported,
   ) {
-    return 'Der Bereich „$section“ stammt von einer neueren Cat Browser-Version (Schema $version, diese Version liest bis $supported). Die App aktualisieren und erneut versuchen.';
+    return 'Der Bereich ΓÇ₧$sectionΓÇ£ stammt von einer neueren Cat Browser-Version (Schema $version, diese Version liest bis $supported). Die App aktualisieren und erneut versuchen.';
   }
 
   @override
   String settings_importPartialFailure(String failed, String error) {
-    return 'Der Bereich „$failed“ wurde mittendrin abgebrochen und ist möglicherweise nur teilweise übernommen: $error';
+    return 'Der Bereich ΓÇ₧$failedΓÇ£ wurde mittendrin abgebrochen und ist m├╢glicherweise nur teilweise ├╝bernommen: $error';
   }
 
   @override
@@ -9985,48 +10214,49 @@ class AppLocalizationsDe extends AppLocalizations {
     String failed,
     String error,
   ) {
-    return 'Importiert: $applied. Der Bereich „$failed“ wurde danach mittendrin abgebrochen und ist möglicherweise nur teilweise übernommen: $error';
+    return 'Importiert: $applied. Der Bereich ΓÇ₧$failedΓÇ£ wurde danach mittendrin abgebrochen und ist m├╢glicherweise nur teilweise ├╝bernommen: $error';
   }
 
   @override
-  String get settings_webEngineHardeningTitle => 'Härtung der Web-Engine';
+  String get settings_webEngineHardeningTitle => 'H├ñrtung der Web-Engine';
 
   @override
   String get settings_webEngineHardeningKeywords =>
-      'Härtung, Hardening, Sicherheit';
+      'H├ñrtung, Hardening, Sicherheit, Strengere Sicherheitseinstellungen, Empfohlene Sicherheitseinstellungen';
 
   @override
   String get settings_webEngineHardeningSearchHint =>
-      'Härtungsgruppen durchsuchen';
+      'H├ñrtungsgruppen durchsuchen';
 
   @override
   String get settings_webEngineHardeningResetAllMenuItem =>
-      'Alle Einstellungen zurücksetzen';
+      'Alle Einstellungen zur├╝cksetzen';
 
   @override
   String get settings_webEngineHardeningResetAllDialogTitle =>
-      'Alle Einstellungen zurücksetzen?';
+      'Alle Einstellungen zur├╝cksetzen?';
 
   @override
   String get settings_webEngineHardeningResetAllDialogContent =>
-      'Dadurch werden alle benutzerdefinierten Einstellungen der Web-Engine auf ihre Standardwerte zurückgesetzt.';
+      'Dadurch werden alle benutzerdefinierten Einstellungen der Web-Engine auf ihre Standardwerte zur├╝ckgesetzt.';
 
   @override
-  String get settings_webEngineHardeningOverviewTitle => 'Übersicht';
+  String get settings_webEngineHardeningOverviewTitle => '├£bersicht';
 
   @override
-  String get settings_webEngineHardeningCompleteTitle => 'Vollständige Härtung';
+  String get settings_webEngineHardeningCompleteTitle =>
+      'Vollst├ñndige H├ñrtung';
 
   @override
   String get settings_webEngineHardeningCompleteSubtitle =>
-      'Alle gruppierten Härtungseinstellungen anwenden oder zurücksetzen';
+      'Alle gruppierten H├ñrtungseinstellungen anwenden oder zur├╝cksetzen';
 
   @override
   String get settings_webEngineHardeningCompleteToggleHint =>
-      'Alle gruppierten Härtungseinstellungen auf einmal umschalten.';
+      'Alle gruppierten H├ñrtungseinstellungen auf einmal umschalten.';
 
   @override
-  String get settings_webEngineHardeningGroupsTitle => 'Härtungsgruppen';
+  String get settings_webEngineHardeningGroupsTitle => 'H├ñrtungsgruppen';
 
   @override
   String get settings_webEngineHardeningLoadFailedTitle =>
@@ -10034,7 +10264,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_webEngineHardeningGroupSearchHint =>
-      'Härtungseinstellungen durchsuchen';
+      'H├ñrtungseinstellungen durchsuchen';
 
   @override
   String get settings_webEngineHardeningGroupControlsTitle =>
@@ -10059,21 +10289,21 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_searchSubtitle =>
-      'Anbieter, Bangs, Verlaufsvorschläge und Suche auf dem Gerät.';
+      'Anbieter, Bangs, Verlaufsvorschl├ñge und Suche auf dem Ger├ñt.';
 
   @override
-  String get settings_defaultSearchProviderTitle => 'Standard-Suchanbieter';
+  String get settings_defaultSearchProviderTitle => 'Suchmaschine';
 
   @override
-  String get settings_defaultSearchProviderKeywords => 'Suchmaschine';
+  String get settings_defaultSearchProviderKeywords =>
+      'Suchmaschine, Suchanbieter, Standard-Suchanbieter';
 
   @override
-  String get settings_defaultAutocompleteProviderTitle =>
-      'Standard-Anbieter für Suchvorschläge';
+  String get settings_defaultAutocompleteProviderTitle => 'Suchvorschl├ñge';
 
   @override
   String get settings_defaultAutocompleteProviderKeywords =>
-      'Vorschläge, Autovervollständigung';
+      'Vorschl├ñge, Autovervollst├ñndigung, Anbieter f├╝r Suchvorschl├ñge';
 
   @override
   String get settings_customSearchEnginesTitle => 'Eigene Suchmaschinen';
@@ -10083,7 +10313,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_customSearchEnginesSubtitle =>
-      'Eigene Suchanbieter hinzufügen und verwalten';
+      'Eigene Suchanbieter hinzuf├╝gen und verwalten';
 
   @override
   String get settings_bangSettingsListTitle => 'Bang-Einstellungen';
@@ -10093,24 +10323,24 @@ class AppLocalizationsDe extends AppLocalizations {
       'Bang-Quellen und Nutzungsdaten verwalten';
 
   @override
-  String get settings_searchHistoryLimitTitle => 'Größe des Suchverlaufs';
+  String get settings_searchHistoryLimitTitle => 'Gr├╢├ƒe des Suchverlaufs';
 
   @override
-  String get settings_searchHistoryLimitKeywords => 'Verlauf, Einträge';
+  String get settings_searchHistoryLimitKeywords => 'Verlauf, Eintr├ñge';
 
   @override
   String get settings_searchHistoryLimitSubtitle =>
-      'Höchstzahl gespeicherter letzter Suchen';
+      'H├╢chstzahl gespeicherter letzter Suchen';
 
   @override
-  String get settings_searchHistoryLimitSuffix => 'Einträge';
+  String get settings_searchHistoryLimitSuffix => 'Eintr├ñge';
 
   @override
   String get settings_validationEnterValue => 'Bitte einen Wert eingeben';
 
   @override
   String get settings_validationEnterValidNumber =>
-      'Bitte eine gültige Zahl eingeben';
+      'Bitte eine g├╝ltige Zahl eingeben';
 
   @override
   String get settings_validationValueBetween0And100 =>
@@ -10118,7 +10348,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_allowClipboardAccessTitle =>
-      'Zugriff auf Zwischenablage für Vorschläge erlauben';
+      'Zugriff auf Zwischenablage f├╝r Vorschl├ñge erlauben';
 
   @override
   String get settings_allowClipboardAccessKeywords => 'Zwischenablage';
@@ -10132,19 +10362,19 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_historySuggestionsKeywords =>
-      'Verlaufsvorschläge, besuchte Seiten, Autovervollständigung, Datenschutz';
+      'Verlaufsvorschl├ñge, besuchte Seiten, Autovervollst├ñndigung, Datenschutz';
 
   @override
   String get settings_historySuggestionsSubtitle =>
-      'Beim Tippen besuchte Seiten anzeigen und Adressen aus dem Verlauf vervollständigen. Beim Ausschalten bleibt der Verlauf erhalten.';
+      'Beim Tippen besuchte Seiten anzeigen und Adressen aus dem Verlauf vervollst├ñndigen. Beim Ausschalten bleibt der Verlauf erhalten.';
 
   @override
   String get settings_privateSearchSuggestionsTitle =>
-      'Vorschläge in privaten Tabs';
+      'Vorschl├ñge in privaten Tabs';
 
   @override
   String get settings_privateSearchSuggestionsKeywords =>
-      'privat, inkognito, Suchvorschläge, Verlauf, Datenschutz';
+      'privat, inkognito, Suchvorschl├ñge, Verlauf, Datenschutz';
 
   @override
   String get settings_privateSearchSuggestionsSubtitle =>
@@ -10152,15 +10382,15 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_acceptSuggestionOnSubmitTitle =>
-      'Mit Eingabetaste vervollständigen';
+      'Mit Eingabetaste vervollst├ñndigen';
 
   @override
   String get settings_acceptSuggestionOnSubmitKeywords =>
-      'Enter, Eingabetaste, Tastatur, Vorschläge';
+      'Enter, Eingabetaste, Tastatur, Vorschl├ñge';
 
   @override
   String get settings_acceptSuggestionOnSubmitSubtitle =>
-      'Beim Drücken der Eingabetaste den eingeblendeten Vorschlag übernehmen';
+      'Beim Dr├╝cken der Eingabetaste den eingeblendeten Vorschlag ├╝bernehmen';
 
   @override
   String get settings_popularSitesAutocompleteTitle =>
@@ -10168,54 +10398,56 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_popularSitesAutocompleteKeywords =>
-      'beliebte Websites, Domains, Autovervollständigung';
+      'beliebte Websites, Domains, Autovervollst├ñndigung';
 
   @override
   String get settings_popularSitesAutocompleteSubtitle =>
-      'Eingaben mit bekannten Domains vervollständigen, wenn Verlauf und Lesezeichen keinen Treffer haben';
+      'Eingaben mit bekannten Websites vervollst├ñndigen, wenn Verlauf und Lesezeichen keinen Treffer haben';
 
   @override
-  String get settings_localIndexEnabledTitle => 'Lokalen Suchindex aktivieren';
+  String get settings_localIndexEnabledTitle => 'In besuchten Seiten suchen';
 
   @override
   String get settings_localIndexEnabledKeywords =>
-      'Seitentext, Verlauf, Volltextsuche';
+      'Seitentext, Verlauf, Volltextsuche, lokaler Suchindex';
 
   @override
   String get settings_localIndexEnabledSubtitle =>
-      'Besuchte Seiten lokal indizieren, damit der Browser ihren Inhalt durchsuchen kann. Besuchsmetadaten bleiben in der Engine; nur der Seitentext wird auf dem Gerät gespeichert.';
+      'Speichert den Text besuchter Seiten auf dem Ger├ñt, damit die Suche W├╢rter darin findet.';
 
   @override
-  String get settings_indexPrivateTabsTitle => 'Private Tabs indizieren';
+  String get settings_indexPrivateTabsTitle =>
+      'Text aus privaten Tabs speichern';
 
   @override
-  String get settings_indexPrivateTabsKeywords => 'inkognito, privat';
+  String get settings_indexPrivateTabsKeywords =>
+      'inkognito, privat, private Tabs indizieren';
 
   @override
   String get settings_indexPrivateTabsSubtitle =>
-      'In privaten Tabs geöffnete Seiten in den lokalen Index aufnehmen. Standardmäßig aus.';
+      'Auch den Text von Seiten aus privaten Tabs speichern. Standardm├ñ├ƒig aus.';
 
   @override
   String get settings_clearLocalIndexDialogTitle =>
-      'Lokalen Suchindex löschen?';
+      'Gespeicherten Seitentext l├╢schen?';
 
   @override
   String get settings_clearLocalIndexDialogContent =>
-      'Dadurch werden alle lokal indizierten Seiteninhalte entfernt. Der Verlauf der Engine (Besuchsmetadaten) ist davon nicht betroffen.';
+      'L├╢scht den f├╝r die Suche gespeicherten Seitentext. Der Browserverlauf bleibt erhalten.';
 
   @override
-  String get settings_localIndexStatsTitle => 'Indizierte Seiten';
+  String get settings_localIndexStatsTitle => 'Gespeicherter Seitentext';
 
   @override
-  String get settings_localIndexStatsKeywords => 'Index löschen, Statistik';
+  String get settings_localIndexStatsKeywords => 'Index l├╢schen, Statistik';
 
   @override
   String settings_localIndexPagesIndexed(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count Seiten indiziert',
-      one: '1 Seite indiziert',
+      other: 'Text von $count Seiten gespeichert',
+      one: 'Text von 1 Seite gespeichert',
     );
     return '$_temp0';
   }
@@ -10227,33 +10459,34 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settings_searchSectionProvidersKeywords => 'Suchmaschinen';
 
   @override
-  String get settings_searchSectionBangShortcutsTitle => 'Bang-Kürzel';
+  String get settings_searchSectionBangShortcutsTitle => 'Bang-K├╝rzel';
 
   @override
   String get settings_searchSectionBangShortcutsKeywords => 'Bangs';
 
   @override
   String get settings_searchSectionHistorySuggestionsTitle =>
-      'Verlauf & Vorschläge';
+      'Verlauf & Vorschl├ñge';
 
   @override
-  String get settings_searchSectionLocalIndexTitle => 'Lokaler Suchindex';
+  String get settings_searchSectionLocalIndexTitle =>
+      'In besuchten Seiten suchen';
 
   @override
   String get settings_searchSectionLocalIndexKeywords =>
-      'Suche auf dem Gerät, Index';
+      'Suche auf dem Ger├ñt, Index';
 
   @override
   String get settings_indexDefaultSearchProviderSubtitle =>
-      'Die Standard-Suchmaschine auswählen';
+      'Die Standard-Suchmaschine ausw├ñhlen';
 
   @override
   String get settings_indexDefaultAutocompleteProviderSubtitle =>
-      'Den Anbieter für Suchvorschläge auswählen';
+      'Festlegen, woher Suchvorschl├ñge kommen';
 
   @override
   String get settings_indexAcceptSuggestionOnSubmitSubtitle =>
-      'Beim Drücken der Eingabetaste den eingeblendeten Vorschlag übernehmen';
+      'Beim Dr├╝cken der Eingabetaste den eingeblendeten Vorschlag ├╝bernehmen';
 
   @override
   String get settings_indexHistorySuggestionsSubtitle =>
@@ -10261,23 +10494,23 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_indexPrivateSearchSuggestionsSubtitle =>
-      'Vorschläge und Verlauf in privaten Tabs nutzen';
+      'Vorschl├ñge und Verlauf in privaten Tabs nutzen';
 
   @override
   String get settings_indexPopularSitesAutocompleteSubtitle =>
-      'Eingaben mit bekannten Domains vervollständigen';
+      'Eingaben mit bekannten Websites vervollst├ñndigen';
 
   @override
   String get settings_indexLocalIndexEnabledSubtitle =>
-      'Besuchte Seiten für die Inhaltssuche lokal indizieren';
+      'Seitentext auf dem Ger├ñt speichern, damit die Suche ihn findet';
 
   @override
   String get settings_indexIndexPrivateTabsSubtitle =>
-      'Private Tabs in den lokalen Index aufnehmen';
+      'Auch Text aus privaten Tabs speichern';
 
   @override
   String get settings_indexLocalIndexStatsSubtitle =>
-      'Den lokalen Index ansehen und löschen';
+      'Gespeicherten Seitentext ansehen und l├╢schen';
 
   @override
   String get settings_webContentTitle => 'Webinhalte';
@@ -10297,48 +10530,51 @@ class AppLocalizationsDe extends AppLocalizations {
       'Websites eigene Schriftarten verwenden lassen';
 
   @override
-  String get settings_automaticFontSizeTitle => 'Automatische Schriftgröße';
+  String get settings_automaticFontSizeTitle => 'Automatische Schriftgr├╢├ƒe';
 
   @override
-  String get settings_automaticFontSizeKeywords => 'Textgröße, Schriftgröße';
+  String get settings_automaticFontSizeKeywords =>
+      'Textgr├╢├ƒe, Schriftgr├╢├ƒe';
 
   @override
   String get settings_automaticFontSizeSubtitle =>
-      'Schriftgröße automatisch an die Systemeinstellungen anpassen. Deaktivieren, um Skalierungsfaktor und Textvergrößerung manuell zu steuern.';
+      'Schriftgr├╢├ƒe automatisch an die Systemeinstellungen anpassen. Deaktivieren, um Skalierungsfaktor und Textvergr├╢├ƒerung manuell zu steuern.';
 
   @override
   String get settings_fontSizeFactorTitle => 'Skalierungsfaktor der Schrift';
 
   @override
-  String get settings_fontSizeFactorKeywords => 'Zoom, Text, Schriftgröße';
+  String get settings_fontSizeFactorKeywords => 'Zoom, Text, Schriftgr├╢├ƒe';
 
   @override
   String get settings_fontSizeFactorSubtitle =>
-      'Textgröße von Webseiten skalieren';
+      'Textgr├╢├ƒe von Webseiten skalieren';
 
   @override
   String get settings_disabledWhileAutomaticFontSize =>
-      'Deaktiviert, solange die automatische Schriftgröße aktiv ist';
+      'Deaktiviert, solange die automatische Schriftgr├╢├ƒe aktiv ist';
 
   @override
-  String get settings_fontInflationTitle => 'Textvergrößerung';
+  String get settings_fontInflationTitle => 'Kleinen Text vergr├╢├ƒern';
 
   @override
-  String get settings_fontInflationKeywords => 'Lesbarkeit, Font Inflation';
+  String get settings_fontInflationKeywords =>
+      'Lesbarkeit, Font Inflation, Textvergr├╢├ƒerung';
 
   @override
   String get settings_fontInflationSubtitle =>
-      'Text auf Seiten ohne mobiles Viewport-Meta-Tag vergrößern';
+      'Text auf Seiten lesbar machen, die nicht f├╝r Smartphones gemacht sind';
 
   @override
-  String get settings_inputAutoZoomTitle => 'Automatischer Zoom bei Eingaben';
+  String get settings_inputAutoZoomTitle => 'Bei Textfeldern hineinzoomen';
 
   @override
-  String get settings_inputAutoZoomKeywords => 'Formulare, Eingabefelder';
+  String get settings_inputAutoZoomKeywords =>
+      'Formulare, Eingabefelder, automatischer Zoom';
 
   @override
   String get settings_inputAutoZoomSubtitle =>
-      'Beim Fokussieren von Textfeldern automatisch hineinzoomen';
+      'Hineinzoomen, wenn ein Textfeld angetippt wird';
 
   @override
   String get settings_forceUserScalableTitle => 'Zoom auf allen Websites';
@@ -10359,7 +10595,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_pdfViewerSubtitle =>
-      'PDF-Dateien direkt im Browser öffnen, ohne sie herunterzuladen';
+      'PDF-Dateien direkt im Browser ├╢ffnen, ohne sie herunterzuladen';
 
   @override
   String get settings_enableReaderModeTitle => 'Leseansicht aktivieren';
@@ -10370,27 +10606,28 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_enableReaderModeSubtitle =>
-      'Fügt der Browserleiste ein optionales Werkzeug hinzu, das Webseiten vereinfacht, indem es Werbung, Seitenleisten und andere unwesentliche Elemente entfernt.';
+      'F├╝gt der Browserleiste ein optionales Werkzeug hinzu, das Webseiten vereinfacht, indem es Werbung, Seitenleisten und andere unwesentliche Elemente entfernt.';
 
   @override
-  String get settings_enforceReaderModeTitle => 'Leseansicht erzwingen';
+  String get settings_enforceReaderModeTitle => 'Leseansicht immer anbieten';
 
   @override
-  String get settings_enforceReaderModeKeywords => 'Leseansicht, Lesemodus';
+  String get settings_enforceReaderModeKeywords =>
+      'Leseansicht, Lesemodus, Leseansicht erzwingen';
 
   @override
   String get settings_enforceReaderModeSubtitle =>
-      'Die Lesbarkeitsbewertung einer Website ignorieren und die Leseansicht immer anbieten, auch auf Websites, die sie womöglich nicht unterstützen.';
+      'Die Leseansicht auf jeder Seite anbieten, auch wo sie wom├╢glich nicht gut funktioniert.';
 
   @override
-  String get settings_onDeviceAiTitle => 'KI auf dem Gerät';
+  String get settings_onDeviceAiTitle => 'KI auf dem Ger├ñt';
 
   @override
-  String get settings_onDeviceAiKeywords => 'lokale KI, KI, Vorschläge';
+  String get settings_onDeviceAiKeywords => 'lokale KI, KI, Vorschl├ñge';
 
   @override
   String get settings_onDeviceAiSubtitle =>
-      'Funktionen auf dem Gerät, etwa Vorschläge für Container und deren Namen passend zu den offenen Tabs';
+      'Funktionen auf dem Ger├ñt, etwa Vorschl├ñge f├╝r Container und deren Namen passend zu den offenen Tabs';
 
   @override
   String get settings_webContentSectionDisplayTitle => 'Darstellung';
@@ -10401,31 +10638,31 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_indexAutomaticFontSizeSubtitle =>
-      'Schriftgröße an die Systemeinstellungen anpassen';
+      'Schriftgr├╢├ƒe an die Systemeinstellungen anpassen';
 
   @override
   String get settings_indexFontInflationSubtitle =>
-      'Text auf Seiten ohne mobilen Viewport vergrößern';
+      'Text auf Seiten vergr├╢├ƒern, die nicht f├╝r Smartphones gemacht sind';
 
   @override
   String get settings_indexInputAutoZoomSubtitle =>
-      'Beim Fokussieren von Textfeldern automatisch zoomen';
+      'Hineinzoomen, wenn ein Textfeld angetippt wird';
 
   @override
   String get settings_indexPdfViewerSubtitle =>
-      'PDF-Dateien direkt im Browser öffnen';
+      'PDF-Dateien direkt im Browser ├╢ffnen';
 
   @override
   String get settings_indexEnableReaderModeSubtitle =>
-      'Seiten für bessere Lesbarkeit extrahieren und vereinfachen';
+      'Artikel in einer aufger├ñumten, gut lesbaren Ansicht zeigen';
 
   @override
   String get settings_indexEnforceReaderModeSubtitle =>
-      'Leseansicht immer anbieten';
+      'Leseansicht auf jeder Seite anbieten';
 
   @override
   String get settings_indexOnDeviceAiSubtitle =>
-      'Lokale KI-Funktionen, darunter Themen- und Tab-Vorschläge';
+      'Lokale KI-Funktionen, darunter Themen- und Tab-Vorschl├ñge';
 
   @override
   String get settings_ublockListsTitle => 'uBlock-Filterlisten';
@@ -10450,23 +10687,23 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settings_actionApply => 'Anwenden';
 
   @override
-  String get settings_ublockResetDialogTitle => 'Auf Standard zurücksetzen?';
+  String get settings_ublockResetDialogTitle => 'Auf Standard zur├╝cksetzen?';
 
   @override
   String get settings_ublockResetDialogMessage =>
-      'Dadurch wird die Standardkonfiguration der Filterlisten von uBlock Origin wiederhergestellt und alle hinzugefügten externen Listen werden entfernt.';
+      'Dadurch wird die Standardkonfiguration der Filterlisten von uBlock Origin wiederhergestellt und alle hinzugef├╝gten externen Listen werden entfernt.';
 
   @override
   String get settings_ublockApplyHardeningsDialogTitle =>
-      'Cat Browser-Härtungen anwenden?';
+      'Cat Browser-H├ñrtungen anwenden?';
 
   @override
   String get settings_ublockApplyHardeningsDialogMessage =>
-      'Dadurch wird eine kuratierte Auswahl zusätzlicher Filterlisten aktiviert und eine Liste legitimer URL-Kürzer als externe Liste hinzugefügt.';
+      'Dadurch werden zus├ñtzliche, von WebLibre ausgew├ñhlte Filterlisten eingeschaltet und eine Liste hinzugef├╝gt, die Tracking-Teile aus Links entfernt.';
 
   @override
   String get settings_ublockInfoBannerMessage =>
-      'Änderungen an den Filterlisten von uBlock Origin werden erst nach einem Neustart der App wirksam. Wegen Zwischenspeicherung können manche Änderungen einige Minuten und einen weiteren Neustart benötigen, bis sie vollständig greifen.';
+      '├änderungen an den Filterlisten von uBlock Origin werden erst nach einem Neustart der App wirksam. Wegen Zwischenspeicherung k├╢nnen manche ├änderungen einige Minuten und einen weiteren Neustart ben├╢tigen, bis sie vollst├ñndig greifen.';
 
   @override
   String settings_ublockLoadFailed(String error) {
@@ -10474,7 +10711,7 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get settings_ublockQuickResetTitle => 'Auf Standard zurücksetzen';
+  String get settings_ublockQuickResetTitle => 'Auf Standard zur├╝cksetzen';
 
   @override
   String get settings_ublockQuickResetSubtitle =>
@@ -10482,43 +10719,44 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_ublockQuickApplyHardeningsTitle =>
-      'Cat Browser-Härtungen anwenden';
+      'Cat Browser-H├ñrtungen anwenden';
 
   @override
   String get settings_ublockQuickApplyHardeningsSubtitle =>
-      'Eine kuratierte Auswahl zusätzlicher Filterlisten aktivieren.';
+      'Eine kuratierte Auswahl zus├ñtzlicher Filterlisten aktivieren.';
 
   @override
   String get settings_ublockManageTitle => 'Mit Cat Browser verwalten';
 
   @override
   String get settings_ublockManageSubtitle =>
-      'Cat Browser legt beim nächsten Browserstart fest, welche Filterlisten uBlock Origin verwendet.';
+      'Cat Browser legt beim n├ñchsten Browserstart fest, welche Filterlisten uBlock Origin verwendet.';
 
   @override
   String get settings_ublockManageHint =>
-      'Die Verwaltung beginnt mit den gängigen Basislisten von uBO und behält „Meine Filter“ bei.';
+      'Die Verwaltung beginnt mit den g├ñngigen Basislisten von uBO und beh├ñlt ΓÇ₧Meine FilterΓÇ£ bei.';
 
   @override
-  String get settings_ublockAutoSelectTitle => 'Sprachen automatisch auswählen';
+  String get settings_ublockAutoSelectTitle =>
+      'Sprachen automatisch ausw├ñhlen';
 
   @override
   String get settings_ublockAutoSelectSubtitle =>
-      'Regionale Filterlisten passend zu den Gerätesprachen aktivieren.';
+      'Regionale Filterlisten passend zu den Ger├ñtesprachen aktivieren.';
 
   @override
   String get settings_ublockAutoSelectedTooltip =>
-      'Automatisch für die Gerätesprache ausgewählt';
+      'Automatisch f├╝r die Ger├ñtesprache ausgew├ñhlt';
 
   @override
-  String get settings_ublockDefaultOnTooltip => 'Standardmäßig aktiv';
+  String get settings_ublockDefaultOnTooltip => 'Standardm├ñ├ƒig aktiv';
 
   @override
-  String get settings_ublockVisitSupportTooltip => 'Support-Seite öffnen';
+  String get settings_ublockVisitSupportTooltip => 'Support-Seite ├╢ffnen';
 
   @override
   String get settings_ublockExternalListsHint =>
-      'Rohe URLs werden als externe Listen an uBlock Origin übergeben. Beschreibungen werden nur hier in Cat Browser angezeigt.';
+      'Rohe URLs werden als externe Listen an uBlock Origin ├╝bergeben. Beschreibungen werden nur hier in Cat Browser angezeigt.';
 
   @override
   String get settings_ublockNoExternalLists =>
@@ -10526,11 +10764,12 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String settings_ublockNoExternalListsMatch(String query) {
-    return 'Keine externen Listen passen zu „$query“.';
+    return 'Keine externen Listen passen zu ΓÇ₧$queryΓÇ£.';
   }
 
   @override
-  String get settings_ublockAddExternalListButton => 'Externe Liste hinzufügen';
+  String get settings_ublockAddExternalListButton =>
+      'Externe Liste hinzuf├╝gen';
 
   @override
   String get settings_ublockEditListDialogTitle =>
@@ -10538,19 +10777,20 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_ublockAddListDialogTitle =>
-      'Externe Filterliste hinzufügen';
+      'Externe Filterliste hinzuf├╝gen';
 
   @override
   String get settings_ublockListUrlLabel => 'Listen-URL';
 
   @override
-  String get settings_ublockListUrlAlreadyAdded => 'Bereits hinzugefügt';
+  String get settings_ublockListUrlAlreadyAdded => 'Bereits hinzugef├╝gt';
 
   @override
   String get settings_ublockDescriptionLabel => 'Beschreibung (optional)';
 
   @override
-  String get settings_ublockDescriptionHint => 'z. B. Störelemente – meinAutor';
+  String get settings_ublockDescriptionHint =>
+      'z. B. St├╢relemente ΓÇô meinAutor';
 
   @override
   String get settings_ublockGroupDefault => 'Standard';
@@ -10565,7 +10805,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settings_ublockGroupMalware => 'Schadsoftware';
 
   @override
-  String get settings_ublockGroupAnnoyances => 'Störelemente';
+  String get settings_ublockGroupAnnoyances => 'St├╢relemente';
 
   @override
   String get settings_ublockGroupMultipurpose => 'Mehrzweck';
@@ -10578,7 +10818,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_categoryGeneralKeywords =>
-      'Design, Zoom der Oberfläche, Standardbrowser';
+      'Design, Zoom der Oberfl├ñche, Standardbrowser';
 
   @override
   String get settings_categoryGeneralSubtitle => 'Erscheinungsbild, Downloads';
@@ -10599,7 +10839,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_categoryHomeNewTabKeywords =>
-      'Startseite, neuer Tab, Bereiche, Verknüpfungen, Top-Seiten, Zitat, Hintergrundbild, Hintergrund';
+      'Startseite, neuer Tab, Bereiche, Verkn├╝pfungen, Top-Seiten, Zitat, Hintergrundbild, Hintergrund';
 
   @override
   String get settings_categoryHomeNewTabSubtitle =>
@@ -10610,33 +10850,33 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_categoryGesturesKeywords =>
-      'Geste, wischen, Strich, Tableiste, langes Drücken, zusammenziehen';
+      'Geste, wischen, Strich, Tableiste, langes Dr├╝cken, zusammenziehen';
 
   @override
   String get settings_categoryGesturesSubtitle =>
       'Wischgesten auf der Tableiste und auf Tabs, gezeichnete Gesten';
 
   @override
-  String get settings_categoryKeyboardShortcutsTitle => 'Tastenkürzel';
+  String get settings_categoryKeyboardShortcutsTitle => 'Tastenk├╝rzel';
 
   @override
   String get settings_categoryKeyboardShortcutsKeywords =>
-      'Tastatur, Tastenkürzel, Hotkey, Tastenbelegung, Shortcut';
+      'Tastatur, Tastenk├╝rzel, Hotkey, Tastenbelegung, Shortcut';
 
   @override
   String get settings_categoryKeyboardShortcutsSubtitle =>
-      'Tasten einer Hardwaretastatur für Browseraktionen';
+      'Tasten einer Hardwaretastatur f├╝r Browseraktionen';
 
   @override
   String get settings_categoryToolbarLayoutTitle => 'Symbolleiste & Layout';
 
   @override
   String get settings_categoryToolbarLayoutKeywords =>
-      'kontextabhängige Symbolleiste, schneller Tab-Wechsler';
+      'kontextabh├ñngige Symbolleiste, schneller Tab-Wechsler';
 
   @override
   String get settings_categoryToolbarLayoutSubtitle =>
-      'Tableiste, Symbolleiste, Schnellwechsler, Tab-Übersicht';
+      'Tableiste, Symbolleiste, Schnellwechsler, Tab-├£bersicht';
 
   @override
   String get settings_categoryWebContentTitle => 'Webinhalte';
@@ -10647,7 +10887,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_categoryWebContentSubtitle =>
-      'Seitendarstellung, PDF, Leseansicht, KI';
+      'Seitendarstellung, PDF, Leseansicht';
 
   @override
   String get settings_categoryNotificationsTitle => 'Benachrichtigungen';
@@ -10658,14 +10898,14 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_categoryNotificationsSubtitle =>
-      'Web-Push-Zustellung, Distributor, Website-Abonnements';
+      'Website-Benachrichtigungen und die App, die sie zustellt';
 
   @override
   String get settings_categorySearchTitle => 'Suche';
 
   @override
   String get settings_categorySearchKeywords =>
-      'Bangs, Vorschläge, lokaler Suchindex';
+      'Bangs, Vorschl├ñge, lokaler Suchindex';
 
   @override
   String get settings_categorySearchSubtitle => 'Anbieter, Bangs, Suchverlauf';
@@ -10676,21 +10916,21 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_categoryPrivacySecurityKeywords =>
-      'Fingerprinting, https, doh, Safe Browsing, Netzwerkschutz, Privatsphäre';
+      'Fingerprinting, https, doh, Safe Browsing, Netzwerkschutz, Privatsph├ñre';
 
   @override
   String get settings_categoryPrivacySecuritySubtitle =>
-      'Tracking-Schutz, Löschen von Daten';
+      'Tracking-Schutz, L├╢schen von Daten';
 
   @override
-  String get settings_categoryProxyTitle => 'Proxy';
+  String get settings_categoryProxyTitle => 'Verbindungen';
 
   @override
   String get settings_categoryProxyKeywords =>
       'Proxy, sing-box, socks, vpn, wireguard, Routing, tor, Container';
 
   @override
-  String get settings_categoryProxySubtitle => 'Verbindungen und Routing';
+  String get settings_categoryProxySubtitle => 'Tor, VPN, Proxys und Routing';
 
   @override
   String get settings_categoryExtensionsTitle => 'Erweiterungen';
@@ -10717,7 +10957,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settings_categorySyncTitle => 'Firefox Sync';
 
   @override
-  String get settings_categorySyncKeywords => 'koppeln, Gerätename, Datentypen';
+  String get settings_categorySyncKeywords =>
+      'koppeln, Ger├ñtename, Datentypen';
 
   @override
   String get settings_categorySyncSubtitle =>
@@ -10747,7 +10988,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_privacySectionTrackingProtectionKeywords =>
-      'Datenschutz, Privatsphäre';
+      'Datenschutz, Privatsph├ñre';
 
   @override
   String get settings_indexEnhancedTrackingProtectionSubtitle =>
@@ -10755,7 +10996,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_indexTrackerStatisticsSubtitle =>
-      'Blockierte Tracker täglich zählen';
+      'Blockierte Tracker t├ñglich z├ñhlen';
 
   @override
   String get settings_indexBounceTrackingProtectionSubtitle =>
@@ -10770,7 +11011,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_indexBrowserLanguagesSubtitle =>
-      'Festlegen, welche Sprachen Websites sehen können';
+      'Festlegen, welche Sprachen Websites sehen k├╢nnen';
 
   @override
   String get settings_privacySectionConnectionSecurityTitle =>
@@ -10778,27 +11019,29 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_indexHttpsOnlyModeSubtitle =>
-      'HTTPS bevorzugen und unsichere Verbindungen blockieren';
+      'Vor dem ├ûffnen unverschl├╝sselter Websites warnen';
 
   @override
-  String get settings_indexDnsOverHttpsTitle => 'DNS über HTTPS';
+  String get settings_indexDnsOverHttpsTitle => 'Sicheres DNS';
 
   @override
-  String get settings_indexDnsOverHttpsKeywords => 'doh, verschlüsseltes DNS';
+  String get settings_indexDnsOverHttpsKeywords =>
+      'dns over https, dns ├╝ber https, doh, verschl├╝sseltes DNS';
 
   @override
-  String get settings_indexDnsOverHttpsSubtitle => 'DNS-Abfragen verschlüsseln';
+  String get settings_indexDnsOverHttpsSubtitle =>
+      'Website-Abfragen verschl├╝sseln';
 
   @override
   String get settings_privacySectionNetworkProtectionTitle => 'Netzwerkschutz';
 
   @override
   String get settings_indexLnaBlockingSubtitle =>
-      'Anfragen an Geräte und Dienste im lokalen Netzwerk blockieren';
+      'Websites m├╝ssen vor Verbindungen zu lokalen Apps und Ger├ñten fragen';
 
   @override
   String get settings_indexLnaBlockTrackersSubtitle =>
-      'Tracker-ähnliche Anfragen ins lokale Netzwerk blockieren';
+      'Bekannte Tracker von lokalen Apps und Ger├ñten fernhalten';
 
   @override
   String get settings_privacySectionSignalsModesTitle =>
@@ -10818,37 +11061,37 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_privacySectionAppOpeningProtectionTitle =>
-      'Schutz vor Öffnen durch Apps';
+      'Schutz vor ├ûffnen durch Apps';
 
   @override
   String get settings_indexAppOpeningProtectionSubtitle =>
-      'Festlegen, welche Apps Cat Browser direkt starten dürfen';
+      'Festlegen, welche Apps Cat Browser direkt starten d├╝rfen';
 
   @override
   String get settings_privacySectionDataManagementTitle => 'Datenverwaltung';
 
   @override
   String get settings_indexDeleteBrowsingDataSubtitle =>
-      'Verlauf, Cookies und andere Browserdaten löschen';
+      'Verlauf, Cookies und andere Browserdaten l├╢schen';
 
   @override
   String get settings_indexAutoClearHistorySubtitle =>
-      'Verlauf nach einem gewählten Zeitraum automatisch löschen';
+      'Verlauf nach einem gew├ñhlten Zeitraum automatisch l├╢schen';
 
   @override
   String get settings_indexAutoClearUnassignedTabsSubtitle =>
-      'Tabs, die keinem Container zugeordnet sind, automatisch schließen';
+      'Tabs, die keinem Container zugeordnet sind, automatisch schlie├ƒen';
 
   @override
   String get settings_privacySectionSafeBrowsingTitle => 'Google Safe Browsing';
 
   @override
   String get settings_indexSafeBrowsingMalwareSubtitle =>
-      'Vor Schadsoftware und schädlichen Downloads warnen';
+      'Vor Schadsoftware und sch├ñdlichen Downloads warnen';
 
   @override
   String get settings_indexSafeBrowsingPhishingSubtitle =>
-      'Vor betrügerischen Websites und Anmeldeseiten warnen';
+      'Vor betr├╝gerischen Websites und Anmeldeseiten warnen';
 
   @override
   String get settings_privacySectionAdvancedSecurityTitle =>
@@ -10856,15 +11099,15 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_indexWebEngineHardeningSubtitle =>
-      'Verhalten und Standardeinstellungen der Browser-Engine härten';
+      'Verhalten und Standardeinstellungen der Browser-Engine h├ñrten';
 
   @override
   String get settings_indexFissionEnabledSubtitle =>
-      'Stärkere Isolierung zwischen Websites verwenden';
+      'Jede Website in einem eigenen Prozess ausf├╝hren';
 
   @override
   String get settings_indexExtensionsWebAPIEnabledSubtitle =>
-      'Erweiterungen erlauben, Web-APIs für Seiten bereitzustellen';
+      'Erweiterungen erlauben, Web-APIs f├╝r Seiten bereitzustellen';
 
   @override
   String get settings_proxySectionTitle => 'Proxy';
@@ -10880,7 +11123,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settings_replace => 'Ersetzen';
 
   @override
-  String get settings_later => 'Später';
+  String get settings_later => 'Sp├ñter';
 
   @override
   String get settings_restartNow => 'Jetzt neu starten';
@@ -10889,10 +11132,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settings_sync => 'Synchronisieren';
 
   @override
-  String get settings_chooseSearchProvider => 'Suchanbieter auswählen';
+  String get settings_chooseSearchProvider => 'Suchanbieter ausw├ñhlen';
 
   @override
-  String get settings_entriesLabel => 'Einträge';
+  String get settings_entriesLabel => 'Eintr├ñge';
 
   @override
   String get settings_lastSyncLabel => 'Letzte Synchronisierung';
@@ -10905,56 +11148,57 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_protectionLevelDescription =>
-      'DNS über HTTPS sendet Anfragen zu Domainnamen über eine verschlüsselte Verbindung. Das schützt sie und erschwert es anderen zu sehen, welche Websites als Nächstes besucht werden.';
+      'Bevor eine Website ├╢ffnet, fragt der Browser ihre Adresse ab. Sicheres DNS verschl├╝sselt diese Abfrage, sodass Netzanbieter und andere schwerer sehen, welche Websites besucht werden.';
 
   @override
   String get settings_defaultProtectionTitle => 'Standardschutz';
 
   @override
   String get settings_defaultProtectionSubtitle =>
-      'DoH nur, wenn das Standard-DNS ausfällt';
+      'Sicheres DNS nur, wenn das DNS des Netzwerks ausf├ñllt';
 
   @override
-  String get settings_increasedProtectionTitle => 'Erhöhter Schutz';
+  String get settings_increasedProtectionTitle => 'Erh├╢hter Schutz';
 
   @override
   String get settings_increasedProtectionSubtitle =>
-      'DoH bevorzugt, Standard-DNS als Ausweichlösung';
+      'Zuerst sicheres DNS, bei Ausfall das DNS des Netzwerks';
 
   @override
   String get settings_maxProtectionTitle => 'Maximaler Schutz';
 
   @override
-  String get settings_maxProtectionSubtitle => 'Nur DoH, keine Ausweichlösung';
+  String get settings_maxProtectionSubtitle =>
+      'Immer sicheres DNS. F├ñllt es aus, laden keine Websites';
 
   @override
   String get settings_protectionOffTitle => 'Aus';
 
   @override
   String get settings_protectionOffSubtitle =>
-      'Den Standard-DNS-Resolver verwenden';
+      'Das DNS des Netzwerks verwenden';
 
   @override
-  String get settings_dohProviderTitle => 'DoH-Anbieter';
+  String get settings_dohProviderTitle => 'Anbieter';
 
   @override
-  String get settings_yourResolvers => 'Eigene Resolver';
+  String get settings_yourResolvers => 'Eigene Anbieter';
 
   @override
-  String get settings_addCustomResolver => 'Eigenen Resolver hinzufügen';
+  String get settings_addCustomResolver => 'Eigenen Anbieter hinzuf├╝gen';
 
   @override
-  String get settings_editCustomResolverTitle => 'Eigenen Resolver bearbeiten';
+  String get settings_editCustomResolverTitle => 'Anbieter bearbeiten';
 
   @override
-  String get settings_resolverUrlLabel => 'Resolver-URL';
+  String get settings_resolverUrlLabel => 'Anbieter-URL';
 
   @override
   String get settings_alreadyBuiltInProvider =>
-      'Bereits als integrierter Anbieter verfügbar';
+      'Bereits als integrierter Anbieter verf├╝gbar';
 
   @override
-  String get settings_alreadyAdded => 'Bereits hinzugefügt';
+  String get settings_alreadyAdded => 'Bereits hinzugef├╝gt';
 
   @override
   String get settings_resolverNameLabel => 'Name (optional)';
@@ -10966,25 +11210,25 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settings_searchHint => 'Einstellungen durchsuchen';
 
   @override
-  String get settings_noSettingsAvailable => 'Keine Einstellungen verfügbar.';
+  String get settings_noSettingsAvailable => 'Keine Einstellungen verf├╝gbar.';
 
   @override
   String settings_noSettingsMatch(String query) {
-    return 'Keine Einstellungen passen zu „$query“.';
+    return 'Keine Einstellungen passen zu ΓÇ₧$queryΓÇ£.';
   }
 
   @override
-  String get settings_stringListEditorEmpty => 'Noch nichts hinzugefügt.';
+  String get settings_stringListEditorEmpty => 'Noch nichts hinzugef├╝gt.';
 
   @override
-  String get settings_customizeMenu => 'Menü anpassen';
+  String get settings_customizeMenu => 'Men├╝ anpassen';
 
   @override
   String get settings_customizeMenuKeywords => 'Bereiche, Zeilen, anordnen';
 
   @override
   String get settings_customizeMenuSubtitle =>
-      'Bereiche und Zeilen des Drei-Punkte-Menüs auswählen und anordnen';
+      'Bereiche und Zeilen des Drei-Punkte-Men├╝s ausw├ñhlen und anordnen';
 
   @override
   String get settings_tabBarPositionTitle => 'Position der Tableiste';
@@ -11014,7 +11258,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_tabBarPositionAutoDescription =>
-      'Seitenleiste auf großen Bildschirmen, untere Leiste auf Smartphones';
+      'Seitenleiste auf gro├ƒen Bildschirmen, untere Leiste auf Smartphones';
 
   @override
   String get settings_tabBarPositionTopDescription =>
@@ -11042,45 +11286,44 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settings_withTitleOption => 'Mit Titel';
 
   @override
-  String get settings_withTitleDescription => 'Zeigt Seitentitel und URL-Pfad';
+  String get settings_withTitleDescription => 'Zeigt Seitentitel und Adresse';
 
   @override
   String get settings_compactOption => 'Kompakt';
 
   @override
-  String get settings_compactDescription =>
-      'Zentrierte URL-Pille ohne Seitentitel';
+  String get settings_compactDescription => 'Nur die Adresse, zentriert';
 
   @override
   String get settings_showContextualToolbarTitle =>
-      'Kontextabhängige Symbolleiste anzeigen';
+      'Kontextabh├ñngige Symbolleiste anzeigen';
 
   @override
   String get settings_showContextualToolbarKeywords => 'untere Symbolleiste';
 
   @override
   String get settings_showContextualToolbarSubtitle =>
-      'Eine zusätzliche untere Symbolleiste für Navigation und Aktionen anzeigen';
+      'Eine zus├ñtzliche untere Symbolleiste f├╝r Navigation und Aktionen anzeigen';
 
   @override
   String get settings_customizeToolbarButtons =>
-      'Schaltflächen der Symbolleiste anpassen';
+      'Schaltfl├ñchen der Symbolleiste anpassen';
 
   @override
   String get settings_customizeToolbarButtonsKeywords =>
-      'Schaltflächen, Buttons';
+      'Schaltfl├ñchen, Buttons';
 
   @override
   String get settings_customizeSwitcherButtons =>
-      'Schaltflächen des Wechslers anpassen';
+      'Schaltfl├ñchen des Wechslers anpassen';
 
   @override
   String get settings_customizeSwitcherButtonsKeywords =>
-      'Schaltflächen, neuer Tab, Aktionen, am Ende';
+      'Schaltfl├ñchen, neuer Tab, Aktionen, am Ende';
 
   @override
   String get settings_customizeSwitcherButtonsSubtitle =>
-      'Am Ende der Wechslerleiste angeheftete Aktionsschaltflächen (unabhängig von der kontextabhängigen Symbolleiste)';
+      'Am Ende der Wechslerleiste angeheftete Aktionsschaltfl├ñchen (unabh├ñngig von der kontextabh├ñngigen Symbolleiste)';
 
   @override
   String get settings_tabStackingTitle => 'Tab-Anordnung';
@@ -11105,28 +11348,28 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_containerTabsDescription =>
-      'Sortierte Tabs des ausgewählten Containers';
+      'Sortierte Tabs des ausgew├ñhlten Containers';
 
   @override
   String get settings_accordionOption => 'Akkordeon';
 
   @override
   String get settings_accordionDescription =>
-      'Alle Container als Chips, die Tabs des ausgewählten Containers direkt ausgeklappt';
+      'Alle Container als Chips, die Tabs des ausgew├ñhlten Containers direkt ausgeklappt';
 
   @override
   String get settings_twoRowsOption => 'Zwei Zeilen';
 
   @override
   String get settings_twoRowsDescription =>
-      'Oben Tabs des ausgewählten Containers, darunter zuletzt verwendete Tabs';
+      'Oben Tabs des ausgew├ñhlten Containers, darunter zuletzt verwendete Tabs';
 
   @override
   String get settings_tabGroupsOption => 'Tabgruppen';
 
   @override
   String get settings_tabGroupsDescription =>
-      'Ein Chip je Tab samt der daraus geöffneten Tabs, darüber die Tabs der aktuellen Gruppe';
+      'Ein Chip je Tab samt der daraus ge├╢ffneten Tabs, dar├╝ber die Tabs der aktuellen Gruppe';
 
   @override
   String get settings_tabStackingFallbackAccordion =>
@@ -11145,22 +11388,22 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_closeButtonsTitle =>
-      'Schließen-Schaltflächen auf Tab-Chips';
+      'Schlie├ƒen-Schaltfl├ñchen auf Tab-Chips';
 
   @override
   String get settings_closeButtonsKeywords =>
-      'schließen, X-Schaltfläche, aktiver Tab';
+      'schlie├ƒen, X-Schaltfl├ñche, aktiver Tab';
 
   @override
   String get settings_closeButtonsSubtitle =>
-      'Welche Chips des Wechslers eine Schließen-Schaltfläche zeigen';
+      'Welche Chips des Wechslers eine Schlie├ƒen-Schaltfl├ñche zeigen';
 
   @override
   String get settings_activeTabOnlyOption => 'Nur aktiver Tab';
 
   @override
   String get settings_activeTabOnlyDescription =>
-      'Nur der Chip des gerade geöffneten Tabs';
+      'Nur der Chip des gerade ge├╢ffneten Tabs';
 
   @override
   String get settings_allTabsOption => 'Alle Tabs';
@@ -11173,14 +11416,14 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_neverCloseDescription =>
-      'Keine Schließen-Schaltflächen; Tabs über das Menü bei langem Drücken oder durch Wischen auf der Leiste schließen';
+      'Keine Schlie├ƒen-Schaltfl├ñchen; Tabs ├╝ber das Men├╝ bei langem Dr├╝cken oder durch Wischen auf der Leiste schlie├ƒen';
 
   @override
   String get settings_titleWidthTitle =>
       'Titelbreite im schnellen Tab-Wechsler';
 
   @override
-  String get settings_titleWidthKeywords => 'Breite, Titel, Chip, Länge';
+  String get settings_titleWidthKeywords => 'Breite, Titel, Chip, L├ñnge';
 
   @override
   String get settings_titleWidthSubtitle =>
@@ -11188,14 +11431,14 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_historyFallbackTitle =>
-      'Verlauf als Ausweichlösung im schnellen Tab-Wechsler';
+      'Verlauf als Ausweichl├╢sung im schnellen Tab-Wechsler';
 
   @override
-  String get settings_historyFallbackKeywords => 'Vorschläge, Verlauf';
+  String get settings_historyFallbackKeywords => 'Vorschl├ñge, Verlauf';
 
   @override
   String get settings_historyFallbackSubtitle =>
-      'Vorschläge aus dem Browserverlauf verwenden, wenn keine Tab-Chips verfügbar sind';
+      'Vorschl├ñge aus dem Browserverlauf verwenden, wenn keine Tab-Chips verf├╝gbar sind';
 
   @override
   String get settings_containersByRecentUseTitle =>
@@ -11207,7 +11450,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_containersByRecentUseSubtitle =>
-      'Nur Akkordeon: Der zuletzt verwendete Container rückt nach vorn. Angeheftete Container bleiben davor';
+      'Nur Akkordeon: Der zuletzt verwendete Container r├╝ckt nach vorn. Angeheftete Container bleiben davor';
 
   @override
   String get settings_showTitlesTitle =>
@@ -11230,7 +11473,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_hierarchyDepthSubtitle =>
-      'Wie viele Verschachtelungspfeile die Chips des Wechslers zeigen, bevor sie zu einem Zähler zusammengefasst werden (0 blendet die Anzeige aus)';
+      'Wie viele Verschachtelungspfeile die Chips des Wechslers zeigen, bevor sie zu einem Z├ñhler zusammengefasst werden (0 blendet die Anzeige aus)';
 
   @override
   String settings_hierarchyGlyphsLabel(int glyphs) {
@@ -11263,7 +11506,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_autoHideTabBarDistanceSubtitle =>
-      'Wie weit gescrollt werden muss, bis die Tableiste aus- oder wieder eingeblendet wird, im Verhältnis zum Standard';
+      'Wie weit gescrollt werden muss, bis die Tableiste aus- oder wieder eingeblendet wird, im Verh├ñltnis zum Standard';
 
   @override
   String get settings_autoHideSidePanelTitle =>
@@ -11275,11 +11518,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_autoHideSidePanelSubtitle =>
-      'Die linke oder rechte Tableiste aus dem Weg halten und einblenden, sobald die Maus diesen Rand erreicht. Das funktioniert nur bei Verwendung einer Maus oder eines Trackpads; eine Berührung des Bildschirms setzt die Leiste wieder neben die Seite.';
+      'Die linke oder rechte Tableiste aus dem Weg halten und einblenden, sobald die Maus diesen Rand erreicht. Das funktioniert nur bei Verwendung einer Maus oder eines Trackpads; eine Ber├╝hrung des Bildschirms setzt die Leiste wieder neben die Seite.';
 
   @override
   String get settings_bottomSheetTabViewTitle =>
-      'Tab-Übersicht von unten einblenden';
+      'Tab-├£bersicht von unten einblenden';
 
   @override
   String get settings_bottomSheetTabViewKeywords => 'Bottom Sheet, Leiste';
@@ -11290,7 +11533,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_longPressUrlCopyTitle =>
-      'URL durch langes Drücken kopieren';
+      'Adresse durch langes Dr├╝cken kopieren';
 
   @override
   String get settings_longPressUrlCopyKeywords =>
@@ -11298,21 +11541,18 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_longPressUrlCopySubtitle =>
-      'Beim langen Drücken auf die Adressleiste die URL der Seite in die Zwischenablage kopieren';
+      'Lang auf die Adressleiste dr├╝cken, um die Adresse der Seite zu kopieren';
 
   @override
   String get settings_showFaviconsTitle =>
-      'Favicons in der Listenansicht anzeigen';
+      'Website-Symbole in der Listenansicht anzeigen';
 
   @override
-  String get settings_showFaviconsKeywords => 'Symbole, Icons';
+  String get settings_showFaviconsKeywords => 'Symbole, Icons, Favicons';
 
   @override
   String get settings_showFaviconsSubtitle =>
       'In der Tab-Liste Website-Symbole statt Seitenvorschauen anzeigen';
-
-  @override
-  String get settings_previewPageContent => 'Seiteninhalt';
 
   @override
   String get settings_previewPageTitle => 'Cat Browser-Vorschau';
@@ -11330,18 +11570,11 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settings_previewTabSearch => 'Suche';
 
   @override
-  String get settings_livePreviewTitle => 'Live-Vorschau';
-
-  @override
-  String get settings_livePreviewSubtitle =>
-      'Spiegelt die aktuellen Einstellungen für Symbolleiste und Layout wider';
-
-  @override
-  String get settings_deleteAllExceptionsTitle => 'Alle Ausnahmen löschen?';
+  String get settings_deleteAllExceptionsTitle => 'Alle Ausnahmen l├╢schen?';
 
   @override
   String get settings_deleteAllExceptionsContent =>
-      'Dadurch wird der Tracking-Schutz für alle Ausnahme-Websites wieder aktiviert.';
+      'Dadurch wird der Tracking-Schutz f├╝r alle Ausnahme-Websites wieder aktiviert.';
 
   @override
   String get settings_entryCopied => 'Eintrag kopiert';
@@ -11360,7 +11593,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_importSettingsDescription =>
-      'Die ausgewählten Bereiche ersetzen den aktuellen Stand dieses Profils. Alles, was nicht angehakt ist, bleibt unverändert.';
+      'Die ausgew├ñhlten Bereiche ersetzen den aktuellen Stand dieses Profils. Alles, was nicht angehakt ist, bleibt unver├ñndert.';
 
   @override
   String settings_unreadableSections(int count, String sections) {
@@ -11368,9 +11601,9 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other:
-          '$count Bereiche dieser Datei ($sections) können von dieser Cat Browser-Version nicht gelesen werden und werden übersprungen.',
+          '$count Bereiche dieser Datei ($sections) k├╢nnen von dieser Cat Browser-Version nicht gelesen werden und werden ├╝bersprungen.',
       one:
-          '1 Bereich dieser Datei ($sections) kann von dieser Cat Browser-Version nicht gelesen werden und wird übersprungen.',
+          '1 Bereich dieser Datei ($sections) kann von dieser Cat Browser-Version nicht gelesen werden und wird ├╝bersprungen.',
     );
     return '$_temp0';
   }
@@ -11383,14 +11616,14 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_credentialsNotCarried =>
-      'Exporte enthalten weder gespeicherte Zugangsdaten noch das Hintergrundbild. Dieses Gerät behält seine eigenen.';
+      'Exporte enthalten weder gespeicherte Zugangsdaten noch das Hintergrundbild. Dieses Ger├ñt beh├ñlt seine eigenen.';
 
   @override
   String get settings_geckoPrefsRestartNote =>
       'Manche Engine-Einstellungen werden erst nach einem Neustart des Browsers wirksam.';
 
   @override
-  String get settings_userAgentChangedTitle => 'User-Agent geändert';
+  String get settings_userAgentChangedTitle => 'User-Agent ge├ñndert';
 
   @override
   String get settings_userAgentChangedContent =>
@@ -11401,19 +11634,20 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_contextualToolbarSectionTitle =>
-      'Kontextabhängige Symbolleiste';
+      'Kontextabh├ñngige Symbolleiste';
 
   @override
   String get settings_quickTabSwitcherSectionTitle => 'Schneller Tab-Wechsler';
 
   @override
-  String get settings_tabViewSectionTitle => 'Tab-Übersicht';
+  String get settings_tabViewSectionTitle => 'Tab-├£bersicht';
 
   @override
-  String get settings_menuSectionTitle => 'Menü';
+  String get settings_menuSectionTitle => 'Men├╝';
 
   @override
-  String get settings_menuSectionKeywords => 'Drei-Punkte-Menü, Überlaufmenü';
+  String get settings_menuSectionKeywords =>
+      'Drei-Punkte-Men├╝, ├£berlaufmen├╝';
 
   @override
   String get settings_indexTabBarPositionSubtitle =>
@@ -11421,7 +11655,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_indexTabBarStyleSubtitle =>
-      'Zwischen Layout mit Titel und kompaktem Layout wählen';
+      'Zwischen Layout mit Titel und kompaktem Layout w├ñhlen';
 
   @override
   String get settings_indexAutoHideTabBarSubtitle =>
@@ -11433,15 +11667,15 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_indexLongPressUrlCopySubtitle =>
-      'Die aktuelle URL aus der Tableiste kopieren';
+      'Die Adresse der Seite aus der Tableiste kopieren';
 
   @override
   String get settings_indexShowContextualToolbarSubtitle =>
-      'Eine zusätzliche Symbolleiste für Navigation und Aktionen anzeigen';
+      'Eine zus├ñtzliche Symbolleiste f├╝r Navigation und Aktionen anzeigen';
 
   @override
   String get settings_indexCustomizeToolbarButtonsSubtitle =>
-      'Festlegen, welche Aktionen in der kontextabhängigen Symbolleiste erscheinen';
+      'Festlegen, welche Aktionen in der kontextabh├ñngigen Symbolleiste erscheinen';
 
   @override
   String get settings_indexTabStackingSubtitle =>
@@ -11449,11 +11683,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_indexCustomizeSwitcherButtonsSubtitle =>
-      'Festlegen, welche Aktionsschaltflächen am Ende der Leiste erscheinen';
+      'Festlegen, welche Aktionsschaltfl├ñchen am Ende der Leiste erscheinen';
 
   @override
   String get settings_indexHistoryFallbackSubtitle =>
-      'Verlaufsvorschläge verwenden, wenn keine passenden Tabs vorhanden sind';
+      'Verlaufsvorschl├ñge verwenden, wenn keine passenden Tabs vorhanden sind';
 
   @override
   String get settings_indexShowTitlesSubtitle =>
@@ -11465,7 +11699,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_indexBottomSheetTabViewSubtitle =>
-      'Die Tab-Übersicht von unten einblenden';
+      'Die Tab-├£bersicht von unten einblenden';
 
   @override
   String get settings_indexShowFaviconsSubtitle =>
@@ -11476,7 +11710,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_switcherPlacementSubtitle =>
-      'Wo der Tab-Wechsler neben Adressleiste und kontextabhängiger Symbolleiste sitzt';
+      'Wo der Tab-Wechsler neben Adressleiste und kontextabh├ñngiger Symbolleiste sitzt';
 
   @override
   String get settings_switcherPlacementKeywords =>
@@ -11487,11 +11721,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_switcherPlacementAutoDescription =>
-      'Über der Adressleiste, wenn sie unten ist, über der kontextabhängigen Symbolleiste, wenn sie oben ist';
+      '├£ber der Adressleiste, wenn sie unten ist, ├╝ber der kontextabh├ñngigen Symbolleiste, wenn sie oben ist';
 
   @override
   String get settings_switcherPlacementAboveAddressBarLabel =>
-      'Über der Adressleiste';
+      '├£ber der Adressleiste';
 
   @override
   String get settings_switcherPlacementAboveAddressBarDescription =>
@@ -11507,7 +11741,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_switcherPlacementBelowContextualBarLabel =>
-      'Unter der kontextabhängigen Symbolleiste';
+      'Unter der kontextabh├ñngigen Symbolleiste';
 
   @override
   String get settings_switcherPlacementBelowContextualBarDescription =>
@@ -11515,15 +11749,15 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_tabViewActionsAtBottomTitle =>
-      'Aktionen der Tab-Übersicht unten';
+      'Aktionen der Tab-├£bersicht unten';
 
   @override
   String get settings_tabViewActionsAtBottomSubtitle =>
-      'Suche, Filter und Tab-Aktionen unten, mit der Schaltfläche für neue Tabs darüber';
+      'Suche, Filter und Tab-Aktionen unten, mit der Schaltfl├ñche f├╝r neue Tabs dar├╝ber';
 
   @override
   String get settings_tabViewActionsAtBottomKeywords =>
-      'unten, Daumen, Reichweite, einhändig, Symbolleiste, Tab-Übersicht';
+      'unten, Daumen, Reichweite, einh├ñndig, Symbolleiste, Tab-├£bersicht';
 
   @override
   String settings_trackerStatisticsTotal(int count, String date) {
@@ -11554,6 +11788,185 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get settings_trackerStatisticsLoadFailed =>
       'Tracker-Statistik konnte nicht geladen werden.';
+
+  @override
+  String get settings_contextualToolbarSaveFailed =>
+      'Die Schaltfl├ñchen konnten nicht gespeichert werden. Erneut versuchen.';
+
+  @override
+  String get settings_fingerprintPresetsSection => 'Voreinstellungen';
+
+  @override
+  String get settings_confirmationsSectionTitle => 'R├╝ckfragen';
+
+  @override
+  String get settings_confirmationsSubtitle =>
+      'Festlegen, was vor dem Schlie├ƒen von Tabs oder dem Starten eines Proxys gefragt wird';
+
+  @override
+  String get settings_confirmationsSectionKeywords =>
+      'best├ñtigung, r├╝ckfrage, dialog, fragen, nicht mehr fragen, auswahl merken';
+
+  @override
+  String get settings_actionOpenFullScreen => 'Im Vollbild ├╢ffnen';
+
+  @override
+  String get settings_previewSheetExpand => 'Einstellungen vergr├╢├ƒern';
+
+  @override
+  String get settings_previewSheetCollapse => 'Einstellungen verkleinern';
+
+  @override
+  String get settings_layoutEditorPreviewTab => 'Vorschau';
+
+  @override
+  String get settings_layoutEditorSettingsTab => 'Einstellungen';
+
+  @override
+  String get settings_previewDeviceThisWindow => 'Dieses Fenster';
+
+  @override
+  String get settings_previewDevicePhone => 'Smartphone';
+
+  @override
+  String get settings_previewDevicePhoneLandscape => 'Smartphone im Querformat';
+
+  @override
+  String get settings_previewDeviceLargeScreen => 'Gro├ƒer Bildschirm';
+
+  @override
+  String settings_previewOtherDeviceHint(String device) {
+    String _temp0 = intl.Intl.selectLogic(device, {
+      'phone':
+          'Zeigt ein Smartphone. Automatische Einstellungen gelten wie auf einem Smartphone.',
+      'phoneLandscape':
+          'Zeigt ein Smartphone im Querformat. Automatische Einstellungen gelten wie dort.',
+      'largeScreen':
+          'Zeigt einen gro├ƒen Bildschirm. Automatische Einstellungen gelten wie auf einem gro├ƒen Bildschirm.',
+      'other': 'Zeigt eine andere Fenstergr├╢├ƒe.',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String get settings_previewStatePage => 'Seite';
+
+  @override
+  String get settings_previewStateHome => 'Startseite';
+
+  @override
+  String get settings_previewStateSidePanelCollapsed =>
+      'Seitenleiste eingeklappt';
+
+  @override
+  String get settings_previewStateNeedsSidePanel =>
+      'Erfordert eine Seitenleiste in einem gro├ƒen Fenster';
+
+  @override
+  String get settings_layoutPreviewSemantics =>
+      'Vorschau des Browsers mit diesem Symbolleisten-Layout';
+
+  @override
+  String get settings_layoutPartTabChips => 'Tab-Chips';
+
+  @override
+  String get settings_previewModeSelect => 'Ausw├ñhlen';
+
+  @override
+  String get settings_previewModeTry => 'Ausprobieren';
+
+  @override
+  String get settings_previewSelectHint =>
+      'Einen Teil der Symbolleiste antippen, um seine Einstellungen zu ├ñndern.';
+
+  @override
+  String get settings_previewTryHint =>
+      'Die Vorschau verh├ñlt sich wie der Browser: Seite scrollen und Schaltfl├ñchen antippen.';
+
+  @override
+  String get settings_previewAllSettings => 'Alle Einstellungen';
+
+  @override
+  String get settings_previewSelectionPath => 'Ausgew├ñhlter Teil';
+
+  @override
+  String settings_tryToolbarHidden(String distance) {
+    return 'Symbolleiste beim Scrollen ausgeblendet ┬╖ Scrollweg zum Ausblenden $distance';
+  }
+
+  @override
+  String get settings_trySidePanelHidden =>
+      'Seitenleiste ausgeblendet ┬╖ Zum Zur├╝ckholen auf den Rand zeigen oder tippen. Im Browser nur mit Maus oder Trackpad';
+
+  @override
+  String get settings_tryOpensTabView => '├ûffnet die Tab-├£bersicht';
+
+  @override
+  String get settings_tryOpensMenu => '├ûffnet das Men├╝';
+
+  @override
+  String get settings_tryAdjust => 'Anpassen';
+
+  @override
+  String get settings_categoryFeatureControlTitle => 'Funktionsauswahl';
+
+  @override
+  String get settings_categoryFeatureControlSubtitle =>
+      'Festlegen, welche Funktionen WebLibre zeigt';
+
+  @override
+  String get settings_categoryFeatureControlKeywords =>
+      'funktionsauswahl, funktionen, sichtbarkeit, anzeigen, ausblenden, ausgeblendet, voreinstellung, einfach surfen, bastelmodus, expertenmodus, einfach, fortgeschritten, anpassen, einrichtung, feature control, preset';
+
+  @override
+  String get settings_featureControlIntro =>
+      'Nicht genutzte Funktionen auszublenden h├ñlt WebLibre ├╝bersichtlich. Solange eine Funktion ausgeblendet ist, gelten f├╝r ihre Einstellungen die Standardwerte. ├änderungen bleiben gespeichert und gelten nach dem Einblenden wieder. Verbindungen und alles selbst Erstellte funktionieren weiter.';
+
+  @override
+  String get settings_featureControlHiddenInUse =>
+      'Funktion ausgeblendet. Alles bereits Eingerichtete arbeitet weiter.';
+
+  @override
+  String get settings_featureControlKeepsWorking =>
+      'Alles bereits Eingerichtete arbeitet weiter.';
+
+  @override
+  String get settings_featureControlShownApplyingAgain =>
+      'Funktion eingeblendet. Die fr├╝heren ├änderungen gelten wieder.';
+
+  @override
+  String get settings_featureControlApplyPresetTitle =>
+      'Voreinstellung anwenden';
+
+  @override
+  String get settings_featureControlApplyPresetSubtitle =>
+      'Funktionen so ein- und ausblenden wie eine Voreinstellung.';
+
+  @override
+  String settings_featureControlApplyPresetDialogTitle(String preset) {
+    return 'ΓÇ₧$presetΓÇ£ anwenden?';
+  }
+
+  @override
+  String get settings_featureControlApplyPresetDialogContent =>
+      'Nur diese Funktionen ├ñndern sich.';
+
+  @override
+  String get settings_featureControlFeaturesToShow => 'Werden angezeigt';
+
+  @override
+  String get settings_featureControlFeaturesToHide => 'Werden ausgeblendet';
+
+  @override
+  String get settings_featureControlApplyPresetConfirm => 'Anwenden';
+
+  @override
+  String settings_featureControlApplyPresetUnchanged(String preset) {
+    return 'Die angezeigten Funktionen entsprechen bereits ΓÇ₧$presetΓÇ£.';
+  }
+
+  @override
+  String get settings_featureControlSectionTitle => 'Funktionen';
 
   @override
   String get smallWeb_sheetTitle => 'Small Web';
@@ -13077,14 +13490,15 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get webPush_screenSubtitle =>
-      'Website-Benachrichtigungen über UnifiedPush';
+      'Website-Benachrichtigungen über eine separate App empfangen';
 
   @override
-  String get webPush_distributorTileTitle => 'UnifiedPush-Distributor';
+  String get webPush_distributorTileTitle =>
+      'App für Website-Benachrichtigungen';
 
   @override
   String get webPush_distributorTileKeywords =>
-      'Benachrichtigungen, Push, unifiedpush, ntfy, Mitteilungen';
+      'Benachrichtigungen, Push, UnifiedPush, Distributor, ntfy';
 
   @override
   String get webPush_checking => 'Wird geprüft …';
@@ -13110,10 +13524,11 @@ class AppLocalizationsDe extends AppLocalizations {
   String get webPush_disablingWebPush => 'Wird deaktiviert …';
 
   @override
-  String get webPush_disableWebPush => 'Web Push deaktivieren';
+  String get webPush_disableWebPush => 'Website-Benachrichtigungen ausschalten';
 
   @override
-  String get webPush_statusNoneAvailable => 'Kein Distributor verfügbar';
+  String get webPush_statusNoneAvailable =>
+      'Keine passende Benachrichtigungs-App installiert';
 
   @override
   String get webPush_statusNotSelected => 'Nicht eingerichtet';
@@ -13125,50 +13540,53 @@ class AppLocalizationsDe extends AppLocalizations {
   String get webPush_statusReady => 'Aktiv';
 
   @override
-  String get webPush_statusUnavailable => 'Distributor nicht verfügbar';
+  String get webPush_statusUnavailable =>
+      'Benachrichtigungs-App nicht verfügbar';
 
   @override
   String get webPush_statusDescNoneAvailable =>
-      'Um Website-Benachrichtigungen zu erhalten, eine UnifiedPush-Distributor-App wie ntfy installieren.';
+      'Für Website-Benachrichtigungen ntfy oder eine andere App mit UnifiedPush-Unterstützung installieren.';
 
   @override
   String get webPush_statusDescNotSelected =>
-      'Unten einen Distributor auswählen, um Website-Benachrichtigungen zu aktivieren.';
+      'Unten eine Benachrichtigungs-App auswählen, um Website-Benachrichtigungen einzuschalten.';
 
   @override
   String get webPush_statusDescPending =>
-      'Wartet auf die Bestätigung der Registrierung durch den Distributor.';
+      'Wartet, bis die Benachrichtigungs-App die Einrichtung abgeschlossen hat.';
 
   @override
   String get webPush_statusDescReady =>
-      'Website-Benachrichtigungen werden über diesen Distributor zugestellt.';
+      'Website-Benachrichtigungen werden über diese App zugestellt.';
 
   @override
   String get webPush_statusDescUnavailable =>
-      'Der ausgewählte Distributor ist nicht mehr installiert. Website-Benachrichtigungen werden erst wieder zugestellt, wenn ein anderer ausgewählt ist.';
+      'Die ausgewählte Benachrichtigungs-App ist nicht mehr installiert. Website-Benachrichtigungen kommen erst wieder an, wenn eine andere ausgewählt ist.';
 
   @override
   String get webPush_noDistributorInstalled =>
-      'Es ist kein UnifiedPush-Distributor installiert. Einen installieren, z. B. ntfy, und erneut versuchen.';
+      'Es ist keine passende Benachrichtigungs-App installiert. ntfy oder eine andere App mit UnifiedPush-Unterstützung installieren und erneut versuchen.';
 
   @override
-  String get webPush_chooseDistributorTitle => 'Distributor auswählen';
+  String get webPush_chooseDistributorTitle =>
+      'App für Website-Benachrichtigungen auswählen';
 
   @override
   String get webPush_distributorConfigured =>
-      'UnifiedPush-Distributor eingerichtet.';
+      'Benachrichtigungs-App eingerichtet.';
 
   @override
   String webPush_couldNotConfigureDistributor(String error) {
-    return 'Distributor konnte nicht eingerichtet werden: $error';
+    return 'Die Benachrichtigungs-App konnte nicht eingerichtet werden: $error';
   }
 
   @override
-  String get webPush_webPushDisabled => 'Web Push deaktiviert.';
+  String get webPush_webPushDisabled =>
+      'Website-Benachrichtigungen ausgeschaltet.';
 
   @override
   String webPush_couldNotDisableWebPush(String error) {
-    return 'Web Push konnte nicht deaktiviert werden: $error';
+    return 'Website-Benachrichtigungen konnten nicht ausgeschaltet werden: $error';
   }
 
   @override
@@ -13218,11 +13636,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get webPush_subscriptionDelayedDelivery =>
-      'Endpunkt gespeichert; Zustellung pausiert, bis der Distributor bereit ist';
+      'Abonniert; Benachrichtigungen können ankommen, sobald die Benachrichtigungs-App bereit ist';
 
   @override
   String get webPush_subscriptionWaitingForEndpoint =>
-      'Warten auf die Zuweisung eines Endpunkts durch den Distributor';
+      'Wartet, bis die Benachrichtigungs-App das Abonnement abschließt';
 
   @override
   String get webPush_revokeSubscriptionHint =>
@@ -13233,7 +13651,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get webPush_indexDistributorSubtitle =>
-      'Die App, die Push-Benachrichtigungen von Websites zustellt';
+      'Die App, die Website-Benachrichtigungen zustellt, etwa ntfy (UnifiedPush)';
 
   @override
   String get webPush_indexNotificationPermissionSubtitle =>
@@ -13251,7 +13669,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get webPush_indexSiteSubscriptionsSubtitle =>
-      'Websites mit abonnierten Push-Benachrichtigungen';
+      'Websites, die Benachrichtigungen senden dürfen';
 
   @override
   String get webSearch_fetchPageDataTitle => 'Seitendaten abrufen';
@@ -14060,6 +14478,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get startup_maintenanceUnknownDescribeDone => 'Fertig.';
 
   @override
+  String get listFormat_separator => ', ';
+
+  @override
   String units_bytes(String value) {
     return '$value B';
   }
@@ -14080,10 +14501,299 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String get visibilitySwitch_containersLabel => 'Container';
+
+  @override
+  String get visibilitySwitch_containersDescription =>
+      'Cookies und Anmeldungen in getrennten Bereichen halten, etwa Arbeit und Privat';
+
+  @override
+  String get visibilitySwitch_isolatedTabsLabel => 'Isolierte Tabs';
+
+  @override
+  String get visibilitySwitch_isolatedTabsDescription =>
+      'Tabs mit eigenen Cookies und Anmeldungen öffnen, die anders als private Tabs nach dem Beenden bleiben';
+
+  @override
+  String get visibilitySwitch_connectionsLabel => 'Tor, VPN und Proxys';
+
+  @override
+  String get visibilitySwitch_connectionsDescription =>
+      'Über Tor, ein VPN oder einen Proxy surfen';
+
+  @override
+  String get visibilitySwitch_profilesLabel => 'Mehrere Profile';
+
+  @override
+  String get visibilitySwitch_profilesDescription =>
+      'Getrennte Profile anlegen und zwischen ihnen wechseln';
+
+  @override
+  String get visibilitySwitch_treeTabsLabel => 'Tab-Baum';
+
+  @override
+  String get visibilitySwitch_treeTabsDescription =>
+      'Tabs, die aus einer Seite geöffnet wurden, unter ihrem Ursprungstab anzeigen';
+
+  @override
+  String get visibilitySwitch_layoutAdvancedLabel =>
+      'Symbolleiste & Menü anpassen';
+
+  @override
+  String get visibilitySwitch_layoutAdvancedDescription =>
+      'Schaltflächen der Symbolleiste, Menüreihenfolge und Gruppierung in der Tableiste festlegen';
+
+  @override
+  String get visibilitySwitch_gesturesLabel => 'Gesten';
+
+  @override
+  String get visibilitySwitch_gesturesDescription =>
+      'Wischen oder Formen zeichnen, um Aktionen auszulösen';
+
+  @override
+  String get visibilitySwitch_keyboardCustomizationLabel =>
+      'Eigene Tastenkürzel';
+
+  @override
+  String get visibilitySwitch_keyboardCustomizationDescription =>
+      'Festlegen, welche Taste welche Aktion ausführt';
+
+  @override
+  String get visibilitySwitch_privacyAdvancedLabel =>
+      'Erweiterte Datenschutz-Einstellungen';
+
+  @override
+  String get visibilitySwitch_privacyAdvancedDescription =>
+      'Tracking-Schutz, sicheres DNS, die empfohlenen Sicherheitseinstellungen und die Wiedererkennbarkeit des Geräts genauer einstellen. Das Ausblenden der Einstellungen schaltet den Schutz nicht aus.';
+
+  @override
+  String get visibilitySwitch_webappStorageLabel => 'Speicher für Web-Apps';
+
+  @override
+  String get visibilitySwitch_webappStorageDescription =>
+      'Festlegen, welche Cookies und Anmeldungen eine zum Startbildschirm hinzugefügte App verwendet';
+
+  @override
+  String get visibilitySwitch_aiLabel => 'KI auf dem Gerät';
+
+  @override
+  String get visibilitySwitch_aiDescription =>
+      'Vorschläge zum Gruppieren von Tabs von einer KI erhalten, die nur auf diesem Gerät läuft';
+
+  @override
+  String get visibilitySwitch_expertDetailsLabel => 'Experten-Einstellungen';
+
+  @override
+  String get visibilitySwitch_expertDetailsDescription =>
+      'Härtungsgruppen, Routing je Container, JavaScript, User-Agent, Zertifikate und mehr steuern';
+
+  @override
+  String visibilitySwitch_alsoNeeds(String switches) {
+    return 'Teile dieser Funktion brauchen außerdem: $switches';
+  }
+
+  @override
+  String visibilitySwitch_revealTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ausgeblendete Funktionen anzeigen?',
+      one: 'Ausgeblendete Funktion anzeigen?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String visibilitySwitch_revealIntro(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dafür werden Funktionen gebraucht, die gerade ausgeblendet sind:',
+      one: 'Das gehört zu einer Funktion, die gerade ausgeblendet ist:',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String visibilitySwitch_revealOutcome(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Beim Einblenden kehren ihre Schaltflächen und Einstellungen zurück. Sonst ändert sich nichts.',
+      one:
+          'Beim Einblenden kehren ihre Schaltflächen und Einstellungen zurück. Sonst ändert sich nichts.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String visibilitySwitch_revealResumesIntro(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Solange die Funktionen ausgeblendet sind, gelten für diese Einstellungen die Standardwerte. Die Änderungen bleiben gespeichert und gelten nach dem Einblenden wieder:',
+      one:
+          'Solange die Funktion ausgeblendet ist, gelten für diese Einstellungen die Standardwerte. Die Änderungen bleiben gespeichert und gelten nach dem Einblenden wieder:',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get visibilitySwitch_takesEffectAfterRestart =>
+      'Wirkt erst nach einem Neustart';
+
+  @override
+  String get visibilitySwitch_revealConfirm => 'Anzeigen';
+
+  @override
+  String get visibilitySwitch_stillHiddenNote =>
+      'Das gehört zu einer ausgeblendeten Funktion. Sie lässt sich unter Einstellungen > Funktionsauswahl anzeigen.';
+
+  @override
+  String get visibilitySwitch_showFailed =>
+      'Die Funktion konnte nicht angezeigt werden. Erneut versuchen.';
+
+  @override
+  String get visibilitySwitch_hiddenControlHint =>
+      'Teil einer ausgeblendeten Funktion. Aktivieren, um die Funktion anzuzeigen';
+
+  @override
+  String visibilitySwitch_hiddenStatus(String switchLabel) {
+    return 'Teil der ausgeblendeten Funktion „$switchLabel“';
+  }
+
+  @override
+  String visibilitySwitch_hiddenStatusSeveral(String switchLabels) {
+    return 'Teil ausgeblendeter Funktionen: $switchLabels';
+  }
+
+  @override
+  String get visibilitySwitch_notAppliedWhileHidden =>
+      'Gilt nicht, solange ausgeblendet';
+
+  @override
+  String visibilitySwitch_hideWarningTitle(String feature) {
+    return '$feature ausblenden?';
+  }
+
+  @override
+  String visibilitySwitch_hideWarningContent(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Solange die Funktionen ausgeblendet sind, gelten für diese Einstellungen die Standardwerte. Die Änderungen bleiben gespeichert und gelten nach dem Einblenden wieder.',
+      one:
+          'Solange die Funktion ausgeblendet ist, gelten für diese Einstellungen die Standardwerte. Die Änderungen bleiben gespeichert und gelten nach dem Einblenden wieder.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get visibilitySwitch_hideWarningConfirm => 'Ausblenden';
+
+  @override
+  String get visibilitySwitch_stopsApplyingTitle =>
+      'Änderungen, die nicht mehr gelten';
+
+  @override
+  String get visibilitySwitch_appliesAgainTitle =>
+      'Änderungen, die wieder gelten';
+
+  @override
+  String get visibilitySwitch_hiddenSettingUrlCleanerAutoApply =>
+      'Automatische URL-Bereinigung';
+
+  @override
+  String get visibilitySwitch_hiddenSettingUrlCleanerRules =>
+      'Regeln der URL-Bereinigung';
+
+  @override
+  String get visibilitySwitch_hiddenSettingToolbarButtons =>
+      'Ersatz und langes Drücken bei Symbolleisten-Schaltflächen';
+
+  @override
   String get failureWidget_defaultTitle => 'Etwas ist schiefgelaufen';
 
   @override
   String get failureWidget_unknownError => 'Unbekannter Fehler';
+
+  @override
+  String get rememberedPrompt_dontAskAgain => 'Nicht mehr fragen';
+
+  @override
+  String get rememberedPrompt_dontAskAgainHint =>
+      'Lässt sich in den Einstellungen ändern.';
+
+  @override
+  String get rememberedPrompt_answerAsk => 'Fragen';
+
+  @override
+  String get rememberedPrompt_answerKeep => 'Behalten';
+
+  @override
+  String get rememberedPrompt_keepExternalTabLabel =>
+      'Von einer anderen App geöffneten Tab verlassen';
+
+  @override
+  String get rememberedPrompt_keepExternalTabDescription =>
+      'Wenn Zurück zur anderen App führt: Tab behalten, verwerfen oder jedes Mal fragen';
+
+  @override
+  String get rememberedPrompt_keepExternalTabKeywords =>
+      'tab behalten, tab verwerfen, externe app, intent, link, zurück, verlassen, nicht mehr fragen';
+
+  @override
+  String get rememberedPrompt_closeIsolatedTabsLabel =>
+      'Vor dem Schließen isolierter Tabs fragen';
+
+  @override
+  String get rememberedPrompt_closeIsolatedTabsDescription =>
+      'Das Schließen des letzten Tabs einer isolierten Gruppe löscht deren Cookies und Websitedaten';
+
+  @override
+  String get rememberedPrompt_closeIsolatedTabsKeywords =>
+      'isoliert, tab schließen, daten löschen, cookies, bestätigung, nicht mehr fragen';
+
+  @override
+  String get rememberedPrompt_closeAllTabsLabel =>
+      'Vor dem Schließen aller Tabs fragen';
+
+  @override
+  String get rememberedPrompt_closeAllTabsDescription =>
+      'Beim Schließen aller Tabs über das Container-Menü';
+
+  @override
+  String get rememberedPrompt_closeAllTabsKeywords =>
+      'alle schließen, tabs, bestätigung, nicht mehr fragen';
+
+  @override
+  String rememberedPrompt_startTorLabel(String torBrand) {
+    return 'Vor dem Starten von $torBrand fragen';
+  }
+
+  @override
+  String rememberedPrompt_startTorDescription(String torBrand) {
+    return 'Wenn ein Tab $torBrand braucht und es nicht läuft';
+  }
+
+  @override
+  String get rememberedPrompt_startTorKeywords =>
+      'tor, onion, proxy, starten, bestätigung, nicht mehr fragen';
+
+  @override
+  String get rememberedPrompt_startProxyConnectionLabel =>
+      'Vor dem Starten einer Proxy-Verbindung fragen';
+
+  @override
+  String get rememberedPrompt_startProxyConnectionDescription =>
+      'Wenn die Proxy-Verbindung eines Containers nicht läuft';
+
+  @override
+  String get rememberedPrompt_startProxyConnectionKeywords =>
+      'proxy, vpn, verbindung, container, starten, bestätigung, nicht mehr fragen';
 
   @override
   String get speechToTextButton_serviceNotAvailable =>
@@ -14166,7 +14876,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String uiHelper_canNotHandleScheme(String scheme) {
-    return '„$scheme“ kann nicht verarbeitet werden';
+    return 'Keine App kann „$scheme“-Links öffnen';
   }
 
   @override

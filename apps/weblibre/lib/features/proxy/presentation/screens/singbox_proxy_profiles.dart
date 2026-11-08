@@ -27,6 +27,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:weblibre/core/design/display_features.dart';
 import 'package:weblibre/core/logger.dart';
 import 'package:weblibre/core/routing/routes.dart';
+import 'package:weblibre/domain/feature_policy/feature_policy.dart';
 import 'package:weblibre/features/proxy/data/proxy_connection.dart';
 import 'package:weblibre/features/proxy/domain/repositories/singbox_proxy_profiles.dart';
 import 'package:weblibre/features/proxy/domain/repositories/singbox_proxy_runtime.dart';
@@ -43,6 +44,7 @@ import 'package:weblibre/features/tor/domain/services/tor_proxy.dart';
 import 'package:weblibre/features/user/data/database/definitions.drift.dart'
     show ProxyProfile;
 import 'package:weblibre/l10n/generated/app_localizations.dart';
+import 'package:weblibre/presentation/widgets/hidden_feature_gate.dart';
 import 'package:weblibre/utils/ui_helper.dart';
 
 class SingboxProxyProfilesScreen extends HookConsumerWidget {
@@ -54,12 +56,13 @@ class SingboxProxyProfilesScreen extends HookConsumerWidget {
     final profilesAsync = ref.watch(singboxProxyProfilesRepositoryProvider);
     final runtimeState = ref.watch(singboxProxyRuntimeRepositoryProvider);
     final torState = ref.watch(torProxyServiceProvider);
+    final startingConnections = ref.watch(
+      singboxProxyStartingConnectionsProvider,
+    );
     final deletingProfileIds = useState(<String>{});
 
     final activeProfileIds = runtimeState.runningProfileIds;
-    final startingProfileIds = _startingProfileIds(
-      ref.watch(singboxProxyStartingConnectionsProvider),
-    );
+    final startingProfileIds = _startingProfileIds(startingConnections);
     final runtimeBusy = runtimeState.isLoading;
     final torIsRunning = torState.value?.isRunning ?? false;
     final torIsBusy = torState.isBusy;
@@ -73,100 +76,113 @@ class SingboxProxyProfilesScreen extends HookConsumerWidget {
       _pruneLatencyCache(ref);
     });
 
-    return Scaffold(
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: () => unawaited(_showAddSheet(context)),
-        icon: const Icon(Icons.add),
-        label: Text(l10n.proxy_addProfile),
-      ),
-      body: SafeArea(
-        child: FadingScroll(
-          fadingSize: 25,
-          builder: (context, controller) {
-            return CustomScrollView(
-              controller: controller,
-              slivers: [
-                SliverAppBar.large(
-                  centerTitle: false,
-                  title: Text(l10n.proxy_connectionsTitle),
-                  actions: [
-                    IconButton(
-                      tooltip: l10n.proxy_viewLogsTooltip,
-                      icon: const Icon(Icons.subject),
-                      onPressed: () =>
-                          const SingboxProxyLogsRoute().push(context),
-                    ),
-                  ],
-                ),
-                ...profilesAsync.when(
-                  data: (profiles) {
-                    // Prune ids whose profile was deleted (or otherwise
-                    // disappeared) so the set can't grow unbounded if a tile
-                    // is unmounted while its delete is still in flight.
-                    final liveProfileIds = {
-                      for (final profile in profiles) profile.id,
-                    };
-                    final pruned = deletingProfileIds.value.intersection(
-                      liveProfileIds,
-                    );
-                    if (pruned.length != deletingProfileIds.value.length) {
-                      // Schedule for the next frame to avoid mutating state
-                      // during build.
-                      WidgetsBinding.instance.addPostFrameCallback((_) {
-                        deletingProfileIds.value = pruned;
-                      });
-                    }
-
-                    return [
-                      _ProfileListBody(
-                        profiles: profiles,
-                        activeProfileIds: activeProfileIds,
-                        startingProfileIds: startingProfileIds,
-                        deletingProfileIds: pruned,
-                        runtimeBusy: runtimeBusy,
-                        torIsRunning: torIsRunning,
-                        torIsBusy: torIsBusy,
-                        onDeletingChanged: (id, deleting) {
-                          final next = {...deletingProfileIds.value};
-                          if (deleting) {
-                            next.add(id);
-                          } else {
-                            next.remove(id);
-                          }
-                          deletingProfileIds.value = next;
-                        },
+    // `connections.import_vpn_proxy`. While it is hidden the list is grayed
+    // out and starting or adding a connection asks to show it; while a
+    // connection is in use everything stays usable — status, stop and edit
+    // (P5).
+    return HiddenFeatureScope(
+      feature: FeatureId.connectionsImportVpnProxy,
+      keptWhen: KeptWhen.connectionsInUse,
+      child: Scaffold(
+        // Adding is creation: it asks while the feature is hidden even when
+        // connections already exist and the list stays usable.
+        floatingActionButton: HiddenFeatureGate.feature(
+          FeatureId.connectionsImportVpnProxy,
+          child: FloatingActionButton.extended(
+            onPressed: () => unawaited(_showAddSheet(context)),
+            icon: const Icon(Icons.add),
+            label: Text(l10n.proxy_addProfile),
+          ),
+        ),
+        body: SafeArea(
+          child: FadingScroll(
+            fadingSize: 25,
+            builder: (context, controller) {
+              return CustomScrollView(
+                controller: controller,
+                slivers: [
+                  SliverAppBar.large(
+                    centerTitle: false,
+                    title: Text(l10n.proxy_connectionsTitle),
+                    actions: [
+                      IconButton(
+                        tooltip: l10n.proxy_viewLogsTooltip,
+                        icon: const Icon(Icons.subject),
+                        onPressed: () =>
+                            const SingboxProxyLogsRoute().push(context),
                       ),
-                    ];
-                  },
-                  loading: () => const [
-                    SliverFillRemaining(
-                      child: Center(child: CircularProgressIndicator()),
-                    ),
-                  ],
-                  error: (error, stackTrace) {
-                    logger.e(
-                      'Failed to load singbox proxy profiles',
-                      error: error,
-                      stackTrace: stackTrace,
-                    );
-                    return [
+                    ],
+                  ),
+                  ...profilesAsync.when(
+                    data: (profiles) {
+                      // Prune ids whose profile was deleted (or otherwise
+                      // disappeared) so the set can't grow unbounded if a tile
+                      // is unmounted while its delete is still in flight.
+                      final liveProfileIds = {
+                        for (final profile in profiles) profile.id,
+                      };
+                      final pruned = deletingProfileIds.value.intersection(
+                        liveProfileIds,
+                      );
+                      if (pruned.length != deletingProfileIds.value.length) {
+                        // Schedule for the next frame to avoid mutating state
+                        // during build.
+                        WidgetsBinding.instance.addPostFrameCallback((_) {
+                          deletingProfileIds.value = pruned;
+                        });
+                      }
+
+                      return [
+                        _ProfileListBody(
+                          profiles: profiles,
+                          activeProfileIds: activeProfileIds,
+                          startingProfileIds: startingProfileIds,
+                          deletingProfileIds: pruned,
+                          runtimeBusy: runtimeBusy,
+                          torIsRunning: torIsRunning,
+                          torIsBusy: torIsBusy,
+                          onDeletingChanged: (id, deleting) {
+                            final next = {...deletingProfileIds.value};
+                            if (deleting) {
+                              next.add(id);
+                            } else {
+                              next.remove(id);
+                            }
+                            deletingProfileIds.value = next;
+                          },
+                        ),
+                      ];
+                    },
+                    loading: () => const [
                       SliverFillRemaining(
-                        child: Padding(
-                          padding: const EdgeInsets.all(24),
-                          child: Center(
-                            child: Text(
-                              l10n.proxy_loadProfilesFailed(error.toString()),
-                              textAlign: TextAlign.center,
+                        child: Center(child: CircularProgressIndicator()),
+                      ),
+                    ],
+                    error: (error, stackTrace) {
+                      logger.e(
+                        'Failed to load singbox proxy profiles',
+                        error: error,
+                        stackTrace: stackTrace,
+                      );
+                      return [
+                        SliverFillRemaining(
+                          child: Padding(
+                            padding: const EdgeInsets.all(24),
+                            child: Center(
+                              child: Text(
+                                l10n.proxy_loadProfilesFailed(error.toString()),
+                                textAlign: TextAlign.center,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                    ];
-                  },
-                ),
-              ],
-            );
-          },
+                      ];
+                    },
+                  ),
+                ],
+              );
+            },
+          ),
         ),
       ),
     );
@@ -311,6 +327,9 @@ class _ProfileListBody extends ConsumerWidget {
       });
 
     final scheme = Theme.of(context).colorScheme;
+    // Tor is always listed, like every other connection: grayed out while it
+    // is hidden and not in use ([torInUse]), so a failed autostart or a route
+    // through it stays repairable (P5).
     final totalRunning = shownRunningIds.length + (torIsRunning ? 1 : 0);
     final totalCount = profiles.length + 1;
     // A profile waiting for a retry is not running, but it will come up by
@@ -343,42 +362,57 @@ class _ProfileListBody extends ConsumerWidget {
             onStopAll: totalRunning == 0 && !hasPendingRetries ? null : stopAll,
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.fromLTRB(16, 24, 16, 12),
-          child: Text(
-            l10n.proxy_profilesSectionTitle,
-            style: Theme.of(context).textTheme.titleSmall?.copyWith(
-              color: scheme.primary,
-              fontWeight: FontWeight.w700,
+        ...[
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 24, 16, 12),
+            child: Text(
+              l10n.proxy_profilesSectionTitle,
+              style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                color: scheme.primary,
+                fontWeight: FontWeight.w700,
+              ),
             ),
           ),
-        ),
-        Padding(
-          padding: const EdgeInsets.fromLTRB(16, 0, 16, 96),
-          child: Card.filled(
-            margin: EdgeInsets.zero,
-            color: scheme.surfaceContainer,
-            clipBehavior: Clip.antiAlias,
-            child: Column(
-              children: [
-                TorProfileTile(isRunning: torIsRunning, isBusy: torIsBusy),
-                for (final profile in sorted) ...[
-                  const Divider(height: 1),
-                  ProfileTile(
-                    profile: profile,
-                    isRunning: activeProfileIds.contains(profile.id),
-                    isStarting:
-                        startingProfileIds.contains(profile.id) &&
-                        !activeProfileIds.contains(profile.id),
-                    isDeleting: deletingProfileIds.contains(profile.id),
-                    runtimeBusy: runtimeBusy,
-                    onDeletingChanged: onDeletingChanged,
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 0, 16, 96),
+            child: Card.filled(
+              margin: EdgeInsets.zero,
+              color: scheme.surfaceContainer,
+              clipBehavior: Clip.antiAlias,
+              child: Column(
+                children: [
+                  HiddenFeatureGate.feature(
+                    FeatureId.connectionsTorBasic,
+                    keptWhen: KeptWhen.torInUse,
+                    opensScreen: true,
+                    indicator: true,
+                    child: TorProfileTile(
+                      isRunning: torIsRunning,
+                      isBusy: torIsBusy,
+                    ),
                   ),
+                  for (final profile in sorted) ...[
+                    const Divider(height: 1),
+                    HiddenFeatureGate(
+                      opensScreen: true,
+                      indicator: true,
+                      child: ProfileTile(
+                        profile: profile,
+                        isRunning: activeProfileIds.contains(profile.id),
+                        isStarting:
+                            startingProfileIds.contains(profile.id) &&
+                            !activeProfileIds.contains(profile.id),
+                        isDeleting: deletingProfileIds.contains(profile.id),
+                        runtimeBusy: runtimeBusy,
+                        onDeletingChanged: onDeletingChanged,
+                      ),
+                    ),
+                  ],
                 ],
-              ],
+              ),
             ),
           ),
-        ),
+        ],
       ],
     );
   }

@@ -62,7 +62,7 @@ final class MenuLayoutProvider
   }
 }
 
-String _$menuLayoutHash() => r'f21d2e659c250cd70ccfcecabc82f8be155c7d4e';
+String _$menuLayoutHash() => r'994394c2569a5d6c3b413dafec73430da7654898';
 
 /// The user's arrangement of the browser menu sheet: which sections appear, in
 /// what order, how the rows inside each one are ordered, and how the rows an
@@ -73,6 +73,148 @@ String _$menuLayoutHash() => r'f21d2e659c250cd70ccfcecabc82f8be155c7d4e';
 /// layout can be reconciled against the shipped defaults in one pass on read.
 
 abstract class _$MenuLayout extends $Notifier<List<MenuSectionEntry>> {
+  List<MenuSectionEntry> build();
+  @$mustCallSuper
+  @override
+  WhenComplete runBuild() {
+    final ref =
+        this.ref as $Ref<List<MenuSectionEntry>, List<MenuSectionEntry>>;
+    final element =
+        ref.element
+            as $ClassProviderElement<
+              AnyNotifier<List<MenuSectionEntry>, List<MenuSectionEntry>>,
+              List<MenuSectionEntry>,
+              Object?,
+              Object?
+            >;
+    return element.handleCreate(ref, build);
+  }
+}
+
+/// The menu as drawn: the user's arrangement ([MenuLayout]), or the shipped
+/// one while menu customization is hidden (`layout.menu_customization`). The
+/// arrangement is kept and comes back with the feature.
+
+@ProviderFor(effectiveMenuLayout)
+final effectiveMenuLayoutProvider = EffectiveMenuLayoutProvider._();
+
+/// The menu as drawn: the user's arrangement ([MenuLayout]), or the shipped
+/// one while menu customization is hidden (`layout.menu_customization`). The
+/// arrangement is kept and comes back with the feature.
+
+final class EffectiveMenuLayoutProvider
+    extends
+        $FunctionalProvider<
+          List<MenuSectionEntry>,
+          List<MenuSectionEntry>,
+          List<MenuSectionEntry>
+        >
+    with $Provider<List<MenuSectionEntry>> {
+  /// The menu as drawn: the user's arrangement ([MenuLayout]), or the shipped
+  /// one while menu customization is hidden (`layout.menu_customization`). The
+  /// arrangement is kept and comes back with the feature.
+  EffectiveMenuLayoutProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'effectiveMenuLayoutProvider',
+        isAutoDispose: false,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$effectiveMenuLayoutHash();
+
+  @$internal
+  @override
+  $ProviderElement<List<MenuSectionEntry>> $createElement(
+    $ProviderPointer pointer,
+  ) => $ProviderElement(pointer);
+
+  @override
+  List<MenuSectionEntry> create(Ref ref) {
+    return effectiveMenuLayout(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(List<MenuSectionEntry> value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<List<MenuSectionEntry>>(value),
+    );
+  }
+}
+
+String _$effectiveMenuLayoutHash() =>
+    r'de3f97245e77bf4cf6a0a42a29ed0a07b20b4ab8';
+
+/// The menu's arrangement as the screens that arrange it show and change it:
+/// in the onboarding the draft's (the profile's until the first change),
+/// otherwise the profile's ([MenuLayout]).
+///
+/// The edit layer. A change goes into the draft while one is open, and into
+/// [MenuLayout] otherwise. [MenuLayout] never sees the draft: its `persist()`
+/// stores whatever it holds.
+
+@ProviderFor(EditedMenuLayout)
+final editedMenuLayoutProvider = EditedMenuLayoutProvider._();
+
+/// The menu's arrangement as the screens that arrange it show and change it:
+/// in the onboarding the draft's (the profile's until the first change),
+/// otherwise the profile's ([MenuLayout]).
+///
+/// The edit layer. A change goes into the draft while one is open, and into
+/// [MenuLayout] otherwise. [MenuLayout] never sees the draft: its `persist()`
+/// stores whatever it holds.
+final class EditedMenuLayoutProvider
+    extends $NotifierProvider<EditedMenuLayout, List<MenuSectionEntry>> {
+  /// The menu's arrangement as the screens that arrange it show and change it:
+  /// in the onboarding the draft's (the profile's until the first change),
+  /// otherwise the profile's ([MenuLayout]).
+  ///
+  /// The edit layer. A change goes into the draft while one is open, and into
+  /// [MenuLayout] otherwise. [MenuLayout] never sees the draft: its `persist()`
+  /// stores whatever it holds.
+  EditedMenuLayoutProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'editedMenuLayoutProvider',
+        isAutoDispose: true,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$editedMenuLayoutHash();
+
+  @$internal
+  @override
+  EditedMenuLayout create() => EditedMenuLayout();
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(List<MenuSectionEntry> value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<List<MenuSectionEntry>>(value),
+    );
+  }
+}
+
+String _$editedMenuLayoutHash() => r'379991c35ca48843799190fe550acbd5bbbc66f2';
+
+/// The menu's arrangement as the screens that arrange it show and change it:
+/// in the onboarding the draft's (the profile's until the first change),
+/// otherwise the profile's ([MenuLayout]).
+///
+/// The edit layer. A change goes into the draft while one is open, and into
+/// [MenuLayout] otherwise. [MenuLayout] never sees the draft: its `persist()`
+/// stores whatever it holds.
+
+abstract class _$EditedMenuLayout extends $Notifier<List<MenuSectionEntry>> {
   List<MenuSectionEntry> build();
   @$mustCallSuper
   @override

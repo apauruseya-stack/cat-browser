@@ -514,7 +514,7 @@ abstract class BaseBrowserFragment : Fragment(), UserInteractionHandler, Activit
                     customTabId = sessionId,
                     tabsUseCases = components.useCases.tabsUseCases,
                     fragmentManager = parentFragmentManager,
-                    fileUploadsDirCleaner = components.core.fileUploadsDirCleaner,
+                    fileUploadsDirCleaner = components.core.newFileUploadsDirCleaner(),
                     onNeedToRequestPermissions = { permissions ->
                         requestPromptsPermissionsLauncher.launch(permissions)
                     },
@@ -627,7 +627,7 @@ abstract class BaseBrowserFragment : Fragment(), UserInteractionHandler, Activit
                     store = components.core.store,
                     accountManager = components.backgroundServices.accountManager,
                     serverConfig = components.backgroundServices.serverConfig,
-                    fxaCapabilities = setOf(FxaCapability.CHOOSE_WHAT_TO_SYNC),
+                    fxaCapabilities = setOf(FxaCapability.ChooseWhatToSync),
                 ),
                 owner = this,
                 view = view,

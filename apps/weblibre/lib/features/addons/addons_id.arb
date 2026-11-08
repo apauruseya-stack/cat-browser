@@ -62,10 +62,10 @@
   "addons_menuExtensionSettingsTitle": "Pengaturan Ekstensi",
   "addons_menuExtensionSettingsSubtitleTab": "Buka halaman opsi ekstensi di tab peramban",
   "addons_menuExtensionSettingsSubtitleInline": "Buka halaman opsi ekstensi",
-  "addons_menuFilterListsTitle": "Daftar Filter & Pengerasan",
+  "addons_menuFilterListsTitle": "Daftar Filter",
   "addons_menuFilterListsSubtitle": "Kelola daftar filter dan terapkan pengerasan Cat Browser",
   "addons_permissionsTitle": "Izin",
-  "addons_updateAvailable": "Pembaruan tersedia: {from} → {to}",
+  "addons_updateAvailable": "Pembaruan tersedia: {from} ΓåÆ {to}",
   "addons_noUpdateAttemptYet": "Belum ada informasi tentang upaya pembaruan terbaru.",
   "addons_lastChecked": "Terakhir diperiksa: {date}",
   "addons_noUpdateAvailable": "Tidak ada pembaruan",
@@ -74,7 +74,7 @@
   "addons_updateAvailableDialogTitle": "Pembaruan tersedia",
   "addons_updateConfirmContent": "Perbarui {name} dari {from} ke {to}?",
   "addons_noDescriptionProvided": "Tidak ada deskripsi.",
-  "addons_loadingDescription": "Memuat deskripsi…",
+  "addons_loadingDescription": "Memuat deskripsiΓÇª",
   "addons_fieldAuthor": "Pembuat",
   "addons_fieldVersion": "Versi",
   "addons_fieldLastUpdated": "Terakhir Diperbarui",
@@ -140,5 +140,8 @@
   "addons_permissionTopSites": "Mengakses riwayat penjelajahan",
   "addons_permissionWebNavigation": "Mengakses aktivitas peramban selama navigasi",
   "addons_permissionAllUrls": "Mengakses data Anda untuk semua situs web",
-  "addons_permissionAccessDataFor": "Mengakses data Anda untuk {host}"
+  "addons_permissionAccessDataFor": "Mengakses data Anda untuk {host}",
+  "addons_updatePermissionsTitle": "Pembaruan memerlukan izin baru",
+  "addons_updatePermissionsBody": "Versi baru meminta izin di bawah ini. Versi tersebut akan dipasang setelah Anda mengizinkannya.",
+  "addons_updateNeedsPermissions": "Pembaruan ini meminta izin baru. Tinjau izin tersebut untuk memasangnya."
 }

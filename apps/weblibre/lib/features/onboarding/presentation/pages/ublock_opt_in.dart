@@ -24,14 +24,12 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:weblibre/features/geckoview/features/browser/domain/services/browser_addon.dart';
-import 'package:weblibre/features/onboarding/presentation/onboarding_defaults.dart';
-import 'package:weblibre/features/onboarding/presentation/pages/abstract/i_form_page.dart';
+import 'package:weblibre/features/onboarding/domain/services/setup_steps.dart';
 import 'package:weblibre/l10n/generated/app_localizations.dart';
 import 'package:weblibre/presentation/widgets/browser_page.dart';
 
-class UBlockOptInPage extends HookConsumerWidget implements IFormPage {
-  @override
+class UBlockOptInPage extends HookConsumerWidget {
+  /// Saved by the onboarding on Next and Done (`formKeyOf`).
   final GlobalKey<FormState> formKey;
 
   const UBlockOptInPage({super.key, required this.formKey});
@@ -41,7 +39,6 @@ class UBlockOptInPage extends HookConsumerWidget implements IFormPage {
     final theme = Theme.of(context);
     final l10n = AppLocalizations.of(context);
     final installUBlock = useState(true);
-    final installPrivacyBadger = useState(true);
 
     return BrowserPage(
       child: BrowserPageContent(
@@ -68,8 +65,8 @@ class UBlockOptInPage extends HookConsumerWidget implements IFormPage {
                   if (newValue == true) {
                     unawaited(
                       ref
-                          .read(browserAddonServiceProvider.notifier)
-                          .install('uBlock0@raymondhill.net'),
+                          .read(setupStepRunnerProvider.notifier)
+                          .runOnce(SetupStep.installUBlock),
                     );
                   }
                 },
@@ -86,34 +83,13 @@ class UBlockOptInPage extends HookConsumerWidget implements IFormPage {
               FormField(
                 initialValue: true,
                 onSaved: (newValue) {
-                  installPrivacyBadger.value = newValue ?? false;
-                  if (newValue == true) {
-                    unawaited(
-                      ref
-                          .read(browserAddonServiceProvider.notifier)
-                          .install('jid1-MnnxcxisBPnSXQ@jetpack'),
-                    );
-                  }
-                },
-                builder: (field) => SwitchListTile(
-                  contentPadding: EdgeInsets.zero,
-                  value: field.value ?? false,
-                  title: const Text('Privacy Badger'),
-                  subtitle: const Text(
-                    'Install the EFF Privacy Badger tracking blocker',
-                  ),
-                  onChanged: (value) {
-                    field.didChange(value);
-                    installPrivacyBadger.value = value;
-                  },
-                ),
-              ),
-              FormField(
-                initialValue: true,
-                onSaved: (newValue) {
                   if (newValue != true || !installUBlock.value) return;
 
-                  unawaited(applyOnboardingOptimizedUBlockDefaults(ref));
+                  unawaited(
+                    ref
+                        .read(setupStepRunnerProvider.notifier)
+                        .runOnce(SetupStep.optimizedUBlockFilters),
+                  );
                 },
                 builder: (field) => SwitchListTile(
                   contentPadding: EdgeInsets.zero,

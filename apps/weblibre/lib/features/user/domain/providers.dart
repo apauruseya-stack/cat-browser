@@ -18,12 +18,14 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 import 'package:exceptions/exceptions.dart';
+import 'package:fast_equatable/fast_equatable.dart';
 import 'package:nullability/nullability.dart';
 import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:saf_util/saf_util_platform_interface.dart';
 import 'package:weblibre/core/filesystem.dart';
 import 'package:weblibre/domain/entities/profile.dart';
+import 'package:weblibre/domain/feature_policy/feature_policy.dart';
 import 'package:weblibre/features/user/data/providers.dart';
 import 'package:weblibre/features/user/domain/entities/fingerprint_overrides.dart';
 import 'package:weblibre/features/user/domain/providers/backup_directory.dart';
@@ -72,6 +74,20 @@ Stream<int> iconCacheRevision(Ref ref, String origin) {
       .map((event) => event.revision);
 }
 
+/// [iconCacheRevision] of each of [origins], in order; 0 until one is
+/// reported.
+@Riverpod()
+EquatableValue<List<int>> iconCacheRevisions(
+  Ref ref,
+  EquatableValue<List<String>> origins,
+) => EquatableValue([
+  for (final origin in origins.value)
+    ref.watch(
+          iconCacheRevisionProvider(origin).select((value) => value.value),
+        ) ??
+        0,
+]);
+
 @Riverpod()
 bool incognitoModeEnabled(Ref ref) {
   return ref.watch(
@@ -81,6 +97,9 @@ bool incognitoModeEnabled(Ref ref) {
   );
 }
 
+/// The stored per-target fingerprinting overrides, for their editor: while
+/// they are hidden the engine applies the defaults (H1), but the editor shows
+/// what was saved and comes back when they are shown.
 @Riverpod()
 Future<Result<FingerprintOverrides>> fingerprintOverrideSettings(
   Ref ref,
@@ -88,24 +107,49 @@ Future<Result<FingerprintOverrides>> fingerprintOverrideSettings(
   final fingerprintTargets = await ref.watch(fingerprintTargetsProvider.future);
   final fingerprintTargetSet = fingerprintTargets.map((e) => e.name).toSet();
 
-  final overrides = ref.watch(
-    engineSettingsWithDefaultsProvider.select(
-      (settings) =>
-          settings.fingerprintingProtectionOverrides.mapNotNull(
-            (settings) =>
-                FingerprintOverrides.parse(settings, fingerprintTargetSet),
-          ) ??
-          Result.success(FingerprintOverrides.defaults()),
+  // Selects the stored string, not the parsed result: a parse returns a new
+  // Result each time, which would never compare equal.
+  final storedOverrides = ref.watch(
+    storedEngineSettingsProvider.select(
+      (settings) => settings.fingerprintingProtectionOverrides,
     ),
   );
 
-  return overrides;
+  return storedOverrides.mapNotNull<Result<FingerprintOverrides>>(
+        (settings) =>
+            FingerprintOverrides.parse(settings, fingerprintTargetSet),
+      ) ??
+      Result.success(FingerprintOverrides.defaults());
 }
 
 @Riverpod(keepAlive: true)
 Future<Profile> selectedProfile(Ref ref) async {
   final profiles = await ref.watch(profileRepositoryProvider.future);
   return profiles.firstWhere((p) => p.uuidValue == filesystem.selectedProfile);
+}
+
+/// Whether the profile switcher has anything to offer: another profile to
+/// switch to, or the multiple-profiles controls shown so one can be added.
+/// Without either, the profile entry opens this profile's own controls.
+@Riverpod()
+bool canSwitchProfiles(Ref ref) {
+  // Still loading counts as more than one: the switcher works with any
+  // number of profiles, while this profile's own controls would leave a user
+  // with several unable to switch (P5).
+  final severalProfiles = ref.watch(
+    profileRepositoryProvider.select(
+      (profiles) => switch (profiles.value) {
+        final list? => list.length > 1,
+        null => true,
+      },
+    ),
+  );
+  final profilesShown = ref.watch(
+    shownFeaturesProvider.select(
+      (features) => features.contains(FeatureId.profilesMulti),
+    ),
+  );
+  return severalProfiles || profilesShown;
 }
 
 @Riverpod()

@@ -20,7 +20,9 @@
 import 'package:fast_equatable/fast_equatable.dart';
 import 'package:flutter_mozilla_components/flutter_mozilla_components.dart'
     show AppLinksMode;
+import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
+import 'package:weblibre/domain/feature_policy/feature_policy.dart';
 import 'package:weblibre/features/app_links/domain/entities/app_link_rule.dart';
 import 'package:weblibre/features/app_links/domain/entities/context_app_link_policy.dart';
 import 'package:weblibre/features/geckoview/features/tabs/data/models/container_data.dart';
@@ -37,12 +39,17 @@ part 'effective_app_link_policy.g.dart';
 /// tab's `isolation_context_id` for an isolated tab (i.e. `TabState.contextId`
 /// as reported by the engine). Uses the same lowest-sorted-base tiebreak as the
 /// snapshot builder so lookups land on the bucket that is published to native.
+///
+/// While per-container app links are hidden ([containerAppLinksShown] false,
+/// `GeneralSettings.isFeatureShown(FeatureId.containerAppLinks)`), no
+/// container's own settings apply and every tab resolves to the global bucket.
 String? resolveAppLinkOverrideKey({
   required String? liveContextId,
   required List<ContainerDataWithCount> containers,
   required Map<String, Set<String>> isolationContextContainerMap,
+  required bool containerAppLinksShown,
 }) {
-  if (liveContextId == null) return null;
+  if (liveContextId == null || !containerAppLinksShown) return null;
 
   // Regular tab: liveContextId is a container's own base contextId.
   for (final container in containers) {
@@ -113,16 +120,21 @@ class EffectiveAppLinkPolicy with FastEquatable {
 @Riverpod()
 EffectiveAppLinkPolicy? effectiveAppLinkPolicy(Ref ref, String? liveContextId) {
   final settings = ref.watch(generalSettingsWithDefaultsProvider);
-  final containers = ref.watch(watchContainersWithCountProvider).value;
-  final isolationMap = ref
-      .watch(watchIsolatedContextContainerMapProvider)
-      .value;
+  final containers = ref.watch(
+    watchContainersWithCountProvider.select((value) => value.value),
+  );
+  final isolationMap = ref.watch(
+    watchIsolatedContextContainerMapProvider.select((value) => value.value),
+  );
   if (containers == null || isolationMap == null) return null;
 
   final overrideKey = resolveAppLinkOverrideKey(
     liveContextId: liveContextId,
     containers: containers,
     isolationContextContainerMap: isolationMap,
+    containerAppLinksShown: settings.isFeatureShown(
+      FeatureId.containerAppLinks,
+    ),
   );
 
   if (overrideKey == null) {

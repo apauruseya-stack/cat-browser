@@ -18,33 +18,59 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 import 'package:flutter/material.dart';
-import 'package:weblibre/core/design/display_features.dart';
+import 'package:weblibre/core/providers/provider_read.dart';
+import 'package:weblibre/domain/entities/remembered_prompt.dart';
 import 'package:weblibre/l10n/generated/app_localizations.dart';
+import 'package:weblibre/presentation/utils/remembered_prompt_l10n.dart';
+import 'package:weblibre/presentation/widgets/remembered_prompt.dart';
 
-/// Shows a dialog asking the user whether to keep a temporary tab.
+/// Asks whether to keep the tab back is about to leave.
 ///
-/// Returns true if the user wants to keep the tab, false if they want to discard it.
-Future<bool?> showKeepTabDialog(BuildContext context) {
-  return showDialog<bool>(
-    context: context,
-    anchorPoint: preferredAnchorPoint(MediaQuery.of(context)),
-    builder: (context) {
-      final l10n = AppLocalizations.of(context);
+/// [rememberable] offers "Don't ask again" and answers from
+/// [RememberedPrompt.keepExternalTab] without asking once that is set. Only a
+/// tab another app opened is remembered: back to the search screen is a
+/// different question, and always asks.
+///
+/// Returns null when the dialog is dismissed, which keeps the user on the tab.
+Future<KeepTabAnswer?> showKeepTabDialog(
+  BuildContext context,
+  ProviderRead read, {
+  required bool rememberable,
+}) async {
+  Widget buildDialog(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
 
-      return AlertDialog(
-        title: Text(l10n.browser_keepTabTitle),
-        content: Text(l10n.browser_keepTabContent),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(false),
-            child: Text(l10n.common_discard),
-          ),
-          FilledButton(
-            onPressed: () => Navigator.of(context).pop(true),
-            child: Text(l10n.browser_actionKeep),
-          ),
-        ],
-      );
-    },
+    return RememberablePromptDialog<KeepTabAnswer>(
+      title: Text(l10n.browser_keepTabTitle),
+      content: Text(l10n.browser_keepTabContent),
+      cancellable: false,
+      offerRemember: rememberable,
+      answers: [
+        PromptAnswerAction(
+          answer: KeepTabAnswer.discard,
+          label: KeepTabAnswer.discard.label(context),
+        ),
+        PromptAnswerAction(
+          answer: KeepTabAnswer.keep,
+          label: KeepTabAnswer.keep.label(context),
+          primary: true,
+        ),
+      ],
+    );
+  }
+
+  if (!rememberable) {
+    final result = await showRememberablePromptDialog<KeepTabAnswer>(
+      context,
+      builder: buildDialog,
+    );
+    return result?.answer;
+  }
+
+  return await askUnlessRemembered<KeepTabAnswer>(
+    context,
+    read,
+    RememberedPrompt.keepExternalTab,
+    builder: buildDialog,
   );
 }

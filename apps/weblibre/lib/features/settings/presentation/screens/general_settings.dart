@@ -30,6 +30,7 @@ import 'package:saf_util/saf_util.dart';
 import 'package:weblibre/core/logger.dart';
 import 'package:weblibre/core/providers/app_localizations.dart';
 import 'package:weblibre/core/routing/routes.dart';
+import 'package:weblibre/domain/entities/remembered_prompt.dart';
 import 'package:weblibre/domain/repositories/locale_resolver.dart';
 import 'package:weblibre/extensions/locale.dart';
 import 'package:weblibre/features/settings/domain/providers/preferred_download_manager.dart';
@@ -42,6 +43,7 @@ import 'package:weblibre/features/user/domain/repositories/general_settings.dart
 import 'package:weblibre/l10n/generated/app_localizations.dart';
 import 'package:weblibre/presentation/hooks/cached_future.dart';
 import 'package:weblibre/presentation/hooks/keyed_state.dart';
+import 'package:weblibre/presentation/utils/remembered_prompt_l10n.dart';
 
 List<SettingsSectionDefinition> generalSettingsSections(BuildContext context) {
   final l10n = AppLocalizations.of(context);
@@ -167,7 +169,43 @@ List<SettingsSectionDefinition> generalSettingsSections(BuildContext context) {
         ),
       ],
     ),
+    SettingsSectionDefinition(
+      title: l10n.settings_confirmationsSectionTitle,
+      keywords: settingsKeywords(l10n.settings_confirmationsSectionKeywords),
+      entries: [
+        SettingsEntryDefinition(
+          title: l10n.settings_confirmationsSectionTitle,
+          subtitle: l10n.settings_confirmationsSubtitle,
+          // Each prompt's own words too, so searching for one finds the way
+          // to the screen it lives on.
+          keywords: [
+            for (final prompt in RememberedPrompt.values) ...[
+              prompt.label(context),
+              ...settingsKeywords(prompt.keywords(context)),
+            ],
+          ],
+          child: const _ConfirmationSettingsTile(),
+        ),
+      ],
+    ),
   ];
+}
+
+class _ConfirmationSettingsTile extends StatelessWidget {
+  const _ConfirmationSettingsTile();
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+
+    return ListTile(
+      leading: const Icon(MdiIcons.messageQuestionOutline),
+      title: Text(l10n.settings_confirmationsSectionTitle),
+      subtitle: Text(l10n.settings_confirmationsSubtitle),
+      trailing: const Icon(Icons.chevron_right),
+      onTap: () => const ConfirmationSettingsRoute().push(context),
+    );
+  }
 }
 
 /// Takes a backup of the *active* profile without switching away from it.
@@ -176,7 +214,7 @@ List<SettingsSectionDefinition> generalSettingsSections(BuildContext context) {
 /// the operation is special-cased here: the backup is queued and taken by the
 /// next process, with the profile closed. This tile exists only because backing
 /// up the profile you are using is the common case, and getting to it through
-/// Profiles → yourself → Backup is not an obvious path.
+/// Profiles â†’ yourself â†’ Backup is not an obvious path.
 class _BackupProfileTile extends HookConsumerWidget {
   const _BackupProfileTile();
 
@@ -208,7 +246,7 @@ class _BackupProfileTile extends HookConsumerWidget {
   }
 }
 
-/// Settings only — the profile backup above it is the whole-profile answer.
+/// Settings only â€” the profile backup above it is the whole-profile answer.
 ///
 /// Sits next to it because that is where people look for "get my setup onto
 /// the other device", and the two differ in what they carry rather than in
@@ -307,7 +345,7 @@ class _UiZoomSection extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final uiScaleFactor = ref.watch(
-      generalSettingsWithDefaultsProvider.select((s) => s.uiScaleFactor),
+      storedGeneralSettingsProvider.select((s) => s.uiScaleFactor),
     );
     final sliderValue = useKeyedState(uiScaleFactor, [uiScaleFactor]);
 
@@ -376,7 +414,7 @@ class _DisableAnimationsTile extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final disableAnimations = ref.watch(
-      generalSettingsWithDefaultsProvider.select((s) => s.disableAnimations),
+      storedGeneralSettingsProvider.select((s) => s.disableAnimations),
     );
     final l10n = AppLocalizations.of(context);
 
@@ -403,7 +441,7 @@ class _ShowModalBarrierTile extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final showModalBarrier = ref.watch(
-      generalSettingsWithDefaultsProvider.select((s) => s.showModalBarrier),
+      storedGeneralSettingsProvider.select((s) => s.showModalBarrier),
     );
     final l10n = AppLocalizations.of(context);
 
@@ -430,9 +468,7 @@ class _ShowSearchCloseButtonTile extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final showSearchCloseButton = ref.watch(
-      generalSettingsWithDefaultsProvider.select(
-        (s) => s.showSearchCloseButton,
-      ),
+      storedGeneralSettingsProvider.select((s) => s.showSearchCloseButton),
     );
     final l10n = AppLocalizations.of(context);
 
@@ -459,10 +495,10 @@ class _PureBlackTile extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final pureBlack = ref.watch(
-      generalSettingsWithDefaultsProvider.select((s) => s.pureBlack),
+      storedGeneralSettingsProvider.select((s) => s.pureBlack),
     );
     final themeMode = ref.watch(
-      generalSettingsWithDefaultsProvider.select((s) => s.themeMode),
+      storedGeneralSettingsProvider.select((s) => s.themeMode),
     );
 
     // OLED surfaces only apply to dark mode; disable the toggle when the app
@@ -524,7 +560,7 @@ class _ThemeSection extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final themeMode = ref.watch(
-      generalSettingsWithDefaultsProvider.select((s) => s.themeMode),
+      storedGeneralSettingsProvider.select((s) => s.themeMode),
     );
     final l10n = AppLocalizations.of(context);
 
@@ -713,7 +749,7 @@ class _RefreshRateSection extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final refreshRateMode = ref.watch(
-      generalSettingsWithDefaultsProvider.select((s) => s.refreshRateMode),
+      storedGeneralSettingsProvider.select((s) => s.refreshRateMode),
     );
     final l10n = AppLocalizations.of(context);
 
@@ -768,8 +804,8 @@ class _RefreshRateSection extends HookConsumerWidget {
 /// The tree URI a picked folder is addressed by.
 ///
 /// `saf_util` takes the persisted grant on the tree URI the system returned, but
-/// hands back `DocumentFile.fromTreeUri(...).uri` — the same folder in its
-/// *document* form, `…/tree/<id>/document/<id>`. Nothing downstream accepts that
+/// hands back `DocumentFile.fromTreeUri(...).uri` â€” the same folder in its
+/// *document* form, `â€¦/tree/<id>/document/<id>`. Nothing downstream accepts that
 /// form: the grant list is keyed on the tree URI, and Mozilla's writer compares
 /// `directoryPath` against it by exact equality before writing. Saving the
 /// picker's URI verbatim therefore stored a folder that matched no grant, so
@@ -786,7 +822,7 @@ String normalizeDownloadTreeUri(String uri) {
 }
 
 /// Reads a folder name out of a tree URI, for the moment before the document
-/// provider has answered — and for when it never does.
+/// provider has answered â€” and for when it never does.
 ///
 /// A tree URI ends in the provider's own document id, conventionally
 /// `volume:relative/path`; anything else is shown whole rather than guessed at.
@@ -807,22 +843,20 @@ class _DownloadDirectoryTile extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final directoryUri = ref.watch(
-      generalSettingsWithDefaultsProvider.select((s) => s.downloadDirectoryUri),
+      storedGeneralSettingsProvider.select((s) => s.downloadDirectoryUri),
     );
     // With Cat Browser remembered as the download manager, the chooser is skipped
     // and Cat Browser downloads the file itself, into this folder.
+    final useExternalDownloadManagerSetting = ref.watch(
+      storedGeneralSettingsProvider.select((s) => s.useExternalDownloadManager),
+    );
+    final thisAppIsPreferredDownloadManager = ref.watch(
+      preferredDownloadManagerChoiceProvider.select(
+        (choice) => choice.value?.isThisApp ?? false,
+      ),
+    );
     final useExternalDownloadManager =
-        ref.watch(
-          generalSettingsWithDefaultsProvider.select(
-            (s) => s.useExternalDownloadManager,
-          ),
-        ) &&
-        ref.watch(
-              preferredDownloadManagerChoiceProvider.select(
-                (choice) => choice.value?.isThisApp,
-              ),
-            ) !=
-            true;
+        useExternalDownloadManagerSetting && !thisAppIsPreferredDownloadManager;
 
     // Resolving the folder is also how the grant is checked: access can be
     // revoked in the system settings, or the card it lives on unmounted, and
@@ -924,8 +958,8 @@ class PreferredDownloadManagerTile extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // Set from the chooser, which runs while this screen is not showing — and
-    // in a Custom Tab, outside the app entirely — and the remembered app can be
+    // Set from the chooser, which runs while this screen is not showing â€” and
+    // in a Custom Tab, outside the app entirely â€” and the remembered app can be
     // uninstalled in between. Read it again whenever the app comes back.
     useOnAppLifecycleStateChange((previous, current) {
       if (current == AppLifecycleState.resumed) {
@@ -934,11 +968,11 @@ class PreferredDownloadManagerTile extends HookConsumerWidget {
     });
 
     final useExternalDownloadManager = ref.watch(
-      generalSettingsWithDefaultsProvider.select(
-        (s) => s.useExternalDownloadManager,
-      ),
+      storedGeneralSettingsProvider.select((s) => s.useExternalDownloadManager),
     );
-    final choice = ref.watch(preferredDownloadManagerChoiceProvider).value;
+    final choice = ref.watch(
+      preferredDownloadManagerChoiceProvider.select((value) => value.value),
+    );
     final l10n = AppLocalizations.of(context);
 
     final subtitle = switch (choice) {
@@ -1000,9 +1034,7 @@ class _ExternalDownloadManagerTile extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final useExternalDownloadManager = ref.watch(
-      generalSettingsWithDefaultsProvider.select(
-        (s) => s.useExternalDownloadManager,
-      ),
+      storedGeneralSettingsProvider.select((s) => s.useExternalDownloadManager),
     );
     final l10n = AppLocalizations.of(context);
 

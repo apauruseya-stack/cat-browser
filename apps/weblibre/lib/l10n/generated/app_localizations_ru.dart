@@ -173,7 +173,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get about_copyright => 'Copyright © Fabian Freund, 2024-2026';
 
   @override
-  String get about_geckoVersionTitle => 'Версия Gecko';
+  String get about_componentVersionsTitle => 'Версии компонентов';
 
   @override
   String get about_notAvailable => 'Н/Д';
@@ -688,341 +688,369 @@ class AppLocalizationsRu extends AppLocalizations {
       'Ошибка входа. Повторите попытку.';
 
   @override
-  String get addons_managerTitle => 'Расширения';
+  String get addons_managerTitle => '╨á╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å';
 
   @override
-  String get addons_tabInstalled => 'Установленные';
+  String get addons_tabInstalled => '╨ú╤ü╤é╨░╨╜╨╛╨▓╨╗╨╡╨╜╨╜╤ï╨╡';
 
   @override
-  String get addons_tabBrowse => 'Каталог';
+  String get addons_tabBrowse => '╨Ü╨░╤é╨░╨╗╨╛╨│';
 
   @override
-  String get addons_loadFailedTitle => 'Не удалось загрузить расширения';
+  String get addons_loadFailedTitle =>
+      '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╨╖╨░╨│╤Ç╤â╨╖╨╕╤é╤î ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å';
 
   @override
-  String get addons_noExtensionsFound => 'Расширения не найдены.';
+  String get addons_noExtensionsFound =>
+      '╨á╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å ╨╜╨╡ ╨╜╨░╨╣╨┤╨╡╨╜╤ï.';
 
   @override
   String get addons_noneInstalledMessage =>
-      'Расширения ещё не установлены.\nНайдите их в каталоге.';
+      '╨á╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å ╨╡╤ë╤æ ╨╜╨╡ ╤â╤ü╤é╨░╨╜╨╛╨▓╨╗╨╡╨╜╤ï.\n╨¥╨░╨╣╨┤╨╕╤é╨╡ ╨╕╤à ╨▓ ╨║╨░╤é╨░╨╗╨╛╨│╨╡.';
 
   @override
-  String get addons_genericTitle => 'Расширение';
+  String get addons_genericTitle => '╨á╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╡';
 
   @override
-  String get addons_notFound => 'Не удалось найти это расширение.';
+  String get addons_notFound =>
+      '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╨╜╨░╨╣╤é╨╕ ╤ì╤é╨╛ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╡.';
 
   @override
   String get addons_platformAndroid => 'Android';
 
   @override
-  String get addons_platformDesktop => 'ПК';
+  String get addons_platformDesktop => '╨ƒ╨Ü';
 
   @override
-  String get addons_searchHint => 'Поиск на addons.mozilla.org';
+  String get addons_searchHint => '╨ƒ╨╛╨╕╤ü╨║ ╨╜╨░ addons.mozilla.org';
 
   @override
   String get addons_desktopCompatibilityWarning =>
-      'Расширения для ПК не проверяются для мобильных устройств. Некоторые из них могут не работать, аварийно завершаться или вести себя неожиданно на Android.';
+      '╨á╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å ╨┤╨╗╤Å ╨ƒ╨Ü ╨╜╨╡ ╨┐╤Ç╨╛╨▓╨╡╤Ç╤Å╤Ä╤é╤ü╤Å ╨┤╨╗╤Å ╨╝╨╛╨▒╨╕╨╗╤î╨╜╤ï╤à ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓. ╨¥╨╡╨║╨╛╤é╨╛╤Ç╤ï╨╡ ╨╕╨╖ ╨╜╨╕╤à ╨╝╨╛╨│╤â╤é ╨╜╨╡ ╤Ç╨░╨▒╨╛╤é╨░╤é╤î, ╨░╨▓╨░╤Ç╨╕╨╣╨╜╨╛ ╨╖╨░╨▓╨╡╤Ç╤ê╨░╤é╤î╤ü╤Å ╨╕╨╗╨╕ ╨▓╨╡╤ü╤é╨╕ ╤ü╨╡╨▒╤Å ╨╜╨╡╨╛╨╢╨╕╨┤╨░╨╜╨╜╨╛ ╨╜╨░ Android.';
 
   @override
-  String get addons_actionInstall => 'Установить';
+  String get addons_actionInstall => '╨ú╤ü╤é╨░╨╜╨╛╨▓╨╕╤é╤î';
 
   @override
-  String get addons_actionInstallExtension => 'Установить расширение';
+  String get addons_actionInstallExtension =>
+      '╨ú╤ü╤é╨░╨╜╨╛╨▓╨╕╤é╤î ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╡';
 
   @override
-  String get addons_actionInstallFromFile => 'Установить из файла';
+  String get addons_actionInstallFromFile =>
+      '╨ú╤ü╤é╨░╨╜╨╛╨▓╨╕╤é╤î ╨╕╨╖ ╤ä╨░╨╣╨╗╨░';
 
   @override
-  String get addons_actionViewPermissions => 'Просмотреть разрешения';
+  String get addons_actionViewPermissions =>
+      '╨ƒ╤Ç╨╛╤ü╨╝╨╛╤é╤Ç╨╡╤é╤î ╤Ç╨░╨╖╤Ç╨╡╤ê╨╡╨╜╨╕╤Å';
 
   @override
-  String get addons_actionRemoveExtension => 'Удалить расширение';
+  String get addons_actionRemoveExtension =>
+      '╨ú╨┤╨░╨╗╨╕╤é╤î ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╡';
 
   @override
-  String get addons_actionNotNow => 'Не сейчас';
+  String get addons_actionNotNow => '╨¥╨╡ ╤ü╨╡╨╣╤ç╨░╤ü';
 
   @override
-  String get addons_actionUpdate => 'Обновить';
+  String get addons_actionUpdate => '╨₧╨▒╨╜╨╛╨▓╨╕╤é╤î';
 
   @override
-  String get addons_actionCheckForUpdates => 'Проверить обновления';
+  String get addons_actionCheckForUpdates =>
+      '╨ƒ╤Ç╨╛╨▓╨╡╤Ç╨╕╤é╤î ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤Å';
 
   @override
-  String get addons_actionCheckForUpdatesButton => 'Проверить обновления';
+  String get addons_actionCheckForUpdatesButton =>
+      '╨ƒ╤Ç╨╛╨▓╨╡╤Ç╨╕╤é╤î ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤Å';
 
   @override
-  String get addons_actionCheckingForUpdates => 'Проверка обновлений';
+  String get addons_actionCheckingForUpdates =>
+      '╨ƒ╤Ç╨╛╨▓╨╡╤Ç╨║╨░ ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╨╣';
 
   @override
-  String get addons_actionLearnMore => 'Подробнее';
+  String get addons_actionLearnMore => '╨ƒ╨╛╨┤╤Ç╨╛╨▒╨╜╨╡╨╡';
 
   @override
-  String get addons_actionReadMore => 'Читать далее';
+  String get addons_actionReadMore => '╨º╨╕╤é╨░╤é╤î ╨┤╨░╨╗╨╡╨╡';
 
   @override
-  String get addons_sectionEnabled => 'Включённые';
+  String get addons_sectionEnabled => '╨Æ╨║╨╗╤Ä╤ç╤æ╨╜╨╜╤ï╨╡';
 
   @override
-  String get addons_sectionDisabled => 'Отключённые';
+  String get addons_sectionDisabled => '╨₧╤é╨║╨╗╤Ä╤ç╤æ╨╜╨╜╤ï╨╡';
 
   @override
-  String get addons_sectionUnsupported => 'Неподдерживаемые';
+  String get addons_sectionUnsupported => '╨¥╨╡╨┐╨╛╨┤╨┤╨╡╤Ç╨╢╨╕╨▓╨░╨╡╨╝╤ï╨╡';
 
   @override
-  String get addons_sectionDetails => 'Сведения';
+  String get addons_sectionDetails => '╨í╨▓╨╡╨┤╨╡╨╜╨╕╤Å';
 
   @override
-  String get addons_sectionDescription => 'Описание';
+  String get addons_sectionDescription => '╨₧╨┐╨╕╤ü╨░╨╜╨╕╨╡';
 
   @override
-  String get addons_sectionManagement => 'Управление';
+  String get addons_sectionManagement => '╨ú╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╨╡';
 
   @override
-  String get addons_sectionUpdates => 'Обновления';
+  String get addons_sectionUpdates => '╨₧╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤Å';
 
   @override
-  String get addons_sectionAboutExtension => 'Об этом расширении';
+  String get addons_sectionAboutExtension =>
+      '╨₧╨▒ ╤ì╤é╨╛╨╝ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╕';
 
   @override
-  String get addons_sectionTechnicalPermissions => 'Технические разрешения';
+  String get addons_sectionTechnicalPermissions =>
+      '╨ó╨╡╤à╨╜╨╕╤ç╨╡╤ü╨║╨╕╨╡ ╤Ç╨░╨╖╤Ç╨╡╤ê╨╡╨╜╨╕╤Å';
 
   @override
-  String get addons_sectionMoreInformation => 'Дополнительная информация';
+  String get addons_sectionMoreInformation =>
+      '╨ö╨╛╨┐╨╛╨╗╨╜╨╕╤é╨╡╨╗╤î╨╜╨░╤Å ╨╕╨╜╤ä╨╛╤Ç╨╝╨░╤å╨╕╤Å';
 
   @override
-  String get addons_requiredDataCollectionTitle => 'Обязательный сбор данных';
+  String get addons_requiredDataCollectionTitle =>
+      '╨₧╨▒╤Å╨╖╨░╤é╨╡╨╗╤î╨╜╤ï╨╣ ╤ü╨▒╨╛╤Ç ╨┤╨░╨╜╨╜╤ï╤à';
 
   @override
-  String get addons_tooltipRemoveExtension => 'Удалить расширение';
+  String get addons_tooltipRemoveExtension =>
+      '╨ú╨┤╨░╨╗╨╕╤é╤î ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╡';
 
   @override
   String addons_extensionRemoved(String name) {
-    return '$name удалено';
+    return '$name ╤â╨┤╨░╨╗╨╡╨╜╨╛';
   }
 
   @override
   String addons_extensionInstalled(String name) {
-    return '$name установлено';
+    return '$name ╤â╤ü╤é╨░╨╜╨╛╨▓╨╗╨╡╨╜╨╛';
   }
 
   @override
   String addons_installFailed(String error) {
-    return 'Ошибка установки: $error';
+    return '╨₧╤ê╨╕╨▒╨║╨░ ╤â╤ü╤é╨░╨╜╨╛╨▓╨║╨╕: $error';
   }
 
   @override
   String get addons_updateChecksStarted =>
-      'Запущена фоновая проверка обновлений установленных расширений';
+      '╨ù╨░╨┐╤â╤ë╨╡╨╜╨░ ╤ä╨╛╨╜╨╛╨▓╨░╤Å ╨┐╤Ç╨╛╨▓╨╡╤Ç╨║╨░ ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╨╣ ╤â╤ü╤é╨░╨╜╨╛╨▓╨╗╨╡╨╜╨╜╤ï╤à ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╣';
 
   @override
-  String get addons_statusInstalled => 'Установлено';
+  String get addons_statusInstalled => '╨ú╤ü╤é╨░╨╜╨╛╨▓╨╗╨╡╨╜╨╛';
 
   @override
-  String get addons_statusDisabled => 'Отключено';
+  String get addons_statusDisabled => '╨₧╤é╨║╨╗╤Ä╤ç╨╡╨╜╨╛';
 
   @override
-  String get addons_statusAvailable => 'Доступно';
+  String get addons_statusAvailable => '╨ö╨╛╤ü╤é╤â╨┐╨╜╨╛';
 
   @override
-  String get addons_chipPrivateBrowsing => 'Приватный просмотр';
+  String get addons_chipPrivateBrowsing =>
+      '╨ƒ╤Ç╨╕╨▓╨░╤é╨╜╤ï╨╣ ╨┐╤Ç╨╛╤ü╨╝╨╛╤é╤Ç';
 
   @override
-  String get addons_chipRecommended => 'Рекомендуется';
+  String get addons_chipRecommended => '╨á╨╡╨║╨╛╨╝╨╡╨╜╨┤╤â╨╡╤é╤ü╤Å';
 
   @override
-  String get addons_removeConfirmTitle => 'Удалить расширение?';
+  String get addons_removeConfirmTitle =>
+      '╨ú╨┤╨░╨╗╨╕╤é╤î ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╡?';
 
   @override
   String addons_removeConfirmContent(String name) {
-    return 'Удалить $name из Cat Browser?';
+    return '╨ú╨┤╨░╨╗╨╕╤é╤î $name ╨╕╨╖ Cat Browser?';
   }
 
   @override
   String get addons_autoUpdateGloballyDisabled =>
-      'Автоматические обновления отключены глобально.';
+      '╨É╨▓╤é╨╛╨╝╨░╤é╨╕╤ç╨╡╤ü╨║╨╕╨╡ ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤Å ╨╛╤é╨║╨╗╤Ä╤ç╨╡╨╜╤ï ╨│╨╗╨╛╨▒╨░╨╗╤î╨╜╨╛.';
 
   @override
   String get addons_autoUpdateNeedsManualRun =>
-      'Прежде чем включить автоматические обновления, один раз обновите расширение вручную и перезапустите приложение.';
+      '╨ƒ╤Ç╨╡╨╢╨┤╨╡ ╤ç╨╡╨╝ ╨▓╨║╨╗╤Ä╤ç╨╕╤é╤î ╨░╨▓╤é╨╛╨╝╨░╤é╨╕╤ç╨╡╤ü╨║╨╕╨╡ ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤Å, ╨╛╨┤╨╕╨╜ ╤Ç╨░╨╖ ╨╛╨▒╨╜╨╛╨▓╨╕╤é╨╡ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╡ ╨▓╤Ç╤â╤ç╨╜╤â╤Ä ╨╕ ╨┐╨╡╤Ç╨╡╨╖╨░╨┐╤â╤ü╤é╨╕╤é╨╡ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╨╡.';
 
   @override
   String get addons_autoUpdateAllow =>
-      'Разрешить этому расширению получать обновления в фоне.';
+      '╨á╨░╨╖╤Ç╨╡╤ê╨╕╤é╤î ╤ì╤é╨╛╨╝╤â ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Ä ╨┐╨╛╨╗╤â╤ç╨░╤é╤î ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤Å ╨▓ ╤ä╨╛╨╜╨╡.';
 
   @override
   String get addons_autoUpdateDisabledForExtension =>
-      'Фоновые обновления для этого расширения отключены.';
+      '╨ñ╨╛╨╜╨╛╨▓╤ï╨╡ ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤Å ╨┤╨╗╤Å ╤ì╤é╨╛╨│╨╛ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å ╨╛╤é╨║╨╗╤Ä╤ç╨╡╨╜╤ï.';
 
   @override
-  String get addons_switchEnabledTitle => 'Включено';
+  String get addons_switchEnabledTitle => '╨Æ╨║╨╗╤Ä╤ç╨╡╨╜╨╛';
 
   @override
   String get addons_switchEnabledSubtitleAllow =>
-      'Разрешить этому расширению работать в Cat Browser.';
+      '╨á╨░╨╖╤Ç╨╡╤ê╨╕╤é╤î ╤ì╤é╨╛╨╝╤â ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Ä ╤Ç╨░╨▒╨╛╤é╨░╤é╤î ╨▓ Cat Browser.';
 
   @override
   String get addons_switchEnabledSubtitleCannot =>
-      'Это расширение нельзя безопасно включить.';
+      '╨¡╤é╨╛ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╡ ╨╜╨╡╨╗╤î╨╖╤Å ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╨╛ ╨▓╨║╨╗╤Ä╤ç╨╕╤é╤î.';
 
   @override
   String get addons_switchPrivateBrowsingTitle =>
-      'Разрешить в приватном режиме';
+      '╨á╨░╨╖╤Ç╨╡╤ê╨╕╤é╤î ╨▓ ╨┐╤Ç╨╕╨▓╨░╤é╨╜╨╛╨╝ ╤Ç╨╡╨╢╨╕╨╝╨╡';
 
   @override
   String get addons_switchPrivateBrowsingSubtitle =>
-      'Разрешить этому расширению работать в приватных вкладках.';
+      '╨á╨░╨╖╤Ç╨╡╤ê╨╕╤é╤î ╤ì╤é╨╛╨╝╤â ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Ä ╤Ç╨░╨▒╨╛╤é╨░╤é╤î ╨▓ ╨┐╤Ç╨╕╨▓╨░╤é╨╜╤ï╤à ╨▓╨║╨╗╨░╨┤╨║╨░╤à.';
 
   @override
-  String get addons_switchAutoUpdateTitle => 'Автоматические обновления';
+  String get addons_switchAutoUpdateTitle =>
+      '╨É╨▓╤é╨╛╨╝╨░╤é╨╕╤ç╨╡╤ü╨║╨╕╨╡ ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤Å';
 
   @override
-  String get addons_switchPinTitle => 'Закрепить на панели';
+  String get addons_switchPinTitle => '╨ù╨░╨║╤Ç╨╡╨┐╨╕╤é╤î ╨╜╨░ ╨┐╨░╨╜╨╡╨╗╨╕';
 
   @override
   String get addons_switchPinSubtitle =>
-      'Показывать значок этого расширения на основной панели вкладок.';
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨╖╨╜╨░╤ç╨╛╨║ ╤ì╤é╨╛╨│╨╛ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å ╨╜╨░ ╨╛╤ü╨╜╨╛╨▓╨╜╨╛╨╣ ╨┐╨░╨╜╨╡╨╗╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║.';
 
   @override
-  String get addons_menuExtensionSettingsTitle => 'Настройки расширения';
+  String get addons_menuExtensionSettingsTitle =>
+      '╨¥╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å';
 
   @override
   String get addons_menuExtensionSettingsSubtitleTab =>
-      'Открыть страницу настроек расширения во вкладке браузера';
+      '╨₧╤é╨║╤Ç╤ï╤é╤î ╤ü╤é╤Ç╨░╨╜╨╕╤å╤â ╨╜╨░╤ü╤é╤Ç╨╛╨╡╨║ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å ╨▓╨╛ ╨▓╨║╨╗╨░╨┤╨║╨╡ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░';
 
   @override
   String get addons_menuExtensionSettingsSubtitleInline =>
-      'Открыть страницу настроек расширения';
+      '╨₧╤é╨║╤Ç╤ï╤é╤î ╤ü╤é╤Ç╨░╨╜╨╕╤å╤â ╨╜╨░╤ü╤é╤Ç╨╛╨╡╨║ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å';
 
   @override
-  String get addons_menuFilterListsTitle => 'Списки фильтров и усиление защиты';
+  String get addons_menuFilterListsTitle => '╨í╨┐╨╕╤ü╨║╨╕ ╤ä╨╕╨╗╤î╤é╤Ç╨╛╨▓';
 
   @override
   String get addons_menuFilterListsSubtitle =>
-      'Управление списками фильтров и применение усиленной защиты Cat Browser';
+      '╨ú╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╨╡ ╤ü╨┐╨╕╤ü╨║╨░╨╝╨╕ ╤ä╨╕╨╗╤î╤é╤Ç╨╛╨▓ ╨╕ ╨┐╤Ç╨╕╨╝╨╡╨╜╨╡╨╜╨╕╨╡ ╤â╤ü╨╕╨╗╨╡╨╜╨╜╨╛╨╣ ╨╖╨░╤ë╨╕╤é╤ï Cat Browser';
 
   @override
-  String get addons_permissionsTitle => 'Разрешения';
+  String get addons_permissionsTitle => '╨á╨░╨╖╤Ç╨╡╤ê╨╡╨╜╨╕╤Å';
 
   @override
   String addons_updateAvailable(String from, String to) {
-    return 'Доступно обновление: $from → $to';
+    return '╨ö╨╛╤ü╤é╤â╨┐╨╜╨╛ ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╨╡: $from ΓåÆ $to';
   }
 
   @override
   String get addons_noUpdateAttemptYet =>
-      'Сведений о недавних попытках обновления пока нет.';
+      '╨í╨▓╨╡╨┤╨╡╨╜╨╕╨╣ ╨╛ ╨╜╨╡╨┤╨░╨▓╨╜╨╕╤à ╨┐╨╛╨┐╤ï╤é╨║╨░╤à ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤Å ╨┐╨╛╨║╨░ ╨╜╨╡╤é.';
 
   @override
   String addons_lastChecked(String date) {
-    return 'Последняя проверка: $date';
+    return '╨ƒ╨╛╤ü╨╗╨╡╨┤╨╜╤Å╤Å ╨┐╤Ç╨╛╨▓╨╡╤Ç╨║╨░: $date';
   }
 
   @override
-  String get addons_noUpdateAvailable => 'Обновлений нет';
+  String get addons_noUpdateAvailable => '╨₧╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╨╣ ╨╜╨╡╤é';
 
   @override
   String get addons_noRemoteUpdateSource =>
-      'У этого локально установленного расширения нет источника обновлений в сети.';
+      '╨ú ╤ì╤é╨╛╨│╨╛ ╨╗╨╛╨║╨░╨╗╤î╨╜╨╛ ╤â╤ü╤é╨░╨╜╨╛╨▓╨╗╨╡╨╜╨╜╨╛╨│╨╛ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å ╨╜╨╡╤é ╨╕╤ü╤é╨╛╤ç╨╜╨╕╨║╨░ ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╨╣ ╨▓ ╤ü╨╡╤é╨╕.';
 
   @override
   String get addons_updateCheckFailed =>
-      'Не удалось запустить проверку обновлений.';
+      '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╨╖╨░╨┐╤â╤ü╤é╨╕╤é╤î ╨┐╤Ç╨╛╨▓╨╡╤Ç╨║╤â ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╨╣.';
 
   @override
-  String get addons_updateAvailableDialogTitle => 'Доступно обновление';
+  String get addons_updateAvailableDialogTitle =>
+      '╨ö╨╛╤ü╤é╤â╨┐╨╜╨╛ ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╨╡';
 
   @override
   String addons_updateConfirmContent(String name, String from, String to) {
-    return 'Обновить $name с версии $from до $to?';
+    return '╨₧╨▒╨╜╨╛╨▓╨╕╤é╤î $name ╤ü ╨▓╨╡╤Ç╤ü╨╕╨╕ $from ╨┤╨╛ $to?';
   }
 
   @override
-  String get addons_noDescriptionProvided => 'Описание отсутствует.';
+  String get addons_noDescriptionProvided =>
+      '╨₧╨┐╨╕╤ü╨░╨╜╨╕╨╡ ╨╛╤é╤ü╤â╤é╤ü╤é╨▓╤â╨╡╤é.';
 
   @override
-  String get addons_loadingDescription => 'Загрузка описания…';
+  String get addons_loadingDescription =>
+      '╨ù╨░╨│╤Ç╤â╨╖╨║╨░ ╨╛╨┐╨╕╤ü╨░╨╜╨╕╤ÅΓÇª';
 
   @override
-  String get addons_fieldAuthor => 'Автор';
+  String get addons_fieldAuthor => '╨É╨▓╤é╨╛╤Ç';
 
   @override
-  String get addons_fieldVersion => 'Версия';
+  String get addons_fieldVersion => '╨Æ╨╡╤Ç╤ü╨╕╤Å';
 
   @override
-  String get addons_fieldLastUpdated => 'Последнее обновление';
+  String get addons_fieldLastUpdated =>
+      '╨ƒ╨╛╤ü╨╗╨╡╨┤╨╜╨╡╨╡ ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╨╡';
 
   @override
-  String get addons_fieldLastUpdatedInfo => 'Последнее обновление';
+  String get addons_fieldLastUpdatedInfo =>
+      '╨ƒ╨╛╤ü╨╗╨╡╨┤╨╜╨╡╨╡ ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╨╡';
 
   @override
-  String get addons_fieldHomepage => 'Домашняя страница';
+  String get addons_fieldHomepage => '╨ö╨╛╨╝╨░╤ê╨╜╤Å╤Å ╤ü╤é╤Ç╨░╨╜╨╕╤å╨░';
 
   @override
-  String get addons_fieldAddonListing => 'Страница в каталоге';
+  String get addons_fieldAddonListing => '╨í╤é╤Ç╨░╨╜╨╕╤å╨░ ╨▓ ╨║╨░╤é╨░╨╗╨╛╨│╨╡';
 
   @override
-  String get addons_fieldSize => 'Размер';
+  String get addons_fieldSize => '╨á╨░╨╖╨╝╨╡╤Ç';
 
   @override
-  String get addons_fieldCategories => 'Категории';
+  String get addons_fieldCategories => '╨Ü╨░╤é╨╡╨│╨╛╤Ç╨╕╨╕';
 
   @override
-  String get addons_fieldLicense => 'Лицензия';
+  String get addons_fieldLicense => '╨¢╨╕╤å╨╡╨╜╨╖╨╕╤Å';
 
   @override
-  String get addons_fieldSupportSite => 'Сайт поддержки';
+  String get addons_fieldSupportSite => '╨í╨░╨╣╤é ╨┐╨╛╨┤╨┤╨╡╤Ç╨╢╨║╨╕';
 
   @override
-  String get addons_fieldReviews => 'Отзывы';
+  String get addons_fieldReviews => '╨₧╤é╨╖╤ï╨▓╤ï';
 
   @override
-  String get addons_fieldPrivacyPolicy => 'Политика конфиденциальности';
+  String get addons_fieldPrivacyPolicy =>
+      '╨ƒ╨╛╨╗╨╕╤é╨╕╨║╨░ ╨║╨╛╨╜╤ä╨╕╨┤╨╡╨╜╤å╨╕╨░╨╗╤î╨╜╨╛╤ü╤é╨╕';
 
   @override
-  String get addons_linkViewOnAmo => 'Открыть на addons.mozilla.org';
+  String get addons_linkViewOnAmo => '╨₧╤é╨║╤Ç╤ï╤é╤î ╨╜╨░ addons.mozilla.org';
 
   @override
-  String get addons_settingsTitleGeneric => 'Настройки расширения';
+  String get addons_settingsTitleGeneric =>
+      '╨¥╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å';
 
   @override
   String addons_settingsTitleNamed(String name) {
-    return 'Настройки $name';
+    return '╨¥╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ $name';
   }
 
   @override
   String addons_settingsLoadFailed(String error) {
-    return 'Не удалось загрузить настройки расширения: $error';
+    return '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╨╖╨░╨│╤Ç╤â╨╖╨╕╤é╤î ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å: $error';
   }
 
   @override
   String get addons_noSettingsPage =>
-      'У этого расширения нет страницы настроек.';
+      '╨ú ╤ì╤é╨╛╨│╨╛ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å ╨╜╨╡╤é ╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï ╨╜╨░╤ü╤é╤Ç╨╛╨╡╨║.';
 
   @override
-  String get addons_permissionsTitleGeneric => 'Разрешения расширения';
+  String get addons_permissionsTitleGeneric =>
+      '╨á╨░╨╖╤Ç╨╡╤ê╨╡╨╜╨╕╤Å ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å';
 
   @override
   String addons_permissionsTitleNamed(String name) {
-    return 'Разрешения $name';
+    return '╨á╨░╨╖╤Ç╨╡╤ê╨╡╨╜╨╕╤Å $name';
   }
 
   @override
   String addons_permissionsLoadFailed(String error) {
-    return 'Не удалось загрузить разрешения расширения: $error';
+    return '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╨╖╨░╨│╤Ç╤â╨╖╨╕╤é╤î ╤Ç╨░╨╖╤Ç╨╡╤ê╨╡╨╜╨╕╤Å ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å: $error';
   }
 
   @override
-  String get addons_noSpecialPermissions => 'Особые разрешения не указаны';
+  String get addons_noSpecialPermissions =>
+      '╨₧╤ü╨╛╨▒╤ï╨╡ ╤Ç╨░╨╖╤Ç╨╡╤ê╨╡╨╜╨╕╤Å ╨╜╨╡ ╤â╨║╨░╨╖╨░╨╜╤ï';
 
   @override
   String get addons_noTranslatedPermissionDetails =>
-      'Это расширение пока не предоставляет переведённых описаний разрешений.';
+      '╨¡╤é╨╛ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╡ ╨┐╨╛╨║╨░ ╨╜╨╡ ╨┐╤Ç╨╡╨┤╨╛╤ü╤é╨░╨▓╨╗╤Å╨╡╤é ╨┐╨╡╤Ç╨╡╨▓╨╡╨┤╤æ╨╜╨╜╤ï╤à ╨╛╨┐╨╕╤ü╨░╨╜╨╕╨╣ ╤Ç╨░╨╖╤Ç╨╡╤ê╨╡╨╜╨╕╨╣.';
 
   @override
   String addons_versionSentence(String version) {
-    return 'Версия $version';
+    return '╨Æ╨╡╤Ç╤ü╨╕╤Å $version';
   }
 
   @override
@@ -1035,169 +1063,189 @@ class AppLocalizationsRu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$countString пользователя',
-      many: '$countString пользователей',
-      few: '$countString пользователя',
-      one: '$countString пользователь',
+      other: '$countString ╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╨╡╨╗╤Å',
+      many: '$countString ╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╨╡╨╗╨╡╨╣',
+      few: '$countString ╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╨╡╨╗╤Å',
+      one: '$countString ╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╨╡╨╗╤î',
     );
     return '$_temp0';
   }
 
   @override
   String addons_byAuthor(String name) {
-    return 'автор: $name';
+    return '╨░╨▓╤é╨╛╤Ç: $name';
   }
 
   @override
-  String get addons_permGroupRequired => 'Обязательные';
+  String get addons_permGroupRequired => '╨₧╨▒╤Å╨╖╨░╤é╨╡╨╗╤î╨╜╤ï╨╡';
 
   @override
-  String get addons_permGroupWebsites => 'Сайты';
+  String get addons_permGroupWebsites => '╨í╨░╨╣╤é╤ï';
 
   @override
-  String get addons_permGroupOptional => 'Необязательные';
+  String get addons_permGroupOptional => '╨¥╨╡╨╛╨▒╤Å╨╖╨░╤é╨╡╨╗╤î╨╜╤ï╨╡';
 
   @override
-  String get addons_permGroupDataCollection => 'Сбор данных';
+  String get addons_permGroupDataCollection => '╨í╨▒╨╛╤Ç ╨┤╨░╨╜╨╜╤ï╤à';
 
   @override
-  String get addons_dateUnknown => 'Неизвестно';
+  String get addons_dateUnknown => '╨¥╨╡╨╕╨╖╨▓╨╡╤ü╤é╨╜╨╛';
 
   @override
-  String get addons_statusUpdatedSuccessfully => 'Обновлено';
+  String get addons_statusUpdatedSuccessfully => '╨₧╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╛';
 
   @override
-  String get addons_statusNotInstalled => 'Расширение не установлено';
+  String get addons_statusNotInstalled =>
+      '╨á╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╡ ╨╜╨╡ ╤â╤ü╤é╨░╨╜╨╛╨▓╨╗╨╡╨╜╨╛';
 
   @override
   String addons_updateFailedWithMessage(String message) {
-    return 'Ошибка обновления: $message';
+    return '╨₧╤ê╨╕╨▒╨║╨░ ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤Å: $message';
   }
 
   @override
-  String get addons_updateFailedGeneric => 'Ошибка обновления';
+  String get addons_updateFailedGeneric => '╨₧╤ê╨╕╨▒╨║╨░ ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤Å';
 
   @override
   String get addons_noUpdateChecksRecorded =>
-      'Проверок обновлений пока не было';
+      '╨ƒ╤Ç╨╛╨▓╨╡╤Ç╨╛╨║ ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╨╣ ╨┐╨╛╨║╨░ ╨╜╨╡ ╨▒╤ï╨╗╨╛';
 
   @override
   String get addons_statusBlocklisted =>
-      'Это расширение занесено в список блокировки и должно оставаться отключённым.';
+      '╨¡╤é╨╛ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╡ ╨╖╨░╨╜╨╡╤ü╨╡╨╜╨╛ ╨▓ ╤ü╨┐╨╕╤ü╨╛╨║ ╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨║╨╕ ╨╕ ╨┤╨╛╨╗╨╢╨╜╨╛ ╨╛╤ü╤é╨░╨▓╨░╤é╤î╤ü╤Å ╨╛╤é╨║╨╗╤Ä╤ç╤æ╨╜╨╜╤ï╨╝.';
 
   @override
   String get addons_statusNotCorrectlySigned =>
-      'Это расширение подписано неправильно и не может быть безопасно включено.';
+      '╨¡╤é╨╛ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╡ ╨┐╨╛╨┤╨┐╨╕╤ü╨░╨╜╨╛ ╨╜╨╡╨┐╤Ç╨░╨▓╨╕╨╗╤î╨╜╨╛ ╨╕ ╨╜╨╡ ╨╝╨╛╨╢╨╡╤é ╨▒╤ï╤é╤î ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╨╛ ╨▓╨║╨╗╤Ä╤ç╨╡╨╜╨╛.';
 
   @override
   String get addons_statusIncompatible =>
-      'Это расширение несовместимо с текущей версией приложения.';
+      '╨¡╤é╨╛ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╡ ╨╜╨╡╤ü╨╛╨▓╨╝╨╡╤ü╤é╨╕╨╝╨╛ ╤ü ╤é╨╡╨║╤â╤ë╨╡╨╣ ╨▓╨╡╤Ç╤ü╨╕╨╡╨╣ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å.';
 
   @override
   String get addons_statusSoftBlockedEnabled =>
-      'Это расширение заблокировано с возможностью повторного включения. Будьте осторожны, пока оно работает.';
+      '╨¡╤é╨╛ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╡ ╨╖╨░╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╨╜╨╛ ╤ü ╨▓╨╛╨╖╨╝╨╛╨╢╨╜╨╛╤ü╤é╤î╤Ä ╨┐╨╛╨▓╤é╨╛╤Ç╨╜╨╛╨│╨╛ ╨▓╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å. ╨æ╤â╨┤╤î╤é╨╡ ╨╛╤ü╤é╨╛╤Ç╨╛╨╢╨╜╤ï, ╨┐╨╛╨║╨░ ╨╛╨╜╨╛ ╤Ç╨░╨▒╨╛╤é╨░╨╡╤é.';
 
   @override
   String get addons_statusSoftBlockedDisabled =>
-      'Это расширение заблокировано, но его можно снова включить.';
+      '╨¡╤é╨╛ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╡ ╨╖╨░╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╨╜╨╛, ╨╜╨╛ ╨╡╨│╨╛ ╨╝╨╛╨╢╨╜╨╛ ╤ü╨╜╨╛╨▓╨░ ╨▓╨║╨╗╤Ä╤ç╨╕╤é╤î.';
 
   @override
   String get addons_statusUnsupported =>
-      'Это расширение установлено, но Cat Browser пока его не поддерживает.';
+      '╨¡╤é╨╛ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╡ ╤â╤ü╤é╨░╨╜╨╛╨▓╨╗╨╡╨╜╨╛, ╨╜╨╛ Cat Browser ╨┐╨╛╨║╨░ ╨╡╨│╨╛ ╨╜╨╡ ╨┐╨╛╨┤╨┤╨╡╤Ç╨╢╨╕╨▓╨░╨╡╤é.';
 
   @override
-  String get addons_permissionBookmarks => 'Читать и изменять закладки';
+  String get addons_permissionBookmarks =>
+      '╨º╨╕╤é╨░╤é╤î ╨╕ ╨╕╨╖╨╝╨╡╨╜╤Å╤é╤î ╨╖╨░╨║╨╗╨░╨┤╨║╨╕';
 
   @override
   String get addons_permissionBrowserSettings =>
-      'Читать и изменять настройки браузера';
+      '╨º╨╕╤é╨░╤é╤î ╨╕ ╨╕╨╖╨╝╨╡╨╜╤Å╤é╤î ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░';
 
   @override
   String get addons_permissionBrowsingData =>
-      'Удалять недавнюю историю, куки и связанные данные';
+      '╨ú╨┤╨░╨╗╤Å╤é╤î ╨╜╨╡╨┤╨░╨▓╨╜╤Ä╤Ä ╨╕╤ü╤é╨╛╤Ç╨╕╤Ä, ╨║╤â╨║╨╕ ╨╕ ╤ü╨▓╤Å╨╖╨░╨╜╨╜╤ï╨╡ ╨┤╨░╨╜╨╜╤ï╨╡';
 
   @override
   String get addons_permissionClipboardRead =>
-      'Получать данные, которые вы копируете и вставляете';
+      '╨ƒ╨╛╨╗╤â╤ç╨░╤é╤î ╨┤╨░╨╜╨╜╤ï╨╡, ╨║╨╛╤é╨╛╤Ç╤ï╨╡ ╨▓╤ï ╨║╨╛╨┐╨╕╤Ç╤â╨╡╤é╨╡ ╨╕ ╨▓╤ü╤é╨░╨▓╨╗╤Å╨╡╤é╨╡';
 
   @override
   String get addons_permissionClipboardWrite =>
-      'Помещать данные в буфер обмена';
+      '╨ƒ╨╛╨╝╨╡╤ë╨░╤é╤î ╨┤╨░╨╜╨╜╤ï╨╡ ╨▓ ╨▒╤â╤ä╨╡╤Ç ╨╛╨▒╨╝╨╡╨╜╨░';
 
   @override
   String get addons_permissionContextualIdentities =>
-      'Получать доступ к вкладкам в контейнерах и изменять их';
+      '╨ƒ╨╛╨╗╤â╤ç╨░╤é╤î ╨┤╨╛╤ü╤é╤â╨┐ ╨║ ╨▓╨║╨╗╨░╨┤╨║╨░╨╝ ╨▓ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╨░╤à ╨╕ ╨╕╨╖╨╝╨╡╨╜╤Å╤é╤î ╨╕╤à';
 
   @override
   String get addons_permissionCookies =>
-      'Получать доступ к куки посещённых сайтов';
+      '╨ƒ╨╛╨╗╤â╤ç╨░╤é╤î ╨┤╨╛╤ü╤é╤â╨┐ ╨║ ╨║╤â╨║╨╕ ╨┐╨╛╤ü╨╡╤ë╤æ╨╜╨╜╤ï╤à ╤ü╨░╨╣╤é╨╛╨▓';
 
   @override
   String get addons_permissionDownloads =>
-      'Загружать файлы, а также читать и изменять историю загрузок';
+      '╨ù╨░╨│╤Ç╤â╨╢╨░╤é╤î ╤ä╨░╨╣╨╗╤ï, ╨░ ╤é╨░╨║╨╢╨╡ ╤ç╨╕╤é╨░╤é╤î ╨╕ ╨╕╨╖╨╝╨╡╨╜╤Å╤é╤î ╨╕╤ü╤é╨╛╤Ç╨╕╤Ä ╨╖╨░╨│╤Ç╤â╨╖╨╛╨║';
 
   @override
   String get addons_permissionDownloadsOpen =>
-      'Открывать файлы, загруженные на устройство';
+      '╨₧╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╤ä╨░╨╣╨╗╤ï, ╨╖╨░╨│╤Ç╤â╨╢╨╡╨╜╨╜╤ï╨╡ ╨╜╨░ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨╛';
 
   @override
-  String get addons_permissionFind => 'Читать текст всех открытых вкладок';
+  String get addons_permissionFind =>
+      '╨º╨╕╤é╨░╤é╤î ╤é╨╡╨║╤ü╤é ╨▓╤ü╨╡╤à ╨╛╤é╨║╤Ç╤ï╤é╤ï╤à ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
   String get addons_permissionGeolocation =>
-      'Получать доступ к вашему местоположению';
+      '╨ƒ╨╛╨╗╤â╤ç╨░╤é╤î ╨┤╨╛╤ü╤é╤â╨┐ ╨║ ╨▓╨░╤ê╨╡╨╝╤â ╨╝╨╡╤ü╤é╨╛╨┐╨╛╨╗╨╛╨╢╨╡╨╜╨╕╤Ä';
 
   @override
-  String get addons_permissionHistory => 'Получать доступ к истории просмотра';
+  String get addons_permissionHistory =>
+      '╨ƒ╨╛╨╗╤â╤ç╨░╤é╤î ╨┤╨╛╤ü╤é╤â╨┐ ╨║ ╨╕╤ü╤é╨╛╤Ç╨╕╨╕ ╨┐╤Ç╨╛╤ü╨╝╨╛╤é╤Ç╨░';
 
   @override
   String get addons_permissionManagement =>
-      'Отслеживать использование расширений и управлять темами';
+      '╨₧╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╤é╤î ╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╨╜╨╕╨╡ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╣ ╨╕ ╤â╨┐╤Ç╨░╨▓╨╗╤Å╤é╤î ╤é╨╡╨╝╨░╨╝╨╕';
 
   @override
   String get addons_permissionNativeMessaging =>
-      'Обмениваться сообщениями с программами помимо браузера';
+      '╨₧╨▒╨╝╨╡╨╜╨╕╨▓╨░╤é╤î╤ü╤Å ╤ü╨╛╨╛╨▒╤ë╨╡╨╜╨╕╤Å╨╝╨╕ ╤ü ╨┐╤Ç╨╛╨│╤Ç╨░╨╝╨╝╨░╨╝╨╕ ╨┐╨╛╨╝╨╕╨╝╨╛ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░';
 
   @override
-  String get addons_permissionNotifications => 'Показывать уведомления';
+  String get addons_permissionNotifications =>
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╤â╨▓╨╡╨┤╨╛╨╝╨╗╨╡╨╜╨╕╤Å';
 
   @override
   String get addons_permissionPkcs11 =>
-      'Предоставлять службы криптографической аутентификации';
+      '╨ƒ╤Ç╨╡╨┤╨╛╤ü╤é╨░╨▓╨╗╤Å╤é╤î ╤ü╨╗╤â╨╢╨▒╤ï ╨║╤Ç╨╕╨┐╤é╨╛╨│╤Ç╨░╤ä╨╕╤ç╨╡╤ü╨║╨╛╨╣ ╨░╤â╤é╨╡╨╜╤é╨╕╤ä╨╕╨║╨░╤å╨╕╨╕';
 
   @override
   String get addons_permissionPrivacy =>
-      'Читать и изменять настройки приватности';
+      '╨º╨╕╤é╨░╤é╤î ╨╕ ╨╕╨╖╨╝╨╡╨╜╤Å╤é╤î ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨┐╤Ç╨╕╨▓╨░╤é╨╜╨╛╤ü╤é╨╕';
 
   @override
-  String get addons_permissionProxy => 'Управлять настройками прокси браузера';
+  String get addons_permissionProxy =>
+      '╨ú╨┐╤Ç╨░╨▓╨╗╤Å╤é╤î ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨░╨╝╨╕ ╨┐╤Ç╨╛╨║╤ü╨╕ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░';
 
   @override
   String get addons_permissionSessions =>
-      'Получать доступ к недавно закрытым вкладкам';
+      '╨ƒ╨╛╨╗╤â╤ç╨░╤é╤î ╨┤╨╛╤ü╤é╤â╨┐ ╨║ ╨╜╨╡╨┤╨░╨▓╨╜╨╛ ╨╖╨░╨║╤Ç╤ï╤é╤ï╨╝ ╨▓╨║╨╗╨░╨┤╨║╨░╨╝';
 
   @override
-  String get addons_permissionTabs => 'Получать доступ к вкладкам браузера';
+  String get addons_permissionTabs =>
+      '╨ƒ╨╛╨╗╤â╤ç╨░╤é╤î ╨┤╨╛╤ü╤é╤â╨┐ ╨║ ╨▓╨║╨╗╨░╨┤╨║╨░╨╝ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░';
 
   @override
   String get addons_permissionTabHide =>
-      'Скрывать и показывать вкладки браузера';
+      '╨í╨║╤Ç╤ï╨▓╨░╤é╤î ╨╕ ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░';
 
   @override
-  String get addons_permissionTopSites => 'Получать доступ к истории просмотра';
+  String get addons_permissionTopSites =>
+      '╨ƒ╨╛╨╗╤â╤ç╨░╤é╤î ╨┤╨╛╤ü╤é╤â╨┐ ╨║ ╨╕╤ü╤é╨╛╤Ç╨╕╨╕ ╨┐╤Ç╨╛╤ü╨╝╨╛╤é╤Ç╨░';
 
   @override
   String get addons_permissionWebNavigation =>
-      'Получать доступ к активности браузера во время навигации';
+      '╨ƒ╨╛╨╗╤â╤ç╨░╤é╤î ╨┤╨╛╤ü╤é╤â╨┐ ╨║ ╨░╨║╤é╨╕╨▓╨╜╨╛╤ü╤é╨╕ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░ ╨▓╨╛ ╨▓╤Ç╨╡╨╝╤Å ╨╜╨░╨▓╨╕╨│╨░╤å╨╕╨╕';
 
   @override
   String get addons_permissionAllUrls =>
-      'Получать доступ к вашим данным на всех сайтах';
+      '╨ƒ╨╛╨╗╤â╤ç╨░╤é╤î ╨┤╨╛╤ü╤é╤â╨┐ ╨║ ╨▓╨░╤ê╨╕╨╝ ╨┤╨░╨╜╨╜╤ï╨╝ ╨╜╨░ ╨▓╤ü╨╡╤à ╤ü╨░╨╣╤é╨░╤à';
 
   @override
   String addons_permissionAccessDataFor(String host) {
-    return 'Получать доступ к вашим данным для $host';
+    return '╨ƒ╨╛╨╗╤â╤ç╨░╤é╤î ╨┤╨╛╤ü╤é╤â╨┐ ╨║ ╨▓╨░╤ê╨╕╨╝ ╨┤╨░╨╜╨╜╤ï╨╝ ╨┤╨╗╤Å $host';
   }
+
+  @override
+  String get addons_updatePermissionsTitle =>
+      '╨₧╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤Ä ╨╜╤â╨╢╨╜╤ï ╨╜╨╛╨▓╤ï╨╡ ╤Ç╨░╨╖╤Ç╨╡╤ê╨╡╨╜╨╕╤Å';
+
+  @override
+  String get addons_updatePermissionsBody =>
+      '╨¥╨╛╨▓╨░╤Å ╨▓╨╡╤Ç╤ü╨╕╤Å ╨╖╨░╨┐╤Ç╨░╤ê╨╕╨▓╨░╨╡╤é ╤Ç╨░╨╖╤Ç╨╡╤ê╨╡╨╜╨╕╤Å ╨╜╨╕╨╢╨╡. ╨₧╨╜╨░ ╨▒╤â╨┤╨╡╤é ╤â╤ü╤é╨░╨╜╨╛╨▓╨╗╨╡╨╜╨░, ╨║╨░╨║ ╤é╨╛╨╗╤î╨║╨╛ ╨▓╤ï ╨╕╤à ╤Ç╨░╨╖╤Ç╨╡╤ê╨╕╤é╨╡.';
+
+  @override
+  String get addons_updateNeedsPermissions =>
+      '╨¡╤é╨╛ ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╨╡ ╨╖╨░╨┐╤Ç╨░╤ê╨╕╨▓╨░╨╡╤é ╨╜╨╛╨▓╤ï╨╡ ╤Ç╨░╨╖╤Ç╨╡╤ê╨╡╨╜╨╕╤Å. ╨ƒ╤Ç╨╛╨▓╨╡╤Ç╤î╤é╨╡ ╨╕╤à, ╤ç╤é╨╛╨▒╤ï ╤â╤ü╤é╨░╨╜╨╛╨▓╨╕╤é╤î ╨╡╨│╨╛.';
 
   @override
   String appLinks_bannerTitleNamed(String appName) {
@@ -1488,7 +1536,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get browserActions_hardReloadDescription =>
-      'Перезагрузить текущую страницу в обход кеша';
+      'Перезагрузить страницу и заново скачать всё её содержимое';
 
   @override
   String get browserActions_scrollTopTitle => 'В начало';
@@ -1980,11 +2028,11 @@ class AppLocalizationsRu extends AppLocalizations {
   String get browserActions_showProfilesDescription => 'Управление профилями';
 
   @override
-  String get browserActions_showProxySettingsTitle => 'Прокси';
+  String get browserActions_showProxySettingsTitle => 'Подключения';
 
   @override
   String get browserActions_showProxySettingsDescription =>
-      'Открыть настройки прокси';
+      'Открыть настройки подключений';
 
   @override
   String get browserActions_showTorTitle => 'Tor';
@@ -2178,7 +2226,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get browserActions_showProxySettingsKeywords =>
-      'vpn, впн, sing-box, socks, подключение, сеть';
+      'прокси, tor, vpn, впн, sing-box, socks, подключение, сеть';
 
   @override
   String get browserActions_showTorKeywords =>
@@ -2558,9 +2606,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get browser_actionSelect => 'Выбрать';
-
-  @override
-  String get browser_actionKeep => 'Оставить';
 
   @override
   String get browser_actionInstall => 'Установить';
@@ -2961,7 +3006,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get browser_dataTypeSiteDataSubtitle =>
-      'Офлайн-хранилище, базы данных, локальные файлы';
+      'Данные, которые сайты сохраняют на этом устройстве, например для работы без сети';
 
   @override
   String get browser_dataTypeCookies => 'Куки';
@@ -3518,13 +3563,19 @@ class AppLocalizationsRu extends AppLocalizations {
   String get browser_permissionNotification => 'Уведомления';
 
   @override
-  String get browser_permissionPersistentStorage => 'Постоянное хранилище';
+  String get browser_permissionPersistentStorage =>
+      'Защищать сохранённые данные сайта';
 
   @override
-  String get browser_permissionCrossOriginStorage => 'Межсайтовое хранилище';
+  String get browser_permissionPersistentStorageDescription =>
+      'Сохранять данные этого сайта, даже если осталось мало места.';
 
   @override
-  String get browser_permissionMediaKeySystem => 'Система ключей медиа (DRM)';
+  String get browser_permissionCrossOriginStorage => 'Куки на других сайтах';
+
+  @override
+  String get browser_permissionMediaKeySystem =>
+      'Воспроизведение защищённого контента (DRM)';
 
   @override
   String get browser_tabReorderBlockedMessage =>
@@ -3706,8 +3757,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get contextualToolbar_longPressOpenSettings => 'Открыть настройки';
 
   @override
-  String get contextualToolbar_longPressHardRefresh =>
-      'Полная перезагрузка (без кеша)';
+  String get contextualToolbar_longPressHardRefresh => 'Полная перезагрузка';
 
   @override
   String get contextualToolbar_longPressShowTranslationOptions =>
@@ -3961,6 +4011,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get menu_profileTapToSwitch => 'Нажмите, чтобы сменить профиль';
 
   @override
+  String get menu_profileManageCurrent =>
+      'Блокировка и резервная копия профиля';
+
+  @override
   String get menu_profileSyncComplete => 'Синхронизация завершена';
 
   @override
@@ -4191,7 +4245,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get menu_connectionProxySettings => 'Настройки прокси';
+  String get menu_connectionProxySettings => 'Настройки подключений';
 
   @override
   String get menu_connectionUnused => 'Не используется ни одним маршрутом';
@@ -4707,7 +4761,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get openLinkTools_restoreDefaultsContent =>
-      'Настройки очистки URL-адресов будут сброшены, а локально сохранённый каталог удалён.';
+      'Настройки очистки URL будут сброшены, а загруженные правила удалены.';
 
   @override
   String get openLinkTools_actionRestore => 'Восстановить';
@@ -4821,7 +4875,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get openLinkTools_urlCleanerSettingsSubtitle =>
-      'Поведение очистки URL-адресов, обновления каталога правил и сведения об источниках.';
+      'Что удаляется из ссылок, обновление правил и авторы.';
 
   @override
   String get openLinkTools_urlCleanerDescriptionBody =>
@@ -4837,7 +4891,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get openLinkTools_urlCleanerEnabledSubtitle =>
-      'Удалять параметры отслеживания из URL-адресов';
+      'Удалять из ссылок части для отслеживания';
 
   @override
   String get openLinkTools_autoApplyTitle => 'Применять автоматически';
@@ -4859,17 +4913,18 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get openLinkTools_allowReferralSubtitle =>
-      'Сохранять реферальные и партнёрские параметры отслеживания';
+      'Сохранять в ссылках реферальные и партнёрские коды';
 
   @override
-  String get openLinkTools_autoUpdateCatalogTitle => 'Автообновление каталога';
+  String get openLinkTools_autoUpdateCatalogTitle =>
+      'Обновлять правила автоматически';
 
   @override
   String get openLinkTools_autoUpdateCatalogSubtitle =>
       'Проверять обновления правил раз в неделю';
 
   @override
-  String get openLinkTools_updateCatalogTitle => 'Обновить каталог';
+  String get openLinkTools_updateCatalogTitle => 'Обновить правила';
 
   @override
   String get openLinkTools_lastUpdateNotAvailable =>
@@ -4891,7 +4946,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get openLinkTools_catalogUpdatedMessage => 'Каталог обновлён';
+  String get openLinkTools_catalogUpdatedMessage => 'Правила обновлены';
 
   @override
   String openLinkTools_updateFailedWithError(String error) {
@@ -4904,7 +4959,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get openLinkTools_restoreDefaultsButtonSubtitle =>
-      'Вернуть встроенный каталог и настройки по умолчанию';
+      'Вернуться к встроенным правилам и настройкам по умолчанию';
 
   @override
   String get openLinkTools_clearUrlAttributionText =>
@@ -4928,7 +4983,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get openLinkTools_urlCleanerBehaviorSectionTitle => 'Поведение';
 
   @override
-  String get openLinkTools_urlCleanerCatalogSectionTitle => 'Каталог';
+  String get openLinkTools_urlCleanerCatalogSectionTitle => 'Правила';
 
   @override
   String get openLinkTools_indexUrlCleanerUpdateCatalogSubtitle =>
@@ -5435,6 +5490,9 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get tabs_addSiteHint => 'example.com или *.example.com';
+
+  @override
+  String get tabs_addSiteHintSingle => 'example.com';
 
   @override
   String get tabs_addSiteHelperText =>
@@ -6141,243 +6199,494 @@ class AppLocalizationsRu extends AppLocalizations {
   String get keyboardShortcuts_actionCustomize => 'Настроить';
 
   @override
+  String get keyboardShortcuts_actionShowAll => 'Показать все';
+
+  @override
   String get keyboardShortcuts_actionReassign => 'Переназначить';
 
   @override
   String get keyboardShortcuts_actionRestore => 'Восстановить';
 
   @override
-  String get onboarding_actionPrevious => 'Назад';
+  String get onboarding_actionPrevious => '╨¥╨░╨╖╨░╨┤';
 
   @override
-  String get onboarding_actionNext => 'Далее';
-
-  @override
-  String get onboarding_actionRestore => 'Восстановить';
+  String get onboarding_actionNext => '╨ö╨░╨╗╨╡╨╡';
 
   @override
   String get onboarding_restoreTargetUnreadable =>
-      'Не удалось прочитать этот профиль, поэтому восстановить в него ничего нельзя.';
+      '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╨┐╤Ç╨╛╤ç╨╕╤é╨░╤é╤î ╤ì╤é╨╛╤é ╨┐╤Ç╨╛╤ä╨╕╨╗╤î, ╨┐╨╛╤ì╤é╨╛╨╝╤â ╨▓╨╛╤ü╤ü╤é╨░╨╜╨╛╨▓╨╕╤é╤î ╨▓ ╨╜╨╡╨│╨╛ ╨╜╨╕╤ç╨╡╨│╨╛ ╨╜╨╡╨╗╤î╨╖╤Å.';
 
   @override
-  String get onboarding_welcomeBackTitle => 'С возвращением!';
+  String get onboarding_welcomeBackTitle => '╨í ╨▓╨╛╨╖╨▓╤Ç╨░╤ë╨╡╨╜╨╕╨╡╨╝!';
 
   @override
-  String get onboarding_welcomeReadyTitle => 'Cat Browser готов к работе';
+  String get onboarding_welcomeReadyTitle =>
+      'Cat Browser ╨│╨╛╤é╨╛╨▓ ╨║ ╤Ç╨░╨▒╨╛╤é╨╡';
 
   @override
-  String get onboarding_chooseExperience =>
-      'Выберите вариант начальной настройки:';
-
-  @override
-  String get onboarding_modeExpressTitle => 'Быстрый старт';
-
-  @override
-  String get onboarding_modeExpressSubtitle =>
-      'Использовать рекомендуемые настройки и начать работу.';
-
-  @override
-  String get onboarding_modeDetailedTitle => 'Своя настройка';
-
-  @override
-  String get onboarding_modeDetailedSubtitle =>
-      'Настроить DNS, панель инструментов, расширения и многое другое.';
-
-  @override
-  String get onboarding_modeRestoreTitle => 'Восстановить из резервной копии';
+  String get onboarding_modeRestoreTitle =>
+      '╨Æ╨╛╤ü╤ü╤é╨░╨╜╨╛╨▓╨╕╤é╤î ╨╕╨╖ ╤Ç╨╡╨╖╨╡╤Ç╨▓╨╜╨╛╨╣ ╨║╨╛╨┐╨╕╨╕';
 
   @override
   String get onboarding_modeRestoreSubtitle =>
-      'Импортировать профиль из зашифрованного файла резервной копии.';
+      '╨ÿ╨╝╨┐╨╛╤Ç╤é╨╕╤Ç╨╛╨▓╨░╤é╤î ╨┐╤Ç╨╛╤ä╨╕╨╗╤î ╨╕╨╖ ╨╖╨░╤ê╨╕╤ä╤Ç╨╛╨▓╨░╨╜╨╜╨╛╨│╨╛ ╤ä╨░╨╣╨╗╨░ ╤Ç╨╡╨╖╨╡╤Ç╨▓╨╜╨╛╨╣ ╨║╨╛╨┐╨╕╨╕.';
 
   @override
-  String get onboarding_updateNoticeTitle => 'Многое изменилось!';
+  String get onboarding_updateNoticeTitle =>
+      '╨£╨╜╨╛╨│╨╛╨╡ ╨╕╨╖╨╝╨╡╨╜╨╕╨╗╨╛╤ü╤î!';
 
   @override
   String get onboarding_updateNoticeBody =>
-      'Это обновление содержит существенные изменения, поэтому нужно проверить настройки. Пройдите следующие страницы, чтобы проверить конфигурацию.';
+      '╨Æ ╤ì╤é╨╛╨╝ ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╨╕ ╨╝╨╜╨╛╨│╨╛╨╡ ╨╕╨╖╨╝╨╡╨╜╨╕╨╗╨╛╤ü╤î. ╨í╨╗╨╡╨┤╤â╤Ä╤ë╨╕╨╡ ╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï ╨┐╤Ç╨╛╨▓╨╡╨┤╤â╤é ╨▓╨░╤ü ╨┐╨╛ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨░╨╝.';
 
   @override
   String get onboarding_updateNoticeExtensions =>
-      'После этого обновления перепроверьте расширения: известны проблемы при их переносе.';
+      '╨¥╨╡╨║╨╛╤é╨╛╤Ç╤ï╨╡ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å ╨┐╨╛╤ü╨╗╨╡ ╤ì╤é╨╛╨│╨╛ ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤Å ╤ü╤é╨╛╨╕╤é ╨┐╤Ç╨╛╨▓╨╡╤Ç╨╕╤é╤î ╨╡╤ë╤æ ╤Ç╨░╨╖.';
 
   @override
   String get onboarding_updateNoticeSettingsPreserved =>
-      'Существующие настройки не будут перезаписаны, если вы явно не измените их во время этой настройки.';
+      '╨Æ╨░╤ê╨╕ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨╛╤ü╤é╨░╨╜╤â╤é╤ü╤Å ╨┐╤Ç╨╡╨╢╨╜╨╕╨╝╨╕, ╨╡╤ü╨╗╨╕ ╨▓╤ï ╨╜╨╡ ╨╕╨╖╨╝╨╡╨╜╨╕╤é╨╡ ╨╕╤à ╨╖╨┤╨╡╤ü╤î.';
 
   @override
   String get onboarding_eulaAcceptance =>
-      'Я ознакомлен(а) с <eula>лицензионным соглашением</eula> и <privacy>политикой конфиденциальности</privacy> и принимаю их.';
+      '╨» ╨╛╨╖╨╜╨░╨║╨╛╨╝╨╗╨╡╨╜(╨░) ╤ü <eula>╨╗╨╕╤å╨╡╨╜╨╖╨╕╨╛╨╜╨╜╤ï╨╝ ╤ü╨╛╨│╨╗╨░╤ê╨╡╨╜╨╕╨╡╨╝</eula> ╨╕ <privacy>╨┐╨╛╨╗╨╕╤é╨╕╨║╨╛╨╣ ╨║╨╛╨╜╤ä╨╕╨┤╨╡╨╜╤å╨╕╨░╨╗╤î╨╜╨╛╤ü╤é╨╕</privacy> ╨╕ ╨┐╤Ç╨╕╨╜╨╕╨╝╨░╤Ä ╨╕╤à.';
 
   @override
-  String get onboarding_privacyPolicy => 'Политика конфиденциальности';
+  String get onboarding_privacyPolicy =>
+      '╨ƒ╨╛╨╗╨╕╤é╨╕╨║╨░ ╨║╨╛╨╜╤ä╨╕╨┤╨╡╨╜╤å╨╕╨░╨╗╤î╨╜╨╛╤ü╤é╨╕';
 
   @override
   String get onboarding_eulaDocumentTitle =>
-      'Лицензионное соглашение с конечным пользователем';
+      '╨¢╨╕╤å╨╡╨╜╨╖╨╕╨╛╨╜╨╜╨╛╨╡ ╤ü╨╛╨│╨╗╨░╤ê╨╡╨╜╨╕╨╡ ╤ü ╨║╨╛╨╜╨╡╤ç╨╜╤ï╨╝ ╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╨╡╨╗╨╡╨╝';
 
   @override
-  String get onboarding_aiFeaturesTitle => 'Функции ИИ';
-
-  @override
-  String get onboarding_aiOnDeviceTitle => 'ИИ на устройстве';
+  String get onboarding_aiFeaturesTitle => '╨ñ╤â╨╜╨║╤å╨╕╨╕ ╨ÿ╨ÿ';
 
   @override
   String get onboarding_aiOnDeviceSubtitle =>
-      'Локальные функции на устройстве, включая темы контейнеров и предложения вкладок';
+      '╨ƒ╨╛╨┤╤ü╨║╨░╨╖╤ï╨▓╨░╨╡╤é, ╨║╨░╨║ ╤ü╨│╤Ç╤â╨┐╨┐╨╕╤Ç╨╛╨▓╨░╤é╤î ╨╕ ╨╜╨░╨╖╨▓╨░╤é╤î ╨▓╨║╨╗╨░╨┤╨║╨╕, ╨┐╤Ç╤Å╨╝╨╛ ╨╜╨░ ╤ì╤é╨╛╨╝ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨╡';
 
   @override
-  String get onboarding_aiWarningTitle => 'Что нужно учитывать';
+  String get onboarding_aiWarningTitle =>
+      '╨º╤é╨╛ ╨╜╤â╨╢╨╜╨╛ ╤â╤ç╨╕╤é╤ï╨▓╨░╤é╤î';
 
   @override
   String get onboarding_aiWarningPoint1 =>
-      'Cat Browser использует локальную модель ИИ, чтобы анализировать заголовки открытых вкладок и предлагать, в какие контейнеры их сгруппировать и как эти контейнеры назвать. Вся обработка выполняется только на вашем устройстве.';
+      'Cat Browser ╨╕╤ü╨┐╨╛╨╗╤î╨╖╤â╨╡╤é ╨╗╨╛╨║╨░╨╗╤î╨╜╤â╤Ä ╨╝╨╛╨┤╨╡╨╗╤î ╨ÿ╨ÿ, ╤ç╤é╨╛╨▒╤ï ╨░╨╜╨░╨╗╨╕╨╖╨╕╤Ç╨╛╨▓╨░╤é╤î ╨╖╨░╨│╨╛╨╗╨╛╨▓╨║╨╕ ╨╛╤é╨║╤Ç╤ï╤é╤ï╤à ╨▓╨║╨╗╨░╨┤╨╛╨║ ╨╕ ╨┐╤Ç╨╡╨┤╨╗╨░╨│╨░╤é╤î, ╨▓ ╨║╨░╨║╨╕╨╡ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╤ï ╨╕╤à ╤ü╨│╤Ç╤â╨┐╨┐╨╕╤Ç╨╛╨▓╨░╤é╤î ╨╕ ╨║╨░╨║ ╤ì╤é╨╕ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╤ï ╨╜╨░╨╖╨▓╨░╤é╤î. ╨Æ╤ü╤Å ╨╛╨▒╤Ç╨░╨▒╨╛╤é╨║╨░ ╨▓╤ï╨┐╨╛╨╗╨╜╤Å╨╡╤é╤ü╤Å ╤é╨╛╨╗╤î╨║╨╛ ╨╜╨░ ╨▓╨░╤ê╨╡╨╝ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨╡.';
 
   @override
   String get onboarding_aiWarningPoint2 =>
-      'Функции ИИ работают полностью внутри браузера, и все данные остаются на устройстве. Локальная обработка сохраняет вашу конфиденциальность и ускоряет подбор групп контейнеров и их названий. Это поведение можно изменить в любой момент в настройках.';
+      '╨ñ╤â╨╜╨║╤å╨╕╨╕ ╨ÿ╨ÿ ╤Ç╨░╨▒╨╛╤é╨░╤Ä╤é ╨┐╨╛╨╗╨╜╨╛╤ü╤é╤î╤Ä ╨╜╨░ ╤ì╤é╨╛╨╝ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨╡, ╨╕ ╨▓╤ü╨╡ ╨┤╨░╨╜╨╜╤ï╨╡ ╨╛╤ü╤é╨░╤Ä╤é╤ü╤Å ╨╜╨░ ╨╜╤æ╨╝.';
 
   @override
   String get onboarding_aiWarningPoint3 =>
-      'ИИ может ошибаться, поэтому проверяйте предложенные названия групп и выбор вкладок.';
-
-  @override
-  String get onboarding_searchTitle => 'Поиск';
+      '╨ÿ╨ÿ ╨╝╨╛╨╢╨╡╤é ╨╛╤ê╨╕╨▒╨░╤é╤î╤ü╤Å, ╨┐╨╛╤ì╤é╨╛╨╝╤â ╨┐╤Ç╨╛╨▓╨╡╤Ç╤Å╨╣╤é╨╡ ╨┐╤Ç╨╡╨┤╨╗╨╛╨╢╨╡╨╜╨╜╤ï╨╡ ╨╜╨░╨╖╨▓╨░╨╜╨╕╤Å ╨│╤Ç╤â╨┐╨┐ ╨╕ ╨▓╤ï╨▒╨╛╤Ç ╨▓╨║╨╗╨░╨┤╨╛╨║.';
 
   @override
   String get onboarding_searchDefaultProviderLabel =>
-      'Поисковая система по умолчанию';
+      '╨ƒ╨╛╨╕╤ü╨║╨╛╨▓╨░╤Å ╤ü╨╕╤ü╤é╨╡╨╝╨░';
 
   @override
-  String get onboarding_searchMore => 'Другие системы';
+  String get onboarding_searchMore =>
+      '╨Æ╤ü╨╡ ╨┐╨╛╨╕╤ü╨║╨╛╨▓╤ï╨╡ ╤ü╨╕╤ü╤é╨╡╨╝╤ï';
 
   @override
   String get onboarding_searchDefaultAutocompleteLabel =>
-      'Сервис подсказок по умолчанию';
+      '╨ƒ╨╛╨╕╤ü╨║╨╛╨▓╤ï╨╡ ╨┐╨╛╨┤╤ü╨║╨░╨╖╨║╨╕';
 
   @override
   String get onboarding_searchLoadFailedTitle =>
-      'Не удалось загрузить поисковые системы';
+      '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╨╖╨░╨│╤Ç╤â╨╖╨╕╤é╤î ╨┐╨╛╨╕╤ü╨║╨╛╨▓╤ï╨╡ ╤ü╨╕╤ü╤é╨╡╨╝╤ï';
 
   @override
-  String get onboarding_dohTitle => 'DNS через HTTPS';
+  String get onboarding_dohTitle => '╨æ╨╡╨╖╨╛╨┐╨░╤ü╨╜╤ï╨╣ DNS';
 
   @override
-  String get onboarding_permissionsTitle => 'Разрешения';
+  String get onboarding_permissionsTitle => '╨á╨░╨╖╤Ç╨╡╤ê╨╡╨╜╨╕╤Å';
 
   @override
-  String get onboarding_permissionsNotificationsTitle => 'Уведомления';
+  String get onboarding_permissionsNotificationsTitle =>
+      '╨ú╨▓╨╡╨┤╨╛╨╝╨╗╨╡╨╜╨╕╤Å';
 
   @override
   String get onboarding_permissionsNotificationsSubtitle =>
-      'Нужны для уведомлений о загрузках';
+      '╨ƒ╨╛╨╖╨▓╨╛╨╗╤Å╨╡╤é WebLibre ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╤à╨╛╨┤ ╨╖╨░╨│╤Ç╤â╨╖╨╛╨║';
 
   @override
   String get onboarding_permissionsDefaultBrowserTitle =>
-      'Браузер по умолчанию';
+      '╨æ╤Ç╨░╤â╨╖╨╡╤Ç ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä';
 
   @override
   String get onboarding_permissionsDefaultBrowserSubtitle =>
-      'Сделать Cat Browser браузером по умолчанию';
+      '╨í╨┤╨╡╨╗╨░╤é╤î Cat Browser ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨╛╨╝ ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä';
 
   @override
-  String get onboarding_privacyTitle => 'Приватность и усиление защиты';
-
-  @override
-  String get onboarding_privacyBrowserLanguagesTitle => 'Языки браузера';
+  String get onboarding_privacyBrowserLanguagesTitle =>
+      '╨»╨╖╤ï╨║╨╕ ╨┤╨╗╤Å ╤ü╨░╨╣╤é╨╛╨▓';
 
   @override
   String get onboarding_privacyBrowserLanguagesSubtitle =>
-      'Настроить языковые предпочтения, сообщаемые сайтам';
-
-  @override
-  String get onboarding_multipleLanguagesDetectedTitle =>
-      'Обнаружено несколько языков';
+      '╨¥╨░ ╨║╨░╨║╨╕╤à ╤Å╨╖╤ï╨║╨░╤à ╤ü╨░╨╣╤é╨░╨╝ ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╤ü╨╛╨┤╨╡╤Ç╨╢╨╕╨╝╨╛╨╡';
 
   @override
   String onboarding_multipleLanguagesWarning(int count, String locales) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'В браузере настроено $count языка ($locales).',
-      many: 'В браузере настроено $count языков ($locales).',
-      few: 'В браузере настроено $count языка ($locales).',
-      one: 'В браузере настроен $count язык ($locales).',
+      other: '╨Æ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨╡ ╨▓╤ï╨▒╤Ç╨░╨╜╨╛ $count ╤Å╨╖╤ï╨║╨░ ($locales).',
+      many:
+          '╨Æ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨╡ ╨▓╤ï╨▒╤Ç╨░╨╜╨╛ $count ╤Å╨╖╤ï╨║╨╛╨▓ ($locales).',
+      few: '╨Æ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨╡ ╨▓╤ï╨▒╤Ç╨░╨╜╨╛ $count ╤Å╨╖╤ï╨║╨░ ($locales).',
+      one: '╨Æ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨╡ ╨▓╤ï╨▒╤Ç╨░╨╜ $count ╤Å╨╖╤ï╨║ ($locales).',
     );
-    return '$_temp0 Сайты могут использовать уникальное сочетание ваших языков, чтобы создать цифровой отпечаток и отслеживать вас в интернете.';
+    return '$_temp0 ╨í╨░╨╣╤é╤ï ╨╝╨╛╨│╤â╤é ╤â╨╖╨╜╨░╨▓╨░╤é╤î ╨▓╨░╤ü ╨┐╨╛ ╤ì╤é╨╛╨╝╤â ╤ü╨╛╤ç╨╡╤é╨░╨╜╨╕╤Ä.';
   }
 
   @override
   String get onboarding_multipleLanguagesSuggestion =>
-      'Можно оставить в браузере только один язык, чтобы сайтам было сложнее составить ваш цифровой отпечаток.';
+      '╨í ╨╛╨┤╨╜╨╕╨╝ ╤Å╨╖╤ï╨║╨╛╨╝ ╨▓╨░╤ü ╤ü╨╗╨╛╨╢╨╜╨╡╨╡ ╨╛╤é╨╗╨╕╤ç╨╕╤é╤î ╨╛╤é ╨┤╤Ç╤â╨│╨╕╤à.';
 
   @override
-  String get onboarding_reviewLanguages => 'Проверить языки';
+  String get onboarding_reviewLanguages => '╨ƒ╤Ç╨╛╨▓╨╡╤Ç╨╕╤é╤î ╤Å╨╖╤ï╨║╨╕';
 
   @override
   String get onboarding_webEngineHardeningTitle =>
-      'Полное усиление защиты веб-движка';
+      '╨á╨╡╨║╨╛╨╝╨╡╨╜╨┤╤â╨╡╨╝╤ï╨╡ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╨╛╤ü╤é╨╕';
 
   @override
   String get onboarding_webEngineHardeningSubtitle =>
-      'Применить к веб-движку все рекомендуемые параметры усиления безопасности';
+      '╨Æ╨║╨╗╤Ä╤ç╨░╨╡╤é ╨▓╤ü╨╡ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╨╛╤ü╤é╨╕, ╤Ç╨╡╨║╨╛╨╝╨╡╨╜╨┤╨╛╨▓╨░╨╜╨╜╤ï╨╡ WebLibre';
 
   @override
   String get onboarding_fingerprintProtectionTitle =>
-      'Усиленная защита от цифровых отпечатков';
+      '╨í╨║╤Ç╤ï╤é╤î ╨┤╨░╨╜╨╜╤ï╨╡, ╨┐╨╛ ╨║╨╛╤é╨╛╤Ç╤ï╨╝ ╤â╨╖╨╜╨░╤Ä╤é ╤ì╤é╨╛ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨╛';
 
   @override
   String get onboarding_fingerprintProtectionSubtitle =>
-      'Загрузить полный набор параметров защиты от цифровых отпечатков';
+      '╨í╨░╨╣╤é╤ï ╨▒╤â╨┤╤â╤é ╨▓╨╕╨┤╨╡╤é╤î ╤Ç╨░╤ü╨┐╤Ç╨╛╤ü╤é╤Ç╨░╨╜╤æ╨╜╨╜╤ï╨╡ ╨╖╨╜╨░╤ç╨╡╨╜╨╕╤Å, ╨╕ ╨▒╨╡╨╖ ╨║╤â╨║╨╕ ╨▓╨░╤ü ╨▒╤â╨┤╨╡╤é ╤ü╨╗╨╛╨╢╨╜╨╡╨╡ ╤â╨╖╨╜╨░╤é╤î (╤å╨╕╤ä╤Ç╨╛╨▓╤ï╨╡ ╨╛╤é╨┐╨╡╤ç╨░╤é╨║╨╕)';
 
   @override
   String get onboarding_compatibilityWarningTitle =>
-      'Предупреждение о совместимости';
+      '╨¥╨╡╨║╨╛╤é╨╛╤Ç╤ï╨╡ ╤ü╨░╨╣╤é╤ï ╨╝╨╛╨│╤â╤é ╤Ç╨░╨▒╨╛╤é╨░╤é╤î ╨╜╨╡╨┐╤Ç╨░╨▓╨╕╨╗╤î╨╜╨╛';
 
   @override
   String get onboarding_fingerprintWarningPoint1 =>
-      'Усиленная защита от цифровых отпечатков включает более 60 мер защиты, в том числе рандомизацию canvas, подмену navigator, маскировку медиаустройств и многое другое.';
+      '╨£╨╡╨╜╤Å╨╡╤é╤ü╤Å ╨▒╨╛╨╗╨╡╨╡ 60 ╤ü╨▓╨╡╨┤╨╡╨╜╨╕╨╣, ╨║╨╛╤é╨╛╤Ç╤ï╨╡ ╨╝╨╛╨│╤â╤é ╤ü╤ç╨╕╤é╤ï╨▓╨░╤é╤î ╤ü╨░╨╣╤é╤ï, ╨╜╨░╨┐╤Ç╨╕╨╝╨╡╤Ç ╨║╨░╨║ ╨╛╤é╤Ç╨╕╤ü╨╛╨▓╤ï╨▓╨░╨╡╤é╤ü╤Å ╨│╤Ç╨░╤ä╨╕╨║╨░ ╨╕ ╨║╨░╨║╨╕╨╡ ╨║╨░╨╝╨╡╤Ç╤ï ╨╕ ╨╝╨╕╨║╤Ç╨╛╤ä╨╛╨╜╤ï ╨┐╨╛╨┤╨║╨╗╤Ä╤ç╨╡╨╜╤ï.';
 
   @override
   String get onboarding_fingerprintWarningPoint2 =>
-      'Из-за этого сайты могут работать неправильно или вести себя неожиданно. Отдельные меры защиты можно настроить в настройках.';
-
-  @override
-  String get onboarding_localNetworkProtectionTitle => 'Защита локальной сети';
-
-  @override
-  String get onboarding_localNetworkProtectionSubtitle =>
-      'Сайты могут пытаться обращаться к вашему устройству и другим устройствам в домашней сети — маршрутизаторам, принтерам или устройствам умного дома. По умолчанию известным трекерам это автоматически запрещено.';
+      '╨ò╤ü╨╗╨╕ ╤ü╨░╨╣╤é ╤Ç╨░╨▒╨╛╤é╨░╨╡╤é ╨╜╨╡╨┐╤Ç╨░╨▓╨╕╨╗╤î╨╜╨╛, ╨╛╤é╨┤╨╡╨╗╤î╨╜╤ï╨╡ ╨╝╨╡╤Ç╤ï ╨╖╨░╤ë╨╕╤é╤ï ╨╝╨╛╨╢╨╜╨╛ ╨╕╨╖╨╝╨╡╨╜╨╕╤é╤î ╨▓ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨░╤à.';
 
   @override
   String get onboarding_blockAllLocalNetworkTitle =>
-      'Блокировать все запросы к локальной сети';
+      '╨í╨┐╤Ç╨░╤ê╨╕╨▓╨░╤é╤î ╨┐╨╡╤Ç╨╡╨┤ ╨╗╨╛╨║╨░╨╗╤î╨╜╤ï╨╝╨╕ ╨┐╨╛╨┤╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å╨╝╨╕';
 
   @override
   String get onboarding_blockAllLocalNetworkSubtitle =>
-      'Запрашивать разрешение, прежде чем любой сайт, а не только известные трекеры, обратится к устройствам в домашней сети';
+      '╨í╨░╨╣╤é╤ï ╨┤╨╛╨╗╨╢╨╜╤ï ╨╖╨░╨┐╤Ç╨░╤ê╨╕╨▓╨░╤é╤î ╤Ç╨░╨╖╤Ç╨╡╤ê╨╡╨╜╨╕╨╡ ╨┐╨╡╤Ç╨╡╨┤ ╨┐╨╛╨┤╨║╨╗╤Ä╤ç╨╡╨╜╨╕╨╡╨╝ ╨║ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å╨╝ ╨╜╨░ ╤ì╤é╨╛╨╝ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨╡ ╨╕╨╗╨╕ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨░╨╝ ╨▓ ╨▓╨░╤ê╨╡╨╣ ╤ü╨╡╤é╨╕';
 
   @override
-  String get onboarding_toolbarLayoutTitle => 'Панель инструментов и макет';
+  String get onboarding_toolbarLayoutTitle =>
+      '╨ƒ╨░╨╜╨╡╨╗╤î ╨╕╨╜╤ü╤é╤Ç╤â╨╝╨╡╨╜╤é╨╛╨▓ ╨╕ ╨╝╨░╨║╨╡╤é';
 
   @override
   String get onboarding_ublockTitle => 'uBlock Origin';
 
   @override
   String get onboarding_ublockDescription =>
-      'uBlock Origin (uBO) — экономный в отношении процессора и памяти **блокировщик контента широкого спектра** от **Raymond Hill**, доступный как расширение для Cat Browser.\n\nПо умолчанию он блокирует рекламу, трекеры, майнеры, всплывающие окна, назойливые анти-блокировщики, вредоносные сайты и многое другое с помощью списков **EasyList, EasyPrivacy, Peter Lowe\'s Blocklist, Online Malicious URL Blocklist и фильтров uBO**.\n\nДоступно множество других списков для блокировки дополнительного контента.';
+      'uBlock Origin (uBO) ΓÇö ╤ì╨║╨╛╨╜╨╛╨╝╨╜╤ï╨╣ ╨▓ ╨╛╤é╨╜╨╛╤ê╨╡╨╜╨╕╨╕ ╨┐╤Ç╨╛╤å╨╡╤ü╤ü╨╛╤Ç╨░ ╨╕ ╨┐╨░╨╝╤Å╤é╨╕ **╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╤ë╨╕╨║ ╨║╨╛╨╜╤é╨╡╨╜╤é╨░ ╤ê╨╕╤Ç╨╛╨║╨╛╨│╨╛ ╤ü╨┐╨╡╨║╤é╤Ç╨░** ╨╛╤é **Raymond Hill**, ╨┤╨╛╤ü╤é╤â╨┐╨╜╤ï╨╣ ╨║╨░╨║ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╡ ╨┤╨╗╤Å Cat Browser.\n\n╨ƒ╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä ╨╛╨╜ ╨▒╨╗╨╛╨║╨╕╤Ç╤â╨╡╤é ╤Ç╨╡╨║╨╗╨░╨╝╤â, ╤é╤Ç╨╡╨║╨╡╤Ç╤ï, ╨╝╨░╨╣╨╜╨╡╤Ç╤ï, ╨▓╤ü╨┐╨╗╤ï╨▓╨░╤Ä╤ë╨╕╨╡ ╨╛╨║╨╜╨░, ╨╜╨░╨╖╨╛╨╣╨╗╨╕╨▓╤ï╨╡ ╨░╨╜╤é╨╕-╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╤ë╨╕╨║╨╕, ╨▓╤Ç╨╡╨┤╨╛╨╜╨╛╤ü╨╜╤ï╨╡ ╤ü╨░╨╣╤é╤ï ╨╕ ╨╝╨╜╨╛╨│╨╛╨╡ ╨┤╤Ç╤â╨│╨╛╨╡ ╤ü ╨┐╨╛╨╝╨╛╤ë╤î╤Ä ╤ü╨┐╨╕╤ü╨║╨╛╨▓ **EasyList, EasyPrivacy, Peter Lowe\'s Blocklist, Online Malicious URL Blocklist ╨╕ ╤ä╨╕╨╗╤î╤é╤Ç╨╛╨▓ uBO**.\n\n╨ö╨╛╤ü╤é╤â╨┐╨╜╨╛ ╨╝╨╜╨╛╨╢╨╡╤ü╤é╨▓╨╛ ╨┤╤Ç╤â╨│╨╕╤à ╤ü╨┐╨╕╤ü╨║╨╛╨▓ ╨┤╨╗╤Å ╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨║╨╕ ╨┤╨╛╨┐╨╛╨╗╨╜╨╕╤é╨╡╨╗╤î╨╜╨╛╨│╨╛ ╨║╨╛╨╜╤é╨╡╨╜╤é╨░.';
 
   @override
   String get onboarding_ublockInstallTitle =>
-      'Установить расширение uBlock Origin';
+      '╨ú╤ü╤é╨░╨╜╨╛╨▓╨╕╤é╤î uBlock Origin';
 
   @override
   String get onboarding_ublockApplyDefaultsTitle =>
-      'Применить оптимизированные настройки';
+      '╨ÿ╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╤î ╤Ç╨╡╨║╨╛╨╝╨╡╨╜╨┤╤â╨╡╨╝╤ï╨╡ ╤ä╨╕╨╗╤î╤é╤Ç╤ï';
 
   @override
   String get onboarding_ublockApplyDefaultsSubtitle =>
-      'Включить списки фильтров Cat Browser для усиления защиты.';
+      '╨Æ╨║╨╗╤Ä╤ç╨╕╤é╤î ╤ü╨┐╨╕╤ü╨║╨╕ ╤ä╨╕╨╗╤î╤é╤Ç╨╛╨▓ Cat Browser ╨┤╨╗╤Å ╤â╤ü╨╕╨╗╨╡╨╜╨╕╤Å ╨╖╨░╤ë╨╕╤é╤ï.';
+
+  @override
+  String get onboarding_welcomeTitle =>
+      '╨ö╨╛╨▒╤Ç╨╛ ╨┐╨╛╨╢╨░╨╗╨╛╨▓╨░╤é╤î ╨▓ WebLibre';
+
+  @override
+  String get onboarding_aiUseOnDeviceTitle =>
+      '╨ÿ╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╤î ╨ÿ╨ÿ ╨╜╨░ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨╡';
+
+  @override
+  String get onboarding_severalLanguagesTitle =>
+      '╨Æ╤ï╨▒╤Ç╨░╨╜╨╛ ╨╜╨╡╤ü╨║╨╛╨╗╤î╨║╨╛ ╤Å╨╖╤ï╨║╨╛╨▓';
+
+  @override
+  String get onboarding_ublockInstallSubtitle =>
+      '╨æ╨╗╨╛╨║╨╕╤Ç╤â╨╡╤é ╤Ç╨╡╨║╨╗╨░╨╝╤â, ╤é╤Ç╨╡╨║╨╡╤Ç╤ï ╨╕ ╨▓╤Ç╨╡╨┤╨╛╨╜╨╛╤ü╨╜╤ï╨╡ ╤ü╨░╨╣╤é╤ï';
+
+  @override
+  String get onboarding_presetTitle =>
+      '╨í╨║╨╛╨╗╤î╨║╨╛ ╨▓╤ü╨╡╨│╨╛ ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨▓ WebLibre?';
+
+  @override
+  String get onboarding_presetAverageTitle => '╨ƒ╤Ç╨╛╤ü╤é╨╛ ╤ü╤æ╤Ç╤ä╨╕╨╜╨│';
+
+  @override
+  String get onboarding_presetAverageSubtitle =>
+      '╨Ñ╨╛╤ç╤â ╨┐╤Ç╨╕╨▓╨░╤é╨╜╨╛, ╨╜╨╛ ╨▒╨╡╨╖ ╤ü╨╗╨╛╨╢╨╜╨╛╤ü╤é╨╡╨╣';
+
+  @override
+  String get onboarding_presetAveragePoint1 =>
+      '╨Æ╨║╨╗╨░╨┤╨║╨╕, ╨╖╨░╨║╨╗╨░╨┤╨║╨╕, ╨╕╤ü╤é╨╛╤Ç╨╕╤Å ╨╕ ╤Ç╨╡╨╢╨╕╨╝ ╤ç╤é╨╡╨╜╨╕╤Å';
+
+  @override
+  String get onboarding_presetAveragePoint2 =>
+      '╨æ╨╗╨╛╨║╨╕╤Ç╤â╨╡╤é ╤Ç╨╡╨║╨╗╨░╨╝╤â ╨╕ ╤é╤Ç╨╡╨║╨╡╤Ç╤ï ╤ü ╨┐╨╛╨╝╨╛╤ë╤î╤Ä uBlock Origin';
+
+  @override
+  String get onboarding_presetAveragePoint3 =>
+      '╨ƒ╨╛╨╕╤ü╨║╨╛╨▓╤ï╨╡ ╤ü╨╛╨║╤Ç╨░╤ë╨╡╨╜╨╕╤Å, ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å ╨╕ ╨┐╨╡╤Ç╨╡╨▓╨╛╨┤ ╤ü╤é╤Ç╨░╨╜╨╕╤å';
+
+  @override
+  String get onboarding_presetAveragePoint4 =>
+      'Firefox Sync ╤ü ╨┤╤Ç╤â╨│╨╕╨╝╨╕ ╨▓╨░╤ê╨╕╨╝╨╕ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨░╨╝╨╕';
+
+  @override
+  String get onboarding_presetAdvancedTitle => '╨£╨░╤ü╤é╨╡╤Ç╤ü╨║╨░╤Å';
+
+  @override
+  String get onboarding_presetAdvancedSubtitle =>
+      '╨¢╤Ä╨▒╨╗╤Ä ╨╜╨░╤ü╤é╤Ç╨░╨╕╨▓╨░╤é╤î ╨▓╤ü╤æ ╨┐╨╛╨┤ ╤ü╨╡╨▒╤Å';
+
+  @override
+  String get onboarding_presetAdvancedPoint1 =>
+      '╨Ü╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╤ï ╨╕ ╨╕╨╖╨╛╨╗╨╕╤Ç╨╛╨▓╨░╨╜╨╜╤ï╨╡ ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨┤╨╗╤Å ╤Ç╨░╨╖╨┤╨╡╨╗╤î╨╜╤ï╤à ╨║╤â╨║╨╕ ╨╕ ╨▓╤à╨╛╨┤╨╛╨▓ ╨▓ ╨░╨║╨║╨░╤â╨╜╤é╤ï';
+
+  @override
+  String get onboarding_presetAdvancedPoint2 =>
+      '╨ƒ╨╛╨┤╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å ╤ç╨╡╤Ç╨╡╨╖ Tor, VPN ╨╕ ╨┐╤Ç╨╛╨║╤ü╨╕';
+
+  @override
+  String get onboarding_presetAdvancedPoint3 =>
+      '╨ö╨╡╤Ç╨╡╨▓╨╛ ╨▓╨║╨╗╨░╨┤╨╛╨║, ╨╢╨╡╤ü╤é╤ï ╨╕ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨░ ╨┐╨░╨╜╨╡╨╗╨╕ ╨╕╨╜╤ü╤é╤Ç╤â╨╝╨╡╨╜╤é╨╛╨▓ ╨╕ ╨╝╨╡╨╜╤Ä';
+
+  @override
+  String get onboarding_presetAdvancedPoint4 =>
+      '╨á╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╜╤ï╨╡ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨┐╤Ç╨╕╨▓╨░╤é╨╜╨╛╤ü╤é╨╕ ╨╕ ╨┐╨░╤Ç╨░╨╝╨╡╤é╤Ç╤ï ╨ÿ╨ÿ ╨╜╨░ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨╡';
+
+  @override
+  String get onboarding_presetExpertTitle => '╨á╨╡╨╢╨╕╨╝ ╤ì╨║╤ü╨┐╨╡╤Ç╤é╨░';
+
+  @override
+  String get onboarding_presetExpertSubtitle =>
+      '╨Ñ╨╛╤ç╤â ╨▓╤ü╨╡ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨╕ ╨┐╨░╤Ç╨░╨╝╨╡╤é╤Ç╤ï';
+
+  @override
+  String get onboarding_presetExpertPoint1 =>
+      '╨ô╤Ç╤â╨┐╨┐╤ï ╤â╤ü╨╕╨╗╨╡╨╜╨╕╤Å ╨╖╨░╤ë╨╕╤é╤ï ╨┤╨▓╨╕╨╢╨║╨░ ╨╕ ╨╕╤ü╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å ╨┤╨╗╤Å ╤å╨╕╤ä╤Ç╨╛╨▓╤ï╤à ╨╛╤é╨┐╨╡╤ç╨░╤é╨║╨╛╨▓';
+
+  @override
+  String get onboarding_presetExpertPoint2 =>
+      '╨£╨░╤Ç╤ê╤Ç╤â╤é╨╕╨╖╨░╤å╨╕╤Å ╨┐╨╛ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╨░╨╝, ╨┐╨╡╤Ç╨╡╨╛╨┐╤Ç╨╡╨┤╨╡╨╗╨╡╨╜╨╕╨╡ DNS ╨╕ ╨╜╨╡╤ü╨║╨╛╨╗╤î╨║╨╛ ╤é╤â╨╜╨╜╨╡╨╗╨╡╨╣';
+
+  @override
+  String get onboarding_presetExpertPoint3 =>
+      '╨¥╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ JavaScript, user agent ╨╕ ╤ü╨╡╤Ç╤é╨╕╤ä╨╕╨║╨░╤é╨╛╨▓';
+
+  @override
+  String get onboarding_yourSetupTitle => '╨Æ╨░╤ê╨╕ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕';
+
+  @override
+  String get onboarding_yourSetupProtections =>
+      '╨æ╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨║╨░ ╤é╤Ç╨╡╨║╨╡╤Ç╨╛╨▓ ╨╕ ╨╖╨░╤ê╨╕╤ä╤Ç╨╛╨▓╨░╨╜╨╜╤ï╨╡ ╤ü╨╛╨╡╨┤╨╕╨╜╨╡╨╜╨╕╤Å';
+
+  @override
+  String get onboarding_yourSetupLocalNetwork =>
+      '╨í╨░╨╣╤é╤ï ╤ü╨┐╤Ç╨░╤ê╨╕╨▓╨░╤Ä╤é ╨┐╨╡╤Ç╨╡╨┤ ╨╗╨╛╨║╨░╨╗╤î╨╜╤ï╨╝╨╕ ╨┐╨╛╨┤╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å╨╝╨╕';
+
+  @override
+  String onboarding_yourSetupHistoryRetention(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days ╨┤╨╜╤Å',
+      many: '$days ╨┤╨╜╨╡╨╣',
+      few: '$days ╨┤╨╜╤Å',
+      one: '$days ╨┤╨╡╨╜╤î',
+    );
+    return '╨ÿ╤ü╤é╨╛╤Ç╨╕╤Å ╤à╤Ç╨░╨╜╨╕╤é╤ü╤Å $_temp0';
+  }
+
+  @override
+  String get onboarding_yourSetupHiddenForNowTitle => '╨ƒ╨╛╨║╨░ ╤ü╨║╤Ç╤ï╤é╨╛';
+
+  @override
+  String get onboarding_presetChangeLater =>
+      '╨ƒ╨╛╨║╨░╨╖╨░╤é╤î ╨╕╨╗╨╕ ╤ü╨║╤Ç╤ï╤é╤î ╤ä╤â╨╜╨║╤å╨╕╨╕ ╨╝╨╛╨╢╨╜╨╛ ╨▓ ╨╗╤Ä╨▒╨╛╨╣ ╨╝╨╛╨╝╨╡╨╜╤é ╨▓ ╤Ç╨░╨╖╨┤╨╡╨╗╨╡ ┬½╨¥╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ > ╨ú╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╨╡ ╤ä╤â╨╜╨║╤å╨╕╤Å╨╝╨╕┬╗.';
+
+  @override
+  String get onboarding_presetAdvancedIncludes =>
+      '╨Æ╤ü╤æ ╨╕╨╖ ╤Ç╨╡╨╢╨╕╨╝╨░ ┬½╨ƒ╤Ç╨╛╤ü╤é╨╛ ╤ü╤æ╤Ç╤ä╨╕╨╜╨│┬╗, ╨░ ╤é╨░╨║╨╢╨╡:';
+
+  @override
+  String get onboarding_presetExpertIncludes =>
+      '╨Æ╤ü╤æ ╨╕╨╖ ╤Ç╨╡╨╢╨╕╨╝╨░ ┬½╨£╨░╤ü╤é╨╡╤Ç╤ü╨║╨░╤Å┬╗, ╨░ ╤é╨░╨║╨╢╨╡:';
+
+  @override
+  String get onboarding_goalKeepAccountsApart =>
+      '╨á╨░╨╖╨┤╨╡╨╗╤Å╤é╤î ╨░╨║╨║╨░╤â╨╜╤é╤ï';
+
+  @override
+  String get onboarding_goalLockBrowser =>
+      '╨ù╨░╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╤é╤î ╨▒╤Ç╨░╤â╨╖╨╡╤Ç';
+
+  @override
+  String get onboarding_goalSetUpConnections =>
+      '╨¥╨░╤ü╤é╤Ç╨╛╨╕╤é╤î Tor, VPN ╨╕╨╗╨╕ ╨┐╤Ç╨╛╨║╤ü╨╕';
+
+  @override
+  String get onboarding_goalSyncDevices =>
+      '╨í╨╕╨╜╤à╤Ç╨╛╨╜╨╕╨╖╨╕╤Ç╨╛╨▓╨░╤é╤î ╤ü ╨┤╤Ç╤â╨│╨╕╨╝╨╕ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨░╨╝╨╕';
+
+  @override
+  String get onboarding_goalKeepAccountsApartSubtitle =>
+      '╨¥╨╡╤ü╨║╨╛╨╗╤î╨║╨╛ ╨░╨║╨║╨░╤â╨╜╤é╨╛╨▓ ╨╜╨░ ╨╛╨┤╨╜╨╛╨╝ ╤ü╨░╨╣╤é╨╡, ╨║╨░╨╢╨┤╤ï╨╣ ╨▓ ╤ü╨▓╨╛╤æ╨╝ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╨╡';
+
+  @override
+  String get onboarding_goalLockBrowserSubtitle =>
+      '╨¥╨░╤ü╤é╤Ç╨╛╨╕╤é╤î ╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨║╤â ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨░ ╨╕╨╗╨╕ ╨┐╨░╤Ç╨╛╨╗╤î ╨┐╨╛╤ü╨╗╨╡ ╨╜╨░╨╢╨░╤é╨╕╤Å ┬½╨ô╨╛╤é╨╛╨▓╨╛┬╗';
+
+  @override
+  String get onboarding_goalSetUpConnectionsSubtitle =>
+      '╨ƒ╨╛╤ü╨╗╨╡ ╨╜╨░╨╢╨░╤é╨╕╤Å ┬½╨ô╨╛╤é╨╛╨▓╨╛┬╗ ╨╛╤é╨║╤Ç╨╛╨╡╤é╤ü╤Å ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨░ ╨┐╨╛╨┤╨║╨╗╤Ä╤ç╨╡╨╜╨╕╨╣. ╨¥╨╕╤ç╨╡╨│╨╛ ╨╜╨╡ ╨┐╨╛╨┤╨║╨╗╤Ä╤ç╨╕╤é╤ü╤Å, ╨┐╨╛╨║╨░ ╨▓╤ï ╤ü╨░╨╝╨╕ ╨╜╨╡ ╨╖╨░╨┐╤â╤ü╤é╨╕╤é╨╡ ╨┐╨╛╨┤╨║╨╗╤Ä╤ç╨╡╨╜╨╕╨╡.';
+
+  @override
+  String get onboarding_goalSyncDevicesSubtitle =>
+      '╨Æ╨╛╨╣╤é╨╕ ╨▓ Firefox Sync ╨┐╨╛╤ü╨╗╨╡ ╨╜╨░╨╢╨░╤é╨╕╤Å ┬½╨ô╨╛╤é╨╛╨▓╨╛┬╗';
+
+  @override
+  String get onboarding_customizeGroupPrivacy =>
+      '╨ƒ╤Ç╨╕╨▓╨░╤é╨╜╨╛╤ü╤é╤î ╨╕ ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╨╛╤ü╤é╤î';
+
+  @override
+  String get onboarding_customizeGroupTabs =>
+      '╨Æ╨║╨╗╨░╨┤╨║╨╕ ╨╕ ╨┐╤Ç╨╛╤ä╨╕╨╗╨╕';
+
+  @override
+  String get onboarding_customizeGroupConnections => '╨ƒ╨╛╨┤╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å';
+
+  @override
+  String get onboarding_customizeGroupLayout =>
+      '╨á╨░╤ü╨┐╨╛╨╗╨╛╨╢╨╡╨╜╨╕╨╡ ╨╕ ╨▓╨▓╨╛╨┤';
+
+  @override
+  String get onboarding_customizeSaveFailed =>
+      '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╤ü╨╛╤à╤Ç╨░╨╜╨╕╤é╤î, ╨║╨░╨║╨╕╨╡ ╤ä╤â╨╜╨║╤å╨╕╨╕ ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╤Ä╤é╤ü╤Å. ╨ƒ╨╛╨┐╤Ç╨╛╨▒╤â╨╣╤é╨╡ ╨╡╤ë╤æ ╤Ç╨░╨╖.';
+
+  @override
+  String get onboarding_customizeGroupOther => '╨ö╤Ç╤â╨│╨╕╨╡ ╤ä╤â╨╜╨║╤å╨╕╨╕';
+
+  @override
+  String get onboarding_customizeHomeSections =>
+      '╨á╨░╨╖╨┤╨╡╨╗╤ï ╨│╨╗╨░╨▓╨╜╨╛╨╣ ╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï';
+
+  @override
+  String get onboarding_customizeNewTabSections =>
+      '╨á╨░╨╖╨┤╨╡╨╗╤ï ╨╜╨╛╨▓╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╕';
+
+  @override
+  String get onboarding_commitFailed =>
+      '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╤ü╨╛╤à╤Ç╨░╨╜╨╕╤é╤î ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕. ╨ƒ╨╛╨┐╤Ç╨╛╨▒╤â╨╣╤é╨╡ ╨╡╤ë╤æ ╤Ç╨░╨╖.';
+
+  @override
+  String get onboarding_restoreRequiresEula =>
+      '╨í╨╜╨░╤ç╨░╨╗╨░ ╨┐╤Ç╨╕╨╝╨╕╤é╨╡ ╨╗╨╕╤å╨╡╨╜╨╖╨╕╨╛╨╜╨╜╨╛╨╡ ╤ü╨╛╨│╨╗╨░╤ê╨╡╨╜╨╕╨╡ ╨╕ ╨┐╨╛╨╗╨╕╤é╨╕╨║╤â ╨║╨╛╨╜╤ä╨╕╨┤╨╡╨╜╤å╨╕╨░╨╗╤î╨╜╨╛╤ü╤é╨╕.';
+
+  @override
+  String get onboarding_setupStepFailedUBlock =>
+      '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╤â╤ü╤é╨░╨╜╨╛╨▓╨╕╤é╤î uBlock Origin. WebLibre ╨┐╨╛╨┐╤Ç╨╛╨▒╤â╨╡╤é ╨╡╤ë╤æ ╤Ç╨░╨╖ ╨┐╤Ç╨╕ ╤ü╨╗╨╡╨┤╤â╤Ä╤ë╨╡╨╝ ╨╖╨░╨┐╤â╤ü╨║╨╡.';
+
+  @override
+  String get onboarding_setupStepFailedFilters =>
+      '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╨▓╨║╨╗╤Ä╤ç╨╕╤é╤î ╤Ç╨╡╨║╨╛╨╝╨╡╨╜╨┤╤â╨╡╨╝╤ï╨╡ ╤ä╨╕╨╗╤î╤é╤Ç╤ï uBlock Origin. WebLibre ╨┐╨╛╨┐╤Ç╨╛╨▒╤â╨╡╤é ╨╡╤ë╤æ ╤Ç╨░╨╖ ╨┐╤Ç╨╕ ╤ü╨╗╨╡╨┤╤â╤Ä╤ë╨╡╨╝ ╨╖╨░╨┐╤â╤ü╨║╨╡.';
+
+  @override
+  String get onboarding_setupStepFailedHardening =>
+      '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╨▓╨║╨╗╤Ä╤ç╨╕╤é╤î ╨╜╨╡╨║╨╛╤é╨╛╤Ç╤ï╨╡ ╤Ç╨╡╨║╨╛╨╝╨╡╨╜╨┤╤â╨╡╨╝╤ï╨╡ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╨╛╤ü╤é╨╕. WebLibre ╨┐╨╛╨┐╤Ç╨╛╨▒╤â╨╡╤é ╨╡╤ë╤æ ╤Ç╨░╨╖ ╨┐╤Ç╨╕ ╤ü╨╗╨╡╨┤╤â╤Ä╤ë╨╡╨╝ ╨╖╨░╨┐╤â╤ü╨║╨╡.';
+
+  @override
+  String get onboarding_searchStepTitle => '╨ƒ╨╛╨╕╤ü╨║';
+
+  @override
+  String get onboarding_layoutStepTitle => '╨£╨░╨║╨╡╤é';
+
+  @override
+  String get onboarding_layoutCustomizeFurtherTitle =>
+      '╨ö╨╛╨┐╨╛╨╗╨╜╨╕╤é╨╡╨╗╤î╨╜╨░╤Å ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨░';
+
+  @override
+  String get onboarding_layoutReassurance =>
+      '┬½╨É╨▓╤é╨╛┬╗ ╨┐╨╛╨┤╤à╨╛╨┤╨╕╤é ╨┤╨╗╤Å ╨▒╨╛╨╗╤î╤ê╨╕╨╜╤ü╤é╨▓╨░ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓. ╨Æ╤ü╤æ ╤ì╤é╨╛ ╨╝╨╛╨╢╨╜╨╛ ╨╕╨╖╨╝╨╡╨╜╨╕╤é╤î ╨┐╨╛╨╖╨╢╨╡ ╨▓ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨░╤à.';
+
+  @override
+  String get onboarding_toolbarLayoutSubtitle =>
+      '╨Ü╨╜╨╛╨┐╨║╨╕, ╨╝╨╡╨╜╤Ä, ╨┐╨░╨╜╨╡╨╗╤î ╨▓╨║╨╗╨░╨┤╨╛╨║ ╨╕ ╨░╨▓╤é╨╛╤ü╨║╤Ç╤ï╤é╨╕╨╡';
+
+  @override
+  String get onboarding_yourChoicesTitle => '╨Æ╨░╤ê ╨▓╤ï╨▒╨╛╤Ç';
+
+  @override
+  String get onboarding_tabBarPositionTitle =>
+      '╨ƒ╨╛╨╗╨╛╨╢╨╡╨╜╨╕╨╡ ╨┐╨░╨╜╨╡╨╗╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║';
+
+  @override
+  String get onboarding_yourChoicesSuggestionsOff => '╨Æ╤ï╨║╨╗╤Ä╤ç╨╡╨╜╤ï';
+
+  @override
+  String get onboarding_yourSetupOnDoneTitle =>
+      '╨Æ╨║╨╗╤Ä╤ç╨╕╤é╤ü╤Å ╨┐╨╛╤ü╨╗╨╡ ╨╜╨░╨╢╨░╤é╨╕╤Å ┬½╨ô╨╛╤é╨╛╨▓╨╛┬╗';
+
+  @override
+  String get onboarding_ublockInstallOnDoneSubtitle =>
+      '╨ú╤ü╤é╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╨╡╤é╤ü╤Å ╨┐╤Ç╨╕ ╨╜╨░╨╢╨░╤é╨╕╨╕ ┬½╨ô╨╛╤é╨╛╨▓╨╛┬╗ ╨╕ ╨╖╨░╨┐╤Ç╨░╤ê╨╕╨▓╨░╨╡╤é ╤ü╨▓╨╛╨╕ ╤Ç╨░╨╖╤Ç╨╡╤ê╨╡╨╜╨╕╤Å';
+
+  @override
+  String get onboarding_privacySecurityRowSubtitle =>
+      '╨¢╨╛╨║╨░╨╗╤î╨╜╤ï╨╡ ╨┐╨╛╨┤╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å, ╤å╨╕╤ä╤Ç╨╛╨▓╤ï╨╡ ╨╛╤é╨┐╨╡╤ç╨░╤é╨║╨╕, ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╤ï╨╣ DNS ╨╕ ╤Å╨╖╤ï╨║╨╕ ╨┤╨╗╤Å ╤ü╨░╨╣╤é╨╛╨▓';
+
+  @override
+  String get onboarding_addToSetupTitle =>
+      '╨ö╨╛╨▒╨░╨▓╨╕╤é╤î ╨║ ╨▓╨░╤ê╨╕╨╝ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨░╨╝';
+
+  @override
+  String get onboarding_showHideFeaturesAction =>
+      '╨ƒ╨╛╨║╨░╨╖╨░╤é╤î ╨╕╨╗╨╕ ╤ü╨║╤Ç╤ï╤é╤î ╤ä╤â╨╜╨║╤å╨╕╨╕';
+
+  @override
+  String get onboarding_showHideFeaturesCaption =>
+      '╨ƒ╨╛╨║╨░ ╤ä╤â╨╜╨║╤å╨╕╤Å ╤ü╨║╤Ç╤ï╤é╨░, ╨╡╤æ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨╕╤ü╨┐╨╛╨╗╤î╨╖╤â╤Ä╤é ╨╖╨╜╨░╤ç╨╡╨╜╨╕╤Å ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä. ╨Æ╨░╤ê╨╕ ╨╕╨╖╨╝╨╡╨╜╨╡╨╜╨╕╤Å ╨▓╨╡╤Ç╨╜╤â╤é╤ü╤Å, ╨║╨╛╨│╨┤╨░ ╨▓╤ï ╨╡╤æ ╨┐╨╛╨║╨░╨╢╨╡╤é╨╡.';
+
+  @override
+  String onboarding_dohCurrentSubtitle(String mode, String provider) {
+    return '$mode: $provider';
+  }
+
+  @override
+  String get onboarding_presetChangeResetVisibility =>
+      '╨Æ╨░╤ê╨╕ ╨╕╨╖╨╝╨╡╨╜╨╡╨╜╨╕╤Å ╨▓╨╕╨┤╨╕╨╝╨╛╤ü╤é╨╕ ╤ä╤â╨╜╨║╤å╨╕╨╣ ╨╖╨░╨╝╨╡╨╜╨╡╨╜╤ï ╨╖╨╜╨░╤ç╨╡╨╜╨╕╤Å╨╝╨╕ ╤ì╤é╨╛╨│╨╛ ╨▓╨░╤Ç╨╕╨░╨╜╤é╨░.';
+
+  @override
+  String onboarding_presetChangeStopsApplyingTitle(String preset) {
+    return '╨ƒ╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨╕╤é╤î╤ü╤Å ╨╜╨░ ┬½$preset┬╗?';
+  }
+
+  @override
+  String get onboarding_presetChangeStopsApplyingContent =>
+      '╨ƒ╤Ç╨╕ ╤ì╤é╨╛╨╝ ╨▓╤ï╨▒╨╛╤Ç╨╡ ╤ü╨║╤Ç╤ï╨▓╨░╤Ä╤é╤ü╤Å ╤ä╤â╨╜╨║╤å╨╕╨╕, ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨║╨╛╤é╨╛╤Ç╤ï╤à ╨▓╤ï ╨╕╨╖╨╝╨╡╨╜╨╕╨╗╨╕. ╨ƒ╨╛╨║╨░ ╨╛╨╜╨╕ ╤ü╨║╤Ç╤ï╤é╤ï, ╤ì╤é╨╕ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨╕╤ü╨┐╨╛╨╗╤î╨╖╤â╤Ä╤é ╨╖╨╜╨░╤ç╨╡╨╜╨╕╤Å ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä. ╨Æ╨░╤ê╨╕ ╨╕╨╖╨╝╨╡╨╜╨╡╨╜╨╕╤Å ╤ü╨╛╤à╤Ç╨░╨╜╤Å╤Ä╤é╤ü╤Å ╨╕ ╤ü╨╜╨╛╨▓╨░ ╨┐╤Ç╨╕╨╝╨╡╨╜╤Å╤é╤ü╤Å, ╨║╨╛╨│╨┤╨░ ╨▓╤ï ╨╕╤à ╨┐╨╛╨║╨░╨╢╨╡╤é╨╡.';
+
+  @override
+  String get onboarding_presetChangeConfirm => '╨ƒ╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨╕╤é╤î';
 
   @override
   String get proxy_actionChange => 'Изменить';
@@ -6615,6 +6924,11 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get proxy_protocolFixedHelper =>
       'После создания профиля протокол изменить нельзя.';
+
+  @override
+  String proxy_protocolFromImportHelper(String featureName) {
+    return 'Задано импортом. Чтобы ввести подключение вручную, покажите «$featureName» в разделе «Настройки > Управление функциями».';
+  }
 
   @override
   String get proxy_customOutboundLabel => 'Свой outbound';
@@ -7666,1947 +7980,2030 @@ class AppLocalizationsRu extends AppLocalizations {
   String get searchCredits_buyMoreTitle => 'Купить ещё';
 
   @override
-  String get settings_advancedTitle => 'Дополнительно';
+  String get settings_advancedTitle => '╨ö╨╛╨┐╨╛╨╗╨╜╨╕╤é╨╡╨╗╤î╨╜╨╛';
 
   @override
   String get settings_advancedSubtitle =>
-      'Поведение движка, переопределения во время работы и инструменты разработчика.';
+      '╨ƒ╨╛╨▓╨╡╨┤╨╡╨╜╨╕╨╡ ╨┤╨▓╨╕╨╢╨║╨░, ╨┐╨╡╤Ç╨╡╨╛╨┐╤Ç╨╡╨┤╨╡╨╗╨╡╨╜╨╕╤Å ╨▓╨╛ ╨▓╤Ç╨╡╨╝╤Å ╤Ç╨░╨▒╨╛╤é╤ï ╨╕ ╨╕╨╜╤ü╤é╤Ç╤â╨╝╨╡╨╜╤é╤ï ╤Ç╨░╨╖╤Ç╨░╨▒╨╛╤é╤ç╨╕╨║╨░.';
 
   @override
-  String get settings_javascriptTitle => 'Включить JavaScript';
+  String get settings_javascriptTitle => '╨Æ╨║╨╗╤Ä╤ç╨╕╤é╤î JavaScript';
 
   @override
-  String get settings_javascriptKeywords => 'javascript, js, скрипты';
+  String get settings_javascriptKeywords => 'javascript, js, ╤ü╨║╤Ç╨╕╨┐╤é╤ï';
 
   @override
   String get settings_javascriptSubtitle =>
-      'Отключение JavaScript может повысить безопасность, приватность и скорость, но некоторые сайты могут работать неправильно.';
+      '╨₧╤é╨║╨╗╤Ä╤ç╨╡╨╜╨╕╨╡ JavaScript ╨╝╨╛╨╢╨╡╤é ╨┐╨╛╨▓╤ï╤ü╨╕╤é╤î ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╨╛╤ü╤é╤î, ╨┐╤Ç╨╕╨▓╨░╤é╨╜╨╛╤ü╤é╤î ╨╕ ╤ü╨║╨╛╤Ç╨╛╤ü╤é╤î, ╨╜╨╛ ╨╜╨╡╨║╨╛╤é╨╛╤Ç╤ï╨╡ ╤ü╨░╨╣╤é╤ï ╨╝╨╛╨│╤â╤é ╤Ç╨░╨▒╨╛╤é╨░╤é╤î ╨╜╨╡╨┐╤Ç╨░╨▓╨╕╨╗╤î╨╜╨╛.';
 
   @override
-  String get settings_userAgentLabel => 'Свой User Agent';
+  String get settings_userAgentLabel => '╨í╨▓╨╛╨╣ User Agent';
 
   @override
   String get settings_userAgentLabelKeywords =>
-      'ua, юзер-агент, агент пользователя';
+      'ua, ╤Ä╨╖╨╡╤Ç-╨░╨│╨╡╨╜╤é, ╨░╨│╨╡╨╜╤é ╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╨╡╨╗╤Å';
 
   @override
   String get settings_enterpriseRootsTitle =>
-      'Использовать сторонние сертификаты ЦС';
+      '╨ÿ╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╤î ╤ü╤é╨╛╤Ç╨╛╨╜╨╜╨╕╨╡ ╤ü╨╡╤Ç╤é╨╕╤ä╨╕╨║╨░╤é╤ï ╨ª╨í';
 
   @override
   String get settings_enterpriseRootsKeywords =>
-      'сертификаты, корневые сертификаты, ca, цс';
+      '╤ü╨╡╤Ç╤é╨╕╤ä╨╕╨║╨░╤é╤ï, ╨║╨╛╤Ç╨╜╨╡╨▓╤ï╨╡ ╤ü╨╡╤Ç╤é╨╕╤ä╨╕╨║╨░╤é╤ï, ca, ╤å╤ü';
 
   @override
   String get settings_enterpriseRootsSubtitle =>
-      'Разрешает использовать сторонние сертификаты из хранилища ЦС Android';
+      '╨á╨░╨╖╤Ç╨╡╤ê╨░╨╡╤é ╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╤î ╤ü╤é╨╛╤Ç╨╛╨╜╨╜╨╕╨╡ ╤ü╨╡╤Ç╤é╨╕╤ä╨╕╨║╨░╤é╤ï ╨╕╨╖ ╤à╤Ç╨░╨╜╨╕╨╗╨╕╤ë╨░ ╨ª╨í Android';
 
   @override
-  String get settings_experimentalFeaturesTitle => 'Экспериментальные функции';
+  String get settings_experimentalFeaturesTitle =>
+      '╨¡╨║╤ü╨┐╨╡╤Ç╨╕╨╝╨╡╨╜╤é╨░╨╗╤î╨╜╤ï╨╡ ╤ä╤â╨╜╨║╤å╨╕╨╕';
 
   @override
   String get settings_experimentalFeaturesKeywords =>
-      'среда выполнения, запуск';
+      '╤ü╤Ç╨╡╨┤╨░ ╨▓╤ï╨┐╨╛╨╗╨╜╨╡╨╜╨╕╤Å, ╨╖╨░╨┐╤â╤ü╨║';
 
   @override
   String get settings_experimentalFeaturesSubtitle =>
-      'Низкоуровневые функции среды выполнения и поведение при запуске';
+      '╨¥╨╕╨╖╨║╨╛╤â╤Ç╨╛╨▓╨╜╨╡╨▓╤ï╨╡ ╤ä╤â╨╜╨║╤å╨╕╨╕ ╤ü╤Ç╨╡╨┤╤ï ╨▓╤ï╨┐╨╛╨╗╨╜╨╡╨╜╨╕╤Å ╨╕ ╨┐╨╛╨▓╨╡╨┤╨╡╨╜╨╕╨╡ ╨┐╤Ç╨╕ ╨╖╨░╨┐╤â╤ü╨║╨╡';
 
   @override
-  String get settings_unmountGeckoViewTitle => 'Выгружать движок вне экрана';
+  String get settings_unmountGeckoViewTitle =>
+      '╨Æ╤ï╨│╤Ç╤â╨╢╨░╤é╤î ╨┤╨▓╨╕╨╢╨╛╨║ ╨▓╨╜╨╡ ╤ì╨║╤Ç╨░╨╜╨░';
 
   @override
   String get settings_unmountGeckoViewKeywords =>
-      'geckoview, память, производительность, приостановка';
+      'geckoview, ╨┐╨░╨╝╤Å╤é╤î, ╨┐╤Ç╨╛╨╕╨╖╨▓╨╛╨┤╨╕╤é╨╡╨╗╤î╨╜╨╛╤ü╤é╤î, ╨┐╤Ç╨╕╨╛╤ü╤é╨░╨╜╨╛╨▓╨║╨░';
 
   @override
   String get settings_unmountGeckoViewSubtitle =>
-      'Выгружать веб-движок из памяти, пока открыт полноэкранный раздел (например, настройки, вкладки или поиск), и восстанавливать его при возврате. Это временно освобождает ресурсы. При возврате на страницу движок нужно подключить заново, что может вызвать мерцание или перезагрузку. Это экономия памяти за счёт производительности, а не способ устранить неполадки. На Android 12 и более ранних версиях движок выгружается всегда.';
+      '╨Æ╤ï╨│╤Ç╤â╨╢╨░╤é╤î ╨▓╨╡╨▒-╨┤╨▓╨╕╨╢╨╛╨║ ╨╕╨╖ ╨┐╨░╨╝╤Å╤é╨╕, ╨┐╨╛╨║╨░ ╨╛╤é╨║╤Ç╤ï╤é ╨┐╨╛╨╗╨╜╨╛╤ì╨║╤Ç╨░╨╜╨╜╤ï╨╣ ╤Ç╨░╨╖╨┤╨╡╨╗ (╨╜╨░╨┐╤Ç╨╕╨╝╨╡╤Ç, ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕, ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨╕╨╗╨╕ ╨┐╨╛╨╕╤ü╨║), ╨╕ ╨▓╨╛╤ü╤ü╤é╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╤é╤î ╨╡╨│╨╛ ╨┐╤Ç╨╕ ╨▓╨╛╨╖╨▓╤Ç╨░╤é╨╡. ╨¡╤é╨╛ ╨▓╤Ç╨╡╨╝╨╡╨╜╨╜╨╛ ╨╛╤ü╨▓╨╛╨▒╨╛╨╢╨┤╨░╨╡╤é ╤Ç╨╡╤ü╤â╤Ç╤ü╤ï. ╨ƒ╤Ç╨╕ ╨▓╨╛╨╖╨▓╤Ç╨░╤é╨╡ ╨╜╨░ ╤ü╤é╤Ç╨░╨╜╨╕╤å╤â ╨┤╨▓╨╕╨╢╨╛╨║ ╨╜╤â╨╢╨╜╨╛ ╨┐╨╛╨┤╨║╨╗╤Ä╤ç╨╕╤é╤î ╨╖╨░╨╜╨╛╨▓╨╛, ╤ç╤é╨╛ ╨╝╨╛╨╢╨╡╤é ╨▓╤ï╨╖╨▓╨░╤é╤î ╨╝╨╡╤Ç╤å╨░╨╜╨╕╨╡ ╨╕╨╗╨╕ ╨┐╨╡╤Ç╨╡╨╖╨░╨│╤Ç╤â╨╖╨║╤â. ╨¡╤é╨╛ ╤ì╨║╨╛╨╜╨╛╨╝╨╕╤Å ╨┐╨░╨╝╤Å╤é╨╕ ╨╖╨░ ╤ü╤ç╤æ╤é ╨┐╤Ç╨╛╨╕╨╖╨▓╨╛╨┤╨╕╤é╨╡╨╗╤î╨╜╨╛╤ü╤é╨╕, ╨░ ╨╜╨╡ ╤ü╨┐╨╛╤ü╨╛╨▒ ╤â╤ü╤é╤Ç╨░╨╜╨╕╤é╤î ╨╜╨╡╨┐╨╛╨╗╨░╨┤╨║╨╕. ╨¥╨░ Android 12 ╨╕ ╨▒╨╛╨╗╨╡╨╡ ╤Ç╨░╨╜╨╜╨╕╤à ╨▓╨╡╤Ç╤ü╨╕╤Å╤à ╨┤╨▓╨╕╨╢╨╛╨║ ╨▓╤ï╨│╤Ç╤â╨╢╨░╨╡╤é╤ü╤Å ╨▓╤ü╨╡╨│╨┤╨░.';
 
   @override
-  String get settings_iconCacheTitle => 'Кеш значков';
+  String get settings_iconCacheTitle => '╨Ü╨╡╤ê ╨╖╨╜╨░╤ç╨║╨╛╨▓';
 
   @override
-  String get settings_iconCacheKeywords => 'фавиконы, favicons, кеш';
+  String get settings_iconCacheKeywords => '╤ä╨░╨▓╨╕╨║╨╛╨╜╤ï, favicons, ╨║╨╡╤ê';
 
   @override
-  String get settings_iconCacheSubtitle => 'Сохранённые значки сайтов';
+  String get settings_iconCacheSubtitle =>
+      '╨í╨╛╤à╤Ç╨░╨╜╤æ╨╜╨╜╤ï╨╡ ╨╖╨╜╨░╤ç╨║╨╕ ╤ü╨░╨╣╤é╨╛╨▓';
 
   @override
-  String get settings_iconCacheSizeLabel => 'Размер';
+  String get settings_iconCacheSizeLabel => '╨á╨░╨╖╨╝╨╡╤Ç';
 
   @override
-  String get settings_clearingAction => 'Очистка';
+  String get settings_clearingAction => '╨₧╤ç╨╕╤ü╤é╨║╨░';
 
   @override
-  String get settings_mlDownloadsTitle => 'Загрузки ML';
+  String get settings_mlDownloadsTitle => '╨ù╨░╨│╤Ç╤â╨╖╨║╨╕ ML';
 
   @override
   String get settings_mlDownloadsKeywords =>
-      'ии, ai, ml, модели, onnx, кеш, машинное обучение';
+      '╨╕╨╕, ai, ml, ╨╝╨╛╨┤╨╡╨╗╨╕, onnx, ╨║╨╡╤ê, ╨╝╨░╤ê╨╕╨╜╨╜╨╛╨╡ ╨╛╨▒╤â╤ç╨╡╨╜╨╕╨╡';
 
   @override
   String get settings_mlDownloadsSubtitle =>
-      'Загруженные модели ИИ и файлы среды выполнения';
+      '╨ù╨░╨│╤Ç╤â╨╢╨╡╨╜╨╜╤ï╨╡ ╨╝╨╛╨┤╨╡╨╗╨╕ ╨ÿ╨ÿ ╨╕ ╤ä╨░╨╣╨╗╤ï ╤ü╤Ç╨╡╨┤╤ï ╨▓╤ï╨┐╨╛╨╗╨╜╨╡╨╜╨╕╤Å';
 
   @override
-  String get settings_mlDownloadsClearDialogTitle => 'Очистить загрузки ML?';
+  String get settings_mlDownloadsClearDialogTitle =>
+      '╨₧╤ç╨╕╤ü╤é╨╕╤é╤î ╨╖╨░╨│╤Ç╤â╨╖╨║╨╕ ML?';
 
   @override
   String get settings_mlDownloadsClearDialogContent =>
-      'Будут удалены загруженные модели ИИ и файлы среды выполнения ONNX для этого профиля. При необходимости они будут загружены снова. Перезапустите Cat Browser, прежде чем снова использовать функции ML.';
+      '╨æ╤â╨┤╤â╤é ╤â╨┤╨░╨╗╨╡╨╜╤ï ╨╖╨░╨│╤Ç╤â╨╢╨╡╨╜╨╜╤ï╨╡ ╨╝╨╛╨┤╨╡╨╗╨╕ ╨ÿ╨ÿ ╨╕ ╤ä╨░╨╣╨╗╤ï ╤ü╤Ç╨╡╨┤╤ï ╨▓╤ï╨┐╨╛╨╗╨╜╨╡╨╜╨╕╤Å ONNX ╨┤╨╗╤Å ╤ì╤é╨╛╨│╨╛ ╨┐╤Ç╨╛╤ä╨╕╨╗╤Å. ╨ƒ╤Ç╨╕ ╨╜╨╡╨╛╨▒╤à╨╛╨┤╨╕╨╝╨╛╤ü╤é╨╕ ╨╛╨╜╨╕ ╨▒╤â╨┤╤â╤é ╨╖╨░╨│╤Ç╤â╨╢╨╡╨╜╤ï ╤ü╨╜╨╛╨▓╨░. ╨ƒ╨╡╤Ç╨╡╨╖╨░╨┐╤â╤ü╤é╨╕╤é╨╡ Cat Browser, ╨┐╤Ç╨╡╨╢╨┤╨╡ ╤ç╨╡╨╝ ╤ü╨╜╨╛╨▓╨░ ╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╤î ╤ä╤â╨╜╨║╤å╨╕╨╕ ML.';
 
   @override
   String get settings_mlDownloadsClearedMessage =>
-      'Загрузки ML очищены. Перезапустите Cat Browser перед повторной попыткой.';
+      '╨ù╨░╨│╤Ç╤â╨╖╨║╨╕ ML ╨╛╤ç╨╕╤ë╨╡╨╜╤ï. ╨ƒ╨╡╤Ç╨╡╨╖╨░╨┐╤â╤ü╤é╨╕╤é╨╡ Cat Browser ╨┐╨╡╤Ç╨╡╨┤ ╨┐╨╛╨▓╤é╨╛╤Ç╨╜╨╛╨╣ ╨┐╨╛╨┐╤ï╤é╨║╨╛╨╣.';
 
   @override
   String settings_mlDownloadsClearFailedMessage(String error) {
-    return 'Не удалось очистить загрузки ML: $error';
+    return '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╨╛╤ç╨╕╤ü╤é╨╕╤é╤î ╨╖╨░╨│╤Ç╤â╨╖╨║╨╕ ML: $error';
   }
 
   @override
-  String get settings_errorLogsTitle => 'Журналы ошибок';
+  String get settings_errorLogsTitle => '╨û╤â╤Ç╨╜╨░╨╗╤ï ╨╛╤ê╨╕╨▒╨╛╨║';
 
   @override
-  String get settings_errorLogsKeywords => 'журналы, логи';
+  String get settings_errorLogsKeywords => '╨╢╤â╤Ç╨╜╨░╨╗╤ï, ╨╗╨╛╨│╨╕';
 
   @override
   String get settings_errorLogsSubtitle =>
-      'Просмотр и копирование журналов для сообщения о проблемах';
+      '╨ƒ╤Ç╨╛╤ü╨╝╨╛╤é╤Ç ╨╕ ╨║╨╛╨┐╨╕╤Ç╨╛╨▓╨░╨╜╨╕╨╡ ╨╢╤â╤Ç╨╜╨░╨╗╨╛╨▓ ╨┤╨╗╤Å ╤ü╨╛╨╛╨▒╤ë╨╡╨╜╨╕╤Å ╨╛ ╨┐╤Ç╨╛╨▒╨╗╨╡╨╝╨░╤à';
 
   @override
   String get settings_dartVmTitle => 'Dart VM';
 
   @override
-  String get settings_dartVmKeywords => 'service url, url сервиса';
+  String get settings_dartVmKeywords => 'service url, url ╤ü╨╡╤Ç╨▓╨╕╤ü╨░';
 
   @override
-  String get settings_dartVmSubtitle => 'Копировать URL-адрес сервиса Dart VM';
+  String get settings_dartVmSubtitle =>
+      '╨Ü╨╛╨┐╨╕╤Ç╨╛╨▓╨░╤é╤î URL-╨░╨┤╤Ç╨╡╤ü ╤ü╨╡╤Ç╨▓╨╕╤ü╨░ Dart VM';
 
   @override
-  String get settings_dartVmCopyErrorFallback => 'Ошибка';
+  String get settings_dartVmCopyErrorFallback => '╨₧╤ê╨╕╨▒╨║╨░';
 
   @override
-  String get settings_serviceUrlCopiedMessage => 'URL-адрес сервиса скопирован';
+  String get settings_serviceUrlCopiedMessage =>
+      'URL-╨░╨┤╤Ç╨╡╤ü ╤ü╨╡╤Ç╨▓╨╕╤ü╨░ ╤ü╨║╨╛╨┐╨╕╤Ç╨╛╨▓╨░╨╜';
 
   @override
-  String get settings_resetUiTitle => 'Сбросить интерфейс';
+  String get settings_resetUiTitle => '╨í╨▒╤Ç╨╛╤ü╨╕╤é╤î ╨╕╨╜╤é╨╡╤Ç╤ä╨╡╨╣╤ü';
 
   @override
-  String get settings_resetUiKeywords => 'обновить интерфейс, перерисовать';
+  String get settings_resetUiKeywords =>
+      '╨╛╨▒╨╜╨╛╨▓╨╕╤é╤î ╨╕╨╜╤é╨╡╤Ç╤ä╨╡╨╣╤ü, ╨┐╨╡╤Ç╨╡╤Ç╨╕╤ü╨╛╨▓╨░╤é╤î';
 
   @override
   String get settings_resetUiSubtitle =>
-      'Полностью перестроить интерфейс браузера';
+      '╨ƒ╨╛╨╗╨╜╨╛╤ü╤é╤î╤Ä ╨┐╨╡╤Ç╨╡╤ü╤é╤Ç╨╛╨╕╤é╤î ╨╕╨╜╤é╨╡╤Ç╤ä╨╡╨╣╤ü ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░';
 
   @override
-  String get settings_addonCollectionTitle => 'Своя коллекция расширений';
+  String get settings_addonCollectionTitle =>
+      '╨í╨▓╨╛╤Å ╨║╨╛╨╗╨╗╨╡╨║╤å╨╕╤Å ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╣';
 
   @override
-  String get settings_addonCollectionSourceSectionTitle => 'Источник коллекции';
+  String get settings_addonCollectionSourceSectionTitle =>
+      '╨ÿ╤ü╤é╨╛╤ç╨╜╨╕╨║ ╨║╨╛╨╗╨╗╨╡╨║╤å╨╕╨╕';
 
   @override
-  String get settings_addonCollectionConfigTitle => 'Настройка коллекции';
+  String get settings_addonCollectionConfigTitle =>
+      '╨¥╨░╤ü╤é╤Ç╨╛╨╣╨║╨░ ╨║╨╛╨╗╨╗╨╡╨║╤å╨╕╨╕';
 
   @override
   String get settings_addonCollectionConfigKeywords =>
-      'дополнения, расширения, коллекция';
+      '╨┤╨╛╨┐╨╛╨╗╨╜╨╡╨╜╨╕╤Å, ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å, ╨║╨╛╨╗╨╗╨╡╨║╤å╨╕╤Å';
 
   @override
   String get settings_addonCollectionConfigSubtitle =>
-      'Сервер Mozilla, владелец и название коллекции';
+      '╨í╨╡╤Ç╨▓╨╡╤Ç Mozilla, ╨▓╨╗╨░╨┤╨╡╨╗╨╡╤å ╨╕ ╨╜╨░╨╖╨▓╨░╨╜╨╕╨╡ ╨║╨╛╨╗╨╗╨╡╨║╤å╨╕╨╕';
 
   @override
-  String get settings_addonCollectionServerUrlLabel => 'URL-адрес сервера';
+  String get settings_addonCollectionServerUrlLabel =>
+      'URL-╨░╨┤╤Ç╨╡╤ü ╤ü╨╡╤Ç╨▓╨╡╤Ç╨░';
 
   @override
-  String get settings_addonCollectionUserLabel => 'Владелец коллекции';
+  String get settings_addonCollectionUserLabel =>
+      '╨Æ╨╗╨░╨┤╨╡╨╗╨╡╤å ╨║╨╛╨╗╨╗╨╡╨║╤å╨╕╨╕';
 
   @override
-  String get settings_addonCollectionNameLabel => 'Название коллекции';
+  String get settings_addonCollectionNameLabel =>
+      '╨¥╨░╨╖╨▓╨░╨╜╨╕╨╡ ╨║╨╛╨╗╨╗╨╡╨║╤å╨╕╨╕';
 
   @override
-  String get settings_addonCollectionActionsSectionTitle => 'Действия';
+  String get settings_addonCollectionActionsSectionTitle => '╨ö╨╡╨╣╤ü╤é╨▓╨╕╤Å';
 
   @override
   String get settings_addonCollectionSaveRestartTitle =>
-      'Сохранить и перезапустить браузер';
+      '╨í╨╛╤à╤Ç╨░╨╜╨╕╤é╤î ╨╕ ╨┐╨╡╤Ç╨╡╨╖╨░╨┐╤â╤ü╤é╨╕╤é╤î ╨▒╤Ç╨░╤â╨╖╨╡╤Ç';
 
   @override
-  String get settings_addonCollectionSaveRestartKeywords => 'перезапуск';
+  String get settings_addonCollectionSaveRestartKeywords =>
+      '╨┐╨╡╤Ç╨╡╨╖╨░╨┐╤â╤ü╨║';
 
   @override
   String get settings_addonCollectionSaveRestartSubtitle =>
-      'Применить свою коллекцию и перезапустить браузер';
+      '╨ƒ╤Ç╨╕╨╝╨╡╨╜╨╕╤é╤î ╤ü╨▓╨╛╤Ä ╨║╨╛╨╗╨╗╨╡╨║╤å╨╕╤Ä ╨╕ ╨┐╨╡╤Ç╨╡╨╖╨░╨┐╤â╤ü╤é╨╕╤é╤î ╨▒╤Ç╨░╤â╨╖╨╡╤Ç';
 
   @override
-  String get settings_bangSettingsTitle => 'Настройки бэнгов';
+  String get settings_bangSettingsTitle => '╨¥╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨▒╤ì╨╜╨│╨╛╨▓';
 
   @override
-  String get settings_bangSettingsKeywords => 'ярлыки, бэнги, bangs';
+  String get settings_bangSettingsKeywords => '╤Å╤Ç╨╗╤ï╨║╨╕, ╨▒╤ì╨╜╨│╨╕, bangs';
 
   @override
   String get settings_bangSettingsSubtitle =>
-      'Использование бэнгов, репозитории и синхронизация по запросу.';
+      '╨ÿ╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╨╜╨╕╨╡ ╨▒╤ì╨╜╨│╨╛╨▓, ╤Ç╨╡╨┐╨╛╨╖╨╕╤é╨╛╤Ç╨╕╨╕ ╨╕ ╤ü╨╕╨╜╤à╤Ç╨╛╨╜╨╕╨╖╨░╤å╨╕╤Å ╨┐╨╛ ╨╖╨░╨┐╤Ç╨╛╤ü╤â.';
 
   @override
-  String get settings_bangFrequenciesTitle => 'Частота бэнгов';
+  String get settings_bangFrequenciesTitle => '╨º╨░╤ü╤é╨╛╤é╨░ ╨▒╤ì╨╜╨│╨╛╨▓';
 
   @override
-  String get settings_bangFrequenciesKeywords => 'использование, рекомендации';
+  String get settings_bangFrequenciesKeywords =>
+      '╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╨╜╨╕╨╡, ╤Ç╨╡╨║╨╛╨╝╨╡╨╜╨┤╨░╤å╨╕╨╕';
 
   @override
   String get settings_bangFrequenciesSubtitle =>
-      'Учёт использования для рекомендаций бэнгов';
+      '╨ú╤ç╤æ╤é ╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╨╜╨╕╤Å ╨┤╨╗╤Å ╤Ç╨╡╨║╨╛╨╝╨╡╨╜╨┤╨░╤å╨╕╨╣ ╨▒╤ì╨╜╨│╨╛╨▓';
 
   @override
-  String get settings_browsingTitle => 'Просмотр';
+  String get settings_browsingTitle => '╨ƒ╤Ç╨╛╤ü╨╝╨╛╤é╤Ç';
 
   @override
   String get settings_browsingSubtitle =>
-      'Вкладки, навигация, ссылки на приложения и поведение малого веба.';
+      '╨Æ╨║╨╗╨░╨┤╨║╨╕, ╨╜╨░╨▓╨╕╨│╨░╤å╨╕╤Å, ╤ü╤ü╤ï╨╗╨║╨╕ ╨╜╨░ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å ╨╕ ╨┐╨╛╨▓╨╡╨┤╨╡╨╜╨╕╨╡ ╨╝╨░╨╗╨╛╨│╨╛ ╨▓╨╡╨▒╨░.';
 
   @override
-  String get settings_newTabDefaultTitle => 'Тип новой вкладки';
+  String get settings_newTabDefaultTitle => '╨ó╨╕╨┐ ╨╜╨╛╨▓╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╕';
 
   @override
   String get settings_newTabDefaultKeywords =>
-      'обычная, приватная, изолированная';
+      '╨╛╨▒╤ï╤ç╨╜╨░╤Å, ╨┐╤Ç╨╕╨▓╨░╤é╨╜╨░╤Å, ╨╕╨╖╨╛╨╗╨╕╤Ç╨╛╨▓╨░╨╜╨╜╨░╤Å';
 
   @override
   String get settings_newTabDefaultSubtitle =>
-      'Выберите тип по умолчанию для вкладок, создаваемых вручную';
+      '╨Æ╤ï╨▒╨╡╤Ç╨╕╤é╨╡ ╤é╨╕╨┐ ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä ╨┤╨╗╤Å ╨▓╨║╨╗╨░╨┤╨╛╨║, ╤ü╨╛╨╖╨┤╨░╨▓╨░╨╡╨╝╤ï╤à ╨▓╤Ç╤â╤ç╨╜╤â╤Ä';
 
   @override
-  String get settings_tabTypeRegularLabel => 'Обычная';
+  String get settings_tabTypeRegularLabel => '╨₧╨▒╤ï╤ç╨╜╨░╤Å';
 
   @override
-  String get settings_tabTypePrivateLabel => 'Приватная';
+  String get settings_tabTypePrivateLabel => '╨ƒ╤Ç╨╕╨▓╨░╤é╨╜╨░╤Å';
 
   @override
-  String get settings_tabTypeIsolatedLabel => 'Изолированная';
+  String get settings_tabTypeIsolatedLabel => '╨ÿ╨╖╨╛╨╗╨╕╤Ç╨╛╨▓╨░╨╜╨╜╨░╤Å';
 
   @override
-  String get settings_smallWebTabDefaultTitle => 'Тип вкладки малого веба';
+  String get settings_smallWebTabDefaultTitle =>
+      '╨ó╨╕╨┐ ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨╝╨░╨╗╨╛╨│╨╛ ╨▓╨╡╨▒╨░';
 
   @override
   String get settings_smallWebTabDefaultKeywords =>
-      'обычная, приватная, изолированная';
+      '╨╛╨▒╤ï╤ç╨╜╨░╤Å, ╨┐╤Ç╨╕╨▓╨░╤é╨╜╨░╤Å, ╨╕╨╖╨╛╨╗╨╕╤Ç╨╛╨▓╨░╨╜╨╜╨░╤Å';
 
   @override
   String get settings_smallWebTabDefaultSubtitle =>
-      'Выберите тип вкладки, используемый при входе в малый веб';
+      '╨Æ╤ï╨▒╨╡╤Ç╨╕╤é╨╡ ╤é╨╕╨┐ ╨▓╨║╨╗╨░╨┤╨║╨╕, ╨╕╤ü╨┐╨╛╨╗╤î╨╖╤â╨╡╨╝╤ï╨╣ ╨┐╤Ç╨╕ ╨▓╤à╨╛╨┤╨╡ ╨▓ ╨╝╨░╨╗╤ï╨╣ ╨▓╨╡╨▒';
 
   @override
-  String get settings_externalLinkHandlingTitle => 'Обработка внешних ссылок';
+  String get settings_externalLinkHandlingTitle =>
+      '╨₧╨▒╤Ç╨░╨▒╨╛╤é╨║╨░ ╨▓╨╜╨╡╤ê╨╜╨╕╤à ╤ü╤ü╤ï╨╗╨╛╨║';
 
   @override
   String get settings_externalLinkHandlingKeywords =>
-      'интенты, intents, внешние ссылки';
+      '╨╕╨╜╤é╨╡╨╜╤é╤ï, intents, ╨▓╨╜╨╡╤ê╨╜╨╕╨╡ ╤ü╤ü╤ï╨╗╨║╨╕';
 
   @override
   String get settings_externalLinkHandlingSubtitle =>
-      'Выберите, как внешние ссылки открываются в Cat Browser';
+      '╨Æ╤ï╨▒╨╡╤Ç╨╕╤é╨╡, ╨║╨░╨║ ╨▓╨╜╨╡╤ê╨╜╨╕╨╡ ╤ü╤ü╤ï╨╗╨║╨╕ ╨╛╤é╨║╤Ç╤ï╨▓╨░╤Ä╤é╤ü╤Å ╨▓ Cat Browser';
 
   @override
-  String get settings_promptOptionLabel => 'Спрашивать';
+  String get settings_promptOptionLabel => '╨í╨┐╤Ç╨░╤ê╨╕╨▓╨░╤é╤î';
 
   @override
   String get settings_externalLinkPromptSubtitle =>
-      'Спрашивать, как открывать внешние ссылки';
+      '╨í╨┐╤Ç╨░╤ê╨╕╨▓╨░╤é╤î, ╨║╨░╨║ ╨╛╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╨▓╨╜╨╡╤ê╨╜╨╕╨╡ ╤ü╤ü╤ï╨╗╨║╨╕';
 
   @override
   String get settings_externalLinkRegularSubtitle =>
-      'Открывать внешние ссылки в обычной вкладке';
+      '╨₧╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╨▓╨╜╨╡╤ê╨╜╨╕╨╡ ╤ü╤ü╤ï╨╗╨║╨╕ ╨▓ ╨╛╨▒╤ï╤ç╨╜╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╡';
 
   @override
   String get settings_externalLinkPrivateSubtitle =>
-      'Открывать внешние ссылки в приватной вкладке';
+      '╨₧╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╨▓╨╜╨╡╤ê╨╜╨╕╨╡ ╤ü╤ü╤ï╨╗╨║╨╕ ╨▓ ╨┐╤Ç╨╕╨▓╨░╤é╨╜╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╡';
 
   @override
   String get settings_externalLinkIsolatedSubtitle =>
-      'Открывать внешние ссылки в изолированной вкладке';
+      '╨₧╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╨▓╨╜╨╡╤ê╨╜╨╕╨╡ ╤ü╤ü╤ï╨╗╨║╨╕ ╨▓ ╨╕╨╖╨╛╨╗╨╕╤Ç╨╛╨▓╨░╨╜╨╜╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╡';
 
   @override
-  String get settings_bookmarkOpenBehaviorTitle => 'Открытие закладок';
+  String get settings_bookmarkOpenBehaviorTitle =>
+      '╨₧╤é╨║╤Ç╤ï╤é╨╕╨╡ ╨╖╨░╨║╨╗╨░╨┤╨╛╨║';
 
   @override
   String get settings_bookmarkOpenBehaviorKeywords =>
-      'закладки, открыть, custom tab, изолированная';
+      '╨╖╨░╨║╨╗╨░╨┤╨║╨╕, ╨╛╤é╨║╤Ç╤ï╤é╤î, custom tab, ╨╕╨╖╨╛╨╗╨╕╤Ç╨╛╨▓╨░╨╜╨╜╨░╤Å';
 
   @override
   String get settings_bookmarkOpenBehaviorSubtitle =>
-      'Выберите, как открывается закладка при нажатии';
+      '╨Æ╤ï╨▒╨╡╤Ç╨╕╤é╨╡, ╨║╨░╨║ ╨╛╤é╨║╤Ç╤ï╨▓╨░╨╡╤é╤ü╤Å ╨╖╨░╨║╨╗╨░╨┤╨║╨░ ╨┐╤Ç╨╕ ╨╜╨░╨╢╨░╤é╨╕╨╕';
 
   @override
   String get settings_bookmarkOpenPromptSubtitle =>
-      'Спрашивать, как открыть закладку';
+      '╨í╨┐╤Ç╨░╤ê╨╕╨▓╨░╤é╤î, ╨║╨░╨║ ╨╛╤é╨║╤Ç╤ï╤é╤î ╨╖╨░╨║╨╗╨░╨┤╨║╤â';
 
   @override
   String get settings_bookmarkOpenRegularSubtitle =>
-      'Открывать закладку в обычной вкладке';
+      '╨₧╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╨╖╨░╨║╨╗╨░╨┤╨║╤â ╨▓ ╨╛╨▒╤ï╤ç╨╜╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╡';
 
   @override
   String get settings_bookmarkOpenPrivateSubtitle =>
-      'Открывать закладку в приватной вкладке';
+      '╨₧╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╨╖╨░╨║╨╗╨░╨┤╨║╤â ╨▓ ╨┐╤Ç╨╕╨▓╨░╤é╨╜╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╡';
 
   @override
   String get settings_customTabOptionLabel => 'Custom Tab';
 
   @override
   String get settings_bookmarkOpenCustomTabSubtitle =>
-      'Открывать закладку в облегчённой Custom Tab';
+      '╨₧╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╨╖╨░╨║╨╗╨░╨┤╨║╤â ╨▓ ╨╛╨▒╨╗╨╡╨│╤ç╤æ╨╜╨╜╨╛╨╣ Custom Tab';
 
   @override
   String get settings_bookmarkOpenIsolatedSubtitle =>
-      'Открывать закладку в изолированной вкладке';
+      '╨₧╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╨╖╨░╨║╨╗╨░╨┤╨║╤â ╨▓ ╨╕╨╖╨╛╨╗╨╕╤Ç╨╛╨▓╨░╨╜╨╜╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╡';
 
   @override
-  String get settings_tabListDirectionTitle => 'Порядок списка вкладок';
+  String get settings_tabListDirectionTitle =>
+      '╨ƒ╨╛╤Ç╤Å╨┤╨╛╨║ ╤ü╨┐╨╕╤ü╨║╨░ ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
-  String get settings_tabListDirectionKeywords => 'сортировка, порядок';
+  String get settings_tabListDirectionKeywords =>
+      '╤ü╨╛╤Ç╤é╨╕╤Ç╨╛╨▓╨║╨░, ╨┐╨╛╤Ç╤Å╨┤╨╛╨║';
 
   @override
   String get settings_tabListDirectionSubtitle =>
-      'Выберите, показывать ли новейшую вкладку вверху или внизу списка вкладок';
+      '╨Æ╤ï╨▒╨╡╤Ç╨╕╤é╨╡, ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨╗╨╕ ╨╜╨╛╨▓╨╡╨╣╤ê╤â╤Ä ╨▓╨║╨╗╨░╨┤╨║╤â ╨▓╨▓╨╡╤Ç╤à╤â ╨╕╨╗╨╕ ╨▓╨╜╨╕╨╖╤â ╤ü╨┐╨╕╤ü╨║╨░ ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
-  String get settings_directionNewestFirstLabel => 'Сначала новые';
+  String get settings_directionNewestFirstLabel => '╨í╨╜╨░╤ç╨░╨╗╨░ ╨╜╨╛╨▓╤ï╨╡';
 
   @override
-  String get settings_directionOldestFirstLabel => 'Сначала старые';
+  String get settings_directionOldestFirstLabel =>
+      '╨í╨╜╨░╤ç╨░╨╗╨░ ╤ü╤é╨░╤Ç╤ï╨╡';
 
   @override
-  String get settings_tabBarDirectionTitle => 'Порядок панели вкладок';
+  String get settings_tabBarDirectionTitle =>
+      '╨ƒ╨╛╤Ç╤Å╨┤╨╛╨║ ╨┐╨░╨╜╨╡╨╗╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
-  String get settings_tabBarDirectionKeywords => 'сортировка, порядок';
+  String get settings_tabBarDirectionKeywords =>
+      '╤ü╨╛╤Ç╤é╨╕╤Ç╨╛╨▓╨║╨░, ╨┐╨╛╤Ç╤Å╨┤╨╛╨║';
 
   @override
   String get settings_tabBarDirectionSubtitle =>
-      'Выберите, показывать ли новейшую вкладку слева или справа в быстром переключателе';
+      '╨Æ╤ï╨▒╨╡╤Ç╨╕╤é╨╡, ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨╗╨╕ ╨╜╨╛╨▓╨╡╨╣╤ê╤â╤Ä ╨▓╨║╨╗╨░╨┤╨║╤â ╤ü╨╗╨╡╨▓╨░ ╨╕╨╗╨╕ ╤ü╨┐╤Ç╨░╨▓╨░ ╨▓ ╨▒╤ï╤ü╤é╤Ç╨╛╨╝ ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╨╡';
 
   @override
   String get settings_childTabPlacementTitle =>
-      'Позиция новой дочерней вкладки';
+      '╨ƒ╨╛╨╖╨╕╤å╨╕╤Å ╨╜╨╛╨▓╨╛╨╣ ╨┤╨╛╤ç╨╡╤Ç╨╜╨╡╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╕';
 
   @override
   String get settings_childTabPlacementKeywords =>
-      'дочерние вкладки, новая вкладка, позиция, порядок, конец списка, после родительской';
+      '╨┤╨╛╤ç╨╡╤Ç╨╜╨╕╨╡ ╨▓╨║╨╗╨░╨┤╨║╨╕, ╨╜╨╛╨▓╨░╤Å ╨▓╨║╨╗╨░╨┤╨║╨░, ╨┐╨╛╨╖╨╕╤å╨╕╤Å, ╨┐╨╛╤Ç╤Å╨┤╨╛╨║, ╨║╨╛╨╜╨╡╤å ╤ü╨┐╨╕╤ü╨║╨░, ╨┐╨╛╤ü╨╗╨╡ ╤Ç╨╛╨┤╨╕╤é╨╡╨╗╤î╤ü╨║╨╛╨╣';
 
   @override
   String get settings_childTabPlacementSubtitle =>
-      'Выберите, где размещать вкладку, открытую из другой: сразу после исходной или в конце списка. Связь с исходной вкладкой сохраняется в обоих случаях, поэтому древовидный вид не меняется.';
+      '╨Æ╤ï╨▒╨╡╤Ç╨╕╤é╨╡, ╨│╨┤╨╡ ╤Ç╨░╨╖╨╝╨╡╤ë╨░╤é╤î ╨▓╨║╨╗╨░╨┤╨║╤â, ╨╛╤é╨║╤Ç╤ï╤é╤â╤Ä ╨╕╨╖ ╨┤╤Ç╤â╨│╨╛╨╣: ╤ü╤Ç╨░╨╖╤â ╨┐╨╛╤ü╨╗╨╡ ╨╕╤ü╤à╨╛╨┤╨╜╨╛╨╣ ╨╕╨╗╨╕ ╨▓ ╨║╨╛╨╜╤å╨╡ ╤ü╨┐╨╕╤ü╨║╨░. ╨í╨▓╤Å╨╖╤î ╤ü ╨╕╤ü╤à╨╛╨┤╨╜╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╛╨╣ ╤ü╨╛╤à╤Ç╨░╨╜╤Å╨╡╤é╤ü╤Å ╨▓ ╨╛╨▒╨╛╨╕╤à ╤ü╨╗╤â╤ç╨░╤Å╤à, ╨┐╨╛╤ì╤é╨╛╨╝╤â ╨┤╤Ç╨╡╨▓╨╛╨▓╨╕╨┤╨╜╤ï╨╣ ╨▓╨╕╨┤ ╨╜╨╡ ╨╝╨╡╨╜╤Å╨╡╤é╤ü╤Å.';
 
   @override
-  String get settings_childTabAfterOpenerLabel => 'После исходной';
+  String get settings_childTabAfterOpenerLabel => '╨ƒ╨╛╤ü╨╗╨╡ ╨╕╤ü╤à╨╛╨┤╨╜╨╛╨╣';
 
   @override
-  String get settings_childTabAtEndLabel => 'В конце';
+  String get settings_childTabAtEndLabel => '╨Æ ╨║╨╛╨╜╤å╨╡';
 
   @override
-  String get settings_createChildTabsTitle => 'Создание дочерних вкладок';
+  String get settings_createChildTabsTitle =>
+      '╨í╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨┤╨╛╤ç╨╡╤Ç╨╜╨╕╤à ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
-  String get settings_createChildTabsKeywords => 'дочерние вкладки';
+  String get settings_createChildTabsKeywords =>
+      '╨┤╨╛╤ç╨╡╤Ç╨╜╨╕╨╡ ╨▓╨║╨╗╨░╨┤╨║╨╕';
 
   @override
   String get settings_createChildTabsSubtitle =>
-      'Показывать кнопку для создания дочерней вкладки под текущей (только в древовидном виде)';
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨║╨╜╨╛╨┐╨║╤â ╨┤╨╗╤Å ╤ü╨╛╨╖╨┤╨░╨╜╨╕╤Å ╨┤╨╛╤ç╨╡╤Ç╨╜╨╡╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨┐╨╛╨┤ ╤é╨╡╨║╤â╤ë╨╡╨╣ (╤é╨╛╨╗╤î╨║╨╛ ╨▓ ╨┤╤Ç╨╡╨▓╨╛╨▓╨╕╨┤╨╜╨╛╨╝ ╨▓╨╕╨┤╨╡)';
 
   @override
-  String get settings_showContainerUiTitle =>
-      'Показывать интерфейс контейнеров';
-
-  @override
-  String get settings_showContainerUiKeywords => 'контейнеры';
-
-  @override
-  String get settings_showContainerUiSubtitle =>
-      'Показывать выбор контейнеров, меню и управление ими';
-
-  @override
-  String get settings_showIsolatedTabUiTitle =>
-      'Показывать интерфейс изолированных вкладок';
-
-  @override
-  String get settings_showIsolatedTabUiKeywords => 'изолированные вкладки';
-
-  @override
-  String get settings_showIsolatedTabUiSubtitle =>
-      'Показывать в интерфейсе варианты создания изолированных вкладок';
-
-  @override
-  String get settings_backgroundTabBehaviorTitle => 'Поведение фоновых вкладок';
+  String get settings_backgroundTabBehaviorTitle =>
+      '╨ƒ╨╛╨▓╨╡╨┤╨╡╨╜╨╕╨╡ ╤ä╨╛╨╜╨╛╨▓╤ï╤à ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
   String get settings_backgroundTabBehaviorKeywords =>
-      'переключиться, фон, новая вкладка, уведомление, запрос';
+      '╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨╕╤é╤î╤ü╤Å, ╤ä╨╛╨╜, ╨╜╨╛╨▓╨░╤Å ╨▓╨║╨╗╨░╨┤╨║╨░, ╤â╨▓╨╡╨┤╨╛╨╝╨╗╨╡╨╜╨╕╨╡, ╨╖╨░╨┐╤Ç╨╛╤ü';
 
   @override
   String get settings_backgroundTabBehaviorSubtitle =>
-      'Действует, когда действие открывает новую вкладку в фоне, например «Открыть в новой вкладке» или клонирование вкладки';
+      '╨ö╨╡╨╣╤ü╤é╨▓╤â╨╡╤é, ╨║╨╛╨│╨┤╨░ ╨┤╨╡╨╣╤ü╤é╨▓╨╕╨╡ ╨╛╤é╨║╤Ç╤ï╨▓╨░╨╡╤é ╨╜╨╛╨▓╤â╤Ä ╨▓╨║╨╗╨░╨┤╨║╤â ╨▓ ╤ä╨╛╨╜╨╡, ╨╜╨░╨┐╤Ç╨╕╨╝╨╡╤Ç ┬½╨₧╤é╨║╤Ç╤ï╤é╤î ╨▓ ╨╜╨╛╨▓╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╡┬╗ ╨╕╨╗╨╕ ╨║╨╗╨╛╨╜╨╕╤Ç╨╛╨▓╨░╨╜╨╕╨╡ ╨▓╨║╨╗╨░╨┤╨║╨╕';
 
   @override
   String get settings_backgroundTabPromptTitle =>
-      'Остаться и предложить переход';
+      '╨₧╤ü╤é╨░╤é╤î╤ü╤Å ╨╕ ╨┐╤Ç╨╡╨┤╨╗╨╛╨╢╨╕╤é╤î ╨┐╨╡╤Ç╨╡╤à╨╛╨┤';
 
   @override
   String get settings_backgroundTabPromptSubtitle =>
-      'Оставаться на текущей вкладке и показывать уведомление с действием «Перейти»';
+      '╨₧╤ü╤é╨░╨▓╨░╤é╤î╤ü╤Å ╨╜╨░ ╤é╨╡╨║╤â╤ë╨╡╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╡ ╨╕ ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╤â╨▓╨╡╨┤╨╛╨╝╨╗╨╡╨╜╨╕╨╡ ╤ü ╨┤╨╡╨╣╤ü╤é╨▓╨╕╨╡╨╝ ┬½╨ƒ╨╡╤Ç╨╡╨╣╤é╨╕┬╗';
 
   @override
-  String get settings_backgroundTabSwitchTitle => 'Переходить сразу';
+  String get settings_backgroundTabSwitchTitle =>
+      '╨ƒ╨╡╤Ç╨╡╤à╨╛╨┤╨╕╤é╤î ╤ü╤Ç╨░╨╖╤â';
 
   @override
   String get settings_backgroundTabSwitchSubtitle =>
-      'Сразу переходить на новую вкладку';
+      '╨í╤Ç╨░╨╖╤â ╨┐╨╡╤Ç╨╡╤à╨╛╨┤╨╕╤é╤î ╨╜╨░ ╨╜╨╛╨▓╤â╤Ä ╨▓╨║╨╗╨░╨┤╨║╤â';
 
   @override
-  String get settings_tabBarSwipesTitle => 'Свайпы по панели вкладок';
+  String get settings_tabBarSwipesTitle =>
+      '╨í╨▓╨░╨╣╨┐╤ï ╨┐╨╛ ╨┐╨░╨╜╨╡╨╗╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
   String get settings_tabBarSwipesKeywords =>
-      'жесты, свайп, поведение свайпов по панели вкладок';
+      '╨╢╨╡╤ü╤é╤ï, ╤ü╨▓╨░╨╣╨┐, ╨┐╨╛╨▓╨╡╨┤╨╡╨╜╨╕╨╡ ╤ü╨▓╨░╨╣╨┐╨╛╨▓ ╨┐╨╛ ╨┐╨░╨╜╨╡╨╗╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
   String get settings_tabBarSwipesSubtitle =>
-      'Выберите действие каждого свайпа в разделе «Жесты»';
+      '╨Æ╤ï╨▒╨╡╤Ç╨╕╤é╨╡ ╨┤╨╡╨╣╤ü╤é╨▓╨╕╨╡ ╨║╨░╨╢╨┤╨╛╨│╨╛ ╤ü╨▓╨░╨╣╨┐╨░ ╨▓ ╤Ç╨░╨╖╨┤╨╡╨╗╨╡ ┬½╨û╨╡╤ü╤é╤ï┬╗';
 
   @override
   String get settings_sequentialTabNavigationTitle =>
-      'Последовательный переход по вкладкам';
+      '╨ƒ╨╛╤ü╨╗╨╡╨┤╨╛╨▓╨░╤é╨╡╨╗╤î╨╜╤ï╨╣ ╨┐╨╡╤Ç╨╡╤à╨╛╨┤ ╨┐╨╛ ╨▓╨║╨╗╨░╨┤╨║╨░╨╝';
 
   @override
   String get settings_sequentialTabNavigationKeywords =>
-      'жесты, свайп, следующая вкладка, предыдущая вкладка, контейнеры, по кругу, зациклить';
+      '╨╢╨╡╤ü╤é╤ï, ╤ü╨▓╨░╨╣╨┐, ╤ü╨╗╨╡╨┤╤â╤Ä╤ë╨░╤Å ╨▓╨║╨╗╨░╨┤╨║╨░, ╨┐╤Ç╨╡╨┤╤ï╨┤╤â╤ë╨░╤Å ╨▓╨║╨╗╨░╨┤╨║╨░, ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╤ï, ╨┐╨╛ ╨║╤Ç╤â╨│╤â, ╨╖╨░╤å╨╕╨║╨╗╨╕╤é╤î';
 
   @override
   String get settings_sequentialTabNavigationSubtitle =>
-      'Действует для свайпа по панели вкладок и жестов следующей/предыдущей вкладки';
+      '╨ö╨╡╨╣╤ü╤é╨▓╤â╨╡╤é ╨┤╨╗╤Å ╤ü╨▓╨░╨╣╨┐╨░ ╨┐╨╛ ╨┐╨░╨╜╨╡╨╗╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║ ╨╕ ╨╢╨╡╤ü╤é╨╛╨▓ ╤ü╨╗╨╡╨┤╤â╤Ä╤ë╨╡╨╣/╨┐╤Ç╨╡╨┤╤ï╨┤╤â╤ë╨╡╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╕';
 
   @override
   String get settings_continueIntoNextContainerTitle =>
-      'Переходить в следующий контейнер';
+      '╨ƒ╨╡╤Ç╨╡╤à╨╛╨┤╨╕╤é╤î ╨▓ ╤ü╨╗╨╡╨┤╤â╤Ä╤ë╨╕╨╣ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç';
 
   @override
   String get settings_continueIntoNextContainerSubtitle =>
-      'Переход дальше первой или последней вкладки контейнера ведёт в соседний контейнер. Если выключено, навигация остаётся внутри текущего контейнера.';
+      '╨ƒ╨╡╤Ç╨╡╤à╨╛╨┤ ╨┤╨░╨╗╤î╤ê╨╡ ╨┐╨╡╤Ç╨▓╨╛╨╣ ╨╕╨╗╨╕ ╨┐╨╛╤ü╨╗╨╡╨┤╨╜╨╡╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╨░ ╨▓╨╡╨┤╤æ╤é ╨▓ ╤ü╨╛╤ü╨╡╨┤╨╜╨╕╨╣ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç. ╨ò╤ü╨╗╨╕ ╨▓╤ï╨║╨╗╤Ä╤ç╨╡╨╜╨╛, ╨╜╨░╨▓╨╕╨│╨░╤å╨╕╤Å ╨╛╤ü╤é╨░╤æ╤é╤ü╤Å ╨▓╨╜╤â╤é╤Ç╨╕ ╤é╨╡╨║╤â╤ë╨╡╨│╨╛ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╨░.';
 
   @override
-  String get settings_loopAroundTitle => 'По кругу';
+  String get settings_loopAroundTitle => '╨ƒ╨╛ ╨║╤Ç╤â╨│╤â';
 
   @override
   String get settings_loopAroundSubtitle =>
-      'Переход дальше последней вкладки продолжается с первой, и наоборот.';
+      '╨ƒ╨╡╤Ç╨╡╤à╨╛╨┤ ╨┤╨░╨╗╤î╤ê╨╡ ╨┐╨╛╤ü╨╗╨╡╨┤╨╜╨╡╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨┐╤Ç╨╛╨┤╨╛╨╗╨╢╨░╨╡╤é╤ü╤Å ╤ü ╨┐╨╡╤Ç╨▓╨╛╨╣, ╨╕ ╨╜╨░╨╛╨▒╨╛╤Ç╨╛╤é.';
 
   @override
-  String get settings_openLinksInAppsTitle => 'Открывать ссылки в приложениях';
+  String get settings_openLinksInAppsTitle =>
+      '╨₧╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╤ü╤ü╤ï╨╗╨║╨╕ ╨▓ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å╤à';
 
   @override
   String get settings_openLinksInAppsKeywords =>
-      'ссылки на приложения, внешние приложения, app links';
+      '╤ü╤ü╤ï╨╗╨║╨╕ ╨╜╨░ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å, ╨▓╨╜╨╡╤ê╨╜╨╕╨╡ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å, app links';
 
   @override
   String get settings_openLinksInAppsSubtitle =>
-      'Выберите, как обрабатываются ссылки, которые можно открыть в других приложениях';
+      '╨Æ╤ï╨▒╨╡╤Ç╨╕╤é╨╡, ╨║╨░╨║ ╨╛╨▒╤Ç╨░╨▒╨░╤é╤ï╨▓╨░╤Ä╤é╤ü╤Å ╤ü╤ü╤ï╨╗╨║╨╕, ╨║╨╛╤é╨╛╤Ç╤ï╨╡ ╨╝╨╛╨╢╨╜╨╛ ╨╛╤é╨║╤Ç╤ï╤é╤î ╨▓ ╨┤╤Ç╤â╨│╨╕╤à ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å╤à';
 
   @override
-  String get settings_appLinksAlwaysTitle => 'Всегда';
+  String get settings_appLinksAlwaysTitle => '╨Æ╤ü╨╡╨│╨┤╨░';
 
   @override
   String get settings_appLinksAlwaysSubtitle =>
-      'Всегда открывать ссылки в их приложениях без вопроса';
+      '╨Æ╤ü╨╡╨│╨┤╨░ ╨╛╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╤ü╤ü╤ï╨╗╨║╨╕ ╨▓ ╨╕╤à ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å╤à ╨▒╨╡╨╖ ╨▓╨╛╨┐╤Ç╨╛╤ü╨░';
 
   @override
-  String get settings_appLinksAskTitle => 'Спрашивать перед открытием';
+  String get settings_appLinksAskTitle =>
+      '╨í╨┐╤Ç╨░╤ê╨╕╨▓╨░╤é╤î ╨┐╨╡╤Ç╨╡╨┤ ╨╛╤é╨║╤Ç╤ï╤é╨╕╨╡╨╝';
 
   @override
   String get settings_appLinksAskSubtitle =>
-      'Показывать запрос перед открытием ссылок в приложениях';
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨╖╨░╨┐╤Ç╨╛╤ü ╨┐╨╡╤Ç╨╡╨┤ ╨╛╤é╨║╤Ç╤ï╤é╨╕╨╡╨╝ ╤ü╤ü╤ï╨╗╨╛╨║ ╨▓ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å╤à';
 
   @override
-  String get settings_appLinksNeverTitle => 'Никогда';
+  String get settings_appLinksNeverTitle => '╨¥╨╕╨║╨╛╨│╨┤╨░';
 
   @override
   String get settings_appLinksNeverSubtitle =>
-      'Всегда открывать ссылки в браузере, а не в приложениях';
+      '╨Æ╤ü╨╡╨│╨┤╨░ ╨╛╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╤ü╤ü╤ï╨╗╨║╨╕ ╨▓ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨╡, ╨░ ╨╜╨╡ ╨▓ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å╤à';
 
   @override
-  String get settings_waitForAnswerTitle => 'Ждать вашего ответа';
+  String get settings_waitForAnswerTitle =>
+      '╨û╨┤╨░╤é╤î ╨▓╨░╤ê╨╡╨│╨╛ ╨╛╤é╨▓╨╡╤é╨░';
 
   @override
   String get settings_waitForAnswerSubtitle =>
-      'Не загружать страницу в фоне, пока показывается запрос. Сайт не получает запрос, если вы не останетесь в браузере.';
+      '╨¥╨╡ ╨╖╨░╨│╤Ç╤â╨╢╨░╤é╤î ╤ü╤é╤Ç╨░╨╜╨╕╤å╤â ╨▓ ╤ä╨╛╨╜╨╡, ╨┐╨╛╨║╨░ ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╨╡╤é╤ü╤Å ╨╖╨░╨┐╤Ç╨╛╤ü. ╨í╨░╨╣╤é ╨╜╨╡ ╨┐╨╛╨╗╤â╤ç╨░╨╡╤é ╨╖╨░╨┐╤Ç╨╛╤ü, ╨╡╤ü╨╗╨╕ ╨▓╤ï ╨╜╨╡ ╨╛╤ü╤é╨░╨╜╨╡╤é╨╡╤ü╤î ╨▓ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨╡.';
 
   @override
   String get settings_offerAppStoreFallbackTitle =>
-      'Предлагать магазин приложений';
+      '╨ƒ╤Ç╨╡╨┤╨╗╨░╨│╨░╤é╤î ╨╝╨░╨│╨░╨╖╨╕╨╜ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╨╣';
 
   @override
   String get settings_offerAppStoreFallbackSubtitle =>
-      'Если ссылка ведёт в неустановленное приложение и веб-версии нет, предлагать открыть магазин приложений';
+      '╨ò╤ü╨╗╨╕ ╤ü╤ü╤ï╨╗╨║╨░ ╨▓╨╡╨┤╤æ╤é ╨▓ ╨╜╨╡╤â╤ü╤é╨░╨╜╨╛╨▓╨╗╨╡╨╜╨╜╨╛╨╡ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╨╡ ╨╕ ╨▓╨╡╨▒-╨▓╨╡╤Ç╤ü╨╕╨╕ ╨╜╨╡╤é, ╨┐╤Ç╨╡╨┤╨╗╨░╨│╨░╤é╤î ╨╛╤é╨║╤Ç╤ï╤é╤î ╨╝╨░╨│╨░╨╖╨╕╨╜ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╨╣';
 
   @override
   String get settings_allowLoginAppCallbacksTitle =>
-      'Разрешить приложениям получать результат входа';
+      '╨á╨░╨╖╤Ç╨╡╤ê╨╕╤é╤î ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å╨╝ ╨┐╨╛╨╗╤â╤ç╨░╤é╤î ╤Ç╨╡╨╖╤â╨╗╤î╤é╨░╤é ╨▓╤à╨╛╨┤╨░';
 
   @override
   String get settings_allowLoginAppCallbacksSubtitle =>
-      'Разрешить приложениям, открывшим Custom Tab, получать результат входа, даже если ссылки настроены никогда не открываться в приложениях';
+      '╨á╨░╨╖╤Ç╨╡╤ê╨╕╤é╤î ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å╨╝, ╨╛╤é╨║╤Ç╤ï╨▓╤ê╨╕╨╝ Custom Tab, ╨┐╨╛╨╗╤â╤ç╨░╤é╤î ╤Ç╨╡╨╖╤â╨╗╤î╤é╨░╤é ╨▓╤à╨╛╨┤╨░, ╨┤╨░╨╢╨╡ ╨╡╤ü╨╗╨╕ ╤ü╤ü╤ï╨╗╨║╨╕ ╨╜╨░╤ü╤é╤Ç╨╛╨╡╨╜╤ï ╨╜╨╕╨║╨╛╨│╨┤╨░ ╨╜╨╡ ╨╛╤é╨║╤Ç╤ï╨▓╨░╤é╤î╤ü╤Å ╨▓ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å╤à';
 
   @override
-  String get settings_appLinkContainerFallbackName => 'Контейнер';
+  String get settings_appLinkContainerFallbackName => '╨Ü╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç';
 
   @override
   String get settings_appLinkOverrideModeAlways =>
-      'Всегда открывать в приложениях';
+      '╨Æ╤ü╨╡╨│╨┤╨░ ╨╛╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╨▓ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å╤à';
 
   @override
-  String get settings_appLinkOverrideModeAsk => 'Спрашивает перед открытием';
+  String get settings_appLinkOverrideModeAsk =>
+      '╨í╨┐╤Ç╨░╤ê╨╕╨▓╨░╨╡╤é ╨┐╨╡╤Ç╨╡╨┤ ╨╛╤é╨║╤Ç╤ï╤é╨╕╨╡╨╝';
 
   @override
   String get settings_appLinkOverrideModeNever =>
-      'Всегда оставляет ссылки в браузере';
+      '╨Æ╤ü╨╡╨│╨┤╨░ ╨╛╤ü╤é╨░╨▓╨╗╤Å╨╡╤é ╤ü╤ü╤ï╨╗╨║╨╕ ╨▓ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨╡';
 
   @override
   String get settings_appLinkContainerOverridesHeader =>
-      'Контейнеры с собственными настройками ссылок на приложения';
+      '╨Ü╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╤ï ╤ü ╤ü╨╛╨▒╤ü╤é╨▓╨╡╨╜╨╜╤ï╨╝╨╕ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨░╨╝╨╕ ╤ü╤ü╤ï╨╗╨╛╨║ ╨╜╨░ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å';
 
   @override
   String settings_appLinkOverrideSummaryWithRules(String mode, int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count запомненного правила',
-      many: '$count запомненных правил',
-      few: '$count запомненных правила',
-      one: '$count запомненное правило',
+      other: '$count ╨╖╨░╨┐╨╛╨╝╨╜╨╡╨╜╨╜╨╛╨│╨╛ ╨┐╤Ç╨░╨▓╨╕╨╗╨░',
+      many: '$count ╨╖╨░╨┐╨╛╨╝╨╜╨╡╨╜╨╜╤ï╤à ╨┐╤Ç╨░╨▓╨╕╨╗',
+      few: '$count ╨╖╨░╨┐╨╛╨╝╨╜╨╡╨╜╨╜╤ï╤à ╨┐╤Ç╨░╨▓╨╕╨╗╨░',
+      one: '$count ╨╖╨░╨┐╨╛╨╝╨╜╨╡╨╜╨╜╨╛╨╡ ╨┐╤Ç╨░╨▓╨╕╨╗╨╛',
     );
-    return '$mode · $_temp0';
+    return '$mode ┬╖ $_temp0';
   }
 
   @override
   String get settings_appLinkRememberedRulesHeader =>
-      'Запомненные правила для сайтов';
+      '╨ù╨░╨┐╨╛╨╝╨╜╨╡╨╜╨╜╤ï╨╡ ╨┐╤Ç╨░╨▓╨╕╨╗╨░ ╨┤╨╗╤Å ╤ü╨░╨╣╤é╨╛╨▓';
 
   @override
   String get settings_appLinkRuleAlwaysOpenLabel =>
-      'Всегда открывать в приложении';
+      '╨Æ╤ü╨╡╨│╨┤╨░ ╨╛╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╨▓ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╨╕';
 
   @override
   String get settings_appLinkRuleAlwaysKeepLabel =>
-      'Всегда оставлять в браузере';
+      '╨Æ╤ü╨╡╨│╨┤╨░ ╨╛╤ü╤é╨░╨▓╨╗╤Å╤é╤î ╨▓ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨╡';
 
   @override
-  String get settings_appLinkRuleRemoveTooltip => 'Удалить правило';
+  String get settings_appLinkRuleRemoveTooltip =>
+      '╨ú╨┤╨░╨╗╨╕╤é╤î ╨┐╤Ç╨░╨▓╨╕╨╗╨╛';
 
   @override
   String get settings_globalDesktopModeTitle =>
-      'Всегда запрашивать версию для ПК';
+      '╨Æ╤ü╨╡╨│╨┤╨░ ╨╖╨░╨┐╤Ç╨░╤ê╨╕╨▓╨░╤é╤î ╨▓╨╡╤Ç╤ü╨╕╤Ä ╨┤╨╗╤Å ╨ƒ╨Ü';
 
   @override
   String get settings_globalDesktopModeKeywords =>
-      'версия для компьютера, режим пк, user agent, мобильная версия, планшет';
+      '╨▓╨╡╤Ç╤ü╨╕╤Å ╨┤╨╗╤Å ╨║╨╛╨╝╨┐╤î╤Ä╤é╨╡╤Ç╨░, ╤Ç╨╡╨╢╨╕╨╝ ╨┐╨║, user agent, ╨╝╨╛╨▒╨╕╨╗╤î╨╜╨░╤Å ╨▓╨╡╤Ç╤ü╨╕╤Å, ╨┐╨╗╨░╨╜╤ê╨╡╤é';
 
   @override
   String get settings_globalDesktopModeSubtitle =>
-      'Открывать новые вкладки в версии для ПК по умолчанию. Версию для ПК по-прежнему можно переключать для каждой вкладки в меню страницы.';
+      '╨₧╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╨╜╨╛╨▓╤ï╨╡ ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨▓ ╨▓╨╡╤Ç╤ü╨╕╨╕ ╨┤╨╗╤Å ╨ƒ╨Ü ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä. ╨Æ╨╡╤Ç╤ü╨╕╤Ä ╨┤╨╗╤Å ╨ƒ╨Ü ╨┐╨╛-╨┐╤Ç╨╡╨╢╨╜╨╡╨╝╤â ╨╝╨╛╨╢╨╜╨╛ ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╤î ╨┤╨╗╤Å ╨║╨░╨╢╨┤╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨▓ ╨╝╨╡╨╜╤Ä ╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï.';
 
   @override
-  String get settings_desktopModeSitesTitle => 'Сайты в версии для ПК';
+  String get settings_desktopModeSitesTitle =>
+      '╨í╨░╨╣╤é╤ï ╨▓ ╨▓╨╡╤Ç╤ü╨╕╨╕ ╨┤╨╗╤Å ╨ƒ╨Ü';
 
   @override
   String get settings_desktopModeSitesKeywords =>
-      'версия для пк, для отдельных сайтов, user agent, исключения';
+      '╨▓╨╡╤Ç╤ü╨╕╤Å ╨┤╨╗╤Å ╨┐╨║, ╨┤╨╗╤Å ╨╛╤é╨┤╨╡╨╗╤î╨╜╤ï╤à ╤ü╨░╨╣╤é╨╛╨▓, user agent, ╨╕╤ü╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_desktopModeSitesSubtitle =>
-      'Сайты, которые всегда загружаются в версии для ПК';
+      '╨í╨░╨╣╤é╤ï, ╨║╨╛╤é╨╛╤Ç╤ï╨╡ ╨▓╤ü╨╡╨│╨┤╨░ ╨╖╨░╨│╤Ç╤â╨╢╨░╤Ä╤é╤ü╤Å ╨▓ ╨▓╨╡╤Ç╤ü╨╕╨╕ ╨┤╨╗╤Å ╨ƒ╨Ü';
 
   @override
-  String get settings_pullToRefreshTitle => 'Потянуть для обновления';
+  String get settings_pullToRefreshTitle =>
+      '╨ƒ╨╛╤é╤Å╨╜╤â╤é╤î ╨┤╨╗╤Å ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤Å';
 
   @override
-  String get settings_pullToRefreshKeywords => 'перезагрузка, обновить';
+  String get settings_pullToRefreshKeywords =>
+      '╨┐╨╡╤Ç╨╡╨╖╨░╨│╤Ç╤â╨╖╨║╨░, ╨╛╨▒╨╜╨╛╨▓╨╕╤é╤î';
 
   @override
   String get settings_pullToRefreshSubtitle =>
-      'Проведите вниз по странице, чтобы перезагрузить её';
+      '╨ƒ╤Ç╨╛╨▓╨╡╨┤╨╕╤é╨╡ ╨▓╨╜╨╕╨╖ ╨┐╨╛ ╤ü╤é╤Ç╨░╨╜╨╕╤å╨╡, ╤ç╤é╨╛╨▒╤ï ╨┐╨╡╤Ç╨╡╨╖╨░╨│╤Ç╤â╨╖╨╕╤é╤î ╨╡╤æ';
 
   @override
-  String get settings_pullToRefreshDistanceTitle => 'Расстояние для обновления';
+  String get settings_pullToRefreshDistanceTitle =>
+      '╨á╨░╤ü╤ü╤é╨╛╤Å╨╜╨╕╨╡ ╨┤╨╗╤Å ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_pullToRefreshDistanceKeywords =>
-      'чувствительность, порог, перезагрузка, свайп';
+      '╤ç╤â╨▓╤ü╤é╨▓╨╕╤é╨╡╨╗╤î╨╜╨╛╤ü╤é╤î, ╨┐╨╛╤Ç╨╛╨│, ╨┐╨╡╤Ç╨╡╨╖╨░╨│╤Ç╤â╨╖╨║╨░, ╤ü╨▓╨░╨╣╨┐';
 
   @override
   String get settings_pullToRefreshDistanceSubtitle =>
-      'Насколько далеко нужно потянуть вниз, чтобы страница перезагрузилась, относительно значения по умолчанию';
+      '╨¥╨░╤ü╨║╨╛╨╗╤î╨║╨╛ ╨┤╨░╨╗╨╡╨║╨╛ ╨╜╤â╨╢╨╜╨╛ ╨┐╨╛╤é╤Å╨╜╤â╤é╤î ╨▓╨╜╨╕╨╖, ╤ç╤é╨╛╨▒╤ï ╤ü╤é╤Ç╨░╨╜╨╕╤å╨░ ╨┐╨╡╤Ç╨╡╨╖╨░╨│╤Ç╤â╨╖╨╕╨╗╨░╤ü╤î, ╨╛╤é╨╜╨╛╤ü╨╕╤é╨╡╨╗╤î╨╜╨╛ ╨╖╨╜╨░╤ç╨╡╨╜╨╕╤Å ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä';
 
   @override
   String get settings_customTabsTitle => 'Custom Tabs';
 
   @override
   String get settings_customTabsKeywords =>
-      'custom tabs, встроенный браузер, chrome custom tabs, внешнее приложение, поделиться';
+      'custom tabs, ╨▓╤ü╤é╤Ç╨╛╨╡╨╜╨╜╤ï╨╣ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç, chrome custom tabs, ╨▓╨╜╨╡╤ê╨╜╨╡╨╡ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╨╡, ╨┐╨╛╨┤╨╡╨╗╨╕╤é╤î╤ü╤Å';
 
   @override
   String get settings_customTabsSubtitle =>
-      'Разрешить другим приложениям открывать ссылки в облегчённой встроенной вкладке. Если выключено, такие ссылки и отправленные URL-адреса открываются обычными вкладками в основном браузере.';
+      '╨á╨░╨╖╤Ç╨╡╤ê╨╕╤é╤î ╨┤╤Ç╤â╨│╨╕╨╝ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å╨╝ ╨╛╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╤ü╤ü╤ï╨╗╨║╨╕ ╨▓ ╨╛╨▒╨╗╨╡╨│╤ç╤æ╨╜╨╜╨╛╨╣ ╨▓╤ü╤é╤Ç╨╛╨╡╨╜╨╜╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╡. ╨ò╤ü╨╗╨╕ ╨▓╤ï╨║╨╗╤Ä╤ç╨╡╨╜╨╛, ╤é╨░╨║╨╕╨╡ ╤ü╤ü╤ï╨╗╨║╨╕ ╨╕ ╨╛╤é╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╜╤ï╨╡ URL-╨░╨┤╤Ç╨╡╤ü╨░ ╨╛╤é╨║╤Ç╤ï╨▓╨░╤Ä╤é╤ü╤Å ╨╛╨▒╤ï╤ç╨╜╤ï╨╝╨╕ ╨▓╨║╨╗╨░╨┤╨║╨░╨╝╨╕ ╨▓ ╨╛╤ü╨╜╨╛╨▓╨╜╨╛╨╝ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨╡.';
 
   @override
   String get settings_doubleBackCloseTabTitle =>
-      'Двойное «Назад» закрывает вкладку';
+      '╨ö╨▓╨╛╨╣╨╜╨╛╨╡ ┬½╨¥╨░╨╖╨░╨┤┬╗ ╨╖╨░╨║╤Ç╤ï╨▓╨░╨╡╤é ╨▓╨║╨╗╨░╨┤╨║╤â';
 
   @override
-  String get settings_doubleBackCloseTabKeywords => 'кнопка назад';
+  String get settings_doubleBackCloseTabKeywords => '╨║╨╜╨╛╨┐╨║╨░ ╨╜╨░╨╖╨░╨┤';
 
   @override
   String get settings_doubleBackCloseTabSubtitle =>
-      'Если включено, двойное нажатие «Назад» закрывает вкладку. Если выключено, кнопка «Назад» только перемещает по истории страницы.';
+      '╨ò╤ü╨╗╨╕ ╨▓╨║╨╗╤Ä╤ç╨╡╨╜╨╛, ╨┤╨▓╨╛╨╣╨╜╨╛╨╡ ╨╜╨░╨╢╨░╤é╨╕╨╡ ┬½╨¥╨░╨╖╨░╨┤┬╗ ╨╖╨░╨║╤Ç╤ï╨▓╨░╨╡╤é ╨▓╨║╨╗╨░╨┤╨║╤â. ╨ò╤ü╨╗╨╕ ╨▓╤ï╨║╨╗╤Ä╤ç╨╡╨╜╨╛, ╨║╨╜╨╛╨┐╨║╨░ ┬½╨¥╨░╨╖╨░╨┤┬╗ ╤é╨╛╨╗╤î╨║╨╛ ╨┐╨╡╤Ç╨╡╨╝╨╡╤ë╨░╨╡╤é ╨┐╨╛ ╨╕╤ü╤é╨╛╤Ç╨╕╨╕ ╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï.';
 
   @override
   String get settings_allowNonManifestPwaInstallTitle =>
-      'Устанавливать сайты как приложения';
+      '╨ú╤ü╤é╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╤é╤î ╤ü╨░╨╣╤é╤ï ╨║╨░╨║ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_allowNonManifestPwaInstallKeywords =>
-      'pwa, веб-приложения';
+      'pwa, ╨▓╨╡╨▒-╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_allowNonManifestPwaInstallSubtitle =>
-      'Разрешить устанавливать сайты без манифеста PWA как отдельные приложения';
+      '╨á╨░╨╖╤Ç╨╡╤ê╨╕╤é╤î ╤â╤ü╤é╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╤é╤î ╨╗╤Ä╨▒╨╛╨╣ ╤ü╨░╨╣╤é ╨║╨░╨║ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╨╡, ╨┤╨░╨╢╨╡ ╨╡╤ü╨╗╨╕ ╨╛╨╜ ╨┤╨╗╤Å ╤ì╤é╨╛╨│╨╛ ╨╜╨╡ ╨┐╤Ç╨╡╨┤╨╜╨░╨╖╨╜╨░╤ç╨╡╨╜';
 
   @override
-  String get settings_urlCleanerTitle => 'Очистка URL-адресов';
+  String get settings_urlCleanerTitle => '╨₧╤ç╨╕╤ü╤é╨║╨░ URL-╨░╨┤╤Ç╨╡╤ü╨╛╨▓';
 
   @override
   String get settings_urlCleanerKeywords =>
-      'utm, параметры отслеживания, трекинг';
+      'utm, ╨┐╨░╤Ç╨░╨╝╨╡╤é╤Ç╤ï ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╨╜╨╕╤Å, ╤é╤Ç╨╡╨║╨╕╨╜╨│';
 
   @override
   String get settings_urlCleanerSubtitle =>
-      'Правила удаления отслеживания и обновления каталога';
+      '╨ú╨┤╨░╨╗╤Å╤é╤î ╨╕╨╖ ╤ü╤ü╤ï╨╗╨╛╨║ ╤ç╨░╤ü╤é╨╕ ╨┤╨╗╤Å ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╨╜╨╕╤Å';
 
   @override
-  String get settings_unshortenerTitle => 'Разворачивание ссылок';
+  String get settings_unshortenerTitle =>
+      '╨á╨░╨╖╨▓╨╛╤Ç╨░╤ç╨╕╨▓╨░╨╜╨╕╨╡ ╤ü╤ü╤ï╨╗╨╛╨║';
 
   @override
   String get settings_unshortenerKeywords =>
-      'короткие ссылки, перенаправления, редиректы';
+      '╨║╨╛╤Ç╨╛╤é╨║╨╕╨╡ ╤ü╤ü╤ï╨╗╨║╨╕, ╨┐╨╡╤Ç╨╡╨╜╨░╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╤Å, ╤Ç╨╡╨┤╨╕╤Ç╨╡╨║╤é╤ï';
 
   @override
   String get settings_unshortenerSubtitle =>
-      'Раскрытие коротких ссылок и токен API';
+      '╨á╨░╤ü╨║╤Ç╤ï╤é╨╕╨╡ ╨║╨╛╤Ç╨╛╤é╨║╨╕╤à ╤ü╤ü╤ï╨╗╨╛╨║ ╨╕ ╤é╨╛╨║╨╡╨╜ API';
 
   @override
-  String get settings_contextualToolbarSearchHint => 'Поиск кнопок панели';
+  String get settings_contextualToolbarSearchHint =>
+      '╨ƒ╨╛╨╕╤ü╨║ ╨║╨╜╨╛╨┐╨╛╨║ ╨┐╨░╨╜╨╡╨╗╨╕';
 
   @override
   String get settings_contextualToolbarTitleDefault =>
-      'Настройка панели инструментов';
+      '╨¥╨░╤ü╤é╤Ç╨╛╨╣╨║╨░ ╨┐╨░╨╜╨╡╨╗╨╕ ╨╕╨╜╤ü╤é╤Ç╤â╨╝╨╡╨╜╤é╨╛╨▓';
 
   @override
   String get settings_contextualToolbarTitleQuickSwitcher =>
-      'Настройка кнопок переключателя';
+      '╨¥╨░╤ü╤é╤Ç╨╛╨╣╨║╨░ ╨║╨╜╨╛╨┐╨╛╨║ ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╤Å';
 
   @override
-  String get settings_contextualToolbarResetToDefaults =>
-      'Сбросить по умолчанию';
+  String get settings_contextualToolbarEnabledSection => '╨Æ╨║╨╗╤Ä╤ç╤æ╨╜╨╜╤ï╨╡';
 
   @override
-  String get settings_contextualToolbarEnabledSection => 'Включённые';
-
-  @override
-  String get settings_contextualToolbarDisabledSection => 'Выключенные';
+  String get settings_contextualToolbarDisabledSection =>
+      '╨Æ╤ï╨║╨╗╤Ä╤ç╨╡╨╜╨╜╤ï╨╡';
 
   @override
   String get settings_contextualToolbarNoEnabledButtons =>
-      'Нет включённых кнопок. Включите кнопку ниже.';
+      '╨¥╨╡╤é ╨▓╨║╨╗╤Ä╤ç╤æ╨╜╨╜╤ï╤à ╨║╨╜╨╛╨┐╨╛╨║. ╨Æ╨║╨╗╤Ä╤ç╨╕╤é╨╡ ╨║╨╜╨╛╨┐╨║╤â ╨╜╨╕╨╢╨╡.';
 
   @override
   String settings_contextualToolbarNoEnabledButtonsMatch(String query) {
-    return 'Нет включённых кнопок, соответствующих «$query».';
+    return '╨¥╨╡╤é ╨▓╨║╨╗╤Ä╤ç╤æ╨╜╨╜╤ï╤à ╨║╨╜╨╛╨┐╨╛╨║, ╤ü╨╛╨╛╤é╨▓╨╡╤é╤ü╤é╨▓╤â╤Ä╤ë╨╕╤à ┬½$query┬╗.';
   }
 
   @override
   String get settings_contextualToolbarAllButtonsEnabled =>
-      'Все кнопки включены.';
+      '╨Æ╤ü╨╡ ╨║╨╜╨╛╨┐╨║╨╕ ╨▓╨║╨╗╤Ä╤ç╨╡╨╜╤ï.';
 
   @override
   String settings_contextualToolbarNoDisabledButtonsMatch(String query) {
-    return 'Нет выключенных кнопок, соответствующих «$query».';
+    return '╨¥╨╡╤é ╨▓╤ï╨║╨╗╤Ä╤ç╨╡╨╜╨╜╤ï╤à ╨║╨╜╨╛╨┐╨╛╨║, ╤ü╨╛╨╛╤é╨▓╨╡╤é╤ü╤é╨▓╤â╤Ä╤ë╨╕╤à ┬½$query┬╗.';
   }
 
   @override
-  String get settings_longPressNoneTitle => 'Нет';
+  String get settings_longPressNoneTitle => '╨¥╨╡╤é';
 
   @override
   String get settings_longPressNoneDescription =>
-      'По умолчанию для этой кнопки: удержание ничего не делает';
+      '╨ƒ╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä ╨┤╨╗╤Å ╤ì╤é╨╛╨╣ ╨║╨╜╨╛╨┐╨║╨╕: ╤â╨┤╨╡╤Ç╨╢╨░╨╜╨╕╨╡ ╨╜╨╕╤ç╨╡╨│╨╛ ╨╜╨╡ ╨┤╨╡╨╗╨░╨╡╤é';
 
   @override
   String get settings_longPressDefaultDescription =>
-      'По умолчанию для этой кнопки';
+      '╨ƒ╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä ╨┤╨╗╤Å ╤ì╤é╨╛╨╣ ╨║╨╜╨╛╨┐╨║╨╕';
 
   @override
-  String get settings_longPressTitle => 'Долгое нажатие';
+  String get settings_longPressTitle => '╨ö╨╛╨╗╨│╨╛╨╡ ╨╜╨░╨╢╨░╤é╨╕╨╡';
 
   @override
-  String get settings_longPressDescription => 'Что делает удержание кнопки';
+  String get settings_longPressDescription =>
+      '╨º╤é╨╛ ╨┤╨╡╨╗╨░╨╡╤é ╤â╨┤╨╡╤Ç╨╢╨░╨╜╨╕╨╡ ╨║╨╜╨╛╨┐╨║╨╕';
 
   @override
-  String get settings_fallbackGreyOutLabel => 'Затенить';
+  String get settings_fallbackGreyOutLabel => '╨ù╨░╤é╨╡╨╜╨╕╤é╤î';
 
   @override
   String get settings_fallbackGreyOutDescription =>
-      'Оставить эту кнопку на месте в затенённом виде';
+      '╨₧╤ü╤é╨░╨▓╨╕╤é╤î ╤ì╤é╤â ╨║╨╜╨╛╨┐╨║╤â ╨╜╨░ ╨╝╨╡╤ü╤é╨╡ ╨▓ ╨╖╨░╤é╨╡╨╜╤æ╨╜╨╜╨╛╨╝ ╨▓╨╕╨┤╨╡';
 
   @override
-  String get settings_fallbackIfUnavailableTitle => 'Если недоступна';
+  String get settings_fallbackIfUnavailableTitle =>
+      '╨ò╤ü╨╗╨╕ ╨╜╨╡╨┤╨╛╤ü╤é╤â╨┐╨╜╨░';
 
   @override
   String get settings_fallbackIfUnavailableDescription =>
-      'Показывается вместо этой кнопки, пока её нельзя использовать';
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╨╡╤é╤ü╤Å ╨▓╨╝╨╡╤ü╤é╨╛ ╤ì╤é╨╛╨╣ ╨║╨╜╨╛╨┐╨║╨╕, ╨┐╨╛╨║╨░ ╨╡╤æ ╨╜╨╡╨╗╤î╨╖╤Å ╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╤î';
 
   @override
   String get settings_customTrackingProtectionTitle =>
-      'Своя защита от отслеживания';
+      '╨í╨▓╨╛╤Å ╨╖╨░╤ë╨╕╤é╨░ ╨╛╤é ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╨╜╨╕╤Å';
 
   @override
   String get settings_customTrackingProtectionSubtitle =>
-      'Собственные настройки куки, контента, трекеров и цифровых отпечатков.';
+      '╨í╨╛╨▒╤ü╤é╨▓╨╡╨╜╨╜╤ï╨╡ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨║╤â╨║╨╕, ╨║╨╛╨╜╤é╨╡╨╜╤é╨░, ╤é╤Ç╨╡╨║╨╡╤Ç╨╛╨▓ ╨╕ ╤å╨╕╤ä╤Ç╨╛╨▓╤ï╤à ╨╛╤é╨┐╨╡╤ç╨░╤é╨║╨╛╨▓.';
 
   @override
   String get settings_fixMajorIssuesTitle =>
-      'Исправлять серьёзные проблемы сайтов';
+      '╨ÿ╤ü╨┐╤Ç╨░╨▓╨╗╤Å╤é╤î ╤ü╨╡╤Ç╤î╤æ╨╖╨╜╤ï╨╡ ╨┐╤Ç╨╛╨▒╨╗╨╡╨╝╤ï ╤ü╨░╨╣╤é╨╛╨▓';
 
   @override
   String get settings_fixMajorIssuesSubtitle =>
-      'Применять исключения, необходимые для предотвращения серьёзных поломок сайтов (рекомендуется)';
+      '╨ƒ╤Ç╨╕╨╝╨╡╨╜╤Å╤é╤î ╨╕╤ü╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å, ╨╜╨╡╨╛╨▒╤à╨╛╨┤╨╕╨╝╤ï╨╡ ╨┤╨╗╤Å ╨┐╤Ç╨╡╨┤╨╛╤é╨▓╤Ç╨░╤ë╨╡╨╜╨╕╤Å ╤ü╨╡╤Ç╤î╤æ╨╖╨╜╤ï╤à ╨┐╨╛╨╗╨╛╨╝╨╛╨║ ╤ü╨░╨╣╤é╨╛╨▓ (╤Ç╨╡╨║╨╛╨╝╨╡╨╜╨┤╤â╨╡╤é╤ü╤Å)';
 
   @override
   String get settings_fixMinorIssuesTitle =>
-      'Исправлять мелкие проблемы сайтов';
+      '╨ÿ╤ü╨┐╤Ç╨░╨▓╨╗╤Å╤é╤î ╨╝╨╡╨╗╨║╨╕╨╡ ╨┐╤Ç╨╛╨▒╨╗╨╡╨╝╤ï ╤ü╨░╨╣╤é╨╛╨▓';
 
   @override
   String get settings_fixMinorIssuesSubtitle =>
-      'Применять исключения для исправления мелких проблем и включения удобных функций';
+      '╨ƒ╤Ç╨╕╨╝╨╡╨╜╤Å╤é╤î ╨╕╤ü╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å ╨┤╨╗╤Å ╨╕╤ü╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╤Å ╨╝╨╡╨╗╨║╨╕╤à ╨┐╤Ç╨╛╨▒╨╗╨╡╨╝ ╨╕ ╨▓╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å ╤â╨┤╨╛╨▒╨╜╤ï╤à ╤ä╤â╨╜╨║╤å╨╕╨╣';
 
   @override
-  String get settings_blockCookiesTitle => 'Блокировать куки';
+  String get settings_blockCookiesTitle => '╨æ╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╤é╤î ╨║╤â╨║╨╕';
 
   @override
   String get settings_blockCookiesSubtitle =>
-      'Блокировать куки согласно политике ниже';
+      '╨æ╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╤é╤î ╨║╤â╨║╨╕ ╤ü╨╛╨│╨╗╨░╤ü╨╜╨╛ ╨┐╨╛╨╗╨╕╤é╨╕╨║╨╡ ╨╜╨╕╨╢╨╡';
 
   @override
-  String get settings_cookiePolicyTitle => 'Политика куки';
+  String get settings_cookiePolicyTitle => '╨ƒ╨╛╨╗╨╕╤é╨╕╨║╨░ ╨║╤â╨║╨╕';
 
   @override
   String get settings_cookiePolicyTotalProtectionLabel =>
-      'Полная защита куки (рекомендуется)';
+      '╨ƒ╨╛╨╗╨╜╨░╤Å ╨╖╨░╤ë╨╕╤é╨░ ╨║╤â╨║╨╕ (╤Ç╨╡╨║╨╛╨╝╨╡╨╜╨┤╤â╨╡╤é╤ü╤Å)';
 
   @override
   String get settings_cookiePolicyCrossSiteTrackersLabel =>
-      'Межсайтовые трекеры и трекеры социальных сетей';
+      '╨£╨╡╨╢╤ü╨░╨╣╤é╨╛╨▓╤ï╨╡ ╤é╤Ç╨╡╨║╨╡╤Ç╤ï ╨╕ ╤é╤Ç╨╡╨║╨╡╤Ç╤ï ╤ü╨╛╤å╨╕╨░╨╗╤î╨╜╤ï╤à ╤ü╨╡╤é╨╡╨╣';
 
   @override
-  String get settings_cookiePolicyUnvisitedLabel => 'Непосещённые сайты';
+  String get settings_cookiePolicyUnvisitedLabel =>
+      '╨¥╨╡╨┐╨╛╤ü╨╡╤ë╤æ╨╜╨╜╤ï╨╡ ╤ü╨░╨╣╤é╤ï';
 
   @override
-  String get settings_cookiePolicyThirdPartyLabel => 'Все сторонние куки';
+  String get settings_cookiePolicyThirdPartyLabel =>
+      '╨Æ╤ü╨╡ ╤ü╤é╨╛╤Ç╨╛╨╜╨╜╨╕╨╡ ╨║╤â╨║╨╕';
 
   @override
   String get settings_cookiePolicyAllCookiesLabel =>
-      'Все куки (может нарушить работу сайтов)';
+      '╨Æ╤ü╨╡ ╨║╤â╨║╨╕ (╨╝╨╛╨╢╨╡╤é ╨╜╨░╤Ç╤â╤ê╨╕╤é╤î ╤Ç╨░╨▒╨╛╤é╤â ╤ü╨░╨╣╤é╨╛╨▓)';
 
   @override
   String get settings_blockTrackingContentTitle =>
-      'Блокировать отслеживающий контент';
+      '╨æ╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╤é╤î ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╤Ä╤ë╨╕╨╣ ╨║╨╛╨╜╤é╨╡╨╜╤é';
 
   @override
   String get settings_blockTrackingContentSubtitle =>
-      'Блокировать отслеживающие скрипты и ресурсы, встроенные в сайты';
+      '╨æ╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╤é╤î ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╤Ä╤ë╨╕╨╡ ╤ü╨║╤Ç╨╕╨┐╤é╤ï ╨╕ ╤Ç╨╡╤ü╤â╤Ç╤ü╤ï, ╨▓╤ü╤é╤Ç╨╛╨╡╨╜╨╜╤ï╨╡ ╨▓ ╤ü╨░╨╣╤é╤ï';
 
   @override
-  String get settings_trackingScopeApplyToTitle => 'Область применения';
+  String get settings_trackingScopeApplyToTitle =>
+      '╨₧╨▒╨╗╨░╤ü╤é╤î ╨┐╤Ç╨╕╨╝╨╡╨╜╨╡╨╜╨╕╤Å';
 
   @override
-  String get settings_trackingScopeAllTabsLabel => 'Все вкладки';
+  String get settings_trackingScopeAllTabsLabel => '╨Æ╤ü╨╡ ╨▓╨║╨╗╨░╨┤╨║╨╕';
 
   @override
   String get settings_trackingScopePrivateOnlyLabel =>
-      'Только приватные вкладки';
+      '╨ó╨╛╨╗╤î╨║╨╛ ╨┐╤Ç╨╕╨▓╨░╤é╨╜╤ï╨╡ ╨▓╨║╨╗╨░╨┤╨║╨╕';
 
   @override
   String get settings_adsAnalyticsSocialTrackersTitle =>
-      'Реклама, аналитика и социальные трекеры';
+      '╨á╨╡╨║╨╗╨░╨╝╨░, ╨░╨╜╨░╨╗╨╕╤é╨╕╨║╨░ ╨╕ ╤ü╨╛╤å╨╕╨░╨╗╤î╨╜╤ï╨╡ ╤é╤Ç╨╡╨║╨╡╤Ç╤ï';
 
   @override
   String get settings_adsAnalyticsSocialTrackersSubtitle =>
-      'Блокировать категории трекеров рекламы, аналитики, соцсетей и социальных трекеров Mozilla';
+      '╨æ╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╤é╤î ╨║╨░╤é╨╡╨│╨╛╤Ç╨╕╨╕ ╤é╤Ç╨╡╨║╨╡╤Ç╨╛╨▓ ╤Ç╨╡╨║╨╗╨░╨╝╤ï, ╨░╨╜╨░╨╗╨╕╤é╨╕╨║╨╕, ╤ü╨╛╤å╤ü╨╡╤é╨╡╨╣ ╨╕ ╤ü╨╛╤å╨╕╨░╨╗╤î╨╜╤ï╤à ╤é╤Ç╨╡╨║╨╡╤Ç╨╛╨▓ Mozilla';
 
   @override
-  String get settings_cryptominersTitle => 'Криптомайнеры';
+  String get settings_cryptominersTitle => '╨Ü╤Ç╨╕╨┐╤é╨╛╨╝╨░╨╣╨╜╨╡╤Ç╤ï';
 
   @override
   String get settings_cryptominersSubtitle =>
-      'Блокировать скрипты, использующие ваше устройство для майнинга криптовалюты';
+      '╨æ╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╤é╤î ╤ü╨║╤Ç╨╕╨┐╤é╤ï, ╨╕╤ü╨┐╨╛╨╗╤î╨╖╤â╤Ä╤ë╨╕╨╡ ╨▓╨░╤ê╨╡ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨╛ ╨┤╨╗╤Å ╨╝╨░╨╣╨╜╨╕╨╜╨│╨░ ╨║╤Ç╨╕╨┐╤é╨╛╨▓╨░╨╗╤Ä╤é╤ï';
 
   @override
   String get settings_knownFingerprintersTitle =>
-      'Известные сборщики цифровых отпечатков';
+      '╨ÿ╨╖╨▓╨╡╤ü╤é╨╜╤ï╨╡ ╤ü╨▒╨╛╤Ç╤ë╨╕╨║╨╕ ╤å╨╕╤ä╤Ç╨╛╨▓╤ï╤à ╨╛╤é╨┐╨╡╤ç╨░╤é╨║╨╛╨▓';
 
   @override
   String get settings_knownFingerprintersSubtitle =>
-      'Блокировать скрипты, собирающие информацию для уникальной идентификации устройства';
+      '╨æ╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╤é╤î ╤ü╨║╤Ç╨╕╨┐╤é╤ï, ╤ü╨╛╨▒╨╕╤Ç╨░╤Ä╤ë╨╕╨╡ ╨╕╨╜╤ä╨╛╤Ç╨╝╨░╤å╨╕╤Ä ╨┤╨╗╤Å ╤â╨╜╨╕╨║╨░╨╗╤î╨╜╨╛╨╣ ╨╕╨┤╨╡╨╜╤é╨╕╤ä╨╕╨║╨░╤å╨╕╨╕ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨░';
 
   @override
-  String get settings_redirectTrackersTitle => 'Трекеры перенаправлений';
+  String get settings_redirectTrackersTitle =>
+      '╨ó╤Ç╨╡╨║╨╡╤Ç╤ï ╨┐╨╡╤Ç╨╡╨╜╨░╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╨╣';
 
   @override
   String get settings_redirectTrackersSubtitle =>
-      'Блокировать трекеры, собирающие данные через промежуточные перенаправления URL-адресов';
+      '╨æ╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╤é╤î ╤é╤Ç╨╡╨║╨╡╤Ç╤ï, ╤ü╨╛╨▒╨╕╤Ç╨░╤Ä╤ë╨╕╨╡ ╨┤╨░╨╜╨╜╤ï╨╡ ╤ç╨╡╤Ç╨╡╨╖ ╨┐╤Ç╨╛╨╝╨╡╨╢╤â╤é╨╛╤ç╨╜╤ï╨╡ ╨┐╨╡╤Ç╨╡╨╜╨░╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╤Å URL-╨░╨┤╤Ç╨╡╤ü╨╛╨▓';
 
   @override
   String get settings_suspectedFingerprintersTitle =>
-      'Подозрительные сборщики цифровых отпечатков';
+      '╨ƒ╨╛╨┤╨╛╨╖╤Ç╨╕╤é╨╡╨╗╤î╨╜╤ï╨╡ ╤ü╨▒╨╛╤Ç╤ë╨╕╨║╨╕ ╤å╨╕╤ä╤Ç╨╛╨▓╤ï╤à ╨╛╤é╨┐╨╡╤ç╨░╤é╨║╨╛╨▓';
 
   @override
   String get settings_suspectedFingerprintersSubtitle =>
-      'Блокировать дополнительные техники цифровых отпечатков, которые могут использоваться для отслеживания';
+      '╨æ╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╤é╤î ╨┤╨╛╨┐╨╛╨╗╨╜╨╕╤é╨╡╨╗╤î╨╜╤ï╨╡ ╤é╨╡╤à╨╜╨╕╨║╨╕ ╤å╨╕╤ä╤Ç╨╛╨▓╤ï╤à ╨╛╤é╨┐╨╡╤ç╨░╤é╨║╨╛╨▓, ╨║╨╛╤é╨╛╤Ç╤ï╨╡ ╨╝╨╛╨│╤â╤é ╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╤î╤ü╤Å ╨┤╨╗╤Å ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╨╜╨╕╤Å';
 
   @override
-  String get settings_desktopModeSitesScreenTitle => 'Сайты в версии для ПК';
+  String get settings_desktopModeSitesScreenTitle =>
+      '╨í╨░╨╣╤é╤ï ╨▓ ╨▓╨╡╤Ç╤ü╨╕╨╕ ╨┤╨╗╤Å ╨ƒ╨Ü';
 
   @override
   String get settings_desktopModeSitesScreenDescription =>
-      'Эти сайты всегда загружаются в версии для ПК, независимо от настройки по умолчанию. Поддомены включаются (например, «example.com» охватывает и «m.example.com»).';
+      '╨¡╤é╨╕ ╤ü╨░╨╣╤é╤ï ╨▓╤ü╨╡╨│╨┤╨░ ╨╖╨░╨│╤Ç╤â╨╢╨░╤Ä╤é╤ü╤Å ╨▓ ╨▓╨╡╤Ç╤ü╨╕╨╕ ╨┤╨╗╤Å ╨ƒ╨Ü, ╨╜╨╡╨╖╨░╨▓╨╕╤ü╨╕╨╝╨╛ ╨╛╤é ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä. ╨ƒ╨╛╨┤╨┤╨╛╨╝╨╡╨╜╤ï ╨▓╨║╨╗╤Ä╤ç╨░╤Ä╤é╤ü╤Å (╨╜╨░╨┐╤Ç╨╕╨╝╨╡╤Ç, ┬½example.com┬╗ ╨╛╤à╨▓╨░╤é╤ï╨▓╨░╨╡╤é ╨╕ ┬½m.example.com┬╗).';
 
   @override
-  String get settings_desktopModeSitesEmptyLabel => 'Сайты не добавлены.';
+  String get settings_desktopModeSitesEmptyLabel =>
+      '╨í╨░╨╣╤é╤ï ╨╜╨╡ ╨┤╨╛╨▒╨░╨▓╨╗╨╡╨╜╤ï.';
 
   @override
-  String get settings_dohTitle => 'DNS через HTTPS';
+  String get settings_dohTitle => '╨æ╨╡╨╖╨╛╨┐╨░╤ü╨╜╤ï╨╣ DNS';
 
   @override
   String get settings_dohSubtitle =>
-      'Уровень защиты зашифрованного DNS и выбор резолвера.';
+      '╨Ü╨░╨║ ╤ê╨╕╤ä╤Ç╤â╤Ä╤é╤ü╤Å ╨╖╨░╨┐╤Ç╨╛╤ü╤ï ╨░╨┤╤Ç╨╡╤ü╨╛╨▓ ╤ü╨░╨╣╤é╨╛╨▓ ╨╕ ╨║╤é╨╛ ╨╕╤à ╨╛╨▒╤Ç╨░╨▒╨░╤é╤ï╨▓╨░╨╡╤é';
 
   @override
-  String get settings_errorLogsCopiedMessage => 'Журналы скопированы';
+  String get settings_errorLogsCopiedMessage =>
+      '╨û╤â╤Ç╨╜╨░╨╗╤ï ╤ü╨║╨╛╨┐╨╕╤Ç╨╛╨▓╨░╨╜╤ï';
 
   @override
-  String get settings_errorLogsSearchHint => 'Поиск в журнале';
+  String get settings_errorLogsSearchHint => '╨ƒ╨╛╨╕╤ü╨║ ╨▓ ╨╢╤â╤Ç╨╜╨░╨╗╨╡';
 
   @override
-  String get settings_errorLogsCopyTooltip => 'Копировать журналы';
+  String get settings_errorLogsCopyTooltip =>
+      '╨Ü╨╛╨┐╨╕╤Ç╨╛╨▓╨░╤é╤î ╨╢╤â╤Ç╨╜╨░╨╗╤ï';
 
   @override
-  String get settings_errorLogsEmptyLabel => 'Журналы отсутствуют';
+  String get settings_errorLogsEmptyLabel =>
+      '╨û╤â╤Ç╨╜╨░╨╗╤ï ╨╛╤é╤ü╤â╤é╤ü╤é╨▓╤â╤Ä╤é';
 
   @override
-  String get settings_experimentalTitle => 'Экспериментальные';
+  String get settings_experimentalTitle => '╨¡╨║╤ü╨┐╨╡╤Ç╨╕╨╝╨╡╨╜╤é╨░╨╗╤î╨╜╤ï╨╡';
 
   @override
   String get settings_experimentalSubtitle =>
-      'Изоляция среды выполнения и поведение при запуске.';
+      '╨ÿ╨╖╨╛╨╗╤Å╤å╨╕╤Å ╤ü╤Ç╨╡╨┤╤ï ╨▓╤ï╨┐╨╛╨╗╨╜╨╡╨╜╨╕╤Å ╨╕ ╨┐╨╛╨▓╨╡╨┤╨╡╨╜╨╕╨╡ ╨┐╤Ç╨╕ ╨╖╨░╨┐╤â╤ü╨║╨╡.';
 
   @override
   String get settings_isolatedContentProcessTitle =>
-      'Изолированный процесс контента';
+      '╨ÿ╨╖╨╛╨╗╨╕╤Ç╨╛╨▓╨░╨╜╨╜╤ï╨╣ ╨┐╤Ç╨╛╤å╨╡╤ü╤ü ╨║╨╛╨╜╤é╨╡╨╜╤é╨░';
 
   @override
   String get settings_isolatedContentProcessKeywords =>
-      'перезапуск, изоляция, процесс';
+      '╨┐╨╡╤Ç╨╡╨╖╨░╨┐╤â╤ü╨║, ╨╕╨╖╨╛╨╗╤Å╤å╨╕╤Å, ╨┐╤Ç╨╛╤å╨╡╤ü╤ü';
 
   @override
   String get settings_isolatedContentProcessSubtitle =>
-      'Запускать веб-контент в изолированном процессе. Требуется перезапуск приложения.';
+      '╨ù╨░╨┐╤â╤ü╨║╨░╤é╤î ╨▓╨╡╨▒-╨║╨╛╨╜╤é╨╡╨╜╤é ╨▓ ╨╕╨╖╨╛╨╗╨╕╤Ç╨╛╨▓╨░╨╜╨╜╨╛╨╝ ╨┐╤Ç╨╛╤å╨╡╤ü╤ü╨╡. ╨ó╤Ç╨╡╨▒╤â╨╡╤é╤ü╤Å ╨┐╨╡╤Ç╨╡╨╖╨░╨┐╤â╤ü╨║ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å.';
 
   @override
-  String get settings_appZygoteProcessTitle => 'Процесс App Zygote';
+  String get settings_appZygoteProcessTitle => '╨ƒ╤Ç╨╛╤å╨╡╤ü╤ü App Zygote';
 
   @override
-  String get settings_appZygoteProcessKeywords => 'перезапуск, android 10';
+  String get settings_appZygoteProcessKeywords =>
+      '╨┐╨╡╤Ç╨╡╨╖╨░╨┐╤â╤ü╨║, android 10';
 
   @override
   String get settings_appZygoteProcessSubtitle =>
-      'Предзагружать сервис контента для более быстрого запуска изолированного процесса. Требуются Android 10+ и перезапуск приложения.';
+      '╨ƒ╤Ç╨╡╨┤╨╖╨░╨│╤Ç╤â╨╢╨░╤é╤î ╤ü╨╡╤Ç╨▓╨╕╤ü ╨║╨╛╨╜╤é╨╡╨╜╤é╨░ ╨┤╨╗╤Å ╨▒╨╛╨╗╨╡╨╡ ╨▒╤ï╤ü╤é╤Ç╨╛╨│╨╛ ╨╖╨░╨┐╤â╤ü╨║╨░ ╨╕╨╖╨╛╨╗╨╕╤Ç╨╛╨▓╨░╨╜╨╜╨╛╨│╨╛ ╨┐╤Ç╨╛╤å╨╡╤ü╤ü╨░. ╨ó╤Ç╨╡╨▒╤â╤Ä╤é╤ü╤Å Android 10+ ╨╕ ╨┐╨╡╤Ç╨╡╨╖╨░╨┐╤â╤ü╨║ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å.';
 
   @override
-  String get settings_extensionsTitle => 'Расширения';
+  String get settings_extensionsTitle => '╨á╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_extensionsSubtitle =>
-      'Управление дополнениями, поведение обновлений и безопасность расширений.';
+      '╨ú╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╨╡ ╨┤╨╛╨┐╨╛╨╗╨╜╨╡╨╜╨╕╤Å╨╝╨╕, ╨┐╨╛╨▓╨╡╨┤╨╡╨╜╨╕╨╡ ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╨╣ ╨╕ ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╨╛╤ü╤é╤î ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╣.';
 
   @override
-  String get settings_manageExtensionsTitle => 'Управление расширениями';
+  String get settings_manageExtensionsTitle =>
+      '╨ú╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╨╡ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å╨╝╨╕';
 
   @override
   String get settings_manageExtensionsKeywords =>
-      'дополнения, расширения браузера, addons';
+      '╨┤╨╛╨┐╨╛╨╗╨╜╨╡╨╜╨╕╤Å, ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░, addons';
 
   @override
   String get settings_manageExtensionsSubtitle =>
-      'Установленные, отключённые, доступные и неподдерживаемые расширения';
+      '╨ú╤ü╤é╨░╨╜╨╛╨▓╨╗╨╡╨╜╨╜╤ï╨╡, ╨╛╤é╨║╨╗╤Ä╤ç╤æ╨╜╨╜╤ï╨╡, ╨┤╨╛╤ü╤é╤â╨┐╨╜╤ï╨╡ ╨╕ ╨╜╨╡╨┐╨╛╨┤╨┤╨╡╤Ç╨╢╨╕╨▓╨░╨╡╨╝╤ï╨╡ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å';
 
   @override
-  String get settings_customCollectionTitle => 'Своя коллекция';
+  String get settings_customCollectionTitle => '╨í╨▓╨╛╤Å ╨║╨╛╨╗╨╗╨╡╨║╤å╨╕╤Å';
 
   @override
-  String get settings_customCollectionKeywords => 'дополнения, addons';
+  String get settings_customCollectionKeywords =>
+      '╨┤╨╛╨┐╨╛╨╗╨╜╨╡╨╜╨╕╤Å, addons';
 
   @override
   String get settings_customCollectionSubtitle =>
-      'Использовать собственную коллекцию дополнений Mozilla';
+      '╨ÿ╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╤î ╤ü╨╛╨▒╤ü╤é╨▓╨╡╨╜╨╜╤â╤Ä ╨║╨╛╨╗╨╗╨╡╨║╤å╨╕╤Ä ╨┤╨╛╨┐╨╛╨╗╨╜╨╡╨╜╨╕╨╣ Mozilla';
 
   @override
-  String get settings_automaticUpdatesTitle => 'Автоматические обновления';
+  String get settings_automaticUpdatesTitle =>
+      '╨É╨▓╤é╨╛╨╝╨░╤é╨╕╤ç╨╡╤ü╨║╨╕╨╡ ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_automaticUpdatesKeywords =>
-      'дополнения, расширения, addons';
+      '╨┤╨╛╨┐╨╛╨╗╨╜╨╡╨╜╨╕╤Å, ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å, addons';
 
   @override
   String get settings_automaticUpdatesSubtitle =>
-      'Автоматически проверять и устанавливать обновления расширений каждые 12 часов';
+      '╨É╨▓╤é╨╛╨╝╨░╤é╨╕╤ç╨╡╤ü╨║╨╕ ╨┐╤Ç╨╛╨▓╨╡╤Ç╤Å╤é╤î ╨╕ ╤â╤ü╤é╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╤é╤î ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤Å ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╣ ╨║╨░╨╢╨┤╤ï╨╡ 12 ╤ç╨░╤ü╨╛╨▓';
 
   @override
   String settings_failedToLoadMessage(String error) {
-    return 'Не удалось загрузить: $error';
+    return '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╨╖╨░╨│╤Ç╤â╨╖╨╕╤é╤î: $error';
   }
 
   @override
   String get settings_allowUnsignedExtensionsTitle =>
-      'Разрешить неподписанные расширения';
+      '╨á╨░╨╖╤Ç╨╡╤ê╨╕╤é╤î ╨╜╨╡╨┐╨╛╨┤╨┐╨╕╤ü╨░╨╜╨╜╤ï╨╡ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å';
 
   @override
-  String get settings_allowUnsignedExtensionsKeywords => 'дополнения, addons';
+  String get settings_allowUnsignedExtensionsKeywords =>
+      '╨┤╨╛╨┐╨╛╨╗╨╜╨╡╨╜╨╕╤Å, addons';
 
   @override
   String get settings_allowUnsignedExtensionsSubtitle =>
-      'Неподписанные расширения не проверены Mozilla';
+      '╨¥╨╡╨┐╨╛╨┤╨┐╨╕╤ü╨░╨╜╨╜╤ï╨╡ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å ╨╜╨╡ ╨┐╤Ç╨╛╨▓╨╡╤Ç╨╡╨╜╤ï Mozilla';
 
   @override
   String get settings_allowUnsignedWarningText =>
-      'Устанавливайте неподписанные расширения только из надёжных источников. Они могут содержать вредоносный код.';
+      '╨ú╤ü╤é╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╨╣╤é╨╡ ╨╜╨╡╨┐╨╛╨┤╨┐╨╕╤ü╨░╨╜╨╜╤ï╨╡ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å ╤é╨╛╨╗╤î╨║╨╛ ╨╕╨╖ ╨╜╨░╨┤╤æ╨╢╨╜╤ï╤à ╨╕╤ü╤é╨╛╤ç╨╜╨╕╨║╨╛╨▓. ╨₧╨╜╨╕ ╨╝╨╛╨│╤â╤é ╤ü╨╛╨┤╨╡╤Ç╨╢╨░╤é╤î ╨▓╤Ç╨╡╨┤╨╛╨╜╨╛╤ü╨╜╤ï╨╣ ╨║╨╛╨┤.';
 
   @override
   String get settings_allowUnsignedConfirmDialogTitle =>
-      'Разрешить неподписанные расширения?';
+      '╨á╨░╨╖╤Ç╨╡╤ê╨╕╤é╤î ╨╜╨╡╨┐╨╛╨┤╨┐╨╕╤ü╨░╨╜╨╜╤ï╨╡ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å?';
 
   @override
   String get settings_allowUnsignedConfirmWarningBold =>
-      'Внимание: это значительно ослабляет безопасность браузера.';
+      '╨Æ╨╜╨╕╨╝╨░╨╜╨╕╨╡: ╤ì╤é╨╛ ╨╖╨╜╨░╤ç╨╕╤é╨╡╨╗╤î╨╜╨╛ ╨╛╤ü╨╗╨░╨▒╨╗╤Å╨╡╤é ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╨╛╤ü╤é╤î ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░.';
 
   @override
   String get settings_allowUnsignedConfirmBody =>
-      'Неподписанные расширения обходят проверку безопасности Mozilla. Вредоносные расширения могут:\n\n• Читать и изменять всё, что вы видите на любом сайте\n• Похищать пароли, банковские и личные данные\n• Незаметно следить за вашими действиями в браузере\n• Устанавливать на устройство другое вредоносное ПО';
+      '╨¥╨╡╨┐╨╛╨┤╨┐╨╕╤ü╨░╨╜╨╜╤ï╨╡ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å ╨╛╨▒╤à╨╛╨┤╤Å╤é ╨┐╤Ç╨╛╨▓╨╡╤Ç╨║╤â ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╨╛╤ü╤é╨╕ Mozilla. ╨Æ╤Ç╨╡╨┤╨╛╨╜╨╛╤ü╨╜╤ï╨╡ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å ╨╝╨╛╨│╤â╤é:\n\nΓÇó ╨º╨╕╤é╨░╤é╤î ╨╕ ╨╕╨╖╨╝╨╡╨╜╤Å╤é╤î ╨▓╤ü╤æ, ╤ç╤é╨╛ ╨▓╤ï ╨▓╨╕╨┤╨╕╤é╨╡ ╨╜╨░ ╨╗╤Ä╨▒╨╛╨╝ ╤ü╨░╨╣╤é╨╡\nΓÇó ╨ƒ╨╛╤à╨╕╤ë╨░╤é╤î ╨┐╨░╤Ç╨╛╨╗╨╕, ╨▒╨░╨╜╨║╨╛╨▓╤ü╨║╨╕╨╡ ╨╕ ╨╗╨╕╤ç╨╜╤ï╨╡ ╨┤╨░╨╜╨╜╤ï╨╡\nΓÇó ╨¥╨╡╨╖╨░╨╝╨╡╤é╨╜╨╛ ╤ü╨╗╨╡╨┤╨╕╤é╤î ╨╖╨░ ╨▓╨░╤ê╨╕╨╝╨╕ ╨┤╨╡╨╣╤ü╤é╨▓╨╕╤Å╨╝╨╕ ╨▓ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨╡\nΓÇó ╨ú╤ü╤é╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╤é╤î ╨╜╨░ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨╛ ╨┤╤Ç╤â╨│╨╛╨╡ ╨▓╤Ç╨╡╨┤╨╛╨╜╨╛╤ü╨╜╨╛╨╡ ╨ƒ╨₧';
 
   @override
   String get settings_allowUnsignedConfirmFooter =>
-      'Включайте это, только если вы разработчик, устанавливающий собственное расширение, или полностью доверяете источнику.';
+      '╨Æ╨║╨╗╤Ä╤ç╨░╨╣╤é╨╡ ╤ì╤é╨╛, ╤é╨╛╨╗╤î╨║╨╛ ╨╡╤ü╨╗╨╕ ╨▓╤ï ╤Ç╨░╨╖╤Ç╨░╨▒╨╛╤é╤ç╨╕╨║, ╤â╤ü╤é╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╤Ä╤ë╨╕╨╣ ╤ü╨╛╨▒╤ü╤é╨▓╨╡╨╜╨╜╨╛╨╡ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╡, ╨╕╨╗╨╕ ╨┐╨╛╨╗╨╜╨╛╤ü╤é╤î╤Ä ╨┤╨╛╨▓╨╡╤Ç╤Å╨╡╤é╨╡ ╨╕╤ü╤é╨╛╤ç╨╜╨╕╨║╤â.';
 
   @override
-  String get settings_allowAction => 'Разрешить';
+  String get settings_allowAction => '╨á╨░╨╖╤Ç╨╡╤ê╨╕╤é╤î';
 
   @override
   String settings_allowActionCountdown(int seconds) {
-    return 'Разрешить ($seconds)';
+    return '╨á╨░╨╖╤Ç╨╡╤ê╨╕╤é╤î ($seconds)';
   }
 
   @override
   String get settings_fingerprintProtectionTitle =>
-      'Защита от цифровых отпечатков';
+      '╨ù╨░╤ë╨╕╤é╨░ ╨╛╤é ╤å╨╕╤ä╤Ç╨╛╨▓╤ï╤à ╨╛╤é╨┐╨╡╤ç╨░╤é╨║╨╛╨▓';
 
   @override
   String get settings_fingerprintProtectionKeywords =>
-      'приватность, фингерпринтинг, отпечаток';
+      '╨┐╤Ç╨╕╨▓╨░╤é╨╜╨╛╤ü╤é╤î, ╤ä╨╕╨╜╨│╨╡╤Ç╨┐╤Ç╨╕╨╜╤é╨╕╨╜╨│, ╨╛╤é╨┐╨╡╤ç╨░╤é╨╛╨║, ╨ù╨░╤é╤Ç╤â╨┤╨╜╨╕╤é╤î ╤Ç╨░╤ü╨┐╨╛╨╖╨╜╨░╨▓╨░╨╜╨╕╨╡ ╤ì╤é╨╛╨│╨╛ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨░';
 
   @override
-  String get settings_fingerprintSearchHint => 'Поиск мер защиты от отпечатков';
+  String get settings_fingerprintSearchHint =>
+      '╨ƒ╨╛╨╕╤ü╨║ ╨╝╨╡╤Ç ╨╖╨░╤ë╨╕╤é╤ï ╨╛╤é ╨╛╤é╨┐╨╡╤ç╨░╤é╨║╨╛╨▓';
 
   @override
-  String get settings_loadDefaultsAction => 'Загрузить по умолчанию';
+  String get settings_loadDefaultsAction =>
+      '╨ù╨░╨│╤Ç╤â╨╖╨╕╤é╤î ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä';
 
   @override
   String get settings_loadHardenedDefaultsAction =>
-      'Загрузить усиленные по умолчанию';
+      '╨ù╨░╨│╤Ç╤â╨╖╨╕╤é╤î ╤â╤ü╨╕╨╗╨╡╨╜╨╜╤ï╨╡ ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä';
 
   @override
-  String get settings_fingerprintOverrideTargetsSection => 'Меры защиты';
+  String get settings_fingerprintOverrideTargetsSection =>
+      '╨£╨╡╤Ç╤ï ╨╖╨░╤ë╨╕╤é╤ï';
 
   @override
   String get settings_fingerprintInvalidOverride =>
-      'Сохранённые переопределения отпечатков имеют недопустимый формат';
+      '╨í╨╛╤à╤Ç╨░╨╜╤æ╨╜╨╜╤ï╨╡ ╨┐╨╡╤Ç╨╡╨╛╨┐╤Ç╨╡╨┤╨╡╨╗╨╡╨╜╨╕╤Å ╨╛╤é╨┐╨╡╤ç╨░╤é╨║╨╛╨▓ ╨╕╨╝╨╡╤Ä╤é ╨╜╨╡╨┤╨╛╨┐╤â╤ü╤é╨╕╨╝╤ï╨╣ ╤ä╨╛╤Ç╨╝╨░╤é';
 
   @override
   String get settings_fingerprintUnknownTarget =>
-      'Сохранённые переопределения отпечатков указывают меру защиты, неизвестную этой версии';
+      '╨í╨╛╤à╤Ç╨░╨╜╤æ╨╜╨╜╤ï╨╡ ╨┐╨╡╤Ç╨╡╨╛╨┐╤Ç╨╡╨┤╨╡╨╗╨╡╨╜╨╕╤Å ╨╛╤é╨┐╨╡╤ç╨░╤é╨║╨╛╨▓ ╤â╨║╨░╨╖╤ï╨▓╨░╤Ä╤é ╨╝╨╡╤Ç╤â ╨╖╨░╤ë╨╕╤é╤ï, ╨╜╨╡╨╕╨╖╨▓╨╡╤ü╤é╨╜╤â╤Ä ╤ì╤é╨╛╨╣ ╨▓╨╡╤Ç╤ü╨╕╨╕';
 
   @override
-  String get settings_homeAndNewTabTitle => 'Домашняя страница и новая вкладка';
+  String get settings_homeAndNewTabTitle =>
+      '╨ö╨╛╨╝╨░╤ê╨╜╤Å╤Å ╤ü╤é╤Ç╨░╨╜╨╕╤å╨░ ╨╕ ╨╜╨╛╨▓╨░╤Å ╨▓╨║╨╗╨░╨┤╨║╨░';
 
   @override
   String get settings_homeAndNewTabSubtitle =>
-      'Что показывают домашняя страница и новая вкладка';
+      '╨º╤é╨╛ ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╤Ä╤é ╨┤╨╛╨╝╨░╤ê╨╜╤Å╤Å ╤ü╤é╤Ç╨░╨╜╨╕╤å╨░ ╨╕ ╨╜╨╛╨▓╨░╤Å ╨▓╨║╨╗╨░╨┤╨║╨░';
 
   @override
-  String get settings_addressFieldLabel => 'Адрес';
+  String get settings_addressFieldLabel => '╨É╨┤╤Ç╨╡╤ü';
 
   @override
   String get settings_homeTargetUrlEmptyError =>
-      'Введите адрес, иначе будет показана домашняя страница';
+      '╨Æ╨▓╨╡╨┤╨╕╤é╨╡ ╨░╨┤╤Ç╨╡╤ü, ╨╕╨╜╨░╤ç╨╡ ╨▒╤â╨┤╨╡╤é ╨┐╨╛╨║╨░╨╖╨░╨╜╨░ ╨┤╨╛╨╝╨░╤ê╨╜╤Å╤Å ╤ü╤é╤Ç╨░╨╜╨╕╤å╨░';
 
   @override
-  String get settings_homeTargetUrlInvalidError => 'Недопустимый адрес';
+  String get settings_homeTargetUrlInvalidError =>
+      '╨¥╨╡╨┤╨╛╨┐╤â╤ü╤é╨╕╨╝╤ï╨╣ ╨░╨┤╤Ç╨╡╤ü';
 
   @override
   String get settings_applyWhenLastTabClosesTitle =>
-      'Применять при закрытии последней вкладки';
+      '╨ƒ╤Ç╨╕╨╝╨╡╨╜╤Å╤é╤î ╨┐╤Ç╨╕ ╨╖╨░╨║╤Ç╤ï╤é╨╕╨╕ ╨┐╨╛╤ü╨╗╨╡╨┤╨╜╨╡╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╕';
 
   @override
   String get settings_applyWhenLastTabClosesKeywords =>
-      'закрыть, последняя вкладка, контейнер';
+      '╨╖╨░╨║╤Ç╤ï╤é╤î, ╨┐╨╛╤ü╨╗╨╡╨┤╨╜╤Å╤Å ╨▓╨║╨╗╨░╨┤╨║╨░, ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç';
 
   @override
   String get settings_applyWhenLastTabClosesSubtitle =>
-      'При закрытии последней вкладки в контейнере оставаться в нём, а не открывать вкладку из другого места';
+      '╨ƒ╤Ç╨╕ ╨╖╨░╨║╤Ç╤ï╤é╨╕╨╕ ╨┐╨╛╤ü╨╗╨╡╨┤╨╜╨╡╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨▓ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╨╡ ╨╛╤ü╤é╨░╨▓╨░╤é╤î╤ü╤Å ╨▓ ╨╜╤æ╨╝, ╨░ ╨╜╨╡ ╨╛╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╨▓╨║╨╗╨░╨┤╨║╤â ╨╕╨╖ ╨┤╤Ç╤â╨│╨╛╨│╨╛ ╨╝╨╡╤ü╤é╨░';
 
   @override
   String settings_homeSearchBarCurrentlyLabel(String value) {
-    return 'Сейчас: $value';
+    return '╨í╨╡╨╣╤ç╨░╤ü: $value';
   }
 
   @override
-  String get settings_wallpaperTitle => 'Обои';
+  String get settings_wallpaperTitle => '╨₧╨▒╨╛╨╕';
 
   @override
   String get settings_wallpaperKeywords =>
-      'обои, фон, изображение, фото, картинка, размытие, затемнение, домашняя';
+      '╨╛╨▒╨╛╨╕, ╤ä╨╛╨╜, ╨╕╨╖╨╛╨▒╤Ç╨░╨╢╨╡╨╜╨╕╨╡, ╤ä╨╛╤é╨╛, ╨║╨░╤Ç╤é╨╕╨╜╨║╨░, ╤Ç╨░╨╖╨╝╤ï╤é╨╕╨╡, ╨╖╨░╤é╨╡╨╝╨╜╨╡╨╜╨╕╨╡, ╨┤╨╛╨╝╨░╤ê╨╜╤Å╤Å';
 
   @override
   String get settings_wallpaperSetSubtitle =>
-      'Для домашней страницы задано фоновое изображение';
+      '╨ö╨╗╤Å ╨┤╨╛╨╝╨░╤ê╨╜╨╡╨╣ ╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï ╨╖╨░╨┤╨░╨╜╨╛ ╤ä╨╛╨╜╨╛╨▓╨╛╨╡ ╨╕╨╖╨╛╨▒╤Ç╨░╨╢╨╡╨╜╨╕╨╡';
 
   @override
   String get settings_wallpaperUnsetSubtitle =>
-      'Задать фоновое изображение для домашней страницы';
+      '╨ù╨░╨┤╨░╤é╤î ╤ä╨╛╨╜╨╛╨▓╨╛╨╡ ╨╕╨╖╨╛╨▒╤Ç╨░╨╢╨╡╨╜╨╕╨╡ ╨┤╨╗╤Å ╨┤╨╛╨╝╨░╤ê╨╜╨╡╨╣ ╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï';
 
   @override
   String get settings_customizeHomeSectionsTitle =>
-      'Настроить разделы домашней страницы';
+      '╨¥╨░╤ü╤é╤Ç╨╛╨╕╤é╤î ╤Ç╨░╨╖╨┤╨╡╨╗╤ï ╨┤╨╛╨╝╨░╤ê╨╜╨╡╨╣ ╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï';
 
   @override
   String get settings_customizeHomeSectionsKeywords =>
-      'домашняя, разделы, ярлыки, цитата, быстрые действия, порядок';
+      '╨┤╨╛╨╝╨░╤ê╨╜╤Å╤Å, ╤Ç╨░╨╖╨┤╨╡╨╗╤ï, ╤Å╤Ç╨╗╤ï╨║╨╕, ╤å╨╕╤é╨░╤é╨░, ╨▒╤ï╤ü╤é╤Ç╤ï╨╡ ╨┤╨╡╨╣╤ü╤é╨▓╨╕╤Å, ╨┐╨╛╤Ç╤Å╨┤╨╛╨║';
 
   @override
   String get settings_customizeHomeSectionsSubtitle =>
-      'Выберите, что показывает домашняя страница и в каком порядке';
+      '╨Æ╤ï╨▒╨╡╤Ç╨╕╤é╨╡, ╤ç╤é╨╛ ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╨╡╤é ╨┤╨╛╨╝╨░╤ê╨╜╤Å╤Å ╤ü╤é╤Ç╨░╨╜╨╕╤å╨░ ╨╕ ╨▓ ╨║╨░╨║╨╛╨╝ ╨┐╨╛╤Ç╤Å╨┤╨║╨╡';
 
   @override
   String get settings_customizeNewTabSectionsTitle =>
-      'Настроить разделы новой вкладки';
+      '╨¥╨░╤ü╤é╤Ç╨╛╨╕╤é╤î ╤Ç╨░╨╖╨┤╨╡╨╗╤ï ╨╜╨╛╨▓╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╕';
 
   @override
   String get settings_customizeNewTabSectionsKeywords =>
-      'новая вкладка, разделы, ярлыки, порядок';
+      '╨╜╨╛╨▓╨░╤Å ╨▓╨║╨╗╨░╨┤╨║╨░, ╤Ç╨░╨╖╨┤╨╡╨╗╤ï, ╤Å╤Ç╨╗╤ï╨║╨╕, ╨┐╨╛╤Ç╤Å╨┤╨╛╨║';
 
   @override
   String get settings_customizeNewTabSectionsSubtitle =>
-      'Выберите, что показывает новая вкладка и в каком порядке';
+      '╨Æ╤ï╨▒╨╡╤Ç╨╕╤é╨╡, ╤ç╤é╨╛ ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╨╡╤é ╨╜╨╛╨▓╨░╤Å ╨▓╨║╨╗╨░╨┤╨║╨░ ╨╕ ╨▓ ╨║╨░╨║╨╛╨╝ ╨┐╨╛╤Ç╤Å╨┤╨║╨╡';
 
   @override
-  String get settings_browserLanguagesTitle => 'Языки браузера';
+  String get settings_browserLanguagesTitle => '╨»╨╖╤ï╨║╨╕ ╨┤╨╗╤Å ╤ü╨░╨╣╤é╨╛╨▓';
 
   @override
-  String get settings_browserLanguagesKeywords => 'локаль, язык, locale';
+  String get settings_browserLanguagesKeywords =>
+      '╤Å╨╖╤ï╨║╨╕ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░, ╤Å╨╖╤ï╨║, ╨╗╨╛╨║╨░╨╗╤î, locale, accept language';
 
   @override
-  String get settings_browserLanguagesSearchHint => 'Поиск локалей по тегу';
+  String get settings_browserLanguagesSearchHint => '╨ƒ╨╛╨╕╤ü╨║ ╤Å╨╖╤ï╨║╨╛╨▓';
 
   @override
-  String get settings_languageRegionSettingsSection => 'Язык и регион';
+  String get settings_languageRegionSettingsSection => '╨»╨╖╤ï╨║╨╕';
 
   @override
   String get settings_browserLanguagePreferenceLabel =>
-      'Языковое предпочтение браузера';
+      '╨»╨╖╤ï╨║, ╨╜╨░ ╨║╨╛╤é╨╛╤Ç╨╛╨╝ ╤ü╨░╨╣╤é╤ï ╨╝╨╛╨│╤â╤é ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╤ü╨╛╨┤╨╡╤Ç╨╢╨╕╨╝╨╛╨╡';
 
   @override
-  String get settings_customLocaleSection => 'Своя локаль';
+  String get settings_customLocaleSection => '╨ö╤Ç╤â╨│╨╛╨╣ ╤Å╨╖╤ï╨║';
 
   @override
-  String get settings_addCustomLocaleTitle => 'Добавить свою локаль';
+  String get settings_addCustomLocaleTitle =>
+      '╨ö╨╛╨▒╨░╨▓╨╕╤é╤î ╨┤╤Ç╤â╨│╨╛╨╣ ╤Å╨╖╤ï╨║';
 
   @override
-  String get settings_addCustomLocaleKeywords => 'тег локали, locale';
+  String get settings_addCustomLocaleKeywords =>
+      '╤é╨╡╨│ ╨╗╨╛╨║╨░╨╗╨╕, ╨║╨╛╨┤ ╤Å╨╖╤ï╨║╨░, locale tag';
 
   @override
   String get settings_addCustomLocaleSubtitle =>
-      'Введите тег локали, например en-US';
+      '╨Æ╨▓╨╡╨┤╨╕╤é╨╡ ╨║╨╛╨┤ ╤Å╨╖╤ï╨║╨░, ╨╜╨░╨┐╤Ç╨╕╨╝╨╡╤Ç en-US';
 
   @override
-  String get settings_customLocaleFieldLabel => 'Своя локаль';
+  String get settings_customLocaleFieldLabel => '╨Ü╨╛╨┤ ╤Å╨╖╤ï╨║╨░';
 
   @override
-  String get settings_invalidLocaleError => 'Недопустимый идентификатор локали';
+  String get settings_invalidLocaleError =>
+      '╨¡╤é╨╛ ╨╜╨╡╨┤╨╛╨┐╤â╤ü╤é╨╕╨╝╤ï╨╣ ╨║╨╛╨┤ ╤Å╨╖╤ï╨║╨░';
 
   @override
-  String get settings_homeTargetHomeLabel => 'Домашняя страница';
+  String get settings_homeTargetHomeLabel =>
+      '╨ö╨╛╨╝╨░╤ê╨╜╤Å╤Å ╤ü╤é╤Ç╨░╨╜╨╕╤å╨░';
 
   @override
   String get settings_homeTargetResumeLastTabLabel =>
-      'Последняя открытая вкладка';
+      '╨ƒ╨╛╤ü╨╗╨╡╨┤╨╜╤Å╤Å ╨╛╤é╨║╤Ç╤ï╤é╨░╤Å ╨▓╨║╨╗╨░╨┤╨║╨░';
 
   @override
-  String get settings_homeTargetCustomUrlLabel => 'Свой адрес';
+  String get settings_homeTargetCustomUrlLabel => '╨í╨▓╨╛╨╣ ╨░╨┤╤Ç╨╡╤ü';
 
   @override
   String get settings_homeTargetHomeDescription =>
-      'Показывать ярлыки и выбранные разделы';
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╤Å╤Ç╨╗╤ï╨║╨╕ ╨╕ ╨▓╤ï╨▒╤Ç╨░╨╜╨╜╤ï╨╡ ╤Ç╨░╨╖╨┤╨╡╨╗╤ï';
 
   @override
   String get settings_homeTargetResumeLastTabDescription =>
-      'Продолжить с того места, где вы остановились';
+      '╨ƒ╤Ç╨╛╨┤╨╛╨╗╨╢╨╕╤é╤î ╤ü ╤é╨╛╨│╨╛ ╨╝╨╡╤ü╤é╨░, ╨│╨┤╨╡ ╨▓╤ï ╨╛╤ü╤é╨░╨╜╨╛╨▓╨╕╨╗╨╕╤ü╤î';
 
   @override
   String get settings_homeTargetCustomUrlDescription =>
-      'Открывать определённую страницу';
+      '╨₧╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╨╛╨┐╤Ç╨╡╨┤╨╡╨╗╤æ╨╜╨╜╤â╤Ä ╤ü╤é╤Ç╨░╨╜╨╕╤å╤â';
 
   @override
-  String get settings_homeSearchBarAutoLabel => 'Как у панели вкладок';
+  String get settings_homeSearchBarAutoLabel =>
+      '╨Ü╨░╨║ ╤â ╨┐╨░╨╜╨╡╨╗╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
-  String get settings_homeSearchBarTopLabel => 'Вверху домашней страницы';
+  String get settings_homeSearchBarTopLabel =>
+      '╨Æ╨▓╨╡╤Ç╤à╤â ╨┤╨╛╨╝╨░╤ê╨╜╨╡╨╣ ╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï';
 
   @override
-  String get settings_homeSearchBarTabBarLabel => 'В панели вкладок';
+  String get settings_homeSearchBarTabBarLabel =>
+      '╨Æ ╨┐╨░╨╜╨╡╨╗╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
   String get settings_homeSearchBarAutoDescription =>
-      'У того края, где находится панель вкладок';
+      '╨ú ╤é╨╛╨│╨╛ ╨║╤Ç╨░╤Å, ╨│╨┤╨╡ ╨╜╨░╤à╨╛╨┤╨╕╤é╤ü╤Å ╨┐╨░╨╜╨╡╨╗╤î ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
   String get settings_homeSearchBarTopDescription =>
-      'Закреплённая строка поиска над разделами домашней страницы';
+      '╨ù╨░╨║╤Ç╨╡╨┐╨╗╤æ╨╜╨╜╨░╤Å ╤ü╤é╤Ç╨╛╨║╨░ ╨┐╨╛╨╕╤ü╨║╨░ ╨╜╨░╨┤ ╤Ç╨░╨╖╨┤╨╡╨╗╨░╨╝╨╕ ╨┤╨╛╨╝╨░╤ê╨╜╨╡╨╣ ╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï';
 
   @override
   String get settings_homeSearchBarTabBarDescription =>
-      'Адресная строка панели вкладок с QR- и голосовым поиском';
+      '╨É╨┤╤Ç╨╡╤ü╨╜╨░╤Å ╤ü╤é╤Ç╨╛╨║╨░ ╨┐╨░╨╜╨╡╨╗╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║ ╤ü QR- ╨╕ ╨│╨╛╨╗╨╛╤ü╨╛╨▓╤ï╨╝ ╨┐╨╛╨╕╤ü╨║╨╛╨╝';
 
   @override
-  String get settings_generalTitle => 'Общие';
+  String get settings_generalTitle => '╨₧╨▒╤ë╨╕╨╡';
 
   @override
   String get settings_generalSubtitle =>
-      'Внешний вид, загрузки и параметры браузера по умолчанию.';
+      '╨Æ╨╜╨╡╤ê╨╜╨╕╨╣ ╨▓╨╕╨┤, ╨╖╨░╨│╤Ç╤â╨╖╨║╨╕ ╨╕ ╨┐╨░╤Ç╨░╨╝╨╡╤é╤Ç╤ï ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░ ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä.';
 
   @override
-  String get settings_defaultBrowserTileTitle => 'Браузер по умолчанию';
+  String get settings_defaultBrowserTileTitle =>
+      '╨æ╤Ç╨░╤â╨╖╨╡╤Ç ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä';
 
   @override
-  String get settings_defaultBrowserTileKeywords => 'системный браузер';
+  String get settings_defaultBrowserTileKeywords =>
+      '╤ü╨╕╤ü╤é╨╡╨╝╨╜╤ï╨╣ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç';
 
   @override
   String get settings_defaultBrowserTileSubtitleSet =>
-      'Cat Browser — ваш браузер по умолчанию';
+      'Cat Browser ΓÇö ╨▓╨░╤ê ╨▒╤Ç╨░╤â╨╖╨╡╤Ç ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä';
 
   @override
   String get settings_defaultBrowserTileSubtitleNotSet =>
-      'Сделать Cat Browser браузером по умолчанию';
+      '╨í╨┤╨╡╨╗╨░╤é╤î Cat Browser ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨╛╨╝ ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä';
 
   @override
-  String get settings_defaultBrowserButtonDefault => 'По умолч.';
+  String get settings_defaultBrowserButtonDefault => '╨ƒ╨╛ ╤â╨╝╨╛╨╗╤ç.';
 
   @override
-  String get settings_defaultBrowserButtonSet => 'Сделать';
+  String get settings_defaultBrowserButtonSet => '╨í╨┤╨╡╨╗╨░╤é╤î';
 
   @override
-  String get settings_backupProfileTitle => 'Создать резервную копию профиля';
+  String get settings_backupProfileTitle =>
+      '╨í╨╛╨╖╨┤╨░╤é╤î ╤Ç╨╡╨╖╨╡╤Ç╨▓╨╜╤â╤Ä ╨║╨╛╨┐╨╕╤Ä ╨┐╤Ç╨╛╤ä╨╕╨╗╤Å';
 
   @override
   String get settings_backupProfileKeywords =>
-      'резервная копия, бэкап, архив, экспорт, сохранить, зашифрованный, восстановить';
+      '╤Ç╨╡╨╖╨╡╤Ç╨▓╨╜╨░╤Å ╨║╨╛╨┐╨╕╤Å, ╨▒╤ì╨║╨░╨┐, ╨░╤Ç╤à╨╕╨▓, ╤ì╨║╤ü╨┐╨╛╤Ç╤é, ╤ü╨╛╤à╤Ç╨░╨╜╨╕╤é╤î, ╨╖╨░╤ê╨╕╤ä╤Ç╨╛╨▓╨░╨╜╨╜╤ï╨╣, ╨▓╨╛╤ü╤ü╤é╨░╨╜╨╛╨▓╨╕╤é╤î';
 
   @override
   String settings_backupProfileSubtitleReady(String name) {
-    return 'Записать «$name» в зашифрованный файл резервной копии';
+    return '╨ù╨░╨┐╨╕╤ü╨░╤é╤î ┬½$name┬╗ ╨▓ ╨╖╨░╤ê╨╕╤ä╤Ç╨╛╨▓╨░╨╜╨╜╤ï╨╣ ╤ä╨░╨╣╨╗ ╤Ç╨╡╨╖╨╡╤Ç╨▓╨╜╨╛╨╣ ╨║╨╛╨┐╨╕╨╕';
   }
 
   @override
   String get settings_backupProfileSubtitleError =>
-      'Не удалось прочитать активный профиль';
+      '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╨┐╤Ç╨╛╤ç╨╕╤é╨░╤é╤î ╨░╨║╤é╨╕╨▓╨╜╤ï╨╣ ╨┐╤Ç╨╛╤ä╨╕╨╗╤î';
 
   @override
-  String get settings_settingsTransferTileTitle => 'Экспорт и импорт настроек';
+  String get settings_settingsTransferTileTitle =>
+      '╨¡╨║╤ü╨┐╨╛╤Ç╤é ╨╕ ╨╕╨╝╨┐╨╛╤Ç╤é ╨╜╨░╤ü╤é╤Ç╨╛╨╡╨║';
 
   @override
   String get settings_settingsTransferTileKeywords =>
-      'экспорт, импорт, настройки, перенос, поделиться, буфер обмена, json, копировать, миграция';
+      '╤ì╨║╤ü╨┐╨╛╤Ç╤é, ╨╕╨╝╨┐╨╛╤Ç╤é, ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕, ╨┐╨╡╤Ç╨╡╨╜╨╛╤ü, ╨┐╨╛╨┤╨╡╨╗╨╕╤é╤î╤ü╤Å, ╨▒╤â╤ä╨╡╤Ç ╨╛╨▒╨╝╨╡╨╜╨░, json, ╨║╨╛╨┐╨╕╤Ç╨╛╨▓╨░╤é╤î, ╨╝╨╕╨│╤Ç╨░╤å╨╕╤Å';
 
   @override
   String get settings_settingsTransferTileSubtitle =>
-      'Записать настройки в файл или буфер обмена и прочитать их обратно';
+      '╨ù╨░╨┐╨╕╤ü╨░╤é╤î ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨▓ ╤ä╨░╨╣╨╗ ╨╕╨╗╨╕ ╨▒╤â╤ä╨╡╤Ç ╨╛╨▒╨╝╨╡╨╜╨░ ╨╕ ╨┐╤Ç╨╛╤ç╨╕╤é╨░╤é╤î ╨╕╤à ╨╛╨▒╤Ç╨░╤é╨╜╨╛';
 
   @override
-  String get settings_uiZoomTitle => 'Масштаб интерфейса';
+  String get settings_uiZoomTitle => '╨£╨░╤ü╤ê╤é╨░╨▒ ╨╕╨╜╤é╨╡╤Ç╤ä╨╡╨╣╤ü╨░';
 
   @override
-  String get settings_uiZoomKeywords => 'масштаб, размер интерфейса, zoom';
+  String get settings_uiZoomKeywords =>
+      '╨╝╨░╤ü╤ê╤é╨░╨▒, ╤Ç╨░╨╖╨╝╨╡╤Ç ╨╕╨╜╤é╨╡╤Ç╤ä╨╡╨╣╤ü╨░, zoom';
 
   @override
-  String get settings_uiZoomSubtitle => 'Сделать интерфейс меньше или больше';
+  String get settings_uiZoomSubtitle =>
+      '╨í╨┤╨╡╨╗╨░╤é╤î ╨╕╨╜╤é╨╡╤Ç╤ä╨╡╨╣╤ü ╨╝╨╡╨╜╤î╤ê╨╡ ╨╕╨╗╨╕ ╨▒╨╛╨╗╤î╤ê╨╡';
 
   @override
-  String get settings_disableAnimationsTitle => 'Отключить анимации';
+  String get settings_disableAnimationsTitle =>
+      '╨₧╤é╨║╨╗╤Ä╤ç╨╕╤é╤î ╨░╨╜╨╕╨╝╨░╤å╨╕╨╕';
 
   @override
-  String get settings_disableAnimationsKeywords => 'движение, анимация';
+  String get settings_disableAnimationsKeywords =>
+      '╨┤╨▓╨╕╨╢╨╡╨╜╨╕╨╡, ╨░╨╜╨╕╨╝╨░╤å╨╕╤Å';
 
   @override
   String get settings_disableAnimationsSubtitle =>
-      'Уменьшить движение и отключить анимации приложения';
+      '╨ú╨╝╨╡╨╜╤î╤ê╨╕╤é╤î ╨┤╨▓╨╕╨╢╨╡╨╜╨╕╨╡ ╨╕ ╨╛╤é╨║╨╗╤Ä╤ç╨╕╤é╤î ╨░╨╜╨╕╨╝╨░╤å╨╕╨╕ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å';
 
   @override
-  String get settings_showModalBarrierTitle => 'Затемнять фон окон';
+  String get settings_showModalBarrierTitle =>
+      '╨ù╨░╤é╨╡╨╝╨╜╤Å╤é╤î ╤ä╨╛╨╜ ╨┐╨╛╨┤ ╨┤╨╕╨░╨╗╨╛╨│╨░╨╝╨╕';
 
   @override
   String get settings_showModalBarrierKeywords =>
-      'диалоги, нижние панели, наложение';
+      '╨┤╨╕╨░╨╗╨╛╨│╨╕, ╨╜╨╕╨╢╨╜╨╕╨╡ ╨┐╨░╨╜╨╡╨╗╨╕, ╨╖╨░╤é╨╡╨╝╨╜╨╡╨╜╨╕╨╡, overlay, modal barrier';
 
   @override
   String get settings_showModalBarrierSubtitle =>
-      'Затемнять фон за диалогами и нижними панелями';
+      '╨ù╨░╤é╨╡╨╝╨╜╤Å╤é╤î ╤ä╨╛╨╜ ╨╖╨░ ╨┤╨╕╨░╨╗╨╛╨│╨░╨╝╨╕ ╨╕ ╨╜╨╕╨╢╨╜╨╕╨╝╨╕ ╨┐╨░╨╜╨╡╨╗╤Å╨╝╨╕';
 
   @override
   String get settings_showSearchCloseButtonTitle =>
-      'Показывать кнопку закрытия';
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨║╨╜╨╛╨┐╨║╤â ╨╖╨░╨║╤Ç╤ï╤é╨╕╤Å';
 
   @override
   String get settings_showSearchCloseButtonKeywords =>
-      'назад, закрыть, скрыть, e-ink, eink, электронные чернила, доступность, новая вкладка';
+      '╨╜╨░╨╖╨░╨┤, ╨╖╨░╨║╤Ç╤ï╤é╤î, ╤ü╨║╤Ç╤ï╤é╤î, e-ink, eink, ╤ì╨╗╨╡╨║╤é╤Ç╨╛╨╜╨╜╤ï╨╡ ╤ç╨╡╤Ç╨╜╨╕╨╗╨░, ╨┤╨╛╤ü╤é╤â╨┐╨╜╨╛╤ü╤é╤î, ╨╜╨╛╨▓╨░╤Å ╨▓╨║╨╗╨░╨┤╨║╨░';
 
   @override
   String get settings_showSearchCloseButtonSubtitle =>
-      'Добавить кнопку, закрывающую страницу поиска или новой вкладки без жеста «Назад». Полезно на устройствах без кнопки «Назад».';
+      '╨ö╨╛╨▒╨░╨▓╨╕╤é╤î ╨║╨╜╨╛╨┐╨║╤â, ╨╖╨░╨║╤Ç╤ï╨▓╨░╤Ä╤ë╤â╤Ä ╤ü╤é╤Ç╨░╨╜╨╕╤å╤â ╨┐╨╛╨╕╤ü╨║╨░ ╨╕╨╗╨╕ ╨╜╨╛╨▓╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨▒╨╡╨╖ ╨╢╨╡╤ü╤é╨░ ┬½╨¥╨░╨╖╨░╨┤┬╗. ╨ƒ╨╛╨╗╨╡╨╖╨╜╨╛ ╨╜╨░ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨░╤à ╨▒╨╡╨╖ ╨║╨╜╨╛╨┐╨║╨╕ ┬½╨¥╨░╨╖╨░╨┤┬╗.';
 
   @override
-  String get settings_pureBlackTitle => 'Чистый чёрный (OLED)';
+  String get settings_pureBlackTitle => '╨º╨╕╤ü╤é╤ï╨╣ ╤ç╤æ╤Ç╨╜╤ï╨╣ (OLED)';
 
   @override
   String get settings_pureBlackKeywords =>
-      'oled, amoled, высокий контраст, чёрный, тёмный';
+      'oled, amoled, ╨▓╤ï╤ü╨╛╨║╨╕╨╣ ╨║╨╛╨╜╤é╤Ç╨░╤ü╤é, ╤ç╤æ╤Ç╨╜╤ï╨╣, ╤é╤æ╨╝╨╜╤ï╨╣';
 
   @override
   String get settings_pureBlackSubtitle =>
-      'Использовать чисто чёрный фон в тёмной теме для экономии энергии на OLED-экранах';
+      '╨ÿ╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╤î ╤ç╨╕╤ü╤é╨╛ ╤ç╤æ╤Ç╨╜╤ï╨╣ ╤ä╨╛╨╜ ╨▓ ╤é╤æ╨╝╨╜╨╛╨╣ ╤é╨╡╨╝╨╡ ╨┤╨╗╤Å ╤ì╨║╨╛╨╜╨╛╨╝╨╕╨╕ ╤ì╨╜╨╡╤Ç╨│╨╕╨╕ ╨╜╨░ OLED-╤ì╨║╤Ç╨░╨╜╨░╤à';
 
   @override
-  String get settings_themeTitle => 'Тема';
+  String get settings_themeTitle => '╨ó╨╡╨╝╨░';
 
   @override
-  String get settings_themeKeywords => 'светлая, тёмная, режим темы';
+  String get settings_themeKeywords =>
+      '╤ü╨▓╨╡╤é╨╗╨░╤Å, ╤é╤æ╨╝╨╜╨░╤Å, ╤Ç╨╡╨╢╨╕╨╝ ╤é╨╡╨╝╤ï';
 
   @override
-  String get settings_themeModeSystem => 'Системная';
+  String get settings_themeModeSystem => '╨í╨╕╤ü╤é╨╡╨╝╨╜╨░╤Å';
 
   @override
-  String get settings_themeModeLight => 'Светлая';
+  String get settings_themeModeLight => '╨í╨▓╨╡╤é╨╗╨░╤Å';
 
   @override
-  String get settings_themeModeDark => 'Тёмная';
+  String get settings_themeModeDark => '╨ó╤æ╨╝╨╜╨░╤Å';
 
   @override
-  String get settings_appLanguageSystemDefault => 'Как в системе';
+  String get settings_appLanguageSystemDefault => '╨Ü╨░╨║ ╨▓ ╤ü╨╕╤ü╤é╨╡╨╝╨╡';
 
   @override
   String settings_appLanguageCurrentlyLabel(String language) {
-    return 'Сейчас: $language';
+    return '╨í╨╡╨╣╤ç╨░╤ü: $language';
   }
 
   @override
   String get settings_appLanguageTranslationsNote =>
-      'Переводы новые и могут быть неполными или неточными, поэтому Cat Browser использует английский, пока вы не выберете другой язык. Выберите «Как в системе», чтобы использовать язык устройства.';
+      '╨ƒ╨╡╤Ç╨╡╨▓╨╛╨┤╤ï ╨╜╨╛╨▓╤ï╨╡ ╨╕ ╨╝╨╛╨│╤â╤é ╨▒╤ï╤é╤î ╨╜╨╡╨┐╨╛╨╗╨╜╤ï╨╝╨╕ ╨╕╨╗╨╕ ╨╜╨╡╤é╨╛╤ç╨╜╤ï╨╝╨╕, ╨┐╨╛╤ì╤é╨╛╨╝╤â Cat Browser ╨╕╤ü╨┐╨╛╨╗╤î╨╖╤â╨╡╤é ╨░╨╜╨│╨╗╨╕╨╣╤ü╨║╨╕╨╣, ╨┐╨╛╨║╨░ ╨▓╤ï ╨╜╨╡ ╨▓╤ï╨▒╨╡╤Ç╨╡╤é╨╡ ╨┤╤Ç╤â╨│╨╛╨╣ ╤Å╨╖╤ï╨║. ╨Æ╤ï╨▒╨╡╤Ç╨╕╤é╨╡ ┬½╨Ü╨░╨║ ╨▓ ╤ü╨╕╤ü╤é╨╡╨╝╨╡┬╗, ╤ç╤é╨╛╨▒╤ï ╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╤î ╤Å╨╖╤ï╨║ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨░.';
 
   @override
-  String get settings_refreshRateTitle => 'Частота обновления';
+  String get settings_refreshRateTitle => '╨º╨░╤ü╤é╨╛╤é╨░ ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_refreshRateKeywords =>
-      'fps, гц, герц, частота кадров, 60 гц, 90 гц, 120 гц, плавность, высокая частота, режим экрана';
+      'fps, ╨│╤å, ╨│╨╡╤Ç╤å, ╤ç╨░╤ü╤é╨╛╤é╨░ ╨║╨░╨┤╤Ç╨╛╨▓, 60 ╨│╤å, 90 ╨│╤å, 120 ╨│╤å, ╨┐╨╗╨░╨▓╨╜╨╛╤ü╤é╤î, ╨▓╤ï╤ü╨╛╨║╨░╤Å ╤ç╨░╤ü╤é╨╛╤é╨░, ╤Ç╨╡╨╢╨╕╨╝ ╤ì╨║╤Ç╨░╨╜╨░';
 
   @override
   String get settings_refreshRateSubtitle =>
-      'Выберите «Высокая» для самой плавной прокрутки и анимаций на экранах 90/120 Гц или «Низкая» для экономии заряда.';
+      '╨Æ╤ï╨▒╨╡╤Ç╨╕╤é╨╡ ┬½╨Æ╤ï╤ü╨╛╨║╨░╤Å┬╗ ╨┤╨╗╤Å ╤ü╨░╨╝╨╛╨╣ ╨┐╨╗╨░╨▓╨╜╨╛╨╣ ╨┐╤Ç╨╛╨║╤Ç╤â╤é╨║╨╕ ╨╕ ╨░╨╜╨╕╨╝╨░╤å╨╕╨╣ ╨╜╨░ ╤ì╨║╤Ç╨░╨╜╨░╤à 90/120 ╨ô╤å ╨╕╨╗╨╕ ┬½╨¥╨╕╨╖╨║╨░╤Å┬╗ ╨┤╨╗╤Å ╤ì╨║╨╛╨╜╨╛╨╝╨╕╨╕ ╨╖╨░╤Ç╤Å╨┤╨░.';
 
   @override
-  String get settings_refreshRateModeSystem => 'Системная';
+  String get settings_refreshRateModeSystem => '╨í╨╕╤ü╤é╨╡╨╝╨╜╨░╤Å';
 
   @override
-  String get settings_refreshRateModeHigh => 'Высокая';
+  String get settings_refreshRateModeHigh => '╨Æ╤ï╤ü╨╛╨║╨░╤Å';
 
   @override
-  String get settings_refreshRateModeLow => 'Низкая';
+  String get settings_refreshRateModeLow => '╨¥╨╕╨╖╨║╨░╤Å';
 
   @override
-  String get settings_downloadFolderTitle => 'Папка загрузок';
+  String get settings_downloadFolderTitle => '╨ƒ╨░╨┐╨║╨░ ╨╖╨░╨│╤Ç╤â╨╖╨╛╨║';
 
   @override
   String get settings_downloadFolderKeywords =>
-      'загрузки, папка, каталог, хранилище, сохранение';
+      '╨╖╨░╨│╤Ç╤â╨╖╨║╨╕, ╨┐╨░╨┐╨║╨░, ╨║╨░╤é╨░╨╗╨╛╨│, ╤à╤Ç╨░╨╜╨╕╨╗╨╕╤ë╨╡, ╤ü╨╛╤à╤Ç╨░╨╜╨╡╨╜╨╕╨╡';
 
   @override
   String get settings_downloadFolderSubtitleDefault =>
-      'Сохранение в системную папку «Загрузки»';
+      '╨í╨╛╤à╤Ç╨░╨╜╨╡╨╜╨╕╨╡ ╨▓ ╤ü╨╕╤ü╤é╨╡╨╝╨╜╤â╤Ä ╨┐╨░╨┐╨║╤â ┬½╨ù╨░╨│╤Ç╤â╨╖╨║╨╕┬╗';
 
   @override
   String settings_downloadFolderSubtitleUnavailable(String folderName) {
-    return 'Больше недоступна — сохранение в системную папку «Загрузки» ($folderName)';
+    return '╨æ╨╛╨╗╤î╤ê╨╡ ╨╜╨╡╨┤╨╛╤ü╤é╤â╨┐╨╜╨░ ΓÇö ╤ü╨╛╤à╤Ç╨░╨╜╨╡╨╜╨╕╨╡ ╨▓ ╤ü╨╕╤ü╤é╨╡╨╝╨╜╤â╤Ä ╨┐╨░╨┐╨║╤â ┬½╨ù╨░╨│╤Ç╤â╨╖╨║╨╕┬╗ ($folderName)';
   }
 
   @override
   String get settings_downloadFolderSubtitleExternalManager =>
-      'Место сохранения файлов выбирает менеджер загрузок';
+      '╨£╨╡╤ü╤é╨╛ ╤ü╨╛╤à╤Ç╨░╨╜╨╡╨╜╨╕╤Å ╤ä╨░╨╣╨╗╨╛╨▓ ╨▓╤ï╨▒╨╕╤Ç╨░╨╡╤é ╨╝╨╡╨╜╨╡╨┤╨╢╨╡╤Ç ╨╖╨░╨│╤Ç╤â╨╖╨╛╨║';
 
   @override
   String get settings_downloadFolderResetTooltip =>
-      'Использовать системную папку «Загрузки»';
+      '╨ÿ╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╤î ╤ü╨╕╤ü╤é╨╡╨╝╨╜╤â╤Ä ╨┐╨░╨┐╨║╤â ┬½╨ù╨░╨│╤Ç╤â╨╖╨║╨╕┬╗';
 
   @override
   String get settings_externalDownloadManagerTitle =>
-      'Внешний менеджер загрузок';
+      '╨Æ╨╜╨╡╤ê╨╜╨╕╨╣ ╨╝╨╡╨╜╨╡╨┤╨╢╨╡╤Ç ╨╖╨░╨│╤Ç╤â╨╖╨╛╨║';
 
   @override
-  String get settings_externalDownloadManagerKeywords => 'загрузки, скачивания';
+  String get settings_externalDownloadManagerKeywords =>
+      '╨╖╨░╨│╤Ç╤â╨╖╨║╨╕, ╤ü╨║╨░╤ç╨╕╨▓╨░╨╜╨╕╤Å';
 
   @override
   String get settings_externalDownloadManagerSubtitle =>
-      'Управлять загрузками с помощью другого приложения';
+      '╨ú╨┐╤Ç╨░╨▓╨╗╤Å╤é╤î ╨╖╨░╨│╤Ç╤â╨╖╨║╨░╨╝╨╕ ╤ü ╨┐╨╛╨╝╨╛╤ë╤î╤Ä ╨┤╤Ç╤â╨│╨╛╨│╨╛ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_preferredDownloadManagerTitle =>
-      'Предпочтительный менеджер загрузок';
+      '╨ƒ╤Ç╨╡╨┤╨┐╨╛╤ç╤é╨╕╤é╨╡╨╗╤î╨╜╤ï╨╣ ╨╝╨╡╨╜╨╡╨┤╨╢╨╡╤Ç ╨╖╨░╨│╤Ç╤â╨╖╨╛╨║';
 
   @override
   String get settings_preferredDownloadManagerKeywords =>
-      'загрузки, менеджер загрузок, всегда использовать, приложение по умолчанию, выбор, спрашивать';
+      '╨╖╨░╨│╤Ç╤â╨╖╨║╨╕, ╨╝╨╡╨╜╨╡╨┤╨╢╨╡╤Ç ╨╖╨░╨│╤Ç╤â╨╖╨╛╨║, ╨▓╤ü╨╡╨│╨┤╨░ ╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╤î, ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä, ╨▓╤ï╨▒╨╛╤Ç, ╤ü╨┐╤Ç╨░╤ê╨╕╨▓╨░╤é╤î';
 
   @override
   String get settings_preferredDownloadManagerSubtitleNotSet =>
-      'Не задан — отметьте «Всегда использовать это приложение», когда в следующий раз появится окно выбора';
+      '╨¥╨╡ ╨╖╨░╨┤╨░╨╜ ΓÇö ╨╛╤é╨╝╨╡╤é╤î╤é╨╡ ┬½╨Æ╤ü╨╡╨│╨┤╨░ ╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╤î ╤ì╤é╨╛ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╨╡┬╗, ╨║╨╛╨│╨┤╨░ ╨▓ ╤ü╨╗╨╡╨┤╤â╤Ä╤ë╨╕╨╣ ╤Ç╨░╨╖ ╨┐╨╛╤Å╨▓╨╕╤é╤ü╤Å ╨╛╨║╨╜╨╛ ╨▓╤ï╨▒╨╛╤Ç╨░';
 
   @override
   String settings_preferredDownloadManagerSubtitleThisApp(String appName) {
-    return '$appName, с подтверждением перед каждой загрузкой';
+    return '$appName, ╤ü ╨┐╨╛╨┤╤é╨▓╨╡╤Ç╨╢╨┤╨╡╨╜╨╕╨╡╨╝ ╨┐╨╡╤Ç╨╡╨┤ ╨║╨░╨╢╨┤╨╛╨╣ ╨╖╨░╨│╤Ç╤â╨╖╨║╨╛╨╣';
   }
 
   @override
   String settings_preferredDownloadManagerSubtitleUnavailable(
     String packageName,
   ) {
-    return 'Больше не установлен ($packageName) — спрашивать каждый раз';
+    return '╨æ╨╛╨╗╤î╤ê╨╡ ╨╜╨╡ ╤â╤ü╤é╨░╨╜╨╛╨▓╨╗╨╡╨╜ ($packageName) ΓÇö ╤ü╨┐╤Ç╨░╤ê╨╕╨▓╨░╤é╤î ╨║╨░╨╢╨┤╤ï╨╣ ╤Ç╨░╨╖';
   }
 
   @override
   String get settings_preferredDownloadManagerSubtitleExternalOff =>
-      'Не задан — используется только с внешним менеджером загрузок';
+      '╨¥╨╡ ╨╖╨░╨┤╨░╨╜ ΓÇö ╨╕╤ü╨┐╨╛╨╗╤î╨╖╤â╨╡╤é╤ü╤Å ╤é╨╛╨╗╤î╨║╨╛ ╤ü ╨▓╨╜╨╡╤ê╨╜╨╕╨╝ ╨╝╨╡╨╜╨╡╨┤╨╢╨╡╤Ç╨╛╨╝ ╨╖╨░╨│╤Ç╤â╨╖╨╛╨║';
 
   @override
   String settings_preferredDownloadManagerSubtitleInactive(String appName) {
-    return '$appName — не используется, пока внешний менеджер загрузок выключен';
+    return '$appName ΓÇö ╨╜╨╡ ╨╕╤ü╨┐╨╛╨╗╤î╨╖╤â╨╡╤é╤ü╤Å, ╨┐╨╛╨║╨░ ╨▓╨╜╨╡╤ê╨╜╨╕╨╣ ╨╝╨╡╨╜╨╡╨┤╨╢╨╡╤Ç ╨╖╨░╨│╤Ç╤â╨╖╨╛╨║ ╨▓╤ï╨║╨╗╤Ä╤ç╨╡╨╜';
   }
 
   @override
   String get settings_preferredDownloadManagerClearTooltip =>
-      'Сбросить предпочтительный менеджер';
+      '╨í╨▒╤Ç╨╛╤ü╨╕╤é╤î ╨┐╤Ç╨╡╨┤╨┐╨╛╤ç╤é╨╕╤é╨╡╨╗╤î╨╜╤ï╨╣ ╨╝╨╡╨╜╨╡╨┤╨╢╨╡╤Ç';
 
   @override
-  String get settings_defaultBrowserSectionTitle => 'Браузер по умолчанию';
+  String get settings_defaultBrowserSectionTitle =>
+      '╨æ╤Ç╨░╤â╨╖╨╡╤Ç ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä';
 
   @override
-  String get settings_defaultBrowserSectionKeywords => 'браузер по умолчанию';
+  String get settings_defaultBrowserSectionKeywords =>
+      '╨▒╤Ç╨░╤â╨╖╨╡╤Ç ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä';
 
   @override
   String get settings_indexDefaultBrowserSubtitle =>
-      'Сделать Cat Browser браузером по умолчанию';
+      '╨í╨┤╨╡╨╗╨░╤é╤î Cat Browser ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨╛╨╝ ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä';
 
   @override
-  String get settings_appearanceSectionTitle => 'Внешний вид';
+  String get settings_appearanceSectionTitle => '╨Æ╨╜╨╡╤ê╨╜╨╕╨╣ ╨▓╨╕╨┤';
 
   @override
   String get settings_indexThemeSubtitle =>
-      'Выбор системной, светлой или тёмной темы';
+      '╨Æ╤ï╨▒╨╛╤Ç ╤ü╨╕╤ü╤é╨╡╨╝╨╜╨╛╨╣, ╤ü╨▓╨╡╤é╨╗╨╛╨╣ ╨╕╨╗╨╕ ╤é╤æ╨╝╨╜╨╛╨╣ ╤é╨╡╨╝╤ï';
 
   @override
-  String get settings_indexAppLanguageTitle => 'Язык приложения';
+  String get settings_indexAppLanguageTitle => '╨»╨╖╤ï╨║ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_indexAppLanguageKeywords =>
-      'локаль, перевод, язык интерфейса, русский';
+      '╨╗╨╛╨║╨░╨╗╤î, ╨┐╨╡╤Ç╨╡╨▓╨╛╨┤, ╤Å╨╖╤ï╨║ ╨╕╨╜╤é╨╡╤Ç╤ä╨╡╨╣╤ü╨░, ╤Ç╤â╤ü╤ü╨║╨╕╨╣';
 
   @override
   String get settings_indexAppLanguageSubtitle =>
-      'Выбор языка собственного интерфейса Cat Browser';
+      '╨Æ╤ï╨▒╨╛╤Ç ╤Å╨╖╤ï╨║╨░ ╤ü╨╛╨▒╤ü╤é╨▓╨╡╨╜╨╜╨╛╨│╨╛ ╨╕╨╜╤é╨╡╤Ç╤ä╨╡╨╣╤ü╨░ Cat Browser';
 
   @override
   String get settings_indexRefreshRateSubtitle =>
-      'Запрашивать высокую или низкую частоту обновления экрана (Android)';
+      '╨ù╨░╨┐╤Ç╨░╤ê╨╕╨▓╨░╤é╤î ╨▓╤ï╤ü╨╛╨║╤â╤Ä ╨╕╨╗╨╕ ╨╜╨╕╨╖╨║╤â╤Ä ╤ç╨░╤ü╤é╨╛╤é╤â ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤Å ╤ì╨║╤Ç╨░╨╜╨░ (Android)';
 
   @override
   String get settings_indexShowCloseButtonSubtitle =>
-      'Добавить кнопку, закрывающую страницу поиска / новой вкладки без жеста «Назад»';
+      '╨ö╨╛╨▒╨░╨▓╨╕╤é╤î ╨║╨╜╨╛╨┐╨║╤â, ╨╖╨░╨║╤Ç╤ï╨▓╨░╤Ä╤ë╤â╤Ä ╤ü╤é╤Ç╨░╨╜╨╕╤å╤â ╨┐╨╛╨╕╤ü╨║╨░ / ╨╜╨╛╨▓╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨▒╨╡╨╖ ╨╢╨╡╤ü╤é╨░ ┬½╨¥╨░╨╖╨░╨┤┬╗';
 
   @override
-  String get settings_profileSectionTitle => 'Профиль';
+  String get settings_profileSectionTitle => '╨ƒ╤Ç╨╛╤ä╨╕╨╗╤î';
 
   @override
-  String get settings_profileSectionKeywords => 'пользователь, профиль';
+  String get settings_profileSectionKeywords =>
+      '╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╨╡╨╗╤î, ╨┐╤Ç╨╛╤ä╨╕╨╗╤î';
 
   @override
   String get settings_indexBackupProfileSubtitle =>
-      'Создать зашифрованную резервную копию используемого профиля';
+      '╨í╨╛╨╖╨┤╨░╤é╤î ╨╖╨░╤ê╨╕╤ä╤Ç╨╛╨▓╨░╨╜╨╜╤â╤Ä ╤Ç╨╡╨╖╨╡╤Ç╨▓╨╜╤â╤Ä ╨║╨╛╨┐╨╕╤Ä ╨╕╤ü╨┐╨╛╨╗╤î╨╖╤â╨╡╨╝╨╛╨│╨╛ ╨┐╤Ç╨╛╤ä╨╕╨╗╤Å';
 
   @override
   String get settings_indexSettingsTransferSubtitle =>
-      'Перенести настройки между профилями или устройствами либо приложить их к сообщению об ошибке';
+      '╨ƒ╨╡╤Ç╨╡╨╜╨╡╤ü╤é╨╕ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨╝╨╡╨╢╨┤╤â ╨┐╤Ç╨╛╤ä╨╕╨╗╤Å╨╝╨╕ ╨╕╨╗╨╕ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨░╨╝╨╕ ╨╗╨╕╨▒╨╛ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╕╤é╤î ╨╕╤à ╨║ ╤ü╨╛╨╛╨▒╤ë╨╡╨╜╨╕╤Ä ╨╛╨▒ ╨╛╤ê╨╕╨▒╨║╨╡';
 
   @override
-  String get settings_downloadsSectionTitle => 'Загрузки';
+  String get settings_downloadsSectionTitle => '╨ù╨░╨│╤Ç╤â╨╖╨║╨╕';
 
   @override
   String get settings_indexDownloadFolderSubtitle =>
-      'Выбор места сохранения загруженных файлов';
+      '╨Æ╤ï╨▒╨╛╤Ç ╨╝╨╡╤ü╤é╨░ ╤ü╨╛╤à╤Ç╨░╨╜╨╡╨╜╨╕╤Å ╨╖╨░╨│╤Ç╤â╨╢╨╡╨╜╨╜╤ï╤à ╤ä╨░╨╣╨╗╨╛╨▓';
 
   @override
   String get settings_indexPreferredDownloadManagerSubtitle =>
-      'Приложение, в которое загрузки передаются без вопроса';
+      '╨ƒ╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╨╡, ╨▓ ╨║╨╛╤é╨╛╤Ç╨╛╨╡ ╨╖╨░╨│╤Ç╤â╨╖╨║╨╕ ╨┐╨╡╤Ç╨╡╨┤╨░╤Ä╤é╤ü╤Å ╨▒╨╡╨╖ ╨▓╨╛╨┐╤Ç╨╛╤ü╨░';
 
   @override
-  String get settings_contentIdentitySectionTitle => 'Контент и идентификация';
+  String get settings_contentIdentitySectionTitle =>
+      '╨Ü╨╛╨╜╤é╨╡╨╜╤é ╨╕ ╨╕╨┤╨╡╨╜╤é╨╕╤ä╨╕╨║╨░╤å╨╕╤Å';
 
   @override
-  String get settings_contentIdentitySectionKeywords => 'движок';
+  String get settings_contentIdentitySectionKeywords => '╨┤╨▓╨╕╨╢╨╛╨║';
 
   @override
   String get settings_indexJavascriptSubtitle =>
-      'Включить или выключить скрипты на сайтах';
+      '╨Æ╨║╨╗╤Ä╤ç╨╕╤é╤î ╨╕╨╗╨╕ ╨▓╤ï╨║╨╗╤Ä╤ç╨╕╤é╤î ╤ü╨║╤Ç╨╕╨┐╤é╤ï ╨╜╨░ ╤ü╨░╨╣╤é╨░╤à';
 
   @override
   String get settings_indexUserAgentSubtitle =>
-      'Переопределить строку user agent браузера';
+      '╨ƒ╨╡╤Ç╨╡╨╛╨┐╤Ç╨╡╨┤╨╡╨╗╨╕╤é╤î ╤ü╤é╤Ç╨╛╨║╤â user agent ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░';
 
   @override
   String get settings_indexEnterpriseRootsSubtitle =>
-      'Разрешить сертификаты из хранилища ЦС Android';
+      '╨á╨░╨╖╤Ç╨╡╤ê╨╕╤é╤î ╤ü╨╡╤Ç╤é╨╕╤ä╨╕╨║╨░╤é╤ï ╨╕╨╖ ╤à╤Ç╨░╨╜╨╕╨╗╨╕╤ë╨░ ╨ª╨í Android';
 
   @override
-  String get settings_experimentalSectionTitle => 'Экспериментальные';
+  String get settings_experimentalSectionTitle =>
+      '╨¡╨║╤ü╨┐╨╡╤Ç╨╕╨╝╨╡╨╜╤é╨░╨╗╤î╨╜╤ï╨╡';
 
   @override
-  String get settings_developerToolsSectionTitle => 'Инструменты разработчика';
+  String get settings_developerToolsSectionTitle =>
+      '╨ÿ╨╜╤ü╤é╤Ç╤â╨╝╨╡╨╜╤é╤ï ╤Ç╨░╨╖╤Ç╨░╨▒╨╛╤é╤ç╨╕╨║╨░';
 
   @override
-  String get settings_developerToolsSectionKeywords => 'отладка, debug';
+  String get settings_developerToolsSectionKeywords => '╨╛╤é╨╗╨░╨┤╨║╨░, debug';
 
   @override
   String get settings_indexUnmountGeckoViewSubtitle =>
-      'Перестраивать веб-движок после наложения, а не держать его в памяти';
+      '╨ƒ╨╡╤Ç╨╡╤ü╤é╤Ç╨░╨╕╨▓╨░╤é╤î ╨▓╨╡╨▒-╨┤╨▓╨╕╨╢╨╛╨║ ╨┐╨╛╤ü╨╗╨╡ ╨╜╨░╨╗╨╛╨╢╨╡╨╜╨╕╤Å, ╨░ ╨╜╨╡ ╨┤╨╡╤Ç╨╢╨░╤é╤î ╨╡╨│╨╛ ╨▓ ╨┐╨░╨╝╤Å╤é╨╕';
 
   @override
-  String get settings_tabsSectionTitle => 'Вкладки';
+  String get settings_tabsSectionTitle => '╨Æ╨║╨╗╨░╨┤╨║╨╕';
 
   @override
   String get settings_indexTabListDirectionSubtitle =>
-      'Выбор порядка вкладок в виде списка';
+      '╨Æ╤ï╨▒╨╛╤Ç ╨┐╨╛╤Ç╤Å╨┤╨║╨░ ╨▓╨║╨╗╨░╨┤╨╛╨║ ╨▓ ╨▓╨╕╨┤╨╡ ╤ü╨┐╨╕╤ü╨║╨░';
 
   @override
   String get settings_indexTabBarDirectionSubtitle =>
-      'Выбор порядка вкладок на панели вкладок';
+      '╨Æ╤ï╨▒╨╛╤Ç ╨┐╨╛╤Ç╤Å╨┤╨║╨░ ╨▓╨║╨╗╨░╨┤╨╛╨║ ╨╜╨░ ╨┐╨░╨╜╨╡╨╗╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
   String get settings_indexChildTabPlacementSubtitle =>
-      'Выбор места вставки вкладок, открытых из другой вкладки';
+      '╨Æ╤ï╨▒╨╛╤Ç ╨╝╨╡╤ü╤é╨░ ╨▓╤ü╤é╨░╨▓╨║╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║, ╨╛╤é╨║╤Ç╤ï╤é╤ï╤à ╨╕╨╖ ╨┤╤Ç╤â╨│╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╕';
 
   @override
   String get settings_indexCreateChildTabsSubtitle =>
-      'Показывать кнопку, добавляющую дочернюю вкладку под текущей';
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨║╨╜╨╛╨┐╨║╤â, ╨┤╨╛╨▒╨░╨▓╨╗╤Å╤Ä╤ë╤â╤Ä ╨┤╨╛╤ç╨╡╤Ç╨╜╤Ä╤Ä ╨▓╨║╨╗╨░╨┤╨║╤â ╨┐╨╛╨┤ ╤é╨╡╨║╤â╤ë╨╡╨╣';
 
   @override
   String get settings_indexBackgroundTabBehaviorSubtitle =>
-      'Выбор действия после открытия вкладки в фоне';
+      '╨Æ╤ï╨▒╨╛╤Ç ╨┤╨╡╨╣╤ü╤é╨▓╨╕╤Å ╨┐╨╛╤ü╨╗╨╡ ╨╛╤é╨║╤Ç╤ï╤é╨╕╤Å ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨▓ ╤ä╨╛╨╜╨╡';
 
   @override
-  String get settings_navigationSectionTitle => 'Навигация';
+  String get settings_navigationSectionTitle => '╨¥╨░╨▓╨╕╨│╨░╤å╨╕╤Å';
 
   @override
   String get settings_indexDoubleBackCloseTabSubtitle =>
-      'Закрывать текущую вкладку двумя нажатиями «Назад»';
+      '╨ù╨░╨║╤Ç╤ï╨▓╨░╤é╤î ╤é╨╡╨║╤â╤ë╤â╤Ä ╨▓╨║╨╗╨░╨┤╨║╤â ╨┤╨▓╤â╨╝╤Å ╨╜╨░╨╢╨░╤é╨╕╤Å╨╝╨╕ ┬½╨¥╨░╨╖╨░╨┤┬╗';
 
   @override
   String get settings_indexTabBarSwipesSubtitle =>
-      'Выбор действий свайпов по панели вкладок';
+      '╨Æ╤ï╨▒╨╛╤Ç ╨┤╨╡╨╣╤ü╤é╨▓╨╕╨╣ ╤ü╨▓╨░╨╣╨┐╨╛╨▓ ╨┐╨╛ ╨┐╨░╨╜╨╡╨╗╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
   String get settings_indexSequentialTabNavigationSubtitle =>
-      'Выбор того, где заканчивается последовательный переход по вкладкам';
+      '╨Æ╤ï╨▒╨╛╤Ç ╤é╨╛╨│╨╛, ╨│╨┤╨╡ ╨╖╨░╨║╨░╨╜╤ç╨╕╨▓╨░╨╡╤é╤ü╤Å ╨┐╨╛╤ü╨╗╨╡╨┤╨╛╨▓╨░╤é╨╡╨╗╤î╨╜╤ï╨╣ ╨┐╨╡╤Ç╨╡╤à╨╛╨┤ ╨┐╨╛ ╨▓╨║╨╗╨░╨┤╨║╨░╨╝';
 
   @override
   String get settings_indexOpenLinksInAppsSubtitle =>
-      'Выбор способа открытия ссылок на внешние приложения';
+      '╨Æ╤ï╨▒╨╛╤Ç ╤ü╨┐╨╛╤ü╨╛╨▒╨░ ╨╛╤é╨║╤Ç╤ï╤é╨╕╤Å ╤ü╤ü╤ï╨╗╨╛╨║ ╨╜╨░ ╨▓╨╜╨╡╤ê╨╜╨╕╨╡ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å';
 
   @override
-  String get settings_desktopModeSectionTitle => 'Версия для ПК';
+  String get settings_desktopModeSectionTitle => '╨Æ╨╡╤Ç╤ü╨╕╤Å ╨┤╨╗╤Å ╨ƒ╨Ü';
 
   @override
   String get settings_indexGlobalDesktopModeSubtitle =>
-      'Открывать новые вкладки в версии для ПК по умолчанию';
+      '╨₧╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╨╜╨╛╨▓╤ï╨╡ ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨▓ ╨▓╨╡╤Ç╤ü╨╕╨╕ ╨┤╨╗╤Å ╨ƒ╨Ü ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä';
 
   @override
-  String get settings_homeScreenSectionTitle => 'Главный экран';
+  String get settings_homeScreenSectionTitle => '╨ô╨╗╨░╨▓╨╜╤ï╨╣ ╤ì╨║╤Ç╨░╨╜';
 
   @override
   String get settings_indexAllowNonManifestPwaInstallSubtitle =>
-      'Разрешить устанавливать сайты без манифеста как приложения';
+      '╨ú╤ü╤é╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╤é╤î ╨╗╤Ä╨▒╨╛╨╣ ╤ü╨░╨╣╤é ╨║╨░╨║ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╨╡';
 
   @override
-  String get settings_externalLinksSectionTitle => 'Внешние ссылки';
+  String get settings_externalLinksSectionTitle =>
+      '╨Æ╨╜╨╡╤ê╨╜╨╕╨╡ ╤ü╤ü╤ï╨╗╨║╨╕';
 
   @override
   String get settings_indexCustomTabsSubtitle =>
-      'Разрешить другим приложениям открывать ссылки в облегчённой встроенной вкладке вместо основного браузера';
+      '╨á╨░╨╖╤Ç╨╡╤ê╨╕╤é╤î ╨┤╤Ç╤â╨│╨╕╨╝ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å╨╝ ╨╛╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╤ü╤ü╤ï╨╗╨║╨╕ ╨▓ ╨╛╨▒╨╗╨╡╨│╤ç╤æ╨╜╨╜╨╛╨╣ ╨▓╤ü╤é╤Ç╨╛╨╡╨╜╨╜╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╡ ╨▓╨╝╨╡╤ü╤é╨╛ ╨╛╤ü╨╜╨╛╨▓╨╜╨╛╨│╨╛ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░';
 
   @override
-  String get settings_bookmarksSectionTitle => 'Закладки';
+  String get settings_bookmarksSectionTitle => '╨ù╨░╨║╨╗╨░╨┤╨║╨╕';
 
   @override
-  String get settings_resolverSettingsSectionTitle => 'Настройки резолвера';
+  String get settings_resolverSettingsSectionTitle =>
+      '╨¥╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨┐╤Ç╨╛╨▓╨░╨╣╨┤╨╡╤Ç╨░';
 
   @override
-  String get settings_indexDnsOverHttpsResolverTitle => 'DNS через HTTPS';
+  String get settings_indexDnsOverHttpsResolverTitle =>
+      '╨æ╨╡╨╖╨╛╨┐╨░╤ü╨╜╤ï╨╣ DNS';
 
   @override
   String get settings_indexDnsOverHttpsResolverKeywords =>
-      'doh, резолвер, dns-провайдер, свой резолвер';
+      'dns over https, doh, ╤Ç╨╡╨╖╨╛╨╗╨▓╨╡╤Ç, dns-╨┐╤Ç╨╛╨▓╨░╨╣╨┤╨╡╤Ç, ╤ü╨▓╨╛╨╣ ╤Ç╨╡╨╖╨╛╨╗╨▓╨╡╤Ç';
 
   @override
   String get settings_indexDnsOverHttpsResolverSubtitle =>
-      'Уровень защиты, выбор провайдера и сохранённые свои резолверы';
+      '╨ú╤Ç╨╛╨▓╨╡╨╜╤î ╨╖╨░╤ë╨╕╤é╤ï, ╨┐╤Ç╨╛╨▓╨░╨╣╨┤╨╡╤Ç ╨╕ ╨▓╨░╤ê╨╕ ╨┐╤Ç╨╛╨▓╨░╨╣╨┤╨╡╤Ç╤ï';
 
   @override
-  String get settings_runtimeStartupSectionTitle => 'Среда выполнения и запуск';
+  String get settings_runtimeStartupSectionTitle =>
+      '╨í╤Ç╨╡╨┤╨░ ╨▓╤ï╨┐╨╛╨╗╨╜╨╡╨╜╨╕╤Å ╨╕ ╨╖╨░╨┐╤â╤ü╨║';
 
   @override
   String get settings_indexIsolatedContentProcessSubtitle =>
-      'Запускать веб-контент в изолированном процессе';
+      '╨ù╨░╨┐╤â╤ü╨║╨░╤é╤î ╨▓╨╡╨▒-╨║╨╛╨╜╤é╨╡╨╜╤é ╨▓ ╨╕╨╖╨╛╨╗╨╕╤Ç╨╛╨▓╨░╨╜╨╜╨╛╨╝ ╨┐╤Ç╨╛╤å╨╡╤ü╤ü╨╡';
 
   @override
   String get settings_indexAppZygoteProcessSubtitle =>
-      'Предзагружать сервис контента для быстрого запуска изолированного процесса';
+      '╨ƒ╤Ç╨╡╨┤╨╖╨░╨│╤Ç╤â╨╢╨░╤é╤î ╤ü╨╡╤Ç╨▓╨╕╤ü ╨║╨╛╨╜╤é╨╡╨╜╤é╨░ ╨┤╨╗╤Å ╨▒╤ï╤ü╤é╤Ç╨╛╨│╨╛ ╨╖╨░╨┐╤â╤ü╨║╨░ ╨╕╨╖╨╛╨╗╨╕╤Ç╨╛╨▓╨░╨╜╨╜╨╛╨│╨╛ ╨┐╤Ç╨╛╤å╨╡╤ü╤ü╨░';
 
   @override
-  String get settings_startupSectionTitle => 'Запуск';
+  String get settings_startupSectionTitle => '╨ù╨░╨┐╤â╤ü╨║';
 
   @override
   String get settings_startupSectionKeywords =>
-      'запуск, домашняя, продолжить, последняя вкладка, свой url';
+      '╨╖╨░╨┐╤â╤ü╨║, ╨┤╨╛╨╝╨░╤ê╨╜╤Å╤Å, ╨┐╤Ç╨╛╨┤╨╛╨╗╨╢╨╕╤é╤î, ╨┐╨╛╤ü╨╗╨╡╨┤╨╜╤Å╤Å ╨▓╨║╨╗╨░╨┤╨║╨░, ╤ü╨▓╨╛╨╣ url';
 
   @override
-  String get settings_indexHomeTargetTitle => 'Когда нет вкладки для показа';
+  String get settings_indexHomeTargetTitle =>
+      '╨Ü╨╛╨│╨┤╨░ ╨╜╨╡╤é ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨┤╨╗╤Å ╨┐╨╛╨║╨░╨╖╨░';
 
   @override
   String get settings_indexHomeTargetKeywords =>
-      'запуск, продолжить, последняя вкладка, свой url, домашняя страница';
+      '╨╖╨░╨┐╤â╤ü╨║, ╨┐╤Ç╨╛╨┤╨╛╨╗╨╢╨╕╤é╤î, ╨┐╨╛╤ü╨╗╨╡╨┤╨╜╤Å╤Å ╨▓╨║╨╗╨░╨┤╨║╨░, ╤ü╨▓╨╛╨╣ url, ╨┤╨╛╨╝╨░╤ê╨╜╤Å╤Å ╤ü╤é╤Ç╨░╨╜╨╕╤å╨░';
 
   @override
   String get settings_indexHomeTargetSubtitle =>
-      'При запуске и после закрытия последней вкладки';
+      '╨ƒ╤Ç╨╕ ╨╖╨░╨┐╤â╤ü╨║╨╡ ╨╕ ╨┐╨╛╤ü╨╗╨╡ ╨╖╨░╨║╤Ç╤ï╤é╨╕╤Å ╨┐╨╛╤ü╨╗╨╡╨┤╨╜╨╡╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╕';
 
   @override
   String get settings_indexHomeTargetOnLastTabClosedSubtitle =>
-      'Иначе вместо этого открывается вкладка из другого контейнера';
+      '╨ÿ╨╜╨░╤ç╨╡ ╨▓╨╝╨╡╤ü╤é╨╛ ╤ì╤é╨╛╨│╨╛ ╨╛╤é╨║╤Ç╤ï╨▓╨░╨╡╤é╤ü╤Å ╨▓╨║╨╗╨░╨┤╨║╨░ ╨╕╨╖ ╨┤╤Ç╤â╨│╨╛╨│╨╛ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╨░';
 
   @override
-  String get settings_homeAppearanceSectionTitle => 'Внешний вид';
+  String get settings_homeAppearanceSectionTitle => '╨Æ╨╜╨╡╤ê╨╜╨╕╨╣ ╨▓╨╕╨┤';
 
   @override
   String get settings_homeAppearanceSectionKeywords =>
-      'домашняя, обои, фон, изображение, размытие, затемнение';
+      '╨┤╨╛╨╝╨░╤ê╨╜╤Å╤Å, ╨╛╨▒╨╛╨╕, ╤ä╨╛╨╜, ╨╕╨╖╨╛╨▒╤Ç╨░╨╢╨╡╨╜╨╕╨╡, ╤Ç╨░╨╖╨╝╤ï╤é╨╕╨╡, ╨╖╨░╤é╨╡╨╝╨╜╨╡╨╜╨╕╨╡';
 
   @override
   String get settings_indexWallpaperSubtitle =>
-      'Фоновое изображение для домашней страницы';
+      '╨ñ╨╛╨╜╨╛╨▓╨╛╨╡ ╨╕╨╖╨╛╨▒╤Ç╨░╨╢╨╡╨╜╨╕╨╡ ╨┤╨╗╤Å ╨┤╨╛╨╝╨░╤ê╨╜╨╡╨╣ ╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï';
 
   @override
-  String get settings_layoutSectionTitle => 'Макет';
+  String get settings_layoutSectionTitle => '╨£╨░╨║╨╡╤é';
 
   @override
   String get settings_layoutSectionKeywords =>
-      'домашняя, новая вкладка, разделы, модули, макет';
+      '╨┤╨╛╨╝╨░╤ê╨╜╤Å╤Å, ╨╜╨╛╨▓╨░╤Å ╨▓╨║╨╗╨░╨┤╨║╨░, ╤Ç╨░╨╖╨┤╨╡╨╗╤ï, ╨╝╨╛╨┤╤â╨╗╨╕, ╨╝╨░╨║╨╡╤é';
 
   @override
   String get settings_indexHomeSearchBarPlacementTitle =>
-      'Положение строки поиска';
+      '╨ƒ╨╛╨╗╨╛╨╢╨╡╨╜╨╕╨╡ ╤ü╤é╤Ç╨╛╨║╨╕ ╨┐╨╛╨╕╤ü╨║╨░';
 
   @override
   String get settings_indexHomeSearchBarPlacementKeywords =>
-      'поиск, строка, положение, адрес, url, вверху, внизу, панель вкладок, домашняя';
+      '╨┐╨╛╨╕╤ü╨║, ╤ü╤é╤Ç╨╛╨║╨░, ╨┐╨╛╨╗╨╛╨╢╨╡╨╜╨╕╨╡, ╨░╨┤╤Ç╨╡╤ü, url, ╨▓╨▓╨╡╤Ç╤à╤â, ╨▓╨╜╨╕╨╖╤â, ╨┐╨░╨╜╨╡╨╗╤î ╨▓╨║╨╗╨░╨┤╨╛╨║, ╨┤╨╛╨╝╨░╤ê╨╜╤Å╤Å';
 
   @override
   String get settings_indexHomeSearchBarPlacementSubtitle =>
-      'Где на домашней странице находится поле поиска';
+      '╨ô╨┤╨╡ ╨╜╨░ ╨┤╨╛╨╝╨░╤ê╨╜╨╡╨╣ ╤ü╤é╤Ç╨░╨╜╨╕╤å╨╡ ╨╜╨░╤à╨╛╨┤╨╕╤é╤ü╤Å ╨┐╨╛╨╗╨╡ ╨┐╨╛╨╕╤ü╨║╨░';
 
   @override
   String get settings_indexSearchFieldPlacementTitle =>
-      'Search field on new tabs';
+      '╨ƒ╨╛╨╗╨╡ ╨┐╨╛╨╕╤ü╨║╨░ ╨╜╨░ ╨╜╨╛╨▓╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╡';
 
   @override
   String get settings_indexSearchFieldPlacementKeywords =>
-      'search, field, input, position, address, url, edit, top, bottom, tab bar, new tab, one-handed, thumb';
+      '╨┐╨╛╨╕╤ü╨║, ╨┐╨╛╨╗╨╡, ╨▓╨▓╨╛╨┤, ╨┐╨╛╨╗╨╛╨╢╨╡╨╜╨╕╨╡, ╨░╨┤╤Ç╨╡╤ü, url, ╤Ç╨╡╨┤╨░╨║╤é╨╕╤Ç╨╛╨▓╨░╨╜╨╕╨╡, ╨▓╨▓╨╡╤Ç╤à╤â, ╨▓╨╜╨╕╨╖╤â, ╨┐╨░╨╜╨╡╨╗╤î ╨▓╨║╨╗╨░╨┤╨╛╨║, ╨╜╨╛╨▓╨░╤Å ╨▓╨║╨╗╨░╨┤╨║╨░, ╨╛╨┤╨╜╨╛╨╣ ╤Ç╤â╨║╨╛╨╣, ╨▒╨╛╨╗╤î╤ê╨╛╨╣ ╨┐╨░╨╗╨╡╤å';
 
   @override
   String get settings_indexSearchFieldPlacementSubtitle =>
-      'Where the new tab page and address editing put the input field';
+      '╨ô╨┤╨╡ ╨╜╨░╤à╨╛╨┤╨╕╤é╤ü╤Å ╨┐╨╛╨╗╨╡ ╨▓╨▓╨╛╨┤╨░ ╨╜╨░ ╨╜╨╛╨▓╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╡ ╨╕ ╨┐╤Ç╨╕ ╤Ç╨╡╨┤╨░╨║╤é╨╕╤Ç╨╛╨▓╨░╨╜╨╕╨╕ ╨░╨┤╤Ç╨╡╤ü╨░';
 
   @override
-  String get settings_searchFieldPlacementAutoLabel => 'Follow the tab bar';
+  String get settings_searchFieldPlacementAutoLabel =>
+      '╨Ü╨░╨║ ╤â ╨┐╨░╨╜╨╡╨╗╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
-  String get settings_searchFieldPlacementTopLabel => 'Top';
+  String get settings_searchFieldPlacementTopLabel => '╨Æ╨▓╨╡╤Ç╤à╤â';
 
   @override
-  String get settings_searchFieldPlacementBottomLabel => 'Bottom';
+  String get settings_searchFieldPlacementBottomLabel => '╨Æ╨╜╨╕╨╖╤â';
 
   @override
   String settings_searchFieldPlacementCurrentlyLabel(String value) {
-    return 'Currently: $value';
+    return '╨í╨╡╨╣╤ç╨░╤ü: $value';
   }
 
   @override
   String get settings_searchFieldPlacementTopDescription =>
-      'Suggestions are listed below the field';
+      '╨ƒ╨╛╨┤╤ü╨║╨░╨╖╨║╨╕ ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╤Ä╤é╤ü╤Å ╨┐╨╛╨┤ ╨┐╨╛╨╗╨╡╨╝';
 
   @override
   String get settings_searchFieldPlacementBottomDescription =>
-      'Within thumb reach, with suggestions above it and the best match nearest';
+      '╨Æ ╨╖╨╛╨╜╨╡ ╨┤╨╛╤ü╤Å╨│╨░╨╡╨╝╨╛╤ü╤é╨╕ ╨▒╨╛╨╗╤î╤ê╨╛╨│╨╛ ╨┐╨░╨╗╤î╤å╨░: ╨┐╨╛╨┤╤ü╨║╨░╨╖╨║╨╕ ╨╜╨░╨┤ ╨┐╨╛╨╗╨╡╨╝, ╨╗╤â╤ç╤ê╨░╤Å ΓÇö ╨▒╨╗╨╕╨╢╨╡ ╨▓╤ü╨╡╨│╨╛ ╨║ ╨╜╨╡╨╝╤â';
 
   @override
-  String get settings_searchFieldRowTitle => 'Search field';
+  String get settings_searchFieldRowTitle => '╨ƒ╨╛╨╗╨╡ ╨┐╨╛╨╕╤ü╨║╨░';
 
   @override
   String get settings_allowlistExceptionsSectionTitle =>
-      'Исключения из списка разрешённых';
+      '╨ÿ╤ü╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å ╨╕╨╖ ╤ü╨┐╨╕╤ü╨║╨░ ╤Ç╨░╨╖╤Ç╨╡╤ê╤æ╨╜╨╜╤ï╤à';
 
   @override
   String get settings_indexAllowlistExceptionsTitle =>
-      'Исключения из списка разрешённых';
+      '╨ÿ╤ü╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å ╨╕╨╖ ╤ü╨┐╨╕╤ü╨║╨░ ╤Ç╨░╨╖╤Ç╨╡╤ê╤æ╨╜╨╜╤ï╤à';
 
   @override
   String get settings_indexAllowlistExceptionsSubtitle =>
-      'Исключения для совместимости при серьёзных и мелких проблемах сайтов';
+      '╨ÿ╤ü╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å ╨┤╨╗╤Å ╤ü╨╛╨▓╨╝╨╡╤ü╤é╨╕╨╝╨╛╤ü╤é╨╕ ╨┐╤Ç╨╕ ╤ü╨╡╤Ç╤î╤æ╨╖╨╜╤ï╤à ╨╕ ╨╝╨╡╨╗╨║╨╕╤à ╨┐╤Ç╨╛╨▒╨╗╨╡╨╝╨░╤à ╤ü╨░╨╣╤é╨╛╨▓';
 
   @override
-  String get settings_cookiesSectionTitle => 'Куки';
+  String get settings_cookiesSectionTitle => '╨Ü╤â╨║╨╕';
 
   @override
   String get settings_indexCookiesSubtitle =>
-      'Режим блокировки куки и выбор политики';
+      '╨á╨╡╨╢╨╕╨╝ ╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨║╨╕ ╨║╤â╨║╨╕ ╨╕ ╨▓╤ï╨▒╨╛╤Ç ╨┐╨╛╨╗╨╕╤é╨╕╨║╨╕';
 
   @override
-  String get settings_trackingContentSectionTitle => 'Отслеживающий контент';
+  String get settings_trackingContentSectionTitle =>
+      '╨₧╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╤Ä╤ë╨╕╨╣ ╨║╨╛╨╜╤é╨╡╨╜╤é';
 
   @override
-  String get settings_indexTrackingContentTitle => 'Отслеживающий контент';
+  String get settings_indexTrackingContentTitle =>
+      '╨₧╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╤Ä╤ë╨╕╨╣ ╨║╨╛╨╜╤é╨╡╨╜╤é';
 
   @override
   String get settings_indexTrackingContentSubtitle =>
-      'Отслеживающие скрипты и область блокировки';
+      '╨₧╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╤Ä╤ë╨╕╨╡ ╤ü╨║╤Ç╨╕╨┐╤é╤ï ╨╕ ╨╛╨▒╨╗╨░╤ü╤é╤î ╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨║╨╕';
 
   @override
-  String get settings_trackersSectionTitle => 'Трекеры';
+  String get settings_trackersSectionTitle => '╨ó╤Ç╨╡╨║╨╡╤Ç╤ï';
 
   @override
   String get settings_indexTrackersSubtitle =>
-      'Криптомайнеры, известные сборщики отпечатков и трекеры перенаправлений';
+      '╨Ü╤Ç╨╕╨┐╤é╨╛╨╝╨░╨╣╨╜╨╡╤Ç╤ï, ╨╕╨╖╨▓╨╡╤ü╤é╨╜╤ï╨╡ ╤ü╨▒╨╛╤Ç╤ë╨╕╨║╨╕ ╨╛╤é╨┐╨╡╤ç╨░╤é╨║╨╛╨▓ ╨╕ ╤é╤Ç╨╡╨║╨╡╤Ç╤ï ╨┐╨╡╤Ç╨╡╨╜╨░╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╨╣';
 
   @override
   String get settings_advancedFingerprintingProtectionSectionTitle =>
-      'Расширенная защита от цифровых отпечатков';
+      '╨á╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╜╨░╤Å ╨╖╨░╤ë╨╕╤é╨░ ╨╛╤é ╤å╨╕╤ä╤Ç╨╛╨▓╤ï╤à ╨╛╤é╨┐╨╡╤ç╨░╤é╨║╨╛╨▓';
 
   @override
   String get settings_indexAdvancedFingerprintingProtectionTitle =>
-      'Расширенная защита от цифровых отпечатков';
+      '╨á╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╜╨░╤Å ╨╖╨░╤ë╨╕╤é╨░ ╨╛╤é ╤å╨╕╤ä╤Ç╨╛╨▓╤ï╤à ╨╛╤é╨┐╨╡╤ç╨░╤é╨║╨╛╨▓';
 
   @override
   String get settings_indexAdvancedFingerprintingProtectionSubtitle =>
-      'Подозрительные сборщики отпечатков и область действия';
+      '╨ƒ╨╛╨┤╨╛╨╖╤Ç╨╕╤é╨╡╨╗╤î╨╜╤ï╨╡ ╤ü╨▒╨╛╤Ç╤ë╨╕╨║╨╕ ╨╛╤é╨┐╨╡╤ç╨░╤é╨║╨╛╨▓ ╨╕ ╨╛╨▒╨╗╨░╤ü╤é╤î ╨┤╨╡╨╣╤ü╤é╨▓╨╕╤Å';
 
   @override
-  String get settings_usageDataSectionTitle => 'Данные использования';
+  String get settings_usageDataSectionTitle =>
+      '╨ö╨░╨╜╨╜╤ï╨╡ ╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╨╜╨╕╤Å';
 
   @override
-  String get settings_repositoriesSectionTitle => 'Репозитории';
+  String get settings_repositoriesSectionTitle => '╨á╨╡╨┐╨╛╨╖╨╕╤é╨╛╤Ç╨╕╨╕';
 
   @override
   String get settings_indexGeneralBangsSubtitle =>
-      'Синхронизация с GitHub по запросу';
+      '╨í╨╕╨╜╤à╤Ç╨╛╨╜╨╕╨╖╨░╤å╨╕╤Å ╤ü GitHub ╨┐╨╛ ╨╖╨░╨┐╤Ç╨╛╤ü╤â';
 
   @override
-  String get settings_generalBangsTileTitle => 'Общие бэнги';
+  String get settings_generalBangsTileTitle => '╨₧╨▒╤ë╨╕╨╡ ╨▒╤ì╨╜╨│╨╕';
 
   @override
-  String get settings_generalBangsTileKeywords => 'репозиторий';
+  String get settings_generalBangsTileKeywords => '╤Ç╨╡╨┐╨╛╨╖╨╕╤é╨╛╤Ç╨╕╨╣';
 
   @override
   String get settings_generalBangsTileSubtitle =>
-      'Синхронизация с GitHub по запросу';
+      '╨í╨╕╨╜╤à╤Ç╨╛╨╜╨╕╨╖╨░╤å╨╕╤Å ╤ü GitHub ╨┐╨╛ ╨╖╨░╨┐╤Ç╨╛╤ü╤â';
 
   @override
   String get settings_indexKagiBangsSubtitle =>
-      'Синхронизация с GitHub по запросу';
+      '╨í╨╕╨╜╤à╤Ç╨╛╨╜╨╕╨╖╨░╤å╨╕╤Å ╤ü GitHub ╨┐╨╛ ╨╖╨░╨┐╤Ç╨╛╤ü╤â';
 
   @override
-  String get settings_kagiBangsTileTitle => 'Бэнги Kagi';
+  String get settings_kagiBangsTileTitle => '╨æ╤ì╨╜╨│╨╕ Kagi';
 
   @override
-  String get settings_kagiBangsTileKeywords => 'репозиторий';
+  String get settings_kagiBangsTileKeywords => '╤Ç╨╡╨┐╨╛╨╖╨╕╤é╨╛╤Ç╨╕╨╣';
 
   @override
   String get settings_kagiBangsTileSubtitle =>
-      'Синхронизация с GitHub по запросу';
+      '╨í╨╕╨╜╤à╤Ç╨╛╨╜╨╕╨╖╨░╤å╨╕╤Å ╤ü GitHub ╨┐╨╛ ╨╖╨░╨┐╤Ç╨╛╤ü╤â';
 
   @override
-  String get settings_extensionsSectionTitle => 'Расширения';
+  String get settings_extensionsSectionTitle => '╨á╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å';
 
   @override
-  String get settings_updatesSectionTitle => 'Обновления';
+  String get settings_updatesSectionTitle => '╨₧╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╤Å';
 
   @override
-  String get settings_securitySectionTitle => 'Безопасность';
+  String get settings_securitySectionTitle => '╨æ╨╡╨╖╨╛╨┐╨░╤ü╨╜╨╛╤ü╤é╤î';
 
   @override
-  String get settings_actionResetToDefaults => 'Сбросить по умолчанию';
+  String get settings_actionResetToDefaults =>
+      '╨í╨▒╤Ç╨╛╤ü╨╕╤é╤î ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä';
 
   @override
-  String get settings_menuLayoutTitle => 'Настройка меню';
+  String get settings_menuLayoutTitle => '╨¥╨░╤ü╤é╤Ç╨╛╨╣╨║╨░ ╨╝╨╡╨╜╤Ä';
 
   @override
   String get settings_menuLayoutHintSections =>
-      'Перетаскивайте, чтобы изменить порядок. Выключите раздел, чтобы скрыть его из меню.';
+      '╨ƒ╨╡╤Ç╨╡╤é╨░╤ü╨║╨╕╨▓╨░╨╣╤é╨╡, ╤ç╤é╨╛╨▒╤ï ╨╕╨╖╨╝╨╡╨╜╨╕╤é╤î ╨┐╨╛╤Ç╤Å╨┤╨╛╨║. ╨Æ╤ï╨║╨╗╤Ä╤ç╨╕╤é╨╡ ╤Ç╨░╨╖╨┤╨╡╨╗, ╤ç╤é╨╛╨▒╤ï ╤ü╨║╤Ç╤ï╤é╤î ╨╡╨│╨╛ ╨╕╨╖ ╨╝╨╡╨╜╤Ä.';
 
   @override
   String get settings_menuLayoutHintSectionItems =>
-      'Перетаскивайте, чтобы изменить порядок строк в этом разделе.';
+      '╨ƒ╨╡╤Ç╨╡╤é╨░╤ü╨║╨╕╨▓╨░╨╣╤é╨╡, ╤ç╤é╨╛╨▒╤ï ╨╕╨╖╨╝╨╡╨╜╨╕╤é╤î ╨┐╨╛╤Ç╤Å╨┤╨╛╨║ ╤ü╤é╤Ç╨╛╨║ ╨▓ ╤ì╤é╨╛╨╝ ╤Ç╨░╨╖╨┤╨╡╨╗╨╡.';
 
   @override
   String get settings_menuLayoutHintSubItems =>
-      'Перетаскивайте, чтобы изменить порядок строк, открываемых этим пунктом.';
+      '╨ƒ╨╡╤Ç╨╡╤é╨░╤ü╨║╨╕╨▓╨░╨╣╤é╨╡, ╤ç╤é╨╛╨▒╤ï ╨╕╨╖╨╝╨╡╨╜╨╕╤é╤î ╨┐╨╛╤Ç╤Å╨┤╨╛╨║ ╤ü╤é╤Ç╨╛╨║, ╨╛╤é╨║╤Ç╤ï╨▓╨░╨╡╨╝╤ï╤à ╤ì╤é╨╕╨╝ ╨┐╤â╨╜╨║╤é╨╛╨╝.';
 
   @override
   String get settings_moduleSurfaceHint =>
-      'Перетаскивайте, чтобы изменить порядок. Выключите раздел, чтобы скрыть его здесь, не затрагивая другую страницу.';
+      '╨ƒ╨╡╤Ç╨╡╤é╨░╤ü╨║╨╕╨▓╨░╨╣╤é╨╡, ╤ç╤é╨╛╨▒╤ï ╨╕╨╖╨╝╨╡╨╜╨╕╤é╤î ╨┐╨╛╤Ç╤Å╨┤╨╛╨║. ╨Æ╤ï╨║╨╗╤Ä╤ç╨╕╤é╨╡ ╤Ç╨░╨╖╨┤╨╡╨╗, ╤ç╤é╨╛╨▒╤ï ╤ü╨║╤Ç╤ï╤é╤î ╨╡╨│╨╛ ╨╖╨┤╨╡╤ü╤î, ╨╜╨╡ ╨╖╨░╤é╤Ç╨░╨│╨╕╨▓╨░╤Å ╨┤╤Ç╤â╨│╤â╤Ä ╤ü╤é╤Ç╨░╨╜╨╕╤å╤â.';
 
   @override
-  String get settings_moduleSurfaceTitleHome => 'Настройка домашней страницы';
+  String get settings_moduleSurfaceTitleHome =>
+      '╨¥╨░╤ü╤é╤Ç╨╛╨╣╨║╨░ ╨┤╨╛╨╝╨░╤ê╨╜╨╡╨╣ ╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï';
 
   @override
-  String get settings_moduleSurfaceTitleNewTab => 'Настройка новой вкладки';
+  String get settings_moduleSurfaceTitleNewTab =>
+      '╨¥╨░╤ü╤é╤Ç╨╛╨╣╨║╨░ ╨╜╨╛╨▓╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╕';
 
   @override
-  String get settings_homeSearchBarRowTitle => 'Строка поиска';
+  String get settings_homeSearchBarRowTitle => '╨í╤é╤Ç╨╛╨║╨░ ╨┐╨╛╨╕╤ü╨║╨░';
 
   @override
-  String get settings_proxyTitle => 'Прокси';
+  String get settings_proxyTitle => '╨ƒ╨╛╨┤╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_proxySubtitle =>
-      'Управление прокси-подключениями и выбор вкладок, которые их используют.';
+      '╨ú╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╨╡ ╨┐╨╛╨┤╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å╨╝╨╕ Tor, VPN ╨╕ ╨┐╤Ç╨╛╨║╤ü╨╕ ╨╕ ╨▓╤ï╨▒╨╛╤Ç ╨▓╨║╨╗╨░╨┤╨╛╨║, ╨║╨╛╤é╨╛╤Ç╤ï╨╡ ╨╕╤à ╨╕╤ü╨┐╨╛╨╗╤î╨╖╤â╤Ä╤é.';
 
   @override
-  String get settings_proxyConnectionsTitle => 'Прокси-подключения';
+  String get settings_proxyConnectionsTitle =>
+      '╨ƒ╤Ç╨╛╨║╤ü╨╕-╨┐╨╛╨┤╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_proxyConnectionsKeywords =>
-      'sing-box, socks, vpn, впн, wireguard, tor, onion, мосты, obfs4, snowflake';
+      'sing-box, socks, vpn, ╨▓╨┐╨╜, wireguard, tor, onion, ╨╝╨╛╤ü╤é╤ï, obfs4, snowflake';
 
   @override
   String get settings_proxyConnectionsSubtitle =>
-      'Управление профилями прокси и подключениями';
+      '╨ú╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╨╡ ╨┐╤Ç╨╛╤ä╨╕╨╗╤Å╨╝╨╕ ╨┐╤Ç╨╛╨║╤ü╨╕ ╨╕ ╨┐╨╛╨┤╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å╨╝╨╕';
 
   @override
-  String get settings_proxyRoutingTitle => 'Маршрутизация прокси';
+  String get settings_proxyRoutingTitle =>
+      '╨£╨░╤Ç╤ê╤Ç╤â╤é╨╕╨╖╨░╤å╨╕╤Å ╨┐╤Ç╨╛╨║╤ü╨╕';
 
   @override
   String get settings_proxyRoutingKeywords =>
-      'маршрутизация, маршрут, контейнер';
+      '╨╝╨░╤Ç╤ê╤Ç╤â╤é╨╕╨╖╨░╤å╨╕╤Å, ╨╝╨░╤Ç╤ê╤Ç╤â╤é, ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç';
 
   @override
   String get settings_proxyRoutingSubtitle =>
-      'Выберите, через какой прокси идут обычные и приватные вкладки';
+      '╨Æ╤ï╨▒╨╡╤Ç╨╕╤é╨╡, ╤ç╨╡╤Ç╨╡╨╖ ╨║╨░╨║╨╛╨╣ ╨┐╤Ç╨╛╨║╤ü╨╕ ╨╕╨┤╤â╤é ╨╛╨▒╤ï╤ç╨╜╤ï╨╡ ╨╕ ╨┐╤Ç╨╕╨▓╨░╤é╨╜╤ï╨╡ ╨▓╨║╨╗╨░╨┤╨║╨╕';
 
   @override
-  String get settings_proxyLogsTitle => 'Журналы прокси';
+  String get settings_proxyLogsTitle => '╨û╤â╤Ç╨╜╨░╨╗╤ï ╨┐╤Ç╨╛╨║╤ü╨╕';
 
   @override
   String get settings_proxyLogsKeywords =>
-      'журнал, журналирование, логи, диагностика, отладка, debug, trace, подробно, устранение неполадок, уровень';
+      '╨╢╤â╤Ç╨╜╨░╨╗, ╨╢╤â╤Ç╨╜╨░╨╗╨╕╤Ç╨╛╨▓╨░╨╜╨╕╨╡, ╨╗╨╛╨│╨╕, ╨┤╨╕╨░╨│╨╜╨╛╤ü╤é╨╕╨║╨░, ╨╛╤é╨╗╨░╨┤╨║╨░, debug, trace, ╨┐╨╛╨┤╤Ç╨╛╨▒╨╜╨╛, ╤â╤ü╤é╤Ç╨░╨╜╨╡╨╜╨╕╨╡ ╨╜╨╡╨┐╨╛╨╗╨░╨┤╨╛╨║, ╤â╤Ç╨╛╨▓╨╡╨╜╤î';
 
   @override
-  String get settings_toolbarLayoutTitle => 'Панель инструментов и макет';
+  String get settings_toolbarLayoutTitle =>
+      '╨ƒ╨░╨╜╨╡╨╗╤î ╨╕╨╜╤ü╤é╤Ç╤â╨╝╨╡╨╜╤é╨╛╨▓ ╨╕ ╨╝╨░╨║╨╡╤é';
 
   @override
   String get settings_toolbarLayoutSearchHint =>
-      'Поиск настроек панели инструментов и макета';
+      '╨ƒ╨╛╨╕╤ü╨║ ╨╜╨░╤ü╤é╤Ç╨╛╨╡╨║ ╨┐╨░╨╜╨╡╨╗╨╕ ╨╕╨╜╤ü╤é╤Ç╤â╨╝╨╡╨╜╤é╨╛╨▓ ╨╕ ╨╝╨░╨║╨╡╤é╨░';
 
   @override
-  String get settings_privacySecurityTitle => 'Приватность и безопасность';
+  String get settings_privacySecurityTitle =>
+      '╨ƒ╤Ç╨╕╨▓╨░╤é╨╜╨╛╤ü╤é╤î ╨╕ ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╨╛╤ü╤é╤î';
 
   @override
   String get settings_privacySecuritySubtitle =>
-      'Защита от отслеживания, цифровые отпечатки, данные просмотра и усиление защиты сети.';
+      '╨ù╨░╤ë╨╕╤é╨░ ╨╛╤é ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╨╜╨╕╤Å, ╨┤╨░╨╜╨╜╤ï╨╡ ╨┐╤Ç╨╛╤ü╨╝╨╛╤é╤Ç╨░ ╨╕ ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╨╛╤ü╤é╤î.';
 
   @override
   String get settings_trackingProtectionExceptionsTitle =>
-      'Исключения защиты от отслеживания';
+      '╨ÿ╤ü╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å ╨╖╨░╤ë╨╕╤é╤ï ╨╛╤é ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╨╜╨╕╤Å';
 
   @override
-  String get settings_trackingProtectionExceptionsKeywords => 'исключения';
+  String get settings_trackingProtectionExceptionsKeywords =>
+      '╨╕╤ü╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_trackingProtectionExceptionsTileSubtitle =>
-      'Сайты, на которых защита от отслеживания отключена';
+      '╨í╨░╨╣╤é╤ï, ╨╜╨░ ╨║╨╛╤é╨╛╤Ç╤ï╤à ╨╖╨░╤ë╨╕╤é╨░ ╨╛╤é ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╨╜╨╕╤Å ╨╛╤é╨║╨╗╤Ä╤ç╨╡╨╜╨░';
 
   @override
   String get settings_autoDeleteBrowsingDataTitle =>
-      'Автоматическое удаление данных просмотра';
+      '╨É╨▓╤é╨╛╨╝╨░╤é╨╕╤ç╨╡╤ü╨║╨╛╨╡ ╤â╨┤╨░╨╗╨╡╨╜╨╕╨╡ ╨┤╨░╨╜╨╜╤ï╤à ╨┐╤Ç╨╛╤ü╨╝╨╛╤é╤Ç╨░';
 
   @override
   String get settings_autoDeleteBrowsingDataKeywords =>
-      'инкогнито, приватный режим, выход, закрыть, удалить при выходе, очистка данных, incognito, quit';
+      '╨╕╨╜╨║╨╛╨│╨╜╨╕╤é╨╛, ╨┐╤Ç╨╕╨▓╨░╤é╨╜╤ï╨╣ ╤Ç╨╡╨╢╨╕╨╝, ╨▓╤ï╤à╨╛╨┤, ╨╖╨░╨║╤Ç╤ï╤é╤î, ╤â╨┤╨░╨╗╨╕╤é╤î ╨┐╤Ç╨╕ ╨▓╤ï╤à╨╛╨┤╨╡, ╨╛╤ç╨╕╤ü╤é╨║╨░ ╨┤╨░╨╜╨╜╤ï╤à, incognito, quit';
 
   @override
   String get settings_autoDeleteBrowsingDataSubtitle =>
-      'Удалять выбранные данные просмотра при выходе или при каждом запуске Cat Browser';
+      '╨ú╨┤╨░╨╗╤Å╤é╤î ╨▓╤ï╨▒╤Ç╨░╨╜╨╜╤ï╨╡ ╨┤╨░╨╜╨╜╤ï╨╡ ╨┐╤Ç╨╛╤ü╨╝╨╛╤é╤Ç╨░ ╨┐╤Ç╨╕ ╨▓╤ï╤à╨╛╨┤╨╡ ╨╕╨╗╨╕ ╨┐╤Ç╨╕ ╨║╨░╨╢╨┤╨╛╨╝ ╨╖╨░╨┐╤â╤ü╨║╨╡ Cat Browser';
 
   @override
   String get settings_autoDeleteBrowsingDataQuitOnlySubtitle =>
-      'Удалять выбранные данные просмотра при выходе из Cat Browser';
+      '╨ú╨┤╨░╨╗╤Å╤é╤î ╨▓╤ï╨▒╤Ç╨░╨╜╨╜╤ï╨╡ ╨┤╨░╨╜╨╜╤ï╨╡ ╨┐╤Ç╨╛╤ü╨╝╨╛╤é╤Ç╨░ ╨┐╤Ç╨╕ ╨▓╤ï╤à╨╛╨┤╨╡ ╨╕╨╖ Cat Browser';
 
   @override
-  String get settings_autoDeleteOnStartTitle => 'Удалять также при запуске';
+  String get settings_autoDeleteOnStartTitle =>
+      '╨ú╨┤╨░╨╗╤Å╤é╤î ╤é╨░╨║╨╢╨╡ ╨┐╤Ç╨╕ ╨╖╨░╨┐╤â╤ü╨║╨╡';
 
   @override
   String get settings_autoDeleteOnStartSubtitle =>
-      'Охватывает сеансы, завершённые без «Выйти» — например, если Cat Browser смахнули из списка недавних приложений или Android закрыл его в фоне. Если выключено, их данные сохраняются до следующего выхода.';
+      '╨₧╤à╨▓╨░╤é╤ï╨▓╨░╨╡╤é ╤ü╨╡╨░╨╜╤ü╤ï, ╨╖╨░╨▓╨╡╤Ç╤ê╤æ╨╜╨╜╤ï╨╡ ╨▒╨╡╨╖ ┬½╨Æ╤ï╨╣╤é╨╕┬╗ ΓÇö ╨╜╨░╨┐╤Ç╨╕╨╝╨╡╤Ç, ╨╡╤ü╨╗╨╕ Cat Browser ╤ü╨╝╨░╤à╨╜╤â╨╗╨╕ ╨╕╨╖ ╤ü╨┐╨╕╤ü╨║╨░ ╨╜╨╡╨┤╨░╨▓╨╜╨╕╤à ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╨╣ ╨╕╨╗╨╕ Android ╨╖╨░╨║╤Ç╤ï╨╗ ╨╡╨│╨╛ ╨▓ ╤ä╨╛╨╜╨╡. ╨ò╤ü╨╗╨╕ ╨▓╤ï╨║╨╗╤Ä╤ç╨╡╨╜╨╛, ╨╕╤à ╨┤╨░╨╜╨╜╤ï╨╡ ╤ü╨╛╤à╤Ç╨░╨╜╤Å╤Ä╤é╤ü╤Å ╨┤╨╛ ╤ü╨╗╨╡╨┤╤â╤Ä╤ë╨╡╨│╨╛ ╨▓╤ï╤à╨╛╨┤╨░.';
 
   @override
-  String get settings_confirmBeforeQuitTitle => 'Подтверждать выход';
+  String get settings_confirmBeforeQuitTitle =>
+      '╨ƒ╨╛╨┤╤é╨▓╨╡╤Ç╨╢╨┤╨░╤é╤î ╨▓╤ï╤à╨╛╨┤';
 
   @override
   String get settings_confirmBeforeQuitKeywords =>
-      'выход, выйти, закрыть, подтверждение, диалог, больше не спрашивать, quit, exit';
+      '╨▓╤ï╤à╨╛╨┤, ╨▓╤ï╨╣╤é╨╕, ╨╖╨░╨║╤Ç╤ï╤é╤î, ╨┐╨╛╨┤╤é╨▓╨╡╤Ç╨╢╨┤╨╡╨╜╨╕╨╡, ╨┤╨╕╨░╨╗╨╛╨│, ╨▒╨╛╨╗╤î╤ê╨╡ ╨╜╨╡ ╤ü╨┐╤Ç╨░╤ê╨╕╨▓╨░╤é╤î, quit, exit';
 
   @override
   String get settings_confirmBeforeQuitSubtitle =>
-      'Спрашивать, прежде чем «Выйти» закроет Cat Browser. Долгое нажатие на «Выйти» пропускает вопрос.';
+      '╨í╨┐╤Ç╨░╤ê╨╕╨▓╨░╤é╤î, ╨┐╤Ç╨╡╨╢╨┤╨╡ ╤ç╨╡╨╝ ┬½╨Æ╤ï╨╣╤é╨╕┬╗ ╨╖╨░╨║╤Ç╨╛╨╡╤é Cat Browser. ╨ö╨╛╨╗╨│╨╛╨╡ ╨╜╨░╨╢╨░╤é╨╕╨╡ ╨╜╨░ ┬½╨Æ╤ï╨╣╤é╨╕┬╗ ╨┐╤Ç╨╛╨┐╤â╤ü╨║╨░╨╡╤é ╨▓╨╛╨┐╤Ç╨╛╤ü.';
 
   @override
   String get settings_trackingProtectionExceptionsSearchHint =>
-      'Поиск URL-адресов исключений';
+      '╨ƒ╨╛╨╕╤ü╨║ URL-╨░╨┤╤Ç╨╡╤ü╨╛╨▓ ╨╕╤ü╨║╨╗╤Ä╤ç╨╡╨╜╨╕╨╣';
 
   @override
-  String get settings_trackingProtectionExceptionsDeleteAll => 'Удалить все';
+  String get settings_trackingProtectionExceptionsDeleteAll =>
+      '╨ú╨┤╨░╨╗╨╕╤é╤î ╨▓╤ü╨╡';
 
   @override
   String get settings_trackingProtectionExceptionsSectionTitle =>
-      'Список исключений';
+      '╨í╨┐╨╕╤ü╨╛╨║ ╨╕╤ü╨║╨╗╤Ä╤ç╨╡╨╜╨╕╨╣';
 
   @override
   String get settings_trackingProtectionExceptionsEntrySubtitle =>
-      'Сайт с отключённой защитой от отслеживания';
+      '╨í╨░╨╣╤é ╤ü ╨╛╤é╨║╨╗╤Ä╤ç╤æ╨╜╨╜╨╛╨╣ ╨╖╨░╤ë╨╕╤é╨╛╨╣ ╨╛╤é ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╨╜╨╕╤Å';
 
   @override
   String get settings_trackingProtectionExceptionsRemoveTooltip =>
-      'Удалить исключение';
+      '╨ú╨┤╨░╨╗╨╕╤é╤î ╨╕╤ü╨║╨╗╤Ä╤ç╨╡╨╜╨╕╨╡';
 
   @override
   String get settings_trackingProtectionExceptionsEmptyTitle =>
-      'Исключений нет';
+      '╨ÿ╤ü╨║╨╗╤Ä╤ç╨╡╨╜╨╕╨╣ ╨╜╨╡╤é';
 
   @override
   String get settings_trackingProtectionExceptionsEmptySubtitle =>
-      'Здесь появятся сайты, добавленные в исключения';
+      '╨ù╨┤╨╡╤ü╤î ╨┐╨╛╤Å╨▓╤Å╤é╤ü╤Å ╤ü╨░╨╣╤é╤ï, ╨┤╨╛╨▒╨░╨▓╨╗╨╡╨╜╨╜╤ï╨╡ ╨▓ ╨╕╤ü╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_trackingProtectionExceptionsErrorTitle =>
-      'Ошибка загрузки исключений';
+      '╨₧╤ê╨╕╨▒╨║╨░ ╨╖╨░╨│╤Ç╤â╨╖╨║╨╕ ╨╕╤ü╨║╨╗╤Ä╤ç╨╡╨╜╨╕╨╣';
 
   @override
   String settings_trackingProtectionExceptionsDeleteAllFailed(String error) {
-    return 'Не удалось удалить исключения: $error';
+    return '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╤â╨┤╨░╨╗╨╕╤é╤î ╨╕╤ü╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å: $error';
   }
 
   @override
   String settings_trackingProtectionExceptionsRemoveFailed(String error) {
-    return 'Не удалось удалить исключение: $error';
+    return '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╤â╨┤╨░╨╗╨╕╤é╤î ╨╕╤ü╨║╨╗╤Ä╤ç╨╡╨╜╨╕╨╡: $error';
   }
 
   @override
   String get settings_deleteBrowsingDataTileTitle =>
-      'Удаление данных просмотра';
+      '╨ú╨┤╨░╨╗╨╡╨╜╨╕╨╡ ╨┤╨░╨╜╨╜╤ï╤à ╨┐╤Ç╨╛╤ü╨╝╨╛╤é╤Ç╨░';
 
   @override
   String get settings_deleteBrowsingDataTileKeywords =>
-      'очистить данные, удалить данные';
+      '╨╛╤ç╨╕╤ü╤é╨╕╤é╤î ╨┤╨░╨╜╨╜╤ï╨╡, ╤â╨┤╨░╨╗╨╕╤é╤î ╨┤╨░╨╜╨╜╤ï╨╡';
 
   @override
-  String get settings_autoClearHistoryTitle => 'Автоочистка истории';
+  String get settings_autoClearHistoryTitle =>
+      '╨É╨▓╤é╨╛╨╛╤ç╨╕╤ü╤é╨║╨░ ╨╕╤ü╤é╨╛╤Ç╨╕╨╕';
 
   @override
-  String get settings_autoClearHistoryKeywords => 'хранение истории';
+  String get settings_autoClearHistoryKeywords =>
+      '╤à╤Ç╨░╨╜╨╡╨╜╨╕╨╡ ╨╕╤ü╤é╨╛╤Ç╨╕╨╕';
 
   @override
   String get settings_autoClearHistorySubtitle =>
-      'Автоматически удалять историю просмотра старше выбранного периода';
+      '╨É╨▓╤é╨╛╨╝╨░╤é╨╕╤ç╨╡╤ü╨║╨╕ ╤â╨┤╨░╨╗╤Å╤é╤î ╨╕╤ü╤é╨╛╤Ç╨╕╤Ä ╨┐╤Ç╨╛╤ü╨╝╨╛╤é╤Ç╨░ ╤ü╤é╨░╤Ç╤ê╨╡ ╨▓╤ï╨▒╤Ç╨░╨╜╨╜╨╛╨│╨╛ ╨┐╨╡╤Ç╨╕╨╛╨┤╨░';
 
   @override
   String get settings_autoClearUnassignedTabsTitle =>
-      'Автоочистка вкладок без контейнера';
+      '╨É╨▓╤é╨╛╨╛╤ç╨╕╤ü╤é╨║╨░ ╨▓╨║╨╗╨░╨┤╨╛╨║ ╨▒╨╡╨╖ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╨░';
 
   @override
-  String get settings_autoClearUnassignedTabsKeywords => 'очистка вкладок';
+  String get settings_autoClearUnassignedTabsKeywords =>
+      '╨╛╤ç╨╕╤ü╤é╨║╨░ ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
   String get settings_autoClearUnassignedTabsSubtitle =>
-      'Автоматически закрывать вкладки без контейнера старше выбранного периода';
+      '╨É╨▓╤é╨╛╨╝╨░╤é╨╕╤ç╨╡╤ü╨║╨╕ ╨╖╨░╨║╤Ç╤ï╨▓╨░╤é╤î ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨▒╨╡╨╖ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╨░ ╤ü╤é╨░╤Ç╤ê╨╡ ╨▓╤ï╨▒╤Ç╨░╨╜╨╜╨╛╨│╨╛ ╨┐╨╡╤Ç╨╕╨╛╨┤╨░';
 
   @override
-  String get settings_durationNever => 'Никогда';
+  String get settings_durationNever => '╨¥╨╕╨║╨╛╨│╨┤╨░';
 
   @override
-  String get settings_duration1Day => '1 день';
+  String get settings_duration1Day => '1 ╨┤╨╡╨╜╤î';
 
   @override
-  String get settings_duration3Days => '3 дня';
+  String get settings_duration3Days => '3 ╨┤╨╜╤Å';
 
   @override
-  String get settings_duration1Week => '1 неделя';
+  String get settings_duration1Week => '1 ╨╜╨╡╨┤╨╡╨╗╤Å';
 
   @override
-  String get settings_duration2Weeks => '2 недели';
+  String get settings_duration2Weeks => '2 ╨╜╨╡╨┤╨╡╨╗╨╕';
 
   @override
-  String get settings_duration1Month => '1 месяц';
+  String get settings_duration1Month => '1 ╨╝╨╡╤ü╤Å╤å';
 
   @override
-  String get settings_duration3Months => '3 месяца';
+  String get settings_duration3Months => '3 ╨╝╨╡╤ü╤Å╤å╨░';
 
   @override
   String get settings_globalPrivacyControlTitle =>
@@ -9614,236 +10011,246 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get settings_globalPrivacyControlKeywords =>
-      'gpc, не продавать данные';
+      'gpc, ╨╜╨╡ ╨┐╤Ç╨╛╨┤╨░╨▓╨░╤é╤î ╨┤╨░╨╜╨╜╤ï╨╡';
 
   @override
-  String get settings_screenshotProtectionTitle => 'Защита от снимков экрана';
+  String get settings_screenshotProtectionTitle =>
+      '╨ù╨░╤ë╨╕╤é╨░ ╨╛╤é ╤ü╨╜╨╕╨╝╨║╨╛╨▓ ╤ì╨║╤Ç╨░╨╜╨░';
 
   @override
   String get settings_screenshotProtectionKeywords =>
-      'снимки экрана, скриншоты';
+      '╤ü╨╜╨╕╨╝╨║╨╕ ╤ì╨║╤Ç╨░╨╜╨░, ╤ü╨║╤Ç╨╕╨╜╤ê╨╛╤é╤ï';
 
   @override
   String get settings_screenshotProtectionSubtitle =>
-      'Блокирует снимки и запись экрана для этого приложения на Android.';
+      '╨æ╨╗╨╛╨║╨╕╤Ç╤â╨╡╤é ╤ü╨╜╨╕╨╝╨║╨╕ ╨╕ ╨╖╨░╨┐╨╕╤ü╤î ╤ì╨║╤Ç╨░╨╜╨░ ╨┤╨╗╤Å ╤ì╤é╨╛╨│╨╛ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å ╨╜╨░ Android.';
 
   @override
   String get settings_allowPrivateTabScreenshotsTitle =>
-      'Разрешить снимки экрана в приватных вкладках';
+      '╨á╨░╨╖╤Ç╨╡╤ê╨╕╤é╤î ╤ü╨╜╨╕╨╝╨║╨╕ ╤ì╨║╤Ç╨░╨╜╨░ ╨▓ ╨┐╤Ç╨╕╨▓╨░╤é╨╜╤ï╤à ╨▓╨║╨╗╨░╨┤╨║╨░╤à';
 
   @override
   String get settings_allowPrivateTabScreenshotsKeywords =>
-      'снимки экрана, скриншоты, инкогнито, приватные';
+      '╤ü╨╜╨╕╨╝╨║╨╕ ╤ì╨║╤Ç╨░╨╜╨░, ╤ü╨║╤Ç╨╕╨╜╤ê╨╛╤é╤ï, ╨╕╨╜╨║╨╛╨│╨╜╨╕╤é╨╛, ╨┐╤Ç╨╕╨▓╨░╤é╨╜╤ï╨╡';
 
   @override
   String get settings_allowPrivateTabScreenshotsOverriddenSubtitle =>
-      'Переопределено защитой от снимков экрана, которая блокирует захват во всех вкладках.';
+      '╨ƒ╨╡╤Ç╨╡╨╛╨┐╤Ç╨╡╨┤╨╡╨╗╨╡╨╜╨╛ ╨╖╨░╤ë╨╕╤é╨╛╨╣ ╨╛╤é ╤ü╨╜╨╕╨╝╨║╨╛╨▓ ╤ì╨║╤Ç╨░╨╜╨░, ╨║╨╛╤é╨╛╤Ç╨░╤Å ╨▒╨╗╨╛╨║╨╕╤Ç╤â╨╡╤é ╨╖╨░╤à╨▓╨░╤é ╨▓╨╛ ╨▓╤ü╨╡╤à ╨▓╨║╨╗╨░╨┤╨║╨░╤à.';
 
   @override
   String get settings_allowPrivateTabScreenshotsSubtitle =>
-      'Приватные вкладки можно снимать и записывать, и они видны в превью переключателя приложений.';
+      '╨ƒ╤Ç╨╕╨▓╨░╤é╨╜╤ï╨╡ ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨╝╨╛╨╢╨╜╨╛ ╤ü╨╜╨╕╨╝╨░╤é╤î ╨╕ ╨╖╨░╨┐╨╕╤ü╤ï╨▓╨░╤é╤î, ╨╕ ╨╛╨╜╨╕ ╨▓╨╕╨┤╨╜╤ï ╨▓ ╨┐╤Ç╨╡╨▓╤î╤Ä ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╤Å ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╨╣.';
 
   @override
   String get settings_httpsOnlyModeTitle =>
-      'Блокировать незащищённые HTTP-соединения';
+      '╨ó╨╛╨╗╤î╨║╨╛ ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╤ï╨╡ ╤ü╨╛╨╡╨┤╨╕╨╜╨╡╨╜╨╕╤Å (HTTPS)';
 
   @override
-  String get settings_httpsOnlyModeKeywords => 'только https, https only';
+  String get settings_httpsOnlyModeKeywords =>
+      '╤é╨╛╨╗╤î╨║╨╛ https, https only, ╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╤é╤î ╨╜╨╡╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╤ï╨╣ http';
 
   @override
-  String get settings_httpsOnlyModeDisabledLabel => 'Выкл.';
+  String get settings_httpsOnlyModeDisabledLabel => '╨Æ╤ï╨║╨╗.';
 
   @override
-  String get settings_httpsOnlyModeEnabledLabel => 'Вкл.';
+  String get settings_httpsOnlyModeEnabledLabel => '╨Æ╨║╨╗.';
 
   @override
-  String get settings_httpsOnlyModePrivateOnlyLabel => 'Только приватные';
+  String get settings_httpsOnlyModePrivateOnlyLabel =>
+      '╨ó╨╛╨╗╤î╨║╨╛ ╨┐╤Ç╨╕╨▓╨░╤é╨╜╤ï╨╡';
 
   @override
-  String get settings_dnsOverHttpsTileTitle => 'DNS через HTTPS';
+  String get settings_dnsOverHttpsTileTitle => '╨æ╨╡╨╖╨╛╨┐╨░╤ü╨╜╤ï╨╣ DNS';
 
   @override
   String get settings_enhancedTrackingProtectionTitle =>
-      'Улучшенная защита от отслеживания';
+      '╨ú╨╗╤â╤ç╤ê╨╡╨╜╨╜╨░╤Å ╨╖╨░╤ë╨╕╤é╨░ ╨╛╤é ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╨╜╨╕╤Å';
 
   @override
   String get settings_enhancedTrackingProtectionKeywords =>
-      'etp, стандартная, строгая, своя';
+      'etp, ╤ü╤é╨░╨╜╨┤╨░╤Ç╤é╨╜╨░╤Å, ╤ü╤é╤Ç╨╛╨│╨░╤Å, ╤ü╨▓╨╛╤Å';
 
   @override
-  String get settings_trackingProtectionDisabledLabel => 'Отключена';
+  String get settings_trackingProtectionDisabledLabel => '╨₧╤é╨║╨╗╤Ä╤ç╨╡╨╜╨░';
 
   @override
-  String get settings_trackingProtectionStandardLabel => 'Стандартная';
+  String get settings_trackingProtectionStandardLabel =>
+      '╨í╤é╨░╨╜╨┤╨░╤Ç╤é╨╜╨░╤Å';
 
   @override
   String get settings_trackingProtectionStandardSubtitle =>
-      'Обеспечивает баланс защиты и совместимости, блокируя меньше категорий трекеров.';
+      '╨₧╨▒╨╡╤ü╨┐╨╡╤ç╨╕╨▓╨░╨╡╤é ╨▒╨░╨╗╨░╨╜╤ü ╨╖╨░╤ë╨╕╤é╤ï ╨╕ ╤ü╨╛╨▓╨╝╨╡╤ü╤é╨╕╨╝╨╛╤ü╤é╨╕, ╨▒╨╗╨╛╨║╨╕╤Ç╤â╤Å ╨╝╨╡╨╜╤î╤ê╨╡ ╨║╨░╤é╨╡╨│╨╛╤Ç╨╕╨╣ ╤é╤Ç╨╡╨║╨╡╤Ç╨╛╨▓.';
 
   @override
-  String get settings_trackingProtectionStrictLabel => 'Строгая';
+  String get settings_trackingProtectionStrictLabel => '╨í╤é╤Ç╨╛╨│╨░╤Å';
 
   @override
   String get settings_trackingProtectionStrictSubtitle =>
-      'Блокирует больше категорий трекеров, включая отслеживающий контент, но может нарушить работу некоторых сайтов.';
+      '╨æ╨╗╨╛╨║╨╕╤Ç╤â╨╡╤é ╨▒╨╛╨╗╤î╤ê╨╡ ╨║╨░╤é╨╡╨│╨╛╤Ç╨╕╨╣ ╤é╤Ç╨╡╨║╨╡╤Ç╨╛╨▓, ╨▓╨║╨╗╤Ä╤ç╨░╤Å ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╤Ä╤ë╨╕╨╣ ╨║╨╛╨╜╤é╨╡╨╜╤é, ╨╜╨╛ ╨╝╨╛╨╢╨╡╤é ╨╜╨░╤Ç╤â╤ê╨╕╤é╤î ╤Ç╨░╨▒╨╛╤é╤â ╨╜╨╡╨║╨╛╤é╨╛╤Ç╤ï╤à ╤ü╨░╨╣╤é╨╛╨▓.';
 
   @override
-  String get settings_trackingProtectionCustomLabel => 'Своя';
+  String get settings_trackingProtectionCustomLabel => '╨í╨▓╨╛╤Å';
 
   @override
   String get settings_trackingProtectionCustomSubtitle =>
-      'Выберите, какие трекеры и скрипты блокировать.';
+      '╨Æ╤ï╨▒╨╡╤Ç╨╕╤é╨╡, ╨║╨░╨║╨╕╨╡ ╤é╤Ç╨╡╨║╨╡╤Ç╤ï ╨╕ ╤ü╨║╤Ç╨╕╨┐╤é╤ï ╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╤é╤î.';
 
   @override
-  String get settings_trackerStatisticsTitle => 'Статистика трекеров';
+  String get settings_trackerStatisticsTitle =>
+      '╨í╤é╨░╤é╨╕╤ü╤é╨╕╨║╨░ ╤é╤Ç╨╡╨║╨╡╤Ç╨╛╨▓';
 
   @override
   String get settings_trackerStatisticsKeywords =>
-      'трекеры, статистика, заблокированные трекеры, блокировка контента, база данных';
+      '╤é╤Ç╨╡╨║╨╡╤Ç╤ï, ╤ü╤é╨░╤é╨╕╤ü╤é╨╕╨║╨░, ╨╖╨░╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╨╜╨╜╤ï╨╡ ╤é╤Ç╨╡╨║╨╡╤Ç╤ï, ╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨║╨░ ╨║╨╛╨╜╤é╨╡╨╜╤é╨░, ╨▒╨░╨╖╨░ ╨┤╨░╨╜╨╜╤ï╤à';
 
   @override
   String get settings_trackerStatisticsSubtitle =>
-      'Ежедневно подсчитывать заблокированные трекеры по категориям. Хранятся только количество и даты, а не посещённые сайты. Удаление истории просмотра удаляет и эту статистику. Требуется перезапуск приложения.';
+      '╨ò╨╢╨╡╨┤╨╜╨╡╨▓╨╜╨╛ ╨┐╨╛╨┤╤ü╤ç╨╕╤é╤ï╨▓╨░╤é╤î ╨╖╨░╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╨╜╨╜╤ï╨╡ ╤é╤Ç╨╡╨║╨╡╤Ç╤ï ╨┐╨╛ ╨║╨░╤é╨╡╨│╨╛╤Ç╨╕╤Å╨╝. ╨Ñ╤Ç╨░╨╜╤Å╤é╤ü╤Å ╤é╨╛╨╗╤î╨║╨╛ ╨║╨╛╨╗╨╕╤ç╨╡╤ü╤é╨▓╨╛ ╨╕ ╨┤╨░╤é╤ï, ╨░ ╨╜╨╡ ╨┐╨╛╤ü╨╡╤ë╤æ╨╜╨╜╤ï╨╡ ╤ü╨░╨╣╤é╤ï. ╨ú╨┤╨░╨╗╨╡╨╜╨╕╨╡ ╨╕╤ü╤é╨╛╤Ç╨╕╨╕ ╨┐╤Ç╨╛╤ü╨╝╨╛╤é╤Ç╨░ ╤â╨┤╨░╨╗╤Å╨╡╤é ╨╕ ╤ì╤é╤â ╤ü╤é╨░╤é╨╕╤ü╤é╨╕╨║╤â. ╨ó╤Ç╨╡╨▒╤â╨╡╤é╤ü╤Å ╨┐╨╡╤Ç╨╡╨╖╨░╨┐╤â╤ü╨║ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å.';
 
   @override
   String get settings_bounceTrackingProtectionTitle =>
-      'Защита от отскакивающего отслеживания';
+      '╨ù╨░╤ë╨╕╤é╨░ ╨╛╤é ╨╛╤é╤ü╨║╨░╨║╨╕╨▓╨░╤Ä╤ë╨╡╨│╨╛ ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╨╜╨╕╤Å';
 
   @override
   String get settings_bounceTrackingProtectionKeywords =>
-      'трекеры перенаправлений, bounce tracking';
+      '╤é╤Ç╨╡╨║╨╡╤Ç╤ï ╨┐╨╡╤Ç╨╡╨╜╨░╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╨╣, bounce tracking';
 
   @override
   String get settings_bounceTrackingProtectionSubtitle =>
-      'Блокирует трекеры, собирающие данные через промежуточные перенаправления между сайтами';
+      '╨æ╨╗╨╛╨║╨╕╤Ç╤â╨╡╤é ╤é╤Ç╨╡╨║╨╡╤Ç╤ï, ╤ü╨╛╨▒╨╕╤Ç╨░╤Ä╤ë╨╕╨╡ ╨┤╨░╨╜╨╜╤ï╨╡ ╤ç╨╡╤Ç╨╡╨╖ ╨┐╤Ç╨╛╨╝╨╡╨╢╤â╤é╨╛╤ç╨╜╤ï╨╡ ╨┐╨╡╤Ç╨╡╨╜╨░╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╤Å ╨╝╨╡╨╢╨┤╤â ╤ü╨░╨╣╤é╨░╨╝╨╕';
 
   @override
   String get settings_queryParameterStrippingTitle =>
-      'Удаление параметров запроса';
+      '╨ú╨┤╨░╨╗╨╡╨╜╨╕╨╡ ╨┐╨░╤Ç╨░╨╝╨╡╤é╤Ç╨╛╨▓ ╨╖╨░╨┐╤Ç╨╛╤ü╨░';
 
   @override
   String get settings_queryParameterStrippingKeywords =>
-      'utm, параметры отслеживания';
+      'utm, ╨┐╨░╤Ç╨░╨╝╨╡╤é╤Ç╤ï ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╨╜╨╕╤Å';
 
   @override
   String get settings_queryParameterStrippingSubtitle =>
-      'Удаляет параметры отслеживания из URL-адресов, чтобы предотвратить межсайтовое отслеживание';
+      '╨ú╨┤╨░╨╗╤Å╨╡╤é ╨┐╨░╤Ç╨░╨╝╨╡╤é╤Ç╤ï ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╨╜╨╕╤Å ╨╕╨╖ URL-╨░╨┤╤Ç╨╡╤ü╨╛╨▓, ╤ç╤é╨╛╨▒╤ï ╨┐╤Ç╨╡╨┤╨╛╤é╨▓╤Ç╨░╤é╨╕╤é╤î ╨╝╨╡╨╢╤ü╨░╨╣╤é╨╛╨▓╨╛╨╡ ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╨╜╨╕╨╡';
 
   @override
-  String get settings_queryParameterStrippingDisabledLabel => 'Выкл.';
+  String get settings_queryParameterStrippingDisabledLabel => '╨Æ╤ï╨║╨╗.';
 
   @override
-  String get settings_queryParameterStrippingEnabledLabel => 'Вкл.';
+  String get settings_queryParameterStrippingEnabledLabel => '╨Æ╨║╨╗.';
 
   @override
   String get settings_queryParameterStrippingPrivateOnlyLabel =>
-      'Только приватные';
+      '╨ó╨╛╨╗╤î╨║╨╛ ╨┐╤Ç╨╕╨▓╨░╤é╨╜╤ï╨╡';
 
   @override
   String get settings_uBlockFilterListsTileTitle =>
-      'Списки фильтров uBlock и усиление защиты';
+      '╨í╨┐╨╕╤ü╨║╨╕ ╤ä╨╕╨╗╤î╤é╤Ç╨╛╨▓ uBlock Origin';
 
   @override
   String get settings_uBlockFilterListsTileKeywords =>
-      'ublock, фильтры, блокировщик рекламы';
+      'ublock, ╤ä╨╕╨╗╤î╤é╤Ç╤ï, ╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╤ë╨╕╨║ ╤Ç╨╡╨║╨╗╨░╨╝╤ï, ╤â╤ü╨╕╨╗╨╡╨╜╨╕╨╡ ╨╖╨░╤ë╨╕╤é╤ï, hardenings';
 
   @override
   String get settings_uBlockFilterListsTileSubtitle =>
-      'Управление списками фильтров и применение усиленной защиты Cat Browser';
+      '╨ú╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╨╡ ╤ü╨┐╨╕╤ü╨║╨░╨╝╨╕ ╤ä╨╕╨╗╤î╤é╤Ç╨╛╨▓ ╨╕ ╨┐╤Ç╨╕╨╝╨╡╨╜╨╡╨╜╨╕╨╡ ╤â╤ü╨╕╨╗╨╡╨╜╨╜╨╛╨╣ ╨╖╨░╤ë╨╕╤é╤ï Cat Browser';
 
   @override
-  String get settings_fissionEnabledTitle => 'Fission (изоляция сайтов)';
+  String get settings_fissionEnabledTitle =>
+      'Fission (╨╕╨╖╨╛╨╗╤Å╤å╨╕╤Å ╤ü╨░╨╣╤é╨╛╨▓)';
 
   @override
-  String get settings_fissionEnabledKeywords => 'изоляция сайтов';
+  String get settings_fissionEnabledKeywords => '╨╕╨╖╨╛╨╗╤Å╤å╨╕╤Å ╤ü╨░╨╣╤é╨╛╨▓';
 
   @override
   String get settings_fissionEnabledSubtitle =>
-      'Изолирует каждый сайт в отдельном процессе ОС для повышения безопасности. Требуется перезапуск приложения.';
+      '╨ÿ╨╖╨╛╨╗╨╕╤Ç╤â╨╡╤é ╨║╨░╨╢╨┤╤ï╨╣ ╤ü╨░╨╣╤é ╨▓ ╨╛╤é╨┤╨╡╨╗╤î╨╜╨╛╨╝ ╨┐╤Ç╨╛╤å╨╡╤ü╤ü╨╡ ╨₧╨í ╨┤╨╗╤Å ╨┐╨╛╨▓╤ï╤ê╨╡╨╜╨╕╤Å ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╨╛╤ü╤é╨╕. ╨ó╤Ç╨╡╨▒╤â╨╡╤é╤ü╤Å ╨┐╨╡╤Ç╨╡╨╖╨░╨┐╤â╤ü╨║ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å.';
 
   @override
   String get settings_safeBrowsingMalwareTitle =>
-      'Safe Browsing: защита от вредоносного ПО';
+      'Safe Browsing: ╨╖╨░╤ë╨╕╤é╨░ ╨╛╤é ╨▓╤Ç╨╡╨┤╨╛╨╜╨╛╤ü╨╜╨╛╨│╨╛ ╨ƒ╨₧';
 
   @override
   String get settings_safeBrowsingMalwareKeywords =>
-      'google safe browsing, вредоносное по';
+      'google safe browsing, ╨▓╤Ç╨╡╨┤╨╛╨╜╨╛╤ü╨╜╨╛╨╡ ╨┐╨╛';
 
   @override
   String get settings_safeBrowsingMalwareSubtitle =>
-      'Предупреждать об опасных сайтах и вредоносных загрузках.';
+      '╨ƒ╤Ç╨╡╨┤╤â╨┐╤Ç╨╡╨╢╨┤╨░╤é╤î ╨╛╨▒ ╨╛╨┐╨░╤ü╨╜╤ï╤à ╤ü╨░╨╣╤é╨░╤à ╨╕ ╨▓╤Ç╨╡╨┤╨╛╨╜╨╛╤ü╨╜╤ï╤à ╨╖╨░╨│╤Ç╤â╨╖╨║╨░╤à.';
 
   @override
   String get settings_safeBrowsingPhishingTitle =>
-      'Safe Browsing: защита от фишинга';
+      'Safe Browsing: ╨╖╨░╤ë╨╕╤é╨░ ╨╛╤é ╤ä╨╕╤ê╨╕╨╜╨│╨░';
 
   @override
   String get settings_safeBrowsingPhishingKeywords =>
-      'google safe browsing, фишинг';
+      'google safe browsing, ╤ä╨╕╤ê╨╕╨╜╨│';
 
   @override
   String get settings_safeBrowsingPhishingSubtitle =>
-      'Предупреждать о мошеннических сайтах и страницах входа.';
+      '╨ƒ╤Ç╨╡╨┤╤â╨┐╤Ç╨╡╨╢╨┤╨░╤é╤î ╨╛ ╨╝╨╛╤ê╨╡╨╜╨╜╨╕╤ç╨╡╤ü╨║╨╕╤à ╤ü╨░╨╣╤é╨░╤à ╨╕ ╤ü╤é╤Ç╨░╨╜╨╕╤å╨░╤à ╨▓╤à╨╛╨┤╨░.';
 
   @override
-  String get settings_extensionsWebApiTitle => 'Web API расширений';
+  String get settings_extensionsWebApiTitle => 'Web API ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╣';
 
   @override
-  String get settings_extensionsWebApiKeywords => 'api расширений';
+  String get settings_extensionsWebApiKeywords => 'api ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╣';
 
   @override
   String get settings_extensionsWebApiSubtitle =>
-      'Открыть API mozAddonManager для веб-контента и страниц расширений. Требуется перезапуск приложения.';
+      '╨₧╤é╨║╤Ç╤ï╤é╤î API mozAddonManager ╨┤╨╗╤Å ╨▓╨╡╨▒-╨║╨╛╨╜╤é╨╡╨╜╤é╨░ ╨╕ ╤ü╤é╤Ç╨░╨╜╨╕╤å ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╣. ╨ó╤Ç╨╡╨▒╤â╨╡╤é╤ü╤Å ╨┐╨╡╤Ç╨╡╨╖╨░╨┐╤â╤ü╨║ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å.';
 
   @override
   String get settings_appOpeningProtectionSectionHeader =>
-      'Защита от открытия приложениями';
+      '╨ù╨░╤ë╨╕╤é╨░ ╨╛╤é ╨╛╤é╨║╤Ç╤ï╤é╨╕╤Å ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å╨╝╨╕';
 
   @override
   String get settings_blockAppsOpeningBrowserTitle =>
-      'Не давать приложениям открывать браузер';
+      '╨¥╨╡ ╨┤╨░╨▓╨░╤é╤î ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å╨╝ ╨╛╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╨▒╤Ç╨░╤â╨╖╨╡╤Ç';
 
   @override
   String get settings_blockAppsOpeningBrowserKeywords =>
-      'контроль интентов, внешние приложения';
+      '╨║╨╛╨╜╤é╤Ç╨╛╨╗╤î ╨╕╨╜╤é╨╡╨╜╤é╨╛╨▓, ╨▓╨╜╨╡╤ê╨╜╨╕╨╡ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_blockAppsOpeningBrowserSubtitle =>
-      'Спрашивать перед открытием ссылок, которые другие приложения отправляют в Cat Browser.';
+      '╨í╨┐╤Ç╨░╤ê╨╕╨▓╨░╤é╤î ╨┐╨╡╤Ç╨╡╨┤ ╨╛╤é╨║╤Ç╤ï╤é╨╕╨╡╨╝ ╤ü╤ü╤ï╨╗╨╛╨║, ╨║╨╛╤é╨╛╤Ç╤ï╨╡ ╨┤╤Ç╤â╨│╨╕╨╡ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å ╨╛╤é╨┐╤Ç╨░╨▓╨╗╤Å╤Ä╤é ╨▓ Cat Browser.';
 
   @override
-  String get settings_managedAppsSectionHeader => 'Управляемые приложения';
+  String get settings_managedAppsSectionHeader =>
+      '╨ú╨┐╤Ç╨░╨▓╨╗╤Å╨╡╨╝╤ï╨╡ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å';
 
   @override
-  String get settings_managedAppAlwaysAllowedLabel => 'Всегда разрешено';
+  String get settings_managedAppAlwaysAllowedLabel =>
+      '╨Æ╤ü╨╡╨│╨┤╨░ ╤Ç╨░╨╖╤Ç╨╡╤ê╨╡╨╜╨╛';
 
   @override
-  String get settings_managedAppAlwaysBlockedLabel => 'Всегда заблокировано';
+  String get settings_managedAppAlwaysBlockedLabel =>
+      '╨Æ╤ü╨╡╨│╨┤╨░ ╨╖╨░╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╨╜╨╛';
 
   @override
-  String get settings_managedAppActionAllow => 'Разрешить';
+  String get settings_managedAppActionAllow => '╨á╨░╨╖╤Ç╨╡╤ê╨╕╤é╤î';
 
   @override
-  String get settings_managedAppActionBlock => 'Блокировать';
+  String get settings_managedAppActionBlock => '╨æ╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╤é╤î';
 
   @override
-  String get settings_browserLanguagesTileTitle => 'Языки браузера';
+  String get settings_browserLanguagesTileTitle =>
+      '╨»╨╖╤ï╨║╨╕ ╨┤╨╗╤Å ╤ü╨░╨╣╤é╨╛╨▓';
 
   @override
   String get settings_browserLanguagesTileSubtitle =>
-      'Настроить языковые предпочтения, сообщаемые сайтам';
+      '╨¥╨░ ╨║╨░╨║╨╕╤à ╤Å╨╖╤ï╨║╨░╤à ╤ü╨░╨╣╤é╨░╨╝ ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╤ü╨╛╨┤╨╡╤Ç╨╢╨╕╨╝╨╛╨╡';
 
   @override
   String get settings_fingerprintProtectionTileTitle =>
-      'Защита от цифровых отпечатков';
+      '╨ù╨░╤ë╨╕╤é╨░ ╨╛╤é ╤å╨╕╤ä╤Ç╨╛╨▓╤ï╤à ╨╛╤é╨┐╨╡╤ç╨░╤é╨║╨╛╨▓';
 
   @override
   String get settings_fingerprintProtectionTileSubtitle =>
-      'Детальная настройка защиты от цифровых отпечатков браузера';
+      '╨ö╨╡╤é╨░╨╗╤î╨╜╨░╤Å ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨░ ╨╖╨░╤ë╨╕╤é╤ï ╨╛╤é ╤å╨╕╤ä╤Ç╨╛╨▓╤ï╤à ╨╛╤é╨┐╨╡╤ç╨░╤é╨║╨╛╨▓ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░';
 
   @override
   String get settings_resistFingerprintingTileTitle =>
-      'Противодействие отпечаткам (RFP)';
+      '╨ƒ╤Ç╨╛╤é╨╕╨▓╨╛╨┤╨╡╨╣╤ü╤é╨▓╨╕╨╡ ╨╛╤é╨┐╨╡╤ç╨░╤é╨║╨░╨╝ (RFP)';
 
   @override
   String get settings_resistFingerprintingTileKeywords =>
@@ -9851,196 +10258,206 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get settings_resistFingerprintingTileSubtitle =>
-      'Расширенное усиление защиты от цифровых отпечатков';
+      '╨á╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╜╨╛╨╡ ╤â╤ü╨╕╨╗╨╡╨╜╨╕╨╡ ╨╖╨░╤ë╨╕╤é╤ï ╨╛╤é ╤å╨╕╤ä╤Ç╨╛╨▓╤ï╤à ╨╛╤é╨┐╨╡╤ç╨░╤é╨║╨╛╨▓';
 
   @override
-  String get settings_lnaEnabledTitle => 'Доступ к локальной сети';
+  String get settings_lnaEnabledTitle =>
+      '╨ù╨░╤ë╨╕╤ë╨░╤é╤î ╨╗╨╛╨║╨░╨╗╤î╨╜╤ï╨╡ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å ╨╕ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨░';
 
   @override
-  String get settings_lnaEnabledKeywords => 'lan, локальная сеть';
+  String get settings_lnaEnabledKeywords =>
+      'lan, ╨╗╨╛╨║╨░╨╗╤î╨╜╨░╤Å ╤ü╨╡╤é╤î, ╨┤╨╛╤ü╤é╤â╨┐ ╨║ ╨╗╨╛╨║╨░╨╗╤î╨╜╨╛╨╣ ╤ü╨╡╤é╨╕, localhost, ╨╗╨╛╨║╨░╨╗╤î╨╜╤ï╨╡ ╨┐╨╛╨┤╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_lnaEnabledSubtitle =>
-      'Включить блокировку доступа к локальной сети и устройствам';
+      '╨£╨╛╨│╤â╤é ╨╗╨╕ ╤ü╨░╨╣╤é╤ï ╨┐╨╛╨┤╨║╨╗╤Ä╤ç╨░╤é╤î╤ü╤Å ╨║ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å╨╝ ╨╜╨░ ╤ì╤é╨╛╨╝ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨╡ ╨╕╨╗╨╕ ╨║ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨░╨╝ ╨▓ ╨▓╨░╤ê╨╡╨╣ ╤ü╨╡╤é╨╕';
 
   @override
   String get settings_lnaBlockingTitle =>
-      'Блокировать запросы к локальной сети';
+      '╨í╨┐╤Ç╨░╤ê╨╕╨▓╨░╤é╤î ╨┐╨╡╤Ç╨╡╨┤ ╨╗╨╛╨║╨░╨╗╤î╨╜╤ï╨╝╨╕ ╨┐╨╛╨┤╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å╨╝╨╕';
 
   @override
-  String get settings_lnaBlockingKeywords => 'lan, локальная сеть';
+  String get settings_lnaBlockingKeywords =>
+      'lan, ╨╗╨╛╨║╨░╨╗╤î╨╜╨░╤Å ╤ü╨╡╤é╤î, localhost, ╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╤é╤î ╨╗╨╛╨║╨░╨╗╤î╨╜╤ï╨╡ ╨┐╨╛╨┤╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_lnaBlockingSubtitle =>
-      'Блокировать запросы веб-страниц к адресам локальной сети';
+      '╨í╨░╨╣╤é╤ï ╨┤╨╛╨╗╨╢╨╜╤ï ╤ü╨┐╤Ç╨░╤ê╨╕╨▓╨░╤é╤î ╤Ç╨░╨╖╤Ç╨╡╤ê╨╡╨╜╨╕╤Å, ╨┐╤Ç╨╡╨╢╨┤╨╡ ╤ç╨╡╨╝ ╨┐╨╛╨┤╨║╨╗╤Ä╤ç╨╕╤é╤î╤ü╤Å ╨║ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å╨╝ ╨╜╨░ ╤ì╤é╨╛╨╝ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨╡ ╨╕╨╗╨╕ ╨║ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨░╨╝ ╨▓ ╨▓╨░╤ê╨╡╨╣ ╤ü╨╡╤é╨╕';
 
   @override
   String get settings_lnaBlockTrackersTitle =>
-      'Блокировать трекеры в локальной сети';
+      '╨æ╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╤é╤î ╨╗╨╛╨║╨░╨╗╤î╨╜╤ï╨╡ ╨┐╨╛╨┤╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å ╤é╤Ç╨╡╨║╨╡╤Ç╨╛╨▓';
 
   @override
-  String get settings_lnaBlockTrackersKeywords => 'lan, локальная сеть';
+  String get settings_lnaBlockTrackersKeywords =>
+      'lan, ╤é╤Ç╨╡╨║╨╡╤Ç╤ï ╨▓ ╨╗╨╛╨║╨░╨╗╤î╨╜╨╛╨╣ ╤ü╨╡╤é╨╕, localhost';
 
   @override
   String get settings_lnaBlockTrackersSubtitle =>
-      'Не давать трекерам обращаться к ресурсам локальной сети';
+      '╨ÿ╨╖╨▓╨╡╤ü╤é╨╜╤ï╨╡ ╤é╤Ç╨╡╨║╨╡╤Ç╤ï ╨╜╨╡ ╨╝╨╛╨│╤â╤é ╨┐╨╛╨┤╨║╨╗╤Ä╤ç╨░╤é╤î╤ü╤Å ╨║ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å╨╝ ╨╜╨░ ╤ì╤é╨╛╨╝ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨╡ ╨╕╨╗╨╕ ╨║ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨░╨╝ ╨▓ ╨▓╨░╤ê╨╡╨╣ ╤ü╨╡╤é╨╕';
 
   @override
-  String get settings_transferTitle => 'Экспорт и импорт';
+  String get settings_transferTitle => '╨¡╨║╤ü╨┐╨╛╤Ç╤é ╨╕ ╨╕╨╝╨┐╨╛╤Ç╤é';
 
   @override
-  String get settings_transferChangeExportFolder => 'Изменить папку экспорта';
+  String get settings_transferChangeExportFolder =>
+      '╨ÿ╨╖╨╝╨╡╨╜╨╕╤é╤î ╨┐╨░╨┐╨║╤â ╤ì╨║╤ü╨┐╨╛╤Ç╤é╨░';
 
   @override
   String get settings_transferIntro =>
-      'Переносите настройки между профилями или устройствами либо прикладывайте их к сообщению об ошибке. Переносятся только настройки — без вкладок, истории, закладок и логинов. Чтобы перенести их, создайте резервную копию всего профиля.';
+      '╨ƒ╨╡╤Ç╨╡╨╜╨╛╤ü╨╕╤é╨╡ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨╝╨╡╨╢╨┤╤â ╨┐╤Ç╨╛╤ä╨╕╨╗╤Å╨╝╨╕ ╨╕╨╗╨╕ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨░╨╝╨╕ ╨╗╨╕╨▒╨╛ ╨┐╤Ç╨╕╨║╨╗╨░╨┤╤ï╨▓╨░╨╣╤é╨╡ ╨╕╤à ╨║ ╤ü╨╛╨╛╨▒╤ë╨╡╨╜╨╕╤Ä ╨╛╨▒ ╨╛╤ê╨╕╨▒╨║╨╡. ╨ƒ╨╡╤Ç╨╡╨╜╨╛╤ü╤Å╤é╤ü╤Å ╤é╨╛╨╗╤î╨║╨╛ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ΓÇö ╨▒╨╡╨╖ ╨▓╨║╨╗╨░╨┤╨╛╨║, ╨╕╤ü╤é╨╛╤Ç╨╕╨╕, ╨╖╨░╨║╨╗╨░╨┤╨╛╨║ ╨╕ ╨╗╨╛╨│╨╕╨╜╨╛╨▓. ╨º╤é╨╛╨▒╤ï ╨┐╨╡╤Ç╨╡╨╜╨╡╤ü╤é╨╕ ╨╕╤à, ╤ü╨╛╨╖╨┤╨░╨╣╤é╨╡ ╤Ç╨╡╨╖╨╡╤Ç╨▓╨╜╤â╤Ä ╨║╨╛╨┐╨╕╤Ä ╨▓╤ü╨╡╨│╨╛ ╨┐╤Ç╨╛╤ä╨╕╨╗╤Å.';
 
   @override
   String get settings_transferDeviceOnlyNote =>
-      'Настройки веб-поиска, макет домашней страницы и новой вкладки, порядок меню и закреплённые дополнения остаются на этом устройстве';
+      '╨¥╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨▓╨╡╨▒-╨┐╨╛╨╕╤ü╨║╨░, ╨╝╨░╨║╨╡╤é ╨┤╨╛╨╝╨░╤ê╨╜╨╡╨╣ ╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï ╨╕ ╨╜╨╛╨▓╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╕, ╨┐╨╛╤Ç╤Å╨┤╨╛╨║ ╨╝╨╡╨╜╤Ä ╨╕ ╨╖╨░╨║╤Ç╨╡╨┐╨╗╤æ╨╜╨╜╤ï╨╡ ╨┤╨╛╨┐╨╛╨╗╨╜╨╡╨╜╨╕╤Å ╨╛╤ü╤é╨░╤Ä╤é╤ü╤Å ╨╜╨░ ╤ì╤é╨╛╨╝ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨╡';
 
   @override
-  String get settings_transferExportSectionTitle => 'Экспорт';
+  String get settings_transferExportSectionTitle => '╨¡╨║╤ü╨┐╨╛╤Ç╤é';
 
   @override
   String get settings_transferExportSectionSubtitle =>
-      'Экспортировать выбранные разделы в читаемый файл';
+      '╨¡╨║╤ü╨┐╨╛╤Ç╤é╨╕╤Ç╨╛╨▓╨░╤é╤î ╨▓╤ï╨▒╤Ç╨░╨╜╨╜╤ï╨╡ ╤Ç╨░╨╖╨┤╨╡╨╗╤ï ╨▓ ╤ç╨╕╤é╨░╨╡╨╝╤ï╨╣ ╤ä╨░╨╣╨╗';
 
   @override
-  String get settings_transferSaveFileButton => 'Сохранить файл';
+  String get settings_transferSaveFileButton => '╨í╨╛╤à╤Ç╨░╨╜╨╕╤é╤î ╤ä╨░╨╣╨╗';
 
   @override
-  String get settings_transferImportSectionTitle => 'Импорт';
+  String get settings_transferImportSectionTitle => '╨ÿ╨╝╨┐╨╛╤Ç╤é';
 
   @override
   String get settings_transferImportSectionSubtitle =>
-      'Выберите, какие настройки применить после открытия файла';
+      '╨Æ╤ï╨▒╨╡╤Ç╨╕╤é╨╡, ╨║╨░╨║╨╕╨╡ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨┐╤Ç╨╕╨╝╨╡╨╜╨╕╤é╤î ╨┐╨╛╤ü╨╗╨╡ ╨╛╤é╨║╤Ç╤ï╤é╨╕╤Å ╤ä╨░╨╣╨╗╨░';
 
   @override
-  String get settings_transferOpenFileButton => 'Открыть файл';
+  String get settings_transferOpenFileButton => '╨₧╤é╨║╤Ç╤ï╤é╤î ╤ä╨░╨╣╨╗';
 
   @override
-  String get settings_transferPasteButton => 'Вставить';
+  String get settings_transferPasteButton => '╨Æ╤ü╤é╨░╨▓╨╕╤é╤î';
 
   @override
   String settings_transferExportFolderChanged(String name) {
-    return 'Экспорт будет сохраняться в $name';
+    return '╨¡╨║╤ü╨┐╨╛╤Ç╤é ╨▒╤â╨┤╨╡╤é ╤ü╨╛╤à╤Ç╨░╨╜╤Å╤é╤î╤ü╤Å ╨▓ $name';
   }
 
   @override
   String settings_transferSavedAs(String name) {
-    return 'Сохранено как $name';
+    return '╨í╨╛╤à╤Ç╨░╨╜╨╡╨╜╨╛ ╨║╨░╨║ $name';
   }
 
   @override
   String get settings_transferExportFolderGone =>
-      'Папки экспорта больше нет. Выберите папку снова и повторите попытку.';
+      '╨ƒ╨░╨┐╨║╨╕ ╤ì╨║╤ü╨┐╨╛╤Ç╤é╨░ ╨▒╨╛╨╗╤î╤ê╨╡ ╨╜╨╡╤é. ╨Æ╤ï╨▒╨╡╤Ç╨╕╤é╨╡ ╨┐╨░╨┐╨║╤â ╤ü╨╜╨╛╨▓╨░ ╨╕ ╨┐╨╛╨▓╤é╨╛╤Ç╨╕╤é╨╡ ╨┐╨╛╨┐╤ï╤é╨║╤â.';
 
   @override
   String settings_transferSaveFailed(String error) {
-    return 'Не удалось сохранить экспорт: $error';
+    return '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╤ü╨╛╤à╤Ç╨░╨╜╨╕╤é╤î ╤ì╨║╤ü╨┐╨╛╤Ç╤é: $error';
   }
 
   @override
   String get settings_transferCopiedToClipboard =>
-      'Настройки скопированы в буфер обмена';
+      '╨¥╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╤ü╨║╨╛╨┐╨╕╤Ç╨╛╨▓╨░╨╜╤ï ╨▓ ╨▒╤â╤ä╨╡╤Ç ╨╛╨▒╨╝╨╡╨╜╨░';
 
   @override
   String settings_transferCopyFailed(String error) {
-    return 'Не удалось скопировать экспорт: $error';
+    return '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╤ü╨║╨╛╨┐╨╕╤Ç╨╛╨▓╨░╤é╤î ╤ì╨║╤ü╨┐╨╛╤Ç╤é: $error';
   }
 
   @override
   String get settings_transferImportNothingApplicable =>
-      'В этом экспорте нет ничего, что может применить эта версия Cat Browser.';
+      '╨Æ ╤ì╤é╨╛╨╝ ╤ì╨║╤ü╨┐╨╛╤Ç╤é╨╡ ╨╜╨╡╤é ╨╜╨╕╤ç╨╡╨│╨╛, ╤ç╤é╨╛ ╨╝╨╛╨╢╨╡╤é ╨┐╤Ç╨╕╨╝╨╡╨╜╨╕╤é╤î ╤ì╤é╨░ ╨▓╨╡╤Ç╤ü╨╕╤Å Cat Browser.';
 
   @override
-  String get settings_transferImportedSuccess => 'Настройки импортированы';
+  String get settings_transferImportedSuccess =>
+      '╨¥╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨╕╨╝╨┐╨╛╤Ç╤é╨╕╤Ç╨╛╨▓╨░╨╜╤ï';
 
   @override
   String settings_transferImportFailed(String error) {
-    return 'Не удалось импортировать настройки: $error';
+    return '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╨╕╨╝╨┐╨╛╤Ç╤é╨╕╤Ç╨╛╨▓╨░╤é╤î ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕: $error';
   }
 
   @override
   String get settings_transferNotASettingsFile =>
-      'Этот файл не является экспортом настроек.';
+      '╨¡╤é╨╛╤é ╤ä╨░╨╣╨╗ ╨╜╨╡ ╤Å╨▓╨╗╤Å╨╡╤é╤ü╤Å ╤ì╨║╤ü╨┐╨╛╤Ç╤é╨╛╨╝ ╨╜╨░╤ü╤é╤Ç╨╛╨╡╨║.';
 
   @override
   String settings_transferReadFileFailed(String error) {
-    return 'Не удалось прочитать файл: $error';
+    return '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╨┐╤Ç╨╛╤ç╨╕╤é╨░╤é╤î ╤ä╨░╨╣╨╗: $error';
   }
 
   @override
-  String get settings_transferClipboardEmpty => 'Буфер обмена пуст.';
+  String get settings_transferClipboardEmpty =>
+      '╨æ╤â╤ä╨╡╤Ç ╨╛╨▒╨╝╨╡╨╜╨░ ╨┐╤â╤ü╤é.';
 
   @override
   String settings_transferReadClipboardFailed(String error) {
-    return 'Не удалось прочитать буфер обмена: $error';
+    return '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╨┐╤Ç╨╛╤ç╨╕╤é╨░╤é╤î ╨▒╤â╤ä╨╡╤Ç ╨╛╨▒╨╝╨╡╨╜╨░: $error';
   }
 
   @override
-  String get settings_transferSectionAppSettingsTitle => 'Настройки приложения';
+  String get settings_transferSectionAppSettingsTitle =>
+      '╨¥╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å';
 
   @override
   String settings_transferSectionAppSettingsDescription(String torBrand) {
-    return 'Внешний вид, просмотр, вкладки, приватность, настройки $torBrand и веб-движка';
+    return '╨Æ╨╜╨╡╤ê╨╜╨╕╨╣ ╨▓╨╕╨┤, ╨┐╤Ç╨╛╤ü╨╝╨╛╤é╤Ç, ╨▓╨║╨╗╨░╨┤╨║╨╕, ╨┐╤Ç╨╕╨▓╨░╤é╨╜╨╛╤ü╤é╤î, ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ $torBrand ╨╕ ╨▓╨╡╨▒-╨┤╨▓╨╕╨╢╨║╨░';
   }
 
   @override
-  String get settings_transferSectionGeckoPrefsTitle => 'Параметры Gecko';
+  String get settings_transferSectionGeckoPrefsTitle =>
+      '╨ƒ╨░╤Ç╨░╨╝╨╡╤é╤Ç╤ï ╨▓╨╡╨▒-╨┤╨▓╨╕╨╢╨║╨░';
 
   @override
   String get settings_transferSectionGeckoPrefsDescription =>
-      'Расширенные параметры движка, изменённые вручную';
+      '╨á╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╜╤ï╨╡ ╨┐╨░╤Ç╨░╨╝╨╡╤é╤Ç╤ï ╨┤╨▓╨╕╨╢╨║╨░, ╨╕╨╖╨╝╨╡╨╜╤æ╨╜╨╜╤ï╨╡ ╨▓╤Ç╤â╤ç╨╜╤â╤Ä';
 
   @override
-  String get settings_importErrorNotJson => 'Это не файл JSON.';
+  String get settings_importErrorNotJson => '╨¡╤é╨╛ ╨╜╨╡ ╤ä╨░╨╣╨╗ JSON.';
 
   @override
   String get settings_importErrorNotSettingsExport =>
-      'Это не экспорт настроек Cat Browser.';
+      '╨¡╤é╨╛ ╨╜╨╡ ╤ì╨║╤ü╨┐╨╛╤Ç╤é ╨╜╨░╤ü╤é╤Ç╨╛╨╡╨║ Cat Browser.';
 
   @override
   String get settings_importErrorMissingFormatVersion =>
-      'В экспорте не указана версия формата.';
+      '╨Æ ╤ì╨║╤ü╨┐╨╛╤Ç╤é╨╡ ╨╜╨╡ ╤â╨║╨░╨╖╨░╨╜╨░ ╨▓╨╡╤Ç╤ü╨╕╤Å ╤ä╨╛╤Ç╨╝╨░╤é╨░.';
 
   @override
   String settings_importErrorNewerFormatVersion(int version, int supported) {
-    return 'Этот экспорт создан более новой версией Cat Browser (формат $version, эта версия читает до $supported). Обновите приложение и повторите попытку.';
+    return '╨¡╤é╨╛╤é ╤ì╨║╤ü╨┐╨╛╤Ç╤é ╤ü╨╛╨╖╨┤╨░╨╜ ╨▒╨╛╨╗╨╡╨╡ ╨╜╨╛╨▓╨╛╨╣ ╨▓╨╡╤Ç╤ü╨╕╨╡╨╣ Cat Browser (╤ä╨╛╤Ç╨╝╨░╤é $version, ╤ì╤é╨░ ╨▓╨╡╤Ç╤ü╨╕╤Å ╤ç╨╕╤é╨░╨╡╤é ╨┤╨╛ $supported). ╨₧╨▒╨╜╨╛╨▓╨╕╤é╨╡ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╨╡ ╨╕ ╨┐╨╛╨▓╤é╨╛╤Ç╨╕╤é╨╡ ╨┐╨╛╨┐╤ï╤é╨║╤â.';
   }
 
   @override
-  String get settings_importErrorNoSettings => 'Экспорт не содержит настроек.';
+  String get settings_importErrorNoSettings =>
+      '╨¡╨║╤ü╨┐╨╛╤Ç╤é ╨╜╨╡ ╤ü╨╛╨┤╨╡╤Ç╨╢╨╕╤é ╨╜╨░╤ü╤é╤Ç╨╛╨╡╨║.';
 
   @override
   String settings_importErrorMalformedSection(String section) {
-    return 'Раздел «$section» имеет неверную структуру.';
+    return '╨á╨░╨╖╨┤╨╡╨╗ ┬½$section┬╗ ╨╕╨╝╨╡╨╡╤é ╨╜╨╡╨▓╨╡╤Ç╨╜╤â╤Ä ╤ü╤é╤Ç╤â╨║╤é╤â╤Ç╤â.';
   }
 
   @override
   String settings_importErrorMalformedField(String field) {
-    return 'Поле «$field» экспорта имеет неверный формат.';
+    return '╨ƒ╨╛╨╗╨╡ ┬½$field┬╗ ╤ì╨║╤ü╨┐╨╛╤Ç╤é╨░ ╨╕╨╝╨╡╨╡╤é ╨╜╨╡╨▓╨╡╤Ç╨╜╤ï╨╣ ╤ä╨╛╤Ç╨╝╨░╤é.';
   }
 
   @override
   String settings_importErrorUnreadablePrefsLine(String section, String line) {
-    return 'В разделе «$section» есть строка, которую Cat Browser не может прочитать: «$line». Импорт сбросил бы параметры, а не восстановил их.';
+    return '╨Æ ╤Ç╨░╨╖╨┤╨╡╨╗╨╡ ┬½$section┬╗ ╨╡╤ü╤é╤î ╤ü╤é╤Ç╨╛╨║╨░, ╨║╨╛╤é╨╛╤Ç╤â╤Ä Cat Browser ╨╜╨╡ ╨╝╨╛╨╢╨╡╤é ╨┐╤Ç╨╛╤ç╨╕╤é╨░╤é╤î: ┬½$line┬╗. ╨ÿ╨╝╨┐╨╛╤Ç╤é ╤ü╨▒╤Ç╨╛╤ü╨╕╨╗ ╨▒╤ï ╨┐╨░╤Ç╨░╨╝╨╡╤é╤Ç╤ï, ╨░ ╨╜╨╡ ╨▓╨╛╤ü╤ü╤é╨░╨╜╨╛╨▓╨╕╨╗ ╨╕╤à.';
   }
 
   @override
   String settings_importErrorNotPrefsSnapshot(String section) {
-    return 'Раздел «$section» не является снимком параметров Cat Browser.';
+    return '╨á╨░╨╖╨┤╨╡╨╗ ┬½$section┬╗ ╨╜╨╡ ╤Å╨▓╨╗╤Å╨╡╤é╤ü╤Å ╤ü╨╜╨╕╨╝╨║╨╛╨╝ ╨┐╨░╤Ç╨░╨╝╨╡╤é╤Ç╨╛╨▓ Cat Browser.';
   }
 
   @override
   String settings_importErrorMissingSchemaVersion(String section) {
-    return 'В разделе «$section» не указана версия схемы.';
+    return '╨Æ ╤Ç╨░╨╖╨┤╨╡╨╗╨╡ ┬½$section┬╗ ╨╜╨╡ ╤â╨║╨░╨╖╨░╨╜╨░ ╨▓╨╡╤Ç╤ü╨╕╤Å ╤ü╤à╨╡╨╝╤ï.';
   }
 
   @override
   String settings_importErrorUnreadablePref(String section, String pref) {
-    return 'Раздел «$section» содержит параметр, который Cat Browser не смог прочитать обратно: «$pref».';
+    return '╨á╨░╨╖╨┤╨╡╨╗ ┬½$section┬╗ ╤ü╨╛╨┤╨╡╤Ç╨╢╨╕╤é ╨┐╨░╤Ç╨░╨╝╨╡╤é╤Ç, ╨║╨╛╤é╨╛╤Ç╤ï╨╣ Cat Browser ╨╜╨╡ ╤ü╨╝╨╛╨│ ╨┐╤Ç╨╛╤ç╨╕╤é╨░╤é╤î ╨╛╨▒╤Ç╨░╤é╨╜╨╛: ┬½$pref┬╗.';
   }
 
   @override
@@ -10049,12 +10466,12 @@ class AppLocalizationsRu extends AppLocalizations {
     int version,
     int supported,
   ) {
-    return 'Раздел «$section» создан более новой версией Cat Browser (схема $version, эта версия читает до $supported). Обновите приложение и повторите попытку.';
+    return '╨á╨░╨╖╨┤╨╡╨╗ ┬½$section┬╗ ╤ü╨╛╨╖╨┤╨░╨╜ ╨▒╨╛╨╗╨╡╨╡ ╨╜╨╛╨▓╨╛╨╣ ╨▓╨╡╤Ç╤ü╨╕╨╡╨╣ Cat Browser (╤ü╤à╨╡╨╝╨░ $version, ╤ì╤é╨░ ╨▓╨╡╤Ç╤ü╨╕╤Å ╤ç╨╕╤é╨░╨╡╤é ╨┤╨╛ $supported). ╨₧╨▒╨╜╨╛╨▓╨╕╤é╨╡ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╨╡ ╨╕ ╨┐╨╛╨▓╤é╨╛╤Ç╨╕╤é╨╡ ╨┐╨╛╨┐╤ï╤é╨║╤â.';
   }
 
   @override
   String settings_importPartialFailure(String failed, String error) {
-    return 'Раздел «$failed» остановился на полпути и мог примениться частично: $error';
+    return '╨á╨░╨╖╨┤╨╡╨╗ ┬½$failed┬╗ ╨╛╤ü╤é╨░╨╜╨╛╨▓╨╕╨╗╤ü╤Å ╨╜╨░ ╨┐╨╛╨╗╨┐╤â╤é╨╕ ╨╕ ╨╝╨╛╨│ ╨┐╤Ç╨╕╨╝╨╡╨╜╨╕╤é╤î╤ü╤Å ╤ç╨░╤ü╤é╨╕╤ç╨╜╨╛: $error';
   }
 
   @override
@@ -10063,1389 +10480,1463 @@ class AppLocalizationsRu extends AppLocalizations {
     String failed,
     String error,
   ) {
-    return 'Импортировано: $applied. Затем раздел «$failed» остановился на полпути и мог примениться частично: $error';
+    return '╨ÿ╨╝╨┐╨╛╤Ç╤é╨╕╤Ç╨╛╨▓╨░╨╜╨╛: $applied. ╨ù╨░╤é╨╡╨╝ ╤Ç╨░╨╖╨┤╨╡╨╗ ┬½$failed┬╗ ╨╛╤ü╤é╨░╨╜╨╛╨▓╨╕╨╗╤ü╤Å ╨╜╨░ ╨┐╨╛╨╗╨┐╤â╤é╨╕ ╨╕ ╨╝╨╛╨│ ╨┐╤Ç╨╕╨╝╨╡╨╜╨╕╤é╤î╤ü╤Å ╤ç╨░╤ü╤é╨╕╤ç╨╜╨╛: $error';
   }
 
   @override
-  String get settings_webEngineHardeningTitle => 'Усиление защиты веб-движка';
+  String get settings_webEngineHardeningTitle =>
+      '╨ú╤ü╨╕╨╗╨╡╨╜╨╕╨╡ ╨╖╨░╤ë╨╕╤é╤ï ╨▓╨╡╨▒-╨┤╨▓╨╕╨╢╨║╨░';
 
   @override
   String get settings_webEngineHardeningKeywords =>
-      'усиление защиты, hardening, безопасность';
+      '╤â╤ü╨╕╨╗╨╡╨╜╨╕╨╡ ╨╖╨░╤ë╨╕╤é╤ï, hardening, ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╨╛╤ü╤é╤î, ╨æ╨╛╨╗╨╡╨╡ ╤ü╤é╤Ç╨╛╨│╨╕╨╡ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╨╛╤ü╤é╨╕, ╨á╨╡╨║╨╛╨╝╨╡╨╜╨┤╤â╨╡╨╝╤ï╨╡ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╨╛╤ü╤é╨╕';
 
   @override
   String get settings_webEngineHardeningSearchHint =>
-      'Поиск групп усиления защиты';
+      '╨ƒ╨╛╨╕╤ü╨║ ╨│╤Ç╤â╨┐╨┐ ╤â╤ü╨╕╨╗╨╡╨╜╨╕╤Å ╨╖╨░╤ë╨╕╤é╤ï';
 
   @override
   String get settings_webEngineHardeningResetAllMenuItem =>
-      'Сбросить все параметры';
+      '╨í╨▒╤Ç╨╛╤ü╨╕╤é╤î ╨▓╤ü╨╡ ╨┐╨░╤Ç╨░╨╝╨╡╤é╤Ç╤ï';
 
   @override
   String get settings_webEngineHardeningResetAllDialogTitle =>
-      'Сбросить все параметры?';
+      '╨í╨▒╤Ç╨╛╤ü╨╕╤é╤î ╨▓╤ü╨╡ ╨┐╨░╤Ç╨░╨╝╨╡╤é╤Ç╤ï?';
 
   @override
   String get settings_webEngineHardeningResetAllDialogContent =>
-      'Все заданные пользователем параметры веб-движка будут сброшены к значениям по умолчанию.';
+      '╨Æ╤ü╨╡ ╨╖╨░╨┤╨░╨╜╨╜╤ï╨╡ ╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╨╡╨╗╨╡╨╝ ╨┐╨░╤Ç╨░╨╝╨╡╤é╤Ç╤ï ╨▓╨╡╨▒-╨┤╨▓╨╕╨╢╨║╨░ ╨▒╤â╨┤╤â╤é ╤ü╨▒╤Ç╨╛╤ê╨╡╨╜╤ï ╨║ ╨╖╨╜╨░╤ç╨╡╨╜╨╕╤Å╨╝ ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä.';
 
   @override
-  String get settings_webEngineHardeningOverviewTitle => 'Обзор';
+  String get settings_webEngineHardeningOverviewTitle => '╨₧╨▒╨╖╨╛╤Ç';
 
   @override
   String get settings_webEngineHardeningCompleteTitle =>
-      'Полное усиление защиты';
+      '╨ƒ╨╛╨╗╨╜╨╛╨╡ ╤â╤ü╨╕╨╗╨╡╨╜╨╕╨╡ ╨╖╨░╤ë╨╕╤é╤ï';
 
   @override
   String get settings_webEngineHardeningCompleteSubtitle =>
-      'Применить или сбросить все сгруппированные параметры усиления защиты';
+      '╨ƒ╤Ç╨╕╨╝╨╡╨╜╨╕╤é╤î ╨╕╨╗╨╕ ╤ü╨▒╤Ç╨╛╤ü╨╕╤é╤î ╨▓╤ü╨╡ ╤ü╨│╤Ç╤â╨┐╨┐╨╕╤Ç╨╛╨▓╨░╨╜╨╜╤ï╨╡ ╨┐╨░╤Ç╨░╨╝╨╡╤é╤Ç╤ï ╤â╤ü╨╕╨╗╨╡╨╜╨╕╤Å ╨╖╨░╤ë╨╕╤é╤ï';
 
   @override
   String get settings_webEngineHardeningCompleteToggleHint =>
-      'Переключить все сгруппированные параметры усиления защиты сразу.';
+      '╨ƒ╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨╕╤é╤î ╨▓╤ü╨╡ ╤ü╨│╤Ç╤â╨┐╨┐╨╕╤Ç╨╛╨▓╨░╨╜╨╜╤ï╨╡ ╨┐╨░╤Ç╨░╨╝╨╡╤é╤Ç╤ï ╤â╤ü╨╕╨╗╨╡╨╜╨╕╤Å ╨╖╨░╤ë╨╕╤é╤ï ╤ü╤Ç╨░╨╖╤â.';
 
   @override
-  String get settings_webEngineHardeningGroupsTitle => 'Группы усиления защиты';
+  String get settings_webEngineHardeningGroupsTitle =>
+      '╨ô╤Ç╤â╨┐╨┐╤ï ╤â╤ü╨╕╨╗╨╡╨╜╨╕╤Å ╨╖╨░╤ë╨╕╤é╤ï';
 
   @override
   String get settings_webEngineHardeningLoadFailedTitle =>
-      'Не удалось загрузить параметры';
+      '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╨╖╨░╨│╤Ç╤â╨╖╨╕╤é╤î ╨┐╨░╤Ç╨░╨╝╨╡╤é╤Ç╤ï';
 
   @override
   String get settings_webEngineHardeningGroupSearchHint =>
-      'Поиск параметров усиления защиты';
+      '╨ƒ╨╛╨╕╤ü╨║ ╨┐╨░╤Ç╨░╨╝╨╡╤é╤Ç╨╛╨▓ ╤â╤ü╨╕╨╗╨╡╨╜╨╕╤Å ╨╖╨░╤ë╨╕╤é╤ï';
 
   @override
   String get settings_webEngineHardeningGroupControlsTitle =>
-      'Управление группой';
+      '╨ú╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╨╡ ╨│╤Ç╤â╨┐╨┐╨╛╨╣';
 
   @override
-  String get settings_webEngineHardeningPreferenceSettingsTitle => 'Параметры';
+  String get settings_webEngineHardeningPreferenceSettingsTitle =>
+      '╨ƒ╨░╤Ç╨░╨╝╨╡╤é╤Ç╤ï';
 
   @override
-  String get settings_webEngineHardeningOptionalBadge => 'Необязательно';
+  String get settings_webEngineHardeningOptionalBadge =>
+      '╨¥╨╡╨╛╨▒╤Å╨╖╨░╤é╨╡╨╗╤î╨╜╨╛';
 
   @override
-  String get settings_settingsHomeTitle => 'Настройки';
+  String get settings_settingsHomeTitle => '╨¥╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕';
 
   @override
-  String get settings_settingsHomeSearchHint => 'Поиск по всем настройкам';
+  String get settings_settingsHomeSearchHint =>
+      '╨ƒ╨╛╨╕╤ü╨║ ╨┐╨╛ ╨▓╤ü╨╡╨╝ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨░╨╝';
 
   @override
-  String get settings_searchTitle => 'Поиск';
+  String get settings_searchTitle => '╨ƒ╨╛╨╕╤ü╨║';
 
   @override
   String get settings_searchSubtitle =>
-      'Поисковые системы, бэнги, подсказки из истории и поиск на устройстве.';
+      '╨ƒ╨╛╨╕╤ü╨║╨╛╨▓╤ï╨╡ ╤ü╨╕╤ü╤é╨╡╨╝╤ï, ╨▒╤ì╨╜╨│╨╕, ╨┐╨╛╨┤╤ü╨║╨░╨╖╨║╨╕ ╨╕╨╖ ╨╕╤ü╤é╨╛╤Ç╨╕╨╕ ╨╕ ╨┐╨╛╨╕╤ü╨║ ╨╜╨░ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨╡.';
 
   @override
   String get settings_defaultSearchProviderTitle =>
-      'Поисковая система по умолчанию';
+      '╨ƒ╨╛╨╕╤ü╨║╨╛╨▓╨░╤Å ╤ü╨╕╤ü╤é╨╡╨╝╨░';
 
   @override
   String get settings_defaultSearchProviderKeywords =>
-      'поисковая система, поисковик';
+      '╨┐╨╛╨╕╤ü╨║╨╛╨▓╨░╤Å ╤ü╨╕╤ü╤é╨╡╨╝╨░, ╨┐╨╛╨╕╤ü╨║╨╛╨▓╨╕╨║, ╨┐╨╛╨╕╤ü╨║╨╛╨▓╨░╤Å ╤ü╨╕╤ü╤é╨╡╨╝╨░ ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä';
 
   @override
   String get settings_defaultAutocompleteProviderTitle =>
-      'Сервис подсказок по умолчанию';
+      '╨ƒ╨╛╨╕╤ü╨║╨╛╨▓╤ï╨╡ ╨┐╨╛╨┤╤ü╨║╨░╨╖╨║╨╕';
 
   @override
   String get settings_defaultAutocompleteProviderKeywords =>
-      'подсказки, автодополнение';
+      '╨┐╨╛╨┤╤ü╨║╨░╨╖╨║╨╕, ╨░╨▓╤é╨╛╨┤╨╛╨┐╨╛╨╗╨╜╨╡╨╜╨╕╨╡, ╨┐╤Ç╨╛╨▓╨░╨╣╨┤╨╡╤Ç ╨┐╨╛╨┤╤ü╨║╨░╨╖╨╛╨║';
 
   @override
-  String get settings_customSearchEnginesTitle => 'Свои поисковые системы';
+  String get settings_customSearchEnginesTitle =>
+      '╨í╨▓╨╛╨╕ ╨┐╨╛╨╕╤ü╨║╨╛╨▓╤ï╨╡ ╤ü╨╕╤ü╤é╨╡╨╝╤ï';
 
   @override
   String get settings_customSearchEnginesKeywords =>
-      'свои бэнги, поисковые системы';
+      '╤ü╨▓╨╛╨╕ ╨▒╤ì╨╜╨│╨╕, ╨┐╨╛╨╕╤ü╨║╨╛╨▓╤ï╨╡ ╤ü╨╕╤ü╤é╨╡╨╝╤ï';
 
   @override
   String get settings_customSearchEnginesSubtitle =>
-      'Добавление собственных поисковых систем и управление ими';
+      '╨ö╨╛╨▒╨░╨▓╨╗╨╡╨╜╨╕╨╡ ╤ü╨╛╨▒╤ü╤é╨▓╨╡╨╜╨╜╤ï╤à ╨┐╨╛╨╕╤ü╨║╨╛╨▓╤ï╤à ╤ü╨╕╤ü╤é╨╡╨╝ ╨╕ ╤â╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╨╡ ╨╕╨╝╨╕';
 
   @override
-  String get settings_bangSettingsListTitle => 'Настройки бэнгов';
+  String get settings_bangSettingsListTitle =>
+      '╨¥╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨▒╤ì╨╜╨│╨╛╨▓';
 
   @override
   String get settings_bangSettingsListSubtitle =>
-      'Управление репозиториями бэнгов и данными использования';
+      '╨ú╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╨╡ ╤Ç╨╡╨┐╨╛╨╖╨╕╤é╨╛╤Ç╨╕╤Å╨╝╨╕ ╨▒╤ì╨╜╨│╨╛╨▓ ╨╕ ╨┤╨░╨╜╨╜╤ï╨╝╨╕ ╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╨╜╨╕╤Å';
 
   @override
-  String get settings_searchHistoryLimitTitle => 'Лимит истории поиска';
+  String get settings_searchHistoryLimitTitle =>
+      '╨¢╨╕╨╝╨╕╤é ╨╕╤ü╤é╨╛╤Ç╨╕╨╕ ╨┐╨╛╨╕╤ü╨║╨░';
 
   @override
-  String get settings_searchHistoryLimitKeywords => 'история, записи';
+  String get settings_searchHistoryLimitKeywords =>
+      '╨╕╤ü╤é╨╛╤Ç╨╕╤Å, ╨╖╨░╨┐╨╕╤ü╨╕';
 
   @override
   String get settings_searchHistoryLimitSubtitle =>
-      'Максимальное число запоминаемых недавних запросов';
+      '╨£╨░╨║╤ü╨╕╨╝╨░╨╗╤î╨╜╨╛╨╡ ╤ç╨╕╤ü╨╗╨╛ ╨╖╨░╨┐╨╛╨╝╨╕╨╜╨░╨╡╨╝╤ï╤à ╨╜╨╡╨┤╨░╨▓╨╜╨╕╤à ╨╖╨░╨┐╤Ç╨╛╤ü╨╛╨▓';
 
   @override
-  String get settings_searchHistoryLimitSuffix => 'записей';
+  String get settings_searchHistoryLimitSuffix => '╨╖╨░╨┐╨╕╤ü╨╡╨╣';
 
   @override
-  String get settings_validationEnterValue => 'Введите значение';
+  String get settings_validationEnterValue => '╨Æ╨▓╨╡╨┤╨╕╤é╨╡ ╨╖╨╜╨░╤ç╨╡╨╜╨╕╨╡';
 
   @override
-  String get settings_validationEnterValidNumber => 'Введите допустимое число';
+  String get settings_validationEnterValidNumber =>
+      '╨Æ╨▓╨╡╨┤╨╕╤é╨╡ ╨┤╨╛╨┐╤â╤ü╤é╨╕╨╝╨╛╨╡ ╤ç╨╕╤ü╨╗╨╛';
 
   @override
   String get settings_validationValueBetween0And100 =>
-      'Значение должно быть от 0 до 100';
+      '╨ù╨╜╨░╤ç╨╡╨╜╨╕╨╡ ╨┤╨╛╨╗╨╢╨╜╨╛ ╨▒╤ï╤é╤î ╨╛╤é 0 ╨┤╨╛ 100';
 
   @override
   String get settings_allowClipboardAccessTitle =>
-      'Доступ к буферу обмена для подсказок';
+      '╨ö╨╛╤ü╤é╤â╨┐ ╨║ ╨▒╤â╤ä╨╡╤Ç╤â ╨╛╨▒╨╝╨╡╨╜╨░ ╨┤╨╗╤Å ╨┐╨╛╨┤╤ü╨║╨░╨╖╨╛╨║';
 
   @override
-  String get settings_allowClipboardAccessKeywords => 'буфер обмена';
+  String get settings_allowClipboardAccessKeywords => '╨▒╤â╤ä╨╡╤Ç ╨╛╨▒╨╝╨╡╨╜╨░';
 
   @override
   String get settings_allowClipboardAccessSubtitle =>
-      'Браузер может читать буфер обмена, чтобы предлагать URL-адреса';
+      '╨æ╤Ç╨░╤â╨╖╨╡╤Ç ╨╝╨╛╨╢╨╡╤é ╤ç╨╕╤é╨░╤é╤î ╨▒╤â╤ä╨╡╤Ç ╨╛╨▒╨╝╨╡╨╜╨░, ╤ç╤é╨╛╨▒╤ï ╨┐╤Ç╨╡╨┤╨╗╨░╨│╨░╤é╤î URL-╨░╨┤╤Ç╨╡╤ü╨░';
 
   @override
-  String get settings_historySuggestionsTitle => 'Подсказки из истории';
+  String get settings_historySuggestionsTitle =>
+      '╨ƒ╨╛╨┤╤ü╨║╨░╨╖╨║╨╕ ╨╕╨╖ ╨╕╤ü╤é╨╛╤Ç╨╕╨╕';
 
   @override
   String get settings_historySuggestionsKeywords =>
-      'подсказки из истории, посещённые страницы, автодополнение, призрачный текст, приватность';
+      '╨┐╨╛╨┤╤ü╨║╨░╨╖╨║╨╕ ╨╕╨╖ ╨╕╤ü╤é╨╛╤Ç╨╕╨╕, ╨┐╨╛╤ü╨╡╤ë╤æ╨╜╨╜╤ï╨╡ ╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï, ╨░╨▓╤é╨╛╨┤╨╛╨┐╨╛╨╗╨╜╨╡╨╜╨╕╨╡, ╨┐╤Ç╨╕╨╖╤Ç╨░╤ç╨╜╤ï╨╣ ╤é╨╡╨║╤ü╤é, ╨┐╤Ç╨╕╨▓╨░╤é╨╜╨╛╤ü╤é╤î';
 
   @override
   String get settings_historySuggestionsSubtitle =>
-      'Показывать посещённые страницы и дополнять адреса из истории во время ввода. При отключении история сохраняется.';
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨┐╨╛╤ü╨╡╤ë╤æ╨╜╨╜╤ï╨╡ ╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï ╨╕ ╨┤╨╛╨┐╨╛╨╗╨╜╤Å╤é╤î ╨░╨┤╤Ç╨╡╤ü╨░ ╨╕╨╖ ╨╕╤ü╤é╨╛╤Ç╨╕╨╕ ╨▓╨╛ ╨▓╤Ç╨╡╨╝╤Å ╨▓╨▓╨╛╨┤╨░. ╨ƒ╤Ç╨╕ ╨╛╤é╨║╨╗╤Ä╤ç╨╡╨╜╨╕╨╕ ╨╕╤ü╤é╨╛╤Ç╨╕╤Å ╤ü╨╛╤à╤Ç╨░╨╜╤Å╨╡╤é╤ü╤Å.';
 
   @override
   String get settings_privateSearchSuggestionsTitle =>
-      'Подсказки в приватных вкладках';
+      '╨ƒ╨╛╨┤╤ü╨║╨░╨╖╨║╨╕ ╨▓ ╨┐╤Ç╨╕╨▓╨░╤é╨╜╤ï╤à ╨▓╨║╨╗╨░╨┤╨║╨░╤à';
 
   @override
   String get settings_privateSearchSuggestionsKeywords =>
-      'приватные, инкогнито, поисковые подсказки, история, приватность';
+      '╨┐╤Ç╨╕╨▓╨░╤é╨╜╤ï╨╡, ╨╕╨╜╨║╨╛╨│╨╜╨╕╤é╨╛, ╨┐╨╛╨╕╤ü╨║╨╛╨▓╤ï╨╡ ╨┐╨╛╨┤╤ü╨║╨░╨╖╨║╨╕, ╨╕╤ü╤é╨╛╤Ç╨╕╤Å, ╨┐╤Ç╨╕╨▓╨░╤é╨╜╨╛╤ü╤é╤î';
 
   @override
   String get settings_privateSearchSuggestionsSubtitle =>
-      'Использовать сервис подсказок и историю при вводе в приватной вкладке. Введённый текст отправляется сервису.';
+      '╨ÿ╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╤î ╤ü╨╡╤Ç╨▓╨╕╤ü ╨┐╨╛╨┤╤ü╨║╨░╨╖╨╛╨║ ╨╕ ╨╕╤ü╤é╨╛╤Ç╨╕╤Ä ╨┐╤Ç╨╕ ╨▓╨▓╨╛╨┤╨╡ ╨▓ ╨┐╤Ç╨╕╨▓╨░╤é╨╜╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╡. ╨Æ╨▓╨╡╨┤╤æ╨╜╨╜╤ï╨╣ ╤é╨╡╨║╤ü╤é ╨╛╤é╨┐╤Ç╨░╨▓╨╗╤Å╨╡╤é╤ü╤Å ╤ü╨╡╤Ç╨▓╨╕╤ü╤â.';
 
   @override
   String get settings_acceptSuggestionOnSubmitTitle =>
-      'Автодополнение по Enter';
+      '╨É╨▓╤é╨╛╨┤╨╛╨┐╨╛╨╗╨╜╨╡╨╜╨╕╨╡ ╨┐╨╛ Enter';
 
   @override
   String get settings_acceptSuggestionOnSubmitKeywords =>
-      'отправка, клавиатура, подсказки';
+      '╨╛╤é╨┐╤Ç╨░╨▓╨║╨░, ╨║╨╗╨░╨▓╨╕╨░╤é╤â╤Ç╨░, ╨┐╨╛╨┤╤ü╨║╨░╨╖╨║╨╕';
 
   @override
   String get settings_acceptSuggestionOnSubmitSubtitle =>
-      'Принимать встроенную подсказку при нажатии Enter на клавиатуре';
+      '╨ƒ╤Ç╨╕╨╜╨╕╨╝╨░╤é╤î ╨▓╤ü╤é╤Ç╨╛╨╡╨╜╨╜╤â╤Ä ╨┐╨╛╨┤╤ü╨║╨░╨╖╨║╤â ╨┐╤Ç╨╕ ╨╜╨░╨╢╨░╤é╨╕╨╕ Enter ╨╜╨░ ╨║╨╗╨░╨▓╨╕╨░╤é╤â╤Ç╨╡';
 
   @override
   String get settings_popularSitesAutocompleteTitle =>
-      'Подсказки популярных сайтов';
+      '╨ƒ╨╛╨┤╤ü╨║╨░╨╖╨║╨╕ ╨┐╨╛╨┐╤â╨╗╤Å╤Ç╨╜╤ï╤à ╤ü╨░╨╣╤é╨╛╨▓';
 
   @override
   String get settings_popularSitesAutocompleteKeywords =>
-      'популярные сайты, домены, призрачный текст, автодополнение';
+      '╨┐╨╛╨┐╤â╨╗╤Å╤Ç╨╜╤ï╨╡ ╤ü╨░╨╣╤é╤ï, ╨┤╨╛╨╝╨╡╨╜╤ï, ╨┐╤Ç╨╕╨╖╤Ç╨░╤ç╨╜╤ï╨╣ ╤é╨╡╨║╤ü╤é, ╨░╨▓╤é╨╛╨┤╨╛╨┐╨╛╨╗╨╜╨╡╨╜╨╕╨╡';
 
   @override
   String get settings_popularSitesAutocompleteSubtitle =>
-      'Дополнять введённый текст известными доменами, если в истории и закладках нет совпадений';
+      '╨ö╨╛╨┐╨╛╨╗╨╜╤Å╤é╤î ╨▓╨▓╨╛╨┤ ╨╕╨╖╨▓╨╡╤ü╤é╨╜╤ï╨╝╨╕ ╤ü╨░╨╣╤é╨░╨╝╨╕, ╨╡╤ü╨╗╨╕ ╨▓ ╨╕╤ü╤é╨╛╤Ç╨╕╨╕ ╨╕ ╨╖╨░╨║╨╗╨░╨┤╨║╨░╤à ╨╜╨╡╤é ╤ü╨╛╨▓╨┐╨░╨┤╨╡╨╜╨╕╨╣';
 
   @override
   String get settings_localIndexEnabledTitle =>
-      'Включить локальный поисковый индекс';
+      '╨ƒ╨╛╨╕╤ü╨║ ╨┐╨╛ ╨┐╨╛╤ü╨╡╤ë╤æ╨╜╨╜╤ï╨╝ ╤ü╤é╤Ç╨░╨╜╨╕╤å╨░╨╝';
 
   @override
-  String get settings_localIndexEnabledKeywords => 'текст страницы, история';
+  String get settings_localIndexEnabledKeywords =>
+      '╤é╨╡╨║╤ü╤é ╤ü╤é╤Ç╨░╨╜╨╕╤å, ╨╕╤ü╤é╨╛╤Ç╨╕╤Å, ╨╗╨╛╨║╨░╨╗╤î╨╜╤ï╨╣ ╨┐╨╛╨╕╤ü╨║╨╛╨▓╤ï╨╣ ╨╕╨╜╨┤╨╡╨║╤ü';
 
   @override
   String get settings_localIndexEnabledSubtitle =>
-      'Индексировать посещённые страницы локально, чтобы браузер мог искать по их содержимому. Метаданные посещений остаются в движке; на устройстве хранится только текст страниц.';
+      '╨í╨╛╤à╤Ç╨░╨╜╤Å╨╡╤é ╨╜╨░ ╤ì╤é╨╛╨╝ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨╡ ╤é╨╡╨║╤ü╤é ╨┐╨╛╤ü╨╡╤ë╤æ╨╜╨╜╤ï╤à ╤ü╤é╤Ç╨░╨╜╨╕╤å, ╤ç╤é╨╛╨▒╤ï ╨┐╨╛╨╕╤ü╨║ ╨╜╨░╤à╨╛╨┤╨╕╨╗ ╤ü╨╗╨╛╨▓╨░ ╨▓ ╨╜╨╕╤à.';
 
   @override
   String get settings_indexPrivateTabsTitle =>
-      'Индексировать приватные вкладки';
+      '╨í╨╛╤à╤Ç╨░╨╜╤Å╤é╤î ╤é╨╡╨║╤ü╤é ╨╕╨╖ ╨┐╤Ç╨╕╨▓╨░╤é╨╜╤ï╤à ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
-  String get settings_indexPrivateTabsKeywords => 'инкогнито, приватные';
+  String get settings_indexPrivateTabsKeywords =>
+      '╨╕╨╜╨║╨╛╨│╨╜╨╕╤é╨╛, ╨┐╤Ç╨╕╨▓╨░╤é╨╜╤ï╨╡, ╨╕╨╜╨┤╨╡╨║╤ü╨╕╤Ç╨╛╨▓╨░╤é╤î ╨┐╤Ç╨╕╨▓╨░╤é╨╜╤ï╨╡ ╨▓╨║╨╗╨░╨┤╨║╨╕';
 
   @override
   String get settings_indexPrivateTabsSubtitle =>
-      'Включать в локальный индекс страницы из приватных вкладок. По умолчанию выключено.';
+      '╨ó╨░╨║╨╢╨╡ ╤ü╨╛╤à╤Ç╨░╨╜╤Å╤é╤î ╤é╨╡╨║╤ü╤é ╤ü╤é╤Ç╨░╨╜╨╕╤å ╨╕╨╖ ╨┐╤Ç╨╕╨▓╨░╤é╨╜╤ï╤à ╨▓╨║╨╗╨░╨┤╨╛╨║. ╨ƒ╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä ╨▓╤ï╨║╨╗╤Ä╤ç╨╡╨╜╨╛.';
 
   @override
   String get settings_clearLocalIndexDialogTitle =>
-      'Очистить локальный поисковый индекс?';
+      '╨ú╨┤╨░╨╗╨╕╤é╤î ╤ü╨╛╤à╤Ç╨░╨╜╤æ╨╜╨╜╤ï╨╣ ╤é╨╡╨║╤ü╤é ╤ü╤é╤Ç╨░╨╜╨╕╤å?';
 
   @override
   String get settings_clearLocalIndexDialogContent =>
-      'Будет удалено всё локально проиндексированное содержимое страниц. История движка (метаданные посещений) не затрагивается.';
+      '╨ú╨┤╨░╨╗╤Å╨╡╤é ╤é╨╡╨║╤ü╤é ╤ü╤é╤Ç╨░╨╜╨╕╤å, ╤ü╨╛╤à╤Ç╨░╨╜╤æ╨╜╨╜╤ï╨╣ ╨┤╨╗╤Å ╨┐╨╛╨╕╤ü╨║╨░. ╨ÿ╤ü╤é╨╛╤Ç╨╕╤Å ╨┐╨╛╤ü╨╡╤ë╨╡╨╜╨╕╨╣ ╤ü╨╛╤à╤Ç╨░╨╜╤Å╨╡╤é╤ü╤Å.';
 
   @override
-  String get settings_localIndexStatsTitle => 'Проиндексированные страницы';
+  String get settings_localIndexStatsTitle =>
+      '╨í╨╛╤à╤Ç╨░╨╜╤æ╨╜╨╜╤ï╨╣ ╤é╨╡╨║╤ü╤é ╤ü╤é╤Ç╨░╨╜╨╕╤å';
 
   @override
-  String get settings_localIndexStatsKeywords => 'очистить индекс, статистика';
+  String get settings_localIndexStatsKeywords =>
+      '╨╛╤ç╨╕╤ü╤é╨╕╤é╤î ╨╕╨╜╨┤╨╡╨║╤ü, ╤ü╤é╨░╤é╨╕╤ü╤é╨╕╨║╨░';
 
   @override
   String settings_localIndexPagesIndexed(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Проиндексировано $count страницы',
-      many: 'Проиндексировано $count страниц',
-      few: 'Проиндексировано $count страницы',
-      one: 'Проиндексирована $count страница',
+      other: '╨í╨╛╤à╤Ç╨░╨╜╤æ╨╜ ╤é╨╡╨║╤ü╤é ╤ü $count ╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï',
+      many: '╨í╨╛╤à╤Ç╨░╨╜╤æ╨╜ ╤é╨╡╨║╤ü╤é ╤ü $count ╤ü╤é╤Ç╨░╨╜╨╕╤å',
+      few: '╨í╨╛╤à╤Ç╨░╨╜╤æ╨╜ ╤é╨╡╨║╤ü╤é ╤ü $count ╤ü╤é╤Ç╨░╨╜╨╕╤å',
+      one: '╨í╨╛╤à╤Ç╨░╨╜╤æ╨╜ ╤é╨╡╨║╤ü╤é ╤ü $count ╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï',
     );
     return '$_temp0';
   }
 
   @override
-  String get settings_searchSectionProvidersTitle => 'Поисковые системы';
+  String get settings_searchSectionProvidersTitle =>
+      '╨ƒ╨╛╨╕╤ü╨║╨╛╨▓╤ï╨╡ ╤ü╨╕╤ü╤é╨╡╨╝╤ï';
 
   @override
-  String get settings_searchSectionProvidersKeywords => 'поисковики, системы';
+  String get settings_searchSectionProvidersKeywords =>
+      '╨┐╨╛╨╕╤ü╨║╨╛╨▓╨╕╨║╨╕, ╤ü╨╕╤ü╤é╨╡╨╝╤ï';
 
   @override
-  String get settings_searchSectionBangShortcutsTitle => 'Бэнги';
+  String get settings_searchSectionBangShortcutsTitle => '╨æ╤ì╨╜╨│╨╕';
 
   @override
-  String get settings_searchSectionBangShortcutsKeywords => 'бэнги, bangs';
+  String get settings_searchSectionBangShortcutsKeywords => '╨▒╤ì╨╜╨│╨╕, bangs';
 
   @override
   String get settings_searchSectionHistorySuggestionsTitle =>
-      'История и подсказки';
+      '╨ÿ╤ü╤é╨╛╤Ç╨╕╤Å ╨╕ ╨┐╨╛╨┤╤ü╨║╨░╨╖╨║╨╕';
 
   @override
   String get settings_searchSectionLocalIndexTitle =>
-      'Локальный поисковый индекс';
+      '╨ƒ╨╛╨╕╤ü╨║ ╨┐╨╛ ╨┐╨╛╤ü╨╡╤ë╤æ╨╜╨╜╤ï╨╝ ╤ü╤é╤Ç╨░╨╜╨╕╤å╨░╨╝';
 
   @override
   String get settings_searchSectionLocalIndexKeywords =>
-      'поиск на устройстве, индекс';
+      '╨┐╨╛╨╕╤ü╨║ ╨╜╨░ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨╡, ╨╕╨╜╨┤╨╡╨║╤ü';
 
   @override
   String get settings_indexDefaultSearchProviderSubtitle =>
-      'Выбор поисковой системы по умолчанию';
+      '╨Æ╤ï╨▒╨╛╤Ç ╨┐╨╛╨╕╤ü╨║╨╛╨▓╨╛╨╣ ╤ü╨╕╤ü╤é╨╡╨╝╤ï ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä';
 
   @override
   String get settings_indexDefaultAutocompleteProviderSubtitle =>
-      'Выбор сервиса поисковых подсказок';
+      '╨₧╤é╨║╤â╨┤╨░ ╨▒╨╡╤Ç╤â╤é╤ü╤Å ╨┐╨╛╨╕╤ü╨║╨╛╨▓╤ï╨╡ ╨┐╨╛╨┤╤ü╨║╨░╨╖╨║╨╕';
 
   @override
   String get settings_indexAcceptSuggestionOnSubmitSubtitle =>
-      'Принимать встроенную подсказку при нажатии Enter';
+      '╨ƒ╤Ç╨╕╨╜╨╕╨╝╨░╤é╤î ╨▓╤ü╤é╤Ç╨╛╨╡╨╜╨╜╤â╤Ä ╨┐╨╛╨┤╤ü╨║╨░╨╖╨║╤â ╨┐╤Ç╨╕ ╨╜╨░╨╢╨░╤é╨╕╨╕ Enter';
 
   @override
   String get settings_indexHistorySuggestionsSubtitle =>
-      'Предлагать посещённые страницы во время ввода';
+      '╨ƒ╤Ç╨╡╨┤╨╗╨░╨│╨░╤é╤î ╨┐╨╛╤ü╨╡╤ë╤æ╨╜╨╜╤ï╨╡ ╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï ╨▓╨╛ ╨▓╤Ç╨╡╨╝╤Å ╨▓╨▓╨╛╨┤╨░';
 
   @override
   String get settings_indexPrivateSearchSuggestionsSubtitle =>
-      'Использовать подсказки и историю в приватных вкладках';
+      '╨ÿ╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╤î ╨┐╨╛╨┤╤ü╨║╨░╨╖╨║╨╕ ╨╕ ╨╕╤ü╤é╨╛╤Ç╨╕╤Ä ╨▓ ╨┐╤Ç╨╕╨▓╨░╤é╨╜╤ï╤à ╨▓╨║╨╗╨░╨┤╨║╨░╤à';
 
   @override
   String get settings_indexPopularSitesAutocompleteSubtitle =>
-      'Дополнять введённый текст известными доменами';
+      '╨ö╨╛╨┐╨╛╨╗╨╜╤Å╤é╤î ╨▓╨▓╨╛╨┤ ╨╕╨╖╨▓╨╡╤ü╤é╨╜╤ï╨╝╨╕ ╤ü╨░╨╣╤é╨░╨╝╨╕';
 
   @override
   String get settings_indexLocalIndexEnabledSubtitle =>
-      'Индексировать посещённые страницы локально для поиска по содержимому';
+      '╨í╨╛╤à╤Ç╨░╨╜╤Å╤é╤î ╤é╨╡╨║╤ü╤é ╤ü╤é╤Ç╨░╨╜╨╕╤å ╨╜╨░ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨╡, ╤ç╤é╨╛╨▒╤ï ╨┐╨╛╨╕╤ü╨║ ╨╡╨│╨╛ ╨╜╨░╤à╨╛╨┤╨╕╨╗';
 
   @override
   String get settings_indexIndexPrivateTabsSubtitle =>
-      'Включать приватные вкладки в локальный индекс';
+      '╨ó╨░╨║╨╢╨╡ ╤ü╨╛╤à╤Ç╨░╨╜╤Å╤é╤î ╤é╨╡╨║╤ü╤é ╨╕╨╖ ╨┐╤Ç╨╕╨▓╨░╤é╨╜╤ï╤à ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
   String get settings_indexLocalIndexStatsSubtitle =>
-      'Просмотр и очистка локального индекса';
+      '╨ƒ╤Ç╨╛╤ü╨╝╨╛╤é╤Ç ╨╕ ╤â╨┤╨░╨╗╨╡╨╜╨╕╨╡ ╤ü╨╛╤à╤Ç╨░╨╜╤æ╨╜╨╜╨╛╨│╨╛ ╤é╨╡╨║╤ü╤é╨░ ╤ü╤é╤Ç╨░╨╜╨╕╤å';
 
   @override
-  String get settings_webContentTitle => 'Веб-контент';
+  String get settings_webContentTitle => '╨Æ╨╡╨▒-╨║╨╛╨╜╤é╨╡╨╜╤é';
 
   @override
   String get settings_webContentSubtitle =>
-      'Отображение текста, режим чтения, PDF и локальные функции ИИ.';
+      '╨₧╤é╨╛╨▒╤Ç╨░╨╢╨╡╨╜╨╕╨╡ ╤é╨╡╨║╤ü╤é╨░, ╤Ç╨╡╨╢╨╕╨╝ ╤ç╤é╨╡╨╜╨╕╤Å, PDF ╨╕ ╨╗╨╛╨║╨░╨╗╤î╨╜╤ï╨╡ ╤ä╤â╨╜╨║╤å╨╕╨╕ ╨ÿ╨ÿ.';
 
   @override
-  String get settings_webFontsTitle => 'Веб-шрифты';
+  String get settings_webFontsTitle => '╨Æ╨╡╨▒-╤ê╤Ç╨╕╤ä╤é╤ï';
 
   @override
-  String get settings_webFontsKeywords => 'шрифты';
+  String get settings_webFontsKeywords => '╤ê╤Ç╨╕╤ä╤é╤ï';
 
   @override
   String get settings_webFontsSubtitle =>
-      'Разрешить сайтам использовать собственные шрифты';
+      '╨á╨░╨╖╤Ç╨╡╤ê╨╕╤é╤î ╤ü╨░╨╣╤é╨░╨╝ ╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╤î ╤ü╨╛╨▒╤ü╤é╨▓╨╡╨╜╨╜╤ï╨╡ ╤ê╤Ç╨╕╤ä╤é╤ï';
 
   @override
-  String get settings_automaticFontSizeTitle => 'Автоматический размер шрифта';
+  String get settings_automaticFontSizeTitle =>
+      '╨É╨▓╤é╨╛╨╝╨░╤é╨╕╤ç╨╡╤ü╨║╨╕╨╣ ╤Ç╨░╨╖╨╝╨╡╤Ç ╤ê╤Ç╨╕╤ä╤é╨░';
 
   @override
-  String get settings_automaticFontSizeKeywords => 'размер текста';
+  String get settings_automaticFontSizeKeywords => '╤Ç╨░╨╖╨╝╨╡╤Ç ╤é╨╡╨║╤ü╤é╨░';
 
   @override
   String get settings_automaticFontSizeSubtitle =>
-      'Автоматически подбирать размер шрифта по системным настройкам. Отключите, чтобы вручную управлять коэффициентом размера шрифта и увеличением текста.';
+      '╨É╨▓╤é╨╛╨╝╨░╤é╨╕╤ç╨╡╤ü╨║╨╕ ╨┐╨╛╨┤╨▒╨╕╤Ç╨░╤é╤î ╤Ç╨░╨╖╨╝╨╡╤Ç ╤ê╤Ç╨╕╤ä╤é╨░ ╨┐╨╛ ╤ü╨╕╤ü╤é╨╡╨╝╨╜╤ï╨╝ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨░╨╝. ╨₧╤é╨║╨╗╤Ä╤ç╨╕╤é╨╡, ╤ç╤é╨╛╨▒╤ï ╨▓╤Ç╤â╤ç╨╜╤â╤Ä ╤â╨┐╤Ç╨░╨▓╨╗╤Å╤é╤î ╨║╨╛╤ì╤ä╤ä╨╕╤å╨╕╨╡╨╜╤é╨╛╨╝ ╤Ç╨░╨╖╨╝╨╡╤Ç╨░ ╤ê╤Ç╨╕╤ä╤é╨░ ╨╕ ╤â╨▓╨╡╨╗╨╕╤ç╨╡╨╜╨╕╨╡╨╝ ╤é╨╡╨║╤ü╤é╨░.';
 
   @override
-  String get settings_fontSizeFactorTitle => 'Коэффициент размера шрифта';
+  String get settings_fontSizeFactorTitle =>
+      '╨Ü╨╛╤ì╤ä╤ä╨╕╤å╨╕╨╡╨╜╤é ╤Ç╨░╨╖╨╝╨╡╤Ç╨░ ╤ê╤Ç╨╕╤ä╤é╨░';
 
   @override
-  String get settings_fontSizeFactorKeywords => 'масштаб, текст';
+  String get settings_fontSizeFactorKeywords => '╨╝╨░╤ü╤ê╤é╨░╨▒, ╤é╨╡╨║╤ü╤é';
 
   @override
   String get settings_fontSizeFactorSubtitle =>
-      'Масштабировать размер текста веб-страниц';
+      '╨£╨░╤ü╤ê╤é╨░╨▒╨╕╤Ç╨╛╨▓╨░╤é╤î ╤Ç╨░╨╖╨╝╨╡╤Ç ╤é╨╡╨║╤ü╤é╨░ ╨▓╨╡╨▒-╤ü╤é╤Ç╨░╨╜╨╕╤å';
 
   @override
   String get settings_disabledWhileAutomaticFontSize =>
-      'Недоступно, пока включён автоматический размер шрифта';
+      '╨¥╨╡╨┤╨╛╤ü╤é╤â╨┐╨╜╨╛, ╨┐╨╛╨║╨░ ╨▓╨║╨╗╤Ä╤ç╤æ╨╜ ╨░╨▓╤é╨╛╨╝╨░╤é╨╕╤ç╨╡╤ü╨║╨╕╨╣ ╤Ç╨░╨╖╨╝╨╡╤Ç ╤ê╤Ç╨╕╤ä╤é╨░';
 
   @override
-  String get settings_fontInflationTitle => 'Увеличение текста';
+  String get settings_fontInflationTitle =>
+      '╨ú╨▓╨╡╨╗╨╕╤ç╨╕╨▓╨░╤é╤î ╨╝╨╡╨╗╨║╨╕╨╣ ╤é╨╡╨║╤ü╤é';
 
   @override
-  String get settings_fontInflationKeywords => 'читаемость';
+  String get settings_fontInflationKeywords =>
+      '╤ç╨╕╤é╨░╨╡╨╝╨╛╤ü╤é╤î, font inflation, ╤â╨▓╨╡╨╗╨╕╤ç╨╡╨╜╨╕╨╡ ╤é╨╡╨║╤ü╤é╨░';
 
   @override
   String get settings_fontInflationSubtitle =>
-      'Увеличивать текст на страницах без мета-тега viewport для мобильных';
+      '╨ö╨╡╨╗╨░╨╡╤é ╤é╨╡╨║╤ü╤é ╤ç╨╕╤é╨░╨╡╨╝╤ï╨╝ ╨╜╨░ ╤ü╤é╤Ç╨░╨╜╨╕╤å╨░╤à, ╨╜╨╡ ╤Ç╨░╤ü╤ü╤ç╨╕╤é╨░╨╜╨╜╤ï╤à ╨╜╨░ ╤é╨╡╨╗╨╡╤ä╨╛╨╜╤ï';
 
   @override
-  String get settings_inputAutoZoomTitle => 'Автомасштаб полей ввода';
+  String get settings_inputAutoZoomTitle =>
+      '╨ú╨▓╨╡╨╗╨╕╤ç╨╡╨╜╨╕╨╡ ╨┐╤Ç╨╕ ╨▓╨▓╨╛╨┤╨╡ ╤é╨╡╨║╤ü╤é╨░';
 
   @override
-  String get settings_inputAutoZoomKeywords => 'формы';
+  String get settings_inputAutoZoomKeywords =>
+      '╤ä╨╛╤Ç╨╝╤ï, ╨┐╨╛╨╗╤Å ╨▓╨▓╨╛╨┤╨░, ╨░╨▓╤é╨╛╤â╨▓╨╡╨╗╨╕╤ç╨╡╨╜╨╕╨╡';
 
   @override
   String get settings_inputAutoZoomSubtitle =>
-      'Автоматически увеличивать масштаб при фокусе на текстовом поле';
+      '╨ú╨▓╨╡╨╗╨╕╤ç╨╕╨▓╨░╤é╤î ╨╝╨░╤ü╤ê╤é╨░╨▒ ╨┐╤Ç╨╕ ╨╜╨░╨╢╨░╤é╨╕╨╕ ╨╜╨░ ╤é╨╡╨║╤ü╤é╨╛╨▓╨╛╨╡ ╨┐╨╛╨╗╨╡';
 
   @override
   String get settings_forceUserScalableTitle =>
-      'Масштабирование на всех сайтах';
+      '╨£╨░╤ü╤ê╤é╨░╨▒╨╕╤Ç╨╛╨▓╨░╨╜╨╕╨╡ ╨╜╨░ ╨▓╤ü╨╡╤à ╤ü╨░╨╣╤é╨░╤à';
 
   @override
   String get settings_forceUserScalableKeywords =>
-      'щипок, масштаб, доступность';
+      '╤ë╨╕╨┐╨╛╨║, ╨╝╨░╤ü╤ê╤é╨░╨▒, ╨┤╨╛╤ü╤é╤â╨┐╨╜╨╛╤ü╤é╤î';
 
   @override
   String get settings_forceUserScalableSubtitle =>
-      'Разрешить масштабирование жестом даже на сайтах, которые его запрещают';
+      '╨á╨░╨╖╤Ç╨╡╤ê╨╕╤é╤î ╨╝╨░╤ü╤ê╤é╨░╨▒╨╕╤Ç╨╛╨▓╨░╨╜╨╕╨╡ ╨╢╨╡╤ü╤é╨╛╨╝ ╨┤╨░╨╢╨╡ ╨╜╨░ ╤ü╨░╨╣╤é╨░╤à, ╨║╨╛╤é╨╛╤Ç╤ï╨╡ ╨╡╨│╨╛ ╨╖╨░╨┐╤Ç╨╡╤ë╨░╤Ä╤é';
 
   @override
-  String get settings_pdfViewerTitle => 'Встроенный просмотр PDF';
+  String get settings_pdfViewerTitle =>
+      '╨Æ╤ü╤é╤Ç╨╛╨╡╨╜╨╜╤ï╨╣ ╨┐╤Ç╨╛╤ü╨╝╨╛╤é╤Ç PDF';
 
   @override
   String get settings_pdfViewerKeywords => 'pdf';
 
   @override
   String get settings_pdfViewerSubtitle =>
-      'Открывать PDF-файлы прямо в браузере без загрузки';
+      '╨₧╤é╨║╤Ç╤ï╨▓╨░╤é╤î PDF-╤ä╨░╨╣╨╗╤ï ╨┐╤Ç╤Å╨╝╨╛ ╨▓ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨╡ ╨▒╨╡╨╖ ╨╖╨░╨│╤Ç╤â╨╖╨║╨╕';
 
   @override
-  String get settings_enableReaderModeTitle => 'Включить режим чтения';
+  String get settings_enableReaderModeTitle =>
+      '╨Æ╨║╨╗╤Ä╤ç╨╕╤é╤î ╤Ç╨╡╨╢╨╕╨╝ ╤ç╤é╨╡╨╜╨╕╤Å';
 
   @override
-  String get settings_enableReaderModeKeywords => 'чтение, читаемость, reader';
+  String get settings_enableReaderModeKeywords =>
+      '╤ç╤é╨╡╨╜╨╕╨╡, ╤ç╨╕╤é╨░╨╡╨╝╨╛╤ü╤é╤î, reader';
 
   @override
   String get settings_enableReaderModeSubtitle =>
-      'Добавляет в панель браузера необязательный инструмент, который упрощает веб-страницы, убирая рекламу, боковые панели и другие несущественные элементы.';
+      '╨ö╨╛╨▒╨░╨▓╨╗╤Å╨╡╤é ╨▓ ╨┐╨░╨╜╨╡╨╗╤î ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░ ╨╜╨╡╨╛╨▒╤Å╨╖╨░╤é╨╡╨╗╤î╨╜╤ï╨╣ ╨╕╨╜╤ü╤é╤Ç╤â╨╝╨╡╨╜╤é, ╨║╨╛╤é╨╛╤Ç╤ï╨╣ ╤â╨┐╤Ç╨╛╤ë╨░╨╡╤é ╨▓╨╡╨▒-╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï, ╤â╨▒╨╕╤Ç╨░╤Å ╤Ç╨╡╨║╨╗╨░╨╝╤â, ╨▒╨╛╨║╨╛╨▓╤ï╨╡ ╨┐╨░╨╜╨╡╨╗╨╕ ╨╕ ╨┤╤Ç╤â╨│╨╕╨╡ ╨╜╨╡╤ü╤â╤ë╨╡╤ü╤é╨▓╨╡╨╜╨╜╤ï╨╡ ╤ì╨╗╨╡╨╝╨╡╨╜╤é╤ï.';
 
   @override
-  String get settings_enforceReaderModeTitle => 'Принудительный режим чтения';
+  String get settings_enforceReaderModeTitle =>
+      '╨Æ╤ü╨╡╨│╨┤╨░ ╨┐╤Ç╨╡╨┤╨╗╨░╨│╨░╤é╤î ╤Ç╨╡╨╢╨╕╨╝ ╤ç╤é╨╡╨╜╨╕╤Å';
 
   @override
-  String get settings_enforceReaderModeKeywords => 'чтение, reader';
+  String get settings_enforceReaderModeKeywords =>
+      '╤ç╤é╨╡╨╜╨╕╨╡, ╤Ç╨╡╨╢╨╕╨╝ ╤ç╤é╨╡╨╜╨╕╤Å, ╨┐╤Ç╨╕╨╜╤â╨┤╨╕╤é╨╡╨╗╤î╨╜╤ï╨╣ ╤Ç╨╡╨╢╨╕╨╝ ╤ç╤é╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_enforceReaderModeSubtitle =>
-      'Игнорировать оценку читаемости сайта и всегда показывать режим чтения, даже на сайтах, которые могут его не поддерживать.';
+      '╨ƒ╤Ç╨╡╨┤╨╗╨░╨│╨░╤é╤î ╤Ç╨╡╨╢╨╕╨╝ ╤ç╤é╨╡╨╜╨╕╤Å ╨╜╨░ ╨║╨░╨╢╨┤╨╛╨╣ ╤ü╤é╤Ç╨░╨╜╨╕╤å╨╡, ╨┤╨░╨╢╨╡ ╤é╨░╨╝, ╨│╨┤╨╡ ╨╛╨╜ ╨╝╨╛╨╢╨╡╤é ╤Ç╨░╨▒╨╛╤é╨░╤é╤î ╨┐╨╗╨╛╤à╨╛.';
 
   @override
-  String get settings_onDeviceAiTitle => 'ИИ на устройстве';
+  String get settings_onDeviceAiTitle => '╨ÿ╨ÿ ╨╜╨░ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨╡';
 
   @override
-  String get settings_onDeviceAiKeywords => 'локальный ии, ai, подсказки';
+  String get settings_onDeviceAiKeywords =>
+      '╨╗╨╛╨║╨░╨╗╤î╨╜╤ï╨╣ ╨╕╨╕, ai, ╨┐╨╛╨┤╤ü╨║╨░╨╖╨║╨╕';
 
   @override
   String get settings_onDeviceAiSubtitle =>
-      'Функции на устройстве, например предложения контейнеров для открытых вкладок и их названий';
+      '╨ñ╤â╨╜╨║╤å╨╕╨╕ ╨╜╨░ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨╡, ╨╜╨░╨┐╤Ç╨╕╨╝╨╡╤Ç ╨┐╤Ç╨╡╨┤╨╗╨╛╨╢╨╡╨╜╨╕╤Å ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╨╛╨▓ ╨┤╨╗╤Å ╨╛╤é╨║╤Ç╤ï╤é╤ï╤à ╨▓╨║╨╗╨░╨┤╨╛╨║ ╨╕ ╨╕╤à ╨╜╨░╨╖╨▓╨░╨╜╨╕╨╣';
 
   @override
-  String get settings_webContentSectionDisplayTitle => 'Отображение';
+  String get settings_webContentSectionDisplayTitle => '╨₧╤é╨╛╨▒╤Ç╨░╨╢╨╡╨╜╨╕╨╡';
 
   @override
   String get settings_webContentSectionContentFeaturesTitle =>
-      'Функции контента';
+      '╨ñ╤â╨╜╨║╤å╨╕╨╕ ╨║╨╛╨╜╤é╨╡╨╜╤é╨░';
 
   @override
   String get settings_indexAutomaticFontSizeSubtitle =>
-      'Подбирать размер шрифта по системным настройкам';
+      '╨ƒ╨╛╨┤╨▒╨╕╤Ç╨░╤é╤î ╤Ç╨░╨╖╨╝╨╡╤Ç ╤ê╤Ç╨╕╤ä╤é╨░ ╨┐╨╛ ╤ü╨╕╤ü╤é╨╡╨╝╨╜╤ï╨╝ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨░╨╝';
 
   @override
   String get settings_indexFontInflationSubtitle =>
-      'Увеличивать текст на страницах без мобильного viewport';
+      '╨ú╨▓╨╡╨╗╨╕╤ç╨╕╨▓╨░╤é╤î ╤é╨╡╨║╤ü╤é ╨╜╨░ ╤ü╤é╤Ç╨░╨╜╨╕╤å╨░╤à, ╨╜╨╡ ╤Ç╨░╤ü╤ü╤ç╨╕╤é╨░╨╜╨╜╤ï╤à ╨╜╨░ ╤é╨╡╨╗╨╡╤ä╨╛╨╜╤ï';
 
   @override
   String get settings_indexInputAutoZoomSubtitle =>
-      'Автоматически масштабировать при фокусе на текстовом поле';
+      '╨ú╨▓╨╡╨╗╨╕╤ç╨╕╨▓╨░╤é╤î ╨╝╨░╤ü╤ê╤é╨░╨▒ ╨┐╤Ç╨╕ ╨╜╨░╨╢╨░╤é╨╕╨╕ ╨╜╨░ ╤é╨╡╨║╤ü╤é╨╛╨▓╨╛╨╡ ╨┐╨╛╨╗╨╡';
 
   @override
   String get settings_indexPdfViewerSubtitle =>
-      'Открывать PDF-файлы прямо в браузере';
+      '╨₧╤é╨║╤Ç╤ï╨▓╨░╤é╤î PDF-╤ä╨░╨╣╨╗╤ï ╨┐╤Ç╤Å╨╝╨╛ ╨▓ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨╡';
 
   @override
   String get settings_indexEnableReaderModeSubtitle =>
-      'Извлекать и упрощать страницы для удобства чтения';
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╤ü╤é╨░╤é╤î╨╕ ╨▓ ╤ç╨╕╤ü╤é╨╛╨╝ ╨╕ ╤â╨┤╨╛╨▒╨╜╨╛╨╝ ╨┤╨╗╤Å ╤ç╤é╨╡╨╜╨╕╤Å ╨▓╨╕╨┤╨╡';
 
   @override
   String get settings_indexEnforceReaderModeSubtitle =>
-      'Всегда показывать возможности режима чтения';
+      '╨ƒ╤Ç╨╡╨┤╨╗╨░╨│╨░╤é╤î ╤Ç╨╡╨╢╨╕╨╝ ╤ç╤é╨╡╨╜╨╕╤Å ╨╜╨░ ╨║╨░╨╢╨┤╨╛╨╣ ╤ü╤é╤Ç╨░╨╜╨╕╤å╨╡';
 
   @override
   String get settings_indexOnDeviceAiSubtitle =>
-      'Локальные функции ИИ, включая предложения тем и вкладок';
+      '╨¢╨╛╨║╨░╨╗╤î╨╜╤ï╨╡ ╤ä╤â╨╜╨║╤å╨╕╨╕ ╨ÿ╨ÿ, ╨▓╨║╨╗╤Ä╤ç╨░╤Å ╨┐╤Ç╨╡╨┤╨╗╨╛╨╢╨╡╨╜╨╕╤Å ╤é╨╡╨╝ ╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
-  String get settings_ublockListsTitle => 'Списки фильтров uBlock';
+  String get settings_ublockListsTitle =>
+      '╨í╨┐╨╕╤ü╨║╨╕ ╤ä╨╕╨╗╤î╤é╤Ç╨╛╨▓ uBlock';
 
   @override
   String get settings_ublockListsSearchHint =>
-      'Поиск списков, групп и внешних URL-адресов';
+      '╨ƒ╨╛╨╕╤ü╨║ ╤ü╨┐╨╕╤ü╨║╨╛╨▓, ╨│╤Ç╤â╨┐╨┐ ╨╕ ╨▓╨╜╨╡╤ê╨╜╨╕╤à URL-╨░╨┤╤Ç╨╡╤ü╨╛╨▓';
 
   @override
-  String get settings_ublockSectionManagement => 'Управление';
+  String get settings_ublockSectionManagement => '╨ú╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╨╡';
 
   @override
-  String get settings_ublockSectionQuickActions => 'Быстрые действия';
+  String get settings_ublockSectionQuickActions =>
+      '╨æ╤ï╤ü╤é╤Ç╤ï╨╡ ╨┤╨╡╨╣╤ü╤é╨▓╨╕╤Å';
 
   @override
-  String get settings_ublockSectionFilterLists => 'Списки фильтров';
+  String get settings_ublockSectionFilterLists =>
+      '╨í╨┐╨╕╤ü╨║╨╕ ╤ä╨╕╨╗╤î╤é╤Ç╨╛╨▓';
 
   @override
-  String get settings_ublockSectionExternalLists => 'Внешние списки';
+  String get settings_ublockSectionExternalLists =>
+      '╨Æ╨╜╨╡╤ê╨╜╨╕╨╡ ╤ü╨┐╨╕╤ü╨║╨╕';
 
   @override
-  String get settings_actionApply => 'Применить';
+  String get settings_actionApply => '╨ƒ╤Ç╨╕╨╝╨╡╨╜╨╕╤é╤î';
 
   @override
-  String get settings_ublockResetDialogTitle => 'Сбросить по умолчанию?';
+  String get settings_ublockResetDialogTitle =>
+      '╨í╨▒╤Ç╨╛╤ü╨╕╤é╤î ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä?';
 
   @override
   String get settings_ublockResetDialogMessage =>
-      'uBlock Origin вернётся к стандартной конфигурации списков фильтров, а добавленные вами внешние списки будут удалены.';
+      'uBlock Origin ╨▓╨╡╤Ç╨╜╤æ╤é╤ü╤Å ╨║ ╤ü╤é╨░╨╜╨┤╨░╤Ç╤é╨╜╨╛╨╣ ╨║╨╛╨╜╤ä╨╕╨│╤â╤Ç╨░╤å╨╕╨╕ ╤ü╨┐╨╕╤ü╨║╨╛╨▓ ╤ä╨╕╨╗╤î╤é╤Ç╨╛╨▓, ╨░ ╨┤╨╛╨▒╨░╨▓╨╗╨╡╨╜╨╜╤ï╨╡ ╨▓╨░╨╝╨╕ ╨▓╨╜╨╡╤ê╨╜╨╕╨╡ ╤ü╨┐╨╕╤ü╨║╨╕ ╨▒╤â╨┤╤â╤é ╤â╨┤╨░╨╗╨╡╨╜╤ï.';
 
   @override
   String get settings_ublockApplyHardeningsDialogTitle =>
-      'Применить усиление защиты Cat Browser?';
+      '╨ƒ╤Ç╨╕╨╝╨╡╨╜╨╕╤é╤î ╤â╤ü╨╕╨╗╨╡╨╜╨╕╨╡ ╨╖╨░╤ë╨╕╤é╤ï Cat Browser?';
 
   @override
   String get settings_ublockApplyHardeningsDialogMessage =>
-      'Будет включён отобранный набор дополнительных списков фильтров, а список легитимных сокращателей ссылок добавлен как внешний список.';
+      '╨æ╤â╨┤╤â╤é ╨▓╨║╨╗╤Ä╤ç╨╡╨╜╤ï ╨┤╨╛╨┐╨╛╨╗╨╜╨╕╤é╨╡╨╗╤î╨╜╤ï╨╡ ╤ü╨┐╨╕╤ü╨║╨╕ ╤ä╨╕╨╗╤î╤é╤Ç╨╛╨▓, ╨▓╤ï╨▒╤Ç╨░╨╜╨╜╤ï╨╡ WebLibre, ╨╕ ╨┤╨╛╨▒╨░╨▓╨╗╨╡╨╜ ╤ü╨┐╨╕╤ü╨╛╨║, ╨║╨╛╤é╨╛╤Ç╤ï╨╣ ╤â╨┤╨░╨╗╤Å╨╡╤é ╨╕╨╖ ╤ü╤ü╤ï╨╗╨╛╨║ ╤ç╨░╤ü╤é╨╕ ╨┤╨╗╤Å ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╨╜╨╕╤Å.';
 
   @override
   String get settings_ublockInfoBannerMessage =>
-      'Изменения списков фильтров uBlock Origin вступают в силу после перезапуска приложения. Из-за кеширования некоторым изменениям может понадобиться несколько минут и ещё один перезапуск.';
+      '╨ÿ╨╖╨╝╨╡╨╜╨╡╨╜╨╕╤Å ╤ü╨┐╨╕╤ü╨║╨╛╨▓ ╤ä╨╕╨╗╤î╤é╤Ç╨╛╨▓ uBlock Origin ╨▓╤ü╤é╤â╨┐╨░╤Ä╤é ╨▓ ╤ü╨╕╨╗╤â ╨┐╨╛╤ü╨╗╨╡ ╨┐╨╡╤Ç╨╡╨╖╨░╨┐╤â╤ü╨║╨░ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å. ╨ÿ╨╖-╨╖╨░ ╨║╨╡╤ê╨╕╤Ç╨╛╨▓╨░╨╜╨╕╤Å ╨╜╨╡╨║╨╛╤é╨╛╤Ç╤ï╨╝ ╨╕╨╖╨╝╨╡╨╜╨╡╨╜╨╕╤Å╨╝ ╨╝╨╛╨╢╨╡╤é ╨┐╨╛╨╜╨░╨┤╨╛╨▒╨╕╤é╤î╤ü╤Å ╨╜╨╡╤ü╨║╨╛╨╗╤î╨║╨╛ ╨╝╨╕╨╜╤â╤é ╨╕ ╨╡╤ë╤æ ╨╛╨┤╨╕╨╜ ╨┐╨╡╤Ç╨╡╨╖╨░╨┐╤â╤ü╨║.';
 
   @override
   String settings_ublockLoadFailed(String error) {
-    return 'Не удалось загрузить ресурсы списков фильтров: $error';
+    return '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╨╖╨░╨│╤Ç╤â╨╖╨╕╤é╤î ╤Ç╨╡╤ü╤â╤Ç╤ü╤ï ╤ü╨┐╨╕╤ü╨║╨╛╨▓ ╤ä╨╕╨╗╤î╤é╤Ç╨╛╨▓: $error';
   }
 
   @override
-  String get settings_ublockQuickResetTitle => 'Сбросить по умолчанию';
+  String get settings_ublockQuickResetTitle =>
+      '╨í╨▒╤Ç╨╛╤ü╨╕╤é╤î ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä';
 
   @override
   String get settings_ublockQuickResetSubtitle =>
-      'Восстановить стандартную конфигурацию списков фильтров uBlock Origin.';
+      '╨Æ╨╛╤ü╤ü╤é╨░╨╜╨╛╨▓╨╕╤é╤î ╤ü╤é╨░╨╜╨┤╨░╤Ç╤é╨╜╤â╤Ä ╨║╨╛╨╜╤ä╨╕╨│╤â╤Ç╨░╤å╨╕╤Ä ╤ü╨┐╨╕╤ü╨║╨╛╨▓ ╤ä╨╕╨╗╤î╤é╤Ç╨╛╨▓ uBlock Origin.';
 
   @override
   String get settings_ublockQuickApplyHardeningsTitle =>
-      'Применить усиление защиты Cat Browser';
+      '╨ƒ╤Ç╨╕╨╝╨╡╨╜╨╕╤é╤î ╤â╤ü╨╕╨╗╨╡╨╜╨╕╨╡ ╨╖╨░╤ë╨╕╤é╤ï Cat Browser';
 
   @override
   String get settings_ublockQuickApplyHardeningsSubtitle =>
-      'Включить отобранный набор дополнительных списков фильтров.';
+      '╨Æ╨║╨╗╤Ä╤ç╨╕╤é╤î ╨╛╤é╨╛╨▒╤Ç╨░╨╜╨╜╤ï╨╣ ╨╜╨░╨▒╨╛╤Ç ╨┤╨╛╨┐╨╛╨╗╨╜╨╕╤é╨╡╨╗╤î╨╜╤ï╤à ╤ü╨┐╨╕╤ü╨║╨╛╨▓ ╤ä╨╕╨╗╤î╤é╤Ç╨╛╨▓.';
 
   @override
-  String get settings_ublockManageTitle => 'Управлять через Cat Browser';
+  String get settings_ublockManageTitle =>
+      '╨ú╨┐╤Ç╨░╨▓╨╗╤Å╤é╤î ╤ç╨╡╤Ç╨╡╨╖ Cat Browser';
 
   @override
   String get settings_ublockManageSubtitle =>
-      'Cat Browser задаёт включённые списки фильтров uBlock Origin при следующем запуске браузера.';
+      'Cat Browser ╨╖╨░╨┤╨░╤æ╤é ╨▓╨║╨╗╤Ä╤ç╤æ╨╜╨╜╤ï╨╡ ╤ü╨┐╨╕╤ü╨║╨╕ ╤ä╨╕╨╗╤î╤é╤Ç╨╛╨▓ uBlock Origin ╨┐╤Ç╨╕ ╤ü╨╗╨╡╨┤╤â╤Ä╤ë╨╡╨╝ ╨╖╨░╨┐╤â╤ü╨║╨╡ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░.';
 
   @override
   String get settings_ublockManageHint =>
-      'При включении управления за основу берутся стандартные базовые списки uBO, а «Мои фильтры» сохраняются.';
+      '╨ƒ╤Ç╨╕ ╨▓╨║╨╗╤Ä╤ç╨╡╨╜╨╕╨╕ ╤â╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╤Å ╨╖╨░ ╨╛╤ü╨╜╨╛╨▓╤â ╨▒╨╡╤Ç╤â╤é╤ü╤Å ╤ü╤é╨░╨╜╨┤╨░╤Ç╤é╨╜╤ï╨╡ ╨▒╨░╨╖╨╛╨▓╤ï╨╡ ╤ü╨┐╨╕╤ü╨║╨╕ uBO, ╨░ ┬½╨£╨╛╨╕ ╤ä╨╕╨╗╤î╤é╤Ç╤ï┬╗ ╤ü╨╛╤à╤Ç╨░╨╜╤Å╤Ä╤é╤ü╤Å.';
 
   @override
-  String get settings_ublockAutoSelectTitle => 'Автовыбор языков';
+  String get settings_ublockAutoSelectTitle =>
+      '╨É╨▓╤é╨╛╨▓╤ï╨▒╨╛╤Ç ╤Å╨╖╤ï╨║╨╛╨▓';
 
   @override
   String get settings_ublockAutoSelectSubtitle =>
-      'Включать региональные списки фильтров для языков устройства.';
+      '╨Æ╨║╨╗╤Ä╤ç╨░╤é╤î ╤Ç╨╡╨│╨╕╨╛╨╜╨░╨╗╤î╨╜╤ï╨╡ ╤ü╨┐╨╕╤ü╨║╨╕ ╤ä╨╕╨╗╤î╤é╤Ç╨╛╨▓ ╨┤╨╗╤Å ╤Å╨╖╤ï╨║╨╛╨▓ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨░.';
 
   @override
   String get settings_ublockAutoSelectedTooltip =>
-      'Выбран автоматически для вашего языка';
+      '╨Æ╤ï╨▒╤Ç╨░╨╜ ╨░╨▓╤é╨╛╨╝╨░╤é╨╕╤ç╨╡╤ü╨║╨╕ ╨┤╨╗╤Å ╨▓╨░╤ê╨╡╨│╨╛ ╤Å╨╖╤ï╨║╨░';
 
   @override
-  String get settings_ublockDefaultOnTooltip => 'Включён по умолчанию';
+  String get settings_ublockDefaultOnTooltip =>
+      '╨Æ╨║╨╗╤Ä╤ç╤æ╨╜ ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä';
 
   @override
-  String get settings_ublockVisitSupportTooltip => 'Открыть страницу поддержки';
+  String get settings_ublockVisitSupportTooltip =>
+      '╨₧╤é╨║╤Ç╤ï╤é╤î ╤ü╤é╤Ç╨░╨╜╨╕╤å╤â ╨┐╨╛╨┤╨┤╨╡╤Ç╨╢╨║╨╕';
 
   @override
   String get settings_ublockExternalListsHint =>
-      'URL-адреса передаются в uBlock Origin как внешние списки. Описания показываются только здесь, в Cat Browser.';
+      'URL-╨░╨┤╤Ç╨╡╤ü╨░ ╨┐╨╡╤Ç╨╡╨┤╨░╤Ä╤é╤ü╤Å ╨▓ uBlock Origin ╨║╨░╨║ ╨▓╨╜╨╡╤ê╨╜╨╕╨╡ ╤ü╨┐╨╕╤ü╨║╨╕. ╨₧╨┐╨╕╤ü╨░╨╜╨╕╤Å ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╤Ä╤é╤ü╤Å ╤é╨╛╨╗╤î╨║╨╛ ╨╖╨┤╨╡╤ü╤î, ╨▓ Cat Browser.';
 
   @override
-  String get settings_ublockNoExternalLists => 'Внешние списки не настроены.';
+  String get settings_ublockNoExternalLists =>
+      '╨Æ╨╜╨╡╤ê╨╜╨╕╨╡ ╤ü╨┐╨╕╤ü╨║╨╕ ╨╜╨╡ ╨╜╨░╤ü╤é╤Ç╨╛╨╡╨╜╤ï.';
 
   @override
   String settings_ublockNoExternalListsMatch(String query) {
-    return 'Нет внешних списков, соответствующих «$query».';
+    return '╨¥╨╡╤é ╨▓╨╜╨╡╤ê╨╜╨╕╤à ╤ü╨┐╨╕╤ü╨║╨╛╨▓, ╤ü╨╛╨╛╤é╨▓╨╡╤é╤ü╤é╨▓╤â╤Ä╤ë╨╕╤à ┬½$query┬╗.';
   }
 
   @override
-  String get settings_ublockAddExternalListButton => 'Добавить внешний список';
+  String get settings_ublockAddExternalListButton =>
+      '╨ö╨╛╨▒╨░╨▓╨╕╤é╤î ╨▓╨╜╨╡╤ê╨╜╨╕╨╣ ╤ü╨┐╨╕╤ü╨╛╨║';
 
   @override
   String get settings_ublockEditListDialogTitle =>
-      'Изменить внешний список фильтров';
+      '╨ÿ╨╖╨╝╨╡╨╜╨╕╤é╤î ╨▓╨╜╨╡╤ê╨╜╨╕╨╣ ╤ü╨┐╨╕╤ü╨╛╨║ ╤ä╨╕╨╗╤î╤é╤Ç╨╛╨▓';
 
   @override
   String get settings_ublockAddListDialogTitle =>
-      'Добавить внешний список фильтров';
+      '╨ö╨╛╨▒╨░╨▓╨╕╤é╤î ╨▓╨╜╨╡╤ê╨╜╨╕╨╣ ╤ü╨┐╨╕╤ü╨╛╨║ ╤ä╨╕╨╗╤î╤é╤Ç╨╛╨▓';
 
   @override
-  String get settings_ublockListUrlLabel => 'URL-адрес списка';
+  String get settings_ublockListUrlLabel => 'URL-╨░╨┤╤Ç╨╡╤ü ╤ü╨┐╨╕╤ü╨║╨░';
 
   @override
-  String get settings_ublockListUrlAlreadyAdded => 'Уже добавлен';
+  String get settings_ublockListUrlAlreadyAdded => '╨ú╨╢╨╡ ╨┤╨╛╨▒╨░╨▓╨╗╨╡╨╜';
 
   @override
-  String get settings_ublockDescriptionLabel => 'Описание (необязательно)';
+  String get settings_ublockDescriptionLabel =>
+      '╨₧╨┐╨╕╤ü╨░╨╜╨╕╨╡ (╨╜╨╡╨╛╨▒╤Å╨╖╨░╤é╨╡╨╗╤î╨╜╨╛)';
 
   @override
   String get settings_ublockDescriptionHint =>
-      'например, Раздражители — myAuthor';
+      '╨╜╨░╨┐╤Ç╨╕╨╝╨╡╤Ç, ╨á╨░╨╖╨┤╤Ç╨░╨╢╨╕╤é╨╡╨╗╨╕ ΓÇö myAuthor';
 
   @override
-  String get settings_ublockGroupDefault => 'По умолчанию';
+  String get settings_ublockGroupDefault => '╨ƒ╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä';
 
   @override
-  String get settings_ublockGroupAds => 'Реклама';
+  String get settings_ublockGroupAds => '╨á╨╡╨║╨╗╨░╨╝╨░';
 
   @override
-  String get settings_ublockGroupPrivacy => 'Приватность';
+  String get settings_ublockGroupPrivacy => '╨ƒ╤Ç╨╕╨▓╨░╤é╨╜╨╛╤ü╤é╤î';
 
   @override
-  String get settings_ublockGroupMalware => 'Вредоносное ПО';
+  String get settings_ublockGroupMalware => '╨Æ╤Ç╨╡╨┤╨╛╨╜╨╛╤ü╨╜╨╛╨╡ ╨ƒ╨₧';
 
   @override
-  String get settings_ublockGroupAnnoyances => 'Раздражители';
+  String get settings_ublockGroupAnnoyances => '╨á╨░╨╖╨┤╤Ç╨░╨╢╨╕╤é╨╡╨╗╨╕';
 
   @override
-  String get settings_ublockGroupMultipurpose => 'Многоцелевые';
+  String get settings_ublockGroupMultipurpose => '╨£╨╜╨╛╨│╨╛╤å╨╡╨╗╨╡╨▓╤ï╨╡';
 
   @override
-  String get settings_ublockGroupRegions => 'Регионы';
+  String get settings_ublockGroupRegions => '╨á╨╡╨│╨╕╨╛╨╜╤ï';
 
   @override
-  String get settings_categoryGeneralTitle => 'Общие';
+  String get settings_categoryGeneralTitle => '╨₧╨▒╤ë╨╕╨╡';
 
   @override
   String get settings_categoryGeneralKeywords =>
-      'тема, масштаб интерфейса, браузер по умолчанию';
+      '╤é╨╡╨╝╨░, ╨╝╨░╤ü╤ê╤é╨░╨▒ ╨╕╨╜╤é╨╡╤Ç╤ä╨╡╨╣╤ü╨░, ╨▒╤Ç╨░╤â╨╖╨╡╤Ç ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä';
 
   @override
-  String get settings_categoryGeneralSubtitle => 'Внешний вид, загрузки';
+  String get settings_categoryGeneralSubtitle =>
+      '╨Æ╨╜╨╡╤ê╨╜╨╕╨╣ ╨▓╨╕╨┤, ╨╖╨░╨│╤Ç╤â╨╖╨║╨╕';
 
   @override
-  String get settings_categoryBrowsingTitle => 'Просмотр';
+  String get settings_categoryBrowsingTitle => '╨ƒ╤Ç╨╛╤ü╨╝╨╛╤é╤Ç';
 
   @override
   String get settings_categoryBrowsingKeywords =>
-      'вкладки, малый веб, очистка url, разворачивание ссылок';
+      '╨▓╨║╨╗╨░╨┤╨║╨╕, ╨╝╨░╨╗╤ï╨╣ ╨▓╨╡╨▒, ╨╛╤ç╨╕╤ü╤é╨║╨░ url, ╤Ç╨░╨╖╨▓╨╛╤Ç╨░╤ç╨╕╨▓╨░╨╜╨╕╨╡ ╤ü╤ü╤ï╨╗╨╛╨║';
 
   @override
   String get settings_categoryBrowsingSubtitle =>
-      'Вкладки, навигация, внешние ссылки';
+      '╨Æ╨║╨╗╨░╨┤╨║╨╕, ╨╜╨░╨▓╨╕╨│╨░╤å╨╕╤Å, ╨▓╨╜╨╡╤ê╨╜╨╕╨╡ ╤ü╤ü╤ï╨╗╨║╨╕';
 
   @override
   String get settings_categoryHomeNewTabTitle =>
-      'Домашняя страница и новая вкладка';
+      '╨ö╨╛╨╝╨░╤ê╨╜╤Å╤Å ╤ü╤é╤Ç╨░╨╜╨╕╤å╨░ ╨╕ ╨╜╨╛╨▓╨░╤Å ╨▓╨║╨╗╨░╨┤╨║╨░';
 
   @override
   String get settings_categoryHomeNewTabKeywords =>
-      'домашняя, новая вкладка, стартовая страница, разделы, ярлыки, популярные сайты, цитата, обои, фон';
+      '╨┤╨╛╨╝╨░╤ê╨╜╤Å╤Å, ╨╜╨╛╨▓╨░╤Å ╨▓╨║╨╗╨░╨┤╨║╨░, ╤ü╤é╨░╤Ç╤é╨╛╨▓╨░╤Å ╤ü╤é╤Ç╨░╨╜╨╕╤å╨░, ╤Ç╨░╨╖╨┤╨╡╨╗╤ï, ╤Å╤Ç╨╗╤ï╨║╨╕, ╨┐╨╛╨┐╤â╨╗╤Å╤Ç╨╜╤ï╨╡ ╤ü╨░╨╣╤é╤ï, ╤å╨╕╤é╨░╤é╨░, ╨╛╨▒╨╛╨╕, ╤ä╨╛╨╜';
 
   @override
   String get settings_categoryHomeNewTabSubtitle =>
-      'Что показывают домашняя страница и новая вкладка';
+      '╨º╤é╨╛ ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╤Ä╤é ╨┤╨╛╨╝╨░╤ê╨╜╤Å╤Å ╤ü╤é╤Ç╨░╨╜╨╕╤å╨░ ╨╕ ╨╜╨╛╨▓╨░╤Å ╨▓╨║╨╗╨░╨┤╨║╨░';
 
   @override
-  String get settings_categoryGesturesTitle => 'Жесты';
+  String get settings_categoryGesturesTitle => '╨û╨╡╤ü╤é╤ï';
 
   @override
   String get settings_categoryGesturesKeywords =>
-      'жест, свайп, штрих, панель вкладок, долгое нажатие, щипок';
+      '╨╢╨╡╤ü╤é, ╤ü╨▓╨░╨╣╨┐, ╤ê╤é╤Ç╨╕╤à, ╨┐╨░╨╜╨╡╨╗╤î ╨▓╨║╨╗╨░╨┤╨╛╨║, ╨┤╨╛╨╗╨│╨╛╨╡ ╨╜╨░╨╢╨░╤é╨╕╨╡, ╤ë╨╕╨┐╨╛╨║';
 
   @override
   String get settings_categoryGesturesSubtitle =>
-      'Свайпы по панели вкладок и вкладкам, рисуемые жесты';
+      '╨í╨▓╨░╨╣╨┐╤ï ╨┐╨╛ ╨┐╨░╨╜╨╡╨╗╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║ ╨╕ ╨▓╨║╨╗╨░╨┤╨║╨░╨╝, ╤Ç╨╕╤ü╤â╨╡╨╝╤ï╨╡ ╨╢╨╡╤ü╤é╤ï';
 
   @override
-  String get settings_categoryKeyboardShortcutsTitle => 'Сочетания клавиш';
+  String get settings_categoryKeyboardShortcutsTitle =>
+      '╨í╨╛╤ç╨╡╤é╨░╨╜╨╕╤Å ╨║╨╗╨░╨▓╨╕╤ê';
 
   @override
   String get settings_categoryKeyboardShortcutsKeywords =>
-      'клавиатура, сочетание, горячие клавиши, привязка клавиш';
+      '╨║╨╗╨░╨▓╨╕╨░╤é╤â╤Ç╨░, ╤ü╨╛╤ç╨╡╤é╨░╨╜╨╕╨╡, ╨│╨╛╤Ç╤Å╤ç╨╕╨╡ ╨║╨╗╨░╨▓╨╕╤ê╨╕, ╨┐╤Ç╨╕╨▓╤Å╨╖╨║╨░ ╨║╨╗╨░╨▓╨╕╤ê';
 
   @override
   String get settings_categoryKeyboardShortcutsSubtitle =>
-      'Клавиши аппаратной клавиатуры для действий браузера';
+      '╨Ü╨╗╨░╨▓╨╕╤ê╨╕ ╨░╨┐╨┐╨░╤Ç╨░╤é╨╜╨╛╨╣ ╨║╨╗╨░╨▓╨╕╨░╤é╤â╤Ç╤ï ╨┤╨╗╤Å ╨┤╨╡╨╣╤ü╤é╨▓╨╕╨╣ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░';
 
   @override
   String get settings_categoryToolbarLayoutTitle =>
-      'Панель инструментов и макет';
+      '╨ƒ╨░╨╜╨╡╨╗╤î ╨╕╨╜╤ü╤é╤Ç╤â╨╝╨╡╨╜╤é╨╛╨▓ ╨╕ ╨╝╨░╨║╨╡╤é';
 
   @override
   String get settings_categoryToolbarLayoutKeywords =>
-      'контекстная панель инструментов, быстрый переключатель вкладок';
+      '╨║╨╛╨╜╤é╨╡╨║╤ü╤é╨╜╨░╤Å ╨┐╨░╨╜╨╡╨╗╤î ╨╕╨╜╤ü╤é╤Ç╤â╨╝╨╡╨╜╤é╨╛╨▓, ╨▒╤ï╤ü╤é╤Ç╤ï╨╣ ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╤î ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
   String get settings_categoryToolbarLayoutSubtitle =>
-      'Панель вкладок, панель инструментов, быстрый переключатель, обзор вкладок';
+      '╨ƒ╨░╨╜╨╡╨╗╤î ╨▓╨║╨╗╨░╨┤╨╛╨║, ╨┐╨░╨╜╨╡╨╗╤î ╨╕╨╜╤ü╤é╤Ç╤â╨╝╨╡╨╜╤é╨╛╨▓, ╨▒╤ï╤ü╤é╤Ç╤ï╨╣ ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╤î, ╨╛╨▒╨╖╨╛╤Ç ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
-  String get settings_categoryWebContentTitle => 'Веб-контент';
+  String get settings_categoryWebContentTitle => '╨Æ╨╡╨▒-╨║╨╛╨╜╤é╨╡╨╜╤é';
 
   @override
-  String get settings_categoryWebContentKeywords => 'режим чтения, pdf, шрифты';
+  String get settings_categoryWebContentKeywords =>
+      '╤Ç╨╡╨╢╨╕╨╝ ╤ç╤é╨╡╨╜╨╕╤Å, pdf, ╤ê╤Ç╨╕╤ä╤é╤ï';
 
   @override
   String get settings_categoryWebContentSubtitle =>
-      'Отображение страниц, PDF, режим чтения, ИИ';
+      '╨₧╤é╨╛╨▒╤Ç╨░╨╢╨╡╨╜╨╕╨╡ ╤ü╤é╤Ç╨░╨╜╨╕╤å, PDF, ╤Ç╨╡╨╢╨╕╨╝ ╤ç╤é╨╡╨╜╨╕╤Å';
 
   @override
-  String get settings_categoryNotificationsTitle => 'Уведомления';
+  String get settings_categoryNotificationsTitle => '╨ú╨▓╨╡╨┤╨╛╨╝╨╗╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_categoryNotificationsKeywords =>
-      'push, пуш, unifiedpush, ntfy, дистрибьютор';
+      'push, ╨┐╤â╤ê, unifiedpush, ntfy, ╨┤╨╕╤ü╤é╤Ç╨╕╨▒╤î╤Ä╤é╨╛╤Ç';
 
   @override
   String get settings_categoryNotificationsSubtitle =>
-      'Доставка web push, дистрибьютор, подписки сайтов';
+      '╨ú╨▓╨╡╨┤╨╛╨╝╨╗╨╡╨╜╨╕╤Å ╤ü╨░╨╣╤é╨╛╨▓ ╨╕ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╨╡, ╨║╨╛╤é╨╛╤Ç╨╛╨╡ ╨╕╤à ╨┤╨╛╤ü╤é╨░╨▓╨╗╤Å╨╡╤é';
 
   @override
-  String get settings_categorySearchTitle => 'Поиск';
+  String get settings_categorySearchTitle => '╨ƒ╨╛╨╕╤ü╨║';
 
   @override
   String get settings_categorySearchKeywords =>
-      'бэнги, подсказки, локальный поисковый индекс';
+      '╨▒╤ì╨╜╨│╨╕, ╨┐╨╛╨┤╤ü╨║╨░╨╖╨║╨╕, ╨╗╨╛╨║╨░╨╗╤î╨╜╤ï╨╣ ╨┐╨╛╨╕╤ü╨║╨╛╨▓╤ï╨╣ ╨╕╨╜╨┤╨╡╨║╤ü';
 
   @override
   String get settings_categorySearchSubtitle =>
-      'Поисковые системы, бэнги, история поиска';
+      '╨ƒ╨╛╨╕╤ü╨║╨╛╨▓╤ï╨╡ ╤ü╨╕╤ü╤é╨╡╨╝╤ï, ╨▒╤ì╨╜╨│╨╕, ╨╕╤ü╤é╨╛╤Ç╨╕╤Å ╨┐╨╛╨╕╤ü╨║╨░';
 
   @override
   String get settings_categoryPrivacySecurityTitle =>
-      'Приватность и безопасность';
+      '╨ƒ╤Ç╨╕╨▓╨░╤é╨╜╨╛╤ü╤é╤î ╨╕ ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╨╛╤ü╤é╤î';
 
   @override
   String get settings_categoryPrivacySecurityKeywords =>
-      'цифровые отпечатки, https, doh, safe browsing, защита сети';
+      '╤å╨╕╤ä╤Ç╨╛╨▓╤ï╨╡ ╨╛╤é╨┐╨╡╤ç╨░╤é╨║╨╕, https, doh, safe browsing, ╨╖╨░╤ë╨╕╤é╨░ ╤ü╨╡╤é╨╕';
 
   @override
   String get settings_categoryPrivacySecuritySubtitle =>
-      'Защита от отслеживания, очистка данных';
+      '╨ù╨░╤ë╨╕╤é╨░ ╨╛╤é ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╨╜╨╕╤Å, ╨╛╤ç╨╕╤ü╤é╨║╨░ ╨┤╨░╨╜╨╜╤ï╤à';
 
   @override
-  String get settings_categoryProxyTitle => 'Прокси';
+  String get settings_categoryProxyTitle => '╨ƒ╨╛╨┤╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_categoryProxyKeywords =>
-      'прокси, sing-box, socks, vpn, впн, wireguard, маршрутизация, tor, контейнер';
+      '╨┐╤Ç╨╛╨║╤ü╨╕, sing-box, socks, vpn, ╨▓╨┐╨╜, wireguard, ╨╝╨░╤Ç╤ê╤Ç╤â╤é╨╕╨╖╨░╤å╨╕╤Å, tor, ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç';
 
   @override
-  String get settings_categoryProxySubtitle => 'Подключения и маршрутизация';
+  String get settings_categoryProxySubtitle =>
+      'Tor, VPN, ╨┐╤Ç╨╛╨║╤ü╨╕ ╨╕ ╨╝╨░╤Ç╤ê╤Ç╤â╤é╨╕╨╖╨░╤å╨╕╤Å';
 
   @override
-  String get settings_categoryExtensionsTitle => 'Расширения';
+  String get settings_categoryExtensionsTitle => '╨á╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_categoryExtensionsKeywords =>
-      'дополнения, неподписанные расширения, addons';
+      '╨┤╨╛╨┐╨╛╨╗╨╜╨╡╨╜╨╕╤Å, ╨╜╨╡╨┐╨╛╨┤╨┐╨╕╤ü╨░╨╜╨╜╤ï╨╡ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å, addons';
 
   @override
   String get settings_categoryExtensionsSubtitle =>
-      'Установка расширений и управление их источниками';
+      '╨ú╤ü╤é╨░╨╜╨╛╨▓╨║╨░ ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╨╣ ╨╕ ╤â╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╨╡ ╨╕╤à ╨╕╤ü╤é╨╛╤ç╨╜╨╕╨║╨░╨╝╨╕';
 
   @override
-  String get settings_categoryAccountTitle => 'Аккаунт Cat Browser';
+  String get settings_categoryAccountTitle => '╨É╨║╨║╨░╤â╨╜╤é Cat Browser';
 
   @override
   String get settings_categoryAccountKeywords =>
-      'аккаунт, подписка, учётная запись';
+      '╨░╨║╨║╨░╤â╨╜╤é, ╨┐╨╛╨┤╨┐╨╕╤ü╨║╨░, ╤â╤ç╤æ╤é╨╜╨░╤Å ╨╖╨░╨┐╨╕╤ü╤î';
 
   @override
-  String get settings_categoryAccountSubtitle => 'Вход, синхронизация настроек';
+  String get settings_categoryAccountSubtitle =>
+      '╨Æ╤à╨╛╨┤, ╤ü╨╕╨╜╤à╤Ç╨╛╨╜╨╕╨╖╨░╤å╨╕╤Å ╨╜╨░╤ü╤é╤Ç╨╛╨╡╨║';
 
   @override
   String get settings_categorySyncTitle => 'Firefox Sync';
 
   @override
   String get settings_categorySyncKeywords =>
-      'сопряжение, имя устройства, типы данных';
+      '╤ü╨╛╨┐╤Ç╤Å╨╢╨╡╨╜╨╕╨╡, ╨╕╨╝╤Å ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨░, ╤é╨╕╨┐╤ï ╨┤╨░╨╜╨╜╤ï╤à';
 
   @override
   String get settings_categorySyncSubtitle =>
-      'Аккаунт, синхронизация, выбор данных';
+      '╨É╨║╨║╨░╤â╨╜╤é, ╤ü╨╕╨╜╤à╤Ç╨╛╨╜╨╕╨╖╨░╤å╨╕╤Å, ╨▓╤ï╨▒╨╛╤Ç ╨┤╨░╨╜╨╜╤ï╤à';
 
   @override
-  String get settings_categoryAdvancedTitle => 'Дополнительно';
+  String get settings_categoryAdvancedTitle => '╨ö╨╛╨┐╨╛╨╗╨╜╨╕╤é╨╡╨╗╤î╨╜╨╛';
 
   @override
   String get settings_categoryAdvancedKeywords =>
-      'экспериментальные, журналы ошибок, javascript';
+      '╤ì╨║╤ü╨┐╨╡╤Ç╨╕╨╝╨╡╨╜╤é╨░╨╗╤î╨╜╤ï╨╡, ╨╢╤â╤Ç╨╜╨░╨╗╤ï ╨╛╤ê╨╕╨▒╨╛╨║, javascript';
 
   @override
   String get settings_categoryAdvancedSubtitle =>
-      'JavaScript, user agent, отладка';
+      'JavaScript, user agent, ╨╛╤é╨╗╨░╨┤╨║╨░';
 
   @override
-  String get settings_categoryGroupBrowserTitle => 'Браузер';
+  String get settings_categoryGroupBrowserTitle => '╨æ╤Ç╨░╤â╨╖╨╡╤Ç';
 
   @override
   String get settings_categoryGroupServicesAdvancedTitle =>
-      'Сервисы и дополнительно';
+      '╨í╨╡╤Ç╨▓╨╕╤ü╤ï ╨╕ ╨┤╨╛╨┐╨╛╨╗╨╜╨╕╤é╨╡╨╗╤î╨╜╨╛';
 
   @override
   String get settings_privacySectionTrackingProtectionTitle =>
-      'Защита от отслеживания';
+      '╨ù╨░╤ë╨╕╤é╨░ ╨╛╤é ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╨╜╨╕╤Å';
 
   @override
   String get settings_privacySectionTrackingProtectionKeywords =>
-      'приватность, трекеры';
+      '╨┐╤Ç╨╕╨▓╨░╤é╨╜╨╛╤ü╤é╤î, ╤é╤Ç╨╡╨║╨╡╤Ç╤ï';
 
   @override
   String get settings_indexEnhancedTrackingProtectionSubtitle =>
-      'Выбор строгости блокировки трекеров';
+      '╨Æ╤ï╨▒╨╛╤Ç ╤ü╤é╤Ç╨╛╨│╨╛╤ü╤é╨╕ ╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨║╨╕ ╤é╤Ç╨╡╨║╨╡╤Ç╨╛╨▓';
 
   @override
   String get settings_indexTrackerStatisticsSubtitle =>
-      'Ежедневно подсчитывать заблокированные трекеры';
+      '╨ò╨╢╨╡╨┤╨╜╨╡╨▓╨╜╨╛ ╨┐╨╛╨┤╤ü╤ç╨╕╤é╤ï╨▓╨░╤é╤î ╨╖╨░╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╨╜╨╜╤ï╨╡ ╤é╤Ç╨╡╨║╨╡╤Ç╤ï';
 
   @override
   String get settings_indexBounceTrackingProtectionSubtitle =>
-      'Удалять следы отслеживания, оставленные трекерами перенаправлений';
+      '╨ú╨┤╨░╨╗╤Å╤é╤î ╤ü╨╗╨╡╨┤╤ï ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╨╜╨╕╤Å, ╨╛╤ü╤é╨░╨▓╨╗╨╡╨╜╨╜╤ï╨╡ ╤é╤Ç╨╡╨║╨╡╤Ç╨░╨╝╨╕ ╨┐╨╡╤Ç╨╡╨╜╨░╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╨╣';
 
   @override
   String get settings_indexQueryParameterStrippingSubtitle =>
-      'Удалять параметры отслеживания из URL-адресов';
+      '╨ú╨┤╨░╨╗╤Å╤é╤î ╨┐╨░╤Ç╨░╨╝╨╡╤é╤Ç╤ï ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╨╜╨╕╤Å ╨╕╨╖ URL-╨░╨┤╤Ç╨╡╤ü╨╛╨▓';
 
   @override
-  String get settings_privacySectionFingerprintingTitle => 'Цифровые отпечатки';
+  String get settings_privacySectionFingerprintingTitle =>
+      '╨ª╨╕╤ä╤Ç╨╛╨▓╤ï╨╡ ╨╛╤é╨┐╨╡╤ç╨░╤é╨║╨╕';
 
   @override
   String get settings_indexBrowserLanguagesSubtitle =>
-      'Выбор языков, видимых сайтам';
+      '╨Æ╤ï╨▒╨╛╤Ç ╤Å╨╖╤ï╨║╨╛╨▓, ╨▓╨╕╨┤╨╕╨╝╤ï╤à ╤ü╨░╨╣╤é╨░╨╝';
 
   @override
   String get settings_privacySectionConnectionSecurityTitle =>
-      'Безопасность соединения';
+      '╨æ╨╡╨╖╨╛╨┐╨░╤ü╨╜╨╛╤ü╤é╤î ╤ü╨╛╨╡╨┤╨╕╨╜╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_indexHttpsOnlyModeSubtitle =>
-      'Предпочитать HTTPS и блокировать незащищённые соединения';
+      '╨ƒ╤Ç╨╡╨┤╤â╨┐╤Ç╨╡╨╢╨┤╨░╤é╤î ╨┐╨╡╤Ç╨╡╨┤ ╨╛╤é╨║╤Ç╤ï╤é╨╕╨╡╨╝ ╨╜╨╡╨╖╨░╤ê╨╕╤ä╤Ç╨╛╨▓╨░╨╜╨╜╨╛╨│╨╛ ╤ü╨░╨╣╤é╨░';
 
   @override
-  String get settings_indexDnsOverHttpsTitle => 'DNS через HTTPS';
+  String get settings_indexDnsOverHttpsTitle => '╨æ╨╡╨╖╨╛╨┐╨░╤ü╨╜╤ï╨╣ DNS';
 
   @override
-  String get settings_indexDnsOverHttpsKeywords => 'doh';
+  String get settings_indexDnsOverHttpsKeywords =>
+      'dns over https, doh, ╨╖╨░╤ê╨╕╤ä╤Ç╨╛╨▓╨░╨╜╨╜╤ï╨╣ dns';
 
   @override
-  String get settings_indexDnsOverHttpsSubtitle => 'Шифровать DNS-запросы';
+  String get settings_indexDnsOverHttpsSubtitle =>
+      '╨¿╨╕╤ä╤Ç╨╛╨▓╨░╤é╤î ╨╖╨░╨┐╤Ç╨╛╤ü╤ï ╨░╨┤╤Ç╨╡╤ü╨╛╨▓ ╤ü╨░╨╣╤é╨╛╨▓';
 
   @override
-  String get settings_privacySectionNetworkProtectionTitle => 'Защита сети';
+  String get settings_privacySectionNetworkProtectionTitle =>
+      '╨ù╨░╤ë╨╕╤é╨░ ╤ü╨╡╤é╨╕';
 
   @override
   String get settings_indexLnaBlockingSubtitle =>
-      'Блокировать запросы к устройствам и сервисам локальной сети';
+      '╨í╨░╨╣╤é╤ï ╨┤╨╛╨╗╨╢╨╜╤ï ╤ü╨┐╤Ç╨░╤ê╨╕╨▓╨░╤é╤î ╨┐╨╡╤Ç╨╡╨┤ ╨┐╨╛╨┤╨║╨╗╤Ä╤ç╨╡╨╜╨╕╨╡╨╝ ╨║ ╨╗╨╛╨║╨░╨╗╤î╨╜╤ï╨╝ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å╨╝ ╨╕ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨░╨╝';
 
   @override
   String get settings_indexLnaBlockTrackersSubtitle =>
-      'Блокировать похожие на трекеры запросы к локальной сети';
+      '╨¥╨╡ ╨┐╤â╤ü╨║╨░╤é╤î ╨╕╨╖╨▓╨╡╤ü╤é╨╜╤ï╨╡ ╤é╤Ç╨╡╨║╨╡╤Ç╤ï ╨║ ╨╗╨╛╨║╨░╨╗╤î╨╜╤ï╨╝ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å╨╝ ╨╕ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨░╨╝';
 
   @override
   String get settings_privacySectionSignalsModesTitle =>
-      'Сигналы и режимы приватности';
+      '╨í╨╕╨│╨╜╨░╨╗╤ï ╨╕ ╤Ç╨╡╨╢╨╕╨╝╤ï ╨┐╤Ç╨╕╨▓╨░╤é╨╜╨╛╤ü╤é╨╕';
 
   @override
   String get settings_indexScreenshotProtectionSubtitle =>
-      'Не допускать попадания содержимого приложения на снимки экрана';
+      '╨¥╨╡ ╨┤╨╛╨┐╤â╤ü╨║╨░╤é╤î ╨┐╨╛╨┐╨░╨┤╨░╨╜╨╕╤Å ╤ü╨╛╨┤╨╡╤Ç╨╢╨╕╨╝╨╛╨│╨╛ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å ╨╜╨░ ╤ü╨╜╨╕╨╝╨║╨╕ ╤ì╨║╤Ç╨░╨╜╨░';
 
   @override
   String get settings_indexAllowPrivateTabScreenshotsSubtitle =>
-      'Разрешить системе захватывать приватные вкладки';
+      '╨á╨░╨╖╤Ç╨╡╤ê╨╕╤é╤î ╤ü╨╕╤ü╤é╨╡╨╝╨╡ ╨╖╨░╤à╨▓╨░╤é╤ï╨▓╨░╤é╤î ╨┐╤Ç╨╕╨▓╨░╤é╨╜╤ï╨╡ ╨▓╨║╨╗╨░╨┤╨║╨╕';
 
   @override
   String get settings_indexGlobalPrivacyControlSubtitle =>
-      'Отправлять сайтам сигнал о предпочтениях приватности';
+      '╨₧╤é╨┐╤Ç╨░╨▓╨╗╤Å╤é╤î ╤ü╨░╨╣╤é╨░╨╝ ╤ü╨╕╨│╨╜╨░╨╗ ╨╛ ╨┐╤Ç╨╡╨┤╨┐╨╛╤ç╤é╨╡╨╜╨╕╤Å╤à ╨┐╤Ç╨╕╨▓╨░╤é╨╜╨╛╤ü╤é╨╕';
 
   @override
   String get settings_privacySectionAppOpeningProtectionTitle =>
-      'Защита от открытия приложениями';
+      '╨ù╨░╤ë╨╕╤é╨░ ╨╛╤é ╨╛╤é╨║╤Ç╤ï╤é╨╕╤Å ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å╨╝╨╕';
 
   @override
   String get settings_indexAppOpeningProtectionSubtitle =>
-      'Контроль того, какие приложения могут напрямую запускать Cat Browser';
+      '╨Ü╨╛╨╜╤é╤Ç╨╛╨╗╤î ╤é╨╛╨│╨╛, ╨║╨░╨║╨╕╨╡ ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å ╨╝╨╛╨│╤â╤é ╨╜╨░╨┐╤Ç╤Å╨╝╤â╤Ä ╨╖╨░╨┐╤â╤ü╨║╨░╤é╤î Cat Browser';
 
   @override
-  String get settings_privacySectionDataManagementTitle => 'Управление данными';
+  String get settings_privacySectionDataManagementTitle =>
+      '╨ú╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╨╡ ╨┤╨░╨╜╨╜╤ï╨╝╨╕';
 
   @override
   String get settings_indexDeleteBrowsingDataSubtitle =>
-      'Очистка истории, куки и других данных просмотра';
+      '╨₧╤ç╨╕╤ü╤é╨║╨░ ╨╕╤ü╤é╨╛╤Ç╨╕╨╕, ╨║╤â╨║╨╕ ╨╕ ╨┤╤Ç╤â╨│╨╕╤à ╨┤╨░╨╜╨╜╤ï╤à ╨┐╤Ç╨╛╤ü╨╝╨╛╤é╤Ç╨░';
 
   @override
   String get settings_indexAutoClearHistorySubtitle =>
-      'Автоматически очищать историю по истечении выбранного срока';
+      '╨É╨▓╤é╨╛╨╝╨░╤é╨╕╤ç╨╡╤ü╨║╨╕ ╨╛╤ç╨╕╤ë╨░╤é╤î ╨╕╤ü╤é╨╛╤Ç╨╕╤Ä ╨┐╨╛ ╨╕╤ü╤é╨╡╤ç╨╡╨╜╨╕╨╕ ╨▓╤ï╨▒╤Ç╨░╨╜╨╜╨╛╨│╨╛ ╤ü╤Ç╨╛╨║╨░';
 
   @override
   String get settings_indexAutoClearUnassignedTabsSubtitle =>
-      'Автоматически закрывать вкладки, не привязанные к контейнеру';
+      '╨É╨▓╤é╨╛╨╝╨░╤é╨╕╤ç╨╡╤ü╨║╨╕ ╨╖╨░╨║╤Ç╤ï╨▓╨░╤é╤î ╨▓╨║╨╗╨░╨┤╨║╨╕, ╨╜╨╡ ╨┐╤Ç╨╕╨▓╤Å╨╖╨░╨╜╨╜╤ï╨╡ ╨║ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╤â';
 
   @override
   String get settings_privacySectionSafeBrowsingTitle => 'Google Safe Browsing';
 
   @override
   String get settings_indexSafeBrowsingMalwareSubtitle =>
-      'Предупреждать о вредоносном ПО и опасных загрузках';
+      '╨ƒ╤Ç╨╡╨┤╤â╨┐╤Ç╨╡╨╢╨┤╨░╤é╤î ╨╛ ╨▓╤Ç╨╡╨┤╨╛╨╜╨╛╤ü╨╜╨╛╨╝ ╨ƒ╨₧ ╨╕ ╨╛╨┐╨░╤ü╨╜╤ï╤à ╨╖╨░╨│╤Ç╤â╨╖╨║╨░╤à';
 
   @override
   String get settings_indexSafeBrowsingPhishingSubtitle =>
-      'Предупреждать о мошеннических сайтах и страницах входа';
+      '╨ƒ╤Ç╨╡╨┤╤â╨┐╤Ç╨╡╨╢╨┤╨░╤é╤î ╨╛ ╨╝╨╛╤ê╨╡╨╜╨╜╨╕╤ç╨╡╤ü╨║╨╕╤à ╤ü╨░╨╣╤é╨░╤à ╨╕ ╤ü╤é╤Ç╨░╨╜╨╕╤å╨░╤à ╨▓╤à╨╛╨┤╨░';
 
   @override
   String get settings_privacySectionAdvancedSecurityTitle =>
-      'Расширенная безопасность';
+      '╨á╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╜╨░╤Å ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╨╛╤ü╤é╤î';
 
   @override
   String get settings_indexWebEngineHardeningSubtitle =>
-      'Усилить защиту поведения и настроек движка браузера';
+      '╨ú╤ü╨╕╨╗╨╕╤é╤î ╨╖╨░╤ë╨╕╤é╤â ╨┐╨╛╨▓╨╡╨┤╨╡╨╜╨╕╤Å ╨╕ ╨╜╨░╤ü╤é╤Ç╨╛╨╡╨║ ╨┤╨▓╨╕╨╢╨║╨░ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░';
 
   @override
   String get settings_indexFissionEnabledSubtitle =>
-      'Более строгая изоляция сайтов друг от друга';
+      '╨ù╨░╨┐╤â╤ü╨║╨░╤é╤î ╨║╨░╨╢╨┤╤ï╨╣ ╤ü╨░╨╣╤é ╨▓ ╨╛╤é╨┤╨╡╨╗╤î╨╜╨╛╨╝ ╨┐╤Ç╨╛╤å╨╡╤ü╤ü╨╡';
 
   @override
   String get settings_indexExtensionsWebAPIEnabledSubtitle =>
-      'Разрешить расширениям предоставлять веб-API страницам';
+      '╨á╨░╨╖╤Ç╨╡╤ê╨╕╤é╤î ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╕╤Å╨╝ ╨┐╤Ç╨╡╨┤╨╛╤ü╤é╨░╨▓╨╗╤Å╤é╤î ╨▓╨╡╨▒-API ╤ü╤é╤Ç╨░╨╜╨╕╤å╨░╨╝';
 
   @override
-  String get settings_proxySectionTitle => 'Прокси';
+  String get settings_proxySectionTitle => '╨ƒ╤Ç╨╛╨║╤ü╨╕';
 
   @override
   String get settings_indexProxyLogsSubtitle =>
-      'Чтение журнала прокси и настройка объёма записи';
+      '╨º╤é╨╡╨╜╨╕╨╡ ╨╢╤â╤Ç╨╜╨░╨╗╨░ ╨┐╤Ç╨╛╨║╤ü╨╕ ╨╕ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨░ ╨╛╨▒╤è╤æ╨╝╨░ ╨╖╨░╨┐╨╕╤ü╨╕';
 
   @override
-  String get settings_saveAndUse => 'Сохранить и использовать';
+  String get settings_saveAndUse =>
+      '╨í╨╛╤à╤Ç╨░╨╜╨╕╤é╤î ╨╕ ╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╤î';
 
   @override
-  String get settings_replace => 'Заменить';
+  String get settings_replace => '╨ù╨░╨╝╨╡╨╜╨╕╤é╤î';
 
   @override
-  String get settings_later => 'Позже';
+  String get settings_later => '╨ƒ╨╛╨╖╨╢╨╡';
 
   @override
-  String get settings_restartNow => 'Перезапустить сейчас';
+  String get settings_restartNow => '╨ƒ╨╡╤Ç╨╡╨╖╨░╨┐╤â╤ü╤é╨╕╤é╤î ╤ü╨╡╨╣╤ç╨░╤ü';
 
   @override
-  String get settings_sync => 'Синхронизировать';
+  String get settings_sync => '╨í╨╕╨╜╤à╤Ç╨╛╨╜╨╕╨╖╨╕╤Ç╨╛╨▓╨░╤é╤î';
 
   @override
-  String get settings_chooseSearchProvider => 'Выберите поисковую систему';
+  String get settings_chooseSearchProvider =>
+      '╨Æ╤ï╨▒╨╡╤Ç╨╕╤é╨╡ ╨┐╨╛╨╕╤ü╨║╨╛╨▓╤â╤Ä ╤ü╨╕╤ü╤é╨╡╨╝╤â';
 
   @override
-  String get settings_entriesLabel => 'Записи';
+  String get settings_entriesLabel => '╨ù╨░╨┐╨╕╤ü╨╕';
 
   @override
-  String get settings_lastSyncLabel => 'Последняя синхронизация';
+  String get settings_lastSyncLabel =>
+      '╨ƒ╨╛╤ü╨╗╨╡╨┤╨╜╤Å╤Å ╤ü╨╕╨╜╤à╤Ç╨╛╨╜╨╕╨╖╨░╤å╨╕╤Å';
 
   @override
-  String get settings_notAvailable => 'Н/Д';
+  String get settings_notAvailable => '╨¥/╨ö';
 
   @override
-  String get settings_protectionLevelTitle => 'Уровень защиты';
+  String get settings_protectionLevelTitle => '╨ú╤Ç╨╛╨▓╨╡╨╜╤î ╨╖╨░╤ë╨╕╤é╤ï';
 
   @override
   String get settings_protectionLevelDescription =>
-      'DNS через HTTPS отправляет запросы к доменным именам по зашифрованному соединению. Это защищает запросы и затрудняет другим определение того, какие сайты вы собираетесь посетить.';
+      '╨ƒ╨╡╤Ç╨╡╨┤ ╨╛╤é╨║╤Ç╤ï╤é╨╕╨╡╨╝ ╤ü╨░╨╣╤é╨░ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç ╨╖╨░╨┐╤Ç╨░╤ê╨╕╨▓╨░╨╡╤é ╨╡╨│╨╛ ╨░╨┤╤Ç╨╡╤ü. ╨æ╨╡╨╖╨╛╨┐╨░╤ü╨╜╤ï╨╣ DNS ╤ê╨╕╤ä╤Ç╤â╨╡╤é ╤ì╤é╨╛╤é ╨╖╨░╨┐╤Ç╨╛╤ü, ╨┐╨╛╤ì╤é╨╛╨╝╤â ╨▓╨░╤ê╨╡╨╝╤â ╨┐╤Ç╨╛╨▓╨░╨╣╨┤╨╡╤Ç╤â ╨╕ ╨┤╤Ç╤â╨│╨╕╨╝ ╤ü╨╗╨╛╨╢╨╜╨╡╨╡ ╤â╨▓╨╕╨┤╨╡╤é╤î, ╨║╨░╨║╨╕╨╡ ╤ü╨░╨╣╤é╤ï ╨▓╤ï ╨┐╨╛╤ü╨╡╤ë╨░╨╡╤é╨╡.';
 
   @override
-  String get settings_defaultProtectionTitle => 'Стандартная защита';
+  String get settings_defaultProtectionTitle =>
+      '╨í╤é╨░╨╜╨┤╨░╤Ç╤é╨╜╨░╤Å ╨╖╨░╤ë╨╕╤é╨░';
 
   @override
   String get settings_defaultProtectionSubtitle =>
-      'DoH используется, только если стандартный DNS не работает';
+      '╨æ╨╡╨╖╨╛╨┐╨░╤ü╨╜╤ï╨╣ DNS ╨╕╤ü╨┐╨╛╨╗╤î╨╖╤â╨╡╤é╤ü╤Å, ╤é╨╛╨╗╤î╨║╨╛ ╨╡╤ü╨╗╨╕ DNS ╨▓╨░╤ê╨╡╨╣ ╤ü╨╡╤é╨╕ ╨╜╨╡ ╤Ç╨░╨▒╨╛╤é╨░╨╡╤é';
 
   @override
-  String get settings_increasedProtectionTitle => 'Повышенная защита';
+  String get settings_increasedProtectionTitle =>
+      '╨ƒ╨╛╨▓╤ï╤ê╨╡╨╜╨╜╨░╤Å ╨╖╨░╤ë╨╕╤é╨░';
 
   @override
   String get settings_increasedProtectionSubtitle =>
-      'Предпочтительно DoH, стандартный DNS как запасной';
+      '╨í╨╜╨░╤ç╨░╨╗╨░ ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╤ï╨╣ DNS, ╨░ ╨┐╤Ç╨╕ ╤ü╨▒╨╛╨╡ ΓÇö DNS ╨▓╨░╤ê╨╡╨╣ ╤ü╨╡╤é╨╕';
 
   @override
-  String get settings_maxProtectionTitle => 'Максимальная защита';
+  String get settings_maxProtectionTitle =>
+      '╨£╨░╨║╤ü╨╕╨╝╨░╨╗╤î╨╜╨░╤Å ╨╖╨░╤ë╨╕╤é╨░';
 
   @override
   String get settings_maxProtectionSubtitle =>
-      'Только DoH, без запасного варианта';
+      '╨Æ╤ü╨╡╨│╨┤╨░ ╨▒╨╡╨╖╨╛╨┐╨░╤ü╨╜╤ï╨╣ DNS. ╨ƒ╤Ç╨╕ ╤ü╨▒╨╛╨╡ ╤ü╨░╨╣╤é╤ï ╨╜╨╡ ╨╖╨░╨│╤Ç╤â╨╢╨░╤Ä╤é╤ü╤Å';
 
   @override
-  String get settings_protectionOffTitle => 'Выключено';
+  String get settings_protectionOffTitle => '╨Æ╤ï╨║╨╗╤Ä╤ç╨╡╨╜╨╛';
 
   @override
   String get settings_protectionOffSubtitle =>
-      'Использовать стандартный DNS-резолвер';
+      '╨ÿ╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╤é╤î DNS ╨▓╨░╤ê╨╡╨╣ ╤ü╨╡╤é╨╕';
 
   @override
-  String get settings_dohProviderTitle => 'Провайдер DoH';
+  String get settings_dohProviderTitle => '╨ƒ╤Ç╨╛╨▓╨░╨╣╨┤╨╡╤Ç';
 
   @override
-  String get settings_yourResolvers => 'Ваши резолверы';
+  String get settings_yourResolvers => '╨Æ╨░╤ê╨╕ ╨┐╤Ç╨╛╨▓╨░╨╣╨┤╨╡╤Ç╤ï';
 
   @override
-  String get settings_addCustomResolver => 'Добавить свой резолвер';
+  String get settings_addCustomResolver =>
+      '╨ö╨╛╨▒╨░╨▓╨╕╤é╤î ╤ü╨▓╨╛╨╣ ╨┐╤Ç╨╛╨▓╨░╨╣╨┤╨╡╤Ç';
 
   @override
-  String get settings_editCustomResolverTitle => 'Изменить свой резолвер';
+  String get settings_editCustomResolverTitle =>
+      '╨ÿ╨╖╨╝╨╡╨╜╨╕╤é╤î ╨┐╤Ç╨╛╨▓╨░╨╣╨┤╨╡╤Ç';
 
   @override
-  String get settings_resolverUrlLabel => 'URL-адрес резолвера';
+  String get settings_resolverUrlLabel => 'URL ╨┐╤Ç╨╛╨▓╨░╨╣╨┤╨╡╤Ç╨░';
 
   @override
   String get settings_alreadyBuiltInProvider =>
-      'Уже есть среди встроенных провайдеров';
+      '╨ú╨╢╨╡ ╨╡╤ü╤é╤î ╤ü╤Ç╨╡╨┤╨╕ ╨▓╤ü╤é╤Ç╨╛╨╡╨╜╨╜╤ï╤à ╨┐╤Ç╨╛╨▓╨░╨╣╨┤╨╡╤Ç╨╛╨▓';
 
   @override
-  String get settings_alreadyAdded => 'Уже добавлен';
+  String get settings_alreadyAdded => '╨ú╨╢╨╡ ╨┤╨╛╨▒╨░╨▓╨╗╨╡╨╜';
 
   @override
-  String get settings_resolverNameLabel => 'Название (необязательно)';
+  String get settings_resolverNameLabel =>
+      '╨¥╨░╨╖╨▓╨░╨╜╨╕╨╡ (╨╜╨╡╨╛╨▒╤Å╨╖╨░╤é╨╡╨╗╤î╨╜╨╛)';
 
   @override
   String get settings_resolverNameHint =>
-      'например, dnsforge (блокировка рекламы)';
+      '╨╜╨░╨┐╤Ç╨╕╨╝╨╡╤Ç, dnsforge (╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨║╨░ ╤Ç╨╡╨║╨╗╨░╨╝╤ï)';
 
   @override
-  String get settings_searchHint => 'Поиск настроек';
+  String get settings_searchHint => '╨ƒ╨╛╨╕╤ü╨║ ╨╜╨░╤ü╤é╤Ç╨╛╨╡╨║';
 
   @override
-  String get settings_noSettingsAvailable => 'Нет доступных настроек.';
+  String get settings_noSettingsAvailable =>
+      '╨¥╨╡╤é ╨┤╨╛╤ü╤é╤â╨┐╨╜╤ï╤à ╨╜╨░╤ü╤é╤Ç╨╛╨╡╨║.';
 
   @override
   String settings_noSettingsMatch(String query) {
-    return 'Нет настроек, соответствующих «$query».';
+    return '╨¥╨╡╤é ╨╜╨░╤ü╤é╤Ç╨╛╨╡╨║, ╤ü╨╛╨╛╤é╨▓╨╡╤é╤ü╤é╨▓╤â╤Ä╤ë╨╕╤à ┬½$query┬╗.';
   }
 
   @override
-  String get settings_stringListEditorEmpty => 'Пока ничего не добавлено.';
+  String get settings_stringListEditorEmpty =>
+      '╨ƒ╨╛╨║╨░ ╨╜╨╕╤ç╨╡╨│╨╛ ╨╜╨╡ ╨┤╨╛╨▒╨░╨▓╨╗╨╡╨╜╨╛.';
 
   @override
-  String get settings_customizeMenu => 'Настроить меню';
+  String get settings_customizeMenu => '╨¥╨░╤ü╤é╤Ç╨╛╨╕╤é╤î ╨╝╨╡╨╜╤Ä';
 
   @override
-  String get settings_customizeMenuKeywords => 'разделы, строки, порядок';
+  String get settings_customizeMenuKeywords =>
+      '╤Ç╨░╨╖╨┤╨╡╨╗╤ï, ╤ü╤é╤Ç╨╛╨║╨╕, ╨┐╨╛╤Ç╤Å╨┤╨╛╨║';
 
   @override
   String get settings_customizeMenuSubtitle =>
-      'Выберите разделы и строки меню с тремя точками и их порядок';
+      '╨Æ╤ï╨▒╨╡╤Ç╨╕╤é╨╡ ╤Ç╨░╨╖╨┤╨╡╨╗╤ï ╨╕ ╤ü╤é╤Ç╨╛╨║╨╕ ╨╝╨╡╨╜╤Ä ╤ü ╤é╤Ç╨╡╨╝╤Å ╤é╨╛╤ç╨║╨░╨╝╨╕ ╨╕ ╨╕╤à ╨┐╨╛╤Ç╤Å╨┤╨╛╨║';
 
   @override
-  String get settings_tabBarPositionTitle => 'Положение панели вкладок';
+  String get settings_tabBarPositionTitle =>
+      '╨ƒ╨╛╨╗╨╛╨╢╨╡╨╜╨╕╨╡ ╨┐╨░╨╜╨╡╨╗╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
-  String get settings_tabBarPositionKeywords => 'вверху, внизу, сбоку';
+  String get settings_tabBarPositionKeywords =>
+      '╨▓╨▓╨╡╤Ç╤à╤â, ╨▓╨╜╨╕╨╖╤â, ╤ü╨▒╨╛╨║╤â';
 
   @override
   String settings_currentlyResolvesTo(String text, String value) {
-    return '$text (сейчас: $value)';
+    return '$text (╤ü╨╡╨╣╤ç╨░╤ü: $value)';
   }
 
   @override
-  String get settings_tabBarPositionAutoLabel => 'Авто';
+  String get settings_tabBarPositionAutoLabel => '╨É╨▓╤é╨╛';
 
   @override
-  String get settings_tabBarPositionTopLabel => 'Вверху';
+  String get settings_tabBarPositionTopLabel => '╨Æ╨▓╨╡╤Ç╤à╤â';
 
   @override
-  String get settings_tabBarPositionBottomLabel => 'Внизу';
+  String get settings_tabBarPositionBottomLabel => '╨Æ╨╜╨╕╨╖╤â';
 
   @override
-  String get settings_tabBarPositionLeftLabel => 'Слева';
+  String get settings_tabBarPositionLeftLabel => '╨í╨╗╨╡╨▓╨░';
 
   @override
-  String get settings_tabBarPositionRightLabel => 'Справа';
+  String get settings_tabBarPositionRightLabel => '╨í╨┐╤Ç╨░╨▓╨░';
 
   @override
   String get settings_tabBarPositionAutoDescription =>
-      'Боковая панель на больших экранах, нижняя панель на телефонах';
+      '╨æ╨╛╨║╨╛╨▓╨░╤Å ╨┐╨░╨╜╨╡╨╗╤î ╨╜╨░ ╨▒╨╛╨╗╤î╤ê╨╕╤à ╤ì╨║╤Ç╨░╨╜╨░╤à, ╨╜╨╕╨╢╨╜╤Å╤Å ╨┐╨░╨╜╨╡╨╗╤î ╨╜╨░ ╤é╨╡╨╗╨╡╤ä╨╛╨╜╨░╤à';
 
   @override
   String get settings_tabBarPositionTopDescription =>
-      'Постоянная панель вкладок без автоскрытия';
+      '╨ƒ╨╛╤ü╤é╨╛╤Å╨╜╨╜╨░╤Å ╨┐╨░╨╜╨╡╨╗╤î ╨▓╨║╨╗╨░╨┤╨╛╨║ ╨▒╨╡╨╖ ╨░╨▓╤é╨╛╤ü╨║╤Ç╤ï╤é╨╕╤Å';
 
   @override
   String get settings_tabBarPositionBottomDescription =>
-      'Панель вкладок с поддержкой автоскрытия';
+      '╨ƒ╨░╨╜╨╡╨╗╤î ╨▓╨║╨╗╨░╨┤╨╛╨║ ╤ü ╨┐╨╛╨┤╨┤╨╡╤Ç╨╢╨║╨╛╨╣ ╨░╨▓╤é╨╛╤ü╨║╤Ç╤ï╤é╨╕╤Å';
 
   @override
   String get settings_tabBarPositionLeftDescription =>
-      'Вертикальная боковая панель, скрывается свайпом';
+      '╨Æ╨╡╤Ç╤é╨╕╨║╨░╨╗╤î╨╜╨░╤Å ╨▒╨╛╨║╨╛╨▓╨░╤Å ╨┐╨░╨╜╨╡╨╗╤î, ╤ü╨║╤Ç╤ï╨▓╨░╨╡╤é╤ü╤Å ╤ü╨▓╨░╨╣╨┐╨╛╨╝';
 
   @override
   String get settings_tabBarPositionRightDescription =>
-      'Вертикальная боковая панель, скрывается свайпом';
+      '╨Æ╨╡╤Ç╤é╨╕╨║╨░╨╗╤î╨╜╨░╤Å ╨▒╨╛╨║╨╛╨▓╨░╤Å ╨┐╨░╨╜╨╡╨╗╤î, ╤ü╨║╤Ç╤ï╨▓╨░╨╡╤é╤ü╤Å ╤ü╨▓╨░╨╣╨┐╨╛╨╝';
 
   @override
-  String get settings_tabBarStyleTitle => 'Стиль панели вкладок';
+  String get settings_tabBarStyleTitle =>
+      '╨í╤é╨╕╨╗╤î ╨┐╨░╨╜╨╡╨╗╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
-  String get settings_tabBarStyleKeywords => 'макет, компактный';
+  String get settings_tabBarStyleKeywords => '╨╝╨░╨║╨╡╤é, ╨║╨╛╨╝╨┐╨░╨║╤é╨╜╤ï╨╣';
 
   @override
-  String get settings_withTitleOption => 'С заголовком';
+  String get settings_withTitleOption => '╨í ╨╖╨░╨│╨╛╨╗╨╛╨▓╨║╨╛╨╝';
 
   @override
   String get settings_withTitleDescription =>
-      'Показывает заголовок страницы и путь URL-адреса';
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╨╡╤é ╨╖╨░╨│╨╛╨╗╨╛╨▓╨╛╨║ ╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï ╨╕ ╨░╨┤╤Ç╨╡╤ü';
 
   @override
-  String get settings_compactOption => 'Компактный';
+  String get settings_compactOption => '╨Ü╨╛╨╝╨┐╨░╨║╤é╨╜╤ï╨╣';
 
   @override
   String get settings_compactDescription =>
-      'URL-адрес по центру без заголовка страницы';
+      '╨ó╨╛╨╗╤î╨║╨╛ ╨░╨┤╤Ç╨╡╤ü, ╨┐╨╛ ╤å╨╡╨╜╤é╤Ç╤â';
 
   @override
   String get settings_showContextualToolbarTitle =>
-      'Показывать контекстную панель';
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨║╨╛╨╜╤é╨╡╨║╤ü╤é╨╜╤â╤Ä ╨┐╨░╨╜╨╡╨╗╤î';
 
   @override
   String get settings_showContextualToolbarKeywords =>
-      'нижняя панель инструментов';
+      '╨╜╨╕╨╢╨╜╤Å╤Å ╨┐╨░╨╜╨╡╨╗╤î ╨╕╨╜╤ü╤é╤Ç╤â╨╝╨╡╨╜╤é╨╛╨▓';
 
   @override
   String get settings_showContextualToolbarSubtitle =>
-      'Показывать дополнительную нижнюю панель для навигации и действий';
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨┤╨╛╨┐╨╛╨╗╨╜╨╕╤é╨╡╨╗╤î╨╜╤â╤Ä ╨╜╨╕╨╢╨╜╤Ä╤Ä ╨┐╨░╨╜╨╡╨╗╤î ╨┤╨╗╤Å ╨╜╨░╨▓╨╕╨│╨░╤å╨╕╨╕ ╨╕ ╨┤╨╡╨╣╤ü╤é╨▓╨╕╨╣';
 
   @override
-  String get settings_customizeToolbarButtons => 'Настроить кнопки панели';
+  String get settings_customizeToolbarButtons =>
+      '╨¥╨░╤ü╤é╤Ç╨╛╨╕╤é╤î ╨║╨╜╨╛╨┐╨║╨╕ ╨┐╨░╨╜╨╡╨╗╨╕';
 
   @override
-  String get settings_customizeToolbarButtonsKeywords => 'кнопки';
+  String get settings_customizeToolbarButtonsKeywords => '╨║╨╜╨╛╨┐╨║╨╕';
 
   @override
   String get settings_customizeSwitcherButtons =>
-      'Настроить кнопки переключателя';
+      '╨¥╨░╤ü╤é╤Ç╨╛╨╕╤é╤î ╨║╨╜╨╛╨┐╨║╨╕ ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╤Å';
 
   @override
   String get settings_customizeSwitcherButtonsKeywords =>
-      'кнопки, новая вкладка, действия, в конце';
+      '╨║╨╜╨╛╨┐╨║╨╕, ╨╜╨╛╨▓╨░╤Å ╨▓╨║╨╗╨░╨┤╨║╨░, ╨┤╨╡╨╣╤ü╤é╨▓╨╕╤Å, ╨▓ ╨║╨╛╨╜╤å╨╡';
 
   @override
   String get settings_customizeSwitcherButtonsSubtitle =>
-      'Кнопки действий, закреплённые в конце панели переключателя (независимо от контекстной панели)';
+      '╨Ü╨╜╨╛╨┐╨║╨╕ ╨┤╨╡╨╣╤ü╤é╨▓╨╕╨╣, ╨╖╨░╨║╤Ç╨╡╨┐╨╗╤æ╨╜╨╜╤ï╨╡ ╨▓ ╨║╨╛╨╜╤å╨╡ ╨┐╨░╨╜╨╡╨╗╨╕ ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╤Å (╨╜╨╡╨╖╨░╨▓╨╕╤ü╨╕╨╝╨╛ ╨╛╤é ╨║╨╛╨╜╤é╨╡╨║╤ü╤é╨╜╨╛╨╣ ╨┐╨░╨╜╨╡╨╗╨╕)';
 
   @override
-  String get settings_tabStackingTitle => 'Группировка вкладок';
+  String get settings_tabStackingTitle =>
+      '╨ô╤Ç╤â╨┐╨┐╨╕╤Ç╨╛╨▓╨║╨░ ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
   String get settings_tabStackingKeywords =>
-      'недавние вкладки, недавно использованные, вкладки контейнера, аккордеон, два уровня, строки, группировка, группы вкладок, стопки вкладок, дерево вкладок, отключено';
+      '╨╜╨╡╨┤╨░╨▓╨╜╨╕╨╡ ╨▓╨║╨╗╨░╨┤╨║╨╕, ╨╜╨╡╨┤╨░╨▓╨╜╨╛ ╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╨╜╨╜╤ï╨╡, ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╨░, ╨░╨║╨║╨╛╤Ç╨┤╨╡╨╛╨╜, ╨┤╨▓╨░ ╤â╤Ç╨╛╨▓╨╜╤Å, ╤ü╤é╤Ç╨╛╨║╨╕, ╨│╤Ç╤â╨┐╨┐╨╕╤Ç╨╛╨▓╨║╨░, ╨│╤Ç╤â╨┐╨┐╤ï ╨▓╨║╨╗╨░╨┤╨╛╨║, ╤ü╤é╨╛╨┐╨║╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║, ╨┤╨╡╤Ç╨╡╨▓╨╛ ╨▓╨║╨╗╨░╨┤╨╛╨║, ╨╛╤é╨║╨╗╤Ä╤ç╨╡╨╜╨╛';
 
   @override
   String get settings_tabStackingSubtitle =>
-      'Как быстрый переключатель вкладок располагает вкладки';
+      '╨Ü╨░╨║ ╨▒╤ï╤ü╤é╤Ç╤ï╨╣ ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╤î ╨▓╨║╨╗╨░╨┤╨╛╨║ ╤Ç╨░╤ü╨┐╨╛╨╗╨░╨│╨░╨╡╤é ╨▓╨║╨╗╨░╨┤╨║╨╕';
 
   @override
-  String get settings_recentlyUsedTabsOption => 'Недавние вкладки';
+  String get settings_recentlyUsedTabsOption =>
+      '╨¥╨╡╨┤╨░╨▓╨╜╨╕╨╡ ╨▓╨║╨╗╨░╨┤╨║╨╕';
 
   @override
   String get settings_recentlyUsedTabsDescription =>
-      'Недавно использованные вкладки из всех контейнеров';
+      '╨¥╨╡╨┤╨░╨▓╨╜╨╛ ╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╨╜╨╜╤ï╨╡ ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨╕╨╖ ╨▓╤ü╨╡╤à ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╨╛╨▓';
 
   @override
-  String get settings_containerTabsOption => 'Вкладки контейнера';
+  String get settings_containerTabsOption =>
+      '╨Æ╨║╨╗╨░╨┤╨║╨╕ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╨░';
 
   @override
   String get settings_containerTabsDescription =>
-      'Упорядоченные вкладки выбранного контейнера';
+      '╨ú╨┐╨╛╤Ç╤Å╨┤╨╛╤ç╨╡╨╜╨╜╤ï╨╡ ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨▓╤ï╨▒╤Ç╨░╨╜╨╜╨╛╨│╨╛ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╨░';
 
   @override
-  String get settings_accordionOption => 'Аккордеон';
+  String get settings_accordionOption => '╨É╨║╨║╨╛╤Ç╨┤╨╡╨╛╨╜';
 
   @override
   String get settings_accordionDescription =>
-      'Все контейнеры в виде чипов, вкладки выбранного контейнера раскрыты рядом';
+      '╨Æ╤ü╨╡ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╤ï ╨▓ ╨▓╨╕╨┤╨╡ ╤ç╨╕╨┐╨╛╨▓, ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨▓╤ï╨▒╤Ç╨░╨╜╨╜╨╛╨│╨╛ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╨░ ╤Ç╨░╤ü╨║╤Ç╤ï╤é╤ï ╤Ç╤Å╨┤╨╛╨╝';
 
   @override
-  String get settings_twoRowsOption => 'Две строки';
+  String get settings_twoRowsOption => '╨ö╨▓╨╡ ╤ü╤é╤Ç╨╛╨║╨╕';
 
   @override
   String get settings_twoRowsDescription =>
-      'Вкладки выбранного контейнера сверху, недавние вкладки снизу';
+      '╨Æ╨║╨╗╨░╨┤╨║╨╕ ╨▓╤ï╨▒╤Ç╨░╨╜╨╜╨╛╨│╨╛ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╨░ ╤ü╨▓╨╡╤Ç╤à╤â, ╨╜╨╡╨┤╨░╨▓╨╜╨╕╨╡ ╨▓╨║╨╗╨░╨┤╨║╨╕ ╤ü╨╜╨╕╨╖╤â';
 
   @override
-  String get settings_tabGroupsOption => 'Группы вкладок';
+  String get settings_tabGroupsOption => '╨ô╤Ç╤â╨┐╨┐╤ï ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
   String get settings_tabGroupsDescription =>
-      'Один чип на вкладку вместе с открытыми из неё вкладками, над ними — вкладки текущей группы';
+      '╨₧╨┤╨╕╨╜ ╤ç╨╕╨┐ ╨╜╨░ ╨▓╨║╨╗╨░╨┤╨║╤â ╨▓╨╝╨╡╤ü╤é╨╡ ╤ü ╨╛╤é╨║╤Ç╤ï╤é╤ï╨╝╨╕ ╨╕╨╖ ╨╜╨╡╤æ ╨▓╨║╨╗╨░╨┤╨║╨░╨╝╨╕, ╨╜╨░╨┤ ╨╜╨╕╨╝╨╕ ΓÇö ╨▓╨║╨╗╨░╨┤╨║╨╕ ╤é╨╡╨║╤â╤ë╨╡╨╣ ╨│╤Ç╤â╨┐╨┐╤ï';
 
   @override
   String get settings_tabStackingFallbackAccordion =>
-      'Нужно больше места, чем есть в этом окне или на боковой панели, поэтому пока показывается «Аккордеон»';
+      '╨¥╤â╨╢╨╜╨╛ ╨▒╨╛╨╗╤î╤ê╨╡ ╨╝╨╡╤ü╤é╨░, ╤ç╨╡╨╝ ╨╡╤ü╤é╤î ╨▓ ╤ì╤é╨╛╨╝ ╨╛╨║╨╜╨╡ ╨╕╨╗╨╕ ╨╜╨░ ╨▒╨╛╨║╨╛╨▓╨╛╨╣ ╨┐╨░╨╜╨╡╨╗╨╕, ╨┐╨╛╤ì╤é╨╛╨╝╤â ╨┐╨╛╨║╨░ ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╨╡╤é╤ü╤Å ┬½╨É╨║╨║╨╛╤Ç╨┤╨╡╨╛╨╜┬╗';
 
   @override
   String get settings_tabStackingFallbackContainerTabs =>
-      'Нужно больше места, чем есть в этом окне или на боковой панели, поэтому пока показываются «Вкладки контейнера»';
+      '╨¥╤â╨╢╨╜╨╛ ╨▒╨╛╨╗╤î╤ê╨╡ ╨╝╨╡╤ü╤é╨░, ╤ç╨╡╨╝ ╨╡╤ü╤é╤î ╨▓ ╤ì╤é╨╛╨╝ ╨╛╨║╨╜╨╡ ╨╕╨╗╨╕ ╨╜╨░ ╨▒╨╛╨║╨╛╨▓╨╛╨╣ ╨┐╨░╨╜╨╡╨╗╨╕, ╨┐╨╛╤ì╤é╨╛╨╝╤â ╨┐╨╛╨║╨░ ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╤Ä╤é╤ü╤Å ┬½╨Æ╨║╨╗╨░╨┤╨║╨╕ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╨░┬╗';
 
   @override
-  String get settings_disabledOption => 'Отключено';
+  String get settings_disabledOption => '╨₧╤é╨║╨╗╤Ä╤ç╨╡╨╜╨╛';
 
   @override
   String get settings_disabledDescription =>
-      'Скрыть быстрый переключатель вкладок';
+      '╨í╨║╤Ç╤ï╤é╤î ╨▒╤ï╤ü╤é╤Ç╤ï╨╣ ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╤î ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
-  String get settings_closeButtonsTitle => 'Кнопки закрытия на чипах вкладок';
+  String get settings_closeButtonsTitle =>
+      '╨Ü╨╜╨╛╨┐╨║╨╕ ╨╖╨░╨║╤Ç╤ï╤é╨╕╤Å ╨╜╨░ ╤ç╨╕╨┐╨░╤à ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
   String get settings_closeButtonsKeywords =>
-      'закрыть, кнопка x, крестик, активная вкладка';
+      '╨╖╨░╨║╤Ç╤ï╤é╤î, ╨║╨╜╨╛╨┐╨║╨░ x, ╨║╤Ç╨╡╤ü╤é╨╕╨║, ╨░╨║╤é╨╕╨▓╨╜╨░╤Å ╨▓╨║╨╗╨░╨┤╨║╨░';
 
   @override
   String get settings_closeButtonsSubtitle =>
-      'На каких чипах переключателя показывать кнопку закрытия';
+      '╨¥╨░ ╨║╨░╨║╨╕╤à ╤ç╨╕╨┐╨░╤à ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╤Å ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨║╨╜╨╛╨┐╨║╤â ╨╖╨░╨║╤Ç╤ï╤é╨╕╤Å';
 
   @override
-  String get settings_activeTabOnlyOption => 'Только активная';
+  String get settings_activeTabOnlyOption => '╨ó╨╛╨╗╤î╨║╨╛ ╨░╨║╤é╨╕╨▓╨╜╨░╤Å';
 
   @override
   String get settings_activeTabOnlyDescription =>
-      'Только на чипе открытой сейчас вкладки';
+      '╨ó╨╛╨╗╤î╨║╨╛ ╨╜╨░ ╤ç╨╕╨┐╨╡ ╨╛╤é╨║╤Ç╤ï╤é╨╛╨╣ ╤ü╨╡╨╣╤ç╨░╤ü ╨▓╨║╨╗╨░╨┤╨║╨╕';
 
   @override
-  String get settings_allTabsOption => 'Все вкладки';
+  String get settings_allTabsOption => '╨Æ╤ü╨╡ ╨▓╨║╨╗╨░╨┤╨║╨╕';
 
   @override
-  String get settings_allTabsDescription => 'На всех чипах панели';
+  String get settings_allTabsDescription =>
+      '╨¥╨░ ╨▓╤ü╨╡╤à ╤ç╨╕╨┐╨░╤à ╨┐╨░╨╜╨╡╨╗╨╕';
 
   @override
-  String get settings_neverOption => 'Никогда';
+  String get settings_neverOption => '╨¥╨╕╨║╨╛╨│╨┤╨░';
 
   @override
   String get settings_neverCloseDescription =>
-      'Без кнопок закрытия; закрывайте вкладки через меню долгого нажатия или свайпом по панели';
+      '╨æ╨╡╨╖ ╨║╨╜╨╛╨┐╨╛╨║ ╨╖╨░╨║╤Ç╤ï╤é╨╕╤Å; ╨╖╨░╨║╤Ç╤ï╨▓╨░╨╣╤é╨╡ ╨▓╨║╨╗╨░╨┤╨║╨╕ ╤ç╨╡╤Ç╨╡╨╖ ╨╝╨╡╨╜╤Ä ╨┤╨╛╨╗╨│╨╛╨│╨╛ ╨╜╨░╨╢╨░╤é╨╕╤Å ╨╕╨╗╨╕ ╤ü╨▓╨░╨╣╨┐╨╛╨╝ ╨┐╨╛ ╨┐╨░╨╜╨╡╨╗╨╕';
 
   @override
   String get settings_titleWidthTitle =>
-      'Ширина заголовка в быстром переключателе';
+      '╨¿╨╕╤Ç╨╕╨╜╨░ ╨╖╨░╨│╨╛╨╗╨╛╨▓╨║╨░ ╨▓ ╨▒╤ï╤ü╤é╤Ç╨╛╨╝ ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╨╡';
 
   @override
-  String get settings_titleWidthKeywords => 'ширина, заголовок, чип, длина';
+  String get settings_titleWidthKeywords =>
+      '╤ê╨╕╤Ç╨╕╨╜╨░, ╨╖╨░╨│╨╛╨╗╨╛╨▓╨╛╨║, ╤ç╨╕╨┐, ╨┤╨╗╨╕╨╜╨░';
 
   @override
   String get settings_titleWidthSubtitle =>
-      'Максимальная ширина заголовков вкладок на чипах переключателя';
+      '╨£╨░╨║╤ü╨╕╨╝╨░╨╗╤î╨╜╨░╤Å ╤ê╨╕╤Ç╨╕╨╜╨░ ╨╖╨░╨│╨╛╨╗╨╛╨▓╨║╨╛╨▓ ╨▓╨║╨╗╨░╨┤╨╛╨║ ╨╜╨░ ╤ç╨╕╨┐╨░╤à ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╤Å';
 
   @override
-  String get settings_historyFallbackTitle => 'История в быстром переключателе';
+  String get settings_historyFallbackTitle =>
+      '╨ÿ╤ü╤é╨╛╤Ç╨╕╤Å ╨▓ ╨▒╤ï╤ü╤é╤Ç╨╛╨╝ ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╨╡';
 
   @override
-  String get settings_historyFallbackKeywords => 'подсказки, история';
+  String get settings_historyFallbackKeywords =>
+      '╨┐╨╛╨┤╤ü╨║╨░╨╖╨║╨╕, ╨╕╤ü╤é╨╛╤Ç╨╕╤Å';
 
   @override
   String get settings_historyFallbackSubtitle =>
-      'Показывать подсказки из истории, когда нет чипов вкладок';
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨┐╨╛╨┤╤ü╨║╨░╨╖╨║╨╕ ╨╕╨╖ ╨╕╤ü╤é╨╛╤Ç╨╕╨╕, ╨║╨╛╨│╨┤╨░ ╨╜╨╡╤é ╤ç╨╕╨┐╨╛╨▓ ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
   String get settings_containersByRecentUseTitle =>
-      'Сначала недавно использованные контейнеры';
+      '╨í╨╜╨░╤ç╨░╨╗╨░ ╨╜╨╡╨┤╨░╨▓╨╜╨╛ ╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╨╜╨╜╤ï╨╡ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╤ï';
 
   @override
   String get settings_containersByRecentUseKeywords =>
-      'порядок контейнеров, сортировка контейнеров, недавние контейнеры, последние использованные, недавно использованные, аккордеон, container order, recently used';
+      '╨┐╨╛╤Ç╤Å╨┤╨╛╨║ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╨╛╨▓, ╤ü╨╛╤Ç╤é╨╕╤Ç╨╛╨▓╨║╨░ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╨╛╨▓, ╨╜╨╡╨┤╨░╨▓╨╜╨╕╨╡ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╤ï, ╨┐╨╛╤ü╨╗╨╡╨┤╨╜╨╕╨╡ ╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╨╜╨╜╤ï╨╡, ╨╜╨╡╨┤╨░╨▓╨╜╨╛ ╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╨╜╨╜╤ï╨╡, ╨░╨║╨║╨╛╤Ç╨┤╨╡╨╛╨╜, container order, recently used';
 
   @override
   String get settings_containersByRecentUseSubtitle =>
-      'Только для «Аккордеона»: последний использованный контейнер перемещается в начало. Закреплённые контейнеры остаются перед ним';
+      '╨ó╨╛╨╗╤î╨║╨╛ ╨┤╨╗╤Å ┬½╨É╨║╨║╨╛╤Ç╨┤╨╡╨╛╨╜╨░┬╗: ╨┐╨╛╤ü╨╗╨╡╨┤╨╜╨╕╨╣ ╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╨╜╨╜╤ï╨╣ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç ╨┐╨╡╤Ç╨╡╨╝╨╡╤ë╨░╨╡╤é╤ü╤Å ╨▓ ╨╜╨░╤ç╨░╨╗╨╛. ╨ù╨░╨║╤Ç╨╡╨┐╨╗╤æ╨╜╨╜╤ï╨╡ ╨║╨╛╨╜╤é╨╡╨╣╨╜╨╡╤Ç╤ï ╨╛╤ü╤é╨░╤Ä╤é╤ü╤Å ╨┐╨╡╤Ç╨╡╨┤ ╨╜╨╕╨╝';
 
   @override
-  String get settings_showTitlesTitle => 'Заголовки в быстром переключателе';
+  String get settings_showTitlesTitle =>
+      '╨ù╨░╨│╨╛╨╗╨╛╨▓╨║╨╕ ╨▓ ╨▒╤ï╤ü╤é╤Ç╨╛╨╝ ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╨╡';
 
   @override
-  String get settings_showTitlesKeywords => 'заголовки страниц';
+  String get settings_showTitlesKeywords => '╨╖╨░╨│╨╛╨╗╨╛╨▓╨║╨╕ ╤ü╤é╤Ç╨░╨╜╨╕╤å';
 
   @override
   String get settings_showTitlesSubtitle =>
-      'Показывать заголовки вкладок рядом со значками в быстром переключателе';
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨╖╨░╨│╨╛╨╗╨╛╨▓╨║╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║ ╤Ç╤Å╨┤╨╛╨╝ ╤ü╨╛ ╨╖╨╜╨░╤ç╨║╨░╨╝╨╕ ╨▓ ╨▒╤ï╤ü╤é╤Ç╨╛╨╝ ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╨╡';
 
   @override
   String get settings_hierarchyDepthTitle =>
-      'Глубина иерархии в быстром переключателе';
+      '╨ô╨╗╤â╨▒╨╕╨╜╨░ ╨╕╨╡╤Ç╨░╤Ç╤à╨╕╨╕ ╨▓ ╨▒╤ï╤ü╤é╤Ç╨╛╨╝ ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╨╡';
 
   @override
   String get settings_hierarchyDepthKeywords =>
-      'иерархия, вложенность, глубина, дерево, шевроны';
+      '╨╕╨╡╤Ç╨░╤Ç╤à╨╕╤Å, ╨▓╨╗╨╛╨╢╨╡╨╜╨╜╨╛╤ü╤é╤î, ╨│╨╗╤â╨▒╨╕╨╜╨░, ╨┤╨╡╤Ç╨╡╨▓╨╛, ╤ê╨╡╨▓╤Ç╨╛╨╜╤ï';
 
   @override
   String get settings_hierarchyDepthSubtitle =>
-      'Сколько шевронов вложенности показывать на чипах переключателя, прежде чем свернуть их в счётчик (0 скрывает индикатор)';
+      '╨í╨║╨╛╨╗╤î╨║╨╛ ╤ê╨╡╨▓╤Ç╨╛╨╜╨╛╨▓ ╨▓╨╗╨╛╨╢╨╡╨╜╨╜╨╛╤ü╤é╨╕ ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨╜╨░ ╤ç╨╕╨┐╨░╤à ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╤Å, ╨┐╤Ç╨╡╨╢╨┤╨╡ ╤ç╨╡╨╝ ╤ü╨▓╨╡╤Ç╨╜╤â╤é╤î ╨╕╤à ╨▓ ╤ü╤ç╤æ╤é╤ç╨╕╨║ (0 ╤ü╨║╤Ç╤ï╨▓╨░╨╡╤é ╨╕╨╜╨┤╨╕╨║╨░╤é╨╛╤Ç)';
 
   @override
   String settings_hierarchyGlyphsLabel(int glyphs) {
     String _temp0 = intl.Intl.pluralLogic(
       glyphs,
       locale: localeName,
-      other: '$glyphs уровня',
-      many: '$glyphs уровней',
-      few: '$glyphs уровня',
-      one: '$glyphs уровень',
-      zero: 'Выкл.',
+      other: '$glyphs ╤â╤Ç╨╛╨▓╨╜╤Å',
+      many: '$glyphs ╤â╤Ç╨╛╨▓╨╜╨╡╨╣',
+      few: '$glyphs ╤â╤Ç╨╛╨▓╨╜╤Å',
+      one: '$glyphs ╤â╤Ç╨╛╨▓╨╡╨╜╤î',
+      zero: '╨Æ╤ï╨║╨╗.',
     );
     return '$_temp0';
   }
 
   @override
-  String get settings_autoHideTabBarTitle => 'Автоскрытие панели вкладок';
+  String get settings_autoHideTabBarTitle =>
+      '╨É╨▓╤é╨╛╤ü╨║╤Ç╤ï╤é╨╕╨╡ ╨┐╨░╨╜╨╡╨╗╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
-  String get settings_autoHideTabBarKeywords => 'прокрутка';
+  String get settings_autoHideTabBarKeywords => '╨┐╤Ç╨╛╨║╤Ç╤â╤é╨║╨░';
 
   @override
   String get settings_autoHideTabBarSubtitle =>
-      'Скрывать панель вкладок при прокрутке';
+      '╨í╨║╤Ç╤ï╨▓╨░╤é╤î ╨┐╨░╨╜╨╡╨╗╤î ╨▓╨║╨╗╨░╨┤╨╛╨║ ╨┐╤Ç╨╕ ╨┐╤Ç╨╛╨║╤Ç╤â╤é╨║╨╡';
 
   @override
   String get settings_autoHideTabBarDistanceTitle =>
-      'Расстояние для автоскрытия';
+      '╨á╨░╤ü╤ü╤é╨╛╤Å╨╜╨╕╨╡ ╨┤╨╗╤Å ╨░╨▓╤é╨╛╤ü╨║╤Ç╤ï╤é╨╕╤Å';
 
   @override
   String get settings_autoHideTabBarDistanceKeywords =>
-      'чувствительность, порог, прокрутка, свайп';
+      '╤ç╤â╨▓╤ü╤é╨▓╨╕╤é╨╡╨╗╤î╨╜╨╛╤ü╤é╤î, ╨┐╨╛╤Ç╨╛╨│, ╨┐╤Ç╨╛╨║╤Ç╤â╤é╨║╨░, ╤ü╨▓╨░╨╣╨┐';
 
   @override
   String get settings_autoHideTabBarDistanceSubtitle =>
-      'Насколько далеко нужно прокрутить, чтобы панель вкладок скрылась или появилась снова, относительно значения по умолчанию';
+      '╨¥╨░╤ü╨║╨╛╨╗╤î╨║╨╛ ╨┤╨░╨╗╨╡╨║╨╛ ╨╜╤â╨╢╨╜╨╛ ╨┐╤Ç╨╛╨║╤Ç╤â╤é╨╕╤é╤î, ╤ç╤é╨╛╨▒╤ï ╨┐╨░╨╜╨╡╨╗╤î ╨▓╨║╨╗╨░╨┤╨╛╨║ ╤ü╨║╤Ç╤ï╨╗╨░╤ü╤î ╨╕╨╗╨╕ ╨┐╨╛╤Å╨▓╨╕╨╗╨░╤ü╤î ╤ü╨╜╨╛╨▓╨░, ╨╛╤é╨╜╨╛╤ü╨╕╤é╨╡╨╗╤î╨╜╨╛ ╨╖╨╜╨░╤ç╨╡╨╜╨╕╤Å ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä';
 
   @override
-  String get settings_autoHideSidePanelTitle => 'Автоскрытие боковой панели';
+  String get settings_autoHideSidePanelTitle =>
+      '╨É╨▓╤é╨╛╤ü╨║╤Ç╤ï╤é╨╕╨╡ ╨▒╨╛╨║╨╛╨▓╨╛╨╣ ╨┐╨░╨╜╨╡╨╗╨╕';
 
   @override
   String get settings_autoHideSidePanelKeywords =>
-      'мышь, курсор, наведение, боковая панель';
+      '╨╝╤ï╤ê╤î, ╨║╤â╤Ç╤ü╨╛╤Ç, ╨╜╨░╨▓╨╡╨┤╨╡╨╜╨╕╨╡, ╨▒╨╛╨║╨╛╨▓╨░╤Å ╨┐╨░╨╜╨╡╨╗╤î';
 
   @override
   String get settings_autoHideSidePanelSubtitle =>
-      'Убирать левую или правую панель вкладок и выдвигать её, когда мышь достигает этого края. Работает только при использовании мыши или тачпада; касание экрана возвращает панель рядом со страницей.';
+      '╨ú╨▒╨╕╤Ç╨░╤é╤î ╨╗╨╡╨▓╤â╤Ä ╨╕╨╗╨╕ ╨┐╤Ç╨░╨▓╤â╤Ä ╨┐╨░╨╜╨╡╨╗╤î ╨▓╨║╨╗╨░╨┤╨╛╨║ ╨╕ ╨▓╤ï╨┤╨▓╨╕╨│╨░╤é╤î ╨╡╤æ, ╨║╨╛╨│╨┤╨░ ╨╝╤ï╤ê╤î ╨┤╨╛╤ü╤é╨╕╨│╨░╨╡╤é ╤ì╤é╨╛╨│╨╛ ╨║╤Ç╨░╤Å. ╨á╨░╨▒╨╛╤é╨░╨╡╤é ╤é╨╛╨╗╤î╨║╨╛ ╨┐╤Ç╨╕ ╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╨╜╨╕╨╕ ╨╝╤ï╤ê╨╕ ╨╕╨╗╨╕ ╤é╨░╤ç╨┐╨░╨┤╨░; ╨║╨░╤ü╨░╨╜╨╕╨╡ ╤ì╨║╤Ç╨░╨╜╨░ ╨▓╨╛╨╖╨▓╤Ç╨░╤ë╨░╨╡╤é ╨┐╨░╨╜╨╡╨╗╤î ╤Ç╤Å╨┤╨╛╨╝ ╤ü╨╛ ╤ü╤é╤Ç╨░╨╜╨╕╤å╨╡╨╣.';
 
   @override
   String get settings_bottomSheetTabViewTitle =>
-      'Обзор вкладок в нижней панели';
+      '╨₧╨▒╨╖╨╛╤Ç ╨▓╨║╨╗╨░╨┤╨╛╨║ ╨▓ ╨╜╨╕╨╢╨╜╨╡╨╣ ╨┐╨░╨╜╨╡╨╗╨╕';
 
   @override
-  String get settings_bottomSheetTabViewKeywords => 'нижняя панель';
+  String get settings_bottomSheetTabViewKeywords => '╨╜╨╕╨╢╨╜╤Å╤Å ╨┐╨░╨╜╨╡╨╗╤î';
 
   @override
   String get settings_bottomSheetTabViewSubtitle =>
-      'Показывать вкладки в нижней панели, а не на весь экран';
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨▓ ╨╜╨╕╨╢╨╜╨╡╨╣ ╨┐╨░╨╜╨╡╨╗╨╕, ╨░ ╨╜╨╡ ╨╜╨░ ╨▓╨╡╤ü╤î ╤ì╨║╤Ç╨░╨╜';
 
   @override
-  String get settings_longPressUrlCopyTitle => 'Копировать URL долгим нажатием';
+  String get settings_longPressUrlCopyTitle =>
+      '╨Ü╨╛╨┐╨╕╤Ç╨╛╨▓╨░╤é╤î ╨░╨┤╤Ç╨╡╤ü ╨┤╨╛╨╗╨│╨╕╨╝ ╨╜╨░╨╢╨░╤é╨╕╨╡╨╝';
 
   @override
   String get settings_longPressUrlCopyKeywords =>
-      'копировать url, копировать адрес';
+      '╨║╨╛╨┐╨╕╤Ç╨╛╨▓╨░╤é╤î url, ╨║╨╛╨┐╨╕╤Ç╨╛╨▓╨░╤é╤î ╨░╨┤╤Ç╨╡╤ü';
 
   @override
   String get settings_longPressUrlCopySubtitle =>
-      'Копировать URL-адрес страницы в буфер обмена при долгом нажатии на адресную строку';
+      '╨ö╨╛╨╗╨│╨╛╨╡ ╨╜╨░╨╢╨░╤é╨╕╨╡ ╨╜╨░ ╨░╨┤╤Ç╨╡╤ü╨╜╤â╤Ä ╤ü╤é╤Ç╨╛╨║╤â ╨║╨╛╨┐╨╕╤Ç╤â╨╡╤é ╨░╨┤╤Ç╨╡╤ü ╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï';
 
   @override
-  String get settings_showFaviconsTitle => 'Значки сайтов в виде списка';
+  String get settings_showFaviconsTitle =>
+      '╨ù╨╜╨░╤ç╨║╨╕ ╤ü╨░╨╣╤é╨╛╨▓ ╨▓ ╨▓╨╕╨┤╨╡ ╤ü╨┐╨╕╤ü╨║╨░';
 
   @override
-  String get settings_showFaviconsKeywords => 'значки, фавиконы';
+  String get settings_showFaviconsKeywords =>
+      '╨╖╨╜╨░╤ç╨║╨╕, ╨╕╨║╨╛╨╜╨║╨╕, favicons';
 
   @override
   String get settings_showFaviconsSubtitle =>
-      'Показывать значки сайтов вместо миниатюр страниц в списке вкладок';
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨╖╨╜╨░╤ç╨║╨╕ ╤ü╨░╨╣╤é╨╛╨▓ ╨▓╨╝╨╡╤ü╤é╨╛ ╨╝╨╕╨╜╨╕╨░╤é╤Ä╤Ç ╤ü╤é╤Ç╨░╨╜╨╕╤å ╨▓ ╤ü╨┐╨╕╤ü╨║╨╡ ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
-  String get settings_previewPageContent => 'Содержимое страницы';
+  String get settings_previewPageTitle =>
+      '╨ƒ╤Ç╨╡╨┤╨┐╤Ç╨╛╤ü╨╝╨╛╤é╤Ç Cat Browser';
 
   @override
-  String get settings_previewPageTitle => 'Предпросмотр Cat Browser';
+  String get settings_previewTabNews => '╨¥╨╛╨▓╨╛╤ü╤é╨╕';
 
   @override
-  String get settings_previewTabNews => 'Новости';
+  String get settings_previewTabPrivate => '╨ƒ╤Ç╨╕╨▓╨░╤é╨╜╨░╤Å';
 
   @override
-  String get settings_previewTabPrivate => 'Приватная';
+  String get settings_previewTabBank => '╨æ╨░╨╜╨║';
 
   @override
-  String get settings_previewTabBank => 'Банк';
+  String get settings_previewTabSearch => '╨ƒ╨╛╨╕╤ü╨║';
 
   @override
-  String get settings_previewTabSearch => 'Поиск';
-
-  @override
-  String get settings_livePreviewTitle => 'Предпросмотр';
-
-  @override
-  String get settings_livePreviewSubtitle =>
-      'Отражает текущие настройки панели инструментов и макета';
-
-  @override
-  String get settings_deleteAllExceptionsTitle => 'Удалить все исключения?';
+  String get settings_deleteAllExceptionsTitle =>
+      '╨ú╨┤╨░╨╗╨╕╤é╤î ╨▓╤ü╨╡ ╨╕╤ü╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å?';
 
   @override
   String get settings_deleteAllExceptionsContent =>
-      'Защита от отслеживания снова будет включена для всех сайтов-исключений.';
+      '╨ù╨░╤ë╨╕╤é╨░ ╨╛╤é ╨╛╤é╤ü╨╗╨╡╨╢╨╕╨▓╨░╨╜╨╕╤Å ╤ü╨╜╨╛╨▓╨░ ╨▒╤â╨┤╨╡╤é ╨▓╨║╨╗╤Ä╤ç╨╡╨╜╨░ ╨┤╨╗╤Å ╨▓╤ü╨╡╤à ╤ü╨░╨╣╤é╨╛╨▓-╨╕╤ü╨║╨╗╤Ä╤ç╨╡╨╜╨╕╨╣.';
 
   @override
-  String get settings_entryCopied => 'Запись скопирована';
+  String get settings_entryCopied => '╨ù╨░╨┐╨╕╤ü╤î ╤ü╨║╨╛╨┐╨╕╤Ç╨╛╨▓╨░╨╜╨░';
 
   @override
-  String get settings_messageLabel => 'Сообщение:';
+  String get settings_messageLabel => '╨í╨╛╨╛╨▒╤ë╨╡╨╜╨╕╨╡:';
 
   @override
-  String get settings_errorLabel => 'Ошибка:';
+  String get settings_errorLabel => '╨₧╤ê╨╕╨▒╨║╨░:';
 
   @override
-  String get settings_stackTraceLabel => 'Трассировка стека:';
+  String get settings_stackTraceLabel => '╨ó╤Ç╨░╤ü╤ü╨╕╤Ç╨╛╨▓╨║╨░ ╤ü╤é╨╡╨║╨░:';
 
   @override
-  String get settings_importSettingsTitle => 'Импорт настроек';
+  String get settings_importSettingsTitle => '╨ÿ╨╝╨┐╨╛╤Ç╤é ╨╜╨░╤ü╤é╤Ç╨╛╨╡╨║';
 
   @override
   String get settings_importSettingsDescription =>
-      'Выбранные разделы заменят то, что сейчас есть в этом профиле. Всё неотмеченное останется как есть.';
+      '╨Æ╤ï╨▒╤Ç╨░╨╜╨╜╤ï╨╡ ╤Ç╨░╨╖╨┤╨╡╨╗╤ï ╨╖╨░╨╝╨╡╨╜╤Å╤é ╤é╨╛, ╤ç╤é╨╛ ╤ü╨╡╨╣╤ç╨░╤ü ╨╡╤ü╤é╤î ╨▓ ╤ì╤é╨╛╨╝ ╨┐╤Ç╨╛╤ä╨╕╨╗╨╡. ╨Æ╤ü╤æ ╨╜╨╡╨╛╤é╨╝╨╡╤ç╨╡╨╜╨╜╨╛╨╡ ╨╛╤ü╤é╨░╨╜╨╡╤é╤ü╤Å ╨║╨░╨║ ╨╡╤ü╤é╤î.';
 
   @override
   String settings_unreadableSections(int count, String sections) {
@@ -11453,166 +11944,170 @@ class AppLocalizationsRu extends AppLocalizations {
       count,
       locale: localeName,
       other:
-          '$count раздела этого файла ($sections) не могут быть прочитаны этой версией Cat Browser и будут пропущены.',
+          '$count ╤Ç╨░╨╖╨┤╨╡╨╗╨░ ╤ì╤é╨╛╨│╨╛ ╤ä╨░╨╣╨╗╨░ ($sections) ╨╜╨╡ ╨╝╨╛╨│╤â╤é ╨▒╤ï╤é╤î ╨┐╤Ç╨╛╤ç╨╕╤é╨░╨╜╤ï ╤ì╤é╨╛╨╣ ╨▓╨╡╤Ç╤ü╨╕╨╡╨╣ Cat Browser ╨╕ ╨▒╤â╨┤╤â╤é ╨┐╤Ç╨╛╨┐╤â╤ë╨╡╨╜╤ï.',
       many:
-          '$count разделов этого файла ($sections) не могут быть прочитаны этой версией Cat Browser и будут пропущены.',
+          '$count ╤Ç╨░╨╖╨┤╨╡╨╗╨╛╨▓ ╤ì╤é╨╛╨│╨╛ ╤ä╨░╨╣╨╗╨░ ($sections) ╨╜╨╡ ╨╝╨╛╨│╤â╤é ╨▒╤ï╤é╤î ╨┐╤Ç╨╛╤ç╨╕╤é╨░╨╜╤ï ╤ì╤é╨╛╨╣ ╨▓╨╡╤Ç╤ü╨╕╨╡╨╣ Cat Browser ╨╕ ╨▒╤â╨┤╤â╤é ╨┐╤Ç╨╛╨┐╤â╤ë╨╡╨╜╤ï.',
       few:
-          '$count раздела этого файла ($sections) не могут быть прочитаны этой версией Cat Browser и будут пропущены.',
+          '$count ╤Ç╨░╨╖╨┤╨╡╨╗╨░ ╤ì╤é╨╛╨│╨╛ ╤ä╨░╨╣╨╗╨░ ($sections) ╨╜╨╡ ╨╝╨╛╨│╤â╤é ╨▒╤ï╤é╤î ╨┐╤Ç╨╛╤ç╨╕╤é╨░╨╜╤ï ╤ì╤é╨╛╨╣ ╨▓╨╡╤Ç╤ü╨╕╨╡╨╣ Cat Browser ╨╕ ╨▒╤â╨┤╤â╤é ╨┐╤Ç╨╛╨┐╤â╤ë╨╡╨╜╤ï.',
       one:
-          '$count раздел этого файла ($sections) не может быть прочитан этой версией Cat Browser и будет пропущен.',
+          '$count ╤Ç╨░╨╖╨┤╨╡╨╗ ╤ì╤é╨╛╨│╨╛ ╤ä╨░╨╣╨╗╨░ ($sections) ╨╜╨╡ ╨╝╨╛╨╢╨╡╤é ╨▒╤ï╤é╤î ╨┐╤Ç╨╛╤ç╨╕╤é╨░╨╜ ╤ì╤é╨╛╨╣ ╨▓╨╡╤Ç╤ü╨╕╨╡╨╣ Cat Browser ╨╕ ╨▒╤â╨┤╨╡╤é ╨┐╤Ç╨╛╨┐╤â╤ë╨╡╨╜.',
     );
     return '$_temp0';
   }
 
   @override
-  String get settings_exportedLabel => 'Экспортировано';
+  String get settings_exportedLabel => '╨¡╨║╤ü╨┐╨╛╤Ç╤é╨╕╤Ç╨╛╨▓╨░╨╜╨╛';
 
   @override
-  String get settings_appVersionLabel => 'Версия приложения';
+  String get settings_appVersionLabel => '╨Æ╨╡╤Ç╤ü╨╕╤Å ╨┐╤Ç╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤Å';
 
   @override
   String get settings_credentialsNotCarried =>
-      'Экспорт не включает сохранённые учётные данные и изображение обоев. Это устройство сохраняет свои.';
+      '╨¡╨║╤ü╨┐╨╛╤Ç╤é ╨╜╨╡ ╨▓╨║╨╗╤Ä╤ç╨░╨╡╤é ╤ü╨╛╤à╤Ç╨░╨╜╤æ╨╜╨╜╤ï╨╡ ╤â╤ç╤æ╤é╨╜╤ï╨╡ ╨┤╨░╨╜╨╜╤ï╨╡ ╨╕ ╨╕╨╖╨╛╨▒╤Ç╨░╨╢╨╡╨╜╨╕╨╡ ╨╛╨▒╨╛╨╡╨▓. ╨¡╤é╨╛ ╤â╤ü╤é╤Ç╨╛╨╣╤ü╤é╨▓╨╛ ╤ü╨╛╤à╤Ç╨░╨╜╤Å╨╡╤é ╤ü╨▓╨╛╨╕.';
 
   @override
   String get settings_geckoPrefsRestartNote =>
-      'Некоторые параметры движка вступают в силу только после перезапуска браузера.';
+      '╨¥╨╡╨║╨╛╤é╨╛╤Ç╤ï╨╡ ╨┐╨░╤Ç╨░╨╝╨╡╤é╤Ç╤ï ╨┤╨▓╨╕╨╢╨║╨░ ╨▓╤ü╤é╤â╨┐╨░╤Ä╤é ╨▓ ╤ü╨╕╨╗╤â ╤é╨╛╨╗╤î╨║╨╛ ╨┐╨╛╤ü╨╗╨╡ ╨┐╨╡╤Ç╨╡╨╖╨░╨┐╤â╤ü╨║╨░ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░.';
 
   @override
-  String get settings_userAgentChangedTitle => 'User agent изменён';
+  String get settings_userAgentChangedTitle => 'User agent ╨╕╨╖╨╝╨╡╨╜╤æ╨╜';
 
   @override
   String get settings_userAgentChangedContent =>
-      'Чтобы новый user agent вступил в силу, браузер нужно перезапустить.';
+      '╨º╤é╨╛╨▒╤ï ╨╜╨╛╨▓╤ï╨╣ user agent ╨▓╤ü╤é╤â╨┐╨╕╨╗ ╨▓ ╤ü╨╕╨╗╤â, ╨▒╤Ç╨░╤â╨╖╨╡╤Ç ╨╜╤â╨╢╨╜╨╛ ╨┐╨╡╤Ç╨╡╨╖╨░╨┐╤â╤ü╤é╨╕╤é╤î.';
 
   @override
-  String get settings_tabBarSectionTitle => 'Панель вкладок';
+  String get settings_tabBarSectionTitle => '╨ƒ╨░╨╜╨╡╨╗╤î ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
-  String get settings_contextualToolbarSectionTitle => 'Контекстная панель';
+  String get settings_contextualToolbarSectionTitle =>
+      '╨Ü╨╛╨╜╤é╨╡╨║╤ü╤é╨╜╨░╤Å ╨┐╨░╨╜╨╡╨╗╤î';
 
   @override
   String get settings_quickTabSwitcherSectionTitle =>
-      'Быстрый переключатель вкладок';
+      '╨æ╤ï╤ü╤é╤Ç╤ï╨╣ ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╤î ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
-  String get settings_tabViewSectionTitle => 'Обзор вкладок';
+  String get settings_tabViewSectionTitle => '╨₧╨▒╨╖╨╛╤Ç ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
-  String get settings_menuSectionTitle => 'Меню';
+  String get settings_menuSectionTitle => '╨£╨╡╨╜╤Ä';
 
   @override
-  String get settings_menuSectionKeywords => 'три точки, дополнительное меню';
+  String get settings_menuSectionKeywords =>
+      '╤é╤Ç╨╕ ╤é╨╛╤ç╨║╨╕, ╨┤╨╛╨┐╨╛╨╗╨╜╨╕╤é╨╡╨╗╤î╨╜╨╛╨╡ ╨╝╨╡╨╜╤Ä';
 
   @override
   String get settings_indexTabBarPositionSubtitle =>
-      'Выбор положения панели вкладок: вверху, внизу или сбоку';
+      '╨Æ╤ï╨▒╨╛╤Ç ╨┐╨╛╨╗╨╛╨╢╨╡╨╜╨╕╤Å ╨┐╨░╨╜╨╡╨╗╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║: ╨▓╨▓╨╡╤Ç╤à╤â, ╨▓╨╜╨╕╨╖╤â ╨╕╨╗╨╕ ╤ü╨▒╨╛╨║╤â';
 
   @override
   String get settings_indexTabBarStyleSubtitle =>
-      'Выбор между макетом с заголовком и компактным';
+      '╨Æ╤ï╨▒╨╛╤Ç ╨╝╨╡╨╢╨┤╤â ╨╝╨░╨║╨╡╤é╨╛╨╝ ╤ü ╨╖╨░╨│╨╛╨╗╨╛╨▓╨║╨╛╨╝ ╨╕ ╨║╨╛╨╝╨┐╨░╨║╤é╨╜╤ï╨╝';
 
   @override
   String get settings_indexAutoHideTabBarSubtitle =>
-      'Скрывать панель вкладок при прокрутке';
+      '╨í╨║╤Ç╤ï╨▓╨░╤é╤î ╨┐╨░╨╜╨╡╨╗╤î ╨▓╨║╨╗╨░╨┤╨╛╨║ ╨┐╤Ç╨╕ ╨┐╤Ç╨╛╨║╤Ç╤â╤é╨║╨╡';
 
   @override
   String get settings_indexAutoHideSidePanelSubtitle =>
-      'Показывать боковую панель, когда мышь достигает её края';
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨▒╨╛╨║╨╛╨▓╤â╤Ä ╨┐╨░╨╜╨╡╨╗╤î, ╨║╨╛╨│╨┤╨░ ╨╝╤ï╤ê╤î ╨┤╨╛╤ü╤é╨╕╨│╨░╨╡╤é ╨╡╤æ ╨║╤Ç╨░╤Å';
 
   @override
   String get settings_indexLongPressUrlCopySubtitle =>
-      'Копировать текущий URL-адрес с панели вкладок';
+      '╨Ü╨╛╨┐╨╕╤Ç╨╛╨▓╨░╤é╤î ╨░╨┤╤Ç╨╡╤ü ╤ü╤é╤Ç╨░╨╜╨╕╤å╤ï ╨╕╨╖ ╨┐╨░╨╜╨╡╨╗╨╕ ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
   String get settings_indexShowContextualToolbarSubtitle =>
-      'Показывать дополнительную панель для навигации и действий';
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨┤╨╛╨┐╨╛╨╗╨╜╨╕╤é╨╡╨╗╤î╨╜╤â╤Ä ╨┐╨░╨╜╨╡╨╗╤î ╨┤╨╗╤Å ╨╜╨░╨▓╨╕╨│╨░╤å╨╕╨╕ ╨╕ ╨┤╨╡╨╣╤ü╤é╨▓╨╕╨╣';
 
   @override
   String get settings_indexCustomizeToolbarButtonsSubtitle =>
-      'Выбор действий, отображаемых на контекстной панели';
+      '╨Æ╤ï╨▒╨╛╤Ç ╨┤╨╡╨╣╤ü╤é╨▓╨╕╨╣, ╨╛╤é╨╛╨▒╤Ç╨░╨╢╨░╨╡╨╝╤ï╤à ╨╜╨░ ╨║╨╛╨╜╤é╨╡╨║╤ü╤é╨╜╨╛╨╣ ╨┐╨░╨╜╨╡╨╗╨╕';
 
   @override
   String get settings_indexTabStackingSubtitle =>
-      'Выбор расположения вкладок в быстром переключателе';
+      '╨Æ╤ï╨▒╨╛╤Ç ╤Ç╨░╤ü╨┐╨╛╨╗╨╛╨╢╨╡╨╜╨╕╤Å ╨▓╨║╨╗╨░╨┤╨╛╨║ ╨▓ ╨▒╤ï╤ü╤é╤Ç╨╛╨╝ ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╨╡';
 
   @override
   String get settings_indexCustomizeSwitcherButtonsSubtitle =>
-      'Выбор кнопок действий в конце панели';
+      '╨Æ╤ï╨▒╨╛╤Ç ╨║╨╜╨╛╨┐╨╛╨║ ╨┤╨╡╨╣╤ü╤é╨▓╨╕╨╣ ╨▓ ╨║╨╛╨╜╤å╨╡ ╨┐╨░╨╜╨╡╨╗╨╕';
 
   @override
   String get settings_indexHistoryFallbackSubtitle =>
-      'Показывать подсказки из истории, когда нет подходящих вкладок';
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨┐╨╛╨┤╤ü╨║╨░╨╖╨║╨╕ ╨╕╨╖ ╨╕╤ü╤é╨╛╤Ç╨╕╨╕, ╨║╨╛╨│╨┤╨░ ╨╜╨╡╤é ╨┐╨╛╨┤╤à╨╛╨┤╤Å╤ë╨╕╤à ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
   String get settings_indexShowTitlesSubtitle =>
-      'Показывать заголовки страниц в списке переключателя';
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨╖╨░╨│╨╛╨╗╨╛╨▓╨║╨╕ ╤ü╤é╤Ç╨░╨╜╨╕╤å ╨▓ ╤ü╨┐╨╕╤ü╨║╨╡ ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╤Å';
 
   @override
   String get settings_indexHierarchyDepthSubtitle =>
-      'Сколько шевронов вложенности показывать на чипах переключателя';
+      '╨í╨║╨╛╨╗╤î╨║╨╛ ╤ê╨╡╨▓╤Ç╨╛╨╜╨╛╨▓ ╨▓╨╗╨╛╨╢╨╡╨╜╨╜╨╛╤ü╤é╨╕ ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨╜╨░ ╤ç╨╕╨┐╨░╤à ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╤Å';
 
   @override
   String get settings_indexBottomSheetTabViewSubtitle =>
-      'Открывать переключатель вкладок в нижней панели';
+      '╨₧╤é╨║╤Ç╤ï╨▓╨░╤é╤î ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╤î ╨▓╨║╨╗╨░╨┤╨╛╨║ ╨▓ ╨╜╨╕╨╢╨╜╨╡╨╣ ╨┐╨░╨╜╨╡╨╗╨╕';
 
   @override
   String get settings_indexShowFaviconsSubtitle =>
-      'Показывать значки сайтов в списке вкладок';
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╤é╤î ╨╖╨╜╨░╤ç╨║╨╕ ╤ü╨░╨╣╤é╨╛╨▓ ╨▓ ╤ü╨┐╨╕╤ü╨║╨╡ ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
-  String get settings_switcherPlacementTitle => 'Положение переключателя';
+  String get settings_switcherPlacementTitle =>
+      '╨ƒ╨╛╨╗╨╛╨╢╨╡╨╜╨╕╨╡ ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╤Å';
 
   @override
   String get settings_switcherPlacementSubtitle =>
-      'Где находится переключатель относительно адресной строки и контекстной панели';
+      '╨ô╨┤╨╡ ╨╜╨░╤à╨╛╨┤╨╕╤é╤ü╤Å ╨┐╨╡╤Ç╨╡╨║╨╗╤Ä╤ç╨░╤é╨╡╨╗╤î ╨╛╤é╨╜╨╛╤ü╨╕╤é╨╡╨╗╤î╨╜╨╛ ╨░╨┤╤Ç╨╡╤ü╨╜╨╛╨╣ ╤ü╤é╤Ç╨╛╨║╨╕ ╨╕ ╨║╨╛╨╜╤é╨╡╨║╤ü╤é╨╜╨╛╨╣ ╨┐╨░╨╜╨╡╨╗╨╕';
 
   @override
   String get settings_switcherPlacementKeywords =>
-      'положение, порядок, над, под, сверху, снизу, адресная строка, панель вкладок';
+      '╨┐╨╛╨╗╨╛╨╢╨╡╨╜╨╕╨╡, ╨┐╨╛╤Ç╤Å╨┤╨╛╨║, ╨╜╨░╨┤, ╨┐╨╛╨┤, ╤ü╨▓╨╡╤Ç╤à╤â, ╤ü╨╜╨╕╨╖╤â, ╨░╨┤╤Ç╨╡╤ü╨╜╨░╤Å ╤ü╤é╤Ç╨╛╨║╨░, ╨┐╨░╨╜╨╡╨╗╤î ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
-  String get settings_switcherPlacementAutoLabel => 'Автоматически';
+  String get settings_switcherPlacementAutoLabel =>
+      '╨É╨▓╤é╨╛╨╝╨░╤é╨╕╤ç╨╡╤ü╨║╨╕';
 
   @override
   String get settings_switcherPlacementAutoDescription =>
-      'Над адресной строкой, когда она внизу, над контекстной панелью, когда адресная строка вверху';
+      '╨¥╨░╨┤ ╨░╨┤╤Ç╨╡╤ü╨╜╨╛╨╣ ╤ü╤é╤Ç╨╛╨║╨╛╨╣, ╨║╨╛╨│╨┤╨░ ╨╛╨╜╨░ ╨▓╨╜╨╕╨╖╤â, ╨╜╨░╨┤ ╨║╨╛╨╜╤é╨╡╨║╤ü╤é╨╜╨╛╨╣ ╨┐╨░╨╜╨╡╨╗╤î╤Ä, ╨║╨╛╨│╨┤╨░ ╨░╨┤╤Ç╨╡╤ü╨╜╨░╤Å ╤ü╤é╤Ç╨╛╨║╨░ ╨▓╨▓╨╡╤Ç╤à╤â';
 
   @override
   String get settings_switcherPlacementAboveAddressBarLabel =>
-      'Над адресной строкой';
+      '╨¥╨░╨┤ ╨░╨┤╤Ç╨╡╤ü╨╜╨╛╨╣ ╤ü╤é╤Ç╨╛╨║╨╛╨╣';
 
   @override
   String get settings_switcherPlacementAboveAddressBarDescription =>
-      'Следует за адресной строкой вверх или вниз';
+      '╨í╨╗╨╡╨┤╤â╨╡╤é ╨╖╨░ ╨░╨┤╤Ç╨╡╤ü╨╜╨╛╨╣ ╤ü╤é╤Ç╨╛╨║╨╛╨╣ ╨▓╨▓╨╡╤Ç╤à ╨╕╨╗╨╕ ╨▓╨╜╨╕╨╖';
 
   @override
   String get settings_switcherPlacementBelowAddressBarLabel =>
-      'Под адресной строкой';
+      '╨ƒ╨╛╨┤ ╨░╨┤╤Ç╨╡╤ü╨╜╨╛╨╣ ╤ü╤é╤Ç╨╛╨║╨╛╨╣';
 
   @override
   String get settings_switcherPlacementBelowAddressBarDescription =>
-      'Следует за адресной строкой вверх или вниз';
+      '╨í╨╗╨╡╨┤╤â╨╡╤é ╨╖╨░ ╨░╨┤╤Ç╨╡╤ü╨╜╨╛╨╣ ╤ü╤é╤Ç╨╛╨║╨╛╨╣ ╨▓╨▓╨╡╤Ç╤à ╨╕╨╗╨╕ ╨▓╨╜╨╕╨╖';
 
   @override
   String get settings_switcherPlacementBelowContextualBarLabel =>
-      'Под контекстной панелью';
+      '╨ƒ╨╛╨┤ ╨║╨╛╨╜╤é╨╡╨║╤ü╤é╨╜╨╛╨╣ ╨┐╨░╨╜╨╡╨╗╤î╤Ä';
 
   @override
   String get settings_switcherPlacementBelowContextualBarDescription =>
-      'У нижнего края экрана';
+      '╨ú ╨╜╨╕╨╢╨╜╨╡╨│╨╛ ╨║╤Ç╨░╤Å ╤ì╨║╤Ç╨░╨╜╨░';
 
   @override
   String get settings_tabViewActionsAtBottomTitle =>
-      'Действия обзора вкладок внизу';
+      '╨ö╨╡╨╣╤ü╤é╨▓╨╕╤Å ╨╛╨▒╨╖╨╛╤Ç╨░ ╨▓╨║╨╗╨░╨┤╨╛╨║ ╨▓╨╜╨╕╨╖╤â';
 
   @override
   String get settings_tabViewActionsAtBottomSubtitle =>
-      'Поиск, фильтры и действия с вкладками внизу, кнопка новой вкладки над ними';
+      '╨ƒ╨╛╨╕╤ü╨║, ╤ä╨╕╨╗╤î╤é╤Ç╤ï ╨╕ ╨┤╨╡╨╣╤ü╤é╨▓╨╕╤Å ╤ü ╨▓╨║╨╗╨░╨┤╨║╨░╨╝╨╕ ╨▓╨╜╨╕╨╖╤â, ╨║╨╜╨╛╨┐╨║╨░ ╨╜╨╛╨▓╨╛╨╣ ╨▓╨║╨╗╨░╨┤╨║╨╕ ╨╜╨░╨┤ ╨╜╨╕╨╝╨╕';
 
   @override
   String get settings_tabViewActionsAtBottomKeywords =>
-      'внизу, большой палец, досягаемость, одной рукой, панель, обзор вкладок';
+      '╨▓╨╜╨╕╨╖╤â, ╨▒╨╛╨╗╤î╤ê╨╛╨╣ ╨┐╨░╨╗╨╡╤å, ╨┤╨╛╤ü╤Å╨│╨░╨╡╨╝╨╛╤ü╤é╤î, ╨╛╨┤╨╜╨╛╨╣ ╤Ç╤â╨║╨╛╨╣, ╨┐╨░╨╜╨╡╨╗╤î, ╨╛╨▒╨╖╨╛╤Ç ╨▓╨║╨╗╨░╨┤╨╛╨║';
 
   @override
   String settings_trackerStatisticsTotal(int count, String date) {
@@ -11623,28 +12118,216 @@ class AppLocalizationsRu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'С $date заблокировано $countString трекера',
-      many: 'С $date заблокировано $countString трекеров',
-      few: 'С $date заблокировано $countString трекера',
-      one: 'С $date заблокирован $countString трекер',
+      other: '╨í $date ╨╖╨░╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╨╜╨╛ $countString ╤é╤Ç╨╡╨║╨╡╤Ç╨░',
+      many: '╨í $date ╨╖╨░╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╨╜╨╛ $countString ╤é╤Ç╨╡╨║╨╡╤Ç╨╛╨▓',
+      few: '╨í $date ╨╖╨░╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╨╜╨╛ $countString ╤é╤Ç╨╡╨║╨╡╤Ç╨░',
+      one: '╨í $date ╨╖╨░╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╨╜ $countString ╤é╤Ç╨╡╨║╨╡╤Ç',
     );
     return '$_temp0';
   }
 
   @override
   String get settings_trackerStatisticsNothingRecorded =>
-      'Заблокированные трекеры пока не записаны.';
+      '╨ù╨░╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╨╜╨╜╤ï╨╡ ╤é╤Ç╨╡╨║╨╡╤Ç╤ï ╨┐╨╛╨║╨░ ╨╜╨╡ ╨╖╨░╨┐╨╕╤ü╨░╨╜╤ï.';
 
   @override
-  String get settings_trackerStatisticsLastSevenDays => 'Последние 7 дней';
+  String get settings_trackerStatisticsLastSevenDays =>
+      '╨ƒ╨╛╤ü╨╗╨╡╨┤╨╜╨╕╨╡ 7 ╨┤╨╜╨╡╨╣';
 
   @override
   String get settings_trackerStatisticsNoneLastSevenDays =>
-      'За последние 7 дней трекеры не блокировались.';
+      '╨ù╨░ ╨┐╨╛╤ü╨╗╨╡╨┤╨╜╨╕╨╡ 7 ╨┤╨╜╨╡╨╣ ╤é╤Ç╨╡╨║╨╡╤Ç╤ï ╨╜╨╡ ╨▒╨╗╨╛╨║╨╕╤Ç╨╛╨▓╨░╨╗╨╕╤ü╤î.';
 
   @override
   String get settings_trackerStatisticsLoadFailed =>
-      'Не удалось загрузить статистику трекеров.';
+      '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╨╖╨░╨│╤Ç╤â╨╖╨╕╤é╤î ╤ü╤é╨░╤é╨╕╤ü╤é╨╕╨║╤â ╤é╤Ç╨╡╨║╨╡╤Ç╨╛╨▓.';
+
+  @override
+  String get settings_contextualToolbarSaveFailed =>
+      '╨¥╨╡ ╤â╨┤╨░╨╗╨╛╤ü╤î ╤ü╨╛╤à╤Ç╨░╨╜╨╕╤é╤î ╨║╨╜╨╛╨┐╨║╨╕. ╨ƒ╨╛╨┐╤Ç╨╛╨▒╤â╨╣╤é╨╡ ╨╡╤ë╤æ ╤Ç╨░╨╖.';
+
+  @override
+  String get settings_fingerprintPresetsSection =>
+      '╨ô╨╛╤é╨╛╨▓╤ï╨╡ ╨╜╨░╨▒╨╛╤Ç╤ï';
+
+  @override
+  String get settings_confirmationsSectionTitle => '╨ƒ╨╛╨┤╤é╨▓╨╡╤Ç╨╢╨┤╨╡╨╜╨╕╤Å';
+
+  @override
+  String get settings_confirmationsSubtitle =>
+      '╨Æ╤ï╨▒╨╡╤Ç╨╕╤é╨╡, ╨╛ ╤ç╤æ╨╝ ╤ü╨┐╤Ç╨░╤ê╨╕╨▓╨░╤é╤î ╨┐╨╡╤Ç╨╡╨┤ ╨╖╨░╨║╤Ç╤ï╤é╨╕╨╡╨╝ ╨▓╨║╨╗╨░╨┤╨╛╨║ ╨╕╨╗╨╕ ╨╖╨░╨┐╤â╤ü╨║╨╛╨╝ ╨┐╤Ç╨╛╨║╤ü╨╕';
+
+  @override
+  String get settings_confirmationsSectionKeywords =>
+      '╨┐╨╛╨┤╤é╨▓╨╡╤Ç╨╢╨┤╨╡╨╜╨╕╨╡, ╨╖╨░╨┐╤Ç╨╛╤ü, ╨┤╨╕╨░╨╗╨╛╨│, ╤ü╨┐╤Ç╨░╤ê╨╕╨▓╨░╤é╤î, ╨▒╨╛╨╗╤î╤ê╨╡ ╨╜╨╡ ╤ü╨┐╤Ç╨░╤ê╨╕╨▓╨░╤é╤î, ╨╖╨░╨┐╨╛╨╝╨╜╨╕╤é╤î ╨▓╤ï╨▒╨╛╤Ç, prompt';
+
+  @override
+  String get settings_actionOpenFullScreen =>
+      '╨₧╤é╨║╤Ç╤ï╤é╤î ╨╜╨░ ╨▓╨╡╤ü╤î ╤ì╨║╤Ç╨░╨╜';
+
+  @override
+  String get settings_previewSheetExpand =>
+      '╨á╨░╨╖╨▓╨╡╤Ç╨╜╤â╤é╤î ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕';
+
+  @override
+  String get settings_previewSheetCollapse =>
+      '╨í╨▓╨╡╤Ç╨╜╤â╤é╤î ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕';
+
+  @override
+  String get settings_layoutEditorPreviewTab => '╨ƒ╤Ç╨╡╨┤╨┐╤Ç╨╛╤ü╨╝╨╛╤é╤Ç';
+
+  @override
+  String get settings_layoutEditorSettingsTab => '╨¥╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕';
+
+  @override
+  String get settings_previewDeviceThisWindow => '╨¡╤é╨╛ ╨╛╨║╨╜╨╛';
+
+  @override
+  String get settings_previewDevicePhone => '╨ó╨╡╨╗╨╡╤ä╨╛╨╜';
+
+  @override
+  String get settings_previewDevicePhoneLandscape =>
+      '╨ó╨╡╨╗╨╡╤ä╨╛╨╜ ╨│╨╛╤Ç╨╕╨╖╨╛╨╜╤é╨░╨╗╤î╨╜╨╛';
+
+  @override
+  String get settings_previewDeviceLargeScreen => '╨æ╨╛╨╗╤î╤ê╨╛╨╣ ╤ì╨║╤Ç╨░╨╜';
+
+  @override
+  String settings_previewOtherDeviceHint(String device) {
+    String _temp0 = intl.Intl.selectLogic(device, {
+      'phone':
+          '╨ƒ╨╛╨║╨░╨╖╨░╨╜ ╤é╨╡╨╗╨╡╤ä╨╛╨╜. ╨É╨▓╤é╨╛╨╝╨░╤é╨╕╤ç╨╡╤ü╨║╨╕╨╡ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨┐╤Ç╨╕╨╝╨╡╨╜╤Å╤Ä╤é╤ü╤Å ╤é╨░╨║ ╨╢╨╡, ╨║╨░╨║ ╨╜╨░ ╤é╨╡╨╗╨╡╤ä╨╛╨╜╨╡.',
+      'phoneLandscape':
+          '╨ƒ╨╛╨║╨░╨╖╨░╨╜ ╤é╨╡╨╗╨╡╤ä╨╛╨╜ ╨▓ ╨│╨╛╤Ç╨╕╨╖╨╛╨╜╤é╨░╨╗╤î╨╜╨╛╨╣ ╨╛╤Ç╨╕╨╡╨╜╤é╨░╤å╨╕╨╕. ╨É╨▓╤é╨╛╨╝╨░╤é╨╕╤ç╨╡╤ü╨║╨╕╨╡ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨┐╤Ç╨╕╨╝╨╡╨╜╤Å╤Ä╤é╤ü╤Å ╤é╨░╨║ ╨╢╨╡, ╨║╨░╨║ ╨╜╨░ ╨╜╤æ╨╝.',
+      'largeScreen':
+          '╨ƒ╨╛╨║╨░╨╖╨░╨╜ ╨▒╨╛╨╗╤î╤ê╨╛╨╣ ╤ì╨║╤Ç╨░╨╜. ╨É╨▓╤é╨╛╨╝╨░╤é╨╕╤ç╨╡╤ü╨║╨╕╨╡ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨┐╤Ç╨╕╨╝╨╡╨╜╤Å╤Ä╤é╤ü╤Å ╤é╨░╨║ ╨╢╨╡, ╨║╨░╨║ ╨╜╨░ ╨▒╨╛╨╗╤î╤ê╨╛╨╝ ╤ì╨║╤Ç╨░╨╜╨╡.',
+      'other': '╨ƒ╨╛╨║╨░╨╖╨░╨╜ ╨┤╤Ç╤â╨│╨╛╨╣ ╤Ç╨░╨╖╨╝╨╡╤Ç ╨╛╨║╨╜╨░.',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String get settings_previewStatePage => '╨í╤é╤Ç╨░╨╜╨╕╤å╨░';
+
+  @override
+  String get settings_previewStateHome => '╨ö╨╛╨╝╨░╤ê╨╜╤Å╤Å ╤ü╤é╤Ç╨░╨╜╨╕╤å╨░';
+
+  @override
+  String get settings_previewStateSidePanelCollapsed =>
+      '╨æ╨╛╨║╨╛╨▓╨░╤Å ╨┐╨░╨╜╨╡╨╗╤î ╤ü╨▓╤æ╤Ç╨╜╤â╤é╨░';
+
+  @override
+  String get settings_previewStateNeedsSidePanel =>
+      '╨¥╤â╨╢╨╜╨░ ╨▒╨╛╨║╨╛╨▓╨░╤Å ╨┐╨░╨╜╨╡╨╗╤î ╨▓ ╨▒╨╛╨╗╤î╤ê╨╛╨╝ ╨╛╨║╨╜╨╡';
+
+  @override
+  String get settings_layoutPreviewSemantics =>
+      '╨ƒ╤Ç╨╡╨┤╨┐╤Ç╨╛╤ü╨╝╨╛╤é╤Ç ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨░ ╤ü ╤ì╤é╨╕╨╝ ╤Ç╨░╤ü╨┐╨╛╨╗╨╛╨╢╨╡╨╜╨╕╨╡╨╝ ╨┐╨░╨╜╨╡╨╗╨╕ ╨╕╨╜╤ü╤é╤Ç╤â╨╝╨╡╨╜╤é╨╛╨▓';
+
+  @override
+  String get settings_layoutPartTabChips => '╨º╨╕╨┐╤ï ╨▓╨║╨╗╨░╨┤╨╛╨║';
+
+  @override
+  String get settings_previewModeSelect => '╨Æ╤ï╨▒╨╛╤Ç';
+
+  @override
+  String get settings_previewModeTry => '╨ƒ╤Ç╨╛╨▒╨░';
+
+  @override
+  String get settings_previewSelectHint =>
+      '╨¥╨░╨╢╨╝╨╕╤é╨╡ ╨╜╨░ ╤ç╨░╤ü╤é╤î ╨┐╨░╨╜╨╡╨╗╨╕ ╨╕╨╜╤ü╤é╤Ç╤â╨╝╨╡╨╜╤é╨╛╨▓, ╤ç╤é╨╛╨▒╤ï ╨╕╨╖╨╝╨╡╨╜╨╕╤é╤î ╨╡╤æ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕.';
+
+  @override
+  String get settings_previewTryHint =>
+      '╨ƒ╤Ç╨╡╨┤╨┐╤Ç╨╛╤ü╨╝╨╛╤é╤Ç ╤Ç╨░╨▒╨╛╤é╨░╨╡╤é ╨║╨░╨║ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç: ╨┐╤Ç╨╛╨║╤Ç╤â╤ç╨╕╨▓╨░╨╣╤é╨╡ ╤ü╤é╤Ç╨░╨╜╨╕╤å╤â ╨╕ ╨╜╨░╨╢╨╕╨╝╨░╨╣╤é╨╡ ╨║╨╜╨╛╨┐╨║╨╕.';
+
+  @override
+  String get settings_previewAllSettings => '╨Æ╤ü╨╡ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕';
+
+  @override
+  String get settings_previewSelectionPath => '╨Æ╤ï╨▒╤Ç╨░╨╜╨╜╨░╤Å ╤ç╨░╤ü╤é╤î';
+
+  @override
+  String settings_tryToolbarHidden(String distance) {
+    return '╨ƒ╨░╨╜╨╡╨╗╤î ╨╕╨╜╤ü╤é╤Ç╤â╨╝╨╡╨╜╤é╨╛╨▓ ╤ü╨║╤Ç╤ï╤é╨░ ╨┐╤Ç╨╕ ╨┐╤Ç╨╛╨║╤Ç╤â╤é╨║╨╡ ┬╖ ╨á╨░╤ü╤ü╤é╨╛╤Å╨╜╨╕╨╡ ╨┤╨╗╤Å ╨░╨▓╤é╨╛╤ü╨║╤Ç╤ï╤é╨╕╤Å $distance';
+  }
+
+  @override
+  String get settings_trySidePanelHidden =>
+      '╨æ╨╛╨║╨╛╨▓╨░╤Å ╨┐╨░╨╜╨╡╨╗╤î ╤ü╨║╤Ç╤ï╤é╨░ ┬╖ ╨¥╨░╨▓╨╡╨┤╨╕╤é╨╡ ╤â╨║╨░╨╖╨░╤é╨╡╨╗╤î ╨╜╨░ ╨║╤Ç╨░╨╣ ╨╕╨╗╨╕ ╨╜╨░╨╢╨╝╨╕╤é╨╡ ╨╜╨░ ╨╜╨╡╨│╨╛, ╤ç╤é╨╛╨▒╤ï ╨▓╨╡╤Ç╨╜╤â╤é╤î ╨╡╤æ. ╨Æ ╨▒╤Ç╨░╤â╨╖╨╡╤Ç╨╡ ΓÇö ╤é╨╛╨╗╤î╨║╨╛ ╤ü ╨╝╤ï╤ê╤î╤Ä ╨╕╨╗╨╕ ╤é╨░╤ç╨┐╨░╨┤╨╛╨╝';
+
+  @override
+  String get settings_tryOpensTabView =>
+      '╨ó╨░╨║ ╨╛╤é╨║╤Ç╤ï╨▓╨░╨╡╤é╤ü╤Å ╨╛╨▒╨╖╨╛╤Ç ╨▓╨║╨╗╨░╨┤╨╛╨║';
+
+  @override
+  String get settings_tryOpensMenu => '╨ó╨░╨║ ╨╛╤é╨║╤Ç╤ï╨▓╨░╨╡╤é╤ü╤Å ╨╝╨╡╨╜╤Ä';
+
+  @override
+  String get settings_tryAdjust => '╨¥╨░╤ü╤é╤Ç╨╛╨╕╤é╤î';
+
+  @override
+  String get settings_categoryFeatureControlTitle =>
+      '╨ú╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╨╡ ╤ä╤â╨╜╨║╤å╨╕╤Å╨╝╨╕';
+
+  @override
+  String get settings_categoryFeatureControlSubtitle =>
+      '╨Æ╤ï╨▒╨╡╤Ç╨╕╤é╨╡, ╨║╨░╨║╨╕╨╡ ╤ä╤â╨╜╨║╤å╨╕╨╕ ╨┐╨╛╨║╨░╨╖╤ï╨▓╨░╨╡╤é WebLibre';
+
+  @override
+  String get settings_categoryFeatureControlKeywords =>
+      '╤â╨┐╤Ç╨░╨▓╨╗╨╡╨╜╨╕╨╡ ╤ä╤â╨╜╨║╤å╨╕╤Å╨╝╨╕, ╤ä╤â╨╜╨║╤å╨╕╨╕, ╨▓╨╕╨┤╨╕╨╝╨╛╤ü╤é╤î, ╨┐╨╛╨║╨░╨╖╨░╤é╤î, ╤ü╨║╤Ç╤ï╤é╤î, ╤ü╨║╤Ç╤ï╤é╤ï╨╡, ╨│╨╛╤é╨╛╨▓╤ï╨╣ ╨╜╨░╨▒╨╛╤Ç, ╨┐╤Ç╨╡╤ü╨╡╤é, ╨┐╤Ç╨╛╤ü╤é╨╛ ╤ü╤æ╤Ç╤ä╨╕╨╜╨│, ╨╝╨░╤ü╤é╨╡╤Ç╤ü╨║╨░╤Å, ╤Ç╨╡╨╢╨╕╨╝ ╤ì╨║╤ü╨┐╨╡╤Ç╤é╨░, ╨┐╤Ç╨╛╤ü╤é╨╛, ╤Ç╨░╤ü╤ê╨╕╤Ç╨╡╨╜╨╜╤ï╨╡, ╨┐╨╡╤Ç╤ü╨╛╨╜╨░╨╗╨╕╨╖╨░╤å╨╕╤Å, ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨░, feature control, preset';
+
+  @override
+  String get settings_featureControlIntro =>
+      '╨í╨║╤Ç╨╛╨╣╤é╨╡ ╤ä╤â╨╜╨║╤å╨╕╨╕, ╨║╨╛╤é╨╛╤Ç╤ï╨╝╨╕ ╨╜╨╡ ╨┐╨╛╨╗╤î╨╖╤â╨╡╤é╨╡╤ü╤î, ╤ç╤é╨╛╨▒╤ï WebLibre ╨╛╤ü╤é╨░╨▓╨░╨╗╤ü╤Å ╨┐╤Ç╨╛╤ü╤é╤ï╨╝. ╨ƒ╨╛╨║╨░ ╤ä╤â╨╜╨║╤å╨╕╤Å ╤ü╨║╤Ç╤ï╤é╨░, ╨╡╤æ ╨╜╨░╤ü╤é╤Ç╨╛╨╣╨║╨╕ ╨╕╤ü╨┐╨╛╨╗╤î╨╖╤â╤Ä╤é ╨╖╨╜╨░╤ç╨╡╨╜╨╕╤Å ╨┐╨╛ ╤â╨╝╨╛╨╗╤ç╨░╨╜╨╕╤Ä. ╨Æ╨░╤ê╨╕ ╨╕╨╖╨╝╨╡╨╜╨╡╨╜╨╕╤Å ╤ü╨╛╤à╤Ç╨░╨╜╤Å╤Ä╤é╤ü╤Å ╨╕ ╤ü╨╜╨╛╨▓╨░ ╨╜╨░╤ç╨╜╤â╤é ╨┤╨╡╨╣╤ü╤é╨▓╨╛╨▓╨░╤é╤î, ╨║╨╛╨│╨┤╨░ ╨▓╤ï ╨╡╤æ ╨┐╨╛╨║╨░╨╢╨╡╤é╨╡. ╨ƒ╨╛╨┤╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å ╨╕ ╨▓╤ü╤æ, ╤ç╤é╨╛ ╨▓╤ï ╤ü╨╛╨╖╨┤╨░╨╗╨╕, ╨┐╤Ç╨╛╨┤╨╛╨╗╨╢╨░╤Ä╤é ╤Ç╨░╨▒╨╛╤é╨░╤é╤î.';
+
+  @override
+  String get settings_featureControlHiddenInUse =>
+      '╨ñ╤â╨╜╨║╤å╨╕╤Å ╤ü╨║╤Ç╤ï╤é╨░. ╨Æ╤ü╤æ, ╤ç╤é╨╛ ╨▓╤ï ╤â╨╢╨╡ ╨╜╨░╤ü╤é╤Ç╨╛╨╕╨╗╨╕, ╨┐╤Ç╨╛╨┤╨╛╨╗╨╢╨░╨╡╤é ╤Ç╨░╨▒╨╛╤é╨░╤é╤î.';
+
+  @override
+  String get settings_featureControlKeepsWorking =>
+      '╨Æ╤ü╤æ, ╤ç╤é╨╛ ╨▓╤ï ╤â╨╢╨╡ ╨╜╨░╤ü╤é╤Ç╨╛╨╕╨╗╨╕, ╨┐╤Ç╨╛╨┤╨╛╨╗╨╢╨░╨╡╤é ╤Ç╨░╨▒╨╛╤é╨░╤é╤î.';
+
+  @override
+  String get settings_featureControlShownApplyingAgain =>
+      '╨ñ╤â╨╜╨║╤å╨╕╤Å ╨┐╨╛╨║╨░╨╖╨░╨╜╨░. ╨Æ╨░╤ê╨╕ ╨┐╤Ç╨╡╨╢╨╜╨╕╨╡ ╨╕╨╖╨╝╨╡╨╜╨╡╨╜╨╕╤Å ╤ü╨╜╨╛╨▓╨░ ╨┤╨╡╨╣╤ü╤é╨▓╤â╤Ä╤é.';
+
+  @override
+  String get settings_featureControlApplyPresetTitle =>
+      '╨ƒ╤Ç╨╕╨╝╨╡╨╜╨╕╤é╤î ╨│╨╛╤é╨╛╨▓╤ï╨╣ ╨╜╨░╨▒╨╛╤Ç';
+
+  @override
+  String get settings_featureControlApplyPresetSubtitle =>
+      '╨ƒ╨╛╨║╨░╨╖╤ï╨▓╨░╨╣╤é╨╡ ╨╕ ╤ü╨║╤Ç╤ï╨▓╨░╨╣╤é╨╡ ╤ä╤â╨╜╨║╤å╨╕╨╕ ╤é╨░╨║, ╨║╨░╨║ ╤ì╤é╨╛ ╨┤╨╡╨╗╨░╨╡╤é ╨│╨╛╤é╨╛╨▓╤ï╨╣ ╨╜╨░╨▒╨╛╤Ç.';
+
+  @override
+  String settings_featureControlApplyPresetDialogTitle(String preset) {
+    return '╨ƒ╤Ç╨╕╨╝╨╡╨╜╨╕╤é╤î ┬½$preset┬╗?';
+  }
+
+  @override
+  String get settings_featureControlApplyPresetDialogContent =>
+      '╨ÿ╨╖╨╝╨╡╨╜╤Å╤é╤ü╤Å ╤é╨╛╨╗╤î╨║╨╛ ╤ì╤é╨╕ ╤ä╤â╨╜╨║╤å╨╕╨╕.';
+
+  @override
+  String get settings_featureControlFeaturesToShow =>
+      '╨æ╤â╨┤╤â╤é ╨┐╨╛╨║╨░╨╖╨░╨╜╤ï';
+
+  @override
+  String get settings_featureControlFeaturesToHide => '╨æ╤â╨┤╤â╤é ╤ü╨║╤Ç╤ï╤é╤ï';
+
+  @override
+  String get settings_featureControlApplyPresetConfirm => '╨ƒ╤Ç╨╕╨╝╨╡╨╜╨╕╤é╤î';
+
+  @override
+  String settings_featureControlApplyPresetUnchanged(String preset) {
+    return '╨ƒ╨╛╨║╨░╨╖╨░╨╜╨╜╤ï╨╡ ╤ä╤â╨╜╨║╤å╨╕╨╕ ╤â╨╢╨╡ ╤ü╨╛╨╛╤é╨▓╨╡╤é╤ü╤é╨▓╤â╤Ä╤é ┬½$preset┬╗.';
+  }
+
+  @override
+  String get settings_featureControlSectionTitle => '╨ñ╤â╨╜╨║╤å╨╕╨╕';
 
   @override
   String get smallWeb_sheetTitle => 'Малый веб';
@@ -13174,14 +13857,15 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get webPush_screenSubtitle =>
-      'Уведомления сайтов, доставляемые через UnifiedPush';
+      'Получение уведомлений сайтов через отдельное приложение';
 
   @override
-  String get webPush_distributorTileTitle => 'Дистрибьютор UnifiedPush';
+  String get webPush_distributorTileTitle =>
+      'Приложение для доставки уведомлений';
 
   @override
   String get webPush_distributorTileKeywords =>
-      'уведомления, push, пуш, unifiedpush, ntfy, дистрибьютор';
+      'уведомления, push, unifiedpush, дистрибьютор, distributor, ntfy';
 
   @override
   String get webPush_checking => 'Проверка…';
@@ -13207,10 +13891,11 @@ class AppLocalizationsRu extends AppLocalizations {
   String get webPush_disablingWebPush => 'Отключение…';
 
   @override
-  String get webPush_disableWebPush => 'Отключить web push';
+  String get webPush_disableWebPush => 'Выключить уведомления сайтов';
 
   @override
-  String get webPush_statusNoneAvailable => 'Нет доступного дистрибьютора';
+  String get webPush_statusNoneAvailable =>
+      'Совместимое приложение для уведомлений не установлено';
 
   @override
   String get webPush_statusNotSelected => 'Не настроено';
@@ -13222,50 +13907,52 @@ class AppLocalizationsRu extends AppLocalizations {
   String get webPush_statusReady => 'Активно';
 
   @override
-  String get webPush_statusUnavailable => 'Дистрибьютор недоступен';
+  String get webPush_statusUnavailable =>
+      'Приложение для уведомлений недоступно';
 
   @override
   String get webPush_statusDescNoneAvailable =>
-      'Установите приложение-дистрибьютор UnifiedPush, например ntfy, чтобы получать уведомления сайтов.';
+      'Чтобы получать уведомления сайтов, установите ntfy или другое приложение с поддержкой UnifiedPush.';
 
   @override
   String get webPush_statusDescNotSelected =>
-      'Выберите дистрибьютор ниже, чтобы включить уведомления сайтов.';
+      'Выберите приложение для уведомлений ниже, чтобы включить уведомления сайтов.';
 
   @override
   String get webPush_statusDescPending =>
-      'Ожидание подтверждения регистрации от дистрибьютора.';
+      'Ожидание завершения настройки приложения для уведомлений.';
 
   @override
   String get webPush_statusDescReady =>
-      'Уведомления сайтов доставляются через этот дистрибьютор.';
+      'Уведомления сайтов доставляются через это приложение.';
 
   @override
   String get webPush_statusDescUnavailable =>
-      'Выбранный дистрибьютор больше не установлен. Уведомления сайтов не будут доставляться, пока вы не выберете другой.';
+      'Выбранное приложение для уведомлений больше не установлено. Уведомления сайтов не будут приходить, пока вы не выберете другое.';
 
   @override
   String get webPush_noDistributorInstalled =>
-      'Дистрибьютор UnifiedPush не установлен. Установите его, например ntfy, и повторите попытку.';
+      'Совместимое приложение для уведомлений не установлено. Установите ntfy или другое приложение с поддержкой UnifiedPush и попробуйте ещё раз.';
 
   @override
-  String get webPush_chooseDistributorTitle => 'Выбор дистрибьютора';
+  String get webPush_chooseDistributorTitle =>
+      'Выбрать приложение для доставки уведомлений';
 
   @override
   String get webPush_distributorConfigured =>
-      'Дистрибьютор UnifiedPush настроен.';
+      'Приложение для уведомлений настроено.';
 
   @override
   String webPush_couldNotConfigureDistributor(String error) {
-    return 'Не удалось настроить дистрибьютор: $error';
+    return 'Не удалось настроить приложение для уведомлений: $error';
   }
 
   @override
-  String get webPush_webPushDisabled => 'Web push отключён.';
+  String get webPush_webPushDisabled => 'Уведомления сайтов выключены.';
 
   @override
   String webPush_couldNotDisableWebPush(String error) {
-    return 'Не удалось отключить web push: $error';
+    return 'Не удалось выключить уведомления сайтов: $error';
   }
 
   @override
@@ -13314,11 +14001,11 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get webPush_subscriptionDelayedDelivery =>
-      'Адрес доставки сохранён; доставка приостановлена, пока дистрибьютор не будет готов';
+      'Подписка оформлена; уведомления смогут приходить, когда приложение для уведомлений будет готово';
 
   @override
   String get webPush_subscriptionWaitingForEndpoint =>
-      'Ожидание адреса доставки от дистрибьютора';
+      'Ожидание, пока приложение для уведомлений завершит оформление подписки';
 
   @override
   String get webPush_revokeSubscriptionHint =>
@@ -13329,7 +14016,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get webPush_indexDistributorSubtitle =>
-      'Приложение, доставляющее push-уведомления сайтов';
+      'Приложение, которое доставляет уведомления сайтов, например ntfy (UnifiedPush)';
 
   @override
   String get webPush_indexNotificationPermissionSubtitle =>
@@ -13346,7 +14033,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get webPush_indexSiteSubscriptionsSubtitle =>
-      'Сайты, на уведомления которых вы подписаны';
+      'Сайты, которым разрешено присылать уведомления';
 
   @override
   String get webSearch_fetchPageDataTitle => 'Получение данных страницы';
@@ -14159,6 +14846,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get startup_maintenanceUnknownDescribeDone => 'Готово.';
 
   @override
+  String get listFormat_separator => ', ';
+
+  @override
   String units_bytes(String value) {
     return '$value Б';
   }
@@ -14179,10 +14869,298 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
+  String get visibilitySwitch_containersLabel => 'Контейнеры';
+
+  @override
+  String get visibilitySwitch_containersDescription =>
+      'Отдельные пространства для куки и входов в аккаунты, например для работы и личного';
+
+  @override
+  String get visibilitySwitch_isolatedTabsLabel => 'Изолированные вкладки';
+
+  @override
+  String get visibilitySwitch_isolatedTabsDescription =>
+      'Открытие вкладок со своими куки и входами в аккаунты, которые, в отличие от приватных, сохраняются после выхода';
+
+  @override
+  String get visibilitySwitch_connectionsLabel => 'Tor, VPN и прокси';
+
+  @override
+  String get visibilitySwitch_connectionsDescription =>
+      'Работа в сети через Tor, VPN или прокси';
+
+  @override
+  String get visibilitySwitch_profilesLabel => 'Несколько профилей';
+
+  @override
+  String get visibilitySwitch_profilesDescription =>
+      'Создание отдельных профилей и переключение между ними';
+
+  @override
+  String get visibilitySwitch_treeTabsLabel => 'Дерево вкладок';
+
+  @override
+  String get visibilitySwitch_treeTabsDescription =>
+      'Показ вкладок, открытых со страницы, под вкладкой, из которой они открыты';
+
+  @override
+  String get visibilitySwitch_layoutAdvancedLabel =>
+      'Настройка панели инструментов и меню';
+
+  @override
+  String get visibilitySwitch_layoutAdvancedDescription =>
+      'Кнопки панели инструментов, порядок меню и группировка вкладок на панели вкладок';
+
+  @override
+  String get visibilitySwitch_gesturesLabel => 'Жесты';
+
+  @override
+  String get visibilitySwitch_gesturesDescription =>
+      'Свайпы и рисование фигур для выполнения действий';
+
+  @override
+  String get visibilitySwitch_keyboardCustomizationLabel =>
+      'Свои сочетания клавиш';
+
+  @override
+  String get visibilitySwitch_keyboardCustomizationDescription =>
+      'Выбор клавиш для каждого действия';
+
+  @override
+  String get visibilitySwitch_privacyAdvancedLabel =>
+      'Расширенные настройки приватности';
+
+  @override
+  String get visibilitySwitch_privacyAdvancedDescription =>
+      'Точная настройка защиты от отслеживания, безопасного DNS, рекомендуемых настроек безопасности и защиты от распознавания устройства. Скрытие этих настроек не отключает защиту.';
+
+  @override
+  String get visibilitySwitch_webappStorageLabel => 'Хранилище веб-приложений';
+
+  @override
+  String get visibilitySwitch_webappStorageDescription =>
+      'Выбор куки и входов в аккаунты для приложения, добавленного на главный экран';
+
+  @override
+  String get visibilitySwitch_aiLabel => 'ИИ на устройстве';
+
+  @override
+  String get visibilitySwitch_aiDescription =>
+      'Подсказки для группировки вкладок от ИИ, который работает только на этом устройстве';
+
+  @override
+  String get visibilitySwitch_expertDetailsLabel => 'Настройки для экспертов';
+
+  @override
+  String get visibilitySwitch_expertDetailsDescription =>
+      'Управление группами усиления защиты движка, маршрутизацией по контейнерам, JavaScript, user agent, сертификатами и не только';
+
+  @override
+  String visibilitySwitch_alsoNeeds(String switches) {
+    return 'Для части этой функции также нужно: $switches';
+  }
+
+  @override
+  String visibilitySwitch_revealTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Показать скрытые функции?',
+      one: 'Показать скрытую функцию?',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String visibilitySwitch_revealIntro(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Для этого нужны функции, которые сейчас скрыты:',
+      one: 'Это относится к функции, которая сейчас скрыта:',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String visibilitySwitch_revealOutcome(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Их кнопки и настройки снова появятся. Больше ничего не изменится.',
+      one: 'Её кнопки и настройки снова появятся. Больше ничего не изменится.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String visibilitySwitch_revealResumesIntro(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Пока функции скрыты, эти настройки используют значения по умолчанию. Изменения сохраняются и снова начнут действовать, когда вы их покажете:',
+      one:
+          'Пока функция скрыта, эти настройки используют значения по умолчанию. Изменения сохраняются и снова начнут действовать, когда вы её покажете:',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get visibilitySwitch_takesEffectAfterRestart =>
+      'Вступит в силу после перезапуска';
+
+  @override
+  String get visibilitySwitch_revealConfirm => 'Показать';
+
+  @override
+  String get visibilitySwitch_stillHiddenNote =>
+      'Это относится к скрытой функции. Показать её можно в разделе «Настройки > Управление функциями».';
+
+  @override
+  String get visibilitySwitch_showFailed =>
+      'Не удалось показать функцию. Попробуйте ещё раз.';
+
+  @override
+  String get visibilitySwitch_hiddenControlHint =>
+      'Часть скрытой функции. Активируйте, чтобы показать функцию';
+
+  @override
+  String visibilitySwitch_hiddenStatus(String switchLabel) {
+    return 'Часть скрытой функции «$switchLabel»';
+  }
+
+  @override
+  String visibilitySwitch_hiddenStatusSeveral(String switchLabels) {
+    return 'Часть скрытых функций: $switchLabels';
+  }
+
+  @override
+  String get visibilitySwitch_notAppliedWhileHidden =>
+      'Не применяется, пока скрыто';
+
+  @override
+  String visibilitySwitch_hideWarningTitle(String feature) {
+    return 'Скрыть «$feature»?';
+  }
+
+  @override
+  String visibilitySwitch_hideWarningContent(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Пока функции скрыты, эти настройки используют значения по умолчанию. Изменения сохраняются и снова начнут действовать, когда вы их покажете.',
+      one:
+          'Пока функция скрыта, эти настройки используют значения по умолчанию. Изменения сохраняются и снова начнут действовать, когда вы её покажете.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get visibilitySwitch_hideWarningConfirm => 'Скрыть';
+
+  @override
+  String get visibilitySwitch_stopsApplyingTitle =>
+      'Изменения, которые перестанут применяться';
+
+  @override
+  String get visibilitySwitch_appliesAgainTitle =>
+      'Изменения, которые снова начнут применяться';
+
+  @override
+  String get visibilitySwitch_hiddenSettingUrlCleanerAutoApply =>
+      'Автоприменение очистки URL-адресов';
+
+  @override
+  String get visibilitySwitch_hiddenSettingUrlCleanerRules =>
+      'Правила очистки URL-адресов';
+
+  @override
+  String get visibilitySwitch_hiddenSettingToolbarButtons =>
+      'Замены и долгое нажатие для кнопок панели';
+
+  @override
   String get failureWidget_defaultTitle => 'Что-то пошло не так';
 
   @override
   String get failureWidget_unknownError => 'Неизвестная ошибка';
+
+  @override
+  String get rememberedPrompt_dontAskAgain => 'Больше не спрашивать';
+
+  @override
+  String get rememberedPrompt_dontAskAgainHint =>
+      'Это можно изменить в настройках.';
+
+  @override
+  String get rememberedPrompt_answerAsk => 'Спрашивать';
+
+  @override
+  String get rememberedPrompt_answerKeep => 'Оставить';
+
+  @override
+  String get rememberedPrompt_keepExternalTabLabel =>
+      'Выход из вкладки, открытой другим приложением';
+
+  @override
+  String get rememberedPrompt_keepExternalTabDescription =>
+      'Когда «Назад» возвращает в другое приложение: оставить вкладку, отбросить её или спрашивать каждый раз';
+
+  @override
+  String get rememberedPrompt_keepExternalTabKeywords =>
+      'оставить вкладку, отбросить вкладку, внешнее приложение, ссылка, назад, выйти, больше не спрашивать, intent, keep tab';
+
+  @override
+  String get rememberedPrompt_closeIsolatedTabsLabel =>
+      'Спрашивать перед закрытием изолированных вкладок';
+
+  @override
+  String get rememberedPrompt_closeIsolatedTabsDescription =>
+      'При закрытии последней вкладки изолированной группы удаляются её куки и данные сайтов';
+
+  @override
+  String get rememberedPrompt_closeIsolatedTabsKeywords =>
+      'изолированная, закрыть вкладку, удалить данные, куки, подтверждение, больше не спрашивать, isolated, cookies';
+
+  @override
+  String get rememberedPrompt_closeAllTabsLabel =>
+      'Спрашивать перед закрытием всех вкладок';
+
+  @override
+  String get rememberedPrompt_closeAllTabsDescription =>
+      'При закрытии всех вкладок через меню контейнера';
+
+  @override
+  String get rememberedPrompt_closeAllTabsKeywords =>
+      'закрыть все, вкладки, подтверждение, больше не спрашивать, close all';
+
+  @override
+  String rememberedPrompt_startTorLabel(String torBrand) {
+    return 'Спрашивать перед запуском $torBrand';
+  }
+
+  @override
+  String rememberedPrompt_startTorDescription(String torBrand) {
+    return 'Когда вкладке нужен $torBrand, а он не запущен';
+  }
+
+  @override
+  String get rememberedPrompt_startTorKeywords =>
+      'tor, onion, прокси, запустить, подтверждение, больше не спрашивать';
+
+  @override
+  String get rememberedPrompt_startProxyConnectionLabel =>
+      'Спрашивать перед запуском прокси-подключения';
+
+  @override
+  String get rememberedPrompt_startProxyConnectionDescription =>
+      'Когда прокси-подключение контейнера не запущено';
+
+  @override
+  String get rememberedPrompt_startProxyConnectionKeywords =>
+      'прокси, vpn, подключение, контейнер, запустить, подтверждение, больше не спрашивать, proxy';
 
   @override
   String get speechToTextButton_serviceNotAvailable =>
@@ -14267,7 +15245,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String uiHelper_canNotHandleScheme(String scheme) {
-    return 'Невозможно обработать «$scheme»';
+    return 'Ни одно приложение не может открыть ссылки «$scheme»';
   }
 
   @override

@@ -20,7 +20,9 @@
 import 'dart:async';
 
 import 'package:clock/clock.dart';
+import 'package:copy_with_extension/copy_with_extension.dart';
 import 'package:fast_equatable/fast_equatable.dart';
+import 'package:flutter_singbox_proxy/flutter_singbox_proxy.dart';
 import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:weblibre/features/proxy/data/proxy_connection.dart';
@@ -51,6 +53,7 @@ const proxyRestartGracePeriod = Duration(seconds: 5);
 typedef ProxyFailedLoad = ({String host, DateTime at});
 
 /// What page loads and connection tests have shown about a running proxy.
+@CopyWith()
 class ProxyTrafficEvidence with FastEquatable {
   /// Loads that failed through it within [proxyFailedLoadWindow], oldest
   /// first.
@@ -59,27 +62,30 @@ class ProxyTrafficEvidence with FastEquatable {
   /// The last connection test through it failed.
   final bool testFailed;
 
-  ProxyTrafficEvidence({required this.failedLoads, required this.testFailed});
+  /// Its WireGuard peer stopped answering handshakes.
+  ///
+  /// Reported by the runtime itself, which sees every handshake: no load has
+  /// to fail first, and a tunnel nobody is using still shows as down. Only the
+  /// runtime takes it back — a load or test that seems to get through does not
+  /// (see [ProxyTrafficHealth.recordSuccessfulLoad]).
+  final bool peerUnanswered;
+
+  ProxyTrafficEvidence({
+    required this.failedLoads,
+    required this.testFailed,
+    this.peerUnanswered = false,
+  });
 
   bool get notResponding =>
       testFailed ||
+      peerUnanswered ||
       failedLoads.map((load) => load.host).toSet().length >=
           proxyFailedHostsForNotResponding;
 
-  bool get isEmpty => failedLoads.isEmpty && !testFailed;
-
-  ProxyTrafficEvidence copyWith({
-    List<ProxyFailedLoad>? failedLoads,
-    bool? testFailed,
-  }) {
-    return ProxyTrafficEvidence(
-      failedLoads: failedLoads ?? this.failedLoads,
-      testFailed: testFailed ?? this.testFailed,
-    );
-  }
+  bool get isEmpty => failedLoads.isEmpty && !testFailed && !peerUnanswered;
 
   @override
-  List<Object?> get hashParameters => [failedLoads, testFailed];
+  List<Object?> get hashParameters => [failedLoads, testFailed, peerUnanswered];
 }
 
 /// Evidence that a proxy which is up is not carrying traffic, keyed by encoded
@@ -90,12 +96,16 @@ class ProxyTrafficEvidence with FastEquatable {
 /// answers starts just as successfully as one that works (issue #669). What
 /// actually shows a tunnel is down is traffic through it failing, so failed
 /// page loads and failed connection tests are collected here — passively, from
-/// traffic the user sent anyway, with no probing of its own.
+/// traffic the user sent anyway, with no probing of its own. So is what the
+/// runtime reports of a WireGuard tunnel's handshakes, which go unanswered
+/// before any load has had the time to fail (issue #693).
 ///
 /// Evidence is about one run of a tunnel. It is dropped when a (re)start of
 /// the proxy begins and again when it ends, when traffic through it gets
 /// through — a connection test, or a page load — and as it ages past
-/// [proxyFailedLoadWindow].
+/// [proxyFailedLoadWindow]. What the runtime says of handshakes is the
+/// runtime's alone to change: it mirrors the runtime's latest
+/// [SingboxProxyTunnelState].
 @Riverpod(keepAlive: true)
 class ProxyTrafficHealth extends _$ProxyTrafficHealth {
   Timer? _expiry;
@@ -116,7 +126,11 @@ class ProxyTrafficHealth extends _$ProxyTrafficHealth {
       for (final id in ended) {
         _startEndedAt[id] = now;
       }
-      _clear({...starting, ...ended});
+      // The runtime forgets its handshake verdicts with every (re)start and
+      // says so itself, for every profile of the instance.
+      for (final id in {...starting, ...ended}) {
+        _clearTrafficEvidence(id);
+      }
     });
 
     ref.listen(torProxyServiceProvider.select((status) => status.isBusy), (
@@ -132,6 +146,12 @@ class ProxyTrafficHealth extends _$ProxyTrafficHealth {
         _applyTestResult(connectionId.encode(), result);
       }
     });
+
+    final tunnels = ref
+        .read(singboxProxyClientProvider)
+        .tunnelStream
+        .listen(_applyTunnelState);
+    ref.onDispose(tunnels.cancel);
 
     return const {};
   }
@@ -151,17 +171,25 @@ class ProxyTrafficHealth extends _$ProxyTrafficHealth {
 
     state = {
       ...state,
-      encodedProxyId: ProxyTrafficEvidence(
-        failedLoads: failedLoads,
-        testFailed: current?.testFailed ?? false,
-      ),
+      // Copied rather than rebuilt, so what else is on record — a failed test,
+      // an unanswered peer — stays.
+      encodedProxyId:
+          current?.copyWith(failedLoads: failedLoads) ??
+          ProxyTrafficEvidence(failedLoads: failedLoads, testFailed: false),
     };
     _prune();
   }
 
   /// Records that a page load through [encodedProxyId] got through, which
-  /// outweighs every failure before it.
-  void recordSuccessfulLoad(String encodedProxyId) => _clear({encodedProxyId});
+  /// outweighs every failure before it — every failed load and test, that is.
+  ///
+  /// An unanswered peer stays. A load that "got through" may never have left
+  /// the device — a page back from the cache, from the back/forward cache — and
+  /// the runtime does not repeat itself: it reports a peer that answers again
+  /// as soon as one does, and clearing the verdict here would leave a dead
+  /// tunnel reading as up for as long as its peer kept quiet.
+  void recordSuccessfulLoad(String encodedProxyId) =>
+      _clearTrafficEvidence(encodedProxyId);
 
   /// Whether traffic through [encodedProxyId] that failed at [now] may have
   /// failed because of a (re)start of the proxy rather than its tunnel.
@@ -201,7 +229,8 @@ class ProxyTrafficHealth extends _$ProxyTrafficHealth {
       case AsyncData():
         _testStartedAt.remove(encodedProxyId);
         // Traffic got through just now, which outweighs every failure before.
-        _clear({encodedProxyId});
+        // A peer that answered it is the runtime's to report.
+        _clearTrafficEvidence(encodedProxyId);
       case AsyncError(:final error):
         final testStartedAt = _testStartedAt.remove(encodedProxyId);
         // Says nothing about the tunnel: there was none to test.
@@ -227,6 +256,62 @@ class ProxyTrafficHealth extends _$ProxyTrafficHealth {
       case AsyncLoading():
         _testStartedAt[encodedProxyId] = clock.now();
     }
+  }
+
+  /// The runtime's word on which WireGuard tunnels' peers do not answer.
+  ///
+  /// The whole set every time, so every connection not in it answers as far as
+  /// is known: a (re)start of the shared instance forgets every tunnel's
+  /// verdict, also of profiles that were neither starting nor stopping.
+  ///
+  /// Not subject to [_failedFromRestart]: the runtime starts over watching
+  /// handshakes with every (re)start, so whatever it says is about the
+  /// instance running now.
+  void _applyTunnelState(SingboxProxyTunnelState tunnels) {
+    // The runtime's profile ids are the encoded connection ids.
+    final unanswered = tunnels.unansweredProfileIds.toSet();
+
+    final next = <String, ProxyTrafficEvidence>{
+      for (final MapEntry(key: id, value: evidence) in state.entries)
+        if (evidence.peerUnanswered != unanswered.contains(id))
+          id: evidence.copyWith(peerUnanswered: unanswered.contains(id))
+        else
+          id: evidence,
+      for (final id in unanswered)
+        if (!state.containsKey(id))
+          id: ProxyTrafficEvidence(
+            failedLoads: const [],
+            testFailed: false,
+            peerUnanswered: true,
+          ),
+    }..removeWhere((_, evidence) => evidence.isEmpty);
+
+    if (!_sameEvidence(next, state)) state = next;
+  }
+
+  /// Drops the failed loads and test of [encodedProxyId], keeping what the
+  /// runtime said of its peer.
+  void _clearTrafficEvidence(String encodedProxyId) {
+    final current = state[encodedProxyId];
+    if (current == null) return;
+
+    final next = current.copyWith(failedLoads: const [], testFailed: false);
+    state = {
+      for (final entry in state.entries)
+        if (entry.key != encodedProxyId) entry.key: entry.value,
+      if (!next.isEmpty) encodedProxyId: next,
+    };
+  }
+
+  static bool _sameEvidence(
+    Map<String, ProxyTrafficEvidence> a,
+    Map<String, ProxyTrafficEvidence> b,
+  ) {
+    if (a.length != b.length) return false;
+    for (final MapEntry(:key, :value) in a.entries) {
+      if (b[key] != value) return false;
+    }
+    return true;
   }
 
   void _clear(Set<String> encodedProxyIds) {

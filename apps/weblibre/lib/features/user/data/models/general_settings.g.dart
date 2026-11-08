@@ -299,6 +299,14 @@ abstract class _$GeneralSettingsCWProxy {
 
   GeneralSettings unmountGeckoViewOffRoute(bool unmountGeckoViewOffRoute);
 
+  GeneralSettings rememberedPrompts(
+    Map<RememberedPrompt, String> rememberedPrompts,
+  );
+
+  GeneralSettings visibilitySwitches(
+    Map<VisibilitySwitch, bool> visibilitySwitches,
+  );
+
   /// Creates a new instance with the provided field values.
   /// Omitted fields keep their values; explicit `null` clears nullable fields.
   /// The public API rejects `null` for non-nullable fields. To update a single field use `GeneralSettings(...).copyWith.fieldName(value)`.
@@ -428,6 +436,8 @@ abstract class _$GeneralSettingsCWProxy {
     bool globalDesktopMode,
     List<String> desktopModeSites,
     bool unmountGeckoViewOffRoute,
+    Map<RememberedPrompt, String> rememberedPrompts,
+    Map<VisibilitySwitch, bool> visibilitySwitches,
   });
 }
 
@@ -955,6 +965,16 @@ class _$GeneralSettingsCWProxyImpl implements _$GeneralSettingsCWProxy {
   GeneralSettings unmountGeckoViewOffRoute(bool unmountGeckoViewOffRoute) =>
       call(unmountGeckoViewOffRoute: unmountGeckoViewOffRoute);
 
+  @override
+  GeneralSettings rememberedPrompts(
+    Map<RememberedPrompt, String> rememberedPrompts,
+  ) => call(rememberedPrompts: rememberedPrompts);
+
+  @override
+  GeneralSettings visibilitySwitches(
+    Map<VisibilitySwitch, bool> visibilitySwitches,
+  ) => call(visibilitySwitches: visibilitySwitches);
+
   /// Creates a new instance with the provided field values.
   /// Omitted fields keep their values; explicit `null` clears nullable fields.
   /// The public API rejects `null` for non-nullable fields. To update a single field use `GeneralSettings(...).copyWith.fieldName(value)`.
@@ -1088,6 +1108,8 @@ class _$GeneralSettingsCWProxyImpl implements _$GeneralSettingsCWProxy {
     Object? globalDesktopMode = const $CopyWithPlaceholder(),
     Object? desktopModeSites = const $CopyWithPlaceholder(),
     Object? unmountGeckoViewOffRoute = const $CopyWithPlaceholder(),
+    Object? rememberedPrompts = const $CopyWithPlaceholder(),
+    Object? visibilitySwitches = const $CopyWithPlaceholder(),
   }) {
     return GeneralSettings(
       themeMode: themeMode == const $CopyWithPlaceholder() || themeMode == null
@@ -1782,6 +1804,18 @@ class _$GeneralSettingsCWProxyImpl implements _$GeneralSettingsCWProxy {
           ? _value.unmountGeckoViewOffRoute
           // ignore: cast_nullable_to_non_nullable
           : unmountGeckoViewOffRoute as bool,
+      rememberedPrompts:
+          rememberedPrompts == const $CopyWithPlaceholder() ||
+              rememberedPrompts == null
+          ? _value.rememberedPrompts
+          // ignore: cast_nullable_to_non_nullable
+          : rememberedPrompts as Map<RememberedPrompt, String>,
+      visibilitySwitches:
+          visibilitySwitches == const $CopyWithPlaceholder() ||
+              visibilitySwitches == null
+          ? _value.visibilitySwitches
+          // ignore: cast_nullable_to_non_nullable
+          : visibilitySwitches as Map<VisibilitySwitch, bool>,
     );
   }
 }
@@ -2039,6 +2073,12 @@ GeneralSettings _$GeneralSettingsFromJson(
       ?.map((e) => e as String)
       .toList(),
   unmountGeckoViewOffRoute: json['unmountGeckoViewOffRoute'] as bool?,
+  rememberedPrompts: parseRememberedPrompts(
+    json['rememberedPrompts'] as Map<String, dynamic>?,
+  ),
+  visibilitySwitches: parseVisibilitySwitches(
+    json['visibilitySwitches'] as Map<String, dynamic>?,
+  ),
 );
 
 Map<String, dynamic> _$GeneralSettingsToJson(
@@ -2189,6 +2229,12 @@ Map<String, dynamic> _$GeneralSettingsToJson(
   'globalDesktopMode': instance.globalDesktopMode,
   'desktopModeSites': instance.desktopModeSites,
   'unmountGeckoViewOffRoute': instance.unmountGeckoViewOffRoute,
+  'rememberedPrompts': instance.rememberedPrompts.map(
+    (k, e) => MapEntry(_$RememberedPromptEnumMap[k]!, e),
+  ),
+  'visibilitySwitches': instance.visibilitySwitches.map(
+    (k, e) => MapEntry(_$VisibilitySwitchEnumMap[k]!, e),
+  ),
 };
 
 const _$ThemeModeEnumMap = {
@@ -2350,4 +2396,27 @@ const _$ReduceMotionModeEnumMap = {
   ReduceMotionMode.system: 'system',
   ReduceMotionMode.on: 'on',
   ReduceMotionMode.off: 'off',
+};
+
+const _$RememberedPromptEnumMap = {
+  RememberedPrompt.keepExternalTab: 'keepExternalTab',
+  RememberedPrompt.closeIsolatedTabs: 'closeIsolatedTabs',
+  RememberedPrompt.closeAllTabs: 'closeAllTabs',
+  RememberedPrompt.startTor: 'startTor',
+  RememberedPrompt.startProxyConnection: 'startProxyConnection',
+};
+
+const _$VisibilitySwitchEnumMap = {
+  VisibilitySwitch.containers: 'containers',
+  VisibilitySwitch.isolatedTabs: 'isolatedTabs',
+  VisibilitySwitch.connections: 'connections',
+  VisibilitySwitch.profiles: 'profiles',
+  VisibilitySwitch.treeTabs: 'treeTabs',
+  VisibilitySwitch.layoutAdvanced: 'layoutAdvanced',
+  VisibilitySwitch.gestures: 'gestures',
+  VisibilitySwitch.keyboardCustomization: 'keyboardCustomization',
+  VisibilitySwitch.privacyAdvanced: 'privacyAdvanced',
+  VisibilitySwitch.webappStorage: 'webappStorage',
+  VisibilitySwitch.ai: 'ai',
+  VisibilitySwitch.expertDetails: 'expertDetails',
 };

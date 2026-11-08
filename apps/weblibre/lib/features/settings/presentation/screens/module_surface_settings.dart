@@ -48,8 +48,15 @@ class ModuleSurfaceSettingsScreen extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
-    final entries = ref.watch(searchModuleOrderProvider(surface));
-    final notifier = ref.read(searchModuleOrderProvider(surface).notifier);
+    // Modules that follow a hidden feature are left out, not switched off:
+    // the drawn surface skips them anyway, so a switch here would do nothing.
+    final shownFeatures = ref.watch(displayedShownFeaturesProvider);
+    final order = ref.watch(editedModuleOrderProvider(surface));
+    final entries = [
+      for (final entry in order)
+        if (isSearchModuleFeatureShown(entry.type, shownFeatures)) entry,
+    ];
+    final notifier = ref.read(editedModuleOrderProvider(surface).notifier);
     final colorScheme = Theme.of(context).colorScheme;
 
     return SettingsCustomScrollScaffold(
@@ -94,7 +101,11 @@ class ModuleSurfaceSettingsScreen extends HookConsumerWidget {
           const SliverToBoxAdapter(child: _SearchFieldRow()),
         SliverReorderableList(
           itemCount: entries.length,
-          onReorderItem: notifier.reorder,
+          onReorderItem: (oldIndex, newIndex) => notifier.reorderShown(
+            [for (final entry in entries) entry.type],
+            oldIndex,
+            newIndex,
+          ),
           itemBuilder: (context, index) {
             final entry = entries[index];
 
@@ -145,9 +156,9 @@ class _HomeSearchBarRow extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
-    final settings = ref.watch(generalSettingsWithDefaultsProvider);
+    final settings = ref.watch(storedGeneralSettingsProvider);
     final stored = settings.homeSearchBarPlacement;
-    final resolved = ref.watch(effectiveHomeSearchBarPlacementProvider);
+    final resolved = ref.watch(displayedHomeSearchBarPlacementProvider);
 
     return MenuAnchor(
       menuChildren: [
@@ -193,9 +204,9 @@ class _SearchFieldRow extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
     final stored = ref.watch(
-      generalSettingsWithDefaultsProvider.select((s) => s.searchFieldPlacement),
+      storedGeneralSettingsProvider.select((s) => s.searchFieldPlacement),
     );
-    final resolved = ref.watch(effectiveSearchFieldPlacementProvider);
+    final resolved = ref.watch(displayedSearchFieldPlacementProvider);
 
     return MenuAnchor(
       menuChildren: [

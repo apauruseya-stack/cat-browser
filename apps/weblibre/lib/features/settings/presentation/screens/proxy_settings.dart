@@ -21,11 +21,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_material_design_icons/flutter_material_design_icons.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:weblibre/core/routing/routes.dart';
+import 'package:weblibre/domain/feature_policy/feature_policy.dart';
 import 'package:weblibre/features/proxy/presentation/utils/proxy_log_level_l10n.dart';
 import 'package:weblibre/features/settings/presentation/widgets/settings_detail.dart';
 import 'package:weblibre/features/user/data/models/proxy_diagnostics_settings.dart';
 import 'package:weblibre/features/user/domain/repositories/proxy_diagnostics_settings.dart';
 import 'package:weblibre/l10n/generated/app_localizations.dart';
+import 'package:weblibre/presentation/widgets/hidden_feature_gate.dart';
 
 List<SettingsSectionDefinition> proxySettingsSections(BuildContext context) {
   final l10n = AppLocalizations.of(context);
@@ -38,18 +40,23 @@ List<SettingsSectionDefinition> proxySettingsSections(BuildContext context) {
           title: l10n.settings_proxyConnectionsTitle,
           subtitle: l10n.settings_proxyConnectionsSubtitle,
           keywords: settingsKeywords(l10n.settings_proxyConnectionsKeywords),
+          opensScreen: true,
           child: const _ProxyConnectionsTile(),
         ),
         SettingsEntryDefinition(
           title: l10n.settings_proxyRoutingTitle,
+          feature: FeatureId.connectionsGlobalRouting,
+          keptWhen: KeptWhen.globalRouteInUse,
           subtitle: l10n.settings_proxyRoutingSubtitle,
           keywords: settingsKeywords(l10n.settings_proxyRoutingKeywords),
+          opensScreen: true,
           child: const _ProxyRoutingTile(),
         ),
         SettingsEntryDefinition(
           title: l10n.settings_proxyLogsTitle,
           subtitle: l10n.settings_indexProxyLogsSubtitle,
           keywords: settingsKeywords(l10n.settings_proxyLogsKeywords),
+          opensScreen: true,
           child: const _ProxyLogsTile(),
         ),
       ],
@@ -64,11 +71,17 @@ class ProxySettingsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
 
-    return SettingsDetailScaffold(
-      title: l10n.settings_proxyTitle,
-      subtitle: l10n.settings_proxySubtitle,
-      icon: MdiIcons.lanConnect,
-      sections: proxySettingsSections(context),
+    // While a connection is in use everything here stays usable, so it can
+    // be checked and stopped (P5).
+    return HiddenFeatureScope(
+      feature: FeatureId.connectionsImportVpnProxy,
+      keptWhen: KeptWhen.connectionsInUse,
+      child: SettingsDetailScaffold(
+        title: l10n.settings_proxyTitle,
+        subtitle: l10n.settings_proxySubtitle,
+        icon: MdiIcons.lanConnect,
+        sections: proxySettingsSections(context),
+      ),
     );
   }
 }
@@ -132,9 +145,7 @@ class _ProxyLogsTile extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
-    final logLevel = ref
-        .watch(proxyDiagnosticsSettingsWithDefaultsProvider)
-        .logLevel;
+    final logLevel = ref.watch(storedProxyDiagnosticsSettingsProvider).logLevel;
 
     return ListTile(
       leading: Icon(

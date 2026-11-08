@@ -3,6 +3,95 @@
 part of 'proxy_health.dart';
 
 // **************************************************************************
+// CopyWithGenerator
+// **************************************************************************
+
+abstract class _$ProxyTrafficEvidenceCWProxy {
+  ProxyTrafficEvidence failedLoads(List<ProxyFailedLoad> failedLoads);
+
+  ProxyTrafficEvidence testFailed(bool testFailed);
+
+  ProxyTrafficEvidence peerUnanswered(bool peerUnanswered);
+
+  /// Creates a new instance with the provided field values.
+  /// Omitted fields keep their values; explicit `null` clears nullable fields.
+  /// The public API rejects `null` for non-nullable fields. To update a single field use `ProxyTrafficEvidence(...).copyWith.fieldName(value)`.
+  ///
+  /// Example:
+  /// ```dart
+  /// ProxyTrafficEvidence(...).copyWith(id: 12, name: "My name")
+  /// ```
+  ProxyTrafficEvidence call({
+    List<ProxyFailedLoad> failedLoads,
+    bool testFailed,
+    bool peerUnanswered,
+  });
+}
+
+/// Callable proxy for `copyWith` functionality.
+/// Use as `instanceOfProxyTrafficEvidence.copyWith(...)` or call `instanceOfProxyTrafficEvidence.copyWith.fieldName(value)` for a single field.
+class _$ProxyTrafficEvidenceCWProxyImpl
+    implements _$ProxyTrafficEvidenceCWProxy {
+  const _$ProxyTrafficEvidenceCWProxyImpl(this._value);
+
+  final ProxyTrafficEvidence _value;
+
+  @override
+  ProxyTrafficEvidence failedLoads(List<ProxyFailedLoad> failedLoads) =>
+      call(failedLoads: failedLoads);
+
+  @override
+  ProxyTrafficEvidence testFailed(bool testFailed) =>
+      call(testFailed: testFailed);
+
+  @override
+  ProxyTrafficEvidence peerUnanswered(bool peerUnanswered) =>
+      call(peerUnanswered: peerUnanswered);
+
+  /// Creates a new instance with the provided field values.
+  /// Omitted fields keep their values; explicit `null` clears nullable fields.
+  /// The public API rejects `null` for non-nullable fields. To update a single field use `ProxyTrafficEvidence(...).copyWith.fieldName(value)`.
+  ///
+  /// Example:
+  /// ```dart
+  /// ProxyTrafficEvidence(...).copyWith(id: 12, name: "My name")
+  /// ```
+  @override
+  ProxyTrafficEvidence call({
+    Object? failedLoads = const $CopyWithPlaceholder(),
+    Object? testFailed = const $CopyWithPlaceholder(),
+    Object? peerUnanswered = const $CopyWithPlaceholder(),
+  }) {
+    return ProxyTrafficEvidence(
+      failedLoads:
+          failedLoads == const $CopyWithPlaceholder() || failedLoads == null
+          ? _value.failedLoads
+          // ignore: cast_nullable_to_non_nullable
+          : failedLoads as List<ProxyFailedLoad>,
+      testFailed:
+          testFailed == const $CopyWithPlaceholder() || testFailed == null
+          ? _value.testFailed
+          // ignore: cast_nullable_to_non_nullable
+          : testFailed as bool,
+      peerUnanswered:
+          peerUnanswered == const $CopyWithPlaceholder() ||
+              peerUnanswered == null
+          ? _value.peerUnanswered
+          // ignore: cast_nullable_to_non_nullable
+          : peerUnanswered as bool,
+    );
+  }
+}
+
+extension $ProxyTrafficEvidenceCopyWith on ProxyTrafficEvidence {
+  /// Returns a callable class used to build a new instance with modified fields.
+  /// Example: `instanceOfProxyTrafficEvidence.copyWith(...)` or `instanceOfProxyTrafficEvidence.copyWith.fieldName(...)`.
+  // ignore: library_private_types_in_public_api
+  _$ProxyTrafficEvidenceCWProxy get copyWith =>
+      _$ProxyTrafficEvidenceCWProxyImpl(this);
+}
+
+// **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
@@ -16,12 +105,16 @@ part of 'proxy_health.dart';
 /// answers starts just as successfully as one that works (issue #669). What
 /// actually shows a tunnel is down is traffic through it failing, so failed
 /// page loads and failed connection tests are collected here — passively, from
-/// traffic the user sent anyway, with no probing of its own.
+/// traffic the user sent anyway, with no probing of its own. So is what the
+/// runtime reports of a WireGuard tunnel's handshakes, which go unanswered
+/// before any load has had the time to fail (issue #693).
 ///
 /// Evidence is about one run of a tunnel. It is dropped when a (re)start of
 /// the proxy begins and again when it ends, when traffic through it gets
 /// through — a connection test, or a page load — and as it ages past
-/// [proxyFailedLoadWindow].
+/// [proxyFailedLoadWindow]. What the runtime says of handshakes is the
+/// runtime's alone to change: it mirrors the runtime's latest
+/// [SingboxProxyTunnelState].
 
 @ProviderFor(ProxyTrafficHealth)
 final proxyTrafficHealthProvider = ProxyTrafficHealthProvider._();
@@ -34,12 +127,16 @@ final proxyTrafficHealthProvider = ProxyTrafficHealthProvider._();
 /// answers starts just as successfully as one that works (issue #669). What
 /// actually shows a tunnel is down is traffic through it failing, so failed
 /// page loads and failed connection tests are collected here — passively, from
-/// traffic the user sent anyway, with no probing of its own.
+/// traffic the user sent anyway, with no probing of its own. So is what the
+/// runtime reports of a WireGuard tunnel's handshakes, which go unanswered
+/// before any load has had the time to fail (issue #693).
 ///
 /// Evidence is about one run of a tunnel. It is dropped when a (re)start of
 /// the proxy begins and again when it ends, when traffic through it gets
 /// through — a connection test, or a page load — and as it ages past
-/// [proxyFailedLoadWindow].
+/// [proxyFailedLoadWindow]. What the runtime says of handshakes is the
+/// runtime's alone to change: it mirrors the runtime's latest
+/// [SingboxProxyTunnelState].
 final class ProxyTrafficHealthProvider
     extends
         $NotifierProvider<
@@ -54,12 +151,16 @@ final class ProxyTrafficHealthProvider
   /// answers starts just as successfully as one that works (issue #669). What
   /// actually shows a tunnel is down is traffic through it failing, so failed
   /// page loads and failed connection tests are collected here — passively, from
-  /// traffic the user sent anyway, with no probing of its own.
+  /// traffic the user sent anyway, with no probing of its own. So is what the
+  /// runtime reports of a WireGuard tunnel's handshakes, which go unanswered
+  /// before any load has had the time to fail (issue #693).
   ///
   /// Evidence is about one run of a tunnel. It is dropped when a (re)start of
   /// the proxy begins and again when it ends, when traffic through it gets
   /// through — a connection test, or a page load — and as it ages past
-  /// [proxyFailedLoadWindow].
+  /// [proxyFailedLoadWindow]. What the runtime says of handshakes is the
+  /// runtime's alone to change: it mirrors the runtime's latest
+  /// [SingboxProxyTunnelState].
   ProxyTrafficHealthProvider._()
     : super(
         from: null,
@@ -90,7 +191,7 @@ final class ProxyTrafficHealthProvider
 }
 
 String _$proxyTrafficHealthHash() =>
-    r'28b42abf425c77d8c82efaf35b1b58ac1fbc405b';
+    r'f8dc1c86db02eeb6295e5e3d6f7edeb30b89a94e';
 
 /// Evidence that a proxy which is up is not carrying traffic, keyed by encoded
 /// connection id.
@@ -100,12 +201,16 @@ String _$proxyTrafficHealthHash() =>
 /// answers starts just as successfully as one that works (issue #669). What
 /// actually shows a tunnel is down is traffic through it failing, so failed
 /// page loads and failed connection tests are collected here — passively, from
-/// traffic the user sent anyway, with no probing of its own.
+/// traffic the user sent anyway, with no probing of its own. So is what the
+/// runtime reports of a WireGuard tunnel's handshakes, which go unanswered
+/// before any load has had the time to fail (issue #693).
 ///
 /// Evidence is about one run of a tunnel. It is dropped when a (re)start of
 /// the proxy begins and again when it ends, when traffic through it gets
 /// through — a connection test, or a page load — and as it ages past
-/// [proxyFailedLoadWindow].
+/// [proxyFailedLoadWindow]. What the runtime says of handshakes is the
+/// runtime's alone to change: it mirrors the runtime's latest
+/// [SingboxProxyTunnelState].
 
 abstract class _$ProxyTrafficHealth
     extends $Notifier<Map<String, ProxyTrafficEvidence>> {

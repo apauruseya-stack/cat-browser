@@ -277,7 +277,7 @@ final class ProxyProfileDraftProvider
   }
 }
 
-String _$proxyProfileDraftHash() => r'd9f09466eec89999037296ab1e0c43cfdff94ac5';
+String _$proxyProfileDraftHash() => r'2872f118d320e44c10117fe23c879b9cc775574d';
 
 final class ProxyProfileDraftFamily extends $Family
     with

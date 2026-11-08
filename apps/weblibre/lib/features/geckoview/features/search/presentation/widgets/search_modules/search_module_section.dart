@@ -119,6 +119,10 @@ class SearchModuleSection extends ConsumerWidget {
     final surface = this.surface ?? scope!.surface;
 
     final moduleOrder = ref.watch(searchModuleOrderProvider(surface));
+    final displayState = ref.watch(
+      searchModuleDisplayStateControllerProvider(surface, moduleType),
+    );
+
     final isVisible = moduleOrder.any((e) => e.type == moduleType && e.visible);
     if (!isVisible) {
       return MultiSliver(children: const []);
@@ -127,10 +131,6 @@ class SearchModuleSection extends ConsumerWidget {
     if (hideWhenEmpty && totalCount == 0) {
       return MultiSliver(children: const []);
     }
-
-    final displayState = ref.watch(
-      searchModuleDisplayStateControllerProvider(surface, moduleType),
-    );
 
     final isCollapsed = displayState == SearchModuleDisplayState.collapsed;
     final showAllItems =

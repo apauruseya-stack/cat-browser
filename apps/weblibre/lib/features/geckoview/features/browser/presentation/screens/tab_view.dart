@@ -40,7 +40,7 @@ class TabViewScreen extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final disableAnimations = MediaQuery.disableAnimationsOf(context);
-    final tabsViewMode = ref.watch(tabsViewModeControllerProvider);
+    final tabsViewMode = ref.watch(effectiveTabsViewModeProvider);
     final tabsReorderable = ref.watch(tabsReorderableControllerProvider);
 
     final isSyncedScope = ref.watch(

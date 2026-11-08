@@ -50,7 +50,7 @@ final class AddonDetailsProvider
   }
 }
 
-String _$addonDetailsHash() => r'bbf2efff3f2f7737cf53b7856fb85aefda298751';
+String _$addonDetailsHash() => r'4152b12ba239f3fd92c68edd112be76bf456f294';
 
 final class AddonDetailsFamily extends $Family
     with
@@ -658,7 +658,7 @@ final class AddonUpdateCheckProvider
   }
 }
 
-String _$addonUpdateCheckHash() => r'496cf9756101c9c36fa4b90f1fd92627aee92177';
+String _$addonUpdateCheckHash() => r'2b50bd2d0546bf234ad0ddd64f47f089ffe17dd1';
 
 final class AddonUpdateCheckFamily extends $Family
     with
@@ -739,7 +739,7 @@ final class AddonListProvider
   AddonList create() => AddonList();
 }
 
-String _$addonListHash() => r'96459b04639f15ebee8a1f11807dfcf856c360f6';
+String _$addonListHash() => r'41d4712ac6942446b44ec5c76f6c01dd6e9f3417';
 
 abstract class _$AddonList extends $AsyncNotifier<List<AddonInfo>> {
   FutureOr<List<AddonInfo>> build();

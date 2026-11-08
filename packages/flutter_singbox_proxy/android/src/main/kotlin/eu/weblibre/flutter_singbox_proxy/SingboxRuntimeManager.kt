@@ -8,10 +8,12 @@ import eu.weblibre.flutter_singbox_proxy.generated.SingboxProxyConfigResult
 import eu.weblibre.flutter_singbox_proxy.generated.SingboxProxyLogLevel
 import eu.weblibre.flutter_singbox_proxy.generated.SingboxProxyLogMessage
 import eu.weblibre.flutter_singbox_proxy.generated.SingboxProxyProfile
+import eu.weblibre.flutter_singbox_proxy.generated.SingboxProxyProfileType
 import eu.weblibre.flutter_singbox_proxy.generated.SingboxProxyRuntimeOptions
 import eu.weblibre.flutter_singbox_proxy.generated.SingboxProxyRuntimeEndpoint
 import eu.weblibre.flutter_singbox_proxy.generated.SingboxProxyRuntimeState
 import eu.weblibre.flutter_singbox_proxy.generated.SingboxProxyRuntimeStatus
+import eu.weblibre.flutter_singbox_proxy.generated.SingboxProxyTunnelState
 import java.lang.reflect.InvocationTargetException
 import java.util.concurrent.Executors
 import kotlinx.coroutines.Dispatchers
@@ -24,6 +26,7 @@ class SingboxRuntimeManager(
     private val libboxRuntime: LibboxRuntime = LibboxRuntime(context),
     private val onStateChanged: (SingboxProxyRuntimeState) -> Unit = {},
     private val onLogMessage: (SingboxProxyLogMessage) -> Unit = {},
+    private val onTunnelState: (SingboxProxyTunnelState) -> Unit = {},
     private val dispatchToMain: ((() -> Unit) -> Unit) = { action ->
         if (Looper.myLooper() == Looper.getMainLooper()) {
             action()
@@ -80,6 +83,48 @@ class SingboxRuntimeManager(
     private var maxLogLevel: Int = LIBBOX_LEVEL_WARN
     private var activeOptions = defaultRuntimeOptions()
 
+    /**
+     * Guards [handshakeWatch], [wireGuardProfileByTag] and [unansweredProfileIds].
+     *
+     * Not [stateLock]: log lines arrive on libbox's log thread while the
+     * runtime thread can hold [stateLock] inside a reload that is itself
+     * logging, and a log thread waiting for that lock could stall the very
+     * stream the reload writes to.
+     */
+    private val handshakeLock = Any()
+
+    /**
+     * The WireGuard profiles of the running instance, by endpoint tag. Empty
+     * while an instance is being (re)started, so what is logged then counts
+     * for no one.
+     */
+    private var wireGuardProfileByTag = emptyMap<String, String>()
+
+    /** The profiles whose peer is not answering, as last sent to Dart. */
+    private var unansweredProfileIds = emptySet<String>()
+
+    private val handshakeWatch = WireGuardHandshakeWatch { tag, answering ->
+        val profileId = wireGuardProfileByTag[tag] ?: return@WireGuardHandshakeWatch
+        publishUnanswered(
+            if (answering) unansweredProfileIds - profileId else unansweredProfileIds + profileId
+        )
+    }
+
+    /**
+     * Sends [profileIds] as the whole tunnel state when it differs from what
+     * was sent. Under [handshakeLock].
+     *
+     * The whole set rather than the change: a (re)start forgets every
+     * profile's verdict at once, including those that are not being started,
+     * and Dart has to learn that too.
+     */
+    private fun publishUnanswered(profileIds: Set<String>) {
+        if (profileIds == unansweredProfileIds) return
+        unansweredProfileIds = profileIds
+        val state = SingboxProxyTunnelState(unansweredProfileIds = profileIds.sorted())
+        dispatchToMain { onTunnelState(state) }
+    }
+
     init {
         // Forward every sing-box log entry to Dart. libbox levels follow
         // sing/common/logger: 0 = panic, 1 = fatal, 2 = error, 3 = warn,
@@ -104,6 +149,8 @@ class SingboxRuntimeManager(
         // Ahead of the gate: the wire error this looks for can arrive at any
         // level, and the explanation it emits is a warning either way.
         maybeExplainOversizedPackets(message)
+        // Ahead of it too: wireguard-go reports handshakes at debug level.
+        synchronized(handshakeLock) { handshakeWatch.onLogLine(message) }
 
         if (level > maxLogLevel) return
 
@@ -331,6 +378,7 @@ class SingboxRuntimeManager(
                     }
                     if (remaining.isEmpty()) {
                         libboxRuntime.stopService()
+                        watchHandshakesOf(emptyList())
                         activeProfiles = emptyList()
                         activeOptions = defaultRuntimeOptions()
                         libboxRuntime.setBootstrapDohUrl(null)
@@ -395,6 +443,7 @@ class SingboxRuntimeManager(
             synchronized(stateLock) {
                 runCatching {
                     libboxRuntime.stopService()
+                    watchHandshakesOf(emptyList())
                     activeProfiles = emptyList()
                     activeOptions = defaultRuntimeOptions()
                     libboxRuntime.setBootstrapDohUrl(null)
@@ -459,6 +508,8 @@ class SingboxRuntimeManager(
 
     override fun getState(): SingboxProxyRuntimeState = synchronized(stateLock) { state }
 
+    override fun getVersion(): String? = libboxRuntime.version()
+
     /**
      * The endpoints a start from [from] tries to keep: the running ones, or
      * after a failed start or stop those of the last instance that ran
@@ -492,7 +543,14 @@ class SingboxRuntimeManager(
             )
 
             try {
+                // Every start or reload is a new instance whose tunnels
+                // handshake from scratch. Nothing is watched while it starts:
+                // a reload closes the old instance inside start(), and its
+                // last retries are logged then — counted, they would hold the
+                // new one to the old one's silence.
+                watchHandshakesOf(emptyList())
                 libboxRuntime.start(config.configJson)
+                watchHandshakesOf(profiles)
                 return config
             } catch (error: Throwable) {
                 lastError = error
@@ -503,6 +561,26 @@ class SingboxRuntimeManager(
         }
 
         throw lastError ?: IllegalStateException("Failed to start sing-box runtime")
+    }
+
+    /**
+     * Starts over watching handshakes, for the WireGuard tunnels of [profiles],
+     * and tells Dart that no peer is known not to answer any more.
+     *
+     * The log reaches [handshakeWatch] through libbox's command client, a hop
+     * behind the instance writing it, so a line of the old instance can still
+     * arrive after this. Calling it once the new instance runs keeps that to
+     * the moment the hop takes; one stray retry is short of
+     * [WireGuardHandshakeWatch.UNANSWERED_RETRIES].
+     */
+    private fun watchHandshakesOf(profiles: List<SingboxProxyProfile>) {
+        synchronized(handshakeLock) {
+            handshakeWatch.reset()
+            wireGuardProfileByTag = profiles
+                .filter { profile -> profile.type == SingboxProxyProfileType.WIREGUARD }
+                .associate { profile -> SingboxTagFormat.outboundTag(profile.id) to profile.id }
+            publishUnanswered(emptySet())
+        }
     }
 
     private fun isLocalInboundBindFailure(error: Throwable): Boolean {
@@ -535,6 +613,7 @@ class SingboxRuntimeManager(
         runtimeExecutor.execute {
             synchronized(stateLock) {
                 runCatching { libboxRuntime.stopService() }
+                watchHandshakesOf(emptyList())
                 activeProfiles = emptyList()
                 activeOptions = defaultRuntimeOptions()
                 libboxRuntime.setBootstrapDohUrl(null)

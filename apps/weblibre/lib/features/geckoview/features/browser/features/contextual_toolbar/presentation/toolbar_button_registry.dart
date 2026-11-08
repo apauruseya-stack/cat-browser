@@ -25,6 +25,7 @@ import 'package:flutter_material_design_icons/flutter_material_design_icons.dart
 import 'package:flutter_mozilla_components/flutter_mozilla_components.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:weblibre/core/routing/routes.dart';
+import 'package:weblibre/domain/feature_policy/feature_policy.dart';
 import 'package:weblibre/features/geckoview/domain/entities/states/readerable.dart';
 import 'package:weblibre/features/geckoview/domain/controllers/bottom_sheet.dart';
 import 'package:weblibre/features/geckoview/features/browser/domain/entities/sheet.dart';
@@ -43,7 +44,6 @@ import 'package:weblibre/features/geckoview/features/browser/domain/entities/fon
 import 'package:weblibre/features/geckoview/features/browser/features/contextual_toolbar/data/providers/toolbar_button_configs.dart';
 import 'package:weblibre/features/geckoview/features/browser/features/contextual_toolbar/domain/entities/toolbar_button_id.dart';
 import 'package:weblibre/features/geckoview/features/browser/features/contextual_toolbar/domain/entities/toolbar_button_spec.dart';
-import 'package:weblibre/features/geckoview/features/browser/features/contextual_toolbar/domain/entities/toolbar_config_location.dart';
 import 'package:weblibre/features/geckoview/features/browser/features/contextual_toolbar/presentation/models/contextual_toolbar_scope.dart';
 import 'package:weblibre/features/geckoview/features/browser/features/contextual_toolbar/presentation/utils/toolbar_button_id_l10n.dart';
 import 'package:weblibre/features/geckoview/features/browser/features/contextual_toolbar/presentation/widgets/contextual_bar_buttons.dart';
@@ -61,7 +61,6 @@ import 'package:weblibre/features/geckoview/features/tabs/data/entities/tab_mode
 import 'package:weblibre/features/geckoview/features/tabs/domain/providers/selected_container.dart';
 import 'package:weblibre/features/geckoview/features/tabs/domain/repositories/tab.dart';
 import 'package:weblibre/features/gestures/domain/repositories/gesture_settings.dart';
-import 'package:weblibre/features/settings/presentation/controllers/save_settings.dart';
 import 'package:weblibre/features/user/data/models/engine_settings.dart';
 import 'package:weblibre/features/user/domain/presentation/utils/quit_browser.dart';
 import 'package:weblibre/features/user/domain/repositories/engine_settings.dart';
@@ -93,12 +92,14 @@ class ToolbarButtonDefinition {
   });
 }
 
-/// Whether a reload button is currently configured visible in [location]'s
-/// toolbar. Used to decide whether the back button should fall back to acting
-/// as a stop-loading control (see issue #351).
-bool _isReloadButtonVisible(WidgetRef ref, ToolbarConfigLocation location) {
+/// Whether a reload button is currently configured visible in the toolbar
+/// [scope] draws. Used to decide whether the back button should fall back to
+/// acting as a stop-loading control (see issue #351).
+bool _isReloadButtonVisible(WidgetRef ref, ContextualToolbarScope scope) {
   return ref
-      .read(effectiveToolbarButtonConfigsProvider(location))
+      .read(
+        toolbarButtonConfigsShownBy(scope.location, isPreview: scope.isPreview),
+      )
       .value
       .any(
         (config) =>
@@ -140,8 +141,7 @@ final List<ToolbarButtonDefinition> toolbarButtonRegistry = [
       final isLoading = scope.tabState?.isLoading == true;
       // The back button only doubles as a stop-loading control when no
       // dedicated reload button is present to take over that role.
-      return canGoBack ||
-          (isLoading && !_isReloadButtonVisible(ref, scope.location));
+      return canGoBack || (isLoading && !_isReloadButtonVisible(ref, scope));
     },
     builder: (scope, context, ref) {
       if (scope.isPreview) {
@@ -155,7 +155,7 @@ final List<ToolbarButtonDefinition> toolbarButtonRegistry = [
       return NavigateBackButton(
         selectedTabId: scope.selectedTabId,
         isLoading: scope.tabState?.isLoading ?? false,
-        stopLoadingFallback: !_isReloadButtonVisible(ref, scope.location),
+        stopLoadingFallback: !_isReloadButtonVisible(ref, scope),
       );
     },
   ),
@@ -274,16 +274,11 @@ final List<ToolbarButtonDefinition> toolbarButtonRegistry = [
     isPrimaryAvailable: (scope, ref) {
       final readerableState =
           scope.tabState?.readerableState ?? ReaderableState.$default();
-      final enableReadability = ref.read(
-        generalSettingsWithDefaultsProvider.select(
-          (value) => value.enableReadability,
-        ),
+      final settings = ref.read(
+        generalSettingsShownBy(isPreview: scope.isPreview),
       );
-      final enforceReadability = ref.read(
-        generalSettingsWithDefaultsProvider.select(
-          (value) => value.enforceReadability,
-        ),
-      );
+      final enableReadability = settings.enableReadability;
+      final enforceReadability = settings.enforceReadability;
       return (readerableState.readerable &&
               (enableReadability || readerableState.active)) ||
           (enforceReadability && enableReadability);
@@ -464,6 +459,13 @@ final List<ToolbarButtonDefinition> toolbarButtonRegistry = [
   ToolbarButtonDefinition(
     spec: toggleGesturesToolbarButtonSpec,
     icon: MdiIcons.gestureSwipe,
+    // The gestures quick toggle belongs to drawn gestures, hidden with them
+    // (`switch.gestures`); the button's fallback takes its place.
+    isPrimaryAvailable: (scope, ref) => ref.watch(
+      generalSettingsShownBy(
+        isPreview: scope.isPreview,
+      ).select((s) => s.isFeatureShown(FeatureId.inputDrawnGestures)),
+    ),
     builder: (scope, context, ref) {
       final l10n = AppLocalizations.of(context);
       final on = ref.watch(
@@ -705,7 +707,10 @@ Future<void> _closeTab(
         .where((s) => s.isolationContextId == tabState.isolationContextId)
         .length;
     if (groupCount <= 1 && context.mounted) {
-      final confirmed = await ui_helper.confirmIsolatedTabClose(context);
+      final confirmed = await ui_helper.confirmIsolatedTabClose(
+        context,
+        ref.read,
+      );
       if (!confirmed) return;
     }
   }
@@ -1086,8 +1091,8 @@ Future<void> _adjustFontSize(
   if (rounded == current) return;
 
   await ref
-      .read(saveEngineSettingsControllerProvider.notifier)
-      .save(
+      .read(engineSettingsRepositoryProvider.notifier)
+      .updateSettings(
         (currentSettings) => currentSettings.copyWith.fontSizeFactor(rounded),
       );
 }
@@ -1126,13 +1131,13 @@ class _ReaderModeToolbarButton extends ConsumerWidget {
   }
 }
 
-class _DesktopModeToolbarButton extends ConsumerWidget {
+class _DesktopModeToolbarButton extends StatelessWidget {
   final String? selectedTabId;
 
   const _DesktopModeToolbarButton({required this.selectedTabId});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     if (selectedTabId == null) {
       return const IconButton(
         onPressed: null,
@@ -1140,11 +1145,22 @@ class _DesktopModeToolbarButton extends ConsumerWidget {
       );
     }
 
-    final desktopEnabled = ref.watch(desktopModeProvider(selectedTabId!));
+    return _DesktopModeToggleButton(tabId: selectedTabId!);
+  }
+}
+
+class _DesktopModeToggleButton extends ConsumerWidget {
+  final String tabId;
+
+  const _DesktopModeToggleButton({required this.tabId});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final desktopEnabled = ref.watch(desktopModeProvider(tabId));
 
     return IconButton(
       onPressed: () {
-        ref.read(desktopModeProvider(selectedTabId!).notifier).toggle();
+        ref.read(desktopModeProvider(tabId).notifier).toggle();
       },
       icon: Icon(
         desktopEnabled ? Icons.desktop_windows : Icons.desktop_windows_outlined,

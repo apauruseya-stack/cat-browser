@@ -87,7 +87,7 @@ final class EffectiveAppLinkPolicyProvider
 }
 
 String _$effectiveAppLinkPolicyHash() =>
-    r'da8101e842a9cf516eb18d817560813bc0cc94f0';
+    r'a2cd7ab7b243d7914b789f41393772ad5cd4a175';
 
 /// Compute the [EffectiveAppLinkPolicy] for a tab's live contextId. Returns
 /// null until the container/isolation inputs have loaded — resolving against

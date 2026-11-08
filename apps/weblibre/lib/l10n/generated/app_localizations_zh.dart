@@ -152,7 +152,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get about_copyright => 'Copyright © Fabian Freund, 2024-2026';
 
   @override
-  String get about_geckoVersionTitle => 'Gecko 版本';
+  String get about_componentVersionsTitle => '组件版本';
 
   @override
   String get about_notAvailable => '不可用';
@@ -631,322 +631,338 @@ class AppLocalizationsZh extends AppLocalizations {
   String get account_authSignInFailedFallback => '登录失败，请重试。';
 
   @override
-  String get addons_managerTitle => '扩展';
+  String get addons_managerTitle => 'µë⌐σ▒ò';
 
   @override
-  String get addons_tabInstalled => '已安装';
+  String get addons_tabInstalled => 'σ╖▓σ«ëΦúà';
 
   @override
-  String get addons_tabBrowse => '浏览';
+  String get addons_tabBrowse => 'µ╡ÅΦºê';
 
   @override
-  String get addons_loadFailedTitle => '无法加载扩展';
+  String get addons_loadFailedTitle => 'µùáµ│òσèáΦ╜╜µë⌐σ▒ò';
 
   @override
-  String get addons_noExtensionsFound => '未找到扩展。';
+  String get addons_noExtensionsFound => 'µ£¬µë╛σê░µë⌐σ▒òπÇé';
 
   @override
-  String get addons_noneInstalledMessage => '尚未安装任何扩展。\n去商店看看吧。';
+  String get addons_noneInstalledMessage =>
+      'σ░Üµ£¬σ«ëΦúàΣ╗╗Σ╜òµë⌐σ▒òπÇé\nσÄ╗σòåσ║ùτ£ïτ£ïσÉºπÇé';
 
   @override
-  String get addons_genericTitle => '扩展';
+  String get addons_genericTitle => 'µë⌐σ▒ò';
 
   @override
-  String get addons_notFound => '找不到此扩展。';
+  String get addons_notFound => 'µë╛Σ╕ìσê░µ¡ñµë⌐σ▒òπÇé';
 
   @override
   String get addons_platformAndroid => 'Android';
 
   @override
-  String get addons_platformDesktop => '桌面版';
+  String get addons_platformDesktop => 'µíîΘ¥óτëê';
 
   @override
-  String get addons_searchHint => '搜索 addons.mozilla.org';
+  String get addons_searchHint => 'µÉ£τ┤ó addons.mozilla.org';
 
   @override
   String get addons_desktopCompatibilityWarning =>
-      '桌面版扩展未针对移动设备进行审核。部分扩展在 Android 上可能无法使用、崩溃或出现异常行为。';
+      'µíîΘ¥óτëêµë⌐σ▒òµ£¬ΘÆêσ»╣τº╗σè¿Φ«╛σñçΦ┐¢Φíîσ«íµá╕πÇéΘâ¿σêåµë⌐σ▒òσ£¿ Android Σ╕èσÅ»Φâ╜µùáµ│òΣ╜┐τö¿πÇüσ┤⌐µ║âµêûσç║τÄ░σ╝éσ╕╕ΦíîΣ╕║πÇé';
 
   @override
-  String get addons_actionInstall => '安装';
+  String get addons_actionInstall => 'σ«ëΦúà';
 
   @override
-  String get addons_actionInstallExtension => '安装扩展';
+  String get addons_actionInstallExtension => 'σ«ëΦúàµë⌐σ▒ò';
 
   @override
-  String get addons_actionInstallFromFile => '从文件安装';
+  String get addons_actionInstallFromFile => 'Σ╗ÄµûçΣ╗╢σ«ëΦúà';
 
   @override
-  String get addons_actionViewPermissions => '查看权限';
+  String get addons_actionViewPermissions => 'µƒÑτ£ïµ¥âΘÖÉ';
 
   @override
-  String get addons_actionRemoveExtension => '移除扩展';
+  String get addons_actionRemoveExtension => 'τº╗ΘÖñµë⌐σ▒ò';
 
   @override
-  String get addons_actionNotNow => '暂不';
+  String get addons_actionNotNow => 'µÜéΣ╕ì';
 
   @override
-  String get addons_actionUpdate => '更新';
+  String get addons_actionUpdate => 'µ¢┤µû░';
 
   @override
-  String get addons_actionCheckForUpdates => '检查更新';
+  String get addons_actionCheckForUpdates => 'µúÇµƒÑµ¢┤µû░';
 
   @override
-  String get addons_actionCheckForUpdatesButton => '检查更新';
+  String get addons_actionCheckForUpdatesButton => 'µúÇµƒÑµ¢┤µû░';
 
   @override
-  String get addons_actionCheckingForUpdates => '正在检查更新';
+  String get addons_actionCheckingForUpdates => 'µ¡úσ£¿µúÇµƒÑµ¢┤µû░';
 
   @override
-  String get addons_actionLearnMore => '详细了解';
+  String get addons_actionLearnMore => 'Φ»ªτ╗åΣ║åΦºú';
 
   @override
-  String get addons_actionReadMore => '展开';
+  String get addons_actionReadMore => 'σ▒òσ╝Ç';
 
   @override
-  String get addons_sectionEnabled => '已启用';
+  String get addons_sectionEnabled => 'σ╖▓σÉ»τö¿';
 
   @override
-  String get addons_sectionDisabled => '已停用';
+  String get addons_sectionDisabled => 'σ╖▓σü£τö¿';
 
   @override
-  String get addons_sectionUnsupported => '不支持';
+  String get addons_sectionUnsupported => 'Σ╕ìµö»µîü';
 
   @override
-  String get addons_sectionDetails => '详细信息';
+  String get addons_sectionDetails => 'Φ»ªτ╗åΣ┐íµü»';
 
   @override
-  String get addons_sectionDescription => '描述';
+  String get addons_sectionDescription => 'µÅÅΦ┐░';
 
   @override
-  String get addons_sectionManagement => '管理';
+  String get addons_sectionManagement => 'τ«íτÉå';
 
   @override
-  String get addons_sectionUpdates => '更新';
+  String get addons_sectionUpdates => 'µ¢┤µû░';
 
   @override
-  String get addons_sectionAboutExtension => '关于此扩展';
+  String get addons_sectionAboutExtension => 'σà│Σ║Äµ¡ñµë⌐σ▒ò';
 
   @override
-  String get addons_sectionTechnicalPermissions => '技术权限';
+  String get addons_sectionTechnicalPermissions => 'µèÇµ£»µ¥âΘÖÉ';
 
   @override
-  String get addons_sectionMoreInformation => '更多信息';
+  String get addons_sectionMoreInformation => 'µ¢┤σñÜΣ┐íµü»';
 
   @override
-  String get addons_requiredDataCollectionTitle => '必需的数据收集';
+  String get addons_requiredDataCollectionTitle => 'σ┐àΘ£ÇτÜäµò░µì«µö╢Θ¢å';
 
   @override
-  String get addons_tooltipRemoveExtension => '移除扩展';
+  String get addons_tooltipRemoveExtension => 'τº╗ΘÖñµë⌐σ▒ò';
 
   @override
   String addons_extensionRemoved(String name) {
-    return '已移除 $name';
+    return 'σ╖▓τº╗ΘÖñ $name';
   }
 
   @override
   String addons_extensionInstalled(String name) {
-    return '已安装 $name';
+    return 'σ╖▓σ«ëΦúà $name';
   }
 
   @override
   String addons_installFailed(String error) {
-    return '安装失败：$error';
+    return 'σ«ëΦúàσñ▒Φ┤Ñ∩╝Ü$error';
   }
 
   @override
-  String get addons_updateChecksStarted => '已开始在后台检查已安装扩展的更新';
+  String get addons_updateChecksStarted =>
+      'σ╖▓σ╝Çσºïσ£¿σÉÄσÅ░µúÇµƒÑσ╖▓σ«ëΦúàµë⌐σ▒òτÜäµ¢┤µû░';
 
   @override
-  String get addons_statusInstalled => '已安装';
+  String get addons_statusInstalled => 'σ╖▓σ«ëΦúà';
 
   @override
-  String get addons_statusDisabled => '已停用';
+  String get addons_statusDisabled => 'σ╖▓σü£τö¿';
 
   @override
-  String get addons_statusAvailable => '可安装';
+  String get addons_statusAvailable => 'σÅ»σ«ëΦúà';
 
   @override
-  String get addons_chipPrivateBrowsing => '隐私浏览';
+  String get addons_chipPrivateBrowsing => 'ΘÜÉτºüµ╡ÅΦºê';
 
   @override
-  String get addons_chipRecommended => '推荐';
+  String get addons_chipRecommended => 'µÄ¿ΦìÉ';
 
   @override
-  String get addons_removeConfirmTitle => '移除扩展？';
+  String get addons_removeConfirmTitle => 'τº╗ΘÖñµë⌐σ▒ò∩╝ƒ';
 
   @override
   String addons_removeConfirmContent(String name) {
-    return '要从 Cat Browser 中移除 $name 吗？';
+    return 'ΦªüΣ╗Ä Cat Browser Σ╕¡τº╗ΘÖñ $name σÉù∩╝ƒ';
   }
 
   @override
-  String get addons_autoUpdateGloballyDisabled => '全局自动更新已关闭。';
+  String get addons_autoUpdateGloballyDisabled =>
+      'σà¿σ▒ÇΦç¬σè¿µ¢┤µû░σ╖▓σà│Θù¡πÇé';
 
   @override
-  String get addons_autoUpdateNeedsManualRun => '需先手动更新一次并重启应用，才能启用自动更新。';
+  String get addons_autoUpdateNeedsManualRun =>
+      'Θ£Çσàêµëïσè¿µ¢┤µû░Σ╕Çµ¼íσ╣╢ΘçìσÉ»σ║öτö¿∩╝îµëìΦâ╜σÉ»τö¿Φç¬σè¿µ¢┤µû░πÇé';
 
   @override
-  String get addons_autoUpdateAllow => '允许此扩展在后台接收更新。';
+  String get addons_autoUpdateAllow =>
+      'σàüΦ«╕µ¡ñµë⌐σ▒òσ£¿σÉÄσÅ░µÄÑµö╢µ¢┤µû░πÇé';
 
   @override
-  String get addons_autoUpdateDisabledForExtension => '此扩展的后台更新已关闭。';
+  String get addons_autoUpdateDisabledForExtension =>
+      'µ¡ñµë⌐σ▒òτÜäσÉÄσÅ░µ¢┤µû░σ╖▓σà│Θù¡πÇé';
 
   @override
-  String get addons_switchEnabledTitle => '已启用';
+  String get addons_switchEnabledTitle => 'σ╖▓σÉ»τö¿';
 
   @override
-  String get addons_switchEnabledSubtitleAllow => '允许此扩展在 Cat Browser 中运行。';
+  String get addons_switchEnabledSubtitleAllow =>
+      'σàüΦ«╕µ¡ñµë⌐σ▒òσ£¿ Cat Browser Σ╕¡Φ┐ÉΦíîπÇé';
 
   @override
-  String get addons_switchEnabledSubtitleCannot => '无法安全地启用此扩展。';
+  String get addons_switchEnabledSubtitleCannot =>
+      'µùáµ│òσ«ëσà¿σ£░σÉ»τö¿µ¡ñµë⌐σ▒òπÇé';
 
   @override
-  String get addons_switchPrivateBrowsingTitle => '在隐私浏览中允许';
+  String get addons_switchPrivateBrowsingTitle => 'σ£¿ΘÜÉτºüµ╡ÅΦºêΣ╕¡σàüΦ«╕';
 
   @override
-  String get addons_switchPrivateBrowsingSubtitle => '允许此扩展在隐私浏览标签页中运行。';
+  String get addons_switchPrivateBrowsingSubtitle =>
+      'σàüΦ«╕µ¡ñµë⌐σ▒òσ£¿ΘÜÉτºüµ╡ÅΦºêµáçτ¡╛Θí╡Σ╕¡Φ┐ÉΦíîπÇé';
 
   @override
-  String get addons_switchAutoUpdateTitle => '自动更新';
+  String get addons_switchAutoUpdateTitle => 'Φç¬σè¿µ¢┤µû░';
 
   @override
-  String get addons_switchPinTitle => '固定到工具栏';
+  String get addons_switchPinTitle => 'σ¢║σ«Üσê░σ╖Ñσà╖µáÅ';
 
   @override
-  String get addons_switchPinSubtitle => '在主标签栏中以图标形式显示此扩展。';
+  String get addons_switchPinSubtitle =>
+      'σ£¿Σ╕╗µáçτ¡╛µáÅΣ╕¡Σ╗Ñσ¢╛µáçσ╜óσ╝Åµÿ╛τñ║µ¡ñµë⌐σ▒òπÇé';
 
   @override
-  String get addons_menuExtensionSettingsTitle => '扩展设置';
+  String get addons_menuExtensionSettingsTitle => 'µë⌐σ▒òΦ«╛τ╜«';
 
   @override
-  String get addons_menuExtensionSettingsSubtitleTab => '在浏览器标签页中打开扩展选项页面';
+  String get addons_menuExtensionSettingsSubtitleTab =>
+      'σ£¿µ╡ÅΦºêσÖ¿µáçτ¡╛Θí╡Σ╕¡µëôσ╝Çµë⌐σ▒òΘÇëΘí╣Θí╡Θ¥ó';
 
   @override
-  String get addons_menuExtensionSettingsSubtitleInline => '打开扩展选项页面';
+  String get addons_menuExtensionSettingsSubtitleInline =>
+      'µëôσ╝Çµë⌐σ▒òΘÇëΘí╣Θí╡Θ¥ó';
 
   @override
-  String get addons_menuFilterListsTitle => '过滤规则列表与加固';
+  String get addons_menuFilterListsTitle => 'Φ┐çµ╗ñσêùΦí¿';
 
   @override
-  String get addons_menuFilterListsSubtitle => '管理过滤规则列表并应用 Cat Browser 加固';
+  String get addons_menuFilterListsSubtitle =>
+      'τ«íτÉåΦ┐çµ╗ñΦºäσêÖσêùΦí¿σ╣╢σ║öτö¿ Cat Browser σèáσ¢║';
 
   @override
-  String get addons_permissionsTitle => '权限';
+  String get addons_permissionsTitle => 'µ¥âΘÖÉ';
 
   @override
   String addons_updateAvailable(String from, String to) {
-    return '有可用更新：$from → $to';
+    return 'µ£ëσÅ»τö¿µ¢┤µû░∩╝Ü$from ΓåÆ $to';
   }
 
   @override
-  String get addons_noUpdateAttemptYet => '暂无最近的更新尝试信息。';
+  String get addons_noUpdateAttemptYet =>
+      'µÜéµùáµ£ÇΦ┐æτÜäµ¢┤µû░σ░¥Φ»òΣ┐íµü»πÇé';
 
   @override
   String addons_lastChecked(String date) {
-    return '上次检查：$date';
+    return 'Σ╕èµ¼íµúÇµƒÑ∩╝Ü$date';
   }
 
   @override
-  String get addons_noUpdateAvailable => '没有可用更新';
+  String get addons_noUpdateAvailable => 'µ▓íµ£ëσÅ»τö¿µ¢┤µû░';
 
   @override
-  String get addons_noRemoteUpdateSource => '此本地安装的扩展没有远程更新源。';
+  String get addons_noRemoteUpdateSource =>
+      'µ¡ñµ£¼σ£░σ«ëΦúàτÜäµë⌐σ▒òµ▓íµ£ëΦ┐£τ¿ïµ¢┤µû░µ║ÉπÇé';
 
   @override
-  String get addons_updateCheckFailed => '无法开始检查更新。';
+  String get addons_updateCheckFailed => 'µùáµ│òσ╝ÇσºïµúÇµƒÑµ¢┤µû░πÇé';
 
   @override
-  String get addons_updateAvailableDialogTitle => '有可用更新';
+  String get addons_updateAvailableDialogTitle => 'µ£ëσÅ»τö¿µ¢┤µû░';
 
   @override
   String addons_updateConfirmContent(String name, String from, String to) {
-    return '要将 $name 从 $from 更新到 $to 吗？';
+    return 'Φªüσ░å $name Σ╗Ä $from µ¢┤µû░σê░ $to σÉù∩╝ƒ';
   }
 
   @override
-  String get addons_noDescriptionProvided => '未提供描述。';
+  String get addons_noDescriptionProvided => 'µ£¬µÅÉΣ╛¢µÅÅΦ┐░πÇé';
 
   @override
-  String get addons_loadingDescription => '正在加载描述…';
+  String get addons_loadingDescription => 'µ¡úσ£¿σèáΦ╜╜µÅÅΦ┐░ΓÇª';
 
   @override
-  String get addons_fieldAuthor => '作者';
+  String get addons_fieldAuthor => 'Σ╜£ΦÇà';
 
   @override
-  String get addons_fieldVersion => '版本';
+  String get addons_fieldVersion => 'τëêµ£¼';
 
   @override
-  String get addons_fieldLastUpdated => '上次更新';
+  String get addons_fieldLastUpdated => 'Σ╕èµ¼íµ¢┤µû░';
 
   @override
-  String get addons_fieldLastUpdatedInfo => '上次更新';
+  String get addons_fieldLastUpdatedInfo => 'Σ╕èµ¼íµ¢┤µû░';
 
   @override
-  String get addons_fieldHomepage => '主页';
+  String get addons_fieldHomepage => 'Σ╕╗Θí╡';
 
   @override
-  String get addons_fieldAddonListing => '商店页面';
+  String get addons_fieldAddonListing => 'σòåσ║ùΘí╡Θ¥ó';
 
   @override
-  String get addons_fieldSize => '大小';
+  String get addons_fieldSize => 'σñºσ░Å';
 
   @override
-  String get addons_fieldCategories => '分类';
+  String get addons_fieldCategories => 'σêåτ▒╗';
 
   @override
-  String get addons_fieldLicense => '许可证';
+  String get addons_fieldLicense => 'Φ«╕σÅ»Φ»ü';
 
   @override
-  String get addons_fieldSupportSite => '支持网站';
+  String get addons_fieldSupportSite => 'µö»µîüτ╜æτ½Ö';
 
   @override
-  String get addons_fieldReviews => '评价';
+  String get addons_fieldReviews => 'Φ»äΣ╗╖';
 
   @override
-  String get addons_fieldPrivacyPolicy => '隐私政策';
+  String get addons_fieldPrivacyPolicy => 'ΘÜÉτºüµö┐τ¡û';
 
   @override
-  String get addons_linkViewOnAmo => '在 addons.mozilla.org 上查看';
+  String get addons_linkViewOnAmo => 'σ£¿ addons.mozilla.org Σ╕èµƒÑτ£ï';
 
   @override
-  String get addons_settingsTitleGeneric => '扩展设置';
+  String get addons_settingsTitleGeneric => 'µë⌐σ▒òΦ«╛τ╜«';
 
   @override
   String addons_settingsTitleNamed(String name) {
-    return '$name 设置';
+    return '$name Φ«╛τ╜«';
   }
 
   @override
   String addons_settingsLoadFailed(String error) {
-    return '无法加载扩展设置：$error';
+    return 'µùáµ│òσèáΦ╜╜µë⌐σ▒òΦ«╛τ╜«∩╝Ü$error';
   }
 
   @override
-  String get addons_noSettingsPage => '此扩展没有提供设置页面。';
+  String get addons_noSettingsPage => 'µ¡ñµë⌐σ▒òµ▓íµ£ëµÅÉΣ╛¢Φ«╛τ╜«Θí╡Θ¥óπÇé';
 
   @override
-  String get addons_permissionsTitleGeneric => '扩展权限';
+  String get addons_permissionsTitleGeneric => 'µë⌐σ▒òµ¥âΘÖÉ';
 
   @override
   String addons_permissionsTitleNamed(String name) {
-    return '$name 权限';
+    return '$name µ¥âΘÖÉ';
   }
 
   @override
   String addons_permissionsLoadFailed(String error) {
-    return '无法加载扩展权限：$error';
+    return 'µùáµ│òσèáΦ╜╜µë⌐σ▒òµ¥âΘÖÉ∩╝Ü$error';
   }
 
   @override
-  String get addons_noSpecialPermissions => '未列出特殊权限';
+  String get addons_noSpecialPermissions => 'µ£¬σêùσç║τë╣µ«èµ¥âΘÖÉ';
 
   @override
-  String get addons_noTranslatedPermissionDetails => '此扩展目前未提供任何经过翻译的权限说明。';
+  String get addons_noTranslatedPermissionDetails =>
+      'µ¡ñµë⌐σ▒òτ¢«σëìµ£¬µÅÉΣ╛¢Σ╗╗Σ╜òτ╗ÅΦ┐çτ┐╗Φ»æτÜäµ¥âΘÖÉΦ»┤µÿÄπÇé';
 
   @override
   String addons_versionSentence(String version) {
-    return '版本 $version';
+    return 'τëêµ£¼ $version';
   }
 
   @override
@@ -959,142 +975,169 @@ class AppLocalizationsZh extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$countString 位用户',
+      other: '$countString Σ╜ìτö¿µê╖',
     );
     return '$_temp0';
   }
 
   @override
   String addons_byAuthor(String name) {
-    return '作者：$name';
+    return 'Σ╜£ΦÇà∩╝Ü$name';
   }
 
   @override
-  String get addons_permGroupRequired => '必需';
+  String get addons_permGroupRequired => 'σ┐àΘ£Ç';
 
   @override
-  String get addons_permGroupWebsites => '网站';
+  String get addons_permGroupWebsites => 'τ╜æτ½Ö';
 
   @override
-  String get addons_permGroupOptional => '可选';
+  String get addons_permGroupOptional => 'σÅ»ΘÇë';
 
   @override
-  String get addons_permGroupDataCollection => '数据收集';
+  String get addons_permGroupDataCollection => 'µò░µì«µö╢Θ¢å';
 
   @override
-  String get addons_dateUnknown => '未知';
+  String get addons_dateUnknown => 'µ£¬τƒÑ';
 
   @override
-  String get addons_statusUpdatedSuccessfully => '更新成功';
+  String get addons_statusUpdatedSuccessfully => 'µ¢┤µû░µêÉσèƒ';
 
   @override
-  String get addons_statusNotInstalled => '扩展未安装';
+  String get addons_statusNotInstalled => 'µë⌐σ▒òµ£¬σ«ëΦúà';
 
   @override
   String addons_updateFailedWithMessage(String message) {
-    return '更新失败：$message';
+    return 'µ¢┤µû░σñ▒Φ┤Ñ∩╝Ü$message';
   }
 
   @override
-  String get addons_updateFailedGeneric => '更新失败';
+  String get addons_updateFailedGeneric => 'µ¢┤µû░σñ▒Φ┤Ñ';
 
   @override
-  String get addons_noUpdateChecksRecorded => '尚无更新检查记录';
+  String get addons_noUpdateChecksRecorded => 'σ░Üµùáµ¢┤µû░µúÇµƒÑΦ«░σ╜ò';
 
   @override
-  String get addons_statusBlocklisted => '此扩展已被列入封禁列表，应保持停用。';
+  String get addons_statusBlocklisted =>
+      'µ¡ñµë⌐σ▒òσ╖▓Φó½σêùσàÑσ░üτªüσêùΦí¿∩╝îσ║öΣ┐¥µîüσü£τö¿πÇé';
 
   @override
-  String get addons_statusNotCorrectlySigned => '此扩展签名不正确，无法安全启用。';
+  String get addons_statusNotCorrectlySigned =>
+      'µ¡ñµë⌐σ▒òτ¡╛σÉìΣ╕ìµ¡úτí«∩╝îµùáµ│òσ«ëσà¿σÉ»τö¿πÇé';
 
   @override
-  String get addons_statusIncompatible => '此扩展与当前应用版本不兼容。';
+  String get addons_statusIncompatible =>
+      'µ¡ñµë⌐σ▒òΣ╕Äσ╜ôσëìσ║öτö¿τëêµ£¼Σ╕ìσà╝σ«╣πÇé';
 
   @override
-  String get addons_statusSoftBlockedEnabled => '此扩展已被软屏蔽。保持启用时请谨慎使用。';
+  String get addons_statusSoftBlockedEnabled =>
+      'µ¡ñµë⌐σ▒òσ╖▓Φó½Φ╜»σ▒ÅΦö╜πÇéΣ┐¥µîüσÉ»τö¿µù╢Φ»╖Φ░¿µàÄΣ╜┐τö¿πÇé';
 
   @override
-  String get addons_statusSoftBlockedDisabled => '此扩展已被软屏蔽，但仍可重新启用。';
+  String get addons_statusSoftBlockedDisabled =>
+      'µ¡ñµë⌐σ▒òσ╖▓Φó½Φ╜»σ▒ÅΦö╜∩╝îΣ╜åΣ╗ìσÅ»Θçìµû░σÉ»τö¿πÇé';
 
   @override
-  String get addons_statusUnsupported => '此扩展已安装，但 Cat Browser 目前不支持它。';
+  String get addons_statusUnsupported =>
+      'µ¡ñµë⌐σ▒òσ╖▓σ«ëΦúà∩╝îΣ╜å Cat Browser τ¢«σëìΣ╕ìµö»µîüσ«âπÇé';
 
   @override
-  String get addons_permissionBookmarks => '读取和修改书签';
+  String get addons_permissionBookmarks => 'Φ»╗σÅûσÆîΣ┐«µö╣Σ╣ªτ¡╛';
 
   @override
-  String get addons_permissionBrowserSettings => '读取和修改浏览器设置';
+  String get addons_permissionBrowserSettings =>
+      'Φ»╗σÅûσÆîΣ┐«µö╣µ╡ÅΦºêσÖ¿Φ«╛τ╜«';
 
   @override
-  String get addons_permissionBrowsingData => '清除最近的浏览历史、Cookie 及有关数据';
+  String get addons_permissionBrowsingData =>
+      'µ╕àΘÖñµ£ÇΦ┐æτÜäµ╡ÅΦºêσÄåσÅ▓πÇüCookie σÅèµ£ëσà│µò░µì«';
 
   @override
-  String get addons_permissionClipboardRead => '获取剪贴板数据';
+  String get addons_permissionClipboardRead => 'ΦÄ╖σÅûσë¬Φ┤┤µ¥┐µò░µì«';
 
   @override
-  String get addons_permissionClipboardWrite => '将数据写入剪贴板';
+  String get addons_permissionClipboardWrite => 'σ░åµò░µì«σåÖσàÑσë¬Φ┤┤µ¥┐';
 
   @override
-  String get addons_permissionContextualIdentities => '访问和修改容器标签页';
+  String get addons_permissionContextualIdentities =>
+      'Φ«┐Θù«σÆîΣ┐«µö╣σ«╣σÖ¿µáçτ¡╛Θí╡';
 
   @override
-  String get addons_permissionCookies => '访问你访问过的网站的 Cookie';
+  String get addons_permissionCookies =>
+      'Φ«┐Θù«Σ╜áΦ«┐Θù«Φ┐çτÜäτ╜æτ½ÖτÜä Cookie';
 
   @override
-  String get addons_permissionDownloads => '下载文件和读写浏览器的下载历史';
+  String get addons_permissionDownloads =>
+      'Σ╕ïΦ╜╜µûçΣ╗╢σÆîΦ»╗σåÖµ╡ÅΦºêσÖ¿τÜäΣ╕ïΦ╜╜σÄåσÅ▓';
 
   @override
-  String get addons_permissionDownloadsOpen => '打开下载至你设备的文件';
+  String get addons_permissionDownloadsOpen =>
+      'µëôσ╝ÇΣ╕ïΦ╜╜Φç│Σ╜áΦ«╛σñçτÜäµûçΣ╗╢';
 
   @override
-  String get addons_permissionFind => '读取所有已打开的标签页中的文本';
+  String get addons_permissionFind =>
+      'Φ»╗σÅûµëÇµ£ëσ╖▓µëôσ╝ÇτÜäµáçτ¡╛Θí╡Σ╕¡τÜäµûçµ£¼';
 
   @override
-  String get addons_permissionGeolocation => '获知你的位置';
+  String get addons_permissionGeolocation => 'ΦÄ╖τƒÑΣ╜áτÜäΣ╜ìτ╜«';
 
   @override
-  String get addons_permissionHistory => '获取浏览历史';
+  String get addons_permissionHistory => 'ΦÄ╖σÅûµ╡ÅΦºêσÄåσÅ▓';
 
   @override
-  String get addons_permissionManagement => '监控扩展使用情况和管理主题';
+  String get addons_permissionManagement =>
+      'τ¢æµÄºµë⌐σ▒òΣ╜┐τö¿µâàσå╡σÆîτ«íτÉåΣ╕╗Θóÿ';
 
   @override
-  String get addons_permissionNativeMessaging => '与浏览器以外的程序交换消息';
+  String get addons_permissionNativeMessaging =>
+      'Σ╕Äµ╡ÅΦºêσÖ¿Σ╗ÑσñûτÜäτ¿ïσ║ÅΣ║ñµìóµ╢êµü»';
 
   @override
-  String get addons_permissionNotifications => '向你显示通知';
+  String get addons_permissionNotifications => 'σÉæΣ╜áµÿ╛τñ║ΘÇÜτƒÑ';
 
   @override
-  String get addons_permissionPkcs11 => '提供密码学身份认证服务';
+  String get addons_permissionPkcs11 => 'µÅÉΣ╛¢σ»åτáüσ¡ªΦ║½Σ╗╜Φ«ñΦ»üµ£ìσèí';
 
   @override
-  String get addons_permissionPrivacy => '读取和修改隐私设置';
+  String get addons_permissionPrivacy => 'Φ»╗σÅûσÆîΣ┐«µö╣ΘÜÉτºüΦ«╛τ╜«';
 
   @override
-  String get addons_permissionProxy => '控制浏览器的代理设置';
+  String get addons_permissionProxy => 'µÄºσê╢µ╡ÅΦºêσÖ¿τÜäΣ╗úτÉåΦ«╛τ╜«';
 
   @override
-  String get addons_permissionSessions => '获取最近关闭的标签页';
+  String get addons_permissionSessions => 'ΦÄ╖σÅûµ£ÇΦ┐æσà│Θù¡τÜäµáçτ¡╛Θí╡';
 
   @override
-  String get addons_permissionTabs => '获取浏览器标签页';
+  String get addons_permissionTabs => 'ΦÄ╖σÅûµ╡ÅΦºêσÖ¿µáçτ¡╛Θí╡';
 
   @override
-  String get addons_permissionTabHide => '隐藏和显示浏览器标签页';
+  String get addons_permissionTabHide => 'ΘÜÉΦùÅσÆîµÿ╛τñ║µ╡ÅΦºêσÖ¿µáçτ¡╛Θí╡';
 
   @override
-  String get addons_permissionTopSites => '获取浏览历史';
+  String get addons_permissionTopSites => 'ΦÄ╖σÅûµ╡ÅΦºêσÄåσÅ▓';
 
   @override
-  String get addons_permissionWebNavigation => '访问浏览器导航期间的活动信息';
+  String get addons_permissionWebNavigation =>
+      'Φ«┐Θù«µ╡ÅΦºêσÖ¿σ»╝Φê¬µ£ƒΘù┤τÜäµ┤╗σè¿Σ┐íµü»';
 
   @override
-  String get addons_permissionAllUrls => '访问你在所有网站的数据';
+  String get addons_permissionAllUrls => 'Φ«┐Θù«Σ╜áσ£¿µëÇµ£ëτ╜æτ½ÖτÜäµò░µì«';
 
   @override
   String addons_permissionAccessDataFor(String host) {
-    return '访问你在 $host 的数据';
+    return 'Φ«┐Θù«Σ╜áσ£¿ $host τÜäµò░µì«';
   }
+
+  @override
+  String get addons_updatePermissionsTitle => 'µ¢┤µû░Θ£ÇΦªüµû░µ¥âΘÖÉ';
+
+  @override
+  String get addons_updatePermissionsBody =>
+      'µû░τëêµ£¼Φ»╖µ▒éΣ╗ÑΣ╕ïµ¥âΘÖÉπÇéΣ╜áσàüΦ«╕σÉÄσì│Σ╝Üσ«ëΦúàπÇé';
+
+  @override
+  String get addons_updateNeedsPermissions =>
+      'µ¡ñµ¢┤µû░Φ»╖µ▒éµû░µ¥âΘÖÉ∩╝îµƒÑτ£ïσ╣╢σàüΦ«╕σÉÄσì│σÅ»σ«ëΦúàπÇé';
 
   @override
   String appLinks_bannerTitleNamed(String appName) {
@@ -1369,7 +1412,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get browserActions_hardReloadTitle => '强制重新加载';
 
   @override
-  String get browserActions_hardReloadDescription => '跳过缓存，重新加载当前页面';
+  String get browserActions_hardReloadDescription => '重新加载页面并重新下载所有内容';
 
   @override
   String get browserActions_scrollTopTitle => '滚动到顶部';
@@ -1799,10 +1842,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get browserActions_showProfilesDescription => '管理你的配置文件';
 
   @override
-  String get browserActions_showProxySettingsTitle => '代理';
+  String get browserActions_showProxySettingsTitle => '连接';
 
   @override
-  String get browserActions_showProxySettingsDescription => '打开代理设置';
+  String get browserActions_showProxySettingsDescription => '打开连接设置';
 
   @override
   String get browserActions_showTorTitle => 'Tor';
@@ -1967,7 +2010,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get browserActions_showProxySettingsKeywords =>
-      'vpn,sing-box,socks,连接,网络,翻墙';
+      '代理,tor,vpn,sing-box,socks,连接,网络,翻墙';
 
   @override
   String get browserActions_showTorKeywords => '洋葱,匿名,网桥,匿名性,onion';
@@ -2311,9 +2354,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get browser_actionSelect => '选择';
-
-  @override
-  String get browser_actionKeep => '保留';
 
   @override
   String get browser_actionInstall => '安装';
@@ -2685,7 +2725,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get browser_dataTypeSiteData => '网站数据';
 
   @override
-  String get browser_dataTypeSiteDataSubtitle => '离线存储、数据库、本地文件';
+  String get browser_dataTypeSiteDataSubtitle => '网站保存在此设备上的数据，例如用于离线使用';
 
   @override
   String get browser_dataTypeCookies => 'Cookie';
@@ -3209,13 +3249,17 @@ class AppLocalizationsZh extends AppLocalizations {
   String get browser_permissionNotification => '通知';
 
   @override
-  String get browser_permissionPersistentStorage => '持久存储';
+  String get browser_permissionPersistentStorage => '保护已保存的网站数据';
 
   @override
-  String get browser_permissionCrossOriginStorage => '跨源存储';
+  String get browser_permissionPersistentStorageDescription =>
+      '即使存储空间不足，也保留此网站的数据。';
 
   @override
-  String get browser_permissionMediaKeySystem => '媒体密钥系统（DRM）';
+  String get browser_permissionCrossOriginStorage => '在其他网站上使用 Cookie';
+
+  @override
+  String get browser_permissionMediaKeySystem => '播放受保护的内容（DRM）';
 
   @override
   String get browser_tabReorderBlockedMessage => '请清除标签页视图的筛选或搜索后再调整顺序';
@@ -3374,7 +3418,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get contextualToolbar_longPressOpenSettings => '打开设置';
 
   @override
-  String get contextualToolbar_longPressHardRefresh => '强制刷新（跳过缓存）';
+  String get contextualToolbar_longPressHardRefresh => '完全重新加载';
 
   @override
   String get contextualToolbar_longPressShowTranslationOptions => '显示翻译选项';
@@ -3624,6 +3668,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get menu_profileTapToSwitch => '点按以切换配置文件';
 
   @override
+  String get menu_profileManageCurrent => '锁定并备份此配置文件';
+
+  @override
   String get menu_profileSyncComplete => '同步完成';
 
   @override
@@ -3847,7 +3894,7 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get menu_connectionProxySettings => '代理设置';
+  String get menu_connectionProxySettings => '连接设置';
 
   @override
   String get menu_connectionUnused => '未被任何路由使用';
@@ -4319,7 +4366,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get openLinkTools_restoreDefaultsTitle => '恢复默认设置？';
 
   @override
-  String get openLinkTools_restoreDefaultsContent => '这将重置网址清理设置，并移除本地存储的规则库。';
+  String get openLinkTools_restoreDefaultsContent => '这将重置 URL 清理器设置并删除已下载的规则。';
 
   @override
   String get openLinkTools_actionRestore => '恢复';
@@ -4415,7 +4462,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get openLinkTools_urlCleanerSettingsTitle => '网址清理';
 
   @override
-  String get openLinkTools_urlCleanerSettingsSubtitle => '网址清理行为、规则库更新和来源说明。';
+  String get openLinkTools_urlCleanerSettingsSubtitle => '从链接中移除哪些内容、规则更新和致谢。';
 
   @override
   String get openLinkTools_urlCleanerDescriptionBody =>
@@ -4429,7 +4476,7 @@ class AppLocalizationsZh extends AppLocalizations {
       '清理网址,clean urls,clearurls';
 
   @override
-  String get openLinkTools_urlCleanerEnabledSubtitle => '从网址中移除跟踪参数';
+  String get openLinkTools_urlCleanerEnabledSubtitle => '移除链接中的跟踪部分';
 
   @override
   String get openLinkTools_autoApplyTitle => '自动应用';
@@ -4448,16 +4495,16 @@ class AppLocalizationsZh extends AppLocalizations {
       '联盟营销,推广,返利,affiliate,referral';
 
   @override
-  String get openLinkTools_allowReferralSubtitle => '保留推广和联盟营销跟踪参数';
+  String get openLinkTools_allowReferralSubtitle => '保留链接中的推荐码和联盟推广码';
 
   @override
-  String get openLinkTools_autoUpdateCatalogTitle => '自动更新规则库';
+  String get openLinkTools_autoUpdateCatalogTitle => '自动更新规则';
 
   @override
   String get openLinkTools_autoUpdateCatalogSubtitle => '每周检查规则更新';
 
   @override
-  String get openLinkTools_updateCatalogTitle => '更新规则库';
+  String get openLinkTools_updateCatalogTitle => '更新规则';
 
   @override
   String get openLinkTools_lastUpdateNotAvailable => '上次更新：无';
@@ -4478,7 +4525,7 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get openLinkTools_catalogUpdatedMessage => '规则库已更新';
+  String get openLinkTools_catalogUpdatedMessage => '规则已更新';
 
   @override
   String openLinkTools_updateFailedWithError(String error) {
@@ -4489,7 +4536,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get openLinkTools_restoreDefaultsButtonTitle => '恢复默认设置';
 
   @override
-  String get openLinkTools_restoreDefaultsButtonSubtitle => '重置为内置规则库和默认设置';
+  String get openLinkTools_restoreDefaultsButtonSubtitle => '恢复为内置规则和默认设置';
 
   @override
   String get openLinkTools_clearUrlAttributionText => '此模块基于 ClearURL 规则：';
@@ -4511,7 +4558,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get openLinkTools_urlCleanerBehaviorSectionTitle => '行为';
 
   @override
-  String get openLinkTools_urlCleanerCatalogSectionTitle => '规则库';
+  String get openLinkTools_urlCleanerCatalogSectionTitle => '规则';
 
   @override
   String get openLinkTools_indexUrlCleanerUpdateCatalogSubtitle =>
@@ -4992,6 +5039,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get tabs_addSiteHint => 'example.com 或 *.example.com';
+
+  @override
+  String get tabs_addSiteHintSingle => 'example.com';
 
   @override
   String get tabs_addSiteHelperText => '匹配单个网站，或使用 *.example.com 匹配其所有子域名';
@@ -5636,216 +5686,449 @@ class AppLocalizationsZh extends AppLocalizations {
   String get keyboardShortcuts_actionCustomize => '自定义';
 
   @override
+  String get keyboardShortcuts_actionShowAll => '显示全部';
+
+  @override
   String get keyboardShortcuts_actionReassign => '重新分配';
 
   @override
   String get keyboardShortcuts_actionRestore => '恢复';
 
   @override
-  String get onboarding_actionPrevious => '上一步';
+  String get onboarding_actionPrevious => 'Σ╕èΣ╕Çµ¡Ñ';
 
   @override
-  String get onboarding_actionNext => '下一步';
+  String get onboarding_actionNext => 'Σ╕ïΣ╕Çµ¡Ñ';
 
   @override
-  String get onboarding_actionRestore => '恢复';
+  String get onboarding_restoreTargetUnreadable =>
+      'µùáµ│òΦ»╗σÅûµ¡ñΘàìτ╜«µûçΣ╗╢∩╝îσ¢áµ¡ñµùáµ│òσÉæσà╢Σ╕¡µüóσñìΣ╗╗Σ╜òσåàσ«╣πÇé';
 
   @override
-  String get onboarding_restoreTargetUnreadable => '无法读取此配置文件，因此无法向其中恢复任何内容。';
+  String get onboarding_welcomeBackTitle => 'µ¼óΦ┐Äσ¢₧µ¥Ñ∩╝ü';
 
   @override
-  String get onboarding_welcomeBackTitle => '欢迎回来！';
+  String get onboarding_welcomeReadyTitle => 'Cat Browser σ╖▓σçåσñçσ░▒τ╗¬';
 
   @override
-  String get onboarding_welcomeReadyTitle => 'Cat Browser 已准备就绪';
+  String get onboarding_modeRestoreTitle => 'Σ╗ÄσñçΣ╗╜µüóσñì';
 
   @override
-  String get onboarding_chooseExperience => '选择你的初始设置方式：';
+  String get onboarding_modeRestoreSubtitle =>
+      'Σ╗Äσèáσ»åτÜäσñçΣ╗╜µûçΣ╗╢σ»╝σàÑΘàìτ╜«µûçΣ╗╢πÇé';
 
   @override
-  String get onboarding_modeExpressTitle => '快速开始';
-
-  @override
-  String get onboarding_modeExpressSubtitle => '使用推荐的默认设置，直接开始浏览。';
-
-  @override
-  String get onboarding_modeDetailedTitle => '自定义设置';
-
-  @override
-  String get onboarding_modeDetailedSubtitle => '配置 DNS、工具栏、扩展等。';
-
-  @override
-  String get onboarding_modeRestoreTitle => '从备份恢复';
-
-  @override
-  String get onboarding_modeRestoreSubtitle => '从加密的备份文件导入配置文件。';
-
-  @override
-  String get onboarding_updateNoticeTitle => '变化很大！';
+  String get onboarding_updateNoticeTitle => 'σÅÿσîûσ╛êσñº∩╝ü';
 
   @override
   String get onboarding_updateNoticeBody =>
-      '此次更新包含重大变更，需要你检查自己的设置。请浏览以下页面，确认你的配置。';
+      'µ¡ñµ¼íµ¢┤µû░µö╣σè¿σ╛êσñºπÇéµÄÑΣ╕ïµ¥ÑτÜäΘí╡Θ¥óΣ╝Üσ╕ªΣ╜áΘÇÉΣ╕ÇµƒÑτ£ïΦ«╛τ╜«πÇé';
 
   @override
-  String get onboarding_updateNoticeExtensions => '由于已知的迁移问题，更新后请重新检查你的扩展。';
+  String get onboarding_updateNoticeExtensions =>
+      'µ¡ñµ¼íµ¢┤µû░σÉÄ∩╝îΘâ¿σêåµë⌐σ▒òσÅ»Φâ╜Θ£ÇΦªüσåìµúÇµƒÑΣ╕ÇΣ╕ïπÇé';
 
   @override
   String get onboarding_updateNoticeSettingsPreserved =>
-      '除非你在此设置过程中主动更改，否则现有设置不会被覆盖。';
+      'ΘÖñΘ¥₧Σ╜áσ£¿Φ┐ÖΘçîµ¢┤µö╣∩╝îσÉªσêÖΣ╜áτÜäΦ«╛τ╜«Σ╝ÜΣ┐¥µîüΣ╕ìσÅÿπÇé';
 
   @override
   String get onboarding_eulaAcceptance =>
-      '我已阅读并接受<eula>最终用户许可协议</eula>和<privacy>隐私政策</privacy>。';
+      'µêæσ╖▓ΘÿàΦ»╗σ╣╢µÄÑσÅù<eula>µ£Çτ╗êτö¿µê╖Φ«╕σÅ»σìÅΦ««</eula>σÆî<privacy>ΘÜÉτºüµö┐τ¡û</privacy>πÇé';
 
   @override
-  String get onboarding_privacyPolicy => '隐私政策';
+  String get onboarding_privacyPolicy => 'ΘÜÉτºüµö┐τ¡û';
 
   @override
-  String get onboarding_eulaDocumentTitle => '最终用户许可协议';
+  String get onboarding_eulaDocumentTitle => 'µ£Çτ╗êτö¿µê╖Φ«╕σÅ»σìÅΦ««';
 
   @override
-  String get onboarding_aiFeaturesTitle => 'AI 功能';
+  String get onboarding_aiFeaturesTitle => 'AI σèƒΦâ╜';
 
   @override
-  String get onboarding_aiOnDeviceTitle => '设备端 AI';
+  String get onboarding_aiOnDeviceSubtitle =>
+      'τ¢┤µÄÑσ£¿µ¡ñΦ«╛σñçΣ╕èσ╗║Φ««σªéΣ╜òσêåτ╗äσÆîσæ╜σÉìΣ╜áτÜäµáçτ¡╛Θí╡';
 
   @override
-  String get onboarding_aiOnDeviceSubtitle => '在本地设备上运行的功能，包括容器主题和标签页建议';
-
-  @override
-  String get onboarding_aiWarningTitle => '注意事项';
+  String get onboarding_aiWarningTitle => 'µ│¿µäÅΣ║ïΘí╣';
 
   @override
   String get onboarding_aiWarningPoint1 =>
-      'Cat Browser 使用本地 AI 模型分析你打开的标签页标题，建议将标签页归入哪些容器以及如何为这些容器命名。所有处理完全在你的设备上进行。';
+      'Cat Browser Σ╜┐τö¿µ£¼σ£░ AI µ¿íσ₧ïσêåµ₧ÉΣ╜áµëôσ╝ÇτÜäµáçτ¡╛Θí╡µáçΘóÿ∩╝îσ╗║Φ««σ░åµáçτ¡╛Θí╡σ╜ÆσàÑσô¬Σ║¢σ«╣σÖ¿Σ╗ÑσÅèσªéΣ╜òΣ╕║Φ┐ÖΣ║¢σ«╣σÖ¿σæ╜σÉìπÇéµëÇµ£ëσñäτÉåσ«îσà¿σ£¿Σ╜áτÜäΦ«╛σñçΣ╕èΦ┐¢ΦíîπÇé';
 
   @override
   String get onboarding_aiWarningPoint2 =>
-      'AI 增强功能完全在浏览器内运行，所有数据都保留在你的设备上。本地 AI 处理尊重你的隐私，并能更快地提供容器分组和名称建议。你可以随时在设置中控制此行为。';
+      'AI σèƒΦâ╜σ«îσà¿σ£¿µ¡ñΦ«╛σñçΣ╕èΦ┐ÉΦíî∩╝îµëÇµ£ëµò░µì«Θâ╜Σ┐¥τòÖσ£¿Φ«╛σñçΣ╕èπÇé';
 
   @override
-  String get onboarding_aiWarningPoint3 => 'AI 有时会出错，请检查建议的分组名称和所选标签页。';
+  String get onboarding_aiWarningPoint3 =>
+      'AI µ£ëµù╢Σ╝Üσç║ΘöÖ∩╝îΦ»╖µúÇµƒÑσ╗║Φ««τÜäσêåτ╗äσÉìτº░σÆîµëÇΘÇëµáçτ¡╛Θí╡πÇé';
 
   @override
-  String get onboarding_searchTitle => '搜索';
+  String get onboarding_searchDefaultProviderLabel => 'µÉ£τ┤óσ╝òµôÄ';
 
   @override
-  String get onboarding_searchDefaultProviderLabel => '默认搜索提供商';
+  String get onboarding_searchMore => 'µëÇµ£ëµÉ£τ┤óσ╝òµôÄ';
 
   @override
-  String get onboarding_searchMore => '搜索更多';
+  String get onboarding_searchDefaultAutocompleteLabel => 'µÉ£τ┤óσ╗║Φ««';
 
   @override
-  String get onboarding_searchDefaultAutocompleteLabel => '默认自动补全提供商';
+  String get onboarding_searchLoadFailedTitle => 'µùáµ│òσèáΦ╜╜µÉ£τ┤óσ╝òµôÄ';
 
   @override
-  String get onboarding_searchLoadFailedTitle => '无法加载搜索引擎';
+  String get onboarding_dohTitle => 'σ«ëσà¿ DNS';
 
   @override
-  String get onboarding_dohTitle => 'DNS over HTTPS';
+  String get onboarding_permissionsTitle => 'µ¥âΘÖÉ';
 
   @override
-  String get onboarding_permissionsTitle => '权限';
+  String get onboarding_permissionsNotificationsTitle => 'ΘÇÜτƒÑ';
 
   @override
-  String get onboarding_permissionsNotificationsTitle => '通知';
+  String get onboarding_permissionsNotificationsSubtitle =>
+      'Φ«⌐ WebLibre µÿ╛τñ║Σ╕ïΦ╜╜Φ┐¢σ║ª';
 
   @override
-  String get onboarding_permissionsNotificationsSubtitle => '用于向你发送下载相关的通知';
-
-  @override
-  String get onboarding_permissionsDefaultBrowserTitle => '默认浏览器';
+  String get onboarding_permissionsDefaultBrowserTitle => 'Θ╗ÿΦ«ñµ╡ÅΦºêσÖ¿';
 
   @override
   String get onboarding_permissionsDefaultBrowserSubtitle =>
-      '将 Cat Browser 设为默认浏览器';
+      'σ░å Cat Browser Φ«╛Σ╕║Θ╗ÿΦ«ñµ╡ÅΦºêσÖ¿';
 
   @override
-  String get onboarding_privacyTitle => '隐私与加固';
+  String get onboarding_privacyBrowserLanguagesTitle => 'τ╜æτ½ÖΦ»¡Φ¿Ç';
 
   @override
-  String get onboarding_privacyBrowserLanguagesTitle => '浏览器语言';
-
-  @override
-  String get onboarding_privacyBrowserLanguagesSubtitle => '配置向网站公开的语言偏好';
-
-  @override
-  String get onboarding_multipleLanguagesDetectedTitle => '检测到多种语言';
+  String get onboarding_privacyBrowserLanguagesSubtitle =>
+      'σ╕îµ£¢τ╜æτ½Öτö¿σô¬Σ║¢Φ»¡Φ¿Çµÿ╛τñ║';
 
   @override
   String onboarding_multipleLanguagesWarning(int count, String locales) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '你的浏览器配置了 $count 种语言（$locales）。',
+      other: 'Σ╜áτÜäµ╡ÅΦºêσÖ¿Φ«╛τ╜«Σ║å $count τºìΦ»¡Φ¿Ç∩╝ê$locales∩╝ëπÇé',
     );
-    return '$_temp0网站可以利用你独特的语言组合生成指纹，并在网络上跟踪你。';
+    return '$_temp0τ╜æτ½ÖσÅ»Σ╗Ñσê⌐τö¿Φ┐Öτºìτ╗äσÉêΦ»åσê½Σ╜áπÇé';
   }
 
   @override
   String get onboarding_multipleLanguagesSuggestion =>
-      '建议只保留一种浏览器语言，以减少可用于识别你的语言特征。';
+      'σÅ¬Σ┐¥τòÖΣ╕ÇτºìΦ»¡Φ¿ÇΣ╝ÜΦ«⌐Σ╜áµ¢┤ΘÜ╛Φó½σî║σêåσç║µ¥ÑπÇé';
 
   @override
-  String get onboarding_reviewLanguages => '检查语言';
+  String get onboarding_reviewLanguages => 'µúÇµƒÑΦ»¡Φ¿Ç';
 
   @override
-  String get onboarding_webEngineHardeningTitle => '全面加固网页引擎';
+  String get onboarding_webEngineHardeningTitle => 'µÄ¿ΦìÉτÜäσ«ëσà¿Φ«╛τ╜«';
 
   @override
-  String get onboarding_webEngineHardeningSubtitle => '为网页引擎应用所有推荐的安全加固首选项';
+  String get onboarding_webEngineHardeningSubtitle =>
+      'σ╝ÇσÉ» WebLibre µÄ¿ΦìÉτÜäµëÇµ£ëσ«ëσà¿Φ«╛τ╜«';
 
   @override
-  String get onboarding_fingerprintProtectionTitle => '强化指纹保护';
+  String get onboarding_fingerprintProtectionTitle =>
+      'ΘÜÉΦùÅσÅ»Φ»åσê½µ¡ñΦ«╛σñçτÜäΣ┐íµü»';
 
   @override
-  String get onboarding_fingerprintProtectionSubtitle => '加载全面的指纹保护默认设置';
+  String get onboarding_fingerprintProtectionSubtitle =>
+      'τ╜æτ½Öσ░åτ£ïσê░σ╕╕ΦºüτÜäµò░σÇ╝∩╝îΦ«⌐Σ╜áσ£¿µ▓íµ£ë Cookie µù╢Σ╣ƒµ¢┤ΘÜ╛Φó½Φ»åσê½∩╝êµîçτ║╣Φ»åσê½∩╝ë';
 
   @override
-  String get onboarding_compatibilityWarningTitle => '兼容性警告';
+  String get onboarding_compatibilityWarningTitle =>
+      'Θâ¿σêåτ╜æτ½ÖσÅ»Φâ╜µùáµ│òµ¡úσ╕╕σ╖ÑΣ╜£';
 
   @override
   String get onboarding_fingerprintWarningPoint1 =>
-      '强化指纹保护会启用 60 多项保护目标，包括 Canvas 随机化、Navigator 伪装、媒体设备屏蔽等。';
+      'Φ┐ÖΣ╝Üµö╣σÅÿ 60 σñÜΘí╣τ╜æτ½ÖσÅ»Σ╗ÑΦ»╗σÅûτÜäτ╗åΦèé∩╝îΣ╛ïσªéσ¢╛σ╜óτÜäτ╗ÿσê╢µû╣σ╝Å∩╝îΣ╗ÑσÅèΦ┐₧µÄÑΣ║åσô¬Σ║¢µæäσâÅσñ┤σÆîΘ║ªσàïΘúÄπÇé';
 
   @override
   String get onboarding_fingerprintWarningPoint2 =>
-      '这可能导致网站无法正常显示或出现异常行为。你可以在设置中微调各项保护目标。';
+      'σªéµ₧£µƒÉΣ╕¬τ╜æτ½ÖΦ┐ÉΦíîσ╝éσ╕╕∩╝îσÅ»Σ╗Ñσ£¿Φ«╛τ╜«Σ╕¡Φ░âµò┤σÉäΘí╣Σ┐¥µèñµÄ¬µû╜πÇé';
 
   @override
-  String get onboarding_localNetworkProtectionTitle => '本地网络保护';
-
-  @override
-  String get onboarding_localNetworkProtectionSubtitle =>
-      '网站可能会尝试访问你的设备以及家庭网络中的其他设备，例如路由器、打印机或智能家居设备。默认情况下，已知跟踪器的此类访问会被自动阻止。';
-
-  @override
-  String get onboarding_blockAllLocalNetworkTitle => '阻止所有本地网络请求';
+  String get onboarding_blockAllLocalNetworkTitle => 'µ£¼σ£░Φ┐₧µÄÑσëìσàêΦ»óΘù«';
 
   @override
   String get onboarding_blockAllLocalNetworkSubtitle =>
-      '任何网站访问你家庭网络中的设备前都需征得许可，而不仅限于已知跟踪器';
+      'τ╜æτ½Öσ£¿Φ┐₧µÄÑµ¡ñΦ«╛σñçΣ╕èτÜäσ║öτö¿µêûΣ╜áτ╜æτ╗£Σ╕¡τÜäΦ«╛σñçΣ╣ïσëìσ┐àΘí╗σàêσ╛üµ▒éΦ«╕σÅ»';
 
   @override
-  String get onboarding_toolbarLayoutTitle => '工具栏与布局';
+  String get onboarding_toolbarLayoutTitle => 'σ╖Ñσà╖µáÅΣ╕Äσ╕âσ▒Ç';
 
   @override
   String get onboarding_ublockTitle => 'uBlock Origin';
 
   @override
   String get onboarding_ublockDescription =>
-      'uBlock Origin（uBO）是由 **Raymond Hill** 开发的一款 CPU 和内存占用都很低的 **广谱内容拦截器**，可作为浏览器扩展在 Cat Browser 中使用。\n\n默认情况下，它使用 **EasyList、EasyPrivacy、Peter Lowe\'s Blocklist、Online Malicious URL Blocklist 和 uBO 过滤规则列表** 拦截广告、跟踪器、挖矿脚本、弹出窗口、烦人的反拦截脚本、恶意网站等。\n\n还有许多其他列表可用于拦截更多内容。';
+      'uBlock Origin∩╝êuBO∩╝ëµÿ»τö▒ **Raymond Hill** σ╝ÇσÅæτÜäΣ╕Çµ¼╛ CPU σÆîσåàσ¡ÿσìáτö¿Θâ╜σ╛êΣ╜ÄτÜä **σ╣┐Φ░▒σåàσ«╣µïªµê¬σÖ¿**∩╝îσÅ»Σ╜£Σ╕║µ╡ÅΦºêσÖ¿µë⌐σ▒òσ£¿ Cat Browser Σ╕¡Σ╜┐τö¿πÇé\n\nΘ╗ÿΦ«ñµâàσå╡Σ╕ï∩╝îσ«âΣ╜┐τö¿ **EasyListπÇüEasyPrivacyπÇüPeter Lowe\'s BlocklistπÇüOnline Malicious URL Blocklist σÆî uBO Φ┐çµ╗ñΦºäσêÖσêùΦí¿** µïªµê¬σ╣┐σæèπÇüΦ╖ƒΦ╕¬σÖ¿πÇüµîûτƒ┐ΦäÜµ£¼πÇüσ╝╣σç║τ¬ùσÅúπÇüτâªΣ║║τÜäσÅìµïªµê¬ΦäÜµ£¼πÇüµü╢µäÅτ╜æτ½Öτ¡ëπÇé\n\nΦ┐ÿµ£ëΦ«╕σñÜσà╢Σ╗ûσêùΦí¿σÅ»τö¿Σ║Äµïªµê¬µ¢┤σñÜσåàσ«╣πÇé';
 
   @override
-  String get onboarding_ublockInstallTitle => '安装 uBlock Origin 扩展';
+  String get onboarding_ublockInstallTitle => 'σ«ëΦúà uBlock Origin';
 
   @override
-  String get onboarding_ublockApplyDefaultsTitle => '应用优化的默认设置';
+  String get onboarding_ublockApplyDefaultsTitle =>
+      'Σ╜┐τö¿µÄ¿ΦìÉτÜäΦ┐çµ╗ñΦºäσêÖ';
 
   @override
   String get onboarding_ublockApplyDefaultsSubtitle =>
-      '启用 Cat Browser 加固过滤规则列表。';
+      'σÉ»τö¿ Cat Browser σèáσ¢║Φ┐çµ╗ñΦºäσêÖσêùΦí¿πÇé';
+
+  @override
+  String get onboarding_welcomeTitle => 'µ¼óΦ┐ÄΣ╜┐τö¿ WebLibre';
+
+  @override
+  String get onboarding_aiUseOnDeviceTitle => 'Σ╜┐τö¿Φ«╛σñçτ½» AI';
+
+  @override
+  String get onboarding_severalLanguagesTitle => 'σ╖▓Φ«╛τ╜«σñÜτºìΦ»¡Φ¿Ç';
+
+  @override
+  String get onboarding_ublockInstallSubtitle =>
+      'µïªµê¬σ╣┐σæèπÇüΦ╖ƒΦ╕¬σÖ¿σÆîµ£ëσ«│τ╜æτ½Ö';
+
+  @override
+  String get onboarding_presetTitle => 'WebLibre σ║öΦ»Ñµÿ╛τñ║σñÜσ░æσèƒΦâ╜∩╝ƒ';
+
+  @override
+  String get onboarding_presetAverageTitle => 'ΘÜÅΣ╛┐ΘÇ¢ΘÇ¢';
+
+  @override
+  String get onboarding_presetAverageSubtitle => 'ΦªüΘÜÉτºü∩╝îΣ╕ìΦªüσñìµ¥é';
+
+  @override
+  String get onboarding_presetAveragePoint1 =>
+      'µáçτ¡╛Θí╡πÇüΣ╣ªτ¡╛πÇüσÄåσÅ▓Φ«░σ╜òσÆîΘÿàΦ»╗µ¿íσ╝Å';
+
+  @override
+  String get onboarding_presetAveragePoint2 =>
+      'ΘÇÜΦ┐ç uBlock Origin µïªµê¬σ╣┐σæèσÆîΦ╖ƒΦ╕¬σÖ¿';
+
+  @override
+  String get onboarding_presetAveragePoint3 =>
+      'µÉ£τ┤óσ┐½µì╖µû╣σ╝ÅπÇüµë⌐σ▒òσÆîτ╜æΘí╡τ┐╗Φ»æ';
+
+  @override
+  String get onboarding_presetAveragePoint4 =>
+      'ΘÇÜΦ┐ç Firefox Sync Σ╕ÄΣ╜áτÜäσà╢Σ╗ûΦ«╛σñçσÉîµ¡Ñ';
+
+  @override
+  String get onboarding_presetAdvancedTitle => 'τê▒µèÿΦà╛';
+
+  @override
+  String get onboarding_presetAdvancedSubtitle =>
+      'µêæσû£µ¼óµîëΦç¬σ╖▒τÜäµû╣σ╝Åµ¥ÑΦ«╛τ╜«';
+
+  @override
+  String get onboarding_presetAdvancedPoint1 =>
+      'τö¿σ«╣σÖ¿σÆîΘÜöτª╗µáçτ¡╛Θí╡σêåσ╝Ç Cookie σÆîτÖ╗σ╜òΣ┐íµü»';
+
+  @override
+  String get onboarding_presetAdvancedPoint2 => 'TorπÇüVPN σÆîΣ╗úτÉåΦ┐₧µÄÑ';
+
+  @override
+  String get onboarding_presetAdvancedPoint3 =>
+      'µáæτè╢µáçτ¡╛Θí╡πÇüµëïσè┐Σ╗ÑσÅèσ╖Ñσà╖µáÅσÆîΦÅ£σìòΦç¬σ«ÜΣ╣ë';
+
+  @override
+  String get onboarding_presetAdvancedPoint4 =>
+      'Θ½ÿτ║ºΘÜÉτºüΦ«╛τ╜«σÆîΦ«╛σñçτ½» AI µÄºσê╢ΘÇëΘí╣';
+
+  @override
+  String get onboarding_presetExpertTitle => 'Σ╕ôσ«╢µ¿íσ╝Å';
+
+  @override
+  String get onboarding_presetExpertSubtitle =>
+      'µêæµâ│ΦªüµëÇµ£ëΦ«╛τ╜«σÆîµÄºσê╢ΘÇëΘí╣';
+
+  @override
+  String get onboarding_presetExpertPoint1 =>
+      'σ╝òµôÄσèáσ¢║σêåτ╗äσÆîµîçτ║╣Φ»åσê½Σ╛ïσñû';
+
+  @override
+  String get onboarding_presetExpertPoint2 =>
+      'µîëσ«╣σÖ¿Φ╖»τö▒πÇüDNS Φªåτ¢ûσÆîσñÜµ¥íΘÜºΘüô';
+
+  @override
+  String get onboarding_presetExpertPoint3 =>
+      'JavaScriptπÇüUser Agent σÆîΦ»üΣ╣ªµÄºσê╢';
+
+  @override
+  String get onboarding_yourSetupTitle => 'Σ╜áτÜäΦ«╛τ╜«';
+
+  @override
+  String get onboarding_yourSetupProtections =>
+      'µïªµê¬Φ╖ƒΦ╕¬σÖ¿σ╣╢Σ╜┐τö¿σèáσ»åΦ┐₧µÄÑ';
+
+  @override
+  String get onboarding_yourSetupLocalNetwork =>
+      'τ╜æτ½Öσ£¿µ£¼σ£░Φ┐₧µÄÑσëìΣ╝ÜσàêΦ»óΘù«';
+
+  @override
+  String onboarding_yourSetupHistoryRetention(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days σñ⌐',
+    );
+    return 'σÄåσÅ▓Φ«░σ╜òΣ┐¥τòÖ $_temp0';
+  }
+
+  @override
+  String get onboarding_yourSetupHiddenForNowTitle => 'µÜéµù╢ΘÜÉΦùÅ';
+
+  @override
+  String get onboarding_presetChangeLater =>
+      'Σ╜áσÅ»Σ╗ÑΘÜÅµù╢σ£¿ΓÇ£Φ«╛τ╜« > σèƒΦâ╜τ«íτÉåΓÇ¥Σ╕¡µÿ╛τñ║µêûΘÜÉΦùÅσèƒΦâ╜πÇé';
+
+  @override
+  String get onboarding_presetAdvancedIncludes =>
+      'σîàσÉ½ΓÇ£ΘÜÅΣ╛┐ΘÇ¢ΘÇ¢ΓÇ¥τÜäσà¿Θâ¿σåàσ«╣∩╝îσÅªσñûΦ┐ÿµ£ë∩╝Ü';
+
+  @override
+  String get onboarding_presetExpertIncludes =>
+      'σîàσÉ½ΓÇ£τê▒µèÿΦà╛ΓÇ¥τÜäσà¿Θâ¿σåàσ«╣∩╝îσÅªσñûΦ┐ÿµ£ë∩╝Ü';
+
+  @override
+  String get onboarding_goalKeepAccountsApart => 'σêåσ╝ÇΣ╕ìσÉîΦ┤ªσÅ╖';
+
+  @override
+  String get onboarding_goalLockBrowser => 'Θöüσ«Üµ╡ÅΦºêσÖ¿';
+
+  @override
+  String get onboarding_goalSetUpConnections => 'Φ«╛τ╜« TorπÇüVPN µêûΣ╗úτÉå';
+
+  @override
+  String get onboarding_goalSyncDevices => 'Σ╕ÄµêæτÜäσà╢Σ╗ûΦ«╛σñçσÉîµ¡Ñ';
+
+  @override
+  String get onboarding_goalKeepAccountsApartSubtitle =>
+      'σ£¿σÉîΣ╕Çτ╜æτ½ÖΣ╕èΣ╜┐τö¿σñÜΣ╕¬Φ┤ªσÅ╖∩╝îµ»ÅΣ╕¬Φ┤ªσÅ╖µö╛σ£¿Φç¬σ╖▒τÜäσ«╣σÖ¿Σ╕¡';
+
+  @override
+  String get onboarding_goalLockBrowserSubtitle =>
+      'τé╣σç╗ΓÇ£σ«îµêÉΓÇ¥µù╢Φ«╛τ╜«Φ«╛σñçΘöüµêûσ»åτáü';
+
+  @override
+  String get onboarding_goalSetUpConnectionsSubtitle =>
+      'τé╣σç╗ΓÇ£σ«îµêÉΓÇ¥µù╢µëôσ╝ÇΦ┐₧µÄÑΦ«╛τ╜«πÇéσ£¿Σ╜áσÉ»σè¿Φ┐₧µÄÑΣ╣ïσëì∩╝îΣ╕ìΣ╝Üσ╗║τ½ïΣ╗╗Σ╜òΦ┐₧µÄÑπÇé';
+
+  @override
+  String get onboarding_goalSyncDevicesSubtitle =>
+      'τé╣σç╗ΓÇ£σ«îµêÉΓÇ¥µù╢τÖ╗σ╜ò Firefox Sync';
+
+  @override
+  String get onboarding_customizeGroupPrivacy => 'ΘÜÉτºüΣ╕Äσ«ëσà¿';
+
+  @override
+  String get onboarding_customizeGroupTabs => 'µáçτ¡╛Θí╡Σ╕ÄΘàìτ╜«µûçΣ╗╢';
+
+  @override
+  String get onboarding_customizeGroupConnections => 'Φ┐₧µÄÑ';
+
+  @override
+  String get onboarding_customizeGroupLayout => 'σ╕âσ▒ÇΣ╕ÄΦ╛ôσàÑ';
+
+  @override
+  String get onboarding_customizeSaveFailed =>
+      'µùáµ│òΣ┐¥σ¡ÿΦªüµÿ╛τñ║τÜäσèƒΦâ╜πÇéΦ»╖ΘçìΦ»òπÇé';
+
+  @override
+  String get onboarding_customizeGroupOther => 'σà╢Σ╗ûσèƒΦâ╜';
+
+  @override
+  String get onboarding_customizeHomeSections => 'Σ╕╗Θí╡µ¥┐σ¥ù';
+
+  @override
+  String get onboarding_customizeNewTabSections => 'µû░µáçτ¡╛Θí╡µ¥┐σ¥ù';
+
+  @override
+  String get onboarding_commitFailed => 'µùáµ│òΣ┐¥σ¡ÿΦ«╛τ╜«∩╝îΦ»╖ΘçìΦ»òπÇé';
+
+  @override
+  String get onboarding_restoreRequiresEula =>
+      'Φ»╖σàêµÄÑσÅùµ£Çτ╗êτö¿µê╖Φ«╕σÅ»σìÅΦ««σÆîΘÜÉτºüµö┐τ¡ûπÇé';
+
+  @override
+  String get onboarding_setupStepFailedUBlock =>
+      'µùáµ│òσ«ëΦúà uBlock OriginπÇéWebLibre Σ╝Üσ£¿Σ╕ïµ¼íσÉ»σè¿µù╢ΘçìΦ»òπÇé';
+
+  @override
+  String get onboarding_setupStepFailedFilters =>
+      'µùáµ│òσ╝ÇσÉ» uBlock Origin τÜäµÄ¿ΦìÉΦ┐çµ╗ñΦºäσêÖπÇéWebLibre Σ╝Üσ£¿Σ╕ïµ¼íσÉ»σè¿µù╢ΘçìΦ»òπÇé';
+
+  @override
+  String get onboarding_setupStepFailedHardening =>
+      'Θâ¿σêåµÄ¿ΦìÉτÜäσ«ëσà¿Φ«╛τ╜«µùáµ│òσ╝ÇσÉ»πÇéWebLibre Σ╝Üσ£¿Σ╕ïµ¼íσÉ»σè¿µù╢ΘçìΦ»òπÇé';
+
+  @override
+  String get onboarding_searchStepTitle => 'µÉ£τ┤ó';
+
+  @override
+  String get onboarding_layoutStepTitle => 'σ╕âσ▒Ç';
+
+  @override
+  String get onboarding_layoutCustomizeFurtherTitle => 'Φ┐¢Σ╕Çµ¡ÑΦç¬σ«ÜΣ╣ë';
+
+  @override
+  String get onboarding_layoutReassurance =>
+      'ΓÇ£Φç¬σè¿ΓÇ¥ΘÇéσÉêσñºσñÜµò░Φ«╛σñçπÇéµëÇµ£ëΦ┐ÖΣ║¢τ¿ìσÉÄΘâ╜σÅ»Σ╗Ñσ£¿Φ«╛τ╜«Σ╕¡µ¢┤µö╣πÇé';
+
+  @override
+  String get onboarding_toolbarLayoutSubtitle =>
+      'µîëΘÆ«πÇüΦÅ£σìòπÇüµáçτ¡╛µáÅσÆîΦç¬σè¿ΘÜÉΦùÅ';
+
+  @override
+  String get onboarding_yourChoicesTitle => 'Σ╜áτÜäΘÇëµï⌐';
+
+  @override
+  String get onboarding_tabBarPositionTitle => 'µáçτ¡╛µáÅΣ╜ìτ╜«';
+
+  @override
+  String get onboarding_yourChoicesSuggestionsOff => 'σà│Θù¡';
+
+  @override
+  String get onboarding_yourSetupOnDoneTitle => 'τé╣σç╗ΓÇ£σ«îµêÉΓÇ¥µù╢σ╝ÇσÉ»';
+
+  @override
+  String get onboarding_ublockInstallOnDoneSubtitle =>
+      'τé╣σç╗ΓÇ£σ«îµêÉΓÇ¥µù╢σ«ëΦúà∩╝îσ╣╢Σ╝ÜΦ»╖µ▒éµëÇΘ£Çµ¥âΘÖÉ';
+
+  @override
+  String get onboarding_privacySecurityRowSubtitle =>
+      'µ£¼σ£░Φ┐₧µÄÑπÇüµîçτ║╣Φ»åσê½πÇüσ«ëσà¿ DNS σÆîτ╜æτ½ÖΦ»¡Φ¿Ç';
+
+  @override
+  String get onboarding_addToSetupTitle => 'µ╖╗σèáσê░Σ╜áτÜäΦ«╛τ╜«';
+
+  @override
+  String get onboarding_showHideFeaturesAction => 'µÿ╛τñ║µêûΘÜÉΦùÅσèƒΦâ╜';
+
+  @override
+  String get onboarding_showHideFeaturesCaption =>
+      'σèƒΦâ╜ΘÜÉΦùÅµ£ƒΘù┤∩╝îσà╢Φ«╛τ╜«Σ╜┐τö¿Θ╗ÿΦ«ñσÇ╝πÇéσåìµ¼íµÿ╛τñ║σÉÄ∩╝îΣ╜áτÜäµ¢┤µö╣Σ╝ÜµüóσñìπÇé';
+
+  @override
+  String onboarding_dohCurrentSubtitle(String mode, String provider) {
+    return '$mode∩╝îΣ╜┐τö¿ $provider';
+  }
+
+  @override
+  String get onboarding_presetChangeResetVisibility =>
+      'Σ╜áσ»╣σèƒΦâ╜µÿ╛τñ║σÆîΘÜÉΦùÅτÜäµ¢┤µö╣σ╖▓Φó½µ¡ñΘÇëΘí╣τÜäΘ╗ÿΦ«ñΦ«╛τ╜«σÅûΣ╗úπÇé';
+
+  @override
+  String onboarding_presetChangeStopsApplyingTitle(String preset) {
+    return 'Φªüσêçµìóσê░ΓÇ£$presetΓÇ¥σÉù∩╝ƒ';
+  }
+
+  @override
+  String get onboarding_presetChangeStopsApplyingContent =>
+      'µ¡ñΘÇëµï⌐Σ╝ÜΘÜÉΦùÅΣ╜áµ¢┤µö╣Φ┐çΦ«╛τ╜«τÜäσèƒΦâ╜πÇéΘÜÉΦùÅµ£ƒΘù┤∩╝îΦ┐ÖΣ║¢Φ«╛τ╜«Σ╜┐τö¿Θ╗ÿΦ«ñσÇ╝πÇéΣ╜áτÜäµ¢┤µö╣Σ╝ÜΣ┐¥τòÖ∩╝îσåìµ¼íµÿ╛τñ║Φ┐ÖΣ║¢σèƒΦâ╜σÉÄΣ╝ÜΘçìµû░τöƒµòêπÇé';
+
+  @override
+  String get onboarding_presetChangeConfirm => 'σêçµìó';
 
   @override
   String get proxy_actionChange => '更改';
@@ -6074,6 +6357,11 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get proxy_protocolFixedHelper => '配置创建后协议不可更改。';
+
+  @override
+  String proxy_protocolFromImportHelper(String featureName) {
+    return '由导入决定。如需手动输入连接，请在“设置 > 功能管理”中显示“$featureName”。';
+  }
 
   @override
   String get proxy_customOutboundLabel => '自定义出站';
@@ -7026,2108 +7314,2295 @@ class AppLocalizationsZh extends AppLocalizations {
   String get searchCredits_buyMoreTitle => '购买更多';
 
   @override
-  String get settings_advancedTitle => '高级';
+  String get settings_advancedTitle => 'Θ½ÿτ║º';
 
   @override
-  String get settings_advancedSubtitle => '引擎行为、运行时覆盖和开发者工具。';
+  String get settings_advancedSubtitle =>
+      'σ╝òµôÄΦíîΣ╕║πÇüΦ┐ÉΦíîµù╢Φªåτ¢ûσÆîσ╝ÇσÅæΦÇàσ╖Ñσà╖πÇé';
 
   @override
-  String get settings_javascriptTitle => '启用 JavaScript';
+  String get settings_javascriptTitle => 'σÉ»τö¿ JavaScript';
 
   @override
-  String get settings_javascriptKeywords => 'javascript,js,脚本';
+  String get settings_javascriptKeywords => 'javascript,js,ΦäÜµ£¼';
 
   @override
   String get settings_javascriptSubtitle =>
-      '关闭 JavaScript 可以提高安全性、隐私性和速度，但可能导致部分网站无法正常工作。';
+      'σà│Θù¡ JavaScript σÅ»Σ╗ÑµÅÉΘ½ÿσ«ëσà¿µÇºπÇüΘÜÉτºüµÇºσÆîΘÇƒσ║ª∩╝îΣ╜åσÅ»Φâ╜σ»╝Φç┤Θâ¿σêåτ╜æτ½Öµùáµ│òµ¡úσ╕╕σ╖ÑΣ╜£πÇé';
 
   @override
-  String get settings_userAgentLabel => '自定义用户代理（User Agent）';
+  String get settings_userAgentLabel => 'Φç¬σ«ÜΣ╣ëτö¿µê╖Σ╗úτÉå∩╝êUser Agent∩╝ë';
 
   @override
-  String get settings_userAgentLabelKeywords => 'ua,user agent,用户代理';
+  String get settings_userAgentLabelKeywords => 'ua,user agent,τö¿µê╖Σ╗úτÉå';
 
   @override
-  String get settings_enterpriseRootsTitle => '使用第三方 CA 证书';
+  String get settings_enterpriseRootsTitle => 'Σ╜┐τö¿τ¼¼Σ╕ëµû╣ CA Φ»üΣ╣ª';
 
   @override
-  String get settings_enterpriseRootsKeywords => '证书,企业根证书,ca,enterprise roots';
+  String get settings_enterpriseRootsKeywords =>
+      'Φ»üΣ╣ª,Σ╝üΣ╕Üµá╣Φ»üΣ╣ª,ca,enterprise roots';
 
   @override
-  String get settings_enterpriseRootsSubtitle => '允许使用 Android CA 存储中的第三方证书';
+  String get settings_enterpriseRootsSubtitle =>
+      'σàüΦ«╕Σ╜┐τö¿ Android CA σ¡ÿσé¿Σ╕¡τÜäτ¼¼Σ╕ëµû╣Φ»üΣ╣ª';
 
   @override
-  String get settings_experimentalFeaturesTitle => '实验性功能';
+  String get settings_experimentalFeaturesTitle => 'σ«₧Θ¬îµÇºσèƒΦâ╜';
 
   @override
-  String get settings_experimentalFeaturesKeywords => '运行时,启动';
+  String get settings_experimentalFeaturesKeywords => 'Φ┐ÉΦíîµù╢,σÉ»σè¿';
 
   @override
-  String get settings_experimentalFeaturesSubtitle => '底层运行时功能和启动行为';
+  String get settings_experimentalFeaturesSubtitle =>
+      'σ║òσ▒éΦ┐ÉΦíîµù╢σèƒΦâ╜σÆîσÉ»σè¿ΦíîΣ╕║';
 
   @override
-  String get settings_unmountGeckoViewTitle => '在屏幕外卸载引擎';
+  String get settings_unmountGeckoViewTitle => 'σ£¿σ▒Åσ╣òσñûσì╕Φ╜╜σ╝òµôÄ';
 
   @override
-  String get settings_unmountGeckoViewKeywords => 'geckoview,内存,性能,挂起';
+  String get settings_unmountGeckoViewKeywords =>
+      'geckoview,σåàσ¡ÿ,µÇºΦâ╜,µîéΦ╡╖';
 
   @override
   String get settings_unmountGeckoViewSubtitle =>
-      '在打开全屏视图（如设置、标签页或搜索）时将网页引擎从内存中移除，返回时再重建。这可以在此期间释放资源。返回页面时需要重新挂载引擎，可能会出现闪烁或重新加载，因此这是用性能换取内存，而不是修复问题。在 Android 12 及更早版本上，引擎总是会被卸载。';
+      'σ£¿µëôσ╝Çσà¿σ▒ÅΦºåσ¢╛∩╝êσªéΦ«╛τ╜«πÇüµáçτ¡╛Θí╡µêûµÉ£τ┤ó∩╝ëµù╢σ░åτ╜æΘí╡σ╝òµôÄΣ╗Äσåàσ¡ÿΣ╕¡τº╗ΘÖñ∩╝îΦ┐öσ¢₧µù╢σåìΘçìσ╗║πÇéΦ┐ÖσÅ»Σ╗Ñσ£¿µ¡ñµ£ƒΘù┤Θçèµö╛Φ╡äµ║ÉπÇéΦ┐öσ¢₧Θí╡Θ¥óµù╢Θ£ÇΦªüΘçìµû░µîéΦ╜╜σ╝òµôÄ∩╝îσÅ»Φâ╜Σ╝Üσç║τÄ░Θù¬τâüµêûΘçìµû░σèáΦ╜╜∩╝îσ¢áµ¡ñΦ┐Öµÿ»τö¿µÇºΦâ╜µìóσÅûσåàσ¡ÿ∩╝îΦÇîΣ╕ìµÿ»Σ┐«σñìΘù«ΘóÿπÇéσ£¿ Android 12 σÅèµ¢┤µù⌐τëêµ£¼Σ╕è∩╝îσ╝òµôÄµÇ╗µÿ»Σ╝ÜΦó½σì╕Φ╜╜πÇé';
 
   @override
-  String get settings_iconCacheTitle => '图标缓存';
+  String get settings_iconCacheTitle => 'σ¢╛µáçτ╝ôσ¡ÿ';
 
   @override
-  String get settings_iconCacheKeywords => '网站图标,favicon,缓存';
+  String get settings_iconCacheKeywords => 'τ╜æτ½Öσ¢╛µáç,favicon,τ╝ôσ¡ÿ';
 
   @override
-  String get settings_iconCacheSubtitle => '已存储的网站图标';
+  String get settings_iconCacheSubtitle => 'σ╖▓Σ┐¥σ¡ÿτÜäτ╜æτ½Öσ¢╛µáç';
 
   @override
-  String get settings_iconCacheSizeLabel => '大小';
+  String get settings_iconCacheSizeLabel => 'σñºσ░Å';
 
   @override
-  String get settings_clearingAction => '正在清除';
+  String get settings_clearingAction => 'µ¡úσ£¿µ╕àΘÖñ';
 
   @override
-  String get settings_mlDownloadsTitle => '机器学习下载';
+  String get settings_mlDownloadsTitle => 'µ£║σÖ¿σ¡ªΣ╣áΣ╕ïΦ╜╜';
 
   @override
-  String get settings_mlDownloadsKeywords => 'ai,ml,模型,onnx,缓存,机器学习';
+  String get settings_mlDownloadsKeywords =>
+      'ai,ml,µ¿íσ₧ï,onnx,τ╝ôσ¡ÿ,µ£║σÖ¿σ¡ªΣ╣á';
 
   @override
-  String get settings_mlDownloadsSubtitle => '已下载的 AI 模型和运行时文件';
+  String get settings_mlDownloadsSubtitle =>
+      'σ╖▓Σ╕ïΦ╜╜τÜä AI µ¿íσ₧ïσÆîΦ┐ÉΦíîµù╢µûçΣ╗╢';
 
   @override
-  String get settings_mlDownloadsClearDialogTitle => '清除机器学习下载？';
+  String get settings_mlDownloadsClearDialogTitle =>
+      'µ╕àΘÖñµ£║σÖ¿σ¡ªΣ╣áΣ╕ïΦ╜╜∩╝ƒ';
 
   @override
   String get settings_mlDownloadsClearDialogContent =>
-      '这将清除此配置文件已下载的 AI 模型和 ONNX 运行时文件，需要时会重新下载。重试机器学习功能前请重启 Cat Browser。';
+      'Φ┐Öσ░åµ╕àΘÖñµ¡ñΘàìτ╜«µûçΣ╗╢σ╖▓Σ╕ïΦ╜╜τÜä AI µ¿íσ₧ïσÆî ONNX Φ┐ÉΦíîµù╢µûçΣ╗╢∩╝îΘ£ÇΦªüµù╢Σ╝ÜΘçìµû░Σ╕ïΦ╜╜πÇéΘçìΦ»òµ£║σÖ¿σ¡ªΣ╣áσèƒΦâ╜σëìΦ»╖ΘçìσÉ» Cat BrowserπÇé';
 
   @override
   String get settings_mlDownloadsClearedMessage =>
-      '机器学习下载已清除。重试前请重启 Cat Browser。';
+      'µ£║σÖ¿σ¡ªΣ╣áΣ╕ïΦ╜╜σ╖▓µ╕àΘÖñπÇéΘçìΦ»òσëìΦ»╖ΘçìσÉ» Cat BrowserπÇé';
 
   @override
   String settings_mlDownloadsClearFailedMessage(String error) {
-    return '无法清除机器学习下载：$error';
+    return 'µùáµ│òµ╕àΘÖñµ£║σÖ¿σ¡ªΣ╣áΣ╕ïΦ╜╜∩╝Ü$error';
   }
 
   @override
-  String get settings_errorLogsTitle => '错误日志';
+  String get settings_errorLogsTitle => 'ΘöÖΦ»»µùÑσ┐ù';
 
   @override
-  String get settings_errorLogsKeywords => '日志,logs';
+  String get settings_errorLogsKeywords => 'µùÑσ┐ù,logs';
 
   @override
-  String get settings_errorLogsSubtitle => '查看并复制日志以报告问题';
+  String get settings_errorLogsSubtitle =>
+      'µƒÑτ£ïσ╣╢σñìσê╢µùÑσ┐ùΣ╗ÑµèÑσæèΘù«Θóÿ';
 
   @override
   String get settings_dartVmTitle => 'Dart VM';
 
   @override
-  String get settings_dartVmKeywords => 'service url,服务地址';
+  String get settings_dartVmKeywords => 'service url,µ£ìσèíσ£░σ¥Ç';
 
   @override
-  String get settings_dartVmSubtitle => '复制 Dart VM 服务地址';
+  String get settings_dartVmSubtitle => 'σñìσê╢ Dart VM µ£ìσèíσ£░σ¥Ç';
 
   @override
-  String get settings_dartVmCopyErrorFallback => '错误';
+  String get settings_dartVmCopyErrorFallback => 'ΘöÖΦ»»';
 
   @override
-  String get settings_serviceUrlCopiedMessage => '服务地址已复制';
+  String get settings_serviceUrlCopiedMessage => 'µ£ìσèíσ£░σ¥Çσ╖▓σñìσê╢';
 
   @override
-  String get settings_resetUiTitle => '重置界面';
+  String get settings_resetUiTitle => 'Θçìτ╜«τòîΘ¥ó';
 
   @override
-  String get settings_resetUiKeywords => '刷新界面,ui';
+  String get settings_resetUiKeywords => 'σê╖µû░τòîΘ¥ó,ui';
 
   @override
-  String get settings_resetUiSubtitle => '重建整个浏览器界面';
+  String get settings_resetUiSubtitle => 'Θçìσ╗║µò┤Σ╕¬µ╡ÅΦºêσÖ¿τòîΘ¥ó';
 
   @override
-  String get settings_addonCollectionTitle => '自定义扩展合集';
+  String get settings_addonCollectionTitle => 'Φç¬σ«ÜΣ╣ëµë⌐σ▒òσÉêΘ¢å';
 
   @override
-  String get settings_addonCollectionSourceSectionTitle => '合集来源';
+  String get settings_addonCollectionSourceSectionTitle => 'σÉêΘ¢åµ¥Ñµ║É';
 
   @override
-  String get settings_addonCollectionConfigTitle => '合集配置';
+  String get settings_addonCollectionConfigTitle => 'σÉêΘ¢åΘàìτ╜«';
 
   @override
   String get settings_addonCollectionConfigKeywords =>
-      '附加组件,扩展,合集,addons,collection';
+      'ΘÖäσèáτ╗äΣ╗╢,µë⌐σ▒ò,σÉêΘ¢å,addons,collection';
 
   @override
-  String get settings_addonCollectionConfigSubtitle => 'Mozilla 服务器、合集所有者和合集名称';
+  String get settings_addonCollectionConfigSubtitle =>
+      'Mozilla µ£ìσèíσÖ¿πÇüσÉêΘ¢åµëÇµ£ëΦÇàσÆîσÉêΘ¢åσÉìτº░';
 
   @override
-  String get settings_addonCollectionServerUrlLabel => '服务器网址';
+  String get settings_addonCollectionServerUrlLabel => 'µ£ìσèíσÖ¿τ╜æσ¥Ç';
 
   @override
-  String get settings_addonCollectionUserLabel => '合集用户';
+  String get settings_addonCollectionUserLabel => 'σÉêΘ¢åτö¿µê╖';
 
   @override
-  String get settings_addonCollectionNameLabel => '合集名称';
+  String get settings_addonCollectionNameLabel => 'σÉêΘ¢åσÉìτº░';
 
   @override
-  String get settings_addonCollectionActionsSectionTitle => '操作';
+  String get settings_addonCollectionActionsSectionTitle => 'µôìΣ╜£';
 
   @override
-  String get settings_addonCollectionSaveRestartTitle => '保存并重启浏览器';
+  String get settings_addonCollectionSaveRestartTitle =>
+      'Σ┐¥σ¡ÿσ╣╢ΘçìσÉ»µ╡ÅΦºêσÖ¿';
 
   @override
-  String get settings_addonCollectionSaveRestartKeywords => '重启';
+  String get settings_addonCollectionSaveRestartKeywords => 'ΘçìσÉ»';
 
   @override
-  String get settings_addonCollectionSaveRestartSubtitle => '应用自定义合集并重启浏览器';
+  String get settings_addonCollectionSaveRestartSubtitle =>
+      'σ║öτö¿Φç¬σ«ÜΣ╣ëσÉêΘ¢åσ╣╢ΘçìσÉ»µ╡ÅΦºêσÖ¿';
 
   @override
-  String get settings_bangSettingsTitle => 'Bang 设置';
+  String get settings_bangSettingsTitle => 'Bang Φ«╛τ╜«';
 
   @override
-  String get settings_bangSettingsKeywords => '快捷方式,bang,bangs';
+  String get settings_bangSettingsKeywords => 'σ┐½µì╖µû╣σ╝Å,bang,bangs';
 
   @override
-  String get settings_bangSettingsSubtitle => 'Bang 快捷方式的使用情况、存储库和按需同步。';
+  String get settings_bangSettingsSubtitle =>
+      'Bang σ┐½µì╖µû╣σ╝ÅτÜäΣ╜┐τö¿µâàσå╡πÇüσ¡ÿσé¿σ║ôσÆîµîëΘ£ÇσÉîµ¡ÑπÇé';
 
   @override
-  String get settings_bangFrequenciesTitle => 'Bang 使用频率';
+  String get settings_bangFrequenciesTitle => 'Bang Σ╜┐τö¿ΘóæτÄç';
 
   @override
-  String get settings_bangFrequenciesKeywords => '使用情况,推荐';
+  String get settings_bangFrequenciesKeywords => 'Σ╜┐τö¿µâàσå╡,µÄ¿ΦìÉ';
 
   @override
-  String get settings_bangFrequenciesSubtitle => '用于 Bang 推荐的使用记录';
+  String get settings_bangFrequenciesSubtitle =>
+      'τö¿Σ║Ä Bang µÄ¿ΦìÉτÜäΣ╜┐τö¿Φ«░σ╜ò';
 
   @override
-  String get settings_browsingTitle => '浏览';
+  String get settings_browsingTitle => 'µ╡ÅΦºê';
 
   @override
-  String get settings_browsingSubtitle => '标签页、导航、应用链接和小众网络行为。';
+  String get settings_browsingSubtitle =>
+      'µáçτ¡╛Θí╡πÇüσ»╝Φê¬πÇüσ║öτö¿Θô╛µÄÑσÆîσ░ÅΣ╝ùτ╜æτ╗£ΦíîΣ╕║πÇé';
 
   @override
-  String get settings_newTabDefaultTitle => '新标签页默认类型';
+  String get settings_newTabDefaultTitle => 'µû░µáçτ¡╛Θí╡Θ╗ÿΦ«ñτ▒╗σ₧ï';
 
   @override
-  String get settings_newTabDefaultKeywords => '普通,隐私,隔离';
+  String get settings_newTabDefaultKeywords => 'µÖ«ΘÇÜ,ΘÜÉτºü,ΘÜöτª╗';
 
   @override
-  String get settings_newTabDefaultSubtitle => '选择手动创建的标签页的默认类型';
+  String get settings_newTabDefaultSubtitle =>
+      'ΘÇëµï⌐µëïσè¿σê¢σ╗║τÜäµáçτ¡╛Θí╡τÜäΘ╗ÿΦ«ñτ▒╗σ₧ï';
 
   @override
-  String get settings_tabTypeRegularLabel => '普通';
+  String get settings_tabTypeRegularLabel => 'µÖ«ΘÇÜ';
 
   @override
-  String get settings_tabTypePrivateLabel => '隐私';
+  String get settings_tabTypePrivateLabel => 'ΘÜÉτºü';
 
   @override
-  String get settings_tabTypeIsolatedLabel => '隔离';
+  String get settings_tabTypeIsolatedLabel => 'ΘÜöτª╗';
 
   @override
-  String get settings_smallWebTabDefaultTitle => '小众网络标签页默认类型';
+  String get settings_smallWebTabDefaultTitle =>
+      'σ░ÅΣ╝ùτ╜æτ╗£µáçτ¡╛Θí╡Θ╗ÿΦ«ñτ▒╗σ₧ï';
 
   @override
-  String get settings_smallWebTabDefaultKeywords => '普通,隐私,隔离';
+  String get settings_smallWebTabDefaultKeywords => 'µÖ«ΘÇÜ,ΘÜÉτºü,ΘÜöτª╗';
 
   @override
-  String get settings_smallWebTabDefaultSubtitle => '选择进入小众网络时使用的标签页类型';
+  String get settings_smallWebTabDefaultSubtitle =>
+      'ΘÇëµï⌐Φ┐¢σàÑσ░ÅΣ╝ùτ╜æτ╗£µù╢Σ╜┐τö¿τÜäµáçτ¡╛Θí╡τ▒╗σ₧ï';
 
   @override
-  String get settings_externalLinkHandlingTitle => '外部链接处理';
+  String get settings_externalLinkHandlingTitle => 'σñûΘâ¿Θô╛µÄÑσñäτÉå';
 
   @override
-  String get settings_externalLinkHandlingKeywords => 'intent,外部链接';
+  String get settings_externalLinkHandlingKeywords => 'intent,σñûΘâ¿Θô╛µÄÑ';
 
   @override
   String get settings_externalLinkHandlingSubtitle =>
-      '选择外部链接在 Cat Browser 中的打开方式';
+      'ΘÇëµï⌐σñûΘâ¿Θô╛µÄÑσ£¿ Cat Browser Σ╕¡τÜäµëôσ╝Çµû╣σ╝Å';
 
   @override
-  String get settings_promptOptionLabel => '询问';
+  String get settings_promptOptionLabel => 'Φ»óΘù«';
 
   @override
-  String get settings_externalLinkPromptSubtitle => '询问外部链接应如何打开';
+  String get settings_externalLinkPromptSubtitle =>
+      'Φ»óΘù«σñûΘâ¿Θô╛µÄÑσ║öσªéΣ╜òµëôσ╝Ç';
 
   @override
-  String get settings_externalLinkRegularSubtitle => '在普通标签页中打开外部链接';
+  String get settings_externalLinkRegularSubtitle =>
+      'σ£¿µÖ«ΘÇÜµáçτ¡╛Θí╡Σ╕¡µëôσ╝ÇσñûΘâ¿Θô╛µÄÑ';
 
   @override
-  String get settings_externalLinkPrivateSubtitle => '在隐私标签页中打开外部链接';
+  String get settings_externalLinkPrivateSubtitle =>
+      'σ£¿ΘÜÉτºüµáçτ¡╛Θí╡Σ╕¡µëôσ╝ÇσñûΘâ¿Θô╛µÄÑ';
 
   @override
-  String get settings_externalLinkIsolatedSubtitle => '在隔离标签页中打开外部链接';
+  String get settings_externalLinkIsolatedSubtitle =>
+      'σ£¿ΘÜöτª╗µáçτ¡╛Θí╡Σ╕¡µëôσ╝ÇσñûΘâ¿Θô╛µÄÑ';
 
   @override
-  String get settings_bookmarkOpenBehaviorTitle => '书签打开方式';
+  String get settings_bookmarkOpenBehaviorTitle => 'Σ╣ªτ¡╛µëôσ╝Çµû╣σ╝Å';
 
   @override
-  String get settings_bookmarkOpenBehaviorKeywords => '书签,打开,自定义标签页,隔离';
+  String get settings_bookmarkOpenBehaviorKeywords =>
+      'Σ╣ªτ¡╛,µëôσ╝Ç,Φç¬σ«ÜΣ╣ëµáçτ¡╛Θí╡,ΘÜöτª╗';
 
   @override
-  String get settings_bookmarkOpenBehaviorSubtitle => '选择点按书签时的打开方式';
+  String get settings_bookmarkOpenBehaviorSubtitle =>
+      'ΘÇëµï⌐τé╣µîëΣ╣ªτ¡╛µù╢τÜäµëôσ╝Çµû╣σ╝Å';
 
   @override
-  String get settings_bookmarkOpenPromptSubtitle => '询问书签应如何打开';
+  String get settings_bookmarkOpenPromptSubtitle =>
+      'Φ»óΘù«Σ╣ªτ¡╛σ║öσªéΣ╜òµëôσ╝Ç';
 
   @override
-  String get settings_bookmarkOpenRegularSubtitle => '在普通标签页中打开书签';
+  String get settings_bookmarkOpenRegularSubtitle =>
+      'σ£¿µÖ«ΘÇÜµáçτ¡╛Θí╡Σ╕¡µëôσ╝ÇΣ╣ªτ¡╛';
 
   @override
-  String get settings_bookmarkOpenPrivateSubtitle => '在隐私标签页中打开书签';
+  String get settings_bookmarkOpenPrivateSubtitle =>
+      'σ£¿ΘÜÉτºüµáçτ¡╛Θí╡Σ╕¡µëôσ╝ÇΣ╣ªτ¡╛';
 
   @override
-  String get settings_customTabOptionLabel => '自定义标签页';
+  String get settings_customTabOptionLabel => 'Φç¬σ«ÜΣ╣ëµáçτ¡╛Θí╡';
 
   @override
-  String get settings_bookmarkOpenCustomTabSubtitle => '在轻量的自定义标签页中打开书签';
+  String get settings_bookmarkOpenCustomTabSubtitle =>
+      'σ£¿Φ╜╗ΘçÅτÜäΦç¬σ«ÜΣ╣ëµáçτ¡╛Θí╡Σ╕¡µëôσ╝ÇΣ╣ªτ¡╛';
 
   @override
-  String get settings_bookmarkOpenIsolatedSubtitle => '在隔离标签页中打开书签';
+  String get settings_bookmarkOpenIsolatedSubtitle =>
+      'σ£¿ΘÜöτª╗µáçτ¡╛Θí╡Σ╕¡µëôσ╝ÇΣ╣ªτ¡╛';
 
   @override
-  String get settings_tabListDirectionTitle => '标签页列表方向';
+  String get settings_tabListDirectionTitle => 'µáçτ¡╛Θí╡σêùΦí¿µû╣σÉæ';
 
   @override
-  String get settings_tabListDirectionKeywords => '排序,顺序';
+  String get settings_tabListDirectionKeywords => 'µÄÆσ║Å,Θí║σ║Å';
 
   @override
-  String get settings_tabListDirectionSubtitle => '选择最新的标签页显示在标签页列表的顶部还是底部';
+  String get settings_tabListDirectionSubtitle =>
+      'ΘÇëµï⌐µ£Çµû░τÜäµáçτ¡╛Θí╡µÿ╛τñ║σ£¿µáçτ¡╛Θí╡σêùΦí¿τÜäΘí╢Θâ¿Φ┐ÿµÿ»σ║òΘâ¿';
 
   @override
-  String get settings_directionNewestFirstLabel => '最新优先';
+  String get settings_directionNewestFirstLabel => 'µ£Çµû░Σ╝ÿσàê';
 
   @override
-  String get settings_directionOldestFirstLabel => '最早优先';
+  String get settings_directionOldestFirstLabel => 'µ£Çµù⌐Σ╝ÿσàê';
 
   @override
-  String get settings_tabBarDirectionTitle => '标签栏方向';
+  String get settings_tabBarDirectionTitle => 'µáçτ¡╛µáÅµû╣σÉæ';
 
   @override
-  String get settings_tabBarDirectionKeywords => '排序,顺序';
+  String get settings_tabBarDirectionKeywords => 'µÄÆσ║Å,Θí║σ║Å';
 
   @override
-  String get settings_tabBarDirectionSubtitle => '选择最新的标签页显示在快速切换栏的左侧还是右侧';
+  String get settings_tabBarDirectionSubtitle =>
+      'ΘÇëµï⌐µ£Çµû░τÜäµáçτ¡╛Θí╡µÿ╛τñ║σ£¿σ┐½ΘÇƒσêçµìóµáÅτÜäσ╖ªΣ╛ºΦ┐ÿµÿ»σÅ│Σ╛º';
 
   @override
-  String get settings_childTabPlacementTitle => '新子标签页位置';
+  String get settings_childTabPlacementTitle => 'µû░σ¡Éµáçτ¡╛Θí╡Σ╜ìτ╜«';
 
   @override
   String get settings_childTabPlacementKeywords =>
-      '子标签页,新标签页,位置,顺序,列表末尾,父标签页之后';
+      'σ¡Éµáçτ¡╛Θí╡,µû░µáçτ¡╛Θí╡,Σ╜ìτ╜«,Θí║σ║Å,σêùΦí¿µ£½σ░╛,τê╢µáçτ¡╛Θí╡Σ╣ïσÉÄ';
 
   @override
   String get settings_childTabPlacementSubtitle =>
-      '选择从其他标签页打开的标签页是紧跟在打开者之后，还是放到末尾。无论哪种方式都会记住打开者，因此树状视图不受影响。';
+      'ΘÇëµï⌐Σ╗Äσà╢Σ╗ûµáçτ¡╛Θí╡µëôσ╝ÇτÜäµáçτ¡╛Θí╡µÿ»τ┤ºΦ╖ƒσ£¿µëôσ╝ÇΦÇàΣ╣ïσÉÄ∩╝îΦ┐ÿµÿ»µö╛σê░µ£½σ░╛πÇéµùáΦ«║σô¬τºìµû╣σ╝ÅΘâ╜Σ╝ÜΦ«░Σ╜Åµëôσ╝ÇΦÇà∩╝îσ¢áµ¡ñµáæτè╢Φºåσ¢╛Σ╕ìσÅùσ╜▒σôìπÇé';
 
   @override
-  String get settings_childTabAfterOpenerLabel => '打开者之后';
+  String get settings_childTabAfterOpenerLabel => 'µëôσ╝ÇΦÇàΣ╣ïσÉÄ';
 
   @override
-  String get settings_childTabAtEndLabel => '末尾';
+  String get settings_childTabAtEndLabel => 'µ£½σ░╛';
 
   @override
-  String get settings_createChildTabsTitle => '创建子标签页';
+  String get settings_createChildTabsTitle => 'σê¢σ╗║σ¡Éµáçτ¡╛Θí╡';
 
   @override
-  String get settings_createChildTabsKeywords => '子标签页';
+  String get settings_createChildTabsKeywords => 'σ¡Éµáçτ¡╛Θí╡';
 
   @override
   String get settings_createChildTabsSubtitle =>
-      '显示一个按钮，用于在当前标签页下创建子标签页（仅限树状视图）';
+      'µÿ╛τñ║Σ╕ÇΣ╕¬µîëΘÆ«∩╝îτö¿Σ║Äσ£¿σ╜ôσëìµáçτ¡╛Θí╡Σ╕ïσê¢σ╗║σ¡Éµáçτ¡╛Θí╡∩╝êΣ╗àΘÖÉµáæτè╢Φºåσ¢╛∩╝ë';
 
   @override
-  String get settings_showContainerUiTitle => '显示容器界面';
+  String get settings_backgroundTabBehaviorTitle => 'σÉÄσÅ░µáçτ¡╛Θí╡ΦíîΣ╕║';
 
   @override
-  String get settings_showContainerUiKeywords => '容器';
-
-  @override
-  String get settings_showContainerUiSubtitle => '显示容器选择器、菜单和管理功能';
-
-  @override
-  String get settings_showIsolatedTabUiTitle => '显示隔离标签页界面';
-
-  @override
-  String get settings_showIsolatedTabUiKeywords => '隔离标签页';
-
-  @override
-  String get settings_showIsolatedTabUiSubtitle => '在界面中显示创建隔离标签页的选项';
-
-  @override
-  String get settings_backgroundTabBehaviorTitle => '后台标签页行为';
-
-  @override
-  String get settings_backgroundTabBehaviorKeywords => '切换,后台,新标签页,提示条,提示';
+  String get settings_backgroundTabBehaviorKeywords =>
+      'σêçµìó,σÉÄσÅ░,µû░µáçτ¡╛Θí╡,µÅÉτñ║µ¥í,µÅÉτñ║';
 
   @override
   String get settings_backgroundTabBehaviorSubtitle =>
-      '适用于某个操作在后台打开新标签页时，例如“在新标签页中打开”或复制标签页';
+      'ΘÇéτö¿Σ║ÄµƒÉΣ╕¬µôìΣ╜£σ£¿σÉÄσÅ░µëôσ╝Çµû░µáçτ¡╛Θí╡µù╢∩╝îΣ╛ïσªéΓÇ£σ£¿µû░µáçτ¡╛Θí╡Σ╕¡µëôσ╝ÇΓÇ¥µêûσñìσê╢µáçτ¡╛Θí╡';
 
   @override
-  String get settings_backgroundTabPromptTitle => '停留并提供切换';
+  String get settings_backgroundTabPromptTitle => 'σü£τòÖσ╣╢µÅÉΣ╛¢σêçµìó';
 
   @override
-  String get settings_backgroundTabPromptSubtitle => '保留当前标签页，并显示带有“切换”操作的提示';
+  String get settings_backgroundTabPromptSubtitle =>
+      'Σ┐¥τòÖσ╜ôσëìµáçτ¡╛Θí╡∩╝îσ╣╢µÿ╛τñ║σ╕ªµ£ëΓÇ£σêçµìóΓÇ¥µôìΣ╜£τÜäµÅÉτñ║';
 
   @override
-  String get settings_backgroundTabSwitchTitle => '立即切换';
+  String get settings_backgroundTabSwitchTitle => 'τ½ïσì│σêçµìó';
 
   @override
-  String get settings_backgroundTabSwitchSubtitle => '直接跳转到新打开的标签页';
+  String get settings_backgroundTabSwitchSubtitle =>
+      'τ¢┤µÄÑΦ╖│Φ╜¼σê░µû░µëôσ╝ÇτÜäµáçτ¡╛Θí╡';
 
   @override
-  String get settings_tabBarSwipesTitle => '标签栏滑动';
+  String get settings_tabBarSwipesTitle => 'µáçτ¡╛µáÅµ╗æσè¿';
 
   @override
-  String get settings_tabBarSwipesKeywords => '手势,滑动,标签栏滑动行为';
+  String get settings_tabBarSwipesKeywords =>
+      'µëïσè┐,µ╗æσè¿,µáçτ¡╛µáÅµ╗æσè¿ΦíîΣ╕║';
 
   @override
-  String get settings_tabBarSwipesSubtitle => '在“手势”中选择每种滑动的作用';
+  String get settings_tabBarSwipesSubtitle =>
+      'σ£¿ΓÇ£µëïσè┐ΓÇ¥Σ╕¡ΘÇëµï⌐µ»Åτºìµ╗æσè¿τÜäΣ╜£τö¿';
 
   @override
-  String get settings_sequentialTabNavigationTitle => '顺序标签页导航';
+  String get settings_sequentialTabNavigationTitle => 'Θí║σ║Åµáçτ¡╛Θí╡σ»╝Φê¬';
 
   @override
   String get settings_sequentialTabNavigationKeywords =>
-      '手势,滑动,下一个标签页,上一个标签页,容器,循环';
+      'µëïσè┐,µ╗æσè¿,Σ╕ïΣ╕ÇΣ╕¬µáçτ¡╛Θí╡,Σ╕èΣ╕ÇΣ╕¬µáçτ¡╛Θí╡,σ«╣σÖ¿,σ╛¬τÄ»';
 
   @override
   String get settings_sequentialTabNavigationSubtitle =>
-      '适用于标签栏滑动以及下一个/上一个标签页手势';
+      'ΘÇéτö¿Σ║Äµáçτ¡╛µáÅµ╗æσè¿Σ╗ÑσÅèΣ╕ïΣ╕ÇΣ╕¬/Σ╕èΣ╕ÇΣ╕¬µáçτ¡╛Θí╡µëïσè┐';
 
   @override
-  String get settings_continueIntoNextContainerTitle => '继续进入下一个容器';
+  String get settings_continueIntoNextContainerTitle =>
+      'τ╗ºτ╗¡Φ┐¢σàÑΣ╕ïΣ╕ÇΣ╕¬σ«╣σÖ¿';
 
   @override
   String get settings_continueIntoNextContainerSubtitle =>
-      '越过容器的第一个或最后一个标签页时，将进入相邻的容器。关闭时，导航将停留在当前容器内。';
+      'Φ╢èΦ┐çσ«╣σÖ¿τÜäτ¼¼Σ╕ÇΣ╕¬µêûµ£ÇσÉÄΣ╕ÇΣ╕¬µáçτ¡╛Θí╡µù╢∩╝îσ░åΦ┐¢σàÑτ¢╕Θé╗τÜäσ«╣σÖ¿πÇéσà│Θù¡µù╢∩╝îσ»╝Φê¬σ░åσü£τòÖσ£¿σ╜ôσëìσ«╣σÖ¿σåàπÇé';
 
   @override
-  String get settings_loopAroundTitle => '循环切换';
+  String get settings_loopAroundTitle => 'σ╛¬τÄ»σêçµìó';
 
   @override
-  String get settings_loopAroundSubtitle => '越过最后一个标签页时将从第一个继续，反之亦然。';
+  String get settings_loopAroundSubtitle =>
+      'Φ╢èΦ┐çµ£ÇσÉÄΣ╕ÇΣ╕¬µáçτ¡╛Θí╡µù╢σ░åΣ╗Äτ¼¼Σ╕ÇΣ╕¬τ╗ºτ╗¡∩╝îσÅìΣ╣ïΣ║ªτä╢πÇé';
 
   @override
-  String get settings_openLinksInAppsTitle => '在应用中打开链接';
+  String get settings_openLinksInAppsTitle => 'σ£¿σ║öτö¿Σ╕¡µëôσ╝ÇΘô╛µÄÑ';
 
   @override
-  String get settings_openLinksInAppsKeywords => '应用链接,外部应用';
+  String get settings_openLinksInAppsKeywords => 'σ║öτö¿Θô╛µÄÑ,σñûΘâ¿σ║öτö¿';
 
   @override
-  String get settings_openLinksInAppsSubtitle => '选择如何处理可以在其他应用中打开的链接';
+  String get settings_openLinksInAppsSubtitle =>
+      'ΘÇëµï⌐σªéΣ╜òσñäτÉåσÅ»Σ╗Ñσ£¿σà╢Σ╗ûσ║öτö¿Σ╕¡µëôσ╝ÇτÜäΘô╛µÄÑ';
 
   @override
-  String get settings_appLinksAlwaysTitle => '始终';
+  String get settings_appLinksAlwaysTitle => 'σºïτ╗ê';
 
   @override
-  String get settings_appLinksAlwaysSubtitle => '始终在原生应用中打开链接，不再询问';
+  String get settings_appLinksAlwaysSubtitle =>
+      'σºïτ╗êσ£¿σÄƒτöƒσ║öτö¿Σ╕¡µëôσ╝ÇΘô╛µÄÑ∩╝îΣ╕ìσåìΦ»óΘù«';
 
   @override
-  String get settings_appLinksAskTitle => '打开前询问';
+  String get settings_appLinksAskTitle => 'µëôσ╝ÇσëìΦ»óΘù«';
 
   @override
-  String get settings_appLinksAskSubtitle => '在应用中打开链接前显示提示';
+  String get settings_appLinksAskSubtitle =>
+      'σ£¿σ║öτö¿Σ╕¡µëôσ╝ÇΘô╛µÄÑσëìµÿ╛τñ║µÅÉτñ║';
 
   @override
-  String get settings_appLinksNeverTitle => '从不';
+  String get settings_appLinksNeverTitle => 'Σ╗ÄΣ╕ì';
 
   @override
-  String get settings_appLinksNeverSubtitle => '始终在浏览器而非应用中打开链接';
+  String get settings_appLinksNeverSubtitle =>
+      'σºïτ╗êσ£¿µ╡ÅΦºêσÖ¿ΦÇîΘ¥₧σ║öτö¿Σ╕¡µëôσ╝ÇΘô╛µÄÑ';
 
   @override
-  String get settings_waitForAnswerTitle => '等待你的回答';
+  String get settings_waitForAnswerTitle => 'τ¡ëσ╛àΣ╜áτÜäσ¢₧τ¡ö';
 
   @override
   String get settings_waitForAnswerSubtitle =>
-      '询问期间暂停页面，而不是在后台加载。除非你选择留在浏览器中，否则不会连接该网站。';
+      'Φ»óΘù«µ£ƒΘù┤µÜéσü£Θí╡Θ¥ó∩╝îΦÇîΣ╕ìµÿ»σ£¿σÉÄσÅ░σèáΦ╜╜πÇéΘÖñΘ¥₧Σ╜áΘÇëµï⌐τòÖσ£¿µ╡ÅΦºêσÖ¿Σ╕¡∩╝îσÉªσêÖΣ╕ìΣ╝ÜΦ┐₧µÄÑΦ»Ñτ╜æτ½ÖπÇé';
 
   @override
-  String get settings_offerAppStoreFallbackTitle => '提供应用商店备选';
+  String get settings_offerAppStoreFallbackTitle => 'µÅÉΣ╛¢σ║öτö¿σòåσ║ùσñçΘÇë';
 
   @override
   String get settings_offerAppStoreFallbackSubtitle =>
-      '当链接指向未安装的应用且没有网页备选时，提供打开应用商店的选项';
+      'σ╜ôΘô╛µÄÑµîçσÉæµ£¬σ«ëΦúàτÜäσ║öτö¿Σ╕öµ▓íµ£ëτ╜æΘí╡σñçΘÇëµù╢∩╝îµÅÉΣ╛¢µëôσ╝Çσ║öτö¿σòåσ║ùτÜäΘÇëΘí╣';
 
   @override
-  String get settings_allowLoginAppCallbacksTitle => '允许登录应用回调';
+  String get settings_allowLoginAppCallbacksTitle => 'σàüΦ«╕τÖ╗σ╜òσ║öτö¿σ¢₧Φ░â';
 
   @override
   String get settings_allowLoginAppCallbacksSubtitle =>
-      '即使链接设为从不在应用中打开，也允许打开自定义标签页的应用接收其登录回调';
+      'σì│Σ╜┐Θô╛µÄÑΦ«╛Σ╕║Σ╗ÄΣ╕ìσ£¿σ║öτö¿Σ╕¡µëôσ╝Ç∩╝îΣ╣ƒσàüΦ«╕µëôσ╝ÇΦç¬σ«ÜΣ╣ëµáçτ¡╛Θí╡τÜäσ║öτö¿µÄÑµö╢σà╢τÖ╗σ╜òσ¢₧Φ░â';
 
   @override
-  String get settings_appLinkContainerFallbackName => '容器';
+  String get settings_appLinkContainerFallbackName => 'σ«╣σÖ¿';
 
   @override
-  String get settings_appLinkOverrideModeAlways => '始终在应用中打开';
+  String get settings_appLinkOverrideModeAlways => 'σºïτ╗êσ£¿σ║öτö¿Σ╕¡µëôσ╝Ç';
 
   @override
-  String get settings_appLinkOverrideModeAsk => '打开前询问';
+  String get settings_appLinkOverrideModeAsk => 'µëôσ╝ÇσëìΦ»óΘù«';
 
   @override
-  String get settings_appLinkOverrideModeNever => '始终将链接留在浏览器中';
+  String get settings_appLinkOverrideModeNever =>
+      'σºïτ╗êσ░åΘô╛µÄÑτòÖσ£¿µ╡ÅΦºêσÖ¿Σ╕¡';
 
   @override
-  String get settings_appLinkContainerOverridesHeader => '拥有独立应用链接设置的容器';
+  String get settings_appLinkContainerOverridesHeader =>
+      'µïÑµ£ëτï¼τ½ïσ║öτö¿Θô╛µÄÑΦ«╛τ╜«τÜäσ«╣σÖ¿';
 
   @override
   String settings_appLinkOverrideSummaryWithRules(String mode, int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count 条已记住的规则',
+      other: '$count µ¥íσ╖▓Φ«░Σ╜ÅτÜäΦºäσêÖ',
     );
-    return '$mode · $_temp0';
+    return '$mode ┬╖ $_temp0';
   }
 
   @override
-  String get settings_appLinkRememberedRulesHeader => '已记住的网站规则';
+  String get settings_appLinkRememberedRulesHeader =>
+      'σ╖▓Φ«░Σ╜ÅτÜäτ╜æτ½ÖΦºäσêÖ';
 
   @override
-  String get settings_appLinkRuleAlwaysOpenLabel => '始终在应用中打开';
+  String get settings_appLinkRuleAlwaysOpenLabel => 'σºïτ╗êσ£¿σ║öτö¿Σ╕¡µëôσ╝Ç';
 
   @override
-  String get settings_appLinkRuleAlwaysKeepLabel => '始终留在浏览器中';
+  String get settings_appLinkRuleAlwaysKeepLabel => 'σºïτ╗êτòÖσ£¿µ╡ÅΦºêσÖ¿Σ╕¡';
 
   @override
-  String get settings_appLinkRuleRemoveTooltip => '移除规则';
+  String get settings_appLinkRuleRemoveTooltip => 'τº╗ΘÖñΦºäσêÖ';
 
   @override
-  String get settings_globalDesktopModeTitle => '始终请求桌面版网站';
+  String get settings_globalDesktopModeTitle => 'σºïτ╗êΦ»╖µ▒éµíîΘ¥óτëêτ╜æτ½Ö';
 
   @override
   String get settings_globalDesktopModeKeywords =>
-      '桌面模式,用户代理,user agent,移动版网站,电脑版,平板';
+      'µíîΘ¥óµ¿íσ╝Å,τö¿µê╖Σ╗úτÉå,user agent,τº╗σè¿τëêτ╜æτ½Ö,τö╡Φäæτëê,σ╣│µ¥┐';
 
   @override
   String get settings_globalDesktopModeSubtitle =>
-      '默认以桌面模式打开新标签页。你仍可在页面菜单中为每个标签页切换桌面模式。';
+      'Θ╗ÿΦ«ñΣ╗ÑµíîΘ¥óµ¿íσ╝Åµëôσ╝Çµû░µáçτ¡╛Θí╡πÇéΣ╜áΣ╗ìσÅ»σ£¿Θí╡Θ¥óΦÅ£σìòΣ╕¡Σ╕║µ»ÅΣ╕¬µáçτ¡╛Θí╡σêçµìóµíîΘ¥óµ¿íσ╝ÅπÇé';
 
   @override
-  String get settings_desktopModeSitesTitle => '桌面模式网站';
+  String get settings_desktopModeSitesTitle => 'µíîΘ¥óµ¿íσ╝Åτ╜æτ½Ö';
 
   @override
-  String get settings_desktopModeSitesKeywords => '桌面模式,按网站,用户代理,例外';
+  String get settings_desktopModeSitesKeywords =>
+      'µíîΘ¥óµ¿íσ╝Å,µîëτ╜æτ½Ö,τö¿µê╖Σ╗úτÉå,Σ╛ïσñû';
 
   @override
-  String get settings_desktopModeSitesSubtitle => '始终以桌面模式加载的网站';
+  String get settings_desktopModeSitesSubtitle =>
+      'σºïτ╗êΣ╗ÑµíîΘ¥óµ¿íσ╝ÅσèáΦ╜╜τÜäτ╜æτ½Ö';
 
   @override
-  String get settings_pullToRefreshTitle => '下拉刷新';
+  String get settings_pullToRefreshTitle => 'Σ╕ïµïëσê╖µû░';
 
   @override
-  String get settings_pullToRefreshKeywords => '重新加载,刷新';
+  String get settings_pullToRefreshKeywords => 'Θçìµû░σèáΦ╜╜,σê╖µû░';
 
   @override
-  String get settings_pullToRefreshSubtitle => '在页面上向下滑动以重新加载';
+  String get settings_pullToRefreshSubtitle =>
+      'σ£¿Θí╡Θ¥óΣ╕èσÉæΣ╕ïµ╗æσè¿Σ╗ÑΘçìµû░σèáΦ╜╜';
 
   @override
-  String get settings_pullToRefreshDistanceTitle => '下拉刷新距离';
+  String get settings_pullToRefreshDistanceTitle => 'Σ╕ïµïëσê╖µû░Φ╖¥τª╗';
 
   @override
   String get settings_pullToRefreshDistanceKeywords =>
-      '灵敏度,阈值,刷新,滑动,sensitivity,threshold';
+      'τü╡µòÅσ║ª,ΘÿêσÇ╝,σê╖µû░,µ╗æσè¿,sensitivity,threshold';
 
   @override
-  String get settings_pullToRefreshDistanceSubtitle => '页面重新加载前需要下拉的距离，相对于默认值';
+  String get settings_pullToRefreshDistanceSubtitle =>
+      'Θí╡Θ¥óΘçìµû░σèáΦ╜╜σëìΘ£ÇΦªüΣ╕ïµïëτÜäΦ╖¥τª╗∩╝îτ¢╕σ»╣Σ║ÄΘ╗ÿΦ«ñσÇ╝';
 
   @override
-  String get settings_customTabsTitle => '自定义标签页';
+  String get settings_customTabsTitle => 'Φç¬σ«ÜΣ╣ëµáçτ¡╛Θí╡';
 
   @override
   String get settings_customTabsKeywords =>
-      '自定义标签页,应用内浏览器,chrome custom tabs,外部应用,分享';
+      'Φç¬σ«ÜΣ╣ëµáçτ¡╛Θí╡,σ║öτö¿σåàµ╡ÅΦºêσÖ¿,chrome custom tabs,σñûΘâ¿σ║öτö¿,σêåΣ║½';
 
   @override
   String get settings_customTabsSubtitle =>
-      '允许其他应用在轻量的应用内标签页中打开链接。关闭时，这些链接和分享的网址将在主浏览器中以普通标签页打开。';
+      'σàüΦ«╕σà╢Σ╗ûσ║öτö¿σ£¿Φ╜╗ΘçÅτÜäσ║öτö¿σåàµáçτ¡╛Θí╡Σ╕¡µëôσ╝ÇΘô╛µÄÑπÇéσà│Θù¡µù╢∩╝îΦ┐ÖΣ║¢Θô╛µÄÑσÆîσêåΣ║½τÜäτ╜æσ¥Çσ░åσ£¿Σ╕╗µ╡ÅΦºêσÖ¿Σ╕¡Σ╗ÑµÖ«ΘÇÜµáçτ¡╛Θí╡µëôσ╝ÇπÇé';
 
   @override
-  String get settings_doubleBackCloseTabTitle => '按两次返回关闭标签页';
+  String get settings_doubleBackCloseTabTitle =>
+      'µîëΣ╕ñµ¼íΦ┐öσ¢₧σà│Θù¡µáçτ¡╛Θí╡';
 
   @override
-  String get settings_doubleBackCloseTabKeywords => '返回按钮,返回键';
+  String get settings_doubleBackCloseTabKeywords => 'Φ┐öσ¢₧µîëΘÆ«,Φ┐öσ¢₧Θö«';
 
   @override
   String get settings_doubleBackCloseTabSubtitle =>
-      '启用后，按两次返回按钮可关闭标签页。停用后，返回按钮只会在页面历史记录中后退。';
+      'σÉ»τö¿σÉÄ∩╝îµîëΣ╕ñµ¼íΦ┐öσ¢₧µîëΘÆ«σÅ»σà│Θù¡µáçτ¡╛Θí╡πÇéσü£τö¿σÉÄ∩╝îΦ┐öσ¢₧µîëΘÆ«σÅ¬Σ╝Üσ£¿Θí╡Θ¥óσÄåσÅ▓Φ«░σ╜òΣ╕¡σÉÄΘÇÇπÇé';
 
   @override
-  String get settings_allowNonManifestPwaInstallTitle => '将网站安装为应用';
+  String get settings_allowNonManifestPwaInstallTitle =>
+      'σ░åτ╜æτ½Öσ«ëΦúàΣ╕║σ║öτö¿';
 
   @override
-  String get settings_allowNonManifestPwaInstallKeywords => 'pwa,网页应用';
+  String get settings_allowNonManifestPwaInstallKeywords => 'pwa,τ╜æΘí╡σ║öτö¿';
 
   @override
   String get settings_allowNonManifestPwaInstallSubtitle =>
-      '允许将没有 PWA 清单的网站安装为独立应用';
+      'σàüΦ«╕σ░åΣ╗╗Σ╜òτ╜æτ½Öσ«ëΦúàΣ╕║σ║öτö¿∩╝îσì│Σ╜┐σ«âσ╣╢Θ¥₧Σ╕║σ«ëΦúàΦÇîΦ«╛Φ«í';
 
   @override
-  String get settings_urlCleanerTitle => '网址清理';
+  String get settings_urlCleanerTitle => 'τ╜æσ¥Çµ╕àτÉå';
 
   @override
-  String get settings_urlCleanerKeywords => 'utm,跟踪参数,clearurls';
+  String get settings_urlCleanerKeywords => 'utm,Φ╖ƒΦ╕¬σÅéµò░,clearurls';
 
   @override
-  String get settings_urlCleanerSubtitle => '跟踪移除规则和规则库更新';
+  String get settings_urlCleanerSubtitle => 'τº╗ΘÖñΘô╛µÄÑΣ╕¡τÜäΦ╖ƒΦ╕¬Θâ¿σêå';
 
   @override
-  String get settings_unshortenerTitle => '短链接还原';
+  String get settings_unshortenerTitle => 'τƒ¡Θô╛µÄÑΦ┐ÿσÄƒ';
 
   @override
-  String get settings_unshortenerKeywords => '短链接,重定向';
+  String get settings_unshortenerKeywords => 'τƒ¡Θô╛µÄÑ,Θçìσ«ÜσÉæ';
 
   @override
-  String get settings_unshortenerSubtitle => '短链接解析器和 API 令牌';
+  String get settings_unshortenerSubtitle => 'τƒ¡Θô╛µÄÑΦºúµ₧ÉσÖ¿σÆî API Σ╗ñτëî';
 
   @override
-  String get settings_contextualToolbarSearchHint => '搜索工具栏按钮';
+  String get settings_contextualToolbarSearchHint => 'µÉ£τ┤óσ╖Ñσà╖µáÅµîëΘÆ«';
 
   @override
-  String get settings_contextualToolbarTitleDefault => '自定义工具栏';
+  String get settings_contextualToolbarTitleDefault => 'Φç¬σ«ÜΣ╣ëσ╖Ñσà╖µáÅ';
 
   @override
-  String get settings_contextualToolbarTitleQuickSwitcher => '自定义切换栏按钮';
+  String get settings_contextualToolbarTitleQuickSwitcher =>
+      'Φç¬σ«ÜΣ╣ëσêçµìóµáÅµîëΘÆ«';
 
   @override
-  String get settings_contextualToolbarResetToDefaults => '恢复默认';
+  String get settings_contextualToolbarEnabledSection => 'σ╖▓σÉ»τö¿';
 
   @override
-  String get settings_contextualToolbarEnabledSection => '已启用';
-
-  @override
-  String get settings_contextualToolbarDisabledSection => '已停用';
+  String get settings_contextualToolbarDisabledSection => 'σ╖▓σü£τö¿';
 
   @override
   String get settings_contextualToolbarNoEnabledButtons =>
-      '没有已启用的按钮。打开下方按钮的开关即可启用。';
+      'µ▓íµ£ëσ╖▓σÉ»τö¿τÜäµîëΘÆ«πÇéµëôσ╝ÇΣ╕ïµû╣µîëΘÆ«τÜäσ╝Çσà│σì│σÅ»σÉ»τö¿πÇé';
 
   @override
   String settings_contextualToolbarNoEnabledButtonsMatch(String query) {
-    return '没有与“$query”匹配的已启用按钮。';
+    return 'µ▓íµ£ëΣ╕ÄΓÇ£$queryΓÇ¥σî╣ΘàìτÜäσ╖▓σÉ»τö¿µîëΘÆ«πÇé';
   }
 
   @override
-  String get settings_contextualToolbarAllButtonsEnabled => '所有按钮均已启用。';
+  String get settings_contextualToolbarAllButtonsEnabled =>
+      'µëÇµ£ëµîëΘÆ«σ¥çσ╖▓σÉ»τö¿πÇé';
 
   @override
   String settings_contextualToolbarNoDisabledButtonsMatch(String query) {
-    return '没有与“$query”匹配的已停用按钮。';
+    return 'µ▓íµ£ëΣ╕ÄΓÇ£$queryΓÇ¥σî╣ΘàìτÜäσ╖▓σü£τö¿µîëΘÆ«πÇé';
   }
 
   @override
-  String get settings_longPressNoneTitle => '无';
+  String get settings_longPressNoneTitle => 'µùá';
 
   @override
-  String get settings_longPressNoneDescription => '此按钮的默认设置：长按不执行额外操作';
+  String get settings_longPressNoneDescription =>
+      'µ¡ñµîëΘÆ«τÜäΘ╗ÿΦ«ñΦ«╛τ╜«∩╝ÜΘò┐µîëΣ╕ìµëºΦíîΘó¥σñûµôìΣ╜£';
 
   @override
-  String get settings_longPressDefaultDescription => '此按钮的默认设置';
+  String get settings_longPressDefaultDescription => 'µ¡ñµîëΘÆ«τÜäΘ╗ÿΦ«ñΦ«╛τ╜«';
 
   @override
-  String get settings_longPressTitle => '长按';
+  String get settings_longPressTitle => 'Θò┐µîë';
 
   @override
-  String get settings_longPressDescription => '长按按钮时执行的操作';
+  String get settings_longPressDescription => 'Θò┐µîëµîëΘÆ«µù╢µëºΦíîτÜäµôìΣ╜£';
 
   @override
-  String get settings_fallbackGreyOutLabel => '显示为灰色';
+  String get settings_fallbackGreyOutLabel => 'µÿ╛τñ║Σ╕║τü░Φë▓';
 
   @override
-  String get settings_fallbackGreyOutDescription => '保留此按钮的位置，显示为灰色';
+  String get settings_fallbackGreyOutDescription =>
+      'Σ┐¥τòÖµ¡ñµîëΘÆ«τÜäΣ╜ìτ╜«∩╝îµÿ╛τñ║Σ╕║τü░Φë▓';
 
   @override
-  String get settings_fallbackIfUnavailableTitle => '不可用时';
+  String get settings_fallbackIfUnavailableTitle => 'Σ╕ìσÅ»τö¿µù╢';
 
   @override
-  String get settings_fallbackIfUnavailableDescription => '此按钮无法使用时改为显示';
+  String get settings_fallbackIfUnavailableDescription =>
+      'µ¡ñµîëΘÆ«µùáµ│òΣ╜┐τö¿µù╢µö╣Σ╕║µÿ╛τñ║';
 
   @override
-  String get settings_customTrackingProtectionTitle => '自定义跟踪保护';
+  String get settings_customTrackingProtectionTitle => 'Φç¬σ«ÜΣ╣ëΦ╖ƒΦ╕¬Σ┐¥µèñ';
 
   @override
   String get settings_customTrackingProtectionSubtitle =>
-      '自定义 Cookie、内容、跟踪器和指纹识别控制。';
+      'Φç¬σ«ÜΣ╣ë CookieπÇüσåàσ«╣πÇüΦ╖ƒΦ╕¬σÖ¿σÆîµîçτ║╣Φ»åσê½µÄºσê╢πÇé';
 
   @override
-  String get settings_fixMajorIssuesTitle => '修复网站的重大问题';
+  String get settings_fixMajorIssuesTitle => 'Σ┐«σñìτ╜æτ½ÖτÜäΘçìσñºΘù«Θóÿ';
 
   @override
-  String get settings_fixMajorIssuesSubtitle => '应用避免网站严重故障所需的例外（推荐）';
+  String get settings_fixMajorIssuesSubtitle =>
+      'σ║öτö¿Θü┐σàìτ╜æτ½ÖΣ╕ÑΘçìµòàΘÜ£µëÇΘ£ÇτÜäΣ╛ïσñû∩╝êµÄ¿ΦìÉ∩╝ë';
 
   @override
-  String get settings_fixMinorIssuesTitle => '修复网站的次要问题';
+  String get settings_fixMinorIssuesTitle => 'Σ┐«σñìτ╜æτ½ÖτÜäµ¼íΦªüΘù«Θóÿ';
 
   @override
-  String get settings_fixMinorIssuesSubtitle => '应用例外以修复次要问题并启用便利功能';
+  String get settings_fixMinorIssuesSubtitle =>
+      'σ║öτö¿Σ╛ïσñûΣ╗ÑΣ┐«σñìµ¼íΦªüΘù«Θóÿσ╣╢σÉ»τö¿Σ╛┐σê⌐σèƒΦâ╜';
 
   @override
-  String get settings_blockCookiesTitle => '拦截 Cookie';
+  String get settings_blockCookiesTitle => 'µïªµê¬ Cookie';
 
   @override
-  String get settings_blockCookiesSubtitle => '根据下方的策略拦截 Cookie';
+  String get settings_blockCookiesSubtitle =>
+      'µá╣µì«Σ╕ïµû╣τÜäτ¡ûτòÑµïªµê¬ Cookie';
 
   @override
-  String get settings_cookiePolicyTitle => 'Cookie 策略';
+  String get settings_cookiePolicyTitle => 'Cookie τ¡ûτòÑ';
 
   @override
-  String get settings_cookiePolicyTotalProtectionLabel => '全方位 Cookie 保护（推荐）';
+  String get settings_cookiePolicyTotalProtectionLabel =>
+      'σà¿µû╣Σ╜ì Cookie Σ┐¥µèñ∩╝êµÄ¿ΦìÉ∩╝ë';
 
   @override
-  String get settings_cookiePolicyCrossSiteTrackersLabel => '跨网站和社交媒体跟踪器';
+  String get settings_cookiePolicyCrossSiteTrackersLabel =>
+      'Φ╖¿τ╜æτ½ÖσÆîτñ╛Σ║ñσ¬ÆΣ╜ôΦ╖ƒΦ╕¬σÖ¿';
 
   @override
-  String get settings_cookiePolicyUnvisitedLabel => '未访问过的网站';
+  String get settings_cookiePolicyUnvisitedLabel => 'µ£¬Φ«┐Θù«Φ┐çτÜäτ╜æτ½Ö';
 
   @override
-  String get settings_cookiePolicyThirdPartyLabel => '所有第三方 Cookie';
+  String get settings_cookiePolicyThirdPartyLabel => 'µëÇµ£ëτ¼¼Σ╕ëµû╣ Cookie';
 
   @override
-  String get settings_cookiePolicyAllCookiesLabel => '所有 Cookie（可能导致网站无法正常工作）';
+  String get settings_cookiePolicyAllCookiesLabel =>
+      'µëÇµ£ë Cookie∩╝êσÅ»Φâ╜σ»╝Φç┤τ╜æτ½Öµùáµ│òµ¡úσ╕╕σ╖ÑΣ╜£∩╝ë';
 
   @override
-  String get settings_blockTrackingContentTitle => '拦截跟踪内容';
+  String get settings_blockTrackingContentTitle => 'µïªµê¬Φ╖ƒΦ╕¬σåàσ«╣';
 
   @override
-  String get settings_blockTrackingContentSubtitle => '拦截嵌入网站中的跟踪脚本和资源';
+  String get settings_blockTrackingContentSubtitle =>
+      'µïªµê¬σ╡îσàÑτ╜æτ½ÖΣ╕¡τÜäΦ╖ƒΦ╕¬ΦäÜµ£¼σÆîΦ╡äµ║É';
 
   @override
-  String get settings_trackingScopeApplyToTitle => '应用于';
+  String get settings_trackingScopeApplyToTitle => 'σ║öτö¿Σ║Ä';
 
   @override
-  String get settings_trackingScopeAllTabsLabel => '所有标签页';
+  String get settings_trackingScopeAllTabsLabel => 'µëÇµ£ëµáçτ¡╛Θí╡';
 
   @override
-  String get settings_trackingScopePrivateOnlyLabel => '仅隐私标签页';
+  String get settings_trackingScopePrivateOnlyLabel => 'Σ╗àΘÜÉτºüµáçτ¡╛Θí╡';
 
   @override
-  String get settings_adsAnalyticsSocialTrackersTitle => '广告、分析和社交跟踪器';
+  String get settings_adsAnalyticsSocialTrackersTitle =>
+      'σ╣┐σæèπÇüσêåµ₧ÉσÆîτñ╛Σ║ñΦ╖ƒΦ╕¬σÖ¿';
 
   @override
   String get settings_adsAnalyticsSocialTrackersSubtitle =>
-      '拦截广告、分析、社交以及 Mozilla 社交跟踪器类别';
+      'µïªµê¬σ╣┐σæèπÇüσêåµ₧ÉπÇüτñ╛Σ║ñΣ╗ÑσÅè Mozilla τñ╛Σ║ñΦ╖ƒΦ╕¬σÖ¿τ▒╗σê½';
 
   @override
-  String get settings_cryptominersTitle => '加密货币挖矿程序';
+  String get settings_cryptominersTitle => 'σèáσ»åΦ┤ºσ╕üµîûτƒ┐τ¿ïσ║Å';
 
   @override
-  String get settings_cryptominersSubtitle => '拦截利用你的设备挖掘加密货币的脚本';
+  String get settings_cryptominersSubtitle =>
+      'µïªµê¬σê⌐τö¿Σ╜áτÜäΦ«╛σñçµîûµÄÿσèáσ»åΦ┤ºσ╕üτÜäΦäÜµ£¼';
 
   @override
-  String get settings_knownFingerprintersTitle => '已知数字指纹跟踪程序';
+  String get settings_knownFingerprintersTitle =>
+      'σ╖▓τƒÑµò░σ¡ùµîçτ║╣Φ╖ƒΦ╕¬τ¿ïσ║Å';
 
   @override
-  String get settings_knownFingerprintersSubtitle => '拦截收集信息以唯一识别你设备的脚本';
+  String get settings_knownFingerprintersSubtitle =>
+      'µïªµê¬µö╢Θ¢åΣ┐íµü»Σ╗Ñσö»Σ╕ÇΦ»åσê½Σ╜áΦ«╛σñçτÜäΦäÜµ£¼';
 
   @override
-  String get settings_redirectTrackersTitle => '重定向跟踪器';
+  String get settings_redirectTrackersTitle => 'Θçìσ«ÜσÉæΦ╖ƒΦ╕¬σÖ¿';
 
   @override
-  String get settings_redirectTrackersSubtitle => '拦截通过中间网址重定向收集数据的跟踪器';
+  String get settings_redirectTrackersSubtitle =>
+      'µïªµê¬ΘÇÜΦ┐çΣ╕¡Θù┤τ╜æσ¥ÇΘçìσ«ÜσÉæµö╢Θ¢åµò░µì«τÜäΦ╖ƒΦ╕¬σÖ¿';
 
   @override
-  String get settings_suspectedFingerprintersTitle => '疑似数字指纹跟踪程序';
+  String get settings_suspectedFingerprintersTitle =>
+      'τûæΣ╝╝µò░σ¡ùµîçτ║╣Φ╖ƒΦ╕¬τ¿ïσ║Å';
 
   @override
-  String get settings_suspectedFingerprintersSubtitle => '拦截其他可能被用来跟踪你的指纹识别技术';
+  String get settings_suspectedFingerprintersSubtitle =>
+      'µïªµê¬σà╢Σ╗ûσÅ»Φâ╜Φó½τö¿µ¥ÑΦ╖ƒΦ╕¬Σ╜áτÜäµîçτ║╣Φ»åσê½µèÇµ£»';
 
   @override
-  String get settings_desktopModeSitesScreenTitle => '桌面模式网站';
+  String get settings_desktopModeSitesScreenTitle => 'µíîΘ¥óµ¿íσ╝Åτ╜æτ½Ö';
 
   @override
   String get settings_desktopModeSitesScreenDescription =>
-      '这些网站始终以桌面模式加载，不受默认设置影响。子域名也包括在内（例如“example.com”同样涵盖“m.example.com”）。';
+      'Φ┐ÖΣ║¢τ╜æτ½Öσºïτ╗êΣ╗ÑµíîΘ¥óµ¿íσ╝ÅσèáΦ╜╜∩╝îΣ╕ìσÅùΘ╗ÿΦ«ñΦ«╛τ╜«σ╜▒σôìπÇéσ¡ÉσƒƒσÉìΣ╣ƒσîàµï¼σ£¿σåà∩╝êΣ╛ïσªéΓÇ£example.comΓÇ¥σÉîµá╖µ╢╡τ¢ûΓÇ£m.example.comΓÇ¥∩╝ëπÇé';
 
   @override
-  String get settings_desktopModeSitesEmptyLabel => '尚未添加网站。';
+  String get settings_desktopModeSitesEmptyLabel => 'σ░Üµ£¬µ╖╗σèáτ╜æτ½ÖπÇé';
 
   @override
-  String get settings_dohTitle => 'DNS over HTTPS';
+  String get settings_dohTitle => 'σ«ëσà¿ DNS';
 
   @override
-  String get settings_dohSubtitle => '加密 DNS 保护级别和解析服务器选择。';
+  String get settings_dohSubtitle =>
+      'τ╜æτ½ÖµƒÑΦ»óσªéΣ╜òσèáσ»å∩╝îΣ╗ÑσÅèτö▒Φ░üσñäτÉå';
 
   @override
-  String get settings_errorLogsCopiedMessage => '日志已复制';
+  String get settings_errorLogsCopiedMessage => 'µùÑσ┐ùσ╖▓σñìσê╢';
 
   @override
-  String get settings_errorLogsSearchHint => '搜索日志消息';
+  String get settings_errorLogsSearchHint => 'µÉ£τ┤óµùÑσ┐ùµ╢êµü»';
 
   @override
-  String get settings_errorLogsCopyTooltip => '复制日志';
+  String get settings_errorLogsCopyTooltip => 'σñìσê╢µùÑσ┐ù';
 
   @override
-  String get settings_errorLogsEmptyLabel => '没有可用的日志';
+  String get settings_errorLogsEmptyLabel => 'µ▓íµ£ëσÅ»τö¿τÜäµùÑσ┐ù';
 
   @override
-  String get settings_experimentalTitle => '实验性';
+  String get settings_experimentalTitle => 'σ«₧Θ¬îµÇº';
 
   @override
-  String get settings_experimentalSubtitle => '运行时隔离和启动行为。';
+  String get settings_experimentalSubtitle =>
+      'Φ┐ÉΦíîµù╢ΘÜöτª╗σÆîσÉ»σè¿ΦíîΣ╕║πÇé';
 
   @override
-  String get settings_isolatedContentProcessTitle => '隔离内容进程';
+  String get settings_isolatedContentProcessTitle => 'ΘÜöτª╗σåàσ«╣Φ┐¢τ¿ï';
 
   @override
-  String get settings_isolatedContentProcessKeywords => '重启';
+  String get settings_isolatedContentProcessKeywords => 'ΘçìσÉ»';
 
   @override
-  String get settings_isolatedContentProcessSubtitle => '在隔离进程中运行网页内容。需要重启应用。';
+  String get settings_isolatedContentProcessSubtitle =>
+      'σ£¿ΘÜöτª╗Φ┐¢τ¿ïΣ╕¡Φ┐ÉΦíîτ╜æΘí╡σåàσ«╣πÇéΘ£ÇΦªüΘçìσÉ»σ║öτö¿πÇé';
 
   @override
-  String get settings_appZygoteProcessTitle => 'App Zygote 进程';
+  String get settings_appZygoteProcessTitle => 'App Zygote Φ┐¢τ¿ï';
 
   @override
-  String get settings_appZygoteProcessKeywords => '重启,android 10';
+  String get settings_appZygoteProcessKeywords => 'ΘçìσÉ»,android 10';
 
   @override
   String get settings_appZygoteProcessSubtitle =>
-      '预加载内容服务以加快隔离进程的启动。需要 Android 10 及以上版本并重启应用。';
+      'ΘóäσèáΦ╜╜σåàσ«╣µ£ìσèíΣ╗Ñσèáσ┐½ΘÜöτª╗Φ┐¢τ¿ïτÜäσÉ»σè¿πÇéΘ£ÇΦªü Android 10 σÅèΣ╗ÑΣ╕èτëêµ£¼σ╣╢ΘçìσÉ»σ║öτö¿πÇé';
 
   @override
-  String get settings_extensionsTitle => '扩展';
+  String get settings_extensionsTitle => 'µë⌐σ▒ò';
 
   @override
-  String get settings_extensionsSubtitle => '管理附加组件、更新行为和扩展安全。';
+  String get settings_extensionsSubtitle =>
+      'τ«íτÉåΘÖäσèáτ╗äΣ╗╢πÇüµ¢┤µû░ΦíîΣ╕║σÆîµë⌐σ▒òσ«ëσà¿πÇé';
 
   @override
-  String get settings_manageExtensionsTitle => '管理扩展';
+  String get settings_manageExtensionsTitle => 'τ«íτÉåµë⌐σ▒ò';
 
   @override
-  String get settings_manageExtensionsKeywords => '附加组件,浏览器扩展,插件,addons';
+  String get settings_manageExtensionsKeywords =>
+      'ΘÖäσèáτ╗äΣ╗╢,µ╡ÅΦºêσÖ¿µë⌐σ▒ò,µÅÆΣ╗╢,addons';
 
   @override
-  String get settings_manageExtensionsSubtitle => '浏览已安装、已停用、可用和不支持的扩展';
+  String get settings_manageExtensionsSubtitle =>
+      'µ╡ÅΦºêσ╖▓σ«ëΦúàπÇüσ╖▓σü£τö¿πÇüσÅ»τö¿σÆîΣ╕ìµö»µîüτÜäµë⌐σ▒ò';
 
   @override
-  String get settings_customCollectionTitle => '自定义合集';
+  String get settings_customCollectionTitle => 'Φç¬σ«ÜΣ╣ëσÉêΘ¢å';
 
   @override
-  String get settings_customCollectionKeywords => '附加组件,扩展,addons';
+  String get settings_customCollectionKeywords => 'ΘÖäσèáτ╗äΣ╗╢,µë⌐σ▒ò,addons';
 
   @override
-  String get settings_customCollectionSubtitle => '使用自定义的 Mozilla 附加组件合集';
+  String get settings_customCollectionSubtitle =>
+      'Σ╜┐τö¿Φç¬σ«ÜΣ╣ëτÜä Mozilla ΘÖäσèáτ╗äΣ╗╢σÉêΘ¢å';
 
   @override
-  String get settings_automaticUpdatesTitle => '自动更新';
+  String get settings_automaticUpdatesTitle => 'Φç¬σè¿µ¢┤µû░';
 
   @override
-  String get settings_automaticUpdatesKeywords => '附加组件,扩展,addons';
+  String get settings_automaticUpdatesKeywords => 'ΘÖäσèáτ╗äΣ╗╢,µë⌐σ▒ò,addons';
 
   @override
-  String get settings_automaticUpdatesSubtitle => '每 12 小时自动检查并安装扩展更新';
+  String get settings_automaticUpdatesSubtitle =>
+      'µ»Å 12 σ░Åµù╢Φç¬σè¿µúÇµƒÑσ╣╢σ«ëΦúàµë⌐σ▒òµ¢┤µû░';
 
   @override
   String settings_failedToLoadMessage(String error) {
-    return '加载失败：$error';
+    return 'σèáΦ╜╜σñ▒Φ┤Ñ∩╝Ü$error';
   }
 
   @override
-  String get settings_allowUnsignedExtensionsTitle => '允许未签名的扩展';
+  String get settings_allowUnsignedExtensionsTitle =>
+      'σàüΦ«╕µ£¬τ¡╛σÉìτÜäµë⌐σ▒ò';
 
   @override
-  String get settings_allowUnsignedExtensionsKeywords => '附加组件,扩展,addons';
+  String get settings_allowUnsignedExtensionsKeywords =>
+      'ΘÖäσèáτ╗äΣ╗╢,µë⌐σ▒ò,addons';
 
   @override
-  String get settings_allowUnsignedExtensionsSubtitle => '未签名的扩展未经 Mozilla 验证';
+  String get settings_allowUnsignedExtensionsSubtitle =>
+      'µ£¬τ¡╛σÉìτÜäµë⌐σ▒òµ£¬τ╗Å Mozilla Θ¬îΦ»ü';
 
   @override
   String get settings_allowUnsignedWarningText =>
-      '请仅安装来自可信来源的未签名扩展。它们可能包含恶意代码。';
+      'Φ»╖Σ╗àσ«ëΦúàµ¥ÑΦç¬σÅ»Σ┐íµ¥Ñµ║ÉτÜäµ£¬τ¡╛σÉìµë⌐σ▒òπÇéσ«âΣ╗¼σÅ»Φâ╜σîàσÉ½µü╢µäÅΣ╗úτáüπÇé';
 
   @override
-  String get settings_allowUnsignedConfirmDialogTitle => '允许未签名的扩展？';
+  String get settings_allowUnsignedConfirmDialogTitle =>
+      'σàüΦ«╕µ£¬τ¡╛σÉìτÜäµë⌐σ▒ò∩╝ƒ';
 
   @override
-  String get settings_allowUnsignedConfirmWarningBold => '警告：这会严重削弱浏览器的安全性。';
+  String get settings_allowUnsignedConfirmWarningBold =>
+      'Φ¡ªσæè∩╝ÜΦ┐ÖΣ╝ÜΣ╕ÑΘçìσëèσ╝▒µ╡ÅΦºêσÖ¿τÜäσ«ëσà¿µÇºπÇé';
 
   @override
   String get settings_allowUnsignedConfirmBody =>
-      '未签名的扩展会绕过 Mozilla 的安全审核流程。恶意扩展可以：\n\n• 读取并修改你在任何网站上看到的一切内容\n• 窃取密码、银行信息和个人数据\n• 悄悄监视你的浏览活动\n• 在你的设备上安装其他恶意软件';
+      'µ£¬τ¡╛σÉìτÜäµë⌐σ▒òΣ╝Üτ╗òΦ┐ç Mozilla τÜäσ«ëσà¿σ«íµá╕µ╡üτ¿ïπÇéµü╢µäÅµë⌐σ▒òσÅ»Σ╗Ñ∩╝Ü\n\nΓÇó Φ»╗σÅûσ╣╢Σ┐«µö╣Σ╜áσ£¿Σ╗╗Σ╜òτ╜æτ½ÖΣ╕èτ£ïσê░τÜäΣ╕Çσêçσåàσ«╣\nΓÇó τ¬âσÅûσ»åτáüπÇüΘô╢ΦíîΣ┐íµü»σÆîΣ╕¬Σ║║µò░µì«\nΓÇó µéäµéäτ¢æΦºåΣ╜áτÜäµ╡ÅΦºêµ┤╗σè¿\nΓÇó σ£¿Σ╜áτÜäΦ«╛σñçΣ╕èσ«ëΦúàσà╢Σ╗ûµü╢µäÅΦ╜»Σ╗╢';
 
   @override
   String get settings_allowUnsignedConfirmFooter =>
-      '仅当你是安装自己扩展的开发者，或完全信任其来源时，才启用此选项。';
+      'Σ╗àσ╜ôΣ╜áµÿ»σ«ëΦúàΦç¬σ╖▒µë⌐σ▒òτÜäσ╝ÇσÅæΦÇà∩╝îµêûσ«îσà¿Σ┐íΣ╗╗σà╢µ¥Ñµ║Éµù╢∩╝îµëìσÉ»τö¿µ¡ñΘÇëΘí╣πÇé';
 
   @override
-  String get settings_allowAction => '允许';
+  String get settings_allowAction => 'σàüΦ«╕';
 
   @override
   String settings_allowActionCountdown(int seconds) {
-    return '允许（$seconds）';
+    return 'σàüΦ«╕∩╝ê$seconds∩╝ë';
   }
 
   @override
-  String get settings_fingerprintProtectionTitle => '指纹保护';
+  String get settings_fingerprintProtectionTitle => 'µîçτ║╣Σ┐¥µèñ';
 
   @override
-  String get settings_fingerprintProtectionKeywords => '隐私,指纹,fingerprint';
+  String get settings_fingerprintProtectionKeywords =>
+      'ΘÜÉτºü,µîçτ║╣,fingerprint,Φ«⌐µ¡ñΦ«╛σñçµ¢┤ΘÜ╛Φó½Φ»åσê½';
 
   @override
-  String get settings_fingerprintSearchHint => '搜索指纹覆盖目标';
+  String get settings_fingerprintSearchHint => 'µÉ£τ┤óµîçτ║╣Φªåτ¢ûτ¢«µáç';
 
   @override
-  String get settings_loadDefaultsAction => '加载默认设置';
+  String get settings_loadDefaultsAction => 'σèáΦ╜╜Θ╗ÿΦ«ñΦ«╛τ╜«';
 
   @override
-  String get settings_loadHardenedDefaultsAction => '加载强化默认设置';
+  String get settings_loadHardenedDefaultsAction => 'σèáΦ╜╜σ╝║σîûΘ╗ÿΦ«ñΦ«╛τ╜«';
 
   @override
-  String get settings_fingerprintOverrideTargetsSection => '覆盖目标';
+  String get settings_fingerprintOverrideTargetsSection => 'Φªåτ¢ûτ¢«µáç';
 
   @override
-  String get settings_fingerprintInvalidOverride => '已保存的指纹覆盖格式无效';
+  String get settings_fingerprintInvalidOverride =>
+      'σ╖▓Σ┐¥σ¡ÿτÜäµîçτ║╣Φªåτ¢ûµá╝σ╝Åµùáµòê';
 
   @override
-  String get settings_fingerprintUnknownTarget => '已保存的指纹覆盖包含此版本未知的目标';
+  String get settings_fingerprintUnknownTarget =>
+      'σ╖▓Σ┐¥σ¡ÿτÜäµîçτ║╣Φªåτ¢ûσîàσÉ½µ¡ñτëêµ£¼µ£¬τƒÑτÜäτ¢«µáç';
 
   @override
-  String get settings_homeAndNewTabTitle => '主页与新标签页';
+  String get settings_homeAndNewTabTitle => 'Σ╕╗Θí╡Σ╕Äµû░µáçτ¡╛Θí╡';
 
   @override
-  String get settings_homeAndNewTabSubtitle => '主页和新标签页显示的内容';
+  String get settings_homeAndNewTabSubtitle =>
+      'Σ╕╗Θí╡σÆîµû░µáçτ¡╛Θí╡µÿ╛τñ║τÜäσåàσ«╣';
 
   @override
-  String get settings_addressFieldLabel => '地址';
+  String get settings_addressFieldLabel => 'σ£░σ¥Ç';
 
   @override
-  String get settings_homeTargetUrlEmptyError => '请输入地址，否则将显示主页';
+  String get settings_homeTargetUrlEmptyError =>
+      'Φ»╖Φ╛ôσàÑσ£░σ¥Ç∩╝îσÉªσêÖσ░åµÿ╛τñ║Σ╕╗Θí╡';
 
   @override
-  String get settings_homeTargetUrlInvalidError => '地址无效';
+  String get settings_homeTargetUrlInvalidError => 'σ£░σ¥Çµùáµòê';
 
   @override
-  String get settings_applyWhenLastTabClosesTitle => '关闭最后一个标签页时应用';
+  String get settings_applyWhenLastTabClosesTitle =>
+      'σà│Θù¡µ£ÇσÉÄΣ╕ÇΣ╕¬µáçτ¡╛Θí╡µù╢σ║öτö¿';
 
   @override
-  String get settings_applyWhenLastTabClosesKeywords => '关闭,最后一个标签页,容器';
+  String get settings_applyWhenLastTabClosesKeywords =>
+      'σà│Θù¡,µ£ÇσÉÄΣ╕ÇΣ╕¬µáçτ¡╛Θí╡,σ«╣σÖ¿';
 
   @override
   String get settings_applyWhenLastTabClosesSubtitle =>
-      '关闭容器中的最后一个标签页后停留在该容器，而不是打开其他地方的标签页';
+      'σà│Θù¡σ«╣σÖ¿Σ╕¡τÜäµ£ÇσÉÄΣ╕ÇΣ╕¬µáçτ¡╛Θí╡σÉÄσü£τòÖσ£¿Φ»Ñσ«╣σÖ¿∩╝îΦÇîΣ╕ìµÿ»µëôσ╝Çσà╢Σ╗ûσ£░µû╣τÜäµáçτ¡╛Θí╡';
 
   @override
   String settings_homeSearchBarCurrentlyLabel(String value) {
-    return '当前：$value';
+    return 'σ╜ôσëì∩╝Ü$value';
   }
 
   @override
-  String get settings_wallpaperTitle => '壁纸';
+  String get settings_wallpaperTitle => 'σúüτ║╕';
 
   @override
-  String get settings_wallpaperKeywords => '壁纸,背景,图片,照片,模糊,调暗,主页';
+  String get settings_wallpaperKeywords =>
+      'σúüτ║╕,ΦâîµÖ»,σ¢╛τëç,τàºτëç,µ¿íτ│è,Φ░âµÜù,Σ╕╗Θí╡';
 
   @override
-  String get settings_wallpaperSetSubtitle => '已为主页设置背景图片';
+  String get settings_wallpaperSetSubtitle => 'σ╖▓Σ╕║Σ╕╗Θí╡Φ«╛τ╜«ΦâîµÖ»σ¢╛τëç';
 
   @override
-  String get settings_wallpaperUnsetSubtitle => '为主页设置背景图片';
+  String get settings_wallpaperUnsetSubtitle => 'Σ╕║Σ╕╗Θí╡Φ«╛τ╜«ΦâîµÖ»σ¢╛τëç';
 
   @override
-  String get settings_customizeHomeSectionsTitle => '自定义主页版块';
+  String get settings_customizeHomeSectionsTitle => 'Φç¬σ«ÜΣ╣ëΣ╕╗Θí╡τëêσ¥ù';
 
   @override
-  String get settings_customizeHomeSectionsKeywords => '主页,版块,快捷方式,名言,快捷操作,排序';
+  String get settings_customizeHomeSectionsKeywords =>
+      'Σ╕╗Θí╡,τëêσ¥ù,σ┐½µì╖µû╣σ╝Å,σÉìΦ¿Ç,σ┐½µì╖µôìΣ╜£,µÄÆσ║Å';
 
   @override
-  String get settings_customizeHomeSectionsSubtitle => '选择主页显示的内容及其顺序';
+  String get settings_customizeHomeSectionsSubtitle =>
+      'ΘÇëµï⌐Σ╕╗Θí╡µÿ╛τñ║τÜäσåàσ«╣σÅèσà╢Θí║σ║Å';
 
   @override
-  String get settings_customizeNewTabSectionsTitle => '自定义新标签页版块';
+  String get settings_customizeNewTabSectionsTitle =>
+      'Φç¬σ«ÜΣ╣ëµû░µáçτ¡╛Θí╡τëêσ¥ù';
 
   @override
-  String get settings_customizeNewTabSectionsKeywords => '新标签页,版块,快捷方式,排序';
+  String get settings_customizeNewTabSectionsKeywords =>
+      'µû░µáçτ¡╛Θí╡,τëêσ¥ù,σ┐½µì╖µû╣σ╝Å,µÄÆσ║Å';
 
   @override
-  String get settings_customizeNewTabSectionsSubtitle => '选择新标签页显示的内容及其顺序';
+  String get settings_customizeNewTabSectionsSubtitle =>
+      'ΘÇëµï⌐µû░µáçτ¡╛Θí╡µÿ╛τñ║τÜäσåàσ«╣σÅèσà╢Θí║σ║Å';
 
   @override
-  String get settings_browserLanguagesTitle => '浏览器语言';
+  String get settings_browserLanguagesTitle => 'τ╜æτ½ÖΦ»¡Φ¿Ç';
 
   @override
-  String get settings_browserLanguagesKeywords => '语言,区域,locale';
+  String get settings_browserLanguagesKeywords =>
+      'µ╡ÅΦºêσÖ¿Φ»¡Φ¿Ç, Φ»¡Φ¿Ç, σî║σƒƒΦ«╛τ╜«, locale, accept language';
 
   @override
-  String get settings_browserLanguagesSearchHint => '按标签搜索语言区域';
+  String get settings_browserLanguagesSearchHint => 'µÉ£τ┤óΦ»¡Φ¿Ç';
 
   @override
-  String get settings_languageRegionSettingsSection => '语言与地区设置';
+  String get settings_languageRegionSettingsSection => 'Φ»¡Φ¿Ç';
 
   @override
-  String get settings_browserLanguagePreferenceLabel => '浏览器语言偏好';
+  String get settings_browserLanguagePreferenceLabel =>
+      'τ╜æτ½ÖσÅ»Σ╗ÑΣ╜┐τö¿τÜäµÿ╛τñ║Φ»¡Φ¿Ç';
 
   @override
-  String get settings_customLocaleSection => '自定义语言区域';
+  String get settings_customLocaleSection => 'σà╢Σ╗ûΦ»¡Φ¿Ç';
 
   @override
-  String get settings_addCustomLocaleTitle => '添加自定义语言区域';
+  String get settings_addCustomLocaleTitle => 'µ╖╗σèáσà╢Σ╗ûΦ»¡Φ¿Ç';
 
   @override
-  String get settings_addCustomLocaleKeywords => '语言区域标签,locale';
+  String get settings_addCustomLocaleKeywords =>
+      'Φ»¡Φ¿Çµáçτ¡╛, Φ»¡Φ¿ÇΣ╗úτáü, locale tag';
 
   @override
-  String get settings_addCustomLocaleSubtitle => '输入语言区域标签，例如 en-US';
+  String get settings_addCustomLocaleSubtitle =>
+      'Φ╛ôσàÑΦ»¡Φ¿ÇΣ╗úτáü∩╝îΣ╛ïσªé en-US';
 
   @override
-  String get settings_customLocaleFieldLabel => '自定义语言区域';
+  String get settings_customLocaleFieldLabel => 'Φ»¡Φ¿ÇΣ╗úτáü';
 
   @override
-  String get settings_invalidLocaleError => '语言区域标识符无效';
+  String get settings_invalidLocaleError => 'Φ┐ÖΣ╕ìµÿ»µ£ëµòêτÜäΦ»¡Φ¿ÇΣ╗úτáü';
 
   @override
-  String get settings_homeTargetHomeLabel => '主页';
+  String get settings_homeTargetHomeLabel => 'Σ╕╗Θí╡';
 
   @override
-  String get settings_homeTargetResumeLastTabLabel => '上次打开的标签页';
+  String get settings_homeTargetResumeLastTabLabel =>
+      'Σ╕èµ¼íµëôσ╝ÇτÜäµáçτ¡╛Θí╡';
 
   @override
-  String get settings_homeTargetCustomUrlLabel => '自定义地址';
+  String get settings_homeTargetCustomUrlLabel => 'Φç¬σ«ÜΣ╣ëσ£░σ¥Ç';
 
   @override
-  String get settings_homeTargetHomeDescription => '显示快捷方式和你选择的版块';
+  String get settings_homeTargetHomeDescription =>
+      'µÿ╛τñ║σ┐½µì╖µû╣σ╝ÅσÆîΣ╜áΘÇëµï⌐τÜäτëêσ¥ù';
 
   @override
-  String get settings_homeTargetResumeLastTabDescription => '从上次离开的地方继续';
+  String get settings_homeTargetResumeLastTabDescription =>
+      'Σ╗ÄΣ╕èµ¼íτª╗σ╝ÇτÜäσ£░µû╣τ╗ºτ╗¡';
 
   @override
-  String get settings_homeTargetCustomUrlDescription => '打开指定页面';
+  String get settings_homeTargetCustomUrlDescription => 'µëôσ╝Çµîçσ«ÜΘí╡Θ¥ó';
 
   @override
-  String get settings_homeSearchBarAutoLabel => '跟随标签栏';
+  String get settings_homeSearchBarAutoLabel => 'Φ╖ƒΘÜÅµáçτ¡╛µáÅ';
 
   @override
-  String get settings_homeSearchBarTopLabel => '主页顶部';
+  String get settings_homeSearchBarTopLabel => 'Σ╕╗Θí╡Θí╢Θâ¿';
 
   @override
-  String get settings_homeSearchBarTabBarLabel => '在标签栏中';
+  String get settings_homeSearchBarTabBarLabel => 'σ£¿µáçτ¡╛µáÅΣ╕¡';
 
   @override
-  String get settings_homeSearchBarAutoDescription => '标签栏在哪一侧就显示在哪一侧';
+  String get settings_homeSearchBarAutoDescription =>
+      'µáçτ¡╛µáÅσ£¿σô¬Σ╕ÇΣ╛ºσ░▒µÿ╛τñ║σ£¿σô¬Σ╕ÇΣ╛º';
 
   @override
-  String get settings_homeSearchBarTopDescription => '固定在主页版块上方的搜索栏';
+  String get settings_homeSearchBarTopDescription =>
+      'σ¢║σ«Üσ£¿Σ╕╗Θí╡τëêσ¥ùΣ╕èµû╣τÜäµÉ£τ┤óµáÅ';
 
   @override
-  String get settings_homeSearchBarTabBarDescription => '标签栏的地址栏，带有扫码和语音搜索';
+  String get settings_homeSearchBarTabBarDescription =>
+      'µáçτ¡╛µáÅτÜäσ£░σ¥ÇµáÅ∩╝îσ╕ªµ£ëµë½τáüσÆîΦ»¡Θƒ│µÉ£τ┤ó';
 
   @override
-  String get settings_generalTitle => '常规';
+  String get settings_generalTitle => 'σ╕╕Φºä';
 
   @override
-  String get settings_generalSubtitle => '外观、下载和浏览器默认设置。';
+  String get settings_generalSubtitle =>
+      'σñûΦºéπÇüΣ╕ïΦ╜╜σÆîµ╡ÅΦºêσÖ¿Θ╗ÿΦ«ñΦ«╛τ╜«πÇé';
 
   @override
-  String get settings_defaultBrowserTileTitle => '默认浏览器';
+  String get settings_defaultBrowserTileTitle => 'Θ╗ÿΦ«ñµ╡ÅΦºêσÖ¿';
 
   @override
-  String get settings_defaultBrowserTileKeywords => '系统浏览器';
+  String get settings_defaultBrowserTileKeywords => 'τ│╗τ╗ƒµ╡ÅΦºêσÖ¿';
 
   @override
-  String get settings_defaultBrowserTileSubtitleSet => 'Cat Browser 是你的默认浏览器';
+  String get settings_defaultBrowserTileSubtitleSet =>
+      'Cat Browser µÿ»Σ╜áτÜäΘ╗ÿΦ«ñµ╡ÅΦºêσÖ¿';
 
   @override
   String get settings_defaultBrowserTileSubtitleNotSet =>
-      '将 Cat Browser 设为默认浏览器';
+      'σ░å Cat Browser Φ«╛Σ╕║Θ╗ÿΦ«ñµ╡ÅΦºêσÖ¿';
 
   @override
-  String get settings_defaultBrowserButtonDefault => '默认';
+  String get settings_defaultBrowserButtonDefault => 'Θ╗ÿΦ«ñ';
 
   @override
-  String get settings_defaultBrowserButtonSet => '设置';
+  String get settings_defaultBrowserButtonSet => 'Φ«╛τ╜«';
 
   @override
-  String get settings_backupProfileTitle => '备份此配置文件';
+  String get settings_backupProfileTitle => 'σñçΣ╗╜µ¡ñΘàìτ╜«µûçΣ╗╢';
 
   @override
-  String get settings_backupProfileKeywords => '备份,存档,导出,保存,加密,恢复';
+  String get settings_backupProfileKeywords =>
+      'σñçΣ╗╜,σ¡ÿµíú,σ»╝σç║,Σ┐¥σ¡ÿ,σèáσ»å,µüóσñì';
 
   @override
   String settings_backupProfileSubtitleReady(String name) {
-    return '将“$name”写入加密的备份文件';
+    return 'σ░åΓÇ£$nameΓÇ¥σåÖσàÑσèáσ»åτÜäσñçΣ╗╜µûçΣ╗╢';
   }
 
   @override
-  String get settings_backupProfileSubtitleError => '无法读取当前配置文件';
+  String get settings_backupProfileSubtitleError =>
+      'µùáµ│òΦ»╗σÅûσ╜ôσëìΘàìτ╜«µûçΣ╗╢';
 
   @override
-  String get settings_settingsTransferTileTitle => '导出与导入设置';
+  String get settings_settingsTransferTileTitle => 'σ»╝σç║Σ╕Äσ»╝σàÑΦ«╛τ╜«';
 
   @override
   String get settings_settingsTransferTileKeywords =>
-      '导出,导入,设置,迁移,分享,剪贴板,json,复制';
+      'σ»╝σç║,σ»╝σàÑ,Φ«╛τ╜«,Φ┐üτº╗,σêåΣ║½,σë¬Φ┤┤µ¥┐,json,σñìσê╢';
 
   @override
-  String get settings_settingsTransferTileSubtitle => '将设置写入文件或剪贴板，并可重新读取';
+  String get settings_settingsTransferTileSubtitle =>
+      'σ░åΦ«╛τ╜«σåÖσàÑµûçΣ╗╢µêûσë¬Φ┤┤µ¥┐∩╝îσ╣╢σÅ»Θçìµû░Φ»╗σÅû';
 
   @override
-  String get settings_uiZoomTitle => '界面缩放';
+  String get settings_uiZoomTitle => 'τòîΘ¥óτ╝⌐µö╛';
 
   @override
-  String get settings_uiZoomKeywords => '界面缩放,缩放,ui scale';
+  String get settings_uiZoomKeywords => 'τòîΘ¥óτ╝⌐µö╛,τ╝⌐µö╛,ui scale';
 
   @override
-  String get settings_uiZoomSubtitle => '缩小或放大用户界面';
+  String get settings_uiZoomSubtitle => 'τ╝⌐σ░Åµêûµö╛σñºτö¿µê╖τòîΘ¥ó';
 
   @override
-  String get settings_disableAnimationsTitle => '停用动画';
+  String get settings_disableAnimationsTitle => 'σü£τö¿σè¿τö╗';
 
   @override
-  String get settings_disableAnimationsKeywords => '动画,动效';
+  String get settings_disableAnimationsKeywords => 'σè¿τö╗,σè¿µòê';
 
   @override
-  String get settings_disableAnimationsSubtitle => '减少动态效果并关闭应用动画';
+  String get settings_disableAnimationsSubtitle =>
+      'σçÅσ░æσè¿µÇüµòêµ₧£σ╣╢σà│Θù¡σ║öτö¿σè¿τö╗';
 
   @override
-  String get settings_showModalBarrierTitle => '显示模态遮罩';
+  String get settings_showModalBarrierTitle => 'σ»╣Φ»¥µíåσÉÄµû╣σÅÿµÜù';
 
   @override
-  String get settings_showModalBarrierKeywords => '对话框,底部面板,遮罩';
+  String get settings_showModalBarrierKeywords =>
+      'σ»╣Φ»¥µíå, σ║òΘâ¿Θ¥óµ¥┐, Θü«τ╜⌐, overlay, modal barrier';
 
   @override
-  String get settings_showModalBarrierSubtitle => '在对话框和底部面板后方调暗背景';
+  String get settings_showModalBarrierSubtitle =>
+      'σ£¿σ»╣Φ»¥µíåσÆîσ║òΘâ¿Θ¥óµ¥┐σÉÄµû╣Φ░âµÜùΦâîµÖ»';
 
   @override
-  String get settings_showSearchCloseButtonTitle => '显示关闭按钮';
+  String get settings_showSearchCloseButtonTitle => 'µÿ╛τñ║σà│Θù¡µîëΘÆ«';
 
   @override
   String get settings_showSearchCloseButtonKeywords =>
-      '返回,关闭,忽略,墨水屏,e-ink,无障碍,新标签页';
+      'Φ┐öσ¢₧,σà│Θù¡,σ┐╜τòÑ,σó¿µ░┤σ▒Å,e-ink,µùáΘÜ£τóì,µû░µáçτ¡╛Θí╡';
 
   @override
   String get settings_showSearchCloseButtonSubtitle =>
-      '添加一个按钮，无需返回手势即可关闭搜索或新标签页。这在没有返回按钮的设备上很有用。';
+      'µ╖╗σèáΣ╕ÇΣ╕¬µîëΘÆ«∩╝îµùáΘ£ÇΦ┐öσ¢₧µëïσè┐σì│σÅ»σà│Θù¡µÉ£τ┤óµêûµû░µáçτ¡╛Θí╡πÇéΦ┐Öσ£¿µ▓íµ£ëΦ┐öσ¢₧µîëΘÆ«τÜäΦ«╛σñçΣ╕èσ╛êµ£ëτö¿πÇé';
 
   @override
-  String get settings_pureBlackTitle => '纯黑（OLED）';
+  String get settings_pureBlackTitle => 'τ║»Θ╗æ∩╝êOLED∩╝ë';
 
   @override
-  String get settings_pureBlackKeywords => 'oled,amoled,高对比度,黑色,深色';
+  String get settings_pureBlackKeywords =>
+      'oled,amoled,Θ½ÿσ»╣µ»öσ║ª,Θ╗æΦë▓,µ╖▒Φë▓';
 
   @override
-  String get settings_pureBlackSubtitle => '在深色模式下使用纯黑界面，以便在 OLED 屏幕上省电';
+  String get settings_pureBlackSubtitle =>
+      'σ£¿µ╖▒Φë▓µ¿íσ╝ÅΣ╕ïΣ╜┐τö¿τ║»Θ╗æτòîΘ¥ó∩╝îΣ╗ÑΣ╛┐σ£¿ OLED σ▒Åσ╣òΣ╕èτ£üτö╡';
 
   @override
-  String get settings_themeTitle => '主题';
+  String get settings_themeTitle => 'Σ╕╗Θóÿ';
 
   @override
-  String get settings_themeKeywords => '浅色,深色,主题模式,夜间模式';
+  String get settings_themeKeywords =>
+      'µ╡àΦë▓,µ╖▒Φë▓,Σ╕╗Θóÿµ¿íσ╝Å,σñ£Θù┤µ¿íσ╝Å';
 
   @override
-  String get settings_themeModeSystem => '跟随系统';
+  String get settings_themeModeSystem => 'Φ╖ƒΘÜÅτ│╗τ╗ƒ';
 
   @override
-  String get settings_themeModeLight => '浅色';
+  String get settings_themeModeLight => 'µ╡àΦë▓';
 
   @override
-  String get settings_themeModeDark => '深色';
+  String get settings_themeModeDark => 'µ╖▒Φë▓';
 
   @override
-  String get settings_appLanguageSystemDefault => '系统默认';
+  String get settings_appLanguageSystemDefault => 'τ│╗τ╗ƒΘ╗ÿΦ«ñ';
 
   @override
   String settings_appLanguageCurrentlyLabel(String language) {
-    return '当前：$language';
+    return 'σ╜ôσëì∩╝Ü$language';
   }
 
   @override
   String get settings_appLanguageTranslationsNote =>
-      '翻译刚刚推出，可能不完整或不准确，因此在你选择其他语言之前，Cat Browser 将使用英语。选择“系统默认”即可跟随设备语言。';
+      'τ┐╗Φ»æσêÜσêÜµÄ¿σç║∩╝îσÅ»Φâ╜Σ╕ìσ«îµò┤µêûΣ╕ìσçåτí«∩╝îσ¢áµ¡ñσ£¿Σ╜áΘÇëµï⌐σà╢Σ╗ûΦ»¡Φ¿ÇΣ╣ïσëì∩╝îCat Browser σ░åΣ╜┐τö¿Φï▒Φ»¡πÇéΘÇëµï⌐ΓÇ£τ│╗τ╗ƒΘ╗ÿΦ«ñΓÇ¥σì│σÅ»Φ╖ƒΘÜÅΦ«╛σñçΦ»¡Φ¿ÇπÇé';
 
   @override
-  String get settings_refreshRateTitle => '刷新率';
+  String get settings_refreshRateTitle => 'σê╖µû░τÄç';
 
   @override
   String get settings_refreshRateKeywords =>
-      'fps,hz,赫兹,帧率,60hz,90hz,120hz,流畅,高刷新率,显示模式';
+      'fps,hz,Φ╡½σà╣,σ╕ºτÄç,60hz,90hz,120hz,µ╡üτòà,Θ½ÿσê╖µû░τÄç,µÿ╛τñ║µ¿íσ╝Å';
 
   @override
   String get settings_refreshRateSubtitle =>
-      '在 90/120Hz 屏幕上选择“高”可获得最流畅的滚动和动画，选择“低”则可节省电量。';
+      'σ£¿ 90/120Hz σ▒Åσ╣òΣ╕èΘÇëµï⌐ΓÇ£Θ½ÿΓÇ¥σÅ»ΦÄ╖σ╛ùµ£Çµ╡üτòàτÜäµ╗Üσè¿σÆîσè¿τö╗∩╝îΘÇëµï⌐ΓÇ£Σ╜ÄΓÇ¥σêÖσÅ»Φèéτ£üτö╡ΘçÅπÇé';
 
   @override
-  String get settings_refreshRateModeSystem => '跟随系统';
+  String get settings_refreshRateModeSystem => 'Φ╖ƒΘÜÅτ│╗τ╗ƒ';
 
   @override
-  String get settings_refreshRateModeHigh => '高';
+  String get settings_refreshRateModeHigh => 'Θ½ÿ';
 
   @override
-  String get settings_refreshRateModeLow => '低';
+  String get settings_refreshRateModeLow => 'Σ╜Ä';
 
   @override
-  String get settings_downloadFolderTitle => '下载文件夹';
+  String get settings_downloadFolderTitle => 'Σ╕ïΦ╜╜µûçΣ╗╢σñ╣';
 
   @override
-  String get settings_downloadFolderKeywords => '下载,文件夹,目录,存储,保存';
+  String get settings_downloadFolderKeywords =>
+      'Σ╕ïΦ╜╜,µûçΣ╗╢σñ╣,τ¢«σ╜ò,σ¡ÿσé¿,Σ┐¥σ¡ÿ';
 
   @override
-  String get settings_downloadFolderSubtitleDefault => '保存到系统的“下载”文件夹';
+  String get settings_downloadFolderSubtitleDefault =>
+      'Σ┐¥σ¡ÿσê░τ│╗τ╗ƒτÜäΓÇ£Σ╕ïΦ╜╜ΓÇ¥µûçΣ╗╢σñ╣';
 
   @override
   String settings_downloadFolderSubtitleUnavailable(String folderName) {
-    return '已无法访问——将保存到系统的“下载”文件夹（$folderName）';
+    return 'σ╖▓µùáµ│òΦ«┐Θù«ΓÇöΓÇöσ░åΣ┐¥σ¡ÿσê░τ│╗τ╗ƒτÜäΓÇ£Σ╕ïΦ╜╜ΓÇ¥µûçΣ╗╢σñ╣∩╝ê$folderName∩╝ë';
   }
 
   @override
   String get settings_downloadFolderSubtitleExternalManager =>
-      '由下载管理器应用选择文件的保存位置';
+      'τö▒Σ╕ïΦ╜╜τ«íτÉåσÖ¿σ║öτö¿ΘÇëµï⌐µûçΣ╗╢τÜäΣ┐¥σ¡ÿΣ╜ìτ╜«';
 
   @override
-  String get settings_downloadFolderResetTooltip => '使用系统的“下载”文件夹';
+  String get settings_downloadFolderResetTooltip =>
+      'Σ╜┐τö¿τ│╗τ╗ƒτÜäΓÇ£Σ╕ïΦ╜╜ΓÇ¥µûçΣ╗╢σñ╣';
 
   @override
-  String get settings_externalDownloadManagerTitle => '使用外部下载管理器';
+  String get settings_externalDownloadManagerTitle =>
+      'Σ╜┐τö¿σñûΘâ¿Σ╕ïΦ╜╜τ«íτÉåσÖ¿';
 
   @override
-  String get settings_externalDownloadManagerKeywords => '下载,下载器';
+  String get settings_externalDownloadManagerKeywords => 'Σ╕ïΦ╜╜,Σ╕ïΦ╜╜σÖ¿';
 
   @override
-  String get settings_externalDownloadManagerSubtitle => '使用其他应用管理下载';
+  String get settings_externalDownloadManagerSubtitle =>
+      'Σ╜┐τö¿σà╢Σ╗ûσ║öτö¿τ«íτÉåΣ╕ïΦ╜╜';
 
   @override
-  String get settings_preferredDownloadManagerTitle => '首选下载管理器';
+  String get settings_preferredDownloadManagerTitle => 'ΘªûΘÇëΣ╕ïΦ╜╜τ«íτÉåσÖ¿';
 
   @override
   String get settings_preferredDownloadManagerKeywords =>
-      '下载,下载管理器,始终使用,默认应用,选择器,询问';
+      'Σ╕ïΦ╜╜,Σ╕ïΦ╜╜τ«íτÉåσÖ¿,σºïτ╗êΣ╜┐τö¿,Θ╗ÿΦ«ñσ║öτö¿,ΘÇëµï⌐σÖ¿,Φ»óΘù«';
 
   @override
   String get settings_preferredDownloadManagerSubtitleNotSet =>
-      '未设置——下次出现选择器时勾选“始终使用此应用”';
+      'µ£¬Φ«╛τ╜«ΓÇöΓÇöΣ╕ïµ¼íσç║τÄ░ΘÇëµï⌐σÖ¿µù╢σï╛ΘÇëΓÇ£σºïτ╗êΣ╜┐τö¿µ¡ñσ║öτö¿ΓÇ¥';
 
   @override
   String settings_preferredDownloadManagerSubtitleThisApp(String appName) {
-    return '$appName，每次下载前都会确认';
+    return '$appName∩╝îµ»Åµ¼íΣ╕ïΦ╜╜σëìΘâ╜Σ╝Üτí«Φ«ñ';
   }
 
   @override
   String settings_preferredDownloadManagerSubtitleUnavailable(
     String packageName,
   ) {
-    return '已不再安装（$packageName）——每次都会询问';
+    return 'σ╖▓Σ╕ìσåìσ«ëΦúà∩╝ê$packageName∩╝ëΓÇöΓÇöµ»Åµ¼íΘâ╜Σ╝ÜΦ»óΘù«';
   }
 
   @override
   String get settings_preferredDownloadManagerSubtitleExternalOff =>
-      '未设置——仅在使用外部下载管理器时生效';
+      'µ£¬Φ«╛τ╜«ΓÇöΓÇöΣ╗àσ£¿Σ╜┐τö¿σñûΘâ¿Σ╕ïΦ╜╜τ«íτÉåσÖ¿µù╢τöƒµòê';
 
   @override
   String settings_preferredDownloadManagerSubtitleInactive(String appName) {
-    return '$appName——外部下载管理器关闭时不会使用';
+    return '$appNameΓÇöΓÇöσñûΘâ¿Σ╕ïΦ╜╜τ«íτÉåσÖ¿σà│Θù¡µù╢Σ╕ìΣ╝ÜΣ╜┐τö¿';
   }
 
   @override
-  String get settings_preferredDownloadManagerClearTooltip => '清除首选管理器';
+  String get settings_preferredDownloadManagerClearTooltip =>
+      'µ╕àΘÖñΘªûΘÇëτ«íτÉåσÖ¿';
 
   @override
-  String get settings_defaultBrowserSectionTitle => '默认浏览器';
+  String get settings_defaultBrowserSectionTitle => 'Θ╗ÿΦ«ñµ╡ÅΦºêσÖ¿';
 
   @override
-  String get settings_defaultBrowserSectionKeywords => '浏览器默认设置';
+  String get settings_defaultBrowserSectionKeywords => 'µ╡ÅΦºêσÖ¿Θ╗ÿΦ«ñΦ«╛τ╜«';
 
   @override
-  String get settings_indexDefaultBrowserSubtitle => '将 Cat Browser 设为默认浏览器';
+  String get settings_indexDefaultBrowserSubtitle =>
+      'σ░å Cat Browser Φ«╛Σ╕║Θ╗ÿΦ«ñµ╡ÅΦºêσÖ¿';
 
   @override
-  String get settings_appearanceSectionTitle => '外观';
+  String get settings_appearanceSectionTitle => 'σñûΦºé';
 
   @override
-  String get settings_indexThemeSubtitle => '选择跟随系统、浅色或深色模式';
+  String get settings_indexThemeSubtitle =>
+      'ΘÇëµï⌐Φ╖ƒΘÜÅτ│╗τ╗ƒπÇüµ╡àΦë▓µêûµ╖▒Φë▓µ¿íσ╝Å';
 
   @override
-  String get settings_indexAppLanguageTitle => '应用语言';
+  String get settings_indexAppLanguageTitle => 'σ║öτö¿Φ»¡Φ¿Ç';
 
   @override
-  String get settings_indexAppLanguageKeywords => '语言,翻译,界面语言,locale';
+  String get settings_indexAppLanguageKeywords =>
+      'Φ»¡Φ¿Ç,τ┐╗Φ»æ,τòîΘ¥óΦ»¡Φ¿Ç,locale';
 
   @override
-  String get settings_indexAppLanguageSubtitle => '选择 Cat Browser 自身界面使用的语言';
+  String get settings_indexAppLanguageSubtitle =>
+      'ΘÇëµï⌐ Cat Browser Φç¬Φ║½τòîΘ¥óΣ╜┐τö¿τÜäΦ»¡Φ¿Ç';
 
   @override
-  String get settings_indexRefreshRateSubtitle => '请求高或低的屏幕刷新率（Android）';
+  String get settings_indexRefreshRateSubtitle =>
+      'Φ»╖µ▒éΘ½ÿµêûΣ╜ÄτÜäσ▒Åσ╣òσê╖µû░τÄç∩╝êAndroid∩╝ë';
 
   @override
   String get settings_indexShowCloseButtonSubtitle =>
-      '添加一个按钮，无需返回手势即可关闭搜索/新标签页';
+      'µ╖╗σèáΣ╕ÇΣ╕¬µîëΘÆ«∩╝îµùáΘ£ÇΦ┐öσ¢₧µëïσè┐σì│σÅ»σà│Θù¡µÉ£τ┤ó/µû░µáçτ¡╛Θí╡';
 
   @override
-  String get settings_profileSectionTitle => '配置文件';
+  String get settings_profileSectionTitle => 'Θàìτ╜«µûçΣ╗╢';
 
   @override
-  String get settings_profileSectionKeywords => '用户,配置文件';
+  String get settings_profileSectionKeywords => 'τö¿µê╖,Θàìτ╜«µûçΣ╗╢';
 
   @override
-  String get settings_indexBackupProfileSubtitle => '为你正在使用的配置文件创建加密备份';
+  String get settings_indexBackupProfileSubtitle =>
+      'Σ╕║Σ╜áµ¡úσ£¿Σ╜┐τö¿τÜäΘàìτ╜«µûçΣ╗╢σê¢σ╗║σèáσ»åσñçΣ╗╜';
 
   @override
   String get settings_indexSettingsTransferSubtitle =>
-      '在配置文件或设备之间迁移设置，或将其附加到错误报告中';
+      'σ£¿Θàìτ╜«µûçΣ╗╢µêûΦ«╛σñçΣ╣ïΘù┤Φ┐üτº╗Φ«╛τ╜«∩╝îµêûσ░åσà╢ΘÖäσèáσê░ΘöÖΦ»»µèÑσæèΣ╕¡';
 
   @override
-  String get settings_downloadsSectionTitle => '下载';
+  String get settings_downloadsSectionTitle => 'Σ╕ïΦ╜╜';
 
   @override
-  String get settings_indexDownloadFolderSubtitle => '选择下载文件的保存位置';
+  String get settings_indexDownloadFolderSubtitle =>
+      'ΘÇëµï⌐Σ╕ïΦ╜╜µûçΣ╗╢τÜäΣ┐¥σ¡ÿΣ╜ìτ╜«';
 
   @override
-  String get settings_indexPreferredDownloadManagerSubtitle => '无需询问即可接收下载的应用';
+  String get settings_indexPreferredDownloadManagerSubtitle =>
+      'µùáΘ£ÇΦ»óΘù«σì│σÅ»µÄÑµö╢Σ╕ïΦ╜╜τÜäσ║öτö¿';
 
   @override
-  String get settings_contentIdentitySectionTitle => '内容与身份';
+  String get settings_contentIdentitySectionTitle => 'σåàσ«╣Σ╕ÄΦ║½Σ╗╜';
 
   @override
-  String get settings_contentIdentitySectionKeywords => '引擎';
+  String get settings_contentIdentitySectionKeywords => 'σ╝òµôÄ';
 
   @override
-  String get settings_indexJavascriptSubtitle => '开启或关闭网站脚本';
+  String get settings_indexJavascriptSubtitle => 'σ╝ÇσÉ»µêûσà│Θù¡τ╜æτ½ÖΦäÜµ£¼';
 
   @override
-  String get settings_indexUserAgentSubtitle => '覆盖浏览器的用户代理字符串';
+  String get settings_indexUserAgentSubtitle =>
+      'Φªåτ¢ûµ╡ÅΦºêσÖ¿τÜäτö¿µê╖Σ╗úτÉåσ¡ùτ¼ªΣ╕▓';
 
   @override
-  String get settings_indexEnterpriseRootsSubtitle => '允许使用 Android CA 存储中的证书';
+  String get settings_indexEnterpriseRootsSubtitle =>
+      'σàüΦ«╕Σ╜┐τö¿ Android CA σ¡ÿσé¿Σ╕¡τÜäΦ»üΣ╣ª';
 
   @override
-  String get settings_experimentalSectionTitle => '实验性';
+  String get settings_experimentalSectionTitle => 'σ«₧Θ¬îµÇº';
 
   @override
-  String get settings_developerToolsSectionTitle => '开发者工具';
+  String get settings_developerToolsSectionTitle => 'σ╝ÇσÅæΦÇàσ╖Ñσà╖';
 
   @override
-  String get settings_developerToolsSectionKeywords => '调试,debug';
+  String get settings_developerToolsSectionKeywords => 'Φ░âΦ»ò,debug';
 
   @override
   String get settings_indexUnmountGeckoViewSubtitle =>
-      '在覆盖层关闭后重建网页引擎，而不是让它保持运行';
+      'σ£¿Φªåτ¢ûσ▒éσà│Θù¡σÉÄΘçìσ╗║τ╜æΘí╡σ╝òµôÄ∩╝îΦÇîΣ╕ìµÿ»Φ«⌐σ«âΣ┐¥µîüΦ┐ÉΦíî';
 
   @override
-  String get settings_tabsSectionTitle => '标签页';
+  String get settings_tabsSectionTitle => 'µáçτ¡╛Θí╡';
 
   @override
-  String get settings_indexTabListDirectionSubtitle => '选择列表视图中标签页的排列顺序';
+  String get settings_indexTabListDirectionSubtitle =>
+      'ΘÇëµï⌐σêùΦí¿Φºåσ¢╛Σ╕¡µáçτ¡╛Θí╡τÜäµÄÆσêùΘí║σ║Å';
 
   @override
-  String get settings_indexTabBarDirectionSubtitle => '选择标签栏中标签页的排列顺序';
+  String get settings_indexTabBarDirectionSubtitle =>
+      'ΘÇëµï⌐µáçτ¡╛µáÅΣ╕¡µáçτ¡╛Θí╡τÜäµÄÆσêùΘí║σ║Å';
 
   @override
-  String get settings_indexChildTabPlacementSubtitle => '选择从其他标签页打开的标签页插入的位置';
+  String get settings_indexChildTabPlacementSubtitle =>
+      'ΘÇëµï⌐Σ╗Äσà╢Σ╗ûµáçτ¡╛Θí╡µëôσ╝ÇτÜäµáçτ¡╛Θí╡µÅÆσàÑτÜäΣ╜ìτ╜«';
 
   @override
-  String get settings_indexCreateChildTabsSubtitle => '显示一个按钮，用于在当前标签页下添加子标签页';
+  String get settings_indexCreateChildTabsSubtitle =>
+      'µÿ╛τñ║Σ╕ÇΣ╕¬µîëΘÆ«∩╝îτö¿Σ║Äσ£¿σ╜ôσëìµáçτ¡╛Θí╡Σ╕ïµ╖╗σèáσ¡Éµáçτ¡╛Θí╡';
 
   @override
-  String get settings_indexBackgroundTabBehaviorSubtitle => '选择标签页在后台打开后的行为';
+  String get settings_indexBackgroundTabBehaviorSubtitle =>
+      'ΘÇëµï⌐µáçτ¡╛Θí╡σ£¿σÉÄσÅ░µëôσ╝ÇσÉÄτÜäΦíîΣ╕║';
 
   @override
-  String get settings_navigationSectionTitle => '导航';
+  String get settings_navigationSectionTitle => 'σ»╝Φê¬';
 
   @override
-  String get settings_indexDoubleBackCloseTabSubtitle => '需要按两次返回按钮才能关闭当前标签页';
+  String get settings_indexDoubleBackCloseTabSubtitle =>
+      'Θ£ÇΦªüµîëΣ╕ñµ¼íΦ┐öσ¢₧µîëΘÆ«µëìΦâ╜σà│Θù¡σ╜ôσëìµáçτ¡╛Θí╡';
 
   @override
-  String get settings_indexTabBarSwipesSubtitle => '选择在标签栏上滑动的作用';
+  String get settings_indexTabBarSwipesSubtitle =>
+      'ΘÇëµï⌐σ£¿µáçτ¡╛µáÅΣ╕èµ╗æσè¿τÜäΣ╜£τö¿';
 
   @override
   String get settings_indexSequentialTabNavigationSubtitle =>
-      '选择按顺序切换标签页时在何处结束';
+      'ΘÇëµï⌐µîëΘí║σ║Åσêçµìóµáçτ¡╛Θí╡µù╢σ£¿Σ╜òσñäτ╗ôµ¥ƒ';
 
   @override
-  String get settings_indexOpenLinksInAppsSubtitle => '选择外部应用链接的打开方式';
+  String get settings_indexOpenLinksInAppsSubtitle =>
+      'ΘÇëµï⌐σñûΘâ¿σ║öτö¿Θô╛µÄÑτÜäµëôσ╝Çµû╣σ╝Å';
 
   @override
-  String get settings_desktopModeSectionTitle => '桌面模式';
+  String get settings_desktopModeSectionTitle => 'µíîΘ¥óµ¿íσ╝Å';
 
   @override
-  String get settings_indexGlobalDesktopModeSubtitle => '默认以桌面模式打开新标签页';
+  String get settings_indexGlobalDesktopModeSubtitle =>
+      'Θ╗ÿΦ«ñΣ╗ÑµíîΘ¥óµ¿íσ╝Åµëôσ╝Çµû░µáçτ¡╛Θí╡';
 
   @override
-  String get settings_homeScreenSectionTitle => '主屏幕';
+  String get settings_homeScreenSectionTitle => 'Σ╕╗σ▒Åσ╣ò';
 
   @override
   String get settings_indexAllowNonManifestPwaInstallSubtitle =>
-      '允许将没有清单的网站安装为应用';
+      'σ░åΣ╗╗Σ╜òτ╜æτ½Öσ«ëΦúàΣ╕║σ║öτö¿';
 
   @override
-  String get settings_externalLinksSectionTitle => '外部链接';
+  String get settings_externalLinksSectionTitle => 'σñûΘâ¿Θô╛µÄÑ';
 
   @override
   String get settings_indexCustomTabsSubtitle =>
-      '允许其他应用在轻量的应用内标签页中打开链接，而不是在主浏览器中';
+      'σàüΦ«╕σà╢Σ╗ûσ║öτö¿σ£¿Φ╜╗ΘçÅτÜäσ║öτö¿σåàµáçτ¡╛Θí╡Σ╕¡µëôσ╝ÇΘô╛µÄÑ∩╝îΦÇîΣ╕ìµÿ»σ£¿Σ╕╗µ╡ÅΦºêσÖ¿Σ╕¡';
 
   @override
-  String get settings_bookmarksSectionTitle => '书签';
+  String get settings_bookmarksSectionTitle => 'Σ╣ªτ¡╛';
 
   @override
-  String get settings_resolverSettingsSectionTitle => '解析服务器设置';
+  String get settings_resolverSettingsSectionTitle => 'µ£ìσèíσòåΦ«╛τ╜«';
 
   @override
-  String get settings_indexDnsOverHttpsResolverTitle => 'DNS over HTTPS';
+  String get settings_indexDnsOverHttpsResolverTitle => 'σ«ëσà¿ DNS';
 
   @override
   String get settings_indexDnsOverHttpsResolverKeywords =>
-      'doh,解析服务器,dns 提供商,自定义解析服务器,加密 dns';
+      'dns over https, doh, Φºúµ₧ÉσÖ¿, resolver, dns µ£ìσèíσòå, Φç¬σ«ÜΣ╣ëΦºúµ₧ÉσÖ¿';
 
   @override
   String get settings_indexDnsOverHttpsResolverSubtitle =>
-      '保护级别、提供商选择和已保存的自定义解析服务器';
+      'Σ┐¥µèñτ║ºσê½πÇüµ£ìσèíσòåσÆîΣ╜áΦç¬σ╖▒τÜäµ£ìσèíσòå';
 
   @override
-  String get settings_runtimeStartupSectionTitle => '运行时与启动';
+  String get settings_runtimeStartupSectionTitle => 'Φ┐ÉΦíîµù╢Σ╕ÄσÉ»σè¿';
 
   @override
-  String get settings_indexIsolatedContentProcessSubtitle => '在隔离进程中运行网页内容';
+  String get settings_indexIsolatedContentProcessSubtitle =>
+      'σ£¿ΘÜöτª╗Φ┐¢τ¿ïΣ╕¡Φ┐ÉΦíîτ╜æΘí╡σåàσ«╣';
 
   @override
-  String get settings_indexAppZygoteProcessSubtitle => '预加载内容服务以加快隔离进程启动';
+  String get settings_indexAppZygoteProcessSubtitle =>
+      'ΘóäσèáΦ╜╜σåàσ«╣µ£ìσèíΣ╗Ñσèáσ┐½ΘÜöτª╗Φ┐¢τ¿ïσÉ»σè¿';
 
   @override
-  String get settings_startupSectionTitle => '启动';
+  String get settings_startupSectionTitle => 'σÉ»σè¿';
 
   @override
-  String get settings_startupSectionKeywords => '启动,主页,继续,上一个标签页,自定义网址';
+  String get settings_startupSectionKeywords =>
+      'σÉ»σè¿,Σ╕╗Θí╡,τ╗ºτ╗¡,Σ╕èΣ╕ÇΣ╕¬µáçτ¡╛Θí╡,Φç¬σ«ÜΣ╣ëτ╜æσ¥Ç';
 
   @override
-  String get settings_indexHomeTargetTitle => '没有可显示的标签页时';
+  String get settings_indexHomeTargetTitle => 'µ▓íµ£ëσÅ»µÿ╛τñ║τÜäµáçτ¡╛Θí╡µù╢';
 
   @override
-  String get settings_indexHomeTargetKeywords => '启动,继续,上一个标签页,自定义网址,主页';
+  String get settings_indexHomeTargetKeywords =>
+      'σÉ»σè¿,τ╗ºτ╗¡,Σ╕èΣ╕ÇΣ╕¬µáçτ¡╛Θí╡,Φç¬σ«ÜΣ╣ëτ╜æσ¥Ç,Σ╕╗Θí╡';
 
   @override
-  String get settings_indexHomeTargetSubtitle => '启动时以及关闭最后一个标签页后';
+  String get settings_indexHomeTargetSubtitle =>
+      'σÉ»σè¿µù╢Σ╗ÑσÅèσà│Θù¡µ£ÇσÉÄΣ╕ÇΣ╕¬µáçτ¡╛Θí╡σÉÄ';
 
   @override
   String get settings_indexHomeTargetOnLastTabClosedSubtitle =>
-      '否则将改为打开其他容器中的标签页';
+      'σÉªσêÖσ░åµö╣Σ╕║µëôσ╝Çσà╢Σ╗ûσ«╣σÖ¿Σ╕¡τÜäµáçτ¡╛Θí╡';
 
   @override
-  String get settings_homeAppearanceSectionTitle => '外观';
+  String get settings_homeAppearanceSectionTitle => 'σñûΦºé';
 
   @override
-  String get settings_homeAppearanceSectionKeywords => '主页,壁纸,背景,图片,模糊,调暗';
+  String get settings_homeAppearanceSectionKeywords =>
+      'Σ╕╗Θí╡,σúüτ║╕,ΦâîµÖ»,σ¢╛τëç,µ¿íτ│è,Φ░âµÜù';
 
   @override
-  String get settings_indexWallpaperSubtitle => '主页的背景图片';
+  String get settings_indexWallpaperSubtitle => 'Σ╕╗Θí╡τÜäΦâîµÖ»σ¢╛τëç';
 
   @override
-  String get settings_layoutSectionTitle => '布局';
+  String get settings_layoutSectionTitle => 'σ╕âσ▒Ç';
 
   @override
-  String get settings_layoutSectionKeywords => '主页,新标签页,版块,模块,布局';
+  String get settings_layoutSectionKeywords =>
+      'Σ╕╗Θí╡,µû░µáçτ¡╛Θí╡,τëêσ¥ù,µ¿íσ¥ù,σ╕âσ▒Ç';
 
   @override
-  String get settings_indexHomeSearchBarPlacementTitle => '搜索栏位置';
+  String get settings_indexHomeSearchBarPlacementTitle => 'µÉ£τ┤óµáÅΣ╜ìτ╜«';
 
   @override
   String get settings_indexHomeSearchBarPlacementKeywords =>
-      '搜索,搜索栏,位置,地址,网址,顶部,底部,标签栏,主页';
+      'µÉ£τ┤ó,µÉ£τ┤óµáÅ,Σ╜ìτ╜«,σ£░σ¥Ç,τ╜æσ¥Ç,Θí╢Θâ¿,σ║òΘâ¿,µáçτ¡╛µáÅ,Σ╕╗Θí╡';
 
   @override
-  String get settings_indexHomeSearchBarPlacementSubtitle => '主页提供搜索框的位置';
+  String get settings_indexHomeSearchBarPlacementSubtitle =>
+      'Σ╕╗Θí╡µÅÉΣ╛¢µÉ£τ┤óµíåτÜäΣ╜ìτ╜«';
 
   @override
   String get settings_indexSearchFieldPlacementTitle =>
-      'Search field on new tabs';
+      'µû░µáçτ¡╛Θí╡Σ╕èτÜäµÉ£τ┤óµíå';
 
   @override
   String get settings_indexSearchFieldPlacementKeywords =>
-      'search, field, input, position, address, url, edit, top, bottom, tab bar, new tab, one-handed, thumb';
+      'µÉ£τ┤ó,µÉ£τ┤óµíå,Φ╛ôσàÑµíå,Σ╜ìτ╜«,σ£░σ¥Ç,τ╜æσ¥Ç,τ╝ûΦ╛æ,Θí╢Θâ¿,σ║òΘâ¿,µáçτ¡╛µáÅ,µû░µáçτ¡╛Θí╡,σìòµëï,µïçµîç';
 
   @override
   String get settings_indexSearchFieldPlacementSubtitle =>
-      'Where the new tab page and address editing put the input field';
+      'µû░µáçτ¡╛Θí╡σÆîτ╝ûΦ╛æσ£░σ¥Çµù╢Φ╛ôσàÑµíåτÜäΣ╜ìτ╜«';
 
   @override
-  String get settings_searchFieldPlacementAutoLabel => 'Follow the tab bar';
+  String get settings_searchFieldPlacementAutoLabel => 'Φ╖ƒΘÜÅµáçτ¡╛µáÅ';
 
   @override
-  String get settings_searchFieldPlacementTopLabel => 'Top';
+  String get settings_searchFieldPlacementTopLabel => 'Θí╢Θâ¿';
 
   @override
-  String get settings_searchFieldPlacementBottomLabel => 'Bottom';
+  String get settings_searchFieldPlacementBottomLabel => 'σ║òΘâ¿';
 
   @override
   String settings_searchFieldPlacementCurrentlyLabel(String value) {
-    return 'Currently: $value';
+    return 'σ╜ôσëì∩╝Ü$value';
   }
 
   @override
   String get settings_searchFieldPlacementTopDescription =>
-      'Suggestions are listed below the field';
+      'σ╗║Φ««µÿ╛τñ║σ£¿Φ╛ôσàÑµíåΣ╕ïµû╣';
 
   @override
   String get settings_searchFieldPlacementBottomDescription =>
-      'Within thumb reach, with suggestions above it and the best match nearest';
+      'µïçµîçµÿôΣ║ÄΦºªσÅè∩╝îσ╗║Φ««µÿ╛τñ║σ£¿Σ╕èµû╣∩╝îµ£ÇΣ╜│σî╣Θàìτ┤ºΘé╗Φ╛ôσàÑµíå';
 
   @override
-  String get settings_searchFieldRowTitle => 'Search field';
+  String get settings_searchFieldRowTitle => 'µÉ£τ┤óµíå';
 
   @override
-  String get settings_allowlistExceptionsSectionTitle => '允许列表例外';
+  String get settings_allowlistExceptionsSectionTitle => 'σàüΦ«╕σêùΦí¿Σ╛ïσñû';
 
   @override
-  String get settings_indexAllowlistExceptionsTitle => '允许列表例外';
+  String get settings_indexAllowlistExceptionsTitle => 'σàüΦ«╕σêùΦí¿Σ╛ïσñû';
 
   @override
-  String get settings_indexAllowlistExceptionsSubtitle => '针对网站重大和次要问题的兼容性例外';
+  String get settings_indexAllowlistExceptionsSubtitle =>
+      'ΘÆêσ»╣τ╜æτ½ÖΘçìσñºσÆîµ¼íΦªüΘù«ΘóÿτÜäσà╝σ«╣µÇºΣ╛ïσñû';
 
   @override
   String get settings_cookiesSectionTitle => 'Cookie';
 
   @override
-  String get settings_indexCookiesSubtitle => 'Cookie 拦截模式和策略选择';
+  String get settings_indexCookiesSubtitle =>
+      'Cookie µïªµê¬µ¿íσ╝ÅσÆîτ¡ûτòÑΘÇëµï⌐';
 
   @override
-  String get settings_trackingContentSectionTitle => '跟踪内容';
+  String get settings_trackingContentSectionTitle => 'Φ╖ƒΦ╕¬σåàσ«╣';
 
   @override
-  String get settings_indexTrackingContentTitle => '跟踪内容';
+  String get settings_indexTrackingContentTitle => 'Φ╖ƒΦ╕¬σåàσ«╣';
 
   @override
-  String get settings_indexTrackingContentSubtitle => '跟踪脚本及其拦截范围';
+  String get settings_indexTrackingContentSubtitle =>
+      'Φ╖ƒΦ╕¬ΦäÜµ£¼σÅèσà╢µïªµê¬Φîâσ¢┤';
 
   @override
-  String get settings_trackersSectionTitle => '跟踪器';
+  String get settings_trackersSectionTitle => 'Φ╖ƒΦ╕¬σÖ¿';
 
   @override
-  String get settings_indexTrackersSubtitle => '加密货币挖矿程序、已知数字指纹跟踪程序和重定向跟踪器';
+  String get settings_indexTrackersSubtitle =>
+      'σèáσ»åΦ┤ºσ╕üµîûτƒ┐τ¿ïσ║ÅπÇüσ╖▓τƒÑµò░σ¡ùµîçτ║╣Φ╖ƒΦ╕¬τ¿ïσ║ÅσÆîΘçìσ«ÜσÉæΦ╖ƒΦ╕¬σÖ¿';
 
   @override
-  String get settings_advancedFingerprintingProtectionSectionTitle => '高级指纹保护';
+  String get settings_advancedFingerprintingProtectionSectionTitle =>
+      'Θ½ÿτ║ºµîçτ║╣Σ┐¥µèñ';
 
   @override
-  String get settings_indexAdvancedFingerprintingProtectionTitle => '高级指纹保护';
+  String get settings_indexAdvancedFingerprintingProtectionTitle =>
+      'Θ½ÿτ║ºµîçτ║╣Σ┐¥µèñ';
 
   @override
   String get settings_indexAdvancedFingerprintingProtectionSubtitle =>
-      '疑似数字指纹跟踪程序及标签页范围';
+      'τûæΣ╝╝µò░σ¡ùµîçτ║╣Φ╖ƒΦ╕¬τ¿ïσ║ÅσÅèµáçτ¡╛Θí╡Φîâσ¢┤';
 
   @override
-  String get settings_usageDataSectionTitle => '使用数据';
+  String get settings_usageDataSectionTitle => 'Σ╜┐τö¿µò░µì«';
 
   @override
-  String get settings_repositoriesSectionTitle => '存储库';
+  String get settings_repositoriesSectionTitle => 'σ¡ÿσé¿σ║ô';
 
   @override
-  String get settings_indexGeneralBangsSubtitle => '按需从 GitHub 同步';
+  String get settings_indexGeneralBangsSubtitle => 'µîëΘ£ÇΣ╗Ä GitHub σÉîµ¡Ñ';
 
   @override
-  String get settings_generalBangsTileTitle => '通用 Bang';
+  String get settings_generalBangsTileTitle => 'ΘÇÜτö¿ Bang';
 
   @override
-  String get settings_generalBangsTileKeywords => '存储库,仓库';
+  String get settings_generalBangsTileKeywords => 'σ¡ÿσé¿σ║ô,Σ╗ôσ║ô';
 
   @override
-  String get settings_generalBangsTileSubtitle => '按需从 GitHub 同步';
+  String get settings_generalBangsTileSubtitle => 'µîëΘ£ÇΣ╗Ä GitHub σÉîµ¡Ñ';
 
   @override
-  String get settings_indexKagiBangsSubtitle => '按需从 GitHub 同步';
+  String get settings_indexKagiBangsSubtitle => 'µîëΘ£ÇΣ╗Ä GitHub σÉîµ¡Ñ';
 
   @override
   String get settings_kagiBangsTileTitle => 'Kagi Bang';
 
   @override
-  String get settings_kagiBangsTileKeywords => '存储库,仓库';
+  String get settings_kagiBangsTileKeywords => 'σ¡ÿσé¿σ║ô,Σ╗ôσ║ô';
 
   @override
-  String get settings_kagiBangsTileSubtitle => '按需从 GitHub 同步';
+  String get settings_kagiBangsTileSubtitle => 'µîëΘ£ÇΣ╗Ä GitHub σÉîµ¡Ñ';
 
   @override
-  String get settings_extensionsSectionTitle => '扩展';
+  String get settings_extensionsSectionTitle => 'µë⌐σ▒ò';
 
   @override
-  String get settings_updatesSectionTitle => '更新';
+  String get settings_updatesSectionTitle => 'µ¢┤µû░';
 
   @override
-  String get settings_securitySectionTitle => '安全';
+  String get settings_securitySectionTitle => 'σ«ëσà¿';
 
   @override
-  String get settings_actionResetToDefaults => '恢复默认';
+  String get settings_actionResetToDefaults => 'µüóσñìΘ╗ÿΦ«ñ';
 
   @override
-  String get settings_menuLayoutTitle => '自定义菜单';
+  String get settings_menuLayoutTitle => 'Φç¬σ«ÜΣ╣ëΦÅ£σìò';
 
   @override
-  String get settings_menuLayoutHintSections => '拖动以调整顺序。关闭某个版块即可在菜单中隐藏它。';
+  String get settings_menuLayoutHintSections =>
+      'µïûσè¿Σ╗ÑΦ░âµò┤Θí║σ║ÅπÇéσà│Θù¡µƒÉΣ╕¬τëêσ¥ùσì│σÅ»σ£¿ΦÅ£σìòΣ╕¡ΘÜÉΦùÅσ«âπÇé';
 
   @override
-  String get settings_menuLayoutHintSectionItems => '拖动以调整此版块中各行的顺序。';
+  String get settings_menuLayoutHintSectionItems =>
+      'µïûσè¿Σ╗ÑΦ░âµò┤µ¡ñτëêσ¥ùΣ╕¡σÉäΦíîτÜäΘí║σ║ÅπÇé';
 
   @override
-  String get settings_menuLayoutHintSubItems => '拖动以调整此项展开后各行的顺序。';
+  String get settings_menuLayoutHintSubItems =>
+      'µïûσè¿Σ╗ÑΦ░âµò┤µ¡ñΘí╣σ▒òσ╝ÇσÉÄσÉäΦíîτÜäΘí║σ║ÅπÇé';
 
   @override
-  String get settings_moduleSurfaceHint => '拖动以调整顺序。关闭某个版块即可在此处隐藏它，不会影响另一个页面。';
+  String get settings_moduleSurfaceHint =>
+      'µïûσè¿Σ╗ÑΦ░âµò┤Θí║σ║ÅπÇéσà│Θù¡µƒÉΣ╕¬τëêσ¥ùσì│σÅ»σ£¿µ¡ñσñäΘÜÉΦùÅσ«â∩╝îΣ╕ìΣ╝Üσ╜▒σôìσÅªΣ╕ÇΣ╕¬Θí╡Θ¥óπÇé';
 
   @override
-  String get settings_moduleSurfaceTitleHome => '自定义主页';
+  String get settings_moduleSurfaceTitleHome => 'Φç¬σ«ÜΣ╣ëΣ╕╗Θí╡';
 
   @override
-  String get settings_moduleSurfaceTitleNewTab => '自定义新标签页';
+  String get settings_moduleSurfaceTitleNewTab => 'Φç¬σ«ÜΣ╣ëµû░µáçτ¡╛Θí╡';
 
   @override
-  String get settings_homeSearchBarRowTitle => '搜索栏';
+  String get settings_homeSearchBarRowTitle => 'µÉ£τ┤óµáÅ';
 
   @override
-  String get settings_proxyTitle => '代理';
+  String get settings_proxyTitle => 'Φ┐₧µÄÑ';
 
   @override
-  String get settings_proxySubtitle => '管理代理连接并选择哪些标签页使用它们。';
+  String get settings_proxySubtitle =>
+      'τ«íτÉå TorπÇüVPN σÆîΣ╗úτÉåΦ┐₧µÄÑ∩╝îσ╣╢ΘÇëµï⌐σô¬Σ║¢µáçτ¡╛Θí╡Σ╜┐τö¿σ«âΣ╗¼πÇé';
 
   @override
-  String get settings_proxyConnectionsTitle => '代理连接';
+  String get settings_proxyConnectionsTitle => 'Σ╗úτÉåΦ┐₧µÄÑ';
 
   @override
   String get settings_proxyConnectionsKeywords =>
-      'sing-box,socks,vpn,wireguard,tor,onion,网桥,obfs4,snowflake,节点,翻墙';
+      'sing-box,socks,vpn,wireguard,tor,onion,τ╜æµíÑ,obfs4,snowflake,Φèéτé╣,τ┐╗σóÖ';
 
   @override
-  String get settings_proxyConnectionsSubtitle => '管理代理配置和连接';
+  String get settings_proxyConnectionsSubtitle => 'τ«íτÉåΣ╗úτÉåΘàìτ╜«σÆîΦ┐₧µÄÑ';
 
   @override
-  String get settings_proxyRoutingTitle => '代理路由';
+  String get settings_proxyRoutingTitle => 'Σ╗úτÉåΦ╖»τö▒';
 
   @override
-  String get settings_proxyRoutingKeywords => '路由,容器,分流';
+  String get settings_proxyRoutingKeywords => 'Φ╖»τö▒,σ«╣σÖ¿,σêåµ╡ü';
 
   @override
-  String get settings_proxyRoutingSubtitle => '选择承载普通和隐私标签页的代理';
+  String get settings_proxyRoutingSubtitle =>
+      'ΘÇëµï⌐µë┐Φ╜╜µÖ«ΘÇÜσÆîΘÜÉτºüµáçτ¡╛Θí╡τÜäΣ╗úτÉå';
 
   @override
-  String get settings_proxyLogsTitle => '代理日志';
+  String get settings_proxyLogsTitle => 'Σ╗úτÉåµùÑσ┐ù';
 
   @override
-  String get settings_proxyLogsKeywords => '日志,记录,诊断,调试,跟踪,详细,故障排除,级别,log';
+  String get settings_proxyLogsKeywords =>
+      'µùÑσ┐ù,Φ«░σ╜ò,Φ»èµû¡,Φ░âΦ»ò,Φ╖ƒΦ╕¬,Φ»ªτ╗å,µòàΘÜ£µÄÆΘÖñ,τ║ºσê½,log';
 
   @override
-  String get settings_toolbarLayoutTitle => '工具栏与布局';
+  String get settings_toolbarLayoutTitle => 'σ╖Ñσà╖µáÅΣ╕Äσ╕âσ▒Ç';
 
   @override
-  String get settings_toolbarLayoutSearchHint => '搜索工具栏与布局设置';
+  String get settings_toolbarLayoutSearchHint =>
+      'µÉ£τ┤óσ╖Ñσà╖µáÅΣ╕Äσ╕âσ▒ÇΦ«╛τ╜«';
 
   @override
-  String get settings_privacySecurityTitle => '隐私与安全';
+  String get settings_privacySecurityTitle => 'ΘÜÉτºüΣ╕Äσ«ëσà¿';
 
   @override
-  String get settings_privacySecuritySubtitle => '跟踪保护、指纹识别、浏览数据和网络加固。';
+  String get settings_privacySecuritySubtitle =>
+      'Φ╖ƒΦ╕¬Σ┐¥µèñπÇüµ╡ÅΦºêµò░µì«σÆîσ«ëσà¿πÇé';
 
   @override
-  String get settings_trackingProtectionExceptionsTitle => '跟踪保护例外';
+  String get settings_trackingProtectionExceptionsTitle => 'Φ╖ƒΦ╕¬Σ┐¥µèñΣ╛ïσñû';
 
   @override
-  String get settings_trackingProtectionExceptionsKeywords => '例外';
+  String get settings_trackingProtectionExceptionsKeywords => 'Σ╛ïσñû';
 
   @override
-  String get settings_trackingProtectionExceptionsTileSubtitle => '已停用跟踪保护的网站';
+  String get settings_trackingProtectionExceptionsTileSubtitle =>
+      'σ╖▓σü£τö¿Φ╖ƒΦ╕¬Σ┐¥µèñτÜäτ╜æτ½Ö';
 
   @override
-  String get settings_autoDeleteBrowsingDataTitle => '自动删除浏览数据';
+  String get settings_autoDeleteBrowsingDataTitle => 'Φç¬σè¿σêáΘÖñµ╡ÅΦºêµò░µì«';
 
   @override
   String get settings_autoDeleteBrowsingDataKeywords =>
-      '无痕,隐私模式,退出,关闭,退出时删除,删除数据,incognito,quit';
+      'µùáτùò,ΘÜÉτºüµ¿íσ╝Å,ΘÇÇσç║,σà│Θù¡,ΘÇÇσç║µù╢σêáΘÖñ,σêáΘÖñµò░µì«,incognito,quit';
 
   @override
   String get settings_autoDeleteBrowsingDataSubtitle =>
-      '在退出时或每次启动 Cat Browser 时删除所选的浏览数据';
+      'σ£¿ΘÇÇσç║µù╢µêûµ»Åµ¼íσÉ»σè¿ Cat Browser µù╢σêáΘÖñµëÇΘÇëτÜäµ╡ÅΦºêµò░µì«';
 
   @override
   String get settings_autoDeleteBrowsingDataQuitOnlySubtitle =>
-      '在退出 Cat Browser 时删除所选的浏览数据';
+      'σ£¿ΘÇÇσç║ Cat Browser µù╢σêáΘÖñµëÇΘÇëτÜäµ╡ÅΦºêµò░µì«';
 
   @override
-  String get settings_autoDeleteOnStartTitle => '启动时也删除';
+  String get settings_autoDeleteOnStartTitle => 'σÉ»σè¿µù╢Σ╣ƒσêáΘÖñ';
 
   @override
   String get settings_autoDeleteOnStartSubtitle =>
-      '适用于未通过“退出”结束的会话，例如 Cat Browser 被划掉或被 Android 在后台关闭。关闭此项后，这类会话的数据会保留到下次退出。';
+      'ΘÇéτö¿Σ║Äµ£¬ΘÇÜΦ┐çΓÇ£ΘÇÇσç║ΓÇ¥τ╗ôµ¥ƒτÜäΣ╝ÜΦ»¥∩╝îΣ╛ïσªé Cat Browser Φó½σêÆµÄëµêûΦó½ Android σ£¿σÉÄσÅ░σà│Θù¡πÇéσà│Θù¡µ¡ñΘí╣σÉÄ∩╝îΦ┐Öτ▒╗Σ╝ÜΦ»¥τÜäµò░µì«Σ╝ÜΣ┐¥τòÖσê░Σ╕ïµ¼íΘÇÇσç║πÇé';
 
   @override
-  String get settings_confirmBeforeQuitTitle => '退出前确认';
+  String get settings_confirmBeforeQuitTitle => 'ΘÇÇσç║σëìτí«Φ«ñ';
 
   @override
   String get settings_confirmBeforeQuitKeywords =>
-      '退出,关闭,确认,对话框,不再询问,quit,exit';
+      'ΘÇÇσç║,σà│Θù¡,τí«Φ«ñ,σ»╣Φ»¥µíå,Σ╕ìσåìΦ»óΘù«,quit,exit';
 
   @override
   String get settings_confirmBeforeQuitSubtitle =>
-      '在“退出”关闭 Cat Browser 前询问。长按“退出”可跳过询问。';
+      'σ£¿ΓÇ£ΘÇÇσç║ΓÇ¥σà│Θù¡ Cat Browser σëìΦ»óΘù«πÇéΘò┐µîëΓÇ£ΘÇÇσç║ΓÇ¥σÅ»Φ╖│Φ┐çΦ»óΘù«πÇé';
 
   @override
-  String get settings_trackingProtectionExceptionsSearchHint => '搜索例外网址';
+  String get settings_trackingProtectionExceptionsSearchHint =>
+      'µÉ£τ┤óΣ╛ïσñûτ╜æσ¥Ç';
 
   @override
-  String get settings_trackingProtectionExceptionsDeleteAll => '全部删除';
+  String get settings_trackingProtectionExceptionsDeleteAll => 'σà¿Θâ¿σêáΘÖñ';
 
   @override
-  String get settings_trackingProtectionExceptionsSectionTitle => '例外列表';
+  String get settings_trackingProtectionExceptionsSectionTitle =>
+      'Σ╛ïσñûσêùΦí¿';
 
   @override
-  String get settings_trackingProtectionExceptionsEntrySubtitle => '已停用跟踪保护的网站';
+  String get settings_trackingProtectionExceptionsEntrySubtitle =>
+      'σ╖▓σü£τö¿Φ╖ƒΦ╕¬Σ┐¥µèñτÜäτ╜æτ½Ö';
 
   @override
-  String get settings_trackingProtectionExceptionsRemoveTooltip => '移除例外';
+  String get settings_trackingProtectionExceptionsRemoveTooltip =>
+      'τº╗ΘÖñΣ╛ïσñû';
 
   @override
-  String get settings_trackingProtectionExceptionsEmptyTitle => '没有例外';
+  String get settings_trackingProtectionExceptionsEmptyTitle => 'µ▓íµ£ëΣ╛ïσñû';
 
   @override
   String get settings_trackingProtectionExceptionsEmptySubtitle =>
-      '添加到例外中的网站将显示在这里';
+      'µ╖╗σèáσê░Σ╛ïσñûΣ╕¡τÜäτ╜æτ½Öσ░åµÿ╛τñ║σ£¿Φ┐ÖΘçî';
 
   @override
-  String get settings_trackingProtectionExceptionsErrorTitle => '加载例外时出错';
+  String get settings_trackingProtectionExceptionsErrorTitle =>
+      'σèáΦ╜╜Σ╛ïσñûµù╢σç║ΘöÖ';
 
   @override
   String settings_trackingProtectionExceptionsDeleteAllFailed(String error) {
-    return '无法删除例外：$error';
+    return 'µùáµ│òσêáΘÖñΣ╛ïσñû∩╝Ü$error';
   }
 
   @override
   String settings_trackingProtectionExceptionsRemoveFailed(String error) {
-    return '无法移除例外：$error';
+    return 'µùáµ│òτº╗ΘÖñΣ╛ïσñû∩╝Ü$error';
   }
 
   @override
-  String get settings_deleteBrowsingDataTileTitle => '删除浏览数据';
+  String get settings_deleteBrowsingDataTileTitle => 'σêáΘÖñµ╡ÅΦºêµò░µì«';
 
   @override
-  String get settings_deleteBrowsingDataTileKeywords => '清除数据,清除';
+  String get settings_deleteBrowsingDataTileKeywords => 'µ╕àΘÖñµò░µì«,µ╕àΘÖñ';
 
   @override
-  String get settings_autoClearHistoryTitle => '自动清除历史记录';
+  String get settings_autoClearHistoryTitle => 'Φç¬σè¿µ╕àΘÖñσÄåσÅ▓Φ«░σ╜ò';
 
   @override
-  String get settings_autoClearHistoryKeywords => '历史记录保留';
+  String get settings_autoClearHistoryKeywords => 'σÄåσÅ▓Φ«░σ╜òΣ┐¥τòÖ';
 
   @override
-  String get settings_autoClearHistorySubtitle => '自动删除早于所选时间段的浏览历史记录';
+  String get settings_autoClearHistorySubtitle =>
+      'Φç¬σè¿σêáΘÖñµù⌐Σ║ÄµëÇΘÇëµù╢Θù┤µ«╡τÜäµ╡ÅΦºêσÄåσÅ▓Φ«░σ╜ò';
 
   @override
-  String get settings_autoClearUnassignedTabsTitle => '自动清除未分配的标签页';
+  String get settings_autoClearUnassignedTabsTitle =>
+      'Φç¬σè¿µ╕àΘÖñµ£¬σêåΘàìτÜäµáçτ¡╛Θí╡';
 
   @override
-  String get settings_autoClearUnassignedTabsKeywords => '清理标签页';
+  String get settings_autoClearUnassignedTabsKeywords => 'µ╕àτÉåµáçτ¡╛Θí╡';
 
   @override
-  String get settings_autoClearUnassignedTabsSubtitle => '自动关闭早于所选时间段的未分配标签页';
+  String get settings_autoClearUnassignedTabsSubtitle =>
+      'Φç¬σè¿σà│Θù¡µù⌐Σ║ÄµëÇΘÇëµù╢Θù┤µ«╡τÜäµ£¬σêåΘàìµáçτ¡╛Θí╡';
 
   @override
-  String get settings_durationNever => '从不';
+  String get settings_durationNever => 'Σ╗ÄΣ╕ì';
 
   @override
-  String get settings_duration1Day => '1 天';
+  String get settings_duration1Day => '1 σñ⌐';
 
   @override
-  String get settings_duration3Days => '3 天';
+  String get settings_duration3Days => '3 σñ⌐';
 
   @override
-  String get settings_duration1Week => '1 周';
+  String get settings_duration1Week => '1 σæ¿';
 
   @override
-  String get settings_duration2Weeks => '2 周';
+  String get settings_duration2Weeks => '2 σæ¿';
 
   @override
-  String get settings_duration1Month => '1 个月';
+  String get settings_duration1Month => '1 Σ╕¬µ£ê';
 
   @override
-  String get settings_duration3Months => '3 个月';
+  String get settings_duration3Months => '3 Σ╕¬µ£ê';
 
   @override
-  String get settings_globalPrivacyControlTitle => '全球隐私控制（GPC）';
+  String get settings_globalPrivacyControlTitle =>
+      'σà¿τÉâΘÜÉτºüµÄºσê╢∩╝êGPC∩╝ë';
 
   @override
   String get settings_globalPrivacyControlKeywords =>
       'gpc,global privacy control';
 
   @override
-  String get settings_screenshotProtectionTitle => '截图保护';
+  String get settings_screenshotProtectionTitle => 'µê¬σ¢╛Σ┐¥µèñ';
 
   @override
-  String get settings_screenshotProtectionKeywords => '截图,截屏,录屏';
+  String get settings_screenshotProtectionKeywords => 'µê¬σ¢╛,µê¬σ▒Å,σ╜òσ▒Å';
 
   @override
   String get settings_screenshotProtectionSubtitle =>
-      '在 Android 上阻止对此应用进行截图和录屏。';
+      'σ£¿ Android Σ╕èΘÿ╗µ¡óσ»╣µ¡ñσ║öτö¿Φ┐¢Φíîµê¬σ¢╛σÆîσ╜òσ▒ÅπÇé';
 
   @override
-  String get settings_allowPrivateTabScreenshotsTitle => '允许在隐私标签页中截图';
+  String get settings_allowPrivateTabScreenshotsTitle =>
+      'σàüΦ«╕σ£¿ΘÜÉτºüµáçτ¡╛Θí╡Σ╕¡µê¬σ¢╛';
 
   @override
-  String get settings_allowPrivateTabScreenshotsKeywords => '截图,截屏,无痕,隐私';
+  String get settings_allowPrivateTabScreenshotsKeywords =>
+      'µê¬σ¢╛,µê¬σ▒Å,µùáτùò,ΘÜÉτºü';
 
   @override
   String get settings_allowPrivateTabScreenshotsOverriddenSubtitle =>
-      '已被截图保护覆盖，截图保护会阻止所有标签页的截取。';
+      'σ╖▓Φó½µê¬σ¢╛Σ┐¥µèñΦªåτ¢û∩╝îµê¬σ¢╛Σ┐¥µèñΣ╝ÜΘÿ╗µ¡óµëÇµ£ëµáçτ¡╛Θí╡τÜäµê¬σÅûπÇé';
 
   @override
   String get settings_allowPrivateTabScreenshotsSubtitle =>
-      '隐私标签页可以被截图和录屏，并会显示在应用切换器的预览中。';
+      'ΘÜÉτºüµáçτ¡╛Θí╡σÅ»Σ╗ÑΦó½µê¬σ¢╛σÆîσ╜òσ▒Å∩╝îσ╣╢Σ╝Üµÿ╛τñ║σ£¿σ║öτö¿σêçµìóσÖ¿τÜäΘóäΦºêΣ╕¡πÇé';
 
   @override
-  String get settings_httpsOnlyModeTitle => '阻止不安全的 HTTP 连接';
+  String get settings_httpsOnlyModeTitle => 'Σ╗àΣ╜┐τö¿σ«ëσà¿Φ┐₧µÄÑ∩╝êHTTPS∩╝ë';
 
   @override
-  String get settings_httpsOnlyModeKeywords => '仅 https,https only';
+  String get settings_httpsOnlyModeKeywords =>
+      'Σ╗à https, https only, Θÿ╗µ¡óΣ╕ìσ«ëσà¿τÜä http';
 
   @override
-  String get settings_httpsOnlyModeDisabledLabel => '停用';
+  String get settings_httpsOnlyModeDisabledLabel => 'σü£τö¿';
 
   @override
-  String get settings_httpsOnlyModeEnabledLabel => '启用';
+  String get settings_httpsOnlyModeEnabledLabel => 'σÉ»τö¿';
 
   @override
-  String get settings_httpsOnlyModePrivateOnlyLabel => '仅隐私模式';
+  String get settings_httpsOnlyModePrivateOnlyLabel => 'Σ╗àΘÜÉτºüµ¿íσ╝Å';
 
   @override
-  String get settings_dnsOverHttpsTileTitle => 'DNS over HTTPS';
+  String get settings_dnsOverHttpsTileTitle => 'σ«ëσà¿ DNS';
 
   @override
-  String get settings_enhancedTrackingProtectionTitle => '增强型跟踪保护';
+  String get settings_enhancedTrackingProtectionTitle =>
+      'σó₧σ╝║σ₧ïΦ╖ƒΦ╕¬Σ┐¥µèñ';
 
   @override
-  String get settings_enhancedTrackingProtectionKeywords => 'etp,标准,严格,自定义';
+  String get settings_enhancedTrackingProtectionKeywords =>
+      'etp,µáçσçå,Σ╕Ñµá╝,Φç¬σ«ÜΣ╣ë';
 
   @override
-  String get settings_trackingProtectionDisabledLabel => '停用';
+  String get settings_trackingProtectionDisabledLabel => 'σü£τö¿';
 
   @override
-  String get settings_trackingProtectionStandardLabel => '标准';
+  String get settings_trackingProtectionStandardLabel => 'µáçσçå';
 
   @override
   String get settings_trackingProtectionStandardSubtitle =>
-      '拦截较少的跟踪器类别，在保护与兼容性之间取得平衡。';
+      'µïªµê¬Φ╛âσ░æτÜäΦ╖ƒΦ╕¬σÖ¿τ▒╗σê½∩╝îσ£¿Σ┐¥µèñΣ╕Äσà╝σ«╣µÇºΣ╣ïΘù┤σÅûσ╛ùσ╣│ΦííπÇé';
 
   @override
-  String get settings_trackingProtectionStrictLabel => '严格';
+  String get settings_trackingProtectionStrictLabel => 'Σ╕Ñµá╝';
 
   @override
   String get settings_trackingProtectionStrictSubtitle =>
-      '拦截更多跟踪器类别（包括跟踪内容），但可能导致部分网站无法正常工作。';
+      'µïªµê¬µ¢┤σñÜΦ╖ƒΦ╕¬σÖ¿τ▒╗σê½∩╝êσîàµï¼Φ╖ƒΦ╕¬σåàσ«╣∩╝ë∩╝îΣ╜åσÅ»Φâ╜σ»╝Φç┤Θâ¿σêåτ╜æτ½Öµùáµ│òµ¡úσ╕╕σ╖ÑΣ╜£πÇé';
 
   @override
-  String get settings_trackingProtectionCustomLabel => '自定义';
+  String get settings_trackingProtectionCustomLabel => 'Φç¬σ«ÜΣ╣ë';
 
   @override
-  String get settings_trackingProtectionCustomSubtitle => '选择要拦截的跟踪器和脚本。';
+  String get settings_trackingProtectionCustomSubtitle =>
+      'ΘÇëµï⌐Φªüµïªµê¬τÜäΦ╖ƒΦ╕¬σÖ¿σÆîΦäÜµ£¼πÇé';
 
   @override
-  String get settings_trackerStatisticsTitle => '跟踪器统计';
+  String get settings_trackerStatisticsTitle => 'Φ╖ƒΦ╕¬σÖ¿τ╗ƒΦ«í';
 
   @override
-  String get settings_trackerStatisticsKeywords => '跟踪器,统计,已拦截的跟踪器,内容拦截,数据库';
+  String get settings_trackerStatisticsKeywords =>
+      'Φ╖ƒΦ╕¬σÖ¿,τ╗ƒΦ«í,σ╖▓µïªµê¬τÜäΦ╖ƒΦ╕¬σÖ¿,σåàσ«╣µïªµê¬,µò░µì«σ║ô';
 
   @override
   String get settings_trackerStatisticsSubtitle =>
-      '按类别每天统计被拦截的跟踪器数量。仅存储数量和日期，不存储你访问的网站。删除浏览历史记录时也会一并删除。需要重启应用。';
+      'µîëτ▒╗σê½µ»Åσñ⌐τ╗ƒΦ«íΦó½µïªµê¬τÜäΦ╖ƒΦ╕¬σÖ¿µò░ΘçÅπÇéΣ╗àσ¡ÿσé¿µò░ΘçÅσÆîµùÑµ£ƒ∩╝îΣ╕ìσ¡ÿσé¿Σ╜áΦ«┐Θù«τÜäτ╜æτ½ÖπÇéσêáΘÖñµ╡ÅΦºêσÄåσÅ▓Φ«░σ╜òµù╢Σ╣ƒΣ╝ÜΣ╕Çσ╣╢σêáΘÖñπÇéΘ£ÇΦªüΘçìσÉ»σ║öτö¿πÇé';
 
   @override
-  String get settings_bounceTrackingProtectionTitle => '反弹跟踪保护';
+  String get settings_bounceTrackingProtectionTitle => 'σÅìσ╝╣Φ╖ƒΦ╕¬Σ┐¥µèñ';
 
   @override
-  String get settings_bounceTrackingProtectionKeywords => '重定向跟踪器';
+  String get settings_bounceTrackingProtectionKeywords => 'Θçìσ«ÜσÉæΦ╖ƒΦ╕¬σÖ¿';
 
   @override
   String get settings_bounceTrackingProtectionSubtitle =>
-      '拦截通过网站之间的中间网址重定向收集数据的重定向跟踪器';
+      'µïªµê¬ΘÇÜΦ┐çτ╜æτ½ÖΣ╣ïΘù┤τÜäΣ╕¡Θù┤τ╜æσ¥ÇΘçìσ«ÜσÉæµö╢Θ¢åµò░µì«τÜäΘçìσ«ÜσÉæΦ╖ƒΦ╕¬σÖ¿';
 
   @override
-  String get settings_queryParameterStrippingTitle => '查询参数剥离';
+  String get settings_queryParameterStrippingTitle => 'µƒÑΦ»óσÅéµò░σëÑτª╗';
 
   @override
-  String get settings_queryParameterStrippingKeywords => 'utm,跟踪参数';
+  String get settings_queryParameterStrippingKeywords => 'utm,Φ╖ƒΦ╕¬σÅéµò░';
 
   @override
-  String get settings_queryParameterStrippingSubtitle => '从网址中移除跟踪参数，防止跨网站用户跟踪';
+  String get settings_queryParameterStrippingSubtitle =>
+      'Σ╗Äτ╜æσ¥ÇΣ╕¡τº╗ΘÖñΦ╖ƒΦ╕¬σÅéµò░∩╝îΘÿ▓µ¡óΦ╖¿τ╜æτ½Öτö¿µê╖Φ╖ƒΦ╕¬';
 
   @override
-  String get settings_queryParameterStrippingDisabledLabel => '停用';
+  String get settings_queryParameterStrippingDisabledLabel => 'σü£τö¿';
 
   @override
-  String get settings_queryParameterStrippingEnabledLabel => '启用';
+  String get settings_queryParameterStrippingEnabledLabel => 'σÉ»τö¿';
 
   @override
-  String get settings_queryParameterStrippingPrivateOnlyLabel => '仅隐私模式';
+  String get settings_queryParameterStrippingPrivateOnlyLabel =>
+      'Σ╗àΘÜÉτºüµ¿íσ╝Å';
 
   @override
-  String get settings_uBlockFilterListsTileTitle => 'uBlock 过滤规则列表与加固';
+  String get settings_uBlockFilterListsTileTitle =>
+      'uBlock Origin Φ┐çµ╗ñσêùΦí¿';
 
   @override
-  String get settings_uBlockFilterListsTileKeywords => 'ublock,过滤器,过滤规则,广告拦截';
+  String get settings_uBlockFilterListsTileKeywords =>
+      'ublock, Φ┐çµ╗ñσÖ¿, σ╣┐σæèµïªµê¬, σèáσ¢║, hardenings';
 
   @override
   String get settings_uBlockFilterListsTileSubtitle =>
-      '管理过滤规则列表并应用 Cat Browser 加固';
+      'τ«íτÉåΦ┐çµ╗ñΦºäσêÖσêùΦí¿σ╣╢σ║öτö¿ Cat Browser σèáσ¢║';
 
   @override
-  String get settings_fissionEnabledTitle => 'Fission（站点隔离）';
+  String get settings_fissionEnabledTitle => 'Fission∩╝êτ½Öτé╣ΘÜöτª╗∩╝ë';
 
   @override
-  String get settings_fissionEnabledKeywords => '站点隔离,网站隔离';
+  String get settings_fissionEnabledKeywords => 'τ½Öτé╣ΘÜöτª╗,τ╜æτ½ÖΘÜöτª╗';
 
   @override
   String get settings_fissionEnabledSubtitle =>
-      '将每个网站隔离到单独的系统进程中以提高安全性。需要重启应用。';
+      'σ░åµ»ÅΣ╕¬τ╜æτ½ÖΘÜöτª╗σê░σìòτï¼τÜäτ│╗τ╗ƒΦ┐¢τ¿ïΣ╕¡Σ╗ÑµÅÉΘ½ÿσ«ëσà¿µÇºπÇéΘ£ÇΦªüΘçìσÉ»σ║öτö¿πÇé';
 
   @override
-  String get settings_safeBrowsingMalwareTitle => '安全浏览恶意软件防护';
+  String get settings_safeBrowsingMalwareTitle =>
+      'σ«ëσà¿µ╡ÅΦºêµü╢µäÅΦ╜»Σ╗╢Θÿ▓µèñ';
 
   @override
   String get settings_safeBrowsingMalwareKeywords =>
-      'google safe browsing,安全浏览,谷歌';
+      'google safe browsing,σ«ëσà¿µ╡ÅΦºê,Φ░╖µ¡î';
 
   @override
-  String get settings_safeBrowsingMalwareSubtitle => '对危险网站和恶意下载发出警告。';
+  String get settings_safeBrowsingMalwareSubtitle =>
+      'σ»╣σì▒ΘÖ⌐τ╜æτ½ÖσÆîµü╢µäÅΣ╕ïΦ╜╜σÅæσç║Φ¡ªσæèπÇé';
 
   @override
-  String get settings_safeBrowsingPhishingTitle => '安全浏览钓鱼防护';
+  String get settings_safeBrowsingPhishingTitle => 'σ«ëσà¿µ╡ÅΦºêΘÆôΘ▒╝Θÿ▓µèñ';
 
   @override
   String get settings_safeBrowsingPhishingKeywords =>
-      'google safe browsing,安全浏览,钓鱼,谷歌';
+      'google safe browsing,σ«ëσà¿µ╡ÅΦºê,ΘÆôΘ▒╝,Φ░╖µ¡î';
 
   @override
-  String get settings_safeBrowsingPhishingSubtitle => '对欺诈网站和虚假登录页面发出警告。';
+  String get settings_safeBrowsingPhishingSubtitle =>
+      'σ»╣µ¼║Φ»êτ╜æτ½ÖσÆîΦÖÜσüçτÖ╗σ╜òΘí╡Θ¥óσÅæσç║Φ¡ªσæèπÇé';
 
   @override
-  String get settings_extensionsWebApiTitle => '扩展 Web API';
+  String get settings_extensionsWebApiTitle => 'µë⌐σ▒ò Web API';
 
   @override
-  String get settings_extensionsWebApiKeywords => '扩展 api,extension api';
+  String get settings_extensionsWebApiKeywords => 'µë⌐σ▒ò api,extension api';
 
   @override
   String get settings_extensionsWebApiSubtitle =>
-      '向网页内容和扩展页面开放 mozAddonManager API。需要重启应用。';
+      'σÉæτ╜æΘí╡σåàσ«╣σÆîµë⌐σ▒òΘí╡Θ¥óσ╝Çµö╛ mozAddonManager APIπÇéΘ£ÇΦªüΘçìσÉ»σ║öτö¿πÇé';
 
   @override
-  String get settings_appOpeningProtectionSectionHeader => '应用打开保护';
+  String get settings_appOpeningProtectionSectionHeader => 'σ║öτö¿µëôσ╝ÇΣ┐¥µèñ';
 
   @override
-  String get settings_blockAppsOpeningBrowserTitle => '阻止应用打开你的浏览器';
+  String get settings_blockAppsOpeningBrowserTitle =>
+      'Θÿ╗µ¡óσ║öτö¿µëôσ╝ÇΣ╜áτÜäµ╡ÅΦºêσÖ¿';
 
   @override
   String get settings_blockAppsOpeningBrowserKeywords =>
-      'intent gatekeeper,外部应用';
+      'intent gatekeeper,σñûΘâ¿σ║öτö¿';
 
   @override
   String get settings_blockAppsOpeningBrowserSubtitle =>
-      '打开其他应用发送给 Cat Browser 的链接前先询问。';
+      'µëôσ╝Çσà╢Σ╗ûσ║öτö¿σÅæΘÇüτ╗Ö Cat Browser τÜäΘô╛µÄÑσëìσàêΦ»óΘù«πÇé';
 
   @override
-  String get settings_managedAppsSectionHeader => '已管理的应用';
+  String get settings_managedAppsSectionHeader => 'σ╖▓τ«íτÉåτÜäσ║öτö¿';
 
   @override
-  String get settings_managedAppAlwaysAllowedLabel => '始终允许';
+  String get settings_managedAppAlwaysAllowedLabel => 'σºïτ╗êσàüΦ«╕';
 
   @override
-  String get settings_managedAppAlwaysBlockedLabel => '始终阻止';
+  String get settings_managedAppAlwaysBlockedLabel => 'σºïτ╗êΘÿ╗µ¡ó';
 
   @override
-  String get settings_managedAppActionAllow => '允许';
+  String get settings_managedAppActionAllow => 'σàüΦ«╕';
 
   @override
-  String get settings_managedAppActionBlock => '阻止';
+  String get settings_managedAppActionBlock => 'Θÿ╗µ¡ó';
 
   @override
-  String get settings_browserLanguagesTileTitle => '浏览器语言';
+  String get settings_browserLanguagesTileTitle => 'τ╜æτ½ÖΦ»¡Φ¿Ç';
 
   @override
-  String get settings_browserLanguagesTileSubtitle => '配置向网站公开的语言偏好';
+  String get settings_browserLanguagesTileSubtitle =>
+      'σ╕îµ£¢τ╜æτ½Öτö¿σô¬Σ║¢Φ»¡Φ¿Çµÿ╛τñ║';
 
   @override
-  String get settings_fingerprintProtectionTileTitle => '指纹保护';
+  String get settings_fingerprintProtectionTileTitle => 'µîçτ║╣Σ┐¥µèñ';
 
   @override
-  String get settings_fingerprintProtectionTileSubtitle => '精细控制浏览器指纹识别';
+  String get settings_fingerprintProtectionTileSubtitle =>
+      'τ▓╛τ╗åµÄºσê╢µ╡ÅΦºêσÖ¿µîçτ║╣Φ»åσê½';
 
   @override
-  String get settings_resistFingerprintingTileTitle => '抵御指纹识别';
+  String get settings_resistFingerprintingTileTitle => 'µè╡σ╛íµîçτ║╣Φ»åσê½';
 
   @override
   String get settings_resistFingerprintingTileKeywords =>
       'rfp,resist fingerprinting';
 
   @override
-  String get settings_resistFingerprintingTileSubtitle => '高级指纹保护加固';
+  String get settings_resistFingerprintingTileSubtitle =>
+      'Θ½ÿτ║ºµîçτ║╣Σ┐¥µèñσèáσ¢║';
 
   @override
-  String get settings_lnaEnabledTitle => '本地网络访问';
+  String get settings_lnaEnabledTitle => 'Σ┐¥µèñµ£¼σ£░σ║öτö¿σÆîΦ«╛σñç';
 
   @override
-  String get settings_lnaEnabledKeywords => 'lan,局域网,本地网络';
+  String get settings_lnaEnabledKeywords =>
+      'lan, µ£¼σ£░τ╜æτ╗£, µ£¼σ£░τ╜æτ╗£Φ«┐Θù«, localhost, µ£¼σ£░Φ┐₧µÄÑ';
 
   @override
-  String get settings_lnaEnabledSubtitle => '启用对本地网络和设备访问的拦截';
+  String get settings_lnaEnabledSubtitle =>
+      'µÄºσê╢τ╜æτ½ÖΦâ╜σÉªΦ┐₧µÄÑµ¡ñΦ«╛σñçΣ╕èτÜäσ║öτö¿µêûΣ╜áτ╜æτ╗£Σ╕¡τÜäΦ«╛σñç';
 
   @override
-  String get settings_lnaBlockingTitle => '拦截本地网络请求';
+  String get settings_lnaBlockingTitle => 'µ£¼σ£░Φ┐₧µÄÑσëìσàêΦ»óΘù«';
 
   @override
-  String get settings_lnaBlockingKeywords => 'lan,局域网,本地网络';
+  String get settings_lnaBlockingKeywords =>
+      'lan, µ£¼σ£░τ╜æτ╗£, localhost, Θÿ╗µ¡óµ£¼σ£░Φ┐₧µÄÑ';
 
   @override
-  String get settings_lnaBlockingSubtitle => '拦截网页对本地网络地址的请求';
+  String get settings_lnaBlockingSubtitle =>
+      'τ╜æτ½Öσ£¿Φ┐₧µÄÑµ¡ñΦ«╛σñçΣ╕èτÜäσ║öτö¿µêûΣ╜áτ╜æτ╗£Σ╕¡τÜäΦ«╛σñçΣ╣ïσëìσ┐àΘí╗σàêΦ»óΘù«';
 
   @override
-  String get settings_lnaBlockTrackersTitle => '拦截本地网络跟踪器';
+  String get settings_lnaBlockTrackersTitle => 'Θÿ╗µ¡óΦ╖ƒΦ╕¬σÖ¿τÜäµ£¼σ£░Φ┐₧µÄÑ';
 
   @override
-  String get settings_lnaBlockTrackersKeywords => 'lan,局域网,本地网络';
+  String get settings_lnaBlockTrackersKeywords =>
+      'lan, µ£¼σ£░τ╜æτ╗£Φ╖ƒΦ╕¬σÖ¿, localhost';
 
   @override
-  String get settings_lnaBlockTrackersSubtitle => '阻止跟踪器访问本地网络资源';
+  String get settings_lnaBlockTrackersSubtitle =>
+      'σ╖▓τƒÑΦ╖ƒΦ╕¬σÖ¿µùáµ│òΦ┐₧µÄÑµ¡ñΦ«╛σñçΣ╕èτÜäσ║öτö¿µêûΣ╜áτ╜æτ╗£Σ╕¡τÜäΦ«╛σñç';
 
   @override
-  String get settings_transferTitle => '导出与导入';
+  String get settings_transferTitle => 'σ»╝σç║Σ╕Äσ»╝σàÑ';
 
   @override
-  String get settings_transferChangeExportFolder => '更改导出文件夹';
+  String get settings_transferChangeExportFolder => 'µ¢┤µö╣σ»╝σç║µûçΣ╗╢σñ╣';
 
   @override
   String get settings_transferIntro =>
-      '在配置文件或设备之间迁移设置，或将其附加到错误报告中。这只包含设置——不含标签页、历史记录、书签或登录信息。如需迁移这些内容，请备份整个配置文件。';
+      'σ£¿Θàìτ╜«µûçΣ╗╢µêûΦ«╛σñçΣ╣ïΘù┤Φ┐üτº╗Φ«╛τ╜«∩╝îµêûσ░åσà╢ΘÖäσèáσê░ΘöÖΦ»»µèÑσæèΣ╕¡πÇéΦ┐ÖσÅ¬σîàσÉ½Φ«╛τ╜«ΓÇöΓÇöΣ╕ìσÉ½µáçτ¡╛Θí╡πÇüσÄåσÅ▓Φ«░σ╜òπÇüΣ╣ªτ¡╛µêûτÖ╗σ╜òΣ┐íµü»πÇéσªéΘ£ÇΦ┐üτº╗Φ┐ÖΣ║¢σåàσ«╣∩╝îΦ»╖σñçΣ╗╜µò┤Σ╕¬Θàìτ╜«µûçΣ╗╢πÇé';
 
   @override
   String get settings_transferDeviceOnlyNote =>
-      '网页搜索偏好、主页和新标签页布局、菜单顺序以及固定的附加组件会保留在此设备上';
+      'τ╜æΘí╡µÉ£τ┤óσüÅσÑ╜πÇüΣ╕╗Θí╡σÆîµû░µáçτ¡╛Θí╡σ╕âσ▒ÇπÇüΦÅ£σìòΘí║σ║ÅΣ╗ÑσÅèσ¢║σ«ÜτÜäΘÖäσèáτ╗äΣ╗╢Σ╝ÜΣ┐¥τòÖσ£¿µ¡ñΦ«╛σñçΣ╕è';
 
   @override
-  String get settings_transferExportSectionTitle => '导出';
+  String get settings_transferExportSectionTitle => 'σ»╝σç║';
 
   @override
-  String get settings_transferExportSectionSubtitle => '将所选部分导出为可读的文件';
+  String get settings_transferExportSectionSubtitle =>
+      'σ░åµëÇΘÇëΘâ¿σêåσ»╝σç║Σ╕║σÅ»Φ»╗τÜäµûçΣ╗╢';
 
   @override
-  String get settings_transferSaveFileButton => '保存文件';
+  String get settings_transferSaveFileButton => 'Σ┐¥σ¡ÿµûçΣ╗╢';
 
   @override
-  String get settings_transferImportSectionTitle => '导入';
+  String get settings_transferImportSectionTitle => 'σ»╝σàÑ';
 
   @override
-  String get settings_transferImportSectionSubtitle => '打开文件后选择要应用的设置';
+  String get settings_transferImportSectionSubtitle =>
+      'µëôσ╝ÇµûçΣ╗╢σÉÄΘÇëµï⌐Φªüσ║öτö¿τÜäΦ«╛τ╜«';
 
   @override
-  String get settings_transferOpenFileButton => '打开文件';
+  String get settings_transferOpenFileButton => 'µëôσ╝ÇµûçΣ╗╢';
 
   @override
-  String get settings_transferPasteButton => '粘贴';
+  String get settings_transferPasteButton => 'τ▓ÿΦ┤┤';
 
   @override
   String settings_transferExportFolderChanged(String name) {
-    return '导出内容将保存到 $name';
+    return 'σ»╝σç║σåàσ«╣σ░åΣ┐¥σ¡ÿσê░ $name';
   }
 
   @override
   String settings_transferSavedAs(String name) {
-    return '已保存为 $name';
+    return 'σ╖▓Σ┐¥σ¡ÿΣ╕║ $name';
   }
 
   @override
-  String get settings_transferExportFolderGone => '导出文件夹已不存在。请重新选择后重试。';
+  String get settings_transferExportFolderGone =>
+      'σ»╝σç║µûçΣ╗╢σñ╣σ╖▓Σ╕ìσ¡ÿσ£¿πÇéΦ»╖Θçìµû░ΘÇëµï⌐σÉÄΘçìΦ»òπÇé';
 
   @override
   String settings_transferSaveFailed(String error) {
-    return '无法保存导出内容：$error';
+    return 'µùáµ│òΣ┐¥σ¡ÿσ»╝σç║σåàσ«╣∩╝Ü$error';
   }
 
   @override
-  String get settings_transferCopiedToClipboard => '设置已复制到剪贴板';
+  String get settings_transferCopiedToClipboard =>
+      'Φ«╛τ╜«σ╖▓σñìσê╢σê░σë¬Φ┤┤µ¥┐';
 
   @override
   String settings_transferCopyFailed(String error) {
-    return '无法复制导出内容：$error';
+    return 'µùáµ│òσñìσê╢σ»╝σç║σåàσ«╣∩╝Ü$error';
   }
 
   @override
   String get settings_transferImportNothingApplicable =>
-      '此导出中没有此版本 Cat Browser 可以应用的内容。';
+      'µ¡ñσ»╝σç║Σ╕¡µ▓íµ£ëµ¡ñτëêµ£¼ Cat Browser σÅ»Σ╗Ñσ║öτö¿τÜäσåàσ«╣πÇé';
 
   @override
-  String get settings_transferImportedSuccess => '设置已导入';
+  String get settings_transferImportedSuccess => 'Φ«╛τ╜«σ╖▓σ»╝σàÑ';
 
   @override
   String settings_transferImportFailed(String error) {
-    return '无法导入设置：$error';
+    return 'µùáµ│òσ»╝σàÑΦ«╛τ╜«∩╝Ü$error';
   }
 
   @override
-  String get settings_transferNotASettingsFile => '该文件不是设置导出文件。';
+  String get settings_transferNotASettingsFile =>
+      'Φ»ÑµûçΣ╗╢Σ╕ìµÿ»Φ«╛τ╜«σ»╝σç║µûçΣ╗╢πÇé';
 
   @override
   String settings_transferReadFileFailed(String error) {
-    return '无法读取文件：$error';
+    return 'µùáµ│òΦ»╗σÅûµûçΣ╗╢∩╝Ü$error';
   }
 
   @override
-  String get settings_transferClipboardEmpty => '剪贴板为空。';
+  String get settings_transferClipboardEmpty => 'σë¬Φ┤┤µ¥┐Σ╕║τ⌐║πÇé';
 
   @override
   String settings_transferReadClipboardFailed(String error) {
-    return '无法读取剪贴板：$error';
+    return 'µùáµ│òΦ»╗σÅûσë¬Φ┤┤µ¥┐∩╝Ü$error';
   }
 
   @override
-  String get settings_transferSectionAppSettingsTitle => '应用设置';
+  String get settings_transferSectionAppSettingsTitle => 'σ║öτö¿Φ«╛τ╜«';
 
   @override
   String settings_transferSectionAppSettingsDescription(String torBrand) {
-    return '外观、浏览、标签页、隐私、$torBrand 和网页引擎设置';
+    return 'σñûΦºéπÇüµ╡ÅΦºêπÇüµáçτ¡╛Θí╡πÇüΘÜÉτºüπÇü$torBrand σÆîτ╜æΘí╡σ╝òµôÄΦ«╛τ╜«';
   }
 
   @override
-  String get settings_transferSectionGeckoPrefsTitle => 'Gecko 首选项';
+  String get settings_transferSectionGeckoPrefsTitle => 'τ╜æΘí╡σ╝òµôÄΘªûΘÇëΘí╣';
 
   @override
-  String get settings_transferSectionGeckoPrefsDescription => '你手动更改过的高级引擎首选项';
+  String get settings_transferSectionGeckoPrefsDescription =>
+      'Σ╜áµëïσè¿µ¢┤µö╣Φ┐çτÜäΘ½ÿτ║ºσ╝òµôÄΘªûΘÇëΘí╣';
 
   @override
-  String get settings_importErrorNotJson => '这不是 JSON 文件。';
+  String get settings_importErrorNotJson => 'Φ┐ÖΣ╕ìµÿ» JSON µûçΣ╗╢πÇé';
 
   @override
-  String get settings_importErrorNotSettingsExport => '这不是 Cat Browser 设置导出文件。';
+  String get settings_importErrorNotSettingsExport =>
+      'Φ┐ÖΣ╕ìµÿ» Cat Browser Φ«╛τ╜«σ»╝σç║µûçΣ╗╢πÇé';
 
   @override
-  String get settings_importErrorMissingFormatVersion => '导出文件未注明其格式版本。';
+  String get settings_importErrorMissingFormatVersion =>
+      'σ»╝σç║µûçΣ╗╢µ£¬µ│¿µÿÄσà╢µá╝σ╝Åτëêµ£¼πÇé';
 
   @override
   String settings_importErrorNewerFormatVersion(int version, int supported) {
-    return '此导出文件由较新版本的 Cat Browser 生成（格式 $version，此版本最高只能读取 $supported）。请更新应用后重试。';
+    return 'µ¡ñσ»╝σç║µûçΣ╗╢τö▒Φ╛âµû░τëêµ£¼τÜä Cat Browser τöƒµêÉ∩╝êµá╝σ╝Å $version∩╝îµ¡ñτëêµ£¼µ£ÇΘ½ÿσÅ¬Φâ╜Φ»╗σÅû $supported∩╝ëπÇéΦ»╖µ¢┤µû░σ║öτö¿σÉÄΘçìΦ»òπÇé';
   }
 
   @override
-  String get settings_importErrorNoSettings => '导出文件中不包含任何设置。';
+  String get settings_importErrorNoSettings =>
+      'σ»╝σç║µûçΣ╗╢Σ╕¡Σ╕ìσîàσÉ½Σ╗╗Σ╜òΦ«╛τ╜«πÇé';
 
   @override
   String settings_importErrorMalformedSection(String section) {
-    return '“$section”部分格式错误。';
+    return 'ΓÇ£$sectionΓÇ¥Θâ¿σêåµá╝σ╝ÅΘöÖΦ»»πÇé';
   }
 
   @override
   String settings_importErrorMalformedField(String field) {
-    return '导出文件的“$field”字段格式错误。';
+    return 'σ»╝σç║µûçΣ╗╢τÜäΓÇ£$fieldΓÇ¥σ¡ùµ«╡µá╝σ╝ÅΘöÖΦ»»πÇé';
   }
 
   @override
   String settings_importErrorUnreadablePrefsLine(String section, String line) {
-    return '“$section”部分中有一行 Cat Browser 无法读取：“$line”。导入它会重置首选项，而不是恢复它们。';
+    return 'ΓÇ£$sectionΓÇ¥Θâ¿σêåΣ╕¡µ£ëΣ╕ÇΦíî Cat Browser µùáµ│òΦ»╗σÅû∩╝ÜΓÇ£$lineΓÇ¥πÇéσ»╝σàÑσ«âΣ╝ÜΘçìτ╜«ΘªûΘÇëΘí╣∩╝îΦÇîΣ╕ìµÿ»µüóσñìσ«âΣ╗¼πÇé';
   }
 
   @override
   String settings_importErrorNotPrefsSnapshot(String section) {
-    return '“$section”部分不是 Cat Browser 首选项快照。';
+    return 'ΓÇ£$sectionΓÇ¥Θâ¿σêåΣ╕ìµÿ» Cat Browser ΘªûΘÇëΘí╣σ┐½τàºπÇé';
   }
 
   @override
   String settings_importErrorMissingSchemaVersion(String section) {
-    return '“$section”部分未注明其架构版本。';
+    return 'ΓÇ£$sectionΓÇ¥Θâ¿σêåµ£¬µ│¿µÿÄσà╢µ₧╢µ₧äτëêµ£¼πÇé';
   }
 
   @override
   String settings_importErrorUnreadablePref(String section, String pref) {
-    return '“$section”部分包含一项 Cat Browser 无法回读的首选项：“$pref”。';
+    return 'ΓÇ£$sectionΓÇ¥Θâ¿σêåσîàσÉ½Σ╕ÇΘí╣ Cat Browser µùáµ│òσ¢₧Φ»╗τÜäΘªûΘÇëΘí╣∩╝ÜΓÇ£$prefΓÇ¥πÇé';
   }
 
   @override
@@ -9136,12 +9611,12 @@ class AppLocalizationsZh extends AppLocalizations {
     int version,
     int supported,
   ) {
-    return '“$section”部分由较新版本的 Cat Browser 生成（架构 $version，此版本最高只能读取 $supported）。请更新应用后重试。';
+    return 'ΓÇ£$sectionΓÇ¥Θâ¿σêåτö▒Φ╛âµû░τëêµ£¼τÜä Cat Browser τöƒµêÉ∩╝êµ₧╢µ₧ä $version∩╝îµ¡ñτëêµ£¼µ£ÇΘ½ÿσÅ¬Φâ╜Φ»╗σÅû $supported∩╝ëπÇéΦ»╖µ¢┤µû░σ║öτö¿σÉÄΘçìΦ»òπÇé';
   }
 
   @override
   String settings_importPartialFailure(String failed, String error) {
-    return '“$failed”部分在中途停止，可能只应用了一半：$error';
+    return 'ΓÇ£$failedΓÇ¥Θâ¿σêåσ£¿Σ╕¡ΘÇöσü£µ¡ó∩╝îσÅ»Φâ╜σÅ¬σ║öτö¿Σ║åΣ╕Çσìè∩╝Ü$error';
   }
 
   @override
@@ -9150,1355 +9625,1510 @@ class AppLocalizationsZh extends AppLocalizations {
     String failed,
     String error,
   ) {
-    return '已导入：$applied。随后“$failed”部分在中途停止，可能只应用了一半：$error';
+    return 'σ╖▓σ»╝σàÑ∩╝Ü$appliedπÇéΘÜÅσÉÄΓÇ£$failedΓÇ¥Θâ¿σêåσ£¿Σ╕¡ΘÇöσü£µ¡ó∩╝îσÅ»Φâ╜σÅ¬σ║öτö¿Σ║åΣ╕Çσìè∩╝Ü$error';
   }
 
   @override
-  String get settings_webEngineHardeningTitle => '网页引擎加固';
+  String get settings_webEngineHardeningTitle => 'τ╜æΘí╡σ╝òµôÄσèáσ¢║';
 
   @override
-  String get settings_webEngineHardeningKeywords => '加固,安全,hardening';
+  String get settings_webEngineHardeningKeywords =>
+      'σèáσ¢║,σ«ëσà¿,hardening,µ¢┤Σ╕Ñµá╝τÜäσ«ëσà¿Φ«╛τ╜«,µÄ¿ΦìÉτÜäσ«ëσà¿Φ«╛τ╜«';
 
   @override
-  String get settings_webEngineHardeningSearchHint => '搜索加固分组';
+  String get settings_webEngineHardeningSearchHint => 'µÉ£τ┤óσèáσ¢║σêåτ╗ä';
 
   @override
-  String get settings_webEngineHardeningResetAllMenuItem => '重置所有首选项';
+  String get settings_webEngineHardeningResetAllMenuItem =>
+      'Θçìτ╜«µëÇµ£ëΘªûΘÇëΘí╣';
 
   @override
-  String get settings_webEngineHardeningResetAllDialogTitle => '重置所有首选项？';
+  String get settings_webEngineHardeningResetAllDialogTitle =>
+      'Θçìτ╜«µëÇµ£ëΘªûΘÇëΘí╣∩╝ƒ';
 
   @override
   String get settings_webEngineHardeningResetAllDialogContent =>
-      '这会将所有用户定义的网页引擎首选项重置为默认值。';
+      'Φ┐ÖΣ╝Üσ░åµëÇµ£ëτö¿µê╖σ«ÜΣ╣ëτÜäτ╜æΘí╡σ╝òµôÄΘªûΘÇëΘí╣Θçìτ╜«Σ╕║Θ╗ÿΦ«ñσÇ╝πÇé';
 
   @override
-  String get settings_webEngineHardeningOverviewTitle => '概览';
+  String get settings_webEngineHardeningOverviewTitle => 'µªéΦºê';
 
   @override
-  String get settings_webEngineHardeningCompleteTitle => '全面加固';
+  String get settings_webEngineHardeningCompleteTitle => 'σà¿Θ¥óσèáσ¢║';
 
   @override
-  String get settings_webEngineHardeningCompleteSubtitle => '应用或重置所有分组的加固首选项';
+  String get settings_webEngineHardeningCompleteSubtitle =>
+      'σ║öτö¿µêûΘçìτ╜«µëÇµ£ëσêåτ╗äτÜäσèáσ¢║ΘªûΘÇëΘí╣';
 
   @override
   String get settings_webEngineHardeningCompleteToggleHint =>
-      '一次性切换所有分组的加固首选项。';
+      'Σ╕Çµ¼íµÇºσêçµìóµëÇµ£ëσêåτ╗äτÜäσèáσ¢║ΘªûΘÇëΘí╣πÇé';
 
   @override
-  String get settings_webEngineHardeningGroupsTitle => '加固分组';
+  String get settings_webEngineHardeningGroupsTitle => 'σèáσ¢║σêåτ╗ä';
 
   @override
-  String get settings_webEngineHardeningLoadFailedTitle => '无法加载首选项设置';
+  String get settings_webEngineHardeningLoadFailedTitle =>
+      'µùáµ│òσèáΦ╜╜ΘªûΘÇëΘí╣Φ«╛τ╜«';
 
   @override
-  String get settings_webEngineHardeningGroupSearchHint => '搜索加固设置';
+  String get settings_webEngineHardeningGroupSearchHint => 'µÉ£τ┤óσèáσ¢║Φ«╛τ╜«';
 
   @override
-  String get settings_webEngineHardeningGroupControlsTitle => '分组控制';
+  String get settings_webEngineHardeningGroupControlsTitle => 'σêåτ╗äµÄºσê╢';
 
   @override
-  String get settings_webEngineHardeningPreferenceSettingsTitle => '首选项设置';
+  String get settings_webEngineHardeningPreferenceSettingsTitle =>
+      'ΘªûΘÇëΘí╣Φ«╛τ╜«';
 
   @override
-  String get settings_webEngineHardeningOptionalBadge => '可选';
+  String get settings_webEngineHardeningOptionalBadge => 'σÅ»ΘÇë';
 
   @override
-  String get settings_settingsHomeTitle => '设置';
+  String get settings_settingsHomeTitle => 'Φ«╛τ╜«';
 
   @override
-  String get settings_settingsHomeSearchHint => '搜索所有设置';
+  String get settings_settingsHomeSearchHint => 'µÉ£τ┤óµëÇµ£ëΦ«╛τ╜«';
 
   @override
-  String get settings_searchTitle => '搜索';
+  String get settings_searchTitle => 'µÉ£τ┤ó';
 
   @override
-  String get settings_searchSubtitle => '提供商、Bang、历史建议和设备端搜索。';
+  String get settings_searchSubtitle =>
+      'µÅÉΣ╛¢σòåπÇüBangπÇüσÄåσÅ▓σ╗║Φ««σÆîΦ«╛σñçτ½»µÉ£τ┤óπÇé';
 
   @override
-  String get settings_defaultSearchProviderTitle => '默认搜索提供商';
+  String get settings_defaultSearchProviderTitle => 'µÉ£τ┤óσ╝òµôÄ';
 
   @override
-  String get settings_defaultSearchProviderKeywords => '搜索引擎';
+  String get settings_defaultSearchProviderKeywords =>
+      'µÉ£τ┤óσ╝òµôÄ, Θ╗ÿΦ«ñµÉ£τ┤óµ£ìσèíσòå, default search provider';
 
   @override
-  String get settings_defaultAutocompleteProviderTitle => '默认自动补全提供商';
+  String get settings_defaultAutocompleteProviderTitle => 'µÉ£τ┤óσ╗║Φ««';
 
   @override
-  String get settings_defaultAutocompleteProviderKeywords => '建议,联想';
+  String get settings_defaultAutocompleteProviderKeywords =>
+      'σ╗║Φ««, Φç¬σè¿ΦíÑσà¿, Φç¬σè¿ΦíÑσà¿µ£ìσèíσòå, autocomplete provider';
 
   @override
-  String get settings_customSearchEnginesTitle => '自定义搜索引擎';
+  String get settings_customSearchEnginesTitle => 'Φç¬σ«ÜΣ╣ëµÉ£τ┤óσ╝òµôÄ';
 
   @override
-  String get settings_customSearchEnginesKeywords => '自定义 bang,提供商';
+  String get settings_customSearchEnginesKeywords => 'Φç¬σ«ÜΣ╣ë bang,µÅÉΣ╛¢σòå';
 
   @override
-  String get settings_customSearchEnginesSubtitle => '添加和管理你自己的搜索提供商';
+  String get settings_customSearchEnginesSubtitle =>
+      'µ╖╗σèáσÆîτ«íτÉåΣ╜áΦç¬σ╖▒τÜäµÉ£τ┤óµÅÉΣ╛¢σòå';
 
   @override
-  String get settings_bangSettingsListTitle => 'Bang 设置';
+  String get settings_bangSettingsListTitle => 'Bang Φ«╛τ╜«';
 
   @override
-  String get settings_bangSettingsListSubtitle => '管理 Bang 存储库和使用数据';
+  String get settings_bangSettingsListSubtitle =>
+      'τ«íτÉå Bang σ¡ÿσé¿σ║ôσÆîΣ╜┐τö¿µò░µì«';
 
   @override
-  String get settings_searchHistoryLimitTitle => '搜索历史记录上限';
+  String get settings_searchHistoryLimitTitle => 'µÉ£τ┤óσÄåσÅ▓Φ«░σ╜òΣ╕èΘÖÉ';
 
   @override
-  String get settings_searchHistoryLimitKeywords => '历史记录,条目';
+  String get settings_searchHistoryLimitKeywords => 'σÄåσÅ▓Φ«░σ╜ò,µ¥íτ¢«';
 
   @override
-  String get settings_searchHistoryLimitSubtitle => '要记住的最近搜索的最大数量';
+  String get settings_searchHistoryLimitSubtitle =>
+      'ΦªüΦ«░Σ╜ÅτÜäµ£ÇΦ┐æµÉ£τ┤óτÜäµ£Çσñºµò░ΘçÅ';
 
   @override
-  String get settings_searchHistoryLimitSuffix => '条';
+  String get settings_searchHistoryLimitSuffix => 'µ¥í';
 
   @override
-  String get settings_validationEnterValue => '请输入一个值';
+  String get settings_validationEnterValue => 'Φ»╖Φ╛ôσàÑΣ╕ÇΣ╕¬σÇ╝';
 
   @override
-  String get settings_validationEnterValidNumber => '请输入有效的数字';
+  String get settings_validationEnterValidNumber => 'Φ»╖Φ╛ôσàÑµ£ëµòêτÜäµò░σ¡ù';
 
   @override
-  String get settings_validationValueBetween0And100 => '值必须介于 0 和 100 之间';
+  String get settings_validationValueBetween0And100 =>
+      'σÇ╝σ┐àΘí╗Σ╗ïΣ║Ä 0 σÆî 100 Σ╣ïΘù┤';
 
   @override
-  String get settings_allowClipboardAccessTitle => '允许读取剪贴板以提供建议';
+  String get settings_allowClipboardAccessTitle =>
+      'σàüΦ«╕Φ»╗σÅûσë¬Φ┤┤µ¥┐Σ╗ÑµÅÉΣ╛¢σ╗║Φ««';
 
   @override
-  String get settings_allowClipboardAccessKeywords => '剪贴板';
+  String get settings_allowClipboardAccessKeywords => 'σë¬Φ┤┤µ¥┐';
 
   @override
-  String get settings_allowClipboardAccessSubtitle => '浏览器可以读取剪贴板来建议网址';
+  String get settings_allowClipboardAccessSubtitle =>
+      'µ╡ÅΦºêσÖ¿σÅ»Σ╗ÑΦ»╗σÅûσë¬Φ┤┤µ¥┐µ¥Ñσ╗║Φ««τ╜æσ¥Ç';
 
   @override
-  String get settings_historySuggestionsTitle => '根据历史记录提供建议';
+  String get settings_historySuggestionsTitle =>
+      'µá╣µì«σÄåσÅ▓Φ«░σ╜òµÅÉΣ╛¢σ╗║Φ««';
 
   @override
-  String get settings_historySuggestionsKeywords => '历史建议,访问过的页面,自动补全,内联补全,隐私';
+  String get settings_historySuggestionsKeywords =>
+      'σÄåσÅ▓σ╗║Φ««,Φ«┐Θù«Φ┐çτÜäΘí╡Θ¥ó,Φç¬σè¿ΦíÑσà¿,σåàΦüöΦíÑσà¿,ΘÜÉτºü';
 
   @override
   String get settings_historySuggestionsSubtitle =>
-      '输入时显示访问过的页面，并根据历史记录补全地址。关闭此项不会删除你的历史记录。';
+      'Φ╛ôσàÑµù╢µÿ╛τñ║Φ«┐Θù«Φ┐çτÜäΘí╡Θ¥ó∩╝îσ╣╢µá╣µì«σÄåσÅ▓Φ«░σ╜òΦíÑσà¿σ£░σ¥ÇπÇéσà│Θù¡µ¡ñΘí╣Σ╕ìΣ╝ÜσêáΘÖñΣ╜áτÜäσÄåσÅ▓Φ«░σ╜òπÇé';
 
   @override
-  String get settings_privateSearchSuggestionsTitle => '在隐私标签页中提供建议';
+  String get settings_privateSearchSuggestionsTitle =>
+      'σ£¿ΘÜÉτºüµáçτ¡╛Θí╡Σ╕¡µÅÉΣ╛¢σ╗║Φ««';
 
   @override
-  String get settings_privateSearchSuggestionsKeywords => '隐私,无痕,搜索建议,历史记录';
+  String get settings_privateSearchSuggestionsKeywords =>
+      'ΘÜÉτºü,µùáτùò,µÉ£τ┤óσ╗║Φ««,σÄåσÅ▓Φ«░σ╜ò';
 
   @override
   String get settings_privateSearchSuggestionsSubtitle =>
-      '在隐私标签页中输入时使用建议提供商和你的历史记录。你输入的内容将发送给提供商。';
+      'σ£¿ΘÜÉτºüµáçτ¡╛Θí╡Σ╕¡Φ╛ôσàÑµù╢Σ╜┐τö¿σ╗║Φ««µÅÉΣ╛¢σòåσÆîΣ╜áτÜäσÄåσÅ▓Φ«░σ╜òπÇéΣ╜áΦ╛ôσàÑτÜäσåàσ«╣σ░åσÅæΘÇüτ╗ÖµÅÉΣ╛¢σòåπÇé';
 
   @override
-  String get settings_acceptSuggestionOnSubmitTitle => '按回车键自动补全';
+  String get settings_acceptSuggestionOnSubmitTitle =>
+      'µîëσ¢₧Φ╜ªΘö«Φç¬σè¿ΦíÑσà¿';
 
   @override
-  String get settings_acceptSuggestionOnSubmitKeywords => '提交,键盘,建议,回车';
+  String get settings_acceptSuggestionOnSubmitKeywords =>
+      'µÅÉΣ║ñ,Θö«τ¢ÿ,σ╗║Φ««,σ¢₧Φ╜ª';
 
   @override
-  String get settings_acceptSuggestionOnSubmitSubtitle => '按下键盘上的回车键时接受内联建议';
+  String get settings_acceptSuggestionOnSubmitSubtitle =>
+      'µîëΣ╕ïΘö«τ¢ÿΣ╕èτÜäσ¢₧Φ╜ªΘö«µù╢µÄÑσÅùσåàΦüöσ╗║Φ««';
 
   @override
-  String get settings_popularSitesAutocompleteTitle => '热门网站建议';
+  String get settings_popularSitesAutocompleteTitle => 'τâ¡Θù¿τ╜æτ½Öσ╗║Φ««';
 
   @override
-  String get settings_popularSitesAutocompleteKeywords => '热门网站,域名,内联补全,自动补全';
+  String get settings_popularSitesAutocompleteKeywords =>
+      'τâ¡Θù¿τ╜æτ½Ö,σƒƒσÉì,σåàΦüöΦíÑσà¿,Φç¬σè¿ΦíÑσà¿';
 
   @override
   String get settings_popularSitesAutocompleteSubtitle =>
-      '当历史记录和书签中没有匹配项时，用知名域名补全输入的文字';
+      'σ╜ôσÄåσÅ▓Φ«░σ╜òσÆîΣ╣ªτ¡╛Σ╕¡µ▓íµ£ëσî╣ΘàìΘí╣µù╢∩╝îτö¿τƒÑσÉìτ╜æτ½ÖΦíÑσà¿Σ╜áΦ╛ôσàÑτÜäσåàσ«╣';
 
   @override
-  String get settings_localIndexEnabledTitle => '启用本地搜索索引';
+  String get settings_localIndexEnabledTitle =>
+      'σ£¿Φ«┐Θù«Φ┐çτÜäΘí╡Θ¥óΣ╕¡µÉ£τ┤ó';
 
   @override
-  String get settings_localIndexEnabledKeywords => '页面文字,历史记录,全文搜索';
+  String get settings_localIndexEnabledKeywords =>
+      'Θí╡Θ¥óµûçσ¡ù, σÄåσÅ▓Φ«░σ╜ò, µ£¼σ£░µÉ£τ┤óτ┤óσ╝ò, local search index';
 
   @override
   String get settings_localIndexEnabledSubtitle =>
-      '在本地为访问过的页面建立索引，以便浏览器搜索其内容。访问元数据保留在引擎中；只有页面文字存储在设备上。';
+      'σ£¿µ¡ñΦ«╛σñçΣ╕èΣ┐¥σ¡ÿΣ╜áΦ«┐Θù«Φ┐çτÜäΘí╡Θ¥óµûçσ¡ù∩╝îΣ╗ÑΣ╛┐µÉ£τ┤óΦâ╜µë╛σê░σà╢Σ╕¡τÜäΦ»ìΦ»¡πÇé';
 
   @override
-  String get settings_indexPrivateTabsTitle => '为隐私标签页建立索引';
+  String get settings_indexPrivateTabsTitle =>
+      'Σ┐¥σ¡ÿΘÜÉτºüµáçτ¡╛Θí╡Σ╕¡τÜäµûçσ¡ù';
 
   @override
-  String get settings_indexPrivateTabsKeywords => '无痕,隐私';
+  String get settings_indexPrivateTabsKeywords =>
+      'µùáτùò, ΘÜÉτºü, Σ╕║ΘÜÉτºüµáçτ¡╛Θí╡σ╗║τ½ïτ┤óσ╝ò';
 
   @override
-  String get settings_indexPrivateTabsSubtitle => '将在隐私标签页中打开的页面加入本地索引。默认关闭。';
+  String get settings_indexPrivateTabsSubtitle =>
+      'σÉîµù╢Σ┐¥σ¡ÿσ£¿ΘÜÉτºüµáçτ¡╛Θí╡Σ╕¡µëôσ╝ÇτÜäΘí╡Θ¥óµûçσ¡ùπÇéΘ╗ÿΦ«ñσà│Θù¡πÇé';
 
   @override
-  String get settings_clearLocalIndexDialogTitle => '清除本地搜索索引？';
+  String get settings_clearLocalIndexDialogTitle =>
+      'σêáΘÖñσ╖▓Σ┐¥σ¡ÿτÜäΘí╡Θ¥óµûçσ¡ù∩╝ƒ';
 
   @override
   String get settings_clearLocalIndexDialogContent =>
-      '这将移除所有本地索引的页面内容。引擎历史记录（访问元数据）不受影响。';
+      'σêáΘÖñΣ╕║µÉ£τ┤óΦÇîΣ┐¥σ¡ÿτÜäΘí╡Θ¥óµûçσ¡ùπÇéΣ╜áτÜäµ╡ÅΦºêσÄåσÅ▓Φ«░σ╜òΣ╝ÜΣ┐¥τòÖπÇé';
 
   @override
-  String get settings_localIndexStatsTitle => '已索引的页面';
+  String get settings_localIndexStatsTitle => 'σ╖▓Σ┐¥σ¡ÿτÜäΘí╡Θ¥óµûçσ¡ù';
 
   @override
-  String get settings_localIndexStatsKeywords => '清除索引,统计';
+  String get settings_localIndexStatsKeywords => 'µ╕àΘÖñτ┤óσ╝ò,τ╗ƒΦ«í';
 
   @override
   String settings_localIndexPagesIndexed(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '已索引 $count 个页面',
+      other: 'σ╖▓Σ┐¥σ¡ÿ $count Σ╕¬Θí╡Θ¥óτÜäµûçσ¡ù',
     );
     return '$_temp0';
   }
 
   @override
-  String get settings_searchSectionProvidersTitle => '提供商';
+  String get settings_searchSectionProvidersTitle => 'µÅÉΣ╛¢σòå';
 
   @override
-  String get settings_searchSectionProvidersKeywords => '搜索引擎';
+  String get settings_searchSectionProvidersKeywords => 'µÉ£τ┤óσ╝òµôÄ';
 
   @override
-  String get settings_searchSectionBangShortcutsTitle => 'Bang 快捷方式';
+  String get settings_searchSectionBangShortcutsTitle => 'Bang σ┐½µì╖µû╣σ╝Å';
 
   @override
   String get settings_searchSectionBangShortcutsKeywords => 'bang,bangs';
 
   @override
-  String get settings_searchSectionHistorySuggestionsTitle => '历史记录与建议';
+  String get settings_searchSectionHistorySuggestionsTitle =>
+      'σÄåσÅ▓Φ«░σ╜òΣ╕Äσ╗║Φ««';
 
   @override
-  String get settings_searchSectionLocalIndexTitle => '本地搜索索引';
+  String get settings_searchSectionLocalIndexTitle =>
+      'σ£¿Φ«┐Θù«Φ┐çτÜäΘí╡Θ¥óΣ╕¡µÉ£τ┤ó';
 
   @override
-  String get settings_searchSectionLocalIndexKeywords => '设备端搜索,索引';
+  String get settings_searchSectionLocalIndexKeywords =>
+      'Φ«╛σñçτ½»µÉ£τ┤ó,τ┤óσ╝ò';
 
   @override
-  String get settings_indexDefaultSearchProviderSubtitle => '选择默认的搜索引擎';
+  String get settings_indexDefaultSearchProviderSubtitle =>
+      'ΘÇëµï⌐Θ╗ÿΦ«ñτÜäµÉ£τ┤óσ╝òµôÄ';
 
   @override
-  String get settings_indexDefaultAutocompleteProviderSubtitle => '选择搜索建议的提供商';
+  String get settings_indexDefaultAutocompleteProviderSubtitle =>
+      'ΘÇëµï⌐µÉ£τ┤óσ╗║Φ««τÜäµ¥Ñµ║É';
 
   @override
-  String get settings_indexAcceptSuggestionOnSubmitSubtitle => '按下回车键时接受内联建议';
+  String get settings_indexAcceptSuggestionOnSubmitSubtitle =>
+      'µîëΣ╕ïσ¢₧Φ╜ªΘö«µù╢µÄÑσÅùσåàΦüöσ╗║Φ««';
 
   @override
-  String get settings_indexHistorySuggestionsSubtitle => '输入时建议访问过的页面';
+  String get settings_indexHistorySuggestionsSubtitle =>
+      'Φ╛ôσàÑµù╢σ╗║Φ««Φ«┐Θù«Φ┐çτÜäΘí╡Θ¥ó';
 
   @override
   String get settings_indexPrivateSearchSuggestionsSubtitle =>
-      '在隐私标签页中使用建议和历史记录';
+      'σ£¿ΘÜÉτºüµáçτ¡╛Θí╡Σ╕¡Σ╜┐τö¿σ╗║Φ««σÆîσÄåσÅ▓Φ«░σ╜ò';
 
   @override
-  String get settings_indexPopularSitesAutocompleteSubtitle => '用知名域名补全输入的文字';
+  String get settings_indexPopularSitesAutocompleteSubtitle =>
+      'τö¿τƒÑσÉìτ╜æτ½ÖΦíÑσà¿Σ╜áΦ╛ôσàÑτÜäσåàσ«╣';
 
   @override
-  String get settings_indexLocalIndexEnabledSubtitle => '在本地为访问过的页面建立索引以搜索内容';
+  String get settings_indexLocalIndexEnabledSubtitle =>
+      'σ£¿µ¡ñΦ«╛σñçΣ╕èΣ┐¥σ¡ÿΘí╡Θ¥óµûçσ¡ù∩╝îΣ╗ÑΣ╛┐µÉ£τ┤óµë╛σê░';
 
   @override
-  String get settings_indexIndexPrivateTabsSubtitle => '将隐私标签页加入本地索引';
+  String get settings_indexIndexPrivateTabsSubtitle =>
+      'σÉîµù╢Σ┐¥σ¡ÿΘÜÉτºüµáçτ¡╛Θí╡Σ╕¡τÜäµûçσ¡ù';
 
   @override
-  String get settings_indexLocalIndexStatsSubtitle => '查看并清除本地索引';
+  String get settings_indexLocalIndexStatsSubtitle =>
+      'µƒÑτ£ïσ╣╢σêáΘÖñσ╖▓Σ┐¥σ¡ÿτÜäΘí╡Θ¥óµûçσ¡ù';
 
   @override
-  String get settings_webContentTitle => '网页内容';
+  String get settings_webContentTitle => 'τ╜æΘí╡σåàσ«╣';
 
   @override
-  String get settings_webContentSubtitle => '文字渲染、阅读模式、PDF 和本地 AI 功能。';
+  String get settings_webContentSubtitle =>
+      'µûçσ¡ùµ╕▓µƒôπÇüΘÿàΦ»╗µ¿íσ╝ÅπÇüPDF σÆîµ£¼σ£░ AI σèƒΦâ╜πÇé';
 
   @override
-  String get settings_webFontsTitle => '网页字体';
+  String get settings_webFontsTitle => 'τ╜æΘí╡σ¡ùΣ╜ô';
 
   @override
-  String get settings_webFontsKeywords => '字体';
+  String get settings_webFontsKeywords => 'σ¡ùΣ╜ô';
 
   @override
-  String get settings_webFontsSubtitle => '允许网站使用自定义字体';
+  String get settings_webFontsSubtitle => 'σàüΦ«╕τ╜æτ½ÖΣ╜┐τö¿Φç¬σ«ÜΣ╣ëσ¡ùΣ╜ô';
 
   @override
-  String get settings_automaticFontSizeTitle => '自动字号';
+  String get settings_automaticFontSizeTitle => 'Φç¬σè¿σ¡ùσÅ╖';
 
   @override
-  String get settings_automaticFontSizeKeywords => '文字大小,字号';
+  String get settings_automaticFontSizeKeywords => 'µûçσ¡ùσñºσ░Å,σ¡ùσÅ╖';
 
   @override
   String get settings_automaticFontSizeSubtitle =>
-      '根据系统设置自动调整字号。停用后可手动控制字号比例和字体放大。';
+      'µá╣µì«τ│╗τ╗ƒΦ«╛τ╜«Φç¬σè¿Φ░âµò┤σ¡ùσÅ╖πÇéσü£τö¿σÉÄσÅ»µëïσè¿µÄºσê╢σ¡ùσÅ╖µ»öΣ╛ïσÆîσ¡ùΣ╜ôµö╛σñºπÇé';
 
   @override
-  String get settings_fontSizeFactorTitle => '字号比例';
+  String get settings_fontSizeFactorTitle => 'σ¡ùσÅ╖µ»öΣ╛ï';
 
   @override
-  String get settings_fontSizeFactorKeywords => '缩放,文字';
+  String get settings_fontSizeFactorKeywords => 'τ╝⌐µö╛,µûçσ¡ù';
 
   @override
-  String get settings_fontSizeFactorSubtitle => '缩放网页文字大小';
+  String get settings_fontSizeFactorSubtitle => 'τ╝⌐µö╛τ╜æΘí╡µûçσ¡ùσñºσ░Å';
 
   @override
-  String get settings_disabledWhileAutomaticFontSize => '启用自动字号时不可用';
+  String get settings_disabledWhileAutomaticFontSize =>
+      'σÉ»τö¿Φç¬σè¿σ¡ùσÅ╖µù╢Σ╕ìσÅ»τö¿';
 
   @override
-  String get settings_fontInflationTitle => '字体放大';
+  String get settings_fontInflationTitle => 'µö╛σñºσ░Åσ¡ù';
 
   @override
-  String get settings_fontInflationKeywords => '可读性';
+  String get settings_fontInflationKeywords =>
+      'σÅ»Φ»╗µÇº, font inflation, µö╛σñºµûçσ¡ù';
 
   @override
   String get settings_fontInflationSubtitle =>
-      '放大缺少移动端 viewport meta 标签的页面上的文字';
+      'Φ«⌐Σ╕ìµÿ»Σ╕║µëïµ£║Φ«╛Φ«íτÜäΘí╡Θ¥óΣ╕èτÜäµûçσ¡ùµ╕àµÖ░σÅ»Φ»╗';
 
   @override
-  String get settings_inputAutoZoomTitle => '输入时自动缩放';
+  String get settings_inputAutoZoomTitle => 'τé╣µîëµûçµ£¼µíåµù╢µö╛σñº';
 
   @override
-  String get settings_inputAutoZoomKeywords => '表单';
+  String get settings_inputAutoZoomKeywords =>
+      'Φí¿σìò, Φ╛ôσàÑµíå, Φç¬σè¿τ╝⌐µö╛';
 
   @override
-  String get settings_inputAutoZoomSubtitle => '聚焦文本输入框时自动放大';
+  String get settings_inputAutoZoomSubtitle => 'τé╣µîëµûçµ£¼µíåµù╢Φç¬σè¿µö╛σñº';
 
   @override
-  String get settings_forceUserScalableTitle => '在所有网站上允许缩放';
+  String get settings_forceUserScalableTitle =>
+      'σ£¿µëÇµ£ëτ╜æτ½ÖΣ╕èσàüΦ«╕τ╝⌐µö╛';
 
   @override
-  String get settings_forceUserScalableKeywords => '双指缩放,无障碍';
+  String get settings_forceUserScalableKeywords => 'σÅîµîçτ╝⌐µö╛,µùáΘÜ£τóì';
 
   @override
-  String get settings_forceUserScalableSubtitle => '允许双指缩放，即使网站禁止此手势';
+  String get settings_forceUserScalableSubtitle =>
+      'σàüΦ«╕σÅîµîçτ╝⌐µö╛∩╝îσì│Σ╜┐τ╜æτ½Öτªüµ¡óµ¡ñµëïσè┐';
 
   @override
-  String get settings_pdfViewerTitle => '内置 PDF 查看器';
+  String get settings_pdfViewerTitle => 'σåàτ╜« PDF µƒÑτ£ïσÖ¿';
 
   @override
   String get settings_pdfViewerKeywords => 'pdf';
 
   @override
-  String get settings_pdfViewerSubtitle => '直接在浏览器中打开 PDF 文件，无需下载';
+  String get settings_pdfViewerSubtitle =>
+      'τ¢┤µÄÑσ£¿µ╡ÅΦºêσÖ¿Σ╕¡µëôσ╝Ç PDF µûçΣ╗╢∩╝îµùáΘ£ÇΣ╕ïΦ╜╜';
 
   @override
-  String get settings_enableReaderModeTitle => '启用阅读模式';
+  String get settings_enableReaderModeTitle => 'σÉ»τö¿ΘÿàΦ»╗µ¿íσ╝Å';
 
   @override
-  String get settings_enableReaderModeKeywords => '阅读,可读性,阅读视图';
+  String get settings_enableReaderModeKeywords =>
+      'ΘÿàΦ»╗,σÅ»Φ»╗µÇº,ΘÿàΦ»╗Φºåσ¢╛';
 
   @override
   String get settings_enableReaderModeSubtitle =>
-      '在浏览器应用栏中添加一个可选工具，通过移除广告、侧边栏及其他非必要元素来简化网页。';
+      'σ£¿µ╡ÅΦºêσÖ¿σ║öτö¿µáÅΣ╕¡µ╖╗σèáΣ╕ÇΣ╕¬σÅ»ΘÇëσ╖Ñσà╖∩╝îΘÇÜΦ┐çτº╗ΘÖñσ╣┐σæèπÇüΣ╛ºΦ╛╣µáÅσÅèσà╢Σ╗ûΘ¥₧σ┐àΦªüσàâτ┤áµ¥Ñτ«Çσîûτ╜æΘí╡πÇé';
 
   @override
-  String get settings_enforceReaderModeTitle => '强制阅读模式';
+  String get settings_enforceReaderModeTitle => 'σºïτ╗êµÅÉΣ╛¢ΘÿàΦ»╗µ¿íσ╝Å';
 
   @override
-  String get settings_enforceReaderModeKeywords => '阅读';
+  String get settings_enforceReaderModeKeywords =>
+      'ΘÿàΦ»╗, ΘÿàΦ»╗µ¿íσ╝Å, σ╝║σê╢ΘÿàΦ»╗µ¿íσ╝Å';
 
   @override
   String get settings_enforceReaderModeSubtitle =>
-      '忽略网站的可读性评分，始终显示阅读模式，即使网站可能不支持。';
+      'σ£¿µ»ÅΣ╕¬Θí╡Θ¥óΣ╕èΘâ╜µÅÉΣ╛¢ΘÿàΦ»╗µ¿íσ╝Å∩╝îσì│Σ╜┐σ£¿σÅ»Φâ╜µòêµ₧£Σ╕ìΣ╜│τÜäΘí╡Θ¥óΣ╕èπÇé';
 
   @override
-  String get settings_onDeviceAiTitle => '设备端 AI';
+  String get settings_onDeviceAiTitle => 'Φ«╛σñçτ½» AI';
 
   @override
-  String get settings_onDeviceAiKeywords => '本地 ai,建议';
+  String get settings_onDeviceAiKeywords => 'µ£¼σ£░ ai,σ╗║Φ««';
 
   @override
-  String get settings_onDeviceAiSubtitle => '设备端功能，例如为打开的标签页建议容器及其名称';
+  String get settings_onDeviceAiSubtitle =>
+      'Φ«╛σñçτ½»σèƒΦâ╜∩╝îΣ╛ïσªéΣ╕║µëôσ╝ÇτÜäµáçτ¡╛Θí╡σ╗║Φ««σ«╣σÖ¿σÅèσà╢σÉìτº░';
 
   @override
-  String get settings_webContentSectionDisplayTitle => '显示';
+  String get settings_webContentSectionDisplayTitle => 'µÿ╛τñ║';
 
   @override
-  String get settings_webContentSectionContentFeaturesTitle => '内容功能';
+  String get settings_webContentSectionContentFeaturesTitle => 'σåàσ«╣σèƒΦâ╜';
 
   @override
-  String get settings_indexAutomaticFontSizeSubtitle => '根据系统设置调整字号';
+  String get settings_indexAutomaticFontSizeSubtitle =>
+      'µá╣µì«τ│╗τ╗ƒΦ«╛τ╜«Φ░âµò┤σ¡ùσÅ╖';
 
   @override
-  String get settings_indexFontInflationSubtitle => '放大没有移动端 viewport 的页面上的文字';
+  String get settings_indexFontInflationSubtitle =>
+      'µö╛σñºΣ╕ìµÿ»Σ╕║µëïµ£║Φ«╛Φ«íτÜäΘí╡Θ¥óΣ╕èτÜäµûçσ¡ù';
 
   @override
-  String get settings_indexInputAutoZoomSubtitle => '聚焦文本输入框时自动缩放';
+  String get settings_indexInputAutoZoomSubtitle =>
+      'τé╣µîëµûçµ£¼µíåµù╢Φç¬σè¿µö╛σñº';
 
   @override
-  String get settings_indexPdfViewerSubtitle => '直接在浏览器中打开 PDF 文件';
+  String get settings_indexPdfViewerSubtitle =>
+      'τ¢┤µÄÑσ£¿µ╡ÅΦºêσÖ¿Σ╕¡µëôσ╝Ç PDF µûçΣ╗╢';
 
   @override
-  String get settings_indexEnableReaderModeSubtitle => '提取并简化页面以提高可读性';
+  String get settings_indexEnableReaderModeSubtitle =>
+      'Σ╗Ñµò┤µ┤üπÇüµÿôΦ»╗τÜäτëêσ╝Åµÿ╛τñ║µûçτ½á';
 
   @override
-  String get settings_indexEnforceReaderModeSubtitle => '始终显示阅读模式功能';
+  String get settings_indexEnforceReaderModeSubtitle =>
+      'σ£¿µ»ÅΣ╕¬Θí╡Θ¥óΣ╕èΘâ╜µÅÉΣ╛¢ΘÿàΦ»╗µ¿íσ╝Å';
 
   @override
-  String get settings_indexOnDeviceAiSubtitle => '本地 AI 功能，包括容器主题和标签页建议';
+  String get settings_indexOnDeviceAiSubtitle =>
+      'µ£¼σ£░ AI σèƒΦâ╜∩╝îσîàµï¼σ«╣σÖ¿Σ╕╗ΘóÿσÆîµáçτ¡╛Θí╡σ╗║Φ««';
 
   @override
-  String get settings_ublockListsTitle => 'uBlock 过滤规则列表';
+  String get settings_ublockListsTitle => 'uBlock Φ┐çµ╗ñΦºäσêÖσêùΦí¿';
 
   @override
-  String get settings_ublockListsSearchHint => '搜索列表、分组和外部网址';
+  String get settings_ublockListsSearchHint =>
+      'µÉ£τ┤óσêùΦí¿πÇüσêåτ╗äσÆîσñûΘâ¿τ╜æσ¥Ç';
 
   @override
-  String get settings_ublockSectionManagement => '管理';
+  String get settings_ublockSectionManagement => 'τ«íτÉå';
 
   @override
-  String get settings_ublockSectionQuickActions => '快捷操作';
+  String get settings_ublockSectionQuickActions => 'σ┐½µì╖µôìΣ╜£';
 
   @override
-  String get settings_ublockSectionFilterLists => '过滤规则列表';
+  String get settings_ublockSectionFilterLists => 'Φ┐çµ╗ñΦºäσêÖσêùΦí¿';
 
   @override
-  String get settings_ublockSectionExternalLists => '外部列表';
+  String get settings_ublockSectionExternalLists => 'σñûΘâ¿σêùΦí¿';
 
   @override
-  String get settings_actionApply => '应用';
+  String get settings_actionApply => 'σ║öτö¿';
 
   @override
-  String get settings_ublockResetDialogTitle => '恢复默认设置？';
+  String get settings_ublockResetDialogTitle => 'µüóσñìΘ╗ÿΦ«ñΦ«╛τ╜«∩╝ƒ';
 
   @override
   String get settings_ublockResetDialogMessage =>
-      '这将把 uBlock Origin 恢复为默认的过滤规则列表配置，并移除你添加的所有外部列表。';
+      'Φ┐Öσ░åµèè uBlock Origin µüóσñìΣ╕║Θ╗ÿΦ«ñτÜäΦ┐çµ╗ñΦºäσêÖσêùΦí¿Θàìτ╜«∩╝îσ╣╢τº╗ΘÖñΣ╜áµ╖╗σèáτÜäµëÇµ£ëσñûΘâ¿σêùΦí¿πÇé';
 
   @override
-  String get settings_ublockApplyHardeningsDialogTitle => '应用 Cat Browser 加固？';
+  String get settings_ublockApplyHardeningsDialogTitle =>
+      'σ║öτö¿ Cat Browser σèáσ¢║∩╝ƒ';
 
   @override
   String get settings_ublockApplyHardeningsDialogMessage =>
-      '这将启用一组精选的额外过滤规则列表，并将一个合法短网址列表添加为外部列表。';
+      'Φ┐Öσ░åσ╝ÇσÉ» WebLibre ΘÇëσ«ÜτÜäΘó¥σñûΦ┐çµ╗ñσêùΦí¿∩╝îσ╣╢µ╖╗σèáΣ╕ÇΣ╕¬τº╗ΘÖñΘô╛µÄÑΣ╕¡Φ╖ƒΦ╕¬Θâ¿σêåτÜäσêùΦí¿πÇé';
 
   @override
   String get settings_ublockInfoBannerMessage =>
-      '对 uBlock Origin 过滤规则列表的更改需要重启应用才能生效。由于缓存原因，部分更改可能需要几分钟并再次重启才能完全生效。';
+      'σ»╣ uBlock Origin Φ┐çµ╗ñΦºäσêÖσêùΦí¿τÜäµ¢┤µö╣Θ£ÇΦªüΘçìσÉ»σ║öτö¿µëìΦâ╜τöƒµòêπÇéτö▒Σ║Äτ╝ôσ¡ÿσÄƒσ¢á∩╝îΘâ¿σêåµ¢┤µö╣σÅ»Φâ╜Θ£ÇΦªüσçáσêåΘÆƒσ╣╢σåìµ¼íΘçìσÉ»µëìΦâ╜σ«îσà¿τöƒµòêπÇé';
 
   @override
   String settings_ublockLoadFailed(String error) {
-    return '无法加载过滤规则列表资源：$error';
+    return 'µùáµ│òσèáΦ╜╜Φ┐çµ╗ñΦºäσêÖσêùΦí¿Φ╡äµ║É∩╝Ü$error';
   }
 
   @override
-  String get settings_ublockQuickResetTitle => '恢复默认设置';
+  String get settings_ublockQuickResetTitle => 'µüóσñìΘ╗ÿΦ«ñΦ«╛τ╜«';
 
   @override
   String get settings_ublockQuickResetSubtitle =>
-      '恢复 uBlock Origin 的默认过滤规则列表配置。';
+      'µüóσñì uBlock Origin τÜäΘ╗ÿΦ«ñΦ┐çµ╗ñΦºäσêÖσêùΦí¿Θàìτ╜«πÇé';
 
   @override
-  String get settings_ublockQuickApplyHardeningsTitle => '应用 Cat Browser 加固';
+  String get settings_ublockQuickApplyHardeningsTitle =>
+      'σ║öτö¿ Cat Browser σèáσ¢║';
 
   @override
-  String get settings_ublockQuickApplyHardeningsSubtitle => '启用一组精选的额外过滤规则列表。';
+  String get settings_ublockQuickApplyHardeningsSubtitle =>
+      'σÉ»τö¿Σ╕Çτ╗äτ▓╛ΘÇëτÜäΘó¥σñûΦ┐çµ╗ñΦºäσêÖσêùΦí¿πÇé';
 
   @override
-  String get settings_ublockManageTitle => '由 Cat Browser 管理';
+  String get settings_ublockManageTitle => 'τö▒ Cat Browser τ«íτÉå';
 
   @override
   String get settings_ublockManageSubtitle =>
-      'Cat Browser 会在下次浏览器启动时控制 uBlock Origin 启用的过滤规则列表。';
+      'Cat Browser Σ╝Üσ£¿Σ╕ïµ¼íµ╡ÅΦºêσÖ¿σÉ»σè¿µù╢µÄºσê╢ uBlock Origin σÉ»τö¿τÜäΦ┐çµ╗ñΦºäσêÖσêùΦí¿πÇé';
 
   @override
-  String get settings_ublockManageHint => '启用管理后将以 uBO 的常用基础列表为起点，并保留“我的过滤规则”。';
+  String get settings_ublockManageHint =>
+      'σÉ»τö¿τ«íτÉåσÉÄσ░åΣ╗Ñ uBO τÜäσ╕╕τö¿σƒ║τíÇσêùΦí¿Σ╕║Φ╡╖τé╣∩╝îσ╣╢Σ┐¥τòÖΓÇ£µêæτÜäΦ┐çµ╗ñΦºäσêÖΓÇ¥πÇé';
 
   @override
-  String get settings_ublockAutoSelectTitle => '自动选择语言';
+  String get settings_ublockAutoSelectTitle => 'Φç¬σè¿ΘÇëµï⌐Φ»¡Φ¿Ç';
 
   @override
-  String get settings_ublockAutoSelectSubtitle => '启用与设备语言相匹配的区域过滤规则列表。';
+  String get settings_ublockAutoSelectSubtitle =>
+      'σÉ»τö¿Σ╕ÄΦ«╛σñçΦ»¡Φ¿Çτ¢╕σî╣ΘàìτÜäσî║σƒƒΦ┐çµ╗ñΦºäσêÖσêùΦí¿πÇé';
 
   @override
-  String get settings_ublockAutoSelectedTooltip => '已根据你的语言自动选择';
+  String get settings_ublockAutoSelectedTooltip =>
+      'σ╖▓µá╣µì«Σ╜áτÜäΦ»¡Φ¿ÇΦç¬σè¿ΘÇëµï⌐';
 
   @override
-  String get settings_ublockDefaultOnTooltip => '默认启用';
+  String get settings_ublockDefaultOnTooltip => 'Θ╗ÿΦ«ñσÉ»τö¿';
 
   @override
-  String get settings_ublockVisitSupportTooltip => '访问支持页面';
+  String get settings_ublockVisitSupportTooltip => 'Φ«┐Θù«µö»µîüΘí╡Θ¥ó';
 
   @override
   String get settings_ublockExternalListsHint =>
-      '原始网址会作为外部列表转发给 uBlock Origin。描述仅在 Cat Browser 中显示。';
+      'σÄƒσºïτ╜æσ¥ÇΣ╝ÜΣ╜£Σ╕║σñûΘâ¿σêùΦí¿Φ╜¼σÅæτ╗Ö uBlock OriginπÇéµÅÅΦ┐░Σ╗àσ£¿ Cat Browser Σ╕¡µÿ╛τñ║πÇé';
 
   @override
-  String get settings_ublockNoExternalLists => '未配置外部列表。';
+  String get settings_ublockNoExternalLists => 'µ£¬Θàìτ╜«σñûΘâ¿σêùΦí¿πÇé';
 
   @override
   String settings_ublockNoExternalListsMatch(String query) {
-    return '没有与“$query”匹配的外部列表。';
+    return 'µ▓íµ£ëΣ╕ÄΓÇ£$queryΓÇ¥σî╣ΘàìτÜäσñûΘâ¿σêùΦí¿πÇé';
   }
 
   @override
-  String get settings_ublockAddExternalListButton => '添加外部列表';
+  String get settings_ublockAddExternalListButton => 'µ╖╗σèáσñûΘâ¿σêùΦí¿';
 
   @override
-  String get settings_ublockEditListDialogTitle => '编辑外部过滤规则列表';
+  String get settings_ublockEditListDialogTitle =>
+      'τ╝ûΦ╛æσñûΘâ¿Φ┐çµ╗ñΦºäσêÖσêùΦí¿';
 
   @override
-  String get settings_ublockAddListDialogTitle => '添加外部过滤规则列表';
+  String get settings_ublockAddListDialogTitle =>
+      'µ╖╗σèáσñûΘâ¿Φ┐çµ╗ñΦºäσêÖσêùΦí¿';
 
   @override
-  String get settings_ublockListUrlLabel => '列表网址';
+  String get settings_ublockListUrlLabel => 'σêùΦí¿τ╜æσ¥Ç';
 
   @override
-  String get settings_ublockListUrlAlreadyAdded => '已添加';
+  String get settings_ublockListUrlAlreadyAdded => 'σ╖▓µ╖╗σèá';
 
   @override
-  String get settings_ublockDescriptionLabel => '描述（可选）';
+  String get settings_ublockDescriptionLabel => 'µÅÅΦ┐░∩╝êσÅ»ΘÇë∩╝ë';
 
   @override
-  String get settings_ublockDescriptionHint => '例如：烦人元素 — myAuthor';
+  String get settings_ublockDescriptionHint =>
+      'Σ╛ïσªé∩╝ÜτâªΣ║║σàâτ┤á ΓÇö myAuthor';
 
   @override
-  String get settings_ublockGroupDefault => '默认';
+  String get settings_ublockGroupDefault => 'Θ╗ÿΦ«ñ';
 
   @override
-  String get settings_ublockGroupAds => '广告';
+  String get settings_ublockGroupAds => 'σ╣┐σæè';
 
   @override
-  String get settings_ublockGroupPrivacy => '隐私';
+  String get settings_ublockGroupPrivacy => 'ΘÜÉτºü';
 
   @override
-  String get settings_ublockGroupMalware => '恶意软件';
+  String get settings_ublockGroupMalware => 'µü╢µäÅΦ╜»Σ╗╢';
 
   @override
-  String get settings_ublockGroupAnnoyances => '烦人元素';
+  String get settings_ublockGroupAnnoyances => 'τâªΣ║║σàâτ┤á';
 
   @override
-  String get settings_ublockGroupMultipurpose => '多用途';
+  String get settings_ublockGroupMultipurpose => 'σñÜτö¿ΘÇö';
 
   @override
-  String get settings_ublockGroupRegions => '区域';
+  String get settings_ublockGroupRegions => 'σî║σƒƒ';
 
   @override
-  String get settings_categoryGeneralTitle => '常规';
+  String get settings_categoryGeneralTitle => 'σ╕╕Φºä';
 
   @override
-  String get settings_categoryGeneralKeywords => '主题,界面缩放,默认浏览器';
+  String get settings_categoryGeneralKeywords =>
+      'Σ╕╗Θóÿ,τòîΘ¥óτ╝⌐µö╛,Θ╗ÿΦ«ñµ╡ÅΦºêσÖ¿';
 
   @override
-  String get settings_categoryGeneralSubtitle => '外观、下载';
+  String get settings_categoryGeneralSubtitle => 'σñûΦºéπÇüΣ╕ïΦ╜╜';
 
   @override
-  String get settings_categoryBrowsingTitle => '浏览';
+  String get settings_categoryBrowsingTitle => 'µ╡ÅΦºê';
 
   @override
-  String get settings_categoryBrowsingKeywords => '标签页,小众网络,网址清理,短链接还原';
+  String get settings_categoryBrowsingKeywords =>
+      'µáçτ¡╛Θí╡,σ░ÅΣ╝ùτ╜æτ╗£,τ╜æσ¥Çµ╕àτÉå,τƒ¡Θô╛µÄÑΦ┐ÿσÄƒ';
 
   @override
-  String get settings_categoryBrowsingSubtitle => '标签页、导航、外部链接';
+  String get settings_categoryBrowsingSubtitle =>
+      'µáçτ¡╛Θí╡πÇüσ»╝Φê¬πÇüσñûΘâ¿Θô╛µÄÑ';
 
   @override
-  String get settings_categoryHomeNewTabTitle => '主页与新标签页';
+  String get settings_categoryHomeNewTabTitle => 'Σ╕╗Θí╡Σ╕Äµû░µáçτ¡╛Θí╡';
 
   @override
   String get settings_categoryHomeNewTabKeywords =>
-      '主页,新标签页,起始页,版块,快捷方式,常用网站,名言,壁纸,背景';
+      'Σ╕╗Θí╡,µû░µáçτ¡╛Θí╡,Φ╡╖σºïΘí╡,τëêσ¥ù,σ┐½µì╖µû╣σ╝Å,σ╕╕τö¿τ╜æτ½Ö,σÉìΦ¿Ç,σúüτ║╕,ΦâîµÖ»';
 
   @override
-  String get settings_categoryHomeNewTabSubtitle => '主页和新标签页显示的内容';
+  String get settings_categoryHomeNewTabSubtitle =>
+      'Σ╕╗Θí╡σÆîµû░µáçτ¡╛Θí╡µÿ╛τñ║τÜäσåàσ«╣';
 
   @override
-  String get settings_categoryGesturesTitle => '手势';
+  String get settings_categoryGesturesTitle => 'µëïσè┐';
 
   @override
-  String get settings_categoryGesturesKeywords => '手势,滑动,笔画,标签栏,长按,双指捏合';
+  String get settings_categoryGesturesKeywords =>
+      'µëïσè┐,µ╗æσè¿,τ¼öτö╗,µáçτ¡╛µáÅ,Θò┐µîë,σÅîµîçµìÅσÉê';
 
   @override
-  String get settings_categoryGesturesSubtitle => '标签栏和标签页上的滑动、绘制手势';
+  String get settings_categoryGesturesSubtitle =>
+      'µáçτ¡╛µáÅσÆîµáçτ¡╛Θí╡Σ╕èτÜäµ╗æσè¿πÇüτ╗ÿσê╢µëïσè┐';
 
   @override
-  String get settings_categoryKeyboardShortcutsTitle => '键盘快捷键';
+  String get settings_categoryKeyboardShortcutsTitle => 'Θö«τ¢ÿσ┐½µì╖Θö«';
 
   @override
-  String get settings_categoryKeyboardShortcutsKeywords => '键盘,快捷键,热键,按键绑定';
+  String get settings_categoryKeyboardShortcutsKeywords =>
+      'Θö«τ¢ÿ,σ┐½µì╖Θö«,τâ¡Θö«,µîëΘö«τ╗æσ«Ü';
 
   @override
-  String get settings_categoryKeyboardShortcutsSubtitle => '用于浏览器操作的实体键盘按键';
+  String get settings_categoryKeyboardShortcutsSubtitle =>
+      'τö¿Σ║Äµ╡ÅΦºêσÖ¿µôìΣ╜£τÜäσ«₧Σ╜ôΘö«τ¢ÿµîëΘö«';
 
   @override
-  String get settings_categoryToolbarLayoutTitle => '工具栏与布局';
+  String get settings_categoryToolbarLayoutTitle => 'σ╖Ñσà╖µáÅΣ╕Äσ╕âσ▒Ç';
 
   @override
-  String get settings_categoryToolbarLayoutKeywords => '上下文工具栏,快速标签页切换器';
+  String get settings_categoryToolbarLayoutKeywords =>
+      'Σ╕èΣ╕ïµûçσ╖Ñσà╖µáÅ,σ┐½ΘÇƒµáçτ¡╛Θí╡σêçµìóσÖ¿';
 
   @override
-  String get settings_categoryToolbarLayoutSubtitle => '标签栏、工具栏、快速切换栏、标签页视图';
+  String get settings_categoryToolbarLayoutSubtitle =>
+      'µáçτ¡╛µáÅπÇüσ╖Ñσà╖µáÅπÇüσ┐½ΘÇƒσêçµìóµáÅπÇüµáçτ¡╛Θí╡Φºåσ¢╛';
 
   @override
-  String get settings_categoryWebContentTitle => '网页内容';
+  String get settings_categoryWebContentTitle => 'τ╜æΘí╡σåàσ«╣';
 
   @override
-  String get settings_categoryWebContentKeywords => '阅读模式,pdf,字体';
+  String get settings_categoryWebContentKeywords => 'ΘÿàΦ»╗µ¿íσ╝Å,pdf,σ¡ùΣ╜ô';
 
   @override
-  String get settings_categoryWebContentSubtitle => '页面显示、PDF、阅读模式、AI';
+  String get settings_categoryWebContentSubtitle =>
+      'Θí╡Θ¥óµÿ╛τñ║πÇüPDFπÇüΘÿàΦ»╗µ¿íσ╝Å';
 
   @override
-  String get settings_categoryNotificationsTitle => '通知';
+  String get settings_categoryNotificationsTitle => 'ΘÇÜτƒÑ';
 
   @override
   String get settings_categoryNotificationsKeywords =>
-      '推送,unifiedpush,ntfy,分发器';
+      'µÄ¿ΘÇü,unifiedpush,ntfy,σêåσÅæσÖ¿';
 
   @override
-  String get settings_categoryNotificationsSubtitle => '网页推送方式、分发器、网站订阅';
+  String get settings_categoryNotificationsSubtitle =>
+      'τ╜æτ½ÖΘÇÜτƒÑΣ╗ÑσÅèΦ┤ƒΦ┤úΣ╝áΘÇÆΘÇÜτƒÑτÜäσ║öτö¿';
 
   @override
-  String get settings_categorySearchTitle => '搜索';
+  String get settings_categorySearchTitle => 'µÉ£τ┤ó';
 
   @override
-  String get settings_categorySearchKeywords => 'bang,建议,本地搜索索引';
+  String get settings_categorySearchKeywords =>
+      'bang,σ╗║Φ««,µ£¼σ£░µÉ£τ┤óτ┤óσ╝ò';
 
   @override
-  String get settings_categorySearchSubtitle => '提供商、Bang、搜索历史';
+  String get settings_categorySearchSubtitle =>
+      'µÅÉΣ╛¢σòåπÇüBangπÇüµÉ£τ┤óσÄåσÅ▓';
 
   @override
-  String get settings_categoryPrivacySecurityTitle => '隐私与安全';
+  String get settings_categoryPrivacySecurityTitle => 'ΘÜÉτºüΣ╕Äσ«ëσà¿';
 
   @override
   String get settings_categoryPrivacySecurityKeywords =>
-      '指纹,https,doh,安全浏览,网络保护';
+      'µîçτ║╣,https,doh,σ«ëσà¿µ╡ÅΦºê,τ╜æτ╗£Σ┐¥µèñ';
 
   @override
-  String get settings_categoryPrivacySecuritySubtitle => '跟踪保护、数据清除';
+  String get settings_categoryPrivacySecuritySubtitle =>
+      'Φ╖ƒΦ╕¬Σ┐¥µèñπÇüµò░µì«µ╕àΘÖñ';
 
   @override
-  String get settings_categoryProxyTitle => '代理';
+  String get settings_categoryProxyTitle => 'Φ┐₧µÄÑ';
 
   @override
   String get settings_categoryProxyKeywords =>
-      '代理,sing-box,socks,vpn,wireguard,路由,tor,容器,翻墙';
+      'Σ╗úτÉå,sing-box,socks,vpn,wireguard,Φ╖»τö▒,tor,σ«╣σÖ¿,τ┐╗σóÖ';
 
   @override
-  String get settings_categoryProxySubtitle => '连接和路由';
+  String get settings_categoryProxySubtitle => 'TorπÇüVPNπÇüΣ╗úτÉåσÆîΦ╖»τö▒';
 
   @override
-  String get settings_categoryExtensionsTitle => '扩展';
+  String get settings_categoryExtensionsTitle => 'µë⌐σ▒ò';
 
   @override
-  String get settings_categoryExtensionsKeywords => '附加组件,插件,未签名扩展,addons';
+  String get settings_categoryExtensionsKeywords =>
+      'ΘÖäσèáτ╗äΣ╗╢,µÅÆΣ╗╢,µ£¬τ¡╛σÉìµë⌐σ▒ò,addons';
 
   @override
-  String get settings_categoryExtensionsSubtitle => '安装和管理扩展来源';
+  String get settings_categoryExtensionsSubtitle =>
+      'σ«ëΦúàσÆîτ«íτÉåµë⌐σ▒òµ¥Ñµ║É';
 
   @override
-  String get settings_categoryAccountTitle => 'Cat Browser 账户';
+  String get settings_categoryAccountTitle => 'Cat Browser Φ┤ªµê╖';
 
   @override
-  String get settings_categoryAccountKeywords => '账户,账号,订阅';
+  String get settings_categoryAccountKeywords => 'Φ┤ªµê╖,Φ┤ªσÅ╖,Φ«óΘÿà';
 
   @override
-  String get settings_categoryAccountSubtitle => '登录、同步设置';
+  String get settings_categoryAccountSubtitle => 'τÖ╗σ╜òπÇüσÉîµ¡ÑΦ«╛τ╜«';
 
   @override
   String get settings_categorySyncTitle => 'Firefox Sync';
 
   @override
-  String get settings_categorySyncKeywords => '配对,设备名称,同步类型';
+  String get settings_categorySyncKeywords =>
+      'Θàìσ»╣,Φ«╛σñçσÉìτº░,σÉîµ¡Ñτ▒╗σ₧ï';
 
   @override
-  String get settings_categorySyncSubtitle => '账户、立即同步、同步内容选择';
+  String get settings_categorySyncSubtitle =>
+      'Φ┤ªµê╖πÇüτ½ïσì│σÉîµ¡ÑπÇüσÉîµ¡Ñσåàσ«╣ΘÇëµï⌐';
 
   @override
-  String get settings_categoryAdvancedTitle => '高级';
+  String get settings_categoryAdvancedTitle => 'Θ½ÿτ║º';
 
   @override
-  String get settings_categoryAdvancedKeywords => '实验性,错误日志,javascript';
+  String get settings_categoryAdvancedKeywords =>
+      'σ«₧Θ¬îµÇº,ΘöÖΦ»»µùÑσ┐ù,javascript';
 
   @override
-  String get settings_categoryAdvancedSubtitle => 'JavaScript、用户代理、调试';
+  String get settings_categoryAdvancedSubtitle =>
+      'JavaScriptπÇüτö¿µê╖Σ╗úτÉåπÇüΦ░âΦ»ò';
 
   @override
-  String get settings_categoryGroupBrowserTitle => '浏览器';
+  String get settings_categoryGroupBrowserTitle => 'µ╡ÅΦºêσÖ¿';
 
   @override
-  String get settings_categoryGroupServicesAdvancedTitle => '服务与高级';
+  String get settings_categoryGroupServicesAdvancedTitle => 'µ£ìσèíΣ╕ÄΘ½ÿτ║º';
 
   @override
-  String get settings_privacySectionTrackingProtectionTitle => '跟踪保护';
+  String get settings_privacySectionTrackingProtectionTitle => 'Φ╖ƒΦ╕¬Σ┐¥µèñ';
 
   @override
-  String get settings_privacySectionTrackingProtectionKeywords => '隐私';
+  String get settings_privacySectionTrackingProtectionKeywords => 'ΘÜÉτºü';
 
   @override
-  String get settings_indexEnhancedTrackingProtectionSubtitle => '选择拦截跟踪器的力度';
+  String get settings_indexEnhancedTrackingProtectionSubtitle =>
+      'ΘÇëµï⌐µïªµê¬Φ╖ƒΦ╕¬σÖ¿τÜäσè¢σ║ª';
 
   @override
-  String get settings_indexTrackerStatisticsSubtitle => '每天统计被拦截的跟踪器';
+  String get settings_indexTrackerStatisticsSubtitle =>
+      'µ»Åσñ⌐τ╗ƒΦ«íΦó½µïªµê¬τÜäΦ╖ƒΦ╕¬σÖ¿';
 
   @override
   String get settings_indexBounceTrackingProtectionSubtitle =>
-      '移除基于重定向的跟踪器留下的跟踪状态';
+      'τº╗ΘÖñσƒ║Σ║ÄΘçìσ«ÜσÉæτÜäΦ╖ƒΦ╕¬σÖ¿τòÖΣ╕ïτÜäΦ╖ƒΦ╕¬τè╢µÇü';
 
   @override
-  String get settings_indexQueryParameterStrippingSubtitle => '从网址中移除跟踪参数';
+  String get settings_indexQueryParameterStrippingSubtitle =>
+      'Σ╗Äτ╜æσ¥ÇΣ╕¡τº╗ΘÖñΦ╖ƒΦ╕¬σÅéµò░';
 
   @override
-  String get settings_privacySectionFingerprintingTitle => '指纹识别';
+  String get settings_privacySectionFingerprintingTitle => 'µîçτ║╣Φ»åσê½';
 
   @override
-  String get settings_indexBrowserLanguagesSubtitle => '选择网站可以看到的语言';
+  String get settings_indexBrowserLanguagesSubtitle =>
+      'ΘÇëµï⌐τ╜æτ½ÖσÅ»Σ╗Ñτ£ïσê░τÜäΦ»¡Φ¿Ç';
 
   @override
-  String get settings_privacySectionConnectionSecurityTitle => '连接安全';
+  String get settings_privacySectionConnectionSecurityTitle => 'Φ┐₧µÄÑσ«ëσà¿';
 
   @override
-  String get settings_indexHttpsOnlyModeSubtitle => '优先使用 HTTPS 并阻止不安全的连接';
+  String get settings_indexHttpsOnlyModeSubtitle =>
+      'µëôσ╝Çµ£¬σèáσ»åτÜäτ╜æτ½ÖσëìσÅæσç║Φ¡ªσæè';
 
   @override
-  String get settings_indexDnsOverHttpsTitle => 'DNS over HTTPS';
+  String get settings_indexDnsOverHttpsTitle => 'σ«ëσà¿ DNS';
 
   @override
-  String get settings_indexDnsOverHttpsKeywords => 'doh,加密 dns';
+  String get settings_indexDnsOverHttpsKeywords =>
+      'dns over https, doh, σèáσ»å dns';
 
   @override
-  String get settings_indexDnsOverHttpsSubtitle => '加密 DNS 查询';
+  String get settings_indexDnsOverHttpsSubtitle => 'σèáσ»åτ╜æτ½ÖµƒÑΦ»ó';
 
   @override
-  String get settings_privacySectionNetworkProtectionTitle => '网络保护';
+  String get settings_privacySectionNetworkProtectionTitle => 'τ╜æτ╗£Σ┐¥µèñ';
 
   @override
-  String get settings_indexLnaBlockingSubtitle => '拦截对本地网络设备和服务的请求';
+  String get settings_indexLnaBlockingSubtitle =>
+      'τ╜æτ½ÖΦ┐₧µÄÑµ£¼σ£░σ║öτö¿σÆîΦ«╛σñçσëìσ┐àΘí╗σàêΦ»óΘù«';
 
   @override
-  String get settings_indexLnaBlockTrackersSubtitle => '拦截类似跟踪器的本地网络请求';
+  String get settings_indexLnaBlockTrackersSubtitle =>
+      'Θÿ╗µ¡óσ╖▓τƒÑΦ╖ƒΦ╕¬σÖ¿Φ«┐Θù«µ£¼σ£░σ║öτö¿σÆîΦ«╛σñç';
 
   @override
-  String get settings_privacySectionSignalsModesTitle => '隐私信号与模式';
+  String get settings_privacySectionSignalsModesTitle =>
+      'ΘÜÉτºüΣ┐íσÅ╖Σ╕Äµ¿íσ╝Å';
 
   @override
-  String get settings_indexScreenshotProtectionSubtitle => '防止应用内容出现在截图中';
+  String get settings_indexScreenshotProtectionSubtitle =>
+      'Θÿ▓µ¡óσ║öτö¿σåàσ«╣σç║τÄ░σ£¿µê¬σ¢╛Σ╕¡';
 
   @override
-  String get settings_indexAllowPrivateTabScreenshotsSubtitle => '允许系统截取隐私标签页';
+  String get settings_indexAllowPrivateTabScreenshotsSubtitle =>
+      'σàüΦ«╕τ│╗τ╗ƒµê¬σÅûΘÜÉτºüµáçτ¡╛Θí╡';
 
   @override
-  String get settings_indexGlobalPrivacyControlSubtitle => '向网站发送隐私偏好信号';
+  String get settings_indexGlobalPrivacyControlSubtitle =>
+      'σÉæτ╜æτ½ÖσÅæΘÇüΘÜÉτºüσüÅσÑ╜Σ┐íσÅ╖';
 
   @override
-  String get settings_privacySectionAppOpeningProtectionTitle => '应用打开保护';
+  String get settings_privacySectionAppOpeningProtectionTitle =>
+      'σ║öτö¿µëôσ╝ÇΣ┐¥µèñ';
 
   @override
   String get settings_indexAppOpeningProtectionSubtitle =>
-      '控制哪些应用可以直接启动 Cat Browser';
+      'µÄºσê╢σô¬Σ║¢σ║öτö¿σÅ»Σ╗Ñτ¢┤µÄÑσÉ»σè¿ Cat Browser';
 
   @override
-  String get settings_privacySectionDataManagementTitle => '数据管理';
+  String get settings_privacySectionDataManagementTitle => 'µò░µì«τ«íτÉå';
 
   @override
   String get settings_indexDeleteBrowsingDataSubtitle =>
-      '清除历史记录、Cookie 及其他浏览数据';
+      'µ╕àΘÖñσÄåσÅ▓Φ«░σ╜òπÇüCookie σÅèσà╢Σ╗ûµ╡ÅΦºêµò░µì«';
 
   @override
-  String get settings_indexAutoClearHistorySubtitle => '在选定的时长后自动清除历史记录';
+  String get settings_indexAutoClearHistorySubtitle =>
+      'σ£¿ΘÇëσ«ÜτÜäµù╢Θò┐σÉÄΦç¬σè¿µ╕àΘÖñσÄåσÅ▓Φ«░σ╜ò';
 
   @override
-  String get settings_indexAutoClearUnassignedTabsSubtitle => '自动关闭未分配到容器的标签页';
+  String get settings_indexAutoClearUnassignedTabsSubtitle =>
+      'Φç¬σè¿σà│Θù¡µ£¬σêåΘàìσê░σ«╣σÖ¿τÜäµáçτ¡╛Θí╡';
 
   @override
-  String get settings_privacySectionSafeBrowsingTitle => 'Google 安全浏览';
+  String get settings_privacySectionSafeBrowsingTitle => 'Google σ«ëσà¿µ╡ÅΦºê';
 
   @override
-  String get settings_indexSafeBrowsingMalwareSubtitle => '对恶意软件和有害下载发出警告';
+  String get settings_indexSafeBrowsingMalwareSubtitle =>
+      'σ»╣µü╢µäÅΦ╜»Σ╗╢σÆîµ£ëσ«│Σ╕ïΦ╜╜σÅæσç║Φ¡ªσæè';
 
   @override
-  String get settings_indexSafeBrowsingPhishingSubtitle => '对欺诈网站和虚假登录页面发出警告';
+  String get settings_indexSafeBrowsingPhishingSubtitle =>
+      'σ»╣µ¼║Φ»êτ╜æτ½ÖσÆîΦÖÜσüçτÖ╗σ╜òΘí╡Θ¥óσÅæσç║Φ¡ªσæè';
 
   @override
-  String get settings_privacySectionAdvancedSecurityTitle => '高级安全';
+  String get settings_privacySectionAdvancedSecurityTitle => 'Θ½ÿτ║ºσ«ëσà¿';
 
   @override
-  String get settings_indexWebEngineHardeningSubtitle => '加固浏览器引擎的行为和默认设置';
+  String get settings_indexWebEngineHardeningSubtitle =>
+      'σèáσ¢║µ╡ÅΦºêσÖ¿σ╝òµôÄτÜäΦíîΣ╕║σÆîΘ╗ÿΦ«ñΦ«╛τ╜«';
 
   @override
-  String get settings_indexFissionEnabledSubtitle => '在不同源之间使用更强的站点隔离';
+  String get settings_indexFissionEnabledSubtitle =>
+      'Φ«⌐µ»ÅΣ╕¬τ╜æτ½Öσ£¿τï¼τ½ïΦ┐¢τ¿ïΣ╕¡Φ┐ÉΦíî';
 
   @override
   String get settings_indexExtensionsWebAPIEnabledSubtitle =>
-      '允许扩展向页面公开 Web API';
+      'σàüΦ«╕µë⌐σ▒òσÉæΘí╡Θ¥óσà¼σ╝Ç Web API';
 
   @override
-  String get settings_proxySectionTitle => '代理';
+  String get settings_proxySectionTitle => 'Σ╗úτÉå';
 
   @override
-  String get settings_indexProxyLogsSubtitle => '查看代理日志并设置其记录的详细程度';
+  String get settings_indexProxyLogsSubtitle =>
+      'µƒÑτ£ïΣ╗úτÉåµùÑσ┐ùσ╣╢Φ«╛τ╜«σà╢Φ«░σ╜òτÜäΦ»ªτ╗åτ¿ïσ║ª';
 
   @override
-  String get settings_saveAndUse => '保存并使用';
+  String get settings_saveAndUse => 'Σ┐¥σ¡ÿσ╣╢Σ╜┐τö¿';
 
   @override
-  String get settings_replace => '替换';
+  String get settings_replace => 'µ¢┐µìó';
 
   @override
-  String get settings_later => '稍后';
+  String get settings_later => 'τ¿ìσÉÄ';
 
   @override
-  String get settings_restartNow => '立即重启';
+  String get settings_restartNow => 'τ½ïσì│ΘçìσÉ»';
 
   @override
-  String get settings_sync => '同步';
+  String get settings_sync => 'σÉîµ¡Ñ';
 
   @override
-  String get settings_chooseSearchProvider => '选择搜索提供商';
+  String get settings_chooseSearchProvider => 'ΘÇëµï⌐µÉ£τ┤óµÅÉΣ╛¢σòå';
 
   @override
-  String get settings_entriesLabel => '条目数';
+  String get settings_entriesLabel => 'µ¥íτ¢«µò░';
 
   @override
-  String get settings_lastSyncLabel => '上次同步';
+  String get settings_lastSyncLabel => 'Σ╕èµ¼íσÉîµ¡Ñ';
 
   @override
-  String get settings_notAvailable => '不可用';
+  String get settings_notAvailable => 'Σ╕ìσÅ»τö¿';
 
   @override
-  String get settings_protectionLevelTitle => '保护级别';
+  String get settings_protectionLevelTitle => 'Σ┐¥µèñτ║ºσê½';
 
   @override
   String get settings_protectionLevelDescription =>
-      'DNS over HTTPS 通过加密连接发送域名解析请求，以保护这些请求，让他人更难得知你即将访问哪些网站。';
+      'µëôσ╝Çτ╜æτ½ÖΣ╣ïσëì∩╝îµ╡ÅΦºêσÖ¿Σ╝ÜσàêµƒÑΦ»óσ«âτÜäσ£░σ¥ÇπÇéσ«ëσà¿ DNS Σ╝Üσèáσ»åΦ┐ÖΣ╕ÇµƒÑΦ»ó∩╝îΦ«⌐Σ╜áτÜäτ╜æτ╗£µ£ìσèíσòåσÆîσà╢Σ╗ûΣ║║µ¢┤ΘÜ╛τ£ïσê░Σ╜áΦ«┐Θù«Σ║åσô¬Σ║¢τ╜æτ½ÖπÇé';
 
   @override
-  String get settings_defaultProtectionTitle => '默认保护';
+  String get settings_defaultProtectionTitle => 'Θ╗ÿΦ«ñΣ┐¥µèñ';
 
   @override
-  String get settings_defaultProtectionSubtitle => '仅在默认 DNS 失败时使用 DoH';
+  String get settings_defaultProtectionSubtitle =>
+      'Σ╗àσ£¿Σ╜áτ╜æτ╗£τÜä DNS σñ▒µòêµù╢Σ╜┐τö¿σ«ëσà¿ DNS';
 
   @override
-  String get settings_increasedProtectionTitle => '增强保护';
+  String get settings_increasedProtectionTitle => 'σó₧σ╝║Σ┐¥µèñ';
 
   @override
-  String get settings_increasedProtectionSubtitle => '优先使用 DoH，以默认 DNS 作为备用';
+  String get settings_increasedProtectionSubtitle =>
+      'Σ╝ÿσàêΣ╜┐τö¿σ«ëσà¿ DNS∩╝îσñ▒µòêµù╢µö╣τö¿Σ╜áτ╜æτ╗£τÜä DNS';
 
   @override
-  String get settings_maxProtectionTitle => '最大保护';
+  String get settings_maxProtectionTitle => 'µ£ÇσñºΣ┐¥µèñ';
 
   @override
-  String get settings_maxProtectionSubtitle => '仅使用 DoH，无备用';
+  String get settings_maxProtectionSubtitle =>
+      'σºïτ╗êΣ╜┐τö¿σ«ëσà¿ DNSπÇéσñ▒µòêµù╢τ╜æτ½Öσ░åµùáµ│òσèáΦ╜╜';
 
   @override
-  String get settings_protectionOffTitle => '关闭';
+  String get settings_protectionOffTitle => 'σà│Θù¡';
 
   @override
-  String get settings_protectionOffSubtitle => '使用你的默认 DNS 解析服务器';
+  String get settings_protectionOffSubtitle => 'Σ╜┐τö¿Σ╜áτ╜æτ╗£τÜä DNS';
 
   @override
-  String get settings_dohProviderTitle => 'DoH 提供商';
+  String get settings_dohProviderTitle => 'µ£ìσèíσòå';
 
   @override
-  String get settings_yourResolvers => '你的解析服务器';
+  String get settings_yourResolvers => 'Σ╜áτÜäµ£ìσèíσòå';
 
   @override
-  String get settings_addCustomResolver => '添加自定义解析服务器';
+  String get settings_addCustomResolver => 'µ╖╗σèáΣ╜áΦç¬σ╖▒τÜäµ£ìσèíσòå';
 
   @override
-  String get settings_editCustomResolverTitle => '编辑自定义解析服务器';
+  String get settings_editCustomResolverTitle => 'τ╝ûΦ╛æµ£ìσèíσòå';
 
   @override
-  String get settings_resolverUrlLabel => '解析服务器网址';
+  String get settings_resolverUrlLabel => 'µ£ìσèíσòå URL';
 
   @override
-  String get settings_alreadyBuiltInProvider => '已作为内置提供商提供';
+  String get settings_alreadyBuiltInProvider =>
+      'σ╖▓Σ╜£Σ╕║σåàτ╜«µÅÉΣ╛¢σòåµÅÉΣ╛¢';
 
   @override
-  String get settings_alreadyAdded => '已添加';
+  String get settings_alreadyAdded => 'σ╖▓µ╖╗σèá';
 
   @override
-  String get settings_resolverNameLabel => '名称（可选）';
+  String get settings_resolverNameLabel => 'σÉìτº░∩╝êσÅ»ΘÇë∩╝ë';
 
   @override
-  String get settings_resolverNameHint => '例如 dnsforge（广告拦截）';
+  String get settings_resolverNameHint => 'Σ╛ïσªé dnsforge∩╝êσ╣┐σæèµïªµê¬∩╝ë';
 
   @override
-  String get settings_searchHint => '搜索设置';
+  String get settings_searchHint => 'µÉ£τ┤óΦ«╛τ╜«';
 
   @override
-  String get settings_noSettingsAvailable => '没有可用的设置。';
+  String get settings_noSettingsAvailable => 'µ▓íµ£ëσÅ»τö¿τÜäΦ«╛τ╜«πÇé';
 
   @override
   String settings_noSettingsMatch(String query) {
-    return '没有与“$query”匹配的设置。';
+    return 'µ▓íµ£ëΣ╕ÄΓÇ£$queryΓÇ¥σî╣ΘàìτÜäΦ«╛τ╜«πÇé';
   }
 
   @override
-  String get settings_stringListEditorEmpty => '尚未添加任何内容。';
+  String get settings_stringListEditorEmpty => 'σ░Üµ£¬µ╖╗σèáΣ╗╗Σ╜òσåàσ«╣πÇé';
 
   @override
-  String get settings_customizeMenu => '自定义菜单';
+  String get settings_customizeMenu => 'Φç¬σ«ÜΣ╣ëΦÅ£σìò';
 
   @override
-  String get settings_customizeMenuKeywords => '版块,行,排序';
+  String get settings_customizeMenuKeywords => 'τëêσ¥ù,Φíî,µÄÆσ║Å';
 
   @override
-  String get settings_customizeMenuSubtitle => '选择三点菜单的版块和行，并调整其顺序';
+  String get settings_customizeMenuSubtitle =>
+      'ΘÇëµï⌐Σ╕ëτé╣ΦÅ£σìòτÜäτëêσ¥ùσÆîΦíî∩╝îσ╣╢Φ░âµò┤σà╢Θí║σ║Å';
 
   @override
-  String get settings_tabBarPositionTitle => '标签栏位置';
+  String get settings_tabBarPositionTitle => 'µáçτ¡╛µáÅΣ╜ìτ╜«';
 
   @override
-  String get settings_tabBarPositionKeywords => '顶部,底部';
+  String get settings_tabBarPositionKeywords => 'Θí╢Θâ¿,σ║òΘâ¿';
 
   @override
   String settings_currentlyResolvesTo(String text, String value) {
-    return '$text（当前：$value）';
+    return '$text∩╝êσ╜ôσëì∩╝Ü$value∩╝ë';
   }
 
   @override
-  String get settings_tabBarPositionAutoLabel => '自动';
+  String get settings_tabBarPositionAutoLabel => 'Φç¬σè¿';
 
   @override
-  String get settings_tabBarPositionTopLabel => '顶部';
+  String get settings_tabBarPositionTopLabel => 'Θí╢Θâ¿';
 
   @override
-  String get settings_tabBarPositionBottomLabel => '底部';
+  String get settings_tabBarPositionBottomLabel => 'σ║òΘâ¿';
 
   @override
-  String get settings_tabBarPositionLeftLabel => '左侧';
+  String get settings_tabBarPositionLeftLabel => 'σ╖ªΣ╛º';
 
   @override
-  String get settings_tabBarPositionRightLabel => '右侧';
+  String get settings_tabBarPositionRightLabel => 'σÅ│Σ╛º';
 
   @override
-  String get settings_tabBarPositionAutoDescription => '大屏幕上为侧边栏，手机上为底部栏';
+  String get settings_tabBarPositionAutoDescription =>
+      'σñºσ▒Åσ╣òΣ╕èΣ╕║Σ╛ºΦ╛╣µáÅ∩╝îµëïµ£║Σ╕èΣ╕║σ║òΘâ¿µáÅ';
 
   @override
-  String get settings_tabBarPositionTopDescription => '常驻标签栏，不自动隐藏';
+  String get settings_tabBarPositionTopDescription =>
+      'σ╕╕Θ⌐╗µáçτ¡╛µáÅ∩╝îΣ╕ìΦç¬σè¿ΘÜÉΦùÅ';
 
   @override
-  String get settings_tabBarPositionBottomDescription => '支持自动隐藏的标签栏';
+  String get settings_tabBarPositionBottomDescription =>
+      'µö»µîüΦç¬σè¿ΘÜÉΦùÅτÜäµáçτ¡╛µáÅ';
 
   @override
-  String get settings_tabBarPositionLeftDescription => '垂直侧边栏，滑动可隐藏';
+  String get settings_tabBarPositionLeftDescription =>
+      'σ₧éτ¢┤Σ╛ºΦ╛╣µáÅ∩╝îµ╗æσè¿σÅ»ΘÜÉΦùÅ';
 
   @override
-  String get settings_tabBarPositionRightDescription => '垂直侧边栏，滑动可隐藏';
+  String get settings_tabBarPositionRightDescription =>
+      'σ₧éτ¢┤Σ╛ºΦ╛╣µáÅ∩╝îµ╗æσè¿σÅ»ΘÜÉΦùÅ';
 
   @override
-  String get settings_tabBarStyleTitle => '标签栏样式';
+  String get settings_tabBarStyleTitle => 'µáçτ¡╛µáÅµá╖σ╝Å';
 
   @override
-  String get settings_tabBarStyleKeywords => '布局,紧凑';
+  String get settings_tabBarStyleKeywords => 'σ╕âσ▒Ç,τ┤ºσçæ';
 
   @override
-  String get settings_withTitleOption => '带标题';
+  String get settings_withTitleOption => 'σ╕ªµáçΘóÿ';
 
   @override
-  String get settings_withTitleDescription => '显示页面标题和网址路径';
+  String get settings_withTitleDescription => 'µÿ╛τñ║Θí╡Θ¥óµáçΘóÿσÆîσ£░σ¥Ç';
 
   @override
-  String get settings_compactOption => '紧凑';
+  String get settings_compactOption => 'τ┤ºσçæ';
 
   @override
-  String get settings_compactDescription => '居中的网址胶囊，不显示页面标题';
+  String get settings_compactDescription => 'Σ╗àµÿ╛τñ║σ£░σ¥Ç∩╝îσ▒àΣ╕¡';
 
   @override
-  String get settings_showContextualToolbarTitle => '显示上下文工具栏';
+  String get settings_showContextualToolbarTitle => 'µÿ╛τñ║Σ╕èΣ╕ïµûçσ╖Ñσà╖µáÅ';
 
   @override
-  String get settings_showContextualToolbarKeywords => '底部工具栏';
+  String get settings_showContextualToolbarKeywords => 'σ║òΘâ¿σ╖Ñσà╖µáÅ';
 
   @override
-  String get settings_showContextualToolbarSubtitle => '显示用于导航和操作的额外底部工具栏';
+  String get settings_showContextualToolbarSubtitle =>
+      'µÿ╛τñ║τö¿Σ║Äσ»╝Φê¬σÆîµôìΣ╜£τÜäΘó¥σñûσ║òΘâ¿σ╖Ñσà╖µáÅ';
 
   @override
-  String get settings_customizeToolbarButtons => '自定义工具栏按钮';
+  String get settings_customizeToolbarButtons => 'Φç¬σ«ÜΣ╣ëσ╖Ñσà╖µáÅµîëΘÆ«';
 
   @override
-  String get settings_customizeToolbarButtonsKeywords => '按钮';
+  String get settings_customizeToolbarButtonsKeywords => 'µîëΘÆ«';
 
   @override
-  String get settings_customizeSwitcherButtons => '自定义切换栏按钮';
+  String get settings_customizeSwitcherButtons => 'Φç¬σ«ÜΣ╣ëσêçµìóµáÅµîëΘÆ«';
 
   @override
-  String get settings_customizeSwitcherButtonsKeywords => '按钮,新标签页,操作,末尾';
+  String get settings_customizeSwitcherButtonsKeywords =>
+      'µîëΘÆ«,µû░µáçτ¡╛Θí╡,µôìΣ╜£,µ£½σ░╛';
 
   @override
   String get settings_customizeSwitcherButtonsSubtitle =>
-      '固定在切换栏末尾的操作按钮（独立于上下文工具栏）';
+      'σ¢║σ«Üσ£¿σêçµìóµáÅµ£½σ░╛τÜäµôìΣ╜£µîëΘÆ«∩╝êτï¼τ½ïΣ║ÄΣ╕èΣ╕ïµûçσ╖Ñσà╖µáÅ∩╝ë';
 
   @override
-  String get settings_tabStackingTitle => '标签页堆叠';
+  String get settings_tabStackingTitle => 'µáçτ¡╛Θí╡σáåσÅá';
 
   @override
   String get settings_tabStackingKeywords =>
-      '最近标签页,最近使用,容器标签页,手风琴,两级,行,堆叠,标签页分组,标签页堆叠,标签页树,tab groups,停用';
+      'µ£ÇΦ┐æµáçτ¡╛Θí╡,µ£ÇΦ┐æΣ╜┐τö¿,σ«╣σÖ¿µáçτ¡╛Θí╡,µëïΘúÄτÉ┤,Σ╕ñτ║º,Φíî,σáåσÅá,µáçτ¡╛Θí╡σêåτ╗ä,µáçτ¡╛Θí╡σáåσÅá,µáçτ¡╛Θí╡µáæ,tab groups,σü£τö¿';
 
   @override
-  String get settings_tabStackingSubtitle => '快速标签页切换栏如何排列标签页';
+  String get settings_tabStackingSubtitle =>
+      'σ┐½ΘÇƒµáçτ¡╛Θí╡σêçµìóµáÅσªéΣ╜òµÄÆσêùµáçτ¡╛Θí╡';
 
   @override
-  String get settings_recentlyUsedTabsOption => '最近使用的标签页';
+  String get settings_recentlyUsedTabsOption => 'µ£ÇΦ┐æΣ╜┐τö¿τÜäµáçτ¡╛Θí╡';
 
   @override
-  String get settings_recentlyUsedTabsDescription => '所有容器中最近使用的标签页';
+  String get settings_recentlyUsedTabsDescription =>
+      'µëÇµ£ëσ«╣σÖ¿Σ╕¡µ£ÇΦ┐æΣ╜┐τö¿τÜäµáçτ¡╛Θí╡';
 
   @override
-  String get settings_containerTabsOption => '容器标签页';
+  String get settings_containerTabsOption => 'σ«╣σÖ¿µáçτ¡╛Θí╡';
 
   @override
-  String get settings_containerTabsDescription => '所选容器中按顺序排列的标签页';
+  String get settings_containerTabsDescription =>
+      'µëÇΘÇëσ«╣σÖ¿Σ╕¡µîëΘí║σ║ÅµÄÆσêùτÜäµáçτ¡╛Θí╡';
 
   @override
-  String get settings_accordionOption => '手风琴';
+  String get settings_accordionOption => 'µëïΘúÄτÉ┤';
 
   @override
-  String get settings_accordionDescription => '所有容器显示为标签块，所选容器的标签页在其中展开';
+  String get settings_accordionDescription =>
+      'µëÇµ£ëσ«╣σÖ¿µÿ╛τñ║Σ╕║µáçτ¡╛σ¥ù∩╝îµëÇΘÇëσ«╣σÖ¿τÜäµáçτ¡╛Θí╡σ£¿σà╢Σ╕¡σ▒òσ╝Ç';
 
   @override
-  String get settings_twoRowsOption => '两行';
+  String get settings_twoRowsOption => 'Σ╕ñΦíî';
 
   @override
-  String get settings_twoRowsDescription => '上方为所选容器的标签页，下方为最近使用的标签页';
+  String get settings_twoRowsDescription =>
+      'Σ╕èµû╣Σ╕║µëÇΘÇëσ«╣σÖ¿τÜäµáçτ¡╛Θí╡∩╝îΣ╕ïµû╣Σ╕║µ£ÇΦ┐æΣ╜┐τö¿τÜäµáçτ¡╛Θí╡';
 
   @override
-  String get settings_tabGroupsOption => '标签页分组';
+  String get settings_tabGroupsOption => 'µáçτ¡╛Θí╡σêåτ╗ä';
 
   @override
   String get settings_tabGroupsDescription =>
-      '每个标签页与从它打开的标签页合为一个标签块，上方一行显示当前分组的标签页';
+      'µ»ÅΣ╕¬µáçτ¡╛Θí╡Σ╕ÄΣ╗Äσ«âµëôσ╝ÇτÜäµáçτ¡╛Θí╡σÉêΣ╕║Σ╕ÇΣ╕¬µáçτ¡╛σ¥ù∩╝îΣ╕èµû╣Σ╕ÇΦíîµÿ╛τñ║σ╜ôσëìσêåτ╗äτÜäµáçτ¡╛Θí╡';
 
   @override
-  String get settings_tabStackingFallbackAccordion => '此窗口或侧边面板空间不足，暂时显示为手风琴';
+  String get settings_tabStackingFallbackAccordion =>
+      'µ¡ñτ¬ùσÅúµêûΣ╛ºΦ╛╣Θ¥óµ¥┐τ⌐║Θù┤Σ╕ìΦ╢│∩╝îµÜéµù╢µÿ╛τñ║Σ╕║µëïΘúÄτÉ┤';
 
   @override
   String get settings_tabStackingFallbackContainerTabs =>
-      '此窗口或侧边面板空间不足，暂时显示为容器标签页';
+      'µ¡ñτ¬ùσÅúµêûΣ╛ºΦ╛╣Θ¥óµ¥┐τ⌐║Θù┤Σ╕ìΦ╢│∩╝îµÜéµù╢µÿ╛τñ║Σ╕║σ«╣σÖ¿µáçτ¡╛Θí╡';
 
   @override
-  String get settings_disabledOption => '停用';
+  String get settings_disabledOption => 'σü£τö¿';
 
   @override
-  String get settings_disabledDescription => '隐藏快速标签页切换栏';
+  String get settings_disabledDescription => 'ΘÜÉΦùÅσ┐½ΘÇƒµáçτ¡╛Θí╡σêçµìóµáÅ';
 
   @override
-  String get settings_closeButtonsTitle => '标签块上的关闭按钮';
+  String get settings_closeButtonsTitle => 'µáçτ¡╛σ¥ùΣ╕èτÜäσà│Θù¡µîëΘÆ«';
 
   @override
-  String get settings_closeButtonsKeywords => '关闭,x 按钮,当前标签页';
+  String get settings_closeButtonsKeywords => 'σà│Θù¡,x µîëΘÆ«,σ╜ôσëìµáçτ¡╛Θí╡';
 
   @override
-  String get settings_closeButtonsSubtitle => '哪些切换栏标签块显示关闭按钮';
+  String get settings_closeButtonsSubtitle =>
+      'σô¬Σ║¢σêçµìóµáÅµáçτ¡╛σ¥ùµÿ╛τñ║σà│Θù¡µîëΘÆ«';
 
   @override
-  String get settings_activeTabOnlyOption => '仅当前标签页';
+  String get settings_activeTabOnlyOption => 'Σ╗àσ╜ôσëìµáçτ¡╛Θí╡';
 
   @override
-  String get settings_activeTabOnlyDescription => '仅当前打开的标签页的标签块';
+  String get settings_activeTabOnlyDescription =>
+      'Σ╗àσ╜ôσëìµëôσ╝ÇτÜäµáçτ¡╛Θí╡τÜäµáçτ¡╛σ¥ù';
 
   @override
-  String get settings_allTabsOption => '所有标签页';
+  String get settings_allTabsOption => 'µëÇµ£ëµáçτ¡╛Θí╡';
 
   @override
-  String get settings_allTabsDescription => '栏上的每个标签块';
+  String get settings_allTabsDescription => 'µáÅΣ╕èτÜäµ»ÅΣ╕¬µáçτ¡╛σ¥ù';
 
   @override
-  String get settings_neverOption => '从不';
+  String get settings_neverOption => 'Σ╗ÄΣ╕ì';
 
   @override
-  String get settings_neverCloseDescription => '不显示关闭按钮；可通过长按菜单或滑动切换栏来关闭标签页';
+  String get settings_neverCloseDescription =>
+      'Σ╕ìµÿ╛τñ║σà│Θù¡µîëΘÆ«∩╝¢σÅ»ΘÇÜΦ┐çΘò┐µîëΦÅ£σìòµêûµ╗æσè¿σêçµìóµáÅµ¥Ñσà│Θù¡µáçτ¡╛Θí╡';
 
   @override
-  String get settings_titleWidthTitle => '快速标签页切换栏中的标题宽度';
+  String get settings_titleWidthTitle =>
+      'σ┐½ΘÇƒµáçτ¡╛Θí╡σêçµìóµáÅΣ╕¡τÜäµáçΘóÿσ«╜σ║ª';
 
   @override
-  String get settings_titleWidthKeywords => '宽度,标题,标签块,长度';
+  String get settings_titleWidthKeywords => 'σ«╜σ║ª,µáçΘóÿ,µáçτ¡╛σ¥ù,Θò┐σ║ª';
 
   @override
-  String get settings_titleWidthSubtitle => '切换栏标签块上标签页标题的最大宽度';
+  String get settings_titleWidthSubtitle =>
+      'σêçµìóµáÅµáçτ¡╛σ¥ùΣ╕èµáçτ¡╛Θí╡µáçΘóÿτÜäµ£Çσñºσ«╜σ║ª';
 
   @override
-  String get settings_historyFallbackTitle => '快速标签页切换栏中的历史记录备选';
+  String get settings_historyFallbackTitle =>
+      'σ┐½ΘÇƒµáçτ¡╛Θí╡σêçµìóµáÅΣ╕¡τÜäσÄåσÅ▓Φ«░σ╜òσñçΘÇë';
 
   @override
-  String get settings_historyFallbackKeywords => '建议';
+  String get settings_historyFallbackKeywords => 'σ╗║Φ««';
 
   @override
-  String get settings_historyFallbackSubtitle => '没有可用的标签块时使用浏览历史建议';
+  String get settings_historyFallbackSubtitle =>
+      'µ▓íµ£ëσÅ»τö¿τÜäµáçτ¡╛σ¥ùµù╢Σ╜┐τö¿µ╡ÅΦºêσÄåσÅ▓σ╗║Φ««';
 
   @override
-  String get settings_containersByRecentUseTitle => '最近使用的容器优先';
+  String get settings_containersByRecentUseTitle =>
+      'µ£ÇΦ┐æΣ╜┐τö¿τÜäσ«╣σÖ¿Σ╝ÿσàê';
 
   @override
   String get settings_containersByRecentUseKeywords =>
-      '容器顺序,容器排序,最近容器,最后使用,最近使用,手风琴,container order,recently used';
+      'σ«╣σÖ¿Θí║σ║Å,σ«╣σÖ¿µÄÆσ║Å,µ£ÇΦ┐æσ«╣σÖ¿,µ£ÇσÉÄΣ╜┐τö¿,µ£ÇΦ┐æΣ╜┐τö¿,µëïΘúÄτÉ┤,container order,recently used';
 
   @override
   String get settings_containersByRecentUseSubtitle =>
-      '仅限手风琴：你最后使用的容器会移到最前面。已固定的容器仍排在它前面';
+      'Σ╗àΘÖÉµëïΘúÄτÉ┤∩╝ÜΣ╜áµ£ÇσÉÄΣ╜┐τö¿τÜäσ«╣σÖ¿Σ╝Üτº╗σê░µ£ÇσëìΘ¥óπÇéσ╖▓σ¢║σ«ÜτÜäσ«╣σÖ¿Σ╗ìµÄÆσ£¿σ«âσëìΘ¥ó';
 
   @override
-  String get settings_showTitlesTitle => '在快速标签页切换栏中显示标题';
+  String get settings_showTitlesTitle =>
+      'σ£¿σ┐½ΘÇƒµáçτ¡╛Θí╡σêçµìóµáÅΣ╕¡µÿ╛τñ║µáçΘóÿ';
 
   @override
-  String get settings_showTitlesKeywords => '页面标题';
+  String get settings_showTitlesKeywords => 'Θí╡Θ¥óµáçΘóÿ';
 
   @override
-  String get settings_showTitlesSubtitle => '在快速标签页切换栏中同时显示标签页标题和图标';
+  String get settings_showTitlesSubtitle =>
+      'σ£¿σ┐½ΘÇƒµáçτ¡╛Θí╡σêçµìóµáÅΣ╕¡σÉîµù╢µÿ╛τñ║µáçτ¡╛Θí╡µáçΘóÿσÆîσ¢╛µáç';
 
   @override
-  String get settings_hierarchyDepthTitle => '快速标签页切换栏中的层级深度';
+  String get settings_hierarchyDepthTitle =>
+      'σ┐½ΘÇƒµáçτ¡╛Θí╡σêçµìóµáÅΣ╕¡τÜäσ▒éτ║ºµ╖▒σ║ª';
 
   @override
-  String get settings_hierarchyDepthKeywords => '层级,嵌套,深度,树状,箭头';
+  String get settings_hierarchyDepthKeywords =>
+      'σ▒éτ║º,σ╡îσÑù,µ╖▒σ║ª,µáæτè╢,τ«¡σñ┤';
 
   @override
   String get settings_hierarchyDepthSubtitle =>
-      '在折叠为数字徽章之前，切换栏标签块上显示多少个嵌套箭头（0 表示隐藏该指示器）';
+      'σ£¿µèÿσÅáΣ╕║µò░σ¡ùσ╛╜τ½áΣ╣ïσëì∩╝îσêçµìóµáÅµáçτ¡╛σ¥ùΣ╕èµÿ╛τñ║σñÜσ░æΣ╕¬σ╡îσÑùτ«¡σñ┤∩╝ê0 Φí¿τñ║ΘÜÉΦùÅΦ»Ñµîçτñ║σÖ¿∩╝ë';
 
   @override
   String settings_hierarchyGlyphsLabel(int glyphs) {
     String _temp0 = intl.Intl.pluralLogic(
       glyphs,
       locale: localeName,
-      other: '$glyphs 级',
-      zero: '关闭',
+      other: '$glyphs τ║º',
+      zero: 'σà│Θù¡',
     );
     return '$_temp0';
   }
 
   @override
-  String get settings_autoHideTabBarTitle => '自动隐藏标签栏';
+  String get settings_autoHideTabBarTitle => 'Φç¬σè¿ΘÜÉΦùÅµáçτ¡╛µáÅ';
 
   @override
-  String get settings_autoHideTabBarKeywords => '滚动';
+  String get settings_autoHideTabBarKeywords => 'µ╗Üσè¿';
 
   @override
-  String get settings_autoHideTabBarSubtitle => '滚动时隐藏标签栏';
+  String get settings_autoHideTabBarSubtitle => 'µ╗Üσè¿µù╢ΘÜÉΦùÅµáçτ¡╛µáÅ';
 
   @override
-  String get settings_autoHideTabBarDistanceTitle => '自动隐藏距离';
+  String get settings_autoHideTabBarDistanceTitle => 'Φç¬σè¿ΘÜÉΦùÅΦ╖¥τª╗';
 
   @override
   String get settings_autoHideTabBarDistanceKeywords =>
-      '灵敏度,阈值,滚动,滑动,sensitivity,threshold';
+      'τü╡µòÅσ║ª,ΘÿêσÇ╝,µ╗Üσè¿,µ╗æσè¿,sensitivity,threshold';
 
   @override
   String get settings_autoHideTabBarDistanceSubtitle =>
-      '标签栏隐藏或重新出现前需要滚动的距离，相对于默认值';
+      'µáçτ¡╛µáÅΘÜÉΦùÅµêûΘçìµû░σç║τÄ░σëìΘ£ÇΦªüµ╗Üσè¿τÜäΦ╖¥τª╗∩╝îτ¢╕σ»╣Σ║ÄΘ╗ÿΦ«ñσÇ╝';
 
   @override
-  String get settings_autoHideSidePanelTitle => '自动隐藏侧边面板';
+  String get settings_autoHideSidePanelTitle => 'Φç¬σè¿ΘÜÉΦùÅΣ╛ºΦ╛╣Θ¥óµ¥┐';
 
   @override
-  String get settings_autoHideSidePanelKeywords => '鼠标,光标,悬停,侧边栏';
+  String get settings_autoHideSidePanelKeywords =>
+      'Θ╝áµáç,σàëµáç,µé¼σü£,Σ╛ºΦ╛╣µáÅ';
 
   @override
   String get settings_autoHideSidePanelSubtitle =>
-      '让左侧或右侧标签栏不占用空间，鼠标移到该边缘时再滑出。仅在使用鼠标或触控板时有效；触摸屏幕会让面板重新回到页面旁边。';
+      'Φ«⌐σ╖ªΣ╛ºµêûσÅ│Σ╛ºµáçτ¡╛µáÅΣ╕ìσìáτö¿τ⌐║Θù┤∩╝îΘ╝áµáçτº╗σê░Φ»ÑΦ╛╣τ╝ÿµù╢σåìµ╗æσç║πÇéΣ╗àσ£¿Σ╜┐τö¿Θ╝áµáçµêûΦºªµÄºµ¥┐µù╢µ£ëµòê∩╝¢Φºªµæ╕σ▒Åσ╣òΣ╝ÜΦ«⌐Θ¥óµ¥┐Θçìµû░σ¢₧σê░Θí╡Θ¥óµùüΦ╛╣πÇé';
 
   @override
-  String get settings_bottomSheetTabViewTitle => '底部面板标签页视图';
+  String get settings_bottomSheetTabViewTitle => 'σ║òΘâ¿Θ¥óµ¥┐µáçτ¡╛Θí╡Φºåσ¢╛';
 
   @override
-  String get settings_bottomSheetTabViewKeywords => '面板';
+  String get settings_bottomSheetTabViewKeywords => 'Θ¥óµ¥┐';
 
   @override
-  String get settings_bottomSheetTabViewSubtitle => '在底部面板而非全屏中显示标签页';
+  String get settings_bottomSheetTabViewSubtitle =>
+      'σ£¿σ║òΘâ¿Θ¥óµ¥┐ΦÇîΘ¥₧σà¿σ▒ÅΣ╕¡µÿ╛τñ║µáçτ¡╛Θí╡';
 
   @override
-  String get settings_longPressUrlCopyTitle => '长按网址即可复制';
+  String get settings_longPressUrlCopyTitle => 'Θò┐µîëσ£░σ¥Çσì│σÅ»σñìσê╢';
 
   @override
-  String get settings_longPressUrlCopyKeywords => '复制网址';
+  String get settings_longPressUrlCopyKeywords => 'σñìσê╢τ╜æσ¥Ç';
 
   @override
-  String get settings_longPressUrlCopySubtitle => '长按地址栏时将页面网址复制到剪贴板';
+  String get settings_longPressUrlCopySubtitle =>
+      'Θò┐µîëσ£░σ¥ÇµáÅσñìσê╢Θí╡Θ¥óσ£░σ¥Ç';
 
   @override
-  String get settings_showFaviconsTitle => '在列表视图中显示网站图标';
+  String get settings_showFaviconsTitle =>
+      'σ£¿σêùΦí¿Φºåσ¢╛Σ╕¡µÿ╛τñ║τ╜æτ½Öσ¢╛µáç';
 
   @override
-  String get settings_showFaviconsKeywords => '图标';
+  String get settings_showFaviconsKeywords => 'σ¢╛µáç, favicons';
 
   @override
-  String get settings_showFaviconsSubtitle => '在标签页列表视图中显示网站图标而非页面缩略图';
+  String get settings_showFaviconsSubtitle =>
+      'σ£¿µáçτ¡╛Θí╡σêùΦí¿Φºåσ¢╛Σ╕¡µÿ╛τñ║τ╜æτ½Öσ¢╛µáçΦÇîΘ¥₧Θí╡Θ¥óτ╝⌐τòÑσ¢╛';
 
   @override
-  String get settings_previewPageContent => '页面内容';
+  String get settings_previewPageTitle => 'Cat Browser ΘóäΦºê';
 
   @override
-  String get settings_previewPageTitle => 'Cat Browser 预览';
+  String get settings_previewTabNews => 'µû░Θù╗';
 
   @override
-  String get settings_previewTabNews => '新闻';
+  String get settings_previewTabPrivate => 'ΘÜÉτºü';
 
   @override
-  String get settings_previewTabPrivate => '隐私';
+  String get settings_previewTabBank => 'Θô╢Φíî';
 
   @override
-  String get settings_previewTabBank => '银行';
+  String get settings_previewTabSearch => 'µÉ£τ┤ó';
 
   @override
-  String get settings_previewTabSearch => '搜索';
+  String get settings_deleteAllExceptionsTitle => 'σêáΘÖñµëÇµ£ëΣ╛ïσñû∩╝ƒ';
 
   @override
-  String get settings_livePreviewTitle => '实时预览';
+  String get settings_deleteAllExceptionsContent =>
+      'Φ┐Öσ░åΣ╕║µëÇµ£ëΣ╛ïσñûτ╜æτ½ÖΘçìµû░σÉ»τö¿Φ╖ƒΦ╕¬Σ┐¥µèñπÇé';
 
   @override
-  String get settings_livePreviewSubtitle => '反映你当前的工具栏和布局设置';
+  String get settings_entryCopied => 'µ¥íτ¢«σ╖▓σñìσê╢';
 
   @override
-  String get settings_deleteAllExceptionsTitle => '删除所有例外？';
+  String get settings_messageLabel => 'µ╢êµü»∩╝Ü';
 
   @override
-  String get settings_deleteAllExceptionsContent => '这将为所有例外网站重新启用跟踪保护。';
+  String get settings_errorLabel => 'ΘöÖΦ»»∩╝Ü';
 
   @override
-  String get settings_entryCopied => '条目已复制';
+  String get settings_stackTraceLabel => 'σáåµáêΦ╖ƒΦ╕¬∩╝Ü';
 
   @override
-  String get settings_messageLabel => '消息：';
-
-  @override
-  String get settings_errorLabel => '错误：';
-
-  @override
-  String get settings_stackTraceLabel => '堆栈跟踪：';
-
-  @override
-  String get settings_importSettingsTitle => '导入设置';
+  String get settings_importSettingsTitle => 'σ»╝σàÑΦ«╛τ╜«';
 
   @override
   String get settings_importSettingsDescription =>
-      '你选择的部分将替换此配置文件中的现有内容。未勾选的部分保持不变。';
+      'Σ╜áΘÇëµï⌐τÜäΘâ¿σêåσ░åµ¢┐µìóµ¡ñΘàìτ╜«µûçΣ╗╢Σ╕¡τÜäτÄ░µ£ëσåàσ«╣πÇéµ£¬σï╛ΘÇëτÜäΘâ¿σêåΣ┐¥µîüΣ╕ìσÅÿπÇé';
 
   @override
   String settings_unreadableSections(int count, String sections) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '此文件中有 $count 个部分（$sections）无法被此版本的 Cat Browser 读取，将被跳过。',
+      other:
+          'µ¡ñµûçΣ╗╢Σ╕¡µ£ë $count Σ╕¬Θâ¿σêå∩╝ê$sections∩╝ëµùáµ│òΦó½µ¡ñτëêµ£¼τÜä Cat Browser Φ»╗σÅû∩╝îσ░åΦó½Φ╖│Φ┐çπÇé',
     );
     return '$_temp0';
   }
 
   @override
-  String get settings_exportedLabel => '导出时间';
+  String get settings_exportedLabel => 'σ»╝σç║µù╢Θù┤';
 
   @override
-  String get settings_appVersionLabel => '应用版本';
+  String get settings_appVersionLabel => 'σ║öτö¿τëêµ£¼';
 
   @override
   String get settings_credentialsNotCarried =>
-      '导出内容不包括已保存的凭据和壁纸图片。此设备会保留自己的这些内容。';
+      'σ»╝σç║σåàσ«╣Σ╕ìσîàµï¼σ╖▓Σ┐¥σ¡ÿτÜäσç¡µì«σÆîσúüτ║╕σ¢╛τëçπÇéµ¡ñΦ«╛σñçΣ╝ÜΣ┐¥τòÖΦç¬σ╖▒τÜäΦ┐ÖΣ║¢σåàσ«╣πÇé';
 
   @override
-  String get settings_geckoPrefsRestartNote => '部分引擎首选项需要重启浏览器后才能生效。';
+  String get settings_geckoPrefsRestartNote =>
+      'Θâ¿σêåσ╝òµôÄΘªûΘÇëΘí╣Θ£ÇΦªüΘçìσÉ»µ╡ÅΦºêσÖ¿σÉÄµëìΦâ╜τöƒµòêπÇé';
 
   @override
-  String get settings_userAgentChangedTitle => '用户代理已更改';
+  String get settings_userAgentChangedTitle => 'τö¿µê╖Σ╗úτÉåσ╖▓µ¢┤µö╣';
 
   @override
-  String get settings_userAgentChangedContent => '需要重启浏览器才能使新的用户代理生效。';
+  String get settings_userAgentChangedContent =>
+      'Θ£ÇΦªüΘçìσÉ»µ╡ÅΦºêσÖ¿µëìΦâ╜Σ╜┐µû░τÜäτö¿µê╖Σ╗úτÉåτöƒµòêπÇé';
 
   @override
-  String get settings_tabBarSectionTitle => '标签栏';
+  String get settings_tabBarSectionTitle => 'µáçτ¡╛µáÅ';
 
   @override
-  String get settings_contextualToolbarSectionTitle => '上下文工具栏';
+  String get settings_contextualToolbarSectionTitle => 'Σ╕èΣ╕ïµûçσ╖Ñσà╖µáÅ';
 
   @override
-  String get settings_quickTabSwitcherSectionTitle => '快速标签页切换栏';
+  String get settings_quickTabSwitcherSectionTitle =>
+      'σ┐½ΘÇƒµáçτ¡╛Θí╡σêçµìóµáÅ';
 
   @override
-  String get settings_tabViewSectionTitle => '标签页视图';
+  String get settings_tabViewSectionTitle => 'µáçτ¡╛Θí╡Φºåσ¢╛';
 
   @override
-  String get settings_menuSectionTitle => '菜单';
+  String get settings_menuSectionTitle => 'ΦÅ£σìò';
 
   @override
-  String get settings_menuSectionKeywords => '三点,溢出菜单,更多';
+  String get settings_menuSectionKeywords => 'Σ╕ëτé╣,µ║óσç║ΦÅ£σìò,µ¢┤σñÜ';
 
   @override
-  String get settings_indexTabBarPositionSubtitle => '选择标签栏位于顶部、底部还是侧边';
+  String get settings_indexTabBarPositionSubtitle =>
+      'ΘÇëµï⌐µáçτ¡╛µáÅΣ╜ìΣ║ÄΘí╢Θâ¿πÇüσ║òΘâ¿Φ┐ÿµÿ»Σ╛ºΦ╛╣';
 
   @override
-  String get settings_indexTabBarStyleSubtitle => '在带标题和紧凑布局之间选择';
+  String get settings_indexTabBarStyleSubtitle =>
+      'σ£¿σ╕ªµáçΘóÿσÆîτ┤ºσçæσ╕âσ▒ÇΣ╣ïΘù┤ΘÇëµï⌐';
 
   @override
-  String get settings_indexAutoHideTabBarSubtitle => '滚动时隐藏标签栏';
+  String get settings_indexAutoHideTabBarSubtitle => 'µ╗Üσè¿µù╢ΘÜÉΦùÅµáçτ¡╛µáÅ';
 
   @override
-  String get settings_indexAutoHideSidePanelSubtitle => '鼠标移到侧边面板所在边缘时显示它';
+  String get settings_indexAutoHideSidePanelSubtitle =>
+      'Θ╝áµáçτº╗σê░Σ╛ºΦ╛╣Θ¥óµ¥┐µëÇσ£¿Φ╛╣τ╝ÿµù╢µÿ╛τñ║σ«â';
 
   @override
-  String get settings_indexLongPressUrlCopySubtitle => '从标签栏复制当前网址';
+  String get settings_indexLongPressUrlCopySubtitle =>
+      'Σ╗Äµáçτ¡╛µáÅσñìσê╢Θí╡Θ¥óσ£░σ¥Ç';
 
   @override
-  String get settings_indexShowContextualToolbarSubtitle => '显示用于导航和操作的额外工具栏';
+  String get settings_indexShowContextualToolbarSubtitle =>
+      'µÿ╛τñ║τö¿Σ║Äσ»╝Φê¬σÆîµôìΣ╜£τÜäΘó¥σñûσ╖Ñσà╖µáÅ';
 
   @override
   String get settings_indexCustomizeToolbarButtonsSubtitle =>
-      '选择在上下文工具栏中显示哪些操作';
+      'ΘÇëµï⌐σ£¿Σ╕èΣ╕ïµûçσ╖Ñσà╖µáÅΣ╕¡µÿ╛τñ║σô¬Σ║¢µôìΣ╜£';
 
   @override
-  String get settings_indexTabStackingSubtitle => '选择快速标签页切换栏如何排列标签页';
+  String get settings_indexTabStackingSubtitle =>
+      'ΘÇëµï⌐σ┐½ΘÇƒµáçτ¡╛Θí╡σêçµìóµáÅσªéΣ╜òµÄÆσêùµáçτ¡╛Θí╡';
 
   @override
   String get settings_indexCustomizeSwitcherButtonsSubtitle =>
-      '选择在切换栏末尾显示哪些操作按钮';
+      'ΘÇëµï⌐σ£¿σêçµìóµáÅµ£½σ░╛µÿ╛τñ║σô¬Σ║¢µôìΣ╜£µîëΘÆ«';
 
   @override
-  String get settings_indexHistoryFallbackSubtitle => '没有匹配的标签页时使用历史记录建议';
+  String get settings_indexHistoryFallbackSubtitle =>
+      'µ▓íµ£ëσî╣ΘàìτÜäµáçτ¡╛Θí╡µù╢Σ╜┐τö¿σÄåσÅ▓Φ«░σ╜òσ╗║Φ««';
 
   @override
-  String get settings_indexShowTitlesSubtitle => '在切换列表中显示页面标题';
+  String get settings_indexShowTitlesSubtitle =>
+      'σ£¿σêçµìóσêùΦí¿Σ╕¡µÿ╛τñ║Θí╡Θ¥óµáçΘóÿ';
 
   @override
-  String get settings_indexHierarchyDepthSubtitle => '切换栏标签块上显示多少个嵌套箭头';
+  String get settings_indexHierarchyDepthSubtitle =>
+      'σêçµìóµáÅµáçτ¡╛σ¥ùΣ╕èµÿ╛τñ║σñÜσ░æΣ╕¬σ╡îσÑùτ«¡σñ┤';
 
   @override
-  String get settings_indexBottomSheetTabViewSubtitle => '以底部面板形式打开标签页切换器';
+  String get settings_indexBottomSheetTabViewSubtitle =>
+      'Σ╗Ñσ║òΘâ¿Θ¥óµ¥┐σ╜óσ╝Åµëôσ╝Çµáçτ¡╛Θí╡σêçµìóσÖ¿';
 
   @override
-  String get settings_indexShowFaviconsSubtitle => '在标签页列表中显示网站图标';
+  String get settings_indexShowFaviconsSubtitle =>
+      'σ£¿µáçτ¡╛Θí╡σêùΦí¿Σ╕¡µÿ╛τñ║τ╜æτ½Öσ¢╛µáç';
 
   @override
-  String get settings_switcherPlacementTitle => '切换栏位置';
+  String get settings_switcherPlacementTitle => 'σêçµìóµáÅΣ╜ìτ╜«';
 
   @override
-  String get settings_switcherPlacementSubtitle => '切换栏相对于地址栏和上下文工具栏的位置';
+  String get settings_switcherPlacementSubtitle =>
+      'σêçµìóµáÅτ¢╕σ»╣Σ║Äσ£░σ¥ÇµáÅσÆîΣ╕èΣ╕ïµûçσ╖Ñσà╖µáÅτÜäΣ╜ìτ╜«';
 
   @override
   String get settings_switcherPlacementKeywords =>
-      '位置, 顺序, 上方, 下方, 顶部, 底部, 地址栏, 标签栏';
+      'Σ╜ìτ╜«, Θí║σ║Å, Σ╕èµû╣, Σ╕ïµû╣, Θí╢Θâ¿, σ║òΘâ¿, σ£░σ¥ÇµáÅ, µáçτ¡╛µáÅ';
 
   @override
-  String get settings_switcherPlacementAutoLabel => '自动';
+  String get settings_switcherPlacementAutoLabel => 'Φç¬σè¿';
 
   @override
   String get settings_switcherPlacementAutoDescription =>
-      '地址栏在底部时位于其上方，地址栏在顶部时位于上下文工具栏上方';
+      'σ£░σ¥ÇµáÅσ£¿σ║òΘâ¿µù╢Σ╜ìΣ║Äσà╢Σ╕èµû╣∩╝îσ£░σ¥ÇµáÅσ£¿Θí╢Θâ¿µù╢Σ╜ìΣ║ÄΣ╕èΣ╕ïµûçσ╖Ñσà╖µáÅΣ╕èµû╣';
 
   @override
-  String get settings_switcherPlacementAboveAddressBarLabel => '地址栏上方';
+  String get settings_switcherPlacementAboveAddressBarLabel =>
+      'σ£░σ¥ÇµáÅΣ╕èµû╣';
 
   @override
   String get settings_switcherPlacementAboveAddressBarDescription =>
-      '随地址栏位于顶部或底部';
+      'ΘÜÅσ£░σ¥ÇµáÅΣ╜ìΣ║ÄΘí╢Θâ¿µêûσ║òΘâ¿';
 
   @override
-  String get settings_switcherPlacementBelowAddressBarLabel => '地址栏下方';
+  String get settings_switcherPlacementBelowAddressBarLabel =>
+      'σ£░σ¥ÇµáÅΣ╕ïµû╣';
 
   @override
   String get settings_switcherPlacementBelowAddressBarDescription =>
-      '随地址栏位于顶部或底部';
+      'ΘÜÅσ£░σ¥ÇµáÅΣ╜ìΣ║ÄΘí╢Θâ¿µêûσ║òΘâ¿';
 
   @override
-  String get settings_switcherPlacementBelowContextualBarLabel => '上下文工具栏下方';
+  String get settings_switcherPlacementBelowContextualBarLabel =>
+      'Σ╕èΣ╕ïµûçσ╖Ñσà╖µáÅΣ╕ïµû╣';
 
   @override
   String get settings_switcherPlacementBelowContextualBarDescription =>
-      '位于屏幕底边';
+      'Σ╜ìΣ║Äσ▒Åσ╣òσ║òΦ╛╣';
 
   @override
-  String get settings_tabViewActionsAtBottomTitle => '标签页视图操作置于底部';
+  String get settings_tabViewActionsAtBottomTitle =>
+      'µáçτ¡╛Θí╡Φºåσ¢╛µôìΣ╜£τ╜«Σ║Äσ║òΘâ¿';
 
   @override
   String get settings_tabViewActionsAtBottomSubtitle =>
-      '搜索、筛选和标签页操作位于底部，新建标签页按钮在其上方';
+      'µÉ£τ┤óπÇüτ¡¢ΘÇëσÆîµáçτ¡╛Θí╡µôìΣ╜£Σ╜ìΣ║Äσ║òΘâ¿∩╝îµû░σ╗║µáçτ¡╛Θí╡µîëΘÆ«σ£¿σà╢Σ╕èµû╣';
 
   @override
   String get settings_tabViewActionsAtBottomKeywords =>
-      '底部, 拇指, 单手, 工具栏, 标签页视图';
+      'σ║òΘâ¿, µïçµîç, σìòµëï, σ╖Ñσà╖µáÅ, µáçτ¡╛Θí╡Φºåσ¢╛';
 
   @override
   String settings_trackerStatisticsTotal(int count, String date) {
@@ -10509,22 +11139,202 @@ class AppLocalizationsZh extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '自 $date 起已拦截 $countString 个跟踪器',
+      other: 'Φç¬ $date Φ╡╖σ╖▓µïªµê¬ $countString Σ╕¬Φ╖ƒΦ╕¬σÖ¿',
     );
     return '$_temp0';
   }
 
   @override
-  String get settings_trackerStatisticsNothingRecorded => '尚未记录任何被拦截的跟踪器。';
+  String get settings_trackerStatisticsNothingRecorded =>
+      'σ░Üµ£¬Φ«░σ╜òΣ╗╗Σ╜òΦó½µïªµê¬τÜäΦ╖ƒΦ╕¬σÖ¿πÇé';
 
   @override
-  String get settings_trackerStatisticsLastSevenDays => '最近 7 天';
+  String get settings_trackerStatisticsLastSevenDays => 'µ£ÇΦ┐æ 7 σñ⌐';
 
   @override
-  String get settings_trackerStatisticsNoneLastSevenDays => '最近 7 天未拦截任何跟踪器。';
+  String get settings_trackerStatisticsNoneLastSevenDays =>
+      'µ£ÇΦ┐æ 7 σñ⌐µ£¬µïªµê¬Σ╗╗Σ╜òΦ╖ƒΦ╕¬σÖ¿πÇé';
 
   @override
-  String get settings_trackerStatisticsLoadFailed => '无法加载跟踪器统计。';
+  String get settings_trackerStatisticsLoadFailed =>
+      'µùáµ│òσèáΦ╜╜Φ╖ƒΦ╕¬σÖ¿τ╗ƒΦ«íπÇé';
+
+  @override
+  String get settings_contextualToolbarSaveFailed =>
+      'µùáµ│òΣ┐¥σ¡ÿµîëΘÆ«πÇéΦ»╖ΘçìΦ»òπÇé';
+
+  @override
+  String get settings_fingerprintPresetsSection => 'ΘóäΦ«╛';
+
+  @override
+  String get settings_confirmationsSectionTitle => 'τí«Φ«ñ';
+
+  @override
+  String get settings_confirmationsSubtitle =>
+      'ΘÇëµï⌐σ£¿σà│Θù¡µáçτ¡╛Θí╡µêûσÉ»σè¿Σ╗úτÉåσëìΦ»óΘù«σô¬Σ║¢σåàσ«╣';
+
+  @override
+  String get settings_confirmationsSectionKeywords =>
+      'τí«Φ«ñ,µÅÉτñ║,σ»╣Φ»¥µíå,Φ»óΘù«,Σ╕ìσåìΦ»óΘù«,Φ«░Σ╜ÅΘÇëµï⌐,prompt';
+
+  @override
+  String get settings_actionOpenFullScreen => 'σà¿σ▒Åµëôσ╝Ç';
+
+  @override
+  String get settings_previewSheetExpand => 'σ▒òσ╝ÇΦ«╛τ╜«';
+
+  @override
+  String get settings_previewSheetCollapse => 'µö╢Φ╡╖Φ«╛τ╜«';
+
+  @override
+  String get settings_layoutEditorPreviewTab => 'ΘóäΦºê';
+
+  @override
+  String get settings_layoutEditorSettingsTab => 'Φ«╛τ╜«';
+
+  @override
+  String get settings_previewDeviceThisWindow => 'µ¡ñτ¬ùσÅú';
+
+  @override
+  String get settings_previewDevicePhone => 'µëïµ£║';
+
+  @override
+  String get settings_previewDevicePhoneLandscape => 'µ¿¬σ▒Åµëïµ£║';
+
+  @override
+  String get settings_previewDeviceLargeScreen => 'σñºσ▒Åσ╣ò';
+
+  @override
+  String settings_previewOtherDeviceHint(String device) {
+    String _temp0 = intl.Intl.selectLogic(device, {
+      'phone':
+          'µ¡úσ£¿µÿ╛τñ║µëïµ£║πÇéΦç¬σè¿Φ«╛τ╜«µîëµëïµ£║Σ╕èτÜäµû╣σ╝ÅτöƒµòêπÇé',
+      'phoneLandscape':
+          'µ¡úσ£¿µÿ╛τñ║µ¿¬σ▒Åµëïµ£║πÇéΦç¬σè¿Φ«╛τ╜«µîëµ¿¬σ▒Åµëïµ£║Σ╕èτÜäµû╣σ╝ÅτöƒµòêπÇé',
+      'largeScreen':
+          'µ¡úσ£¿µÿ╛τñ║σñºσ▒Åσ╣òπÇéΦç¬σè¿Φ«╛τ╜«µîëσñºσ▒Åσ╣òΣ╕èτÜäµû╣σ╝ÅτöƒµòêπÇé',
+      'other': 'µ¡úσ£¿µÿ╛τñ║σà╢Σ╗ûτ¬ùσÅúσ░║σ»╕πÇé',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String get settings_previewStatePage => 'Θí╡Θ¥ó';
+
+  @override
+  String get settings_previewStateHome => 'Σ╕╗Θí╡';
+
+  @override
+  String get settings_previewStateSidePanelCollapsed => 'Σ╛ºΦ╛╣Θ¥óµ¥┐σ╖▓µö╢Φ╡╖';
+
+  @override
+  String get settings_previewStateNeedsSidePanel =>
+      'Θ£ÇΦªüσñºτ¬ùσÅúΣ╕¡τÜäΣ╛ºΦ╛╣Θ¥óµ¥┐';
+
+  @override
+  String get settings_layoutPreviewSemantics =>
+      'Σ╜┐τö¿µ¡ñσ╖Ñσà╖µáÅσ╕âσ▒ÇτÜäµ╡ÅΦºêσÖ¿ΘóäΦºê';
+
+  @override
+  String get settings_layoutPartTabChips => 'µáçτ¡╛σ¥ù';
+
+  @override
+  String get settings_previewModeSelect => 'ΘÇëµï⌐';
+
+  @override
+  String get settings_previewModeTry => 'Φ»òτö¿';
+
+  @override
+  String get settings_previewSelectHint =>
+      'τé╣µîëσ╖Ñσà╖µáÅτÜäµƒÉΣ╕¬Θâ¿σêåσì│σÅ»µ¢┤µö╣σà╢Φ«╛τ╜«πÇé';
+
+  @override
+  String get settings_previewTryHint =>
+      'ΘóäΦºêτÜäµôìΣ╜£µû╣σ╝ÅΣ╕Äµ╡ÅΦºêσÖ¿τ¢╕σÉî∩╝Üµ╗Üσè¿Θí╡Θ¥óσ╣╢τé╣µîëµîëΘÆ«πÇé';
+
+  @override
+  String get settings_previewAllSettings => 'µëÇµ£ëΦ«╛τ╜«';
+
+  @override
+  String get settings_previewSelectionPath => 'σ╖▓ΘÇëΘâ¿σêå';
+
+  @override
+  String settings_tryToolbarHidden(String distance) {
+    return 'µ╗Üσè¿µù╢σ╖▓ΘÜÉΦùÅσ╖Ñσà╖µáÅ ┬╖ Φç¬σè¿ΘÜÉΦùÅΦ╖¥τª╗ $distance';
+  }
+
+  @override
+  String get settings_trySidePanelHidden =>
+      'Σ╛ºΦ╛╣Θ¥óµ¥┐σ╖▓ΘÜÉΦùÅ ┬╖ µîçσÉæµêûτé╣µîëΦ╛╣τ╝ÿσì│σÅ»Φ«⌐σ«âσ¢₧µ¥ÑπÇéσ£¿µ╡ÅΦºêσÖ¿Σ╕¡Σ╗àΘÇéτö¿Σ║ÄΘ╝áµáçµêûΦºªµÄºµ¥┐';
+
+  @override
+  String get settings_tryOpensTabView => 'Φ┐ÖΣ╝Üµëôσ╝Çµáçτ¡╛Θí╡Φºåσ¢╛';
+
+  @override
+  String get settings_tryOpensMenu => 'Φ┐ÖΣ╝Üµëôσ╝ÇΦÅ£σìò';
+
+  @override
+  String get settings_tryAdjust => 'Φ░âµò┤';
+
+  @override
+  String get settings_categoryFeatureControlTitle => 'σèƒΦâ╜τ«íτÉå';
+
+  @override
+  String get settings_categoryFeatureControlSubtitle =>
+      'ΘÇëµï⌐ WebLibre µÿ╛τñ║σô¬Σ║¢σèƒΦâ╜';
+
+  @override
+  String get settings_categoryFeatureControlKeywords =>
+      'σèƒΦâ╜τ«íτÉå, σèƒΦâ╜, σÅ»ΦºüµÇº, µÿ╛τñ║, ΘÜÉΦùÅ, σ╖▓ΘÜÉΦùÅ, ΘóäΦ«╛, σ║öτö¿ΘóäΦ«╛, ΘÜÅΣ╛┐ΘÇ¢ΘÇ¢, τê▒µèÿΦà╛, Σ╕ôσ«╢µ¿íσ╝Å, τ«Çσìò, Θ½ÿτ║º, Φç¬σ«ÜΣ╣ë, feature control, preset';
+
+  @override
+  String get settings_featureControlIntro =>
+      'ΘÜÉΦùÅΣ╕ìτö¿τÜäσèƒΦâ╜∩╝îΦ«⌐ WebLibre Σ┐¥µîüτ«Çµ┤üπÇéσèƒΦâ╜ΘÜÉΦùÅµ£ƒΘù┤∩╝îσà╢Φ«╛τ╜«Σ╜┐τö¿Θ╗ÿΦ«ñσÇ╝πÇéΣ╜áτÜäµ¢┤µö╣Σ╝ÜΦó½Σ┐¥τòÖ∩╝îσåìµ¼íµÿ╛τñ║σÉÄΘçìµû░τöƒµòêπÇéΦ┐₧µÄÑΣ╗ÑσÅèΣ╜áσê¢σ╗║τÜäσåàσ«╣Σ╝Üτ╗ºτ╗¡σ╖ÑΣ╜£πÇé';
+
+  @override
+  String get settings_featureControlHiddenInUse =>
+      'σèƒΦâ╜σ╖▓ΘÜÉΦùÅπÇéΣ╜áσ╖▓τ╗ÅΦ«╛τ╜«σÑ╜τÜäσåàσ«╣Σ╝Üτ╗ºτ╗¡σ╖ÑΣ╜£πÇé';
+
+  @override
+  String get settings_featureControlKeepsWorking =>
+      'Σ╜áσ╖▓τ╗ÅΦ«╛τ╜«σÑ╜τÜäσåàσ«╣Σ╝Üτ╗ºτ╗¡σ╖ÑΣ╜£πÇé';
+
+  @override
+  String get settings_featureControlShownApplyingAgain =>
+      'σèƒΦâ╜σ╖▓µÿ╛τñ║πÇéΣ╜áΣ╣ïσëìτÜäµ¢┤µö╣Θçìµû░τöƒµòêπÇé';
+
+  @override
+  String get settings_featureControlApplyPresetTitle => 'σ║öτö¿ΘóäΦ«╛';
+
+  @override
+  String get settings_featureControlApplyPresetSubtitle =>
+      'σâÅΘóäΦ«╛Θéúµá╖µÿ╛τñ║σÆîΘÜÉΦùÅσèƒΦâ╜πÇé';
+
+  @override
+  String settings_featureControlApplyPresetDialogTitle(String preset) {
+    return 'Φªüσ║öτö¿ΓÇ£$presetΓÇ¥σÉù∩╝ƒ';
+  }
+
+  @override
+  String get settings_featureControlApplyPresetDialogContent =>
+      'σÅ¬µ£ëΣ╗ÑΣ╕ïσèƒΦâ╜Σ╝Üµö╣σÅÿπÇé';
+
+  @override
+  String get settings_featureControlFeaturesToShow => 'σ░åµÿ╛τñ║τÜäσèƒΦâ╜';
+
+  @override
+  String get settings_featureControlFeaturesToHide => 'σ░åΘÜÉΦùÅτÜäσèƒΦâ╜';
+
+  @override
+  String get settings_featureControlApplyPresetConfirm => 'σ║öτö¿';
+
+  @override
+  String settings_featureControlApplyPresetUnchanged(String preset) {
+    return 'µÿ╛τñ║τÜäσèƒΦâ╜σ╖▓Σ╕ÄΓÇ£$presetΓÇ¥Σ╕ÇΦç┤πÇé';
+  }
+
+  @override
+  String get settings_featureControlSectionTitle => 'σèƒΦâ╜';
 
   @override
   String get smallWeb_sheetTitle => '小众网络';
@@ -11939,13 +12749,14 @@ class AppLocalizationsZh extends AppLocalizations {
   String get webPush_screenTitle => '通知';
 
   @override
-  String get webPush_screenSubtitle => '通过 UnifiedPush 推送的网站通知';
+  String get webPush_screenSubtitle => '通过单独的应用接收网站通知';
 
   @override
-  String get webPush_distributorTileTitle => 'UnifiedPush 分发器';
+  String get webPush_distributorTileTitle => '通知传递应用';
 
   @override
-  String get webPush_distributorTileKeywords => '通知,推送,unifiedpush,ntfy,push';
+  String get webPush_distributorTileKeywords =>
+      '通知, 推送, push, unifiedpush, 分发器, distributor, ntfy';
 
   @override
   String get webPush_checking => '正在检查…';
@@ -11970,10 +12781,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get webPush_disablingWebPush => '正在停用…';
 
   @override
-  String get webPush_disableWebPush => '停用网页推送';
+  String get webPush_disableWebPush => '关闭网站通知';
 
   @override
-  String get webPush_statusNoneAvailable => '没有可用的分发器';
+  String get webPush_statusNoneAvailable => '未安装兼容的通知应用';
 
   @override
   String get webPush_statusNotSelected => '未配置';
@@ -11985,46 +12796,46 @@ class AppLocalizationsZh extends AppLocalizations {
   String get webPush_statusReady => '已启用';
 
   @override
-  String get webPush_statusUnavailable => '分发器不可用';
+  String get webPush_statusUnavailable => '通知应用不可用';
 
   @override
   String get webPush_statusDescNoneAvailable =>
-      '安装 UnifiedPush 分发器应用（例如 ntfy）以接收网站通知。';
+      '要接收网站通知，请安装 ntfy 或其他支持 UnifiedPush 的应用。';
 
   @override
-  String get webPush_statusDescNotSelected => '在下方选择一个分发器以启用网站通知。';
+  String get webPush_statusDescNotSelected => '在下方选择一个通知应用以开启网站通知。';
 
   @override
-  String get webPush_statusDescPending => '正在等待分发器确认注册。';
+  String get webPush_statusDescPending => '正在等待通知应用完成设置。';
 
   @override
-  String get webPush_statusDescReady => '网站通知将通过此分发器送达。';
+  String get webPush_statusDescReady => '网站通知通过此应用传递。';
 
   @override
   String get webPush_statusDescUnavailable =>
-      '所选分发器已不再安装。在你选择其他分发器之前，网站通知将无法送达。';
+      '所选的通知应用已卸载。在你选择其他应用之前，网站通知将无法送达。';
 
   @override
   String get webPush_noDistributorInstalled =>
-      '未安装 UnifiedPush 分发器。请安装一个（例如 ntfy）后重试。';
+      '未安装兼容的通知应用。请安装 ntfy 或其他支持 UnifiedPush 的应用后重试。';
 
   @override
-  String get webPush_chooseDistributorTitle => '选择分发器';
+  String get webPush_chooseDistributorTitle => '选择通知传递应用';
 
   @override
-  String get webPush_distributorConfigured => 'UnifiedPush 分发器已配置。';
+  String get webPush_distributorConfigured => '通知应用已设置。';
 
   @override
   String webPush_couldNotConfigureDistributor(String error) {
-    return '无法配置分发器：$error';
+    return '无法设置通知应用：$error';
   }
 
   @override
-  String get webPush_webPushDisabled => '网页推送已停用。';
+  String get webPush_webPushDisabled => '网站通知已关闭。';
 
   @override
   String webPush_couldNotDisableWebPush(String error) {
-    return '无法停用网页推送：$error';
+    return '无法关闭网站通知：$error';
   }
 
   @override
@@ -12068,10 +12879,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get webPush_subscriptionActive => '已启用';
 
   @override
-  String get webPush_subscriptionDelayedDelivery => '端点已保存；在分发器就绪前暂停推送';
+  String get webPush_subscriptionDelayedDelivery => '已订阅；通知应用就绪后即可接收通知';
 
   @override
-  String get webPush_subscriptionWaitingForEndpoint => '正在等待分发器分配端点';
+  String get webPush_subscriptionWaitingForEndpoint => '正在等待通知应用完成订阅';
 
   @override
   String get webPush_revokeSubscriptionHint => '如需阻止某个网站发送通知，请在网站设置中撤销其通知权限。';
@@ -12080,7 +12891,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get webPush_deliverySectionTitle => '推送方式';
 
   @override
-  String get webPush_indexDistributorSubtitle => '负责推送网站通知的应用';
+  String get webPush_indexDistributorSubtitle =>
+      '负责传递网站通知的应用，例如 ntfy（UnifiedPush）';
 
   @override
   String get webPush_indexNotificationPermissionSubtitle => '显示网站通知所必需';
@@ -12095,7 +12907,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get webPush_indexSiteSubscriptionsKeywords => '网站,订阅';
 
   @override
-  String get webPush_indexSiteSubscriptionsSubtitle => '已订阅推送通知的网站';
+  String get webPush_indexSiteSubscriptionsSubtitle => '允许向你发送通知的网站';
 
   @override
   String get webSearch_fetchPageDataTitle => '获取页面数据';
@@ -12851,6 +13663,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get startup_maintenanceUnknownDescribeDone => '完成。';
 
   @override
+  String get listFormat_separator => '、';
+
+  @override
   String units_bytes(String value) {
     return '$value B';
   }
@@ -12871,10 +13686,265 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get visibilitySwitch_containersLabel => '容器';
+
+  @override
+  String get visibilitySwitch_containersDescription =>
+      '把 Cookie 和登录信息放在独立空间中，例如工作和个人';
+
+  @override
+  String get visibilitySwitch_isolatedTabsLabel => '隔离标签页';
+
+  @override
+  String get visibilitySwitch_isolatedTabsDescription =>
+      '打开拥有独立 Cookie 和登录信息的标签页，与隐私标签页不同，退出后仍会保留';
+
+  @override
+  String get visibilitySwitch_connectionsLabel => 'Tor、VPN 和代理';
+
+  @override
+  String get visibilitySwitch_connectionsDescription => '通过 Tor、VPN 或代理浏览';
+
+  @override
+  String get visibilitySwitch_profilesLabel => '多个配置文件';
+
+  @override
+  String get visibilitySwitch_profilesDescription => '创建独立的配置文件并在它们之间切换';
+
+  @override
+  String get visibilitySwitch_treeTabsLabel => '树状标签页';
+
+  @override
+  String get visibilitySwitch_treeTabsDescription => '把从某个页面打开的标签页显示在其来源标签页下方';
+
+  @override
+  String get visibilitySwitch_layoutAdvancedLabel => '自定义工具栏和菜单';
+
+  @override
+  String get visibilitySwitch_layoutAdvancedDescription =>
+      '选择工具栏按钮、菜单顺序以及标签栏如何分组标签页';
+
+  @override
+  String get visibilitySwitch_gesturesLabel => '手势';
+
+  @override
+  String get visibilitySwitch_gesturesDescription => '滑动或绘制图形来执行操作';
+
+  @override
+  String get visibilitySwitch_keyboardCustomizationLabel => '自定义键盘快捷键';
+
+  @override
+  String get visibilitySwitch_keyboardCustomizationDescription =>
+      '选择哪个按键执行哪个操作';
+
+  @override
+  String get visibilitySwitch_privacyAdvancedLabel => '高级隐私设置';
+
+  @override
+  String get visibilitySwitch_privacyAdvancedDescription =>
+      '细调跟踪保护、安全 DNS、推荐的安全设置，以及防止此设备被识别的保护。隐藏这些设置不会关闭保护。';
+
+  @override
+  String get visibilitySwitch_webappStorageLabel => '网页应用存储';
+
+  @override
+  String get visibilitySwitch_webappStorageDescription =>
+      '选择添加到主屏幕的应用使用哪些 Cookie 和登录信息';
+
+  @override
+  String get visibilitySwitch_aiLabel => '设备端 AI';
+
+  @override
+  String get visibilitySwitch_aiDescription => '获取由只在此设备上运行的 AI 提供的标签页分组建议';
+
+  @override
+  String get visibilitySwitch_expertDetailsLabel => '专家设置';
+
+  @override
+  String get visibilitySwitch_expertDetailsDescription =>
+      '控制引擎加固分组、按容器路由、JavaScript、User Agent、证书等';
+
+  @override
+  String visibilitySwitch_alsoNeeds(String switches) {
+    return '此功能的部分内容还需要：$switches';
+  }
+
+  @override
+  String visibilitySwitch_revealTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '要显示隐藏的功能吗？',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String visibilitySwitch_revealIntro(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '此项需要几项当前已隐藏的功能：',
+      one: '此项属于一项当前已隐藏的功能：',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String visibilitySwitch_revealOutcome(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '显示后，其按钮和设置会重新出现。其他内容不变。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String visibilitySwitch_revealResumesIntro(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '隐藏期间，这些设置使用默认值。你的更改会被保留，再次显示后重新生效：',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get visibilitySwitch_takesEffectAfterRestart => '重启后生效';
+
+  @override
+  String get visibilitySwitch_revealConfirm => '显示';
+
+  @override
+  String get visibilitySwitch_stillHiddenNote =>
+      '此项属于一项隐藏的功能。你可以在“设置 > 功能管理”中显示它。';
+
+  @override
+  String get visibilitySwitch_showFailed => '无法显示该功能。请重试。';
+
+  @override
+  String get visibilitySwitch_hiddenControlHint => '属于隐藏的功能。激活以显示该功能';
+
+  @override
+  String visibilitySwitch_hiddenStatus(String switchLabel) {
+    return '属于隐藏的功能“$switchLabel”';
+  }
+
+  @override
+  String visibilitySwitch_hiddenStatusSeveral(String switchLabels) {
+    return '属于以下隐藏的功能：$switchLabels';
+  }
+
+  @override
+  String get visibilitySwitch_notAppliedWhileHidden => '隐藏期间不生效';
+
+  @override
+  String visibilitySwitch_hideWarningTitle(String feature) {
+    return '隐藏“$feature”？';
+  }
+
+  @override
+  String visibilitySwitch_hideWarningContent(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '隐藏期间，这些设置使用默认值。你的更改会被保留，再次显示后重新生效。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get visibilitySwitch_hideWarningConfirm => '隐藏';
+
+  @override
+  String get visibilitySwitch_stopsApplyingTitle => '将不再生效的更改';
+
+  @override
+  String get visibilitySwitch_appliesAgainTitle => '将重新生效的更改';
+
+  @override
+  String get visibilitySwitch_hiddenSettingUrlCleanerAutoApply => '网址清理自动应用';
+
+  @override
+  String get visibilitySwitch_hiddenSettingUrlCleanerRules => '网址清理规则';
+
+  @override
+  String get visibilitySwitch_hiddenSettingToolbarButtons => '工具栏按钮的替代和长按';
+
+  @override
   String get failureWidget_defaultTitle => '出了点问题';
 
   @override
   String get failureWidget_unknownError => '未知错误';
+
+  @override
+  String get rememberedPrompt_dontAskAgain => '不再询问';
+
+  @override
+  String get rememberedPrompt_dontAskAgainHint => '你可以在设置中更改。';
+
+  @override
+  String get rememberedPrompt_answerAsk => '询问';
+
+  @override
+  String get rememberedPrompt_answerKeep => '保留';
+
+  @override
+  String get rememberedPrompt_keepExternalTabLabel => '离开由其他应用打开的标签页';
+
+  @override
+  String get rememberedPrompt_keepExternalTabDescription =>
+      '当返回会回到其他应用时：保留标签页、舍弃标签页，或每次询问';
+
+  @override
+  String get rememberedPrompt_keepExternalTabKeywords =>
+      '保留标签页,舍弃标签页,外部应用,链接,返回,离开,不再询问,intent,keep tab';
+
+  @override
+  String get rememberedPrompt_closeIsolatedTabsLabel => '关闭隔离标签页前询问';
+
+  @override
+  String get rememberedPrompt_closeIsolatedTabsDescription =>
+      '关闭隔离组的最后一个标签页会删除其 Cookie 和网站数据';
+
+  @override
+  String get rememberedPrompt_closeIsolatedTabsKeywords =>
+      '隔离,关闭标签页,删除数据,Cookie,确认,不再询问,isolated';
+
+  @override
+  String get rememberedPrompt_closeAllTabsLabel => '关闭所有标签页前询问';
+
+  @override
+  String get rememberedPrompt_closeAllTabsDescription => '从容器菜单关闭所有标签页时';
+
+  @override
+  String get rememberedPrompt_closeAllTabsKeywords =>
+      '全部关闭,标签页,确认,不再询问,close all';
+
+  @override
+  String rememberedPrompt_startTorLabel(String torBrand) {
+    return '启动 $torBrand 前询问';
+  }
+
+  @override
+  String rememberedPrompt_startTorDescription(String torBrand) {
+    return '当标签页需要 $torBrand 但它未运行时';
+  }
+
+  @override
+  String get rememberedPrompt_startTorKeywords =>
+      'tor,onion,洋葱,代理,proxy,启动,确认,不再询问';
+
+  @override
+  String get rememberedPrompt_startProxyConnectionLabel => '启动代理连接前询问';
+
+  @override
+  String get rememberedPrompt_startProxyConnectionDescription => '当容器的代理连接未运行时';
+
+  @override
+  String get rememberedPrompt_startProxyConnectionKeywords =>
+      '代理,proxy,vpn,连接,容器,启动,确认,不再询问';
 
   @override
   String get speechToTextButton_serviceNotAvailable => '语音识别不可用';
@@ -12950,7 +14020,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String uiHelper_canNotHandleScheme(String scheme) {
-    return '无法处理“$scheme”';
+    return '没有应用可以打开“$scheme”链接';
   }
 
   @override

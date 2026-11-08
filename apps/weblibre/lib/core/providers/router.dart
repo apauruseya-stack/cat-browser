@@ -19,11 +19,16 @@
  */
 import 'dart:async';
 
+import 'package:flutter/foundation.dart';
 import 'package:go_router/go_router.dart';
+import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
+import 'package:weblibre/core/logger.dart';
 import 'package:weblibre/core/providers/app_state.dart';
 import 'package:weblibre/core/routing/routes.dart';
+import 'package:weblibre/features/onboarding/domain/services/setup_commit.dart';
 import 'package:weblibre/features/user/domain/providers/profile_auth.dart';
+import 'package:weblibre/features/user/domain/repositories/general_settings.dart';
 import 'package:weblibre/features/user/domain/repositories/onboarding.dart';
 
 part 'router.g.dart';
@@ -32,32 +37,61 @@ part 'router.g.dart';
 Future<GoRouter> router(Ref ref) async {
   ref.watch(appStateKeyProvider); //Rebuild router on key changes
 
-  final onboardingRepository = ref.read(onboardingRepositoryProvider.notifier);
   unawaited(ref.read(profileAuthStateProvider.notifier).bootstrapFromProfile());
 
+  // A first-run commit the last process did not finish is finished first,
+  // with the choices it recorded: otherwise onboarding would show again and
+  // start from a fresh draft on top of half-written settings.
+  try {
+    await ref.read(setupCommitServiceProvider.notifier).resumeInterrupted();
+  } catch (e, s) {
+    logger.e(
+      'Finishing an interrupted onboarding commit failed',
+      error: e,
+      stackTrace: s,
+    );
+  }
+
+  // The redirect cannot await the revision, so the router keeps its own copy,
+  // current for as long as the router lives: a completed onboarding is
+  // followed without rebuilding the router. The subscription is also what
+  // keeps the database stream running — Riverpod pauses a provider nobody
+  // listens to, and a bare `read` of its future would never complete.
+  int? completedRevision;
+  ref.listen(completedOnboardingRevisionProvider, (_, next) {
+    if (next.hasValue) completedRevision = next.value;
+  });
+  completedRevision = await ref.read(
+    completedOnboardingRevisionProvider.future,
+  );
+
   /// Where the app belongs once it is unlocked: onboarding when it is owed,
-  /// otherwise the browser.
-  ///
-  /// Resolved once, here, rather than re-derived inside `redirect`: the redirect
-  /// runs on every navigation and cannot await a database read, and the answer
-  /// only changes when onboarding completes — which invalidates this provider and
-  /// rebuilds the whole router.
-  String? onboardingLocation;
-
-  final onboardingMandatory = await onboardingRepository.isOutdated();
-
-  if (onboardingMandatory) {
-    final current = await onboardingRepository.getCurrentRevision();
-
-    final route = OnboardingRoute(
+  /// otherwise null for the browser.
+  String? owedOnboardingLocation() {
+    final current = completedRevision;
+    if (current != null && current >= OnboardingRepository.targetRevision) {
+      return null;
+    }
+    return OnboardingRoute(
       currentRevision: current ?? -1,
       targetRevision: OnboardingRepository.targetRevision,
-    );
-
-    onboardingLocation = route.location;
+    ).location;
   }
 
   final profileAuthRefreshListenable = ref.watch(profileAuthProvider);
+
+  // Runs the redirect again when containers are hidden, so a container
+  // screen already open goes too, not only the next one navigated to.
+  final containersShown = ValueNotifier(
+    ref.read(generalSettingsWithDefaultsProvider).containerEntryPointsShown,
+  );
+  ref.onDispose(containersShown.dispose);
+  ref.listen(
+    generalSettingsWithDefaultsProvider.select(
+      (settings) => settings.containerEntryPointsShown,
+    ),
+    (previous, next) => containersShown.value = next,
+  );
 
   return GoRouter(
     debugLogDiagnostics: true,
@@ -67,7 +101,10 @@ Future<GoRouter> router(Ref ref) async {
     // belongs. Starting *at* onboarding instead is what let a locked profile be
     // walked through onboarding without ever unlocking.
     initialLocation: const LockRoute().location,
-    refreshListenable: profileAuthRefreshListenable,
+    refreshListenable: Listenable.merge([
+      profileAuthRefreshListenable,
+      containersShown,
+    ]),
     redirect: (context, state) {
       final authenticated = ref.read(profileAuthStateProvider);
       final currentTopRouteName = state.topRoute?.name;
@@ -87,10 +124,18 @@ Future<GoRouter> router(Ref ref) async {
       // Unlocked, so onboarding is reachable — and is where an unlocked profile
       // that still owes it belongs.
       if (authenticated && isOnLockRoute) {
-        return onboardingLocation ?? const BrowserRoute().location;
+        return owedOnboardingLocation() ?? const BrowserRoute().location;
       }
 
       if (isOnOnboarding) return null;
+
+      // Container screens only exist while containers are shown.
+      if (containerRouteNames.contains(currentTopRouteName) &&
+          !ref
+              .read(generalSettingsWithDefaultsProvider)
+              .containerEntryPointsShown) {
+        return const BrowserRoute().location;
+      }
 
       return null;
     },
@@ -101,7 +146,7 @@ Future<GoRouter> router(Ref ref) async {
 class CurrentTopRoute extends _$CurrentTopRoute {
   @override
   RouteBase? build() {
-    final router = ref.watch(routerProvider).value;
+    final router = ref.watch(routerProvider.select((value) => value.value));
     if (router == null) return null;
 
     GoRoute? getCurrentRoute() {

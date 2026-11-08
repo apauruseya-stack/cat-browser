@@ -17,13 +17,20 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
+import 'package:copy_with_extension/copy_with_extension.dart';
 import 'package:fading_scroll/fading_scroll.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:weblibre/core/design/window_size_class.dart';
+import 'package:weblibre/domain/feature_policy/feature_policy.dart';
+import 'package:weblibre/features/settings/domain/hidden_settings.dart';
 import 'package:weblibre/features/settings/domain/providers/pending_settings_highlight.dart';
 import 'package:weblibre/l10n/generated/app_localizations.dart';
+import 'package:weblibre/presentation/widgets/hidden_feature_gate.dart';
+import 'package:weblibre/presentation/widgets/highlight_pulse.dart';
+
+part 'settings_detail.g.dart';
 
 /// Default total-entry count at or below which [SettingsDetailScaffold] hides
 /// its search field — searching three toggles is just visual noise.
@@ -43,24 +50,143 @@ class SettingsEntryDefinition {
   final List<String> keywords;
   final Widget child;
 
+  /// The policy feature this setting configures. While the feature is hidden
+  /// by its visibility switches, the entry stays on its screen grayed out
+  /// ([HiddenFeatureGate]): changing it asks to show the feature first. The
+  /// settings search lists it with its status (S1).
+  final FeatureId? feature;
+
+  /// True while what [feature] configures is already in place, e.g. a server
+  /// override that is set. The entry then stays usable even with [feature]
+  /// hidden, so it can be checked and undone (P5), and the search lists it
+  /// without a hidden status. Only for what keeps applying while hidden
+  /// (H1); a setting that does not apply takes [hiddenSettings].
+  final KeptWhen? keptWhen;
+
+  /// Like a [keptWhen] that holds, for a condition the screen already knows:
+  /// the entry stays usable whatever hides it, a [HiddenFeatureScope] around
+  /// its screen included. For a setting that is on and has to stay
+  /// switchable off (P5).
+  final bool inForce;
+
+  /// Whether the entry only leads to another screen. While hidden it is
+  /// grayed out but still opens, and the screen it opens gates its own
+  /// controls.
+  final bool opensScreen;
+
+  /// The settings this entry shows that stop applying while [feature] is
+  /// hidden; see [HiddenFeatureGate.hiddenSettings].
+  final List<HiddenSetting> hiddenSettings;
+
+  /// Only for the settings search: never drawn on a screen. For screens whose
+  /// content is not a static list (built from live state, or from data such
+  /// as the fingerprint targets), so a hidden part can still be found.
+  final bool searchOnly;
+
+  /// Names the entry for code that rearranges its section, which must not go
+  /// by the translated [title]. Toolbar & Layout tags each "Customize
+  /// buttons" row with the toolbar whose editor it opens, so a part that
+  /// edits those buttons in place can leave the row out.
+  final Object? id;
+
   const SettingsEntryDefinition({
     required this.title,
     required this.child,
     this.subtitle,
     this.keywords = const [],
+    this.feature,
+    this.keptWhen,
+    this.opensScreen = false,
+    this.inForce = false,
+    this.hiddenSettings = const [],
+    this.searchOnly = false,
+    this.id,
   });
+
+  /// A [searchOnly] entry, which needs no widget.
+  const SettingsEntryDefinition.searchOnly({
+    required this.title,
+    this.subtitle,
+    this.keywords = const [],
+    this.feature,
+    this.keptWhen,
+    this.id,
+  }) : child = const SizedBox.shrink(),
+       opensScreen = false,
+       inForce = false,
+       hiddenSettings = const [],
+       searchOnly = true;
 }
 
+@CopyWith()
 class SettingsSectionDefinition {
   final String title;
   final List<String> keywords;
   final List<SettingsEntryDefinition> entries;
 
+  /// Like [SettingsEntryDefinition.feature], for a whole section.
+  final FeatureId? feature;
+
+  /// Like [SettingsEntryDefinition.keptWhen], for a whole section.
+  final KeptWhen? keptWhen;
+
   const SettingsSectionDefinition({
     required this.title,
     required this.entries,
     this.keywords = const [],
+    this.feature,
+    this.keptWhen,
   });
+}
+
+/// The feature an [entry] of [section] belongs to, if any: its own, or the
+/// section's.
+FeatureId? settingsEntryFeature(
+  SettingsSectionDefinition section,
+  SettingsEntryDefinition entry,
+) => entry.feature ?? section.feature;
+
+/// The [SettingsEntryDefinition.keptWhen] that goes with
+/// [settingsEntryFeature]: the entry's for its own feature, else the
+/// section's.
+KeptWhen? settingsEntryKeptWhen(
+  SettingsSectionDefinition section,
+  SettingsEntryDefinition entry,
+) => entry.feature != null ? entry.keptWhen : section.keptWhen;
+
+/// What gates [entry] of [section]: the section's feature and the entry's
+/// own, each with its `keptWhen`. Hidden while either is.
+List<HiddenFeatureCondition> settingsEntryConditions(
+  SettingsSectionDefinition section,
+  SettingsEntryDefinition entry,
+) => [
+  if (section.feature case final feature?)
+    (feature: feature, keptWhen: section.keptWhen),
+  if (entry.feature case final feature?)
+    (feature: feature, keptWhen: entry.keptWhen),
+];
+
+/// [sections] as a screen draws them: without the search-only entries.
+/// Sections left empty are dropped. Hidden entries stay;
+/// [buildSettingsSectionWidgets] grays them out.
+List<SettingsSectionDefinition> visibleSettingsSections(
+  List<SettingsSectionDefinition> sections,
+) {
+  final visible = <SettingsSectionDefinition>[];
+  for (final section in sections) {
+    final entries = [
+      for (final entry in section.entries)
+        if (!entry.searchOnly) entry,
+    ];
+    if (entries.isEmpty) continue;
+
+    visible.add(
+      entries.length == section.entries.length
+          ? section
+          : section.copyWith(entries: entries),
+    );
+  }
+  return visible;
 }
 
 /// Result of [useSettingsSearch]: the bound [TextEditingController] used by
@@ -309,17 +435,21 @@ class SettingsSearchField extends StatelessWidget {
 }
 
 class SettingsSectionList extends StatelessWidget {
-  final List<SettingsSectionDefinition> sections;
+  final List<SettingsSectionDefinition> unfilteredSections;
   final String query;
 
+  /// Lists [sections] as [visibleSettingsSections] says, with hidden entries
+  /// grayed out in place.
   const SettingsSectionList({
     super.key,
-    required this.sections,
+    required List<SettingsSectionDefinition> sections,
     required this.query,
-  });
+  }) : unfilteredSections = sections;
 
   @override
   Widget build(BuildContext context) {
+    final sections = visibleSettingsSections(unfilteredSections);
+
     if (sections.isEmpty) {
       final l10n = AppLocalizations.of(context);
 
@@ -384,7 +514,19 @@ List<Widget> buildSettingsSectionWidgets(
                   '${sections[sectionIndex].entries[entryIndex].title}',
                 ),
                 title: sections[sectionIndex].entries[entryIndex].title,
-                child: sections[sectionIndex].entries[entryIndex].child,
+                child: HiddenFeatureGate(
+                  conditions: settingsEntryConditions(
+                    sections[sectionIndex],
+                    sections[sectionIndex].entries[entryIndex],
+                  ),
+                  opensScreen:
+                      sections[sectionIndex].entries[entryIndex].opensScreen,
+                  inForce: sections[sectionIndex].entries[entryIndex].inForce,
+                  hiddenSettings:
+                      sections[sectionIndex].entries[entryIndex].hiddenSettings,
+                  indicator: true,
+                  child: sections[sectionIndex].entries[entryIndex].child,
+                ),
               ),
             ],
           ],
@@ -398,7 +540,7 @@ List<Widget> buildSettingsSectionWidgets(
 /// [title], auto-scrolls it into view and briefly pulses a tint behind it.
 /// Self-clears the pending highlight as soon as the destination entry handles
 /// it so the effect doesn't replay on rebuild or back-navigation.
-class _HighlightableEntry extends HookConsumerWidget {
+class _HighlightableEntry extends ConsumerWidget {
   final String title;
   final Widget child;
 
@@ -411,65 +553,13 @@ class _HighlightableEntry extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final pending = ref.watch(pendingSettingsHighlightProvider);
-    final isTarget = pending != null && pending == title;
 
-    final controller = useAnimationController(
-      duration: const Duration(milliseconds: 1500),
-    );
-
-    final animation = useMemoized(
-      () => TweenSequence<double>([
-        TweenSequenceItem(
-          tween: Tween(
-            begin: 0.0,
-            end: 1.0,
-          ).chain(CurveTween(curve: Curves.easeOut)),
-          weight: 20,
-        ),
-        TweenSequenceItem(tween: ConstantTween(1.0), weight: 30),
-        TweenSequenceItem(
-          tween: Tween(
-            begin: 1.0,
-            end: 0.0,
-          ).chain(CurveTween(curve: Curves.easeIn)),
-          weight: 50,
-        ),
-      ]).animate(controller),
-      [controller],
-    );
-
-    useEffect(() {
-      if (!isTarget) return null;
-
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        // Clear immediately once this entry claims the highlight so stale
-        // state cannot survive a quick pop or interrupted animation.
-        ref.read(pendingSettingsHighlightProvider.notifier).clear();
-        if (!context.mounted) return;
-        Scrollable.ensureVisible(
-          context,
-          duration: const Duration(milliseconds: 400),
-          curve: Curves.easeOutCubic,
-          alignment: 0.2,
-        );
-        controller.forward(from: 0);
-      });
-
-      return null;
-    }, [isTarget]);
-
-    final highlightColor = Theme.of(context).colorScheme.secondaryContainer;
-
-    return AnimatedBuilder(
-      animation: animation,
-      builder: (context, child) {
-        final t = animation.value;
-        if (t == 0.0) return child!;
-        return ColoredBox(
-          color: highlightColor.withValues(alpha: t * 0.7),
-          child: child,
-        );
-      },
+    return HighlightPulse(
+      active: pending != null && pending == title,
+      // Cleared as soon as this entry claims the highlight, so stale state
+      // cannot survive a quick pop or an interrupted animation.
+      onStarted: () =>
+          ref.read(pendingSettingsHighlightProvider.notifier).clear(),
       child: child,
     );
   }
@@ -506,13 +596,7 @@ List<SettingsSectionDefinition> filterSettingsSections({
     ];
 
     if (filteredEntries.isNotEmpty) {
-      filteredSections.add(
-        SettingsSectionDefinition(
-          title: section.title,
-          keywords: section.keywords,
-          entries: filteredEntries,
-        ),
-      );
+      filteredSections.add(section.copyWith(entries: filteredEntries));
     }
   }
 

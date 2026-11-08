@@ -360,7 +360,8 @@ class _WebCategoriesPanel extends ConsumerWidget {
                   sourceKind: session.sourceKind,
                   mode: session.mode,
                 ),
-                onOpenUri: (uri) => openSmallWebAttributionUri(context, uri),
+                onOpenUri: (uri) =>
+                    openSmallWebAttributionUri(context, ref.read, uri),
                 compact: true,
               ),
               const SizedBox(height: 8),
@@ -471,7 +472,8 @@ class _ModeContextPanel extends ConsumerWidget {
                 sourceKind: session.sourceKind,
                 mode: session.mode,
               ),
-              onOpenUri: (uri) => openSmallWebAttributionUri(context, uri),
+              onOpenUri: (uri) =>
+                  openSmallWebAttributionUri(context, ref.read, uri),
               compact: true,
             ),
             const SizedBox(height: 8),
@@ -525,7 +527,8 @@ class _DefaultContentPanel extends ConsumerWidget {
                 sourceKind: session.sourceKind,
                 mode: session.mode,
               ),
-              onOpenUri: (uri) => openSmallWebAttributionUri(context, uri),
+              onOpenUri: (uri) =>
+                  openSmallWebAttributionUri(context, ref.read, uri),
             ),
             const SizedBox(height: 12),
             if (session.sourceKind == SmallWebSourceKind.wander) ...[
@@ -895,13 +898,13 @@ class _SmallWebMenuError extends StatelessWidget {
 
 // --- Wander console card ---
 
-class _WanderConsoleCard extends ConsumerWidget {
+class _WanderConsoleCard extends StatelessWidget {
   final Uri? currentConsoleUrl;
 
   const _WanderConsoleCard({required this.currentConsoleUrl});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final colorScheme = Theme.of(context).colorScheme;
 
@@ -930,9 +933,20 @@ class _WanderConsoleCard extends ConsumerWidget {
       );
     }
 
-    final statsAsync = ref.watch(
-      wanderConsoleStatsProvider(currentConsoleUrl!),
-    );
+    return _SelectedWanderConsoleCard(consoleUrl: currentConsoleUrl!);
+  }
+}
+
+class _SelectedWanderConsoleCard extends ConsumerWidget {
+  final Uri consoleUrl;
+
+  const _SelectedWanderConsoleCard({required this.consoleUrl});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l10n = AppLocalizations.of(context);
+    final colorScheme = Theme.of(context).colorScheme;
+    final statsAsync = ref.watch(wanderConsoleStatsProvider(consoleUrl));
 
     return Card(
       color: colorScheme.surfaceContainerHigh,
@@ -947,7 +961,7 @@ class _WanderConsoleCard extends ConsumerWidget {
                 const SizedBox(width: 8),
                 Expanded(
                   child: Text(
-                    currentConsoleUrl!.host,
+                    consoleUrl.host,
                     style: Theme.of(context).textTheme.titleSmall?.copyWith(
                       color: colorScheme.primary,
                     ),

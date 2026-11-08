@@ -25,6 +25,8 @@ import 'package:flutter_mozilla_components/flutter_mozilla_components.dart'
 import 'package:json_annotation/json_annotation.dart';
 import 'package:weblibre/core/design/window_size_class.dart';
 import 'package:weblibre/core/routing/routes.dart';
+import 'package:weblibre/domain/entities/remembered_prompt.dart';
+import 'package:weblibre/domain/feature_policy/feature_policy.dart';
 import 'package:weblibre/features/app_links/domain/entities/app_link_rule.dart';
 import 'package:weblibre/features/app_links/domain/entities/context_app_link_policy.dart';
 import 'package:weblibre/features/bangs/data/models/bang_group.dart';
@@ -114,7 +116,7 @@ const minExpandedSideRailWidth = 200.0;
 /// Controls the Android display refresh rate the app requests at startup.
 ///
 /// Flutter does not request a high refresh rate by default, so on many devices
-/// (Samsung, OnePlus, Xiaomi, …) the app is left at 60Hz even on a 90/120Hz
+/// (Samsung, OnePlus, Xiaomi, â€¦) the app is left at 60Hz even on a 90/120Hz
 /// panel. [high] asks the OS for the fastest available mode, [low] for the
 /// slowest (battery saving), and [system] leaves the OS-managed default in
 /// place. Android-only; ignored on other platforms.
@@ -160,7 +162,7 @@ enum TabIntentOpenSetting { regular, private, isolated, ask }
 /// the other values open the bookmark directly with no intermediate prompt.
 enum BookmarkOpenSetting { regular, private, isolated, customTab, ask }
 
-/// What happens after an action opens a new tab in the background — context
+/// What happens after an action opens a new tab in the background â€” context
 /// menu "open in new tab"/"open in container", tab cloning, and the contextual
 /// toolbar clone buttons.
 ///
@@ -175,7 +177,7 @@ enum TabDirection { newestFirst, oldestFirst }
 
 /// The edge the tab bar is actually rendered on, after resolution.
 ///
-/// Closed by design — there is no `auto` here. See [TabBarPositionSetting],
+/// Closed by design â€” there is no `auto` here. See [TabBarPositionSetting],
 /// which is what gets persisted.
 enum TabBarPosition {
   top,
@@ -195,13 +197,13 @@ enum TabBarPosition {
   Axis get axis => isVertical ? Axis.vertical : Axis.horizontal;
 }
 
-/// What the user chose for the tab bar's edge — which may be "decide for me".
+/// What the user chose for the tab bar's edge â€” which may be "decide for me".
 ///
 /// Deliberately a separate type from [TabBarPosition] rather than an extra
 /// value on it. [TabBarPosition] carries geometry accessors (`isVertical`,
 /// `isHorizontal`, `axis`) that are answered by comparing against concrete
 /// edges, so an `auto` member there would silently report itself as
-/// *horizontal* everywhere the resolution was forgotten — a wrong layout
+/// *horizontal* everywhere the resolution was forgotten â€” a wrong layout
 /// rather than an error. Keeping the stored and resolved types apart makes
 /// that unrepresentable: nothing can ask an unresolved choice which way it
 /// points.
@@ -238,7 +240,7 @@ enum TabBarLayout { withTitle, compact }
 /// rail's column keeps its own order.
 ///
 /// [auto] is the layout that predates the setting: the row tops the bottom
-/// toolbar — above the address bar when that is at the bottom, above the
+/// toolbar â€” above the address bar when that is at the bottom, above the
 /// contextual toolbar when the address bar is at the top.
 enum QuickTabSwitcherPlacement {
   auto,
@@ -297,7 +299,7 @@ enum QuickTabSwitcherOrder {
 ///
 /// [activeTabOnly] is the historic behavior: the chip the user is already on
 /// can be closed in place, every other chip only through its long-press menu.
-/// [all] puts a button on every chip and [never] on none — the last matters
+/// [all] puts a button on every chip and [never] on none â€” the last matters
 /// once the active tab is on the bar at all (container-tabs stacking), where
 /// the button sits right beside the chip the user taps to go back to it.
 ///
@@ -323,13 +325,13 @@ enum TabChipCloseButtonMode {
 ///
 /// The home surface has no address field of its own, so exactly one of these
 /// two has to be present: the pinned pill at the top of the home content, or
-/// the tab bar's own (empty) address field — the behaviour that predates the
+/// the tab bar's own (empty) address field â€” the behaviour that predates the
 /// home surface. [auto] picks whichever sits on the same edge the user already
 /// chose for the tab bar, so a bottom tab bar keeps the search entry within
 /// thumb reach instead of moving it to the top of the screen.
 enum HomeSearchBarPlacement { auto, top, tabBar }
 
-/// Which edge of the search screen — the new-tab page and the address editor —
+/// Which edge of the search screen â€” the new-tab page and the address editor â€”
 /// holds its input field.
 ///
 /// [auto] puts it on the edge the tab bar is drawn on, so the field opens where
@@ -457,7 +459,7 @@ class GeneralSettings with FastEquatable {
   /// devices). Defaults to false. Only shown when the route can be popped.
   final bool showSearchCloseButton;
 
-  /// What to land on when there is no tab to show — at cold start, and when
+  /// What to land on when there is no tab to show â€” at cold start, and when
   /// the last tab in scope is closed if [homeTargetOnLastTabClosed] is set.
   final HomeTarget homeTarget;
 
@@ -480,7 +482,7 @@ class GeneralSettings with FastEquatable {
   final SearchFieldPlacement searchFieldPlacement;
 
   /// The wallpaper shown behind the home surface, as a file name within the
-  /// profile's wallpaper directory — never a path. Null means no wallpaper, and
+  /// profile's wallpaper directory â€” never a path. Null means no wallpaper, and
   /// the home surface keeps its aura backdrop.
   ///
   /// A name rather than a path because profile directories move between
@@ -585,12 +587,12 @@ class GeneralSettings with FastEquatable {
   final bool useExternalDownloadManager;
 
   /// Where downloads are saved: a Storage Access Framework tree URI
-  /// (`content://…`) the app holds a persisted write grant for, or null for the
+  /// (`content://â€¦`) the app holds a persisted write grant for, or null for the
   /// system's public Downloads folder.
   ///
   /// Stored as the URI the picker returned rather than a path, because that is
   /// what a SAF grant is addressed by and what Mozilla's download writer
-  /// expects. Replicated to native, which resolves it without Flutter — see
+  /// expects. Replicated to native, which resolves it without Flutter â€” see
   /// `DownloadLocationPreference`.
   final String? downloadDirectoryUri;
   final bool doubleBackCloseTab;
@@ -659,7 +661,7 @@ class GeneralSettings with FastEquatable {
 
   /// Whether an install-app (marketplace) intent is offered when an app link
   /// resolves to no installed app and has no validated http(s) fallback.
-  /// Defaults to false — the wrong default for a de-Googled browser.
+  /// Defaults to false â€” the wrong default for a de-Googled browser.
   final bool appLinkMarketplaceFallback;
 
   /// Whether app-link "never" rules allow a same-caller Custom Tab / ActionView
@@ -669,7 +671,7 @@ class GeneralSettings with FastEquatable {
   final bool appLinkAuthExceptionsEnabled;
 
   /// Whether an http(s) app-link prompt holds its navigation instead of letting
-  /// the page load behind the banner (§2.2). Defaults to false, which keeps the
+  /// the page load behind the banner (Â§2.2). Defaults to false, which keeps the
   /// non-blocking behaviour: the page loads while the banner is up, so the site
   /// sees one request even when the user picks the app. With this on, the tab
   /// stays on its previous page until the prompt is answered, and declining
@@ -677,7 +679,7 @@ class GeneralSettings with FastEquatable {
   /// unsupported schemes always hold their navigation regardless.
   final bool appLinkBlockWhilePrompting;
 
-  /// Whether the local search index (`history` table populated via tab→
+  /// Whether the local search index (`history` table populated via tabâ†’
   /// history triggers) is active. When false, the SQL trigger guard returns
   /// without writing; existing rows stay until the user clears them.
   final bool enableLocalSearchIndex;
@@ -775,7 +777,7 @@ class GeneralSettings with FastEquatable {
   final List<String> desktopModeSites;
 
   /// Developer setting: when true, the GeckoView is unmounted whenever a
-  /// full-cover route (settings, tab tray, search, …) is on top, freeing the
+  /// full-cover route (settings, tab tray, search, â€¦) is on top, freeing the
   /// engine's resources while it is occluded. On Android 12 and lower (API
   /// <= 31) this behavior is always applied to work around a native
   /// visibility bug; on Android 13+ the engine normally stays mounted to
@@ -785,9 +787,27 @@ class GeneralSettings with FastEquatable {
   /// It is not the answer to a stale engine surface left on top of an overlay:
   /// unmounting only hid that by destroying the platform view, and never
   /// covered the home surface, which does not unmount at all. `GeckoView`
-  /// handles that wherever it happens now — see `GeckoView.isPainted` — so what
+  /// handles that wherever it happens now â€” see `GeckoView.isPainted` â€” so what
   /// is left here is the memory trade this describes.
   final bool unmountGeckoViewOffRoute;
+
+  /// Answers given with "Don't ask again", keyed by the prompt they answer and
+  /// stored as the answer's enum name. A prompt without an entry asks. Read
+  /// them through [rememberedAnswer]; malformed entries are dropped on read
+  /// (see [parseRememberedPrompts]).
+  @JsonKey(fromJson: parseRememberedPrompts)
+  final Map<RememberedPrompt, String> rememberedPrompts;
+
+  /// The visibility switches the user (or the onboarding commit) has set,
+  /// keyed by switch. A switch without an entry takes its existing-install
+  /// value ([VisibilitySwitch.inherits]): read them through
+  /// [isVisibilitySwitchEnabled], never directly.
+  ///
+  /// Only hides optional creation and configuration entry points.
+  /// Writing an entry never changes behavior, stored data or any other setting
+  /// (P1); unknown keys from another version are dropped on read.
+  @JsonKey(fromJson: parseVisibilitySwitches)
+  final Map<VisibilitySwitch, bool> visibilitySwitches;
 
   GeneralSettings({
     required this.themeMode,
@@ -910,6 +930,8 @@ class GeneralSettings with FastEquatable {
     required this.globalDesktopMode,
     required this.desktopModeSites,
     required this.unmountGeckoViewOffRoute,
+    required this.rememberedPrompts,
+    required this.visibilitySwitches,
   });
 
   GeneralSettings.withDefaults({
@@ -1033,6 +1055,8 @@ class GeneralSettings with FastEquatable {
     bool? globalDesktopMode,
     List<String>? desktopModeSites,
     bool? unmountGeckoViewOffRoute,
+    Map<RememberedPrompt, String>? rememberedPrompts,
+    Map<VisibilitySwitch, bool>? visibilitySwitches,
   }) : themeMode = themeMode ?? ThemeMode.dark,
        uiScaleFactor = uiScaleFactor ?? defaultUiScaleFactor,
        disableAnimations = disableAnimations ?? false,
@@ -1134,7 +1158,7 @@ class GeneralSettings with FastEquatable {
        syncServerOverride = syncServerOverride ?? '',
        syncTokenServerOverride = syncTokenServerOverride ?? '',
        urlCleanerEnabled = urlCleanerEnabled ?? true,
-       urlCleanerAutoApply = urlCleanerAutoApply ?? false,
+       urlCleanerAutoApply = urlCleanerAutoApply ?? true,
        urlCleanerAllowReferralMarketing =
            urlCleanerAllowReferralMarketing ?? false,
        urlCleanerCatalogUrl =
@@ -1149,7 +1173,7 @@ class GeneralSettings with FastEquatable {
        tabBarLongPressUrlCopy = tabBarLongPressUrlCopy ?? true,
        unshortenerEnabled = unshortenerEnabled ?? false,
        unshortenerToken = unshortenerToken ?? '',
-       allowNonManifestPwaInstall = allowNonManifestPwaInstall ?? false,
+       allowNonManifestPwaInstall = allowNonManifestPwaInstall ?? true,
        blockExternalAppsEnabled = blockExternalAppsEnabled ?? false,
        externalAppIntentPolicies = externalAppIntentPolicies ?? const {},
        customTabsEnabled = customTabsEnabled ?? true,
@@ -1187,11 +1211,13 @@ class GeneralSettings with FastEquatable {
        showFocusRing = showFocusRing ?? true,
        globalDesktopMode = globalDesktopMode ?? false,
        desktopModeSites = desktopModeSites ?? const [],
-       unmountGeckoViewOffRoute = unmountGeckoViewOffRoute ?? false;
+       unmountGeckoViewOffRoute = unmountGeckoViewOffRoute ?? false,
+       rememberedPrompts = rememberedPrompts ?? const {},
+       visibilitySwitches = visibilitySwitches ?? const {};
 
   factory GeneralSettings.fromJson(Map<String, dynamic> json) {
     // Migrate legacy `newTabPosition` setting to direction settings.
-    // Old `first` (new tabs at top) → newestFirst; `end` → oldestFirst.
+    // Old `first` (new tabs at top) â†’ newestFirst; `end` â†’ oldestFirst.
     // TODO: Drop this fallback (and the `newTabPosition` row in the user
     // settings DB) once enough releases have shipped that rolling back to a
     // version without `tabListDirection`/`tabBarDirection` is no longer a
@@ -1239,22 +1265,279 @@ class GeneralSettings with FastEquatable {
 
   Map<String, dynamic> toJson() => _$GeneralSettingsToJson(this);
 
+  /// These settings as they apply: every setting of a hidden feature at its
+  /// hidden value, the value used while nothing is stored. The stored values
+  /// are kept and apply again once the feature is shown. The visibility
+  /// switches themselves are never changed.
+  ///
+  /// Exempt, and returned as stored: where data goes (connections, routes,
+  /// the custom sync server), what the user created, and settings whose
+  /// feature is always shown. Per-container options live with the
+  /// containers and are projected where they are read
+  /// (`containerAppLinksApply`, `watchStrictContextAssignments`).
+  ///
+  /// Behavior reads this through `generalSettingsWithDefaultsProvider`;
+  /// settings screens read the stored values.
+  GeneralSettings effective() {
+    final defaults = GeneralSettings.withDefaults();
+    var settings = this;
+
+    if (!isFeatureShown(FeatureId.urlCleanerReviewAndReferral)) {
+      settings = settings.copyWith(
+        urlCleanerAutoApply: defaults.urlCleanerAutoApply,
+        urlCleanerAllowReferralMarketing:
+            defaults.urlCleanerAllowReferralMarketing,
+        urlCleanerCatalogUrl: defaults.urlCleanerCatalogUrl,
+        urlCleanerHashUrl: defaults.urlCleanerHashUrl,
+        urlCleanerAutoUpdate: defaults.urlCleanerAutoUpdate,
+      );
+    }
+    if (!isFeatureShown(FeatureId.linksUnshortener)) {
+      // The token is kept as stored: without the switch it does nothing.
+      settings = settings.copyWith(
+        unshortenerEnabled: defaults.unshortenerEnabled,
+      );
+    }
+    if (!isFeatureShown(FeatureId.aiLocalAi)) {
+      settings = settings.copyWith(
+        enableLocalAiFeatures: defaults.enableLocalAiFeatures,
+      );
+    }
+    if (!isFeatureShown(FeatureId.tabsHierarchyDisplay)) {
+      settings = settings.copyWith(quickTabSwitcherHierarchyGlyphs: 0);
+    }
+    if (!isFeatureShown(FeatureId.tabsChildTabCreation)) {
+      settings = settings.copyWith(
+        createChildTabsOption: defaults.createChildTabsOption,
+        childTabPlacement: defaults.childTabPlacement,
+      );
+    }
+    if (!isFeatureShown(FeatureId.tabsIsolatedUi)) {
+      // Only an isolated choice changes, to the nearest one without
+      // isolated tabs: a regular new tab, a private small-web tab, and asking
+      // for links and bookmarks.
+      settings = settings.copyWith(
+        storedDefaultCreateTabType: settings.effectiveDefaultCreateTabType,
+        smallWebTabType: settings.effectiveSmallWebTabType,
+        tabIntentOpenSetting: settings.effectiveTabIntentOpenSetting,
+        bookmarkOpenSetting: settings.effectiveBookmarkOpenSetting,
+      );
+    }
+    if (!isFeatureShown(FeatureId.containerCore)) {
+      // Without containers there is no selected container to stay in.
+      settings = settings.copyWith(
+        sequentialTabNavigationCrossContainers: true,
+      );
+    }
+    if (!isStackingModeShown(settings.tabBarStackingMode)) {
+      // Not the code default (Accordion): that is a container mode itself.
+      settings = settings.copyWith(
+        tabBarStackingMode: TabBarStackingMode.lastUsedTabs,
+      );
+    }
+    if (!isFeatureShown(FeatureId.inputTabSwipeRemap)) {
+      settings = settings.copyWith(
+        tabBarSwipeAction: defaults.tabBarSwipeAction,
+      );
+    }
+    if (!isFeatureShown(FeatureId.advancedUnmountEngineOffscreen)) {
+      settings = settings.copyWith(
+        unmountGeckoViewOffRoute: defaults.unmountGeckoViewOffRoute,
+      );
+    }
+
+    return settings;
+  }
+
+  /// Whether a container's own app link settings apply: the container has
+  /// them on, and per-container app links are shown.
+  bool containerAppLinksApply({required bool isolatedAppLinkSettings}) =>
+      isolatedAppLinkSettings && isFeatureShown(FeatureId.containerAppLinks);
+
   TabType get effectiveDefaultCreateTabType {
-    if (!showIsolatedTabUi && storedDefaultCreateTabType == TabType.isolated) {
+    if (!isolatedTabEntryPointsShown &&
+        storedDefaultCreateTabType == TabType.isolated) {
       return TabType.regular;
     }
     return storedDefaultCreateTabType;
   }
 
+  /// Whether [visibilitySwitch] is on.
+  ///
+  /// A switch nobody has written yet takes the policy's value for existing
+  /// installs: `enabled` for UI that was always visible, or a copy of
+  /// the legacy setting users could already hide it with. Fresh installs never
+  /// reach the fallback, because the onboarding commit writes every switch.
+  bool isVisibilitySwitchEnabled(VisibilitySwitch visibilitySwitch) {
+    if (visibilitySwitches[visibilitySwitch] case final stored?) return stored;
+
+    return switch (visibilitySwitch.inherits) {
+      final setting? => legacyVisibilitySetting(setting),
+      null => true,
+    };
+  }
+
+  /// The value of a legacy setting a [VisibilitySwitch] inherits.
+  bool legacyVisibilitySetting(LegacyVisibilitySetting setting) =>
+      switch (setting) {
+        LegacyVisibilitySetting.showContainerUi => showContainerUi,
+        LegacyVisibilitySetting.showIsolatedTabUi => showIsolatedTabUi,
+      };
+
+  /// Whether what [visibilitySwitch] guards is shown: the switch, and for one
+  /// that [VisibilitySwitch.inherits] also the legacy setting it copies. A user who hid the
+  /// container UI before the switch existed keeps it hidden even after
+  /// something else writes the switch.
+  bool isVisibilitySwitchShown(VisibilitySwitch visibilitySwitch) {
+    if (!isVisibilitySwitchEnabled(visibilitySwitch)) return false;
+
+    return switch (visibilitySwitch.inherits) {
+      final setting? => legacyVisibilitySetting(setting),
+      null => true,
+    };
+  }
+
+  /// Whether the creation and configuration entry points of containers are
+  /// shown (`switch.containers`, see [isVisibilitySwitchShown]).
+  ///
+  /// Only for entry points. Container indicators, tints and the way out of a
+  /// selected container read [showContainerUi] alone (P5), and behavior reads
+  /// the `effective*` getters.
+  bool get containerEntryPointsShown => isFeatureShown(FeatureId.containerCore);
+
+  /// Like [containerEntryPointsShown], for isolated-tab creation.
+  bool get isolatedTabEntryPointsShown =>
+      isFeatureShown(FeatureId.tabsIsolatedUi);
+
+  /// [quickTabSwitcherHierarchyGlyphs] as drawn: none while the tab
+  /// hierarchy display is hidden (`switch.tree_tabs`), like the tab view's
+  /// `effectiveShowHierarchicalTabs`. The stored value is kept.
+  int get effectiveQuickTabSwitcherHierarchyGlyphs =>
+      isFeatureShown(FeatureId.tabsHierarchyDisplay)
+      ? quickTabSwitcherHierarchyGlyphs
+      : 0;
+
+  /// Whether "Add child tab" is offered where tabs are created: the option is
+  /// on and child tab creation is shown (`switch.tree_tabs`).
+  bool get childTabEntryPointsShown =>
+      createChildTabsOption && isFeatureShown(FeatureId.tabsChildTabCreation);
+
+  /// Whether AI container suggestions are offered: an AI tool shown only with
+  /// on-device AI *and* containers (`ai.container_suggestions`); the runtime
+  /// switch still decides whether the model runs at all.
+  bool get containerSuggestionsActive =>
+      enableLocalAiFeatures && isFeatureShown(FeatureId.aiContainerSuggestions);
+
+  /// These settings with [visibilitySwitch] set to [enabled].
+  ///
+  /// Turning a switch on also turns on what its newly shown features need to
+  /// be configured ([FeaturePolicy.uiRequires]), and the legacy setting it
+  /// [VisibilitySwitch.inherits], so a user who hid that UI before the switch
+  /// existed gets it back. Turning one off touches nothing else: it hides,
+  /// and never runs the clean-up the old Settings tiles did (P1).
+  GeneralSettings withVisibilitySwitch(
+    VisibilitySwitch visibilitySwitch, {
+    required bool enabled,
+  }) {
+    final switches = {...visibilitySwitches, visibilitySwitch: enabled};
+    if (!enabled) return copyWith(visibilitySwitches: switches);
+
+    // Only what this call turns on: a switch the user turned off stays off
+    // unless something newly shown needs it.
+    // Every switch below only turns on, and each one turned on gets its
+    // legacy setting too, so it is shown afterwards.
+    final turnedOn = {visibilitySwitch};
+    bool shownAfter(VisibilitySwitch s) =>
+        turnedOn.contains(s) || isVisibilitySwitchShown(s);
+    for (var changed = true; changed;) {
+      changed = false;
+      for (final feature in FeatureId.values) {
+        final policy = feature.policy;
+        if (!policy.isShownWith(shownAfter) ||
+            policy.isShownWith(isVisibilitySwitchShown)) {
+          continue;
+        }
+        for (final required in policy.uiRequires) {
+          for (final needed in required.policy.switches) {
+            if (!shownAfter(needed)) {
+              switches[needed] = true;
+              turnedOn.add(needed);
+              changed = true;
+            }
+          }
+        }
+      }
+    }
+
+    var updated = copyWith(visibilitySwitches: switches);
+    for (final s in turnedOn) {
+      if (s.inherits != null) {
+        updated = switch (s.inherits!) {
+          LegacyVisibilitySetting.showContainerUi => updated.copyWith(
+            showContainerUi: true,
+          ),
+          LegacyVisibilitySetting.showIsolatedTabUi => updated.copyWith(
+            showIsolatedTabUi: true,
+          ),
+        };
+      }
+    }
+    return updated;
+  }
+
+  /// Whether [feature] is shown: always for locked and always-available rows,
+  /// otherwise when every switch it needs is shown.
+  bool isFeatureShown(FeatureId feature) =>
+      feature.policy.isShownWith(isVisibilitySwitchShown);
+
+  /// Every feature shown with these settings.
+  Set<FeatureId> get shownFeatures => {
+    for (final feature in FeatureId.values)
+      if (isFeatureShown(feature)) feature,
+  };
+
+  /// The visibility switches that hide [feature], empty when it is shown.
+  List<VisibilitySwitch> hiddenSwitchesFor(FeatureId feature) {
+    if (isFeatureShown(feature)) return const [];
+    return [
+      for (final visibilitySwitch in feature.policy.switches)
+        if (!isVisibilitySwitchShown(visibilitySwitch)) visibilitySwitch,
+    ];
+  }
+
+  /// Whether stacking [mode] is shown. The container modes need containers
+  /// and the advanced layout options; Tab Groups only the advanced layout
+  /// options, since they group by recorded tab relationships, not container.
+  bool isStackingModeShown(TabBarStackingMode mode) => switch (mode) {
+    TabBarStackingMode.containerTabs ||
+    TabBarStackingMode.accordion ||
+    TabBarStackingMode.twoLevel => isFeatureShown(
+      FeatureId.layoutStackingContainerModes,
+    ),
+    TabBarStackingMode.tabGroups => isFeatureShown(
+      FeatureId.layoutStackingTabGroups,
+    ),
+    TabBarStackingMode.lastUsedTabs || TabBarStackingMode.disabled => true,
+  };
+
+  /// The answer remembered for [prompt], or null while it should ask.
+  ///
+  /// [T] is the prompt's answer type, one of [RememberedPrompt.answers].
+  T? rememberedAnswer<T extends Enum>(RememberedPrompt prompt) {
+    final name = rememberedPrompts[prompt];
+    if (name == null) return null;
+    return prompt.answers.whereType<T>().asNameMap()[name];
+  }
+
   TabType get effectiveSmallWebTabType {
-    if (!showIsolatedTabUi && smallWebTabType == TabType.isolated) {
+    if (!isolatedTabEntryPointsShown && smallWebTabType == TabType.isolated) {
       return TabType.private;
     }
     return smallWebTabType;
   }
 
   TabIntentOpenSetting get effectiveTabIntentOpenSetting {
-    if (!showIsolatedTabUi &&
+    if (!isolatedTabEntryPointsShown &&
         tabIntentOpenSetting == TabIntentOpenSetting.isolated) {
       return TabIntentOpenSetting.ask;
     }
@@ -1262,21 +1545,15 @@ class GeneralSettings with FastEquatable {
   }
 
   BookmarkOpenSetting get effectiveBookmarkOpenSetting {
-    if (!showIsolatedTabUi &&
+    if (!isolatedTabEntryPointsShown &&
         bookmarkOpenSetting == BookmarkOpenSetting.isolated) {
       return BookmarkOpenSetting.ask;
     }
     return bookmarkOpenSetting;
   }
 
-  /// Keeping sequential navigation inside one container only means something
-  /// while the user can switch containers at all: with the container UI hidden
-  /// there is no selected container to stay in, so the walk spans everything.
-  bool get effectiveSequentialTabNavigationCrossContainers =>
-      sequentialTabNavigationCrossContainers || !showContainerUi;
-
   /// [tabBarPosition] with [TabBarPositionSetting.auto] resolved against
-  /// [window], so callers never have to. Never returns an unresolved choice —
+  /// [window], so callers never have to. Never returns an unresolved choice â€”
   /// that is the point of the return type.
   ///
   /// [window] is required rather than defaulted on purpose. A default would
@@ -1321,8 +1598,10 @@ class GeneralSettings with FastEquatable {
     final placement => placement,
   };
 
-  /// Container-dependent stacking modes degrade to a single recently-used
-  /// row when the container UI is disabled.
+  /// Stacking modes whose feature is hidden degrade to a single recently-used
+  /// row: the container modes while containers or the advanced layout options
+  /// are hidden, Tab Groups while their own entry is. Tab Groups need no
+  /// containers: they group by tab relations.
   ///
   /// Two-level stacking additionally degrades to accordion (the default mode,
   /// which has a vertical form) on a *narrow* vertical rail, where two stacked
@@ -1355,20 +1634,16 @@ class GeneralSettings with FastEquatable {
     if (isNarrowRail || window.isHeightConstrained) {
       mode = switch (mode) {
         TabBarStackingMode.twoLevel => TabBarStackingMode.accordion,
+        // Container Tabs, when containers are shown; otherwise the check
+        // below draws the simple row, which needs no containers.
         TabBarStackingMode.tabGroups => TabBarStackingMode.containerTabs,
         _ => mode,
       };
     }
 
-    if (!showContainerUi &&
-        const {
-          TabBarStackingMode.containerTabs,
-          TabBarStackingMode.accordion,
-          TabBarStackingMode.twoLevel,
-          TabBarStackingMode.tabGroups,
-        }.contains(mode)) {
-      return TabBarStackingMode.lastUsedTabs;
-    }
+    // Hidden stacking modes are drawn as the simple row, without rewriting
+    // the stored choice: it comes back with its visibility switch (P1).
+    if (!isStackingModeShown(mode)) return TabBarStackingMode.lastUsedTabs;
 
     return mode;
   }
@@ -1476,5 +1751,7 @@ class GeneralSettings with FastEquatable {
     globalDesktopMode,
     desktopModeSites,
     unmountGeckoViewOffRoute,
+    rememberedPrompts,
+    visibilitySwitches,
   ];
 }

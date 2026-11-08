@@ -1665,6 +1665,18 @@ RouteBase get $settingsRoute => GoRouteData.$route(
       factory: $SettingsTransferRoute._fromState,
     ),
     GoRouteData.$route(
+      path: 'confirmations',
+      name: 'ConfirmationSettingsRoute',
+      hasOverriddenOnExit: false,
+      factory: $ConfirmationSettingsRoute._fromState,
+    ),
+    GoRouteData.$route(
+      path: 'feature_control',
+      name: 'FeatureControlSettingsRoute',
+      hasOverriddenOnExit: false,
+      factory: $FeatureControlSettingsRoute._fromState,
+    ),
+    GoRouteData.$route(
       path: 'browsing',
       name: 'BrowsingSettingsRoute',
       hasOverriddenOnExit: false,
@@ -1958,6 +1970,48 @@ mixin $SettingsTransferRoute on GoRouteData {
 
   @override
   String get location => GoRouteData.$location('/settings/transfer');
+
+  @override
+  void go(BuildContext context) => context.go(location);
+
+  @override
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  @override
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  @override
+  void replace(BuildContext context) => context.replace(location);
+}
+
+mixin $ConfirmationSettingsRoute on GoRouteData {
+  static ConfirmationSettingsRoute _fromState(GoRouterState state) =>
+      const ConfirmationSettingsRoute();
+
+  @override
+  String get location => GoRouteData.$location('/settings/confirmations');
+
+  @override
+  void go(BuildContext context) => context.go(location);
+
+  @override
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  @override
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  @override
+  void replace(BuildContext context) => context.replace(location);
+}
+
+mixin $FeatureControlSettingsRoute on GoRouteData {
+  static FeatureControlSettingsRoute _fromState(GoRouterState state) =>
+      const FeatureControlSettingsRoute();
+
+  @override
+  String get location => GoRouteData.$location('/settings/feature_control');
 
   @override
   void go(BuildContext context) => context.go(location);

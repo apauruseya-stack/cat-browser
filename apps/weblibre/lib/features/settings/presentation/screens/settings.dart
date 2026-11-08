@@ -24,10 +24,18 @@ import 'package:flutter_material_design_icons/flutter_material_design_icons.dart
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:weblibre/core/design/window_size_class.dart';
 import 'package:weblibre/core/routing/routes.dart';
+import 'package:weblibre/domain/feature_policy/feature_policy.dart';
+import 'package:weblibre/features/geckoview/features/open_link_tools/presentation/screens/url_cleaner_settings.dart';
+import 'package:weblibre/features/gestures/presentation/screens/gesture_behavior_screen.dart';
+import 'package:weblibre/features/gestures/presentation/screens/gesture_feedback_screen.dart';
 import 'package:weblibre/features/settings/domain/providers/pending_settings_highlight.dart';
 import 'package:weblibre/features/settings/presentation/screens/advanced_settings.dart';
 import 'package:weblibre/features/settings/presentation/screens/browsing_settings.dart';
+import 'package:weblibre/features/settings/presentation/screens/custom_tracking_protection.dart';
+import 'package:weblibre/features/settings/presentation/screens/experimental_settings.dart';
 import 'package:weblibre/features/settings/presentation/screens/extensions_settings.dart';
+import 'package:weblibre/features/settings/presentation/screens/feature_control_settings.dart';
+import 'package:weblibre/features/settings/presentation/screens/fingerprint_settings.dart';
 import 'package:weblibre/features/settings/presentation/screens/general_settings.dart';
 import 'package:weblibre/features/settings/presentation/screens/home_settings.dart';
 import 'package:weblibre/features/settings/presentation/screens/privacy_security_settings.dart';
@@ -35,8 +43,12 @@ import 'package:weblibre/features/settings/presentation/screens/search_settings.
 import 'package:weblibre/features/settings/presentation/screens/web_content_settings.dart';
 import 'package:weblibre/features/settings/presentation/widgets/settings_detail.dart';
 import 'package:weblibre/features/settings/presentation/widgets/toolbar_layout_content.dart';
+import 'package:weblibre/features/sync/presentation/screens/sync_settings.dart';
 import 'package:weblibre/features/web_push/presentation/screens/web_push_settings.dart';
 import 'package:weblibre/l10n/generated/app_localizations.dart';
+import 'package:weblibre/presentation/utils/list_format_l10n.dart';
+import 'package:weblibre/presentation/utils/visibility_switch_l10n.dart';
+import 'package:weblibre/presentation/widgets/hidden_feature_gate.dart';
 
 class SettingsScreen extends HookWidget {
   const SettingsScreen({super.key});
@@ -130,12 +142,27 @@ _CategoryGroups _buildCategories(BuildContext context) {
       onTap: (context) => GeneralSettingsRoute().push(context),
     ),
     _SettingsCategoryDefinition(
+      title: l10n.settings_categoryFeatureControlTitle,
+      subtitle: l10n.settings_categoryFeatureControlSubtitle,
+      icon: Icons.visibility_outlined,
+      keywords: settingsKeywords(l10n.settings_categoryFeatureControlKeywords),
+      sections: featureControlSettingsSections(context),
+      onTap: (context) => const FeatureControlSettingsRoute().push(context),
+    ),
+    _SettingsCategoryDefinition(
       title: l10n.settings_categoryBrowsingTitle,
       subtitle: l10n.settings_categoryBrowsingSubtitle,
       icon: MdiIcons.compassOutline,
       keywords: settingsKeywords(l10n.settings_categoryBrowsingKeywords),
       sections: browsingSettingsSections(context),
       onTap: (context) => BrowsingSettingsRoute().push(context),
+      subscreens: [
+        _SettingsSubscreen(
+          title: l10n.settings_urlCleanerTitle,
+          sections: urlCleanerSettingsSections(context),
+          open: (context) => UrlCleanerSettingsRoute().push(context),
+        ),
+      ],
     ),
     _SettingsCategoryDefinition(
       title: l10n.settings_categoryHomeNewTabTitle,
@@ -147,10 +174,33 @@ _CategoryGroups _buildCategories(BuildContext context) {
     ),
     _SettingsCategoryDefinition(
       title: l10n.settings_categoryGesturesTitle,
+      feature: FeatureId.inputDrawnGestures,
       subtitle: l10n.settings_categoryGesturesSubtitle,
       icon: MdiIcons.gestureSwipe,
       keywords: settingsKeywords(l10n.settings_categoryGesturesKeywords),
       onTap: (context) => GestureSettingsRoute().push(context),
+      subscreens: [
+        _SettingsSubscreen(
+          title: l10n.gestures_behaviorTimingTitle,
+          sections: gestureBehaviorSections(context),
+          open: (context) => Navigator.of(context).push(
+            MaterialPageRoute<void>(
+              builder: (_) => const GestureBehaviorScreen(),
+            ),
+          ),
+          feature: FeatureId.inputDrawnGestures,
+        ),
+        _SettingsSubscreen(
+          title: l10n.gestures_feedbackTitle,
+          sections: gestureFeedbackSections(context),
+          open: (context) => Navigator.of(context).push(
+            MaterialPageRoute<void>(
+              builder: (_) => const GestureFeedbackScreen(),
+            ),
+          ),
+          feature: FeatureId.inputDrawnGestures,
+        ),
+      ],
     ),
     _SettingsCategoryDefinition(
       title: l10n.settings_categoryKeyboardShortcutsTitle,
@@ -203,6 +253,20 @@ _CategoryGroups _buildCategories(BuildContext context) {
       keywords: settingsKeywords(l10n.settings_categoryPrivacySecurityKeywords),
       sections: privacySecuritySettingsSections(context),
       onTap: (context) => PrivacySecuritySettingsRoute().push(context),
+      subscreens: [
+        _SettingsSubscreen(
+          title: l10n.settings_fingerprintProtectionTitle,
+          sections: fingerprintSettingsSearchSections(context),
+          open: (context) => FingerprintSettingsRoute().push(context),
+        ),
+        _SettingsSubscreen(
+          title: l10n.settings_customTrackingProtectionTitle,
+          sections: customTrackingProtectionSections(context),
+          open: (context) => CustomTrackingProtectionRoute().push(context),
+          // The whole editor is Expert.
+          feature: FeatureId.privacyEtpCustomPolicies,
+        ),
+      ],
     ),
   ];
 
@@ -227,6 +291,7 @@ _CategoryGroups _buildCategories(BuildContext context) {
       subtitle: l10n.settings_categorySyncSubtitle,
       icon: Icons.sync,
       keywords: settingsKeywords(l10n.settings_categorySyncKeywords),
+      sections: syncSettingsSearchSections(context),
       onTap: (context) => SyncSettingsRoute().push(context),
     ),
     _SettingsCategoryDefinition(
@@ -236,6 +301,14 @@ _CategoryGroups _buildCategories(BuildContext context) {
       keywords: settingsKeywords(l10n.settings_categoryAdvancedKeywords),
       sections: advancedSettingsSections(context),
       onTap: (context) => AdvancedSettingsRoute().push(context),
+      subscreens: [
+        _SettingsSubscreen(
+          title: l10n.settings_experimentalTitle,
+          sections: experimentalSettingsSections(context),
+          open: (context) => ExperimentalSettingsRoute().push(context),
+          feature: FeatureId.advancedExperimentalProcess,
+        ),
+      ],
     ),
   ];
 
@@ -280,26 +353,52 @@ List<SettingsSectionDefinition> _buildSearchSections(
       category.subtitle,
       ...category.keywords,
     ])) {
-      categoryEntries.add(_buildCategoryEntry(category));
+      categoryEntries.add(
+        SettingsEntryDefinition(
+          title: category.title,
+          subtitle: category.subtitle,
+          keywords: category.keywords,
+          child: _SearchResultTile(
+            SettingsSearchTarget(
+              title: category.title,
+              subtitle: category.subtitle,
+              keywords: category.keywords,
+              category: category.title,
+              section: null,
+              icon: category.icon,
+              feature: category.feature,
+              keptWhen: category.keptWhen,
+              open: category.onTap,
+            ),
+          ),
+        ),
+      );
     }
 
-    for (final section in filterSettingsSections(
-      sections: category.sections,
-      query: normalizedQuery,
+    for (final (:section, :sectionLabel, :open) in _searchableSections(
+      category,
+      (sections) =>
+          filterSettingsSections(sections: sections, query: normalizedQuery),
     )) {
       for (final entry in section.entries) {
         categoryEntries.add(
           SettingsEntryDefinition(
             title: entry.title,
-            subtitle: '${section.title} • ${category.title}',
+            subtitle: '$sectionLabel â€¢ ${category.title}',
             keywords: entry.keywords,
             child: _SearchResultTile(
-              title: entry.title,
-              subtitle: entry.subtitle,
-              category: category.title,
-              section: section.title,
-              icon: category.icon,
-              onTap: category.onTap,
+              SettingsSearchTarget(
+                title: entry.title,
+                subtitle: entry.subtitle,
+                keywords: entry.keywords,
+                category: category.title,
+                section: sectionLabel,
+                icon: category.icon,
+                feature:
+                    settingsEntryFeature(section, entry) ?? category.feature,
+                keptWhen: _entryKeptWhen(category, section, entry),
+                open: open,
+              ),
             ),
           ),
         );
@@ -317,6 +416,16 @@ List<SettingsSectionDefinition> _buildSearchSections(
   ];
 }
 
+/// What keeps [entry] shown while its feature is hidden: its own condition,
+/// or â€” for an entry that takes the category's feature â€” the category's.
+KeptWhen? _entryKeptWhen(
+  _SettingsCategoryDefinition category,
+  SettingsSectionDefinition section,
+  SettingsEntryDefinition entry,
+) => settingsEntryFeature(section, entry) == null
+    ? category.keptWhen
+    : settingsEntryKeptWhen(section, entry);
+
 SettingsEntryDefinition _buildCategoryEntry(
   _SettingsCategoryDefinition category,
 ) {
@@ -324,6 +433,11 @@ SettingsEntryDefinition _buildCategoryEntry(
     title: category.title,
     subtitle: category.subtitle,
     keywords: category.keywords,
+    feature: category.feature,
+    keptWhen: category.keptWhen,
+    // A hidden category is grayed out but still opens; its screen grays out
+    // what it hides.
+    opensScreen: true,
     child: _CategoryTile(category: category),
   );
 }
@@ -336,6 +450,18 @@ class _SettingsCategoryDefinition {
   final List<SettingsSectionDefinition> sections;
   final Future<void> Function(BuildContext context) onTap;
 
+  /// The policy feature the whole screen configures. Hidden with it, but
+  /// still found by the search (S1).
+  final FeatureId? feature;
+
+  /// While true, [feature] does not hide the category (P5); see
+  /// [SettingsEntryDefinition.keptWhen]. Its settings that name no feature of
+  /// their own follow it, as they follow [feature].
+  final KeptWhen? keptWhen;
+
+  /// Screens opened from this one whose settings the search finds too.
+  final List<_SettingsSubscreen> subscreens;
+
   const _SettingsCategoryDefinition({
     required this.title,
     required this.subtitle,
@@ -343,7 +469,75 @@ class _SettingsCategoryDefinition {
     required this.onTap,
     this.keywords = const [],
     this.sections = const [],
+    this.feature,
+    this.keptWhen,
+    this.subscreens = const [],
   });
+}
+
+/// A settings screen one level below a category (URL Cleaner below
+/// Browsing), indexed so that its hidden settings can be found and revealed
+/// (S1). A result opens [open], not the category.
+class _SettingsSubscreen {
+  final String title;
+  final List<SettingsSectionDefinition> sections;
+  final Future<void> Function(BuildContext context) open;
+
+  /// The policy feature the whole subscreen configures, for sections that
+  /// name none of their own, and when what it configures is in place
+  /// ([SettingsEntryDefinition.keptWhen]).
+  final FeatureId? feature;
+  final KeptWhen? keptWhen;
+
+  const _SettingsSubscreen({
+    required this.title,
+    required this.sections,
+    required this.open,
+    this.feature,
+    this.keptWhen,
+  });
+
+  /// [sections], with [feature] and [keptWhen] on those that name no feature.
+  List<SettingsSectionDefinition> get searchSections => feature == null
+      ? sections
+      : [
+          for (final section in sections)
+            if (section.feature != null)
+              section
+            else
+              section.copyWith(
+                feature: feature,
+                keptWhen: keptWhen ?? section.keptWhen,
+              ),
+        ];
+}
+
+/// Every place the search looks in a [category]: its own sections, opened
+/// with the category, and its subscreens', opened with the subscreen.
+Iterable<
+  ({
+    SettingsSectionDefinition section,
+    String sectionLabel,
+    Future<void> Function(BuildContext context) open,
+  })
+>
+_searchableSections(
+  _SettingsCategoryDefinition category,
+  List<SettingsSectionDefinition> Function(List<SettingsSectionDefinition>)
+  filter,
+) sync* {
+  for (final section in filter(category.sections)) {
+    yield (section: section, sectionLabel: section.title, open: category.onTap);
+  }
+  for (final subscreen in category.subscreens) {
+    for (final section in filter(subscreen.searchSections)) {
+      yield (
+        section: section,
+        sectionLabel: '${subscreen.title} â€¢ ${section.title}',
+        open: subscreen.open,
+      );
+    }
+  }
 }
 
 class _CategoryTile extends StatelessWidget {
@@ -369,51 +563,55 @@ class _CategoryTile extends StatelessWidget {
   }
 }
 
-class _SearchResultTile extends HookConsumerWidget {
-  final String title;
-  final String? subtitle;
-  final String category;
-  final String section;
-  final IconData icon;
-  final Future<void> Function(BuildContext context) onTap;
+class _SearchResultTile extends ConsumerWidget {
+  final SettingsSearchTarget target;
 
-  const _SearchResultTile({
-    required this.title,
-    required this.category,
-    required this.section,
-    required this.icon,
-    required this.onTap,
-    this.subtitle,
-  });
+  const _SearchResultTile(this.target);
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final feature = target.feature;
+    // Every switch that hides it, as "Show" in the reveal dialog turns them
+    // all on.
+    return HiddenSwitchesBuilder(
+      conditions: [
+        if (feature != null) (feature: feature, keptWhen: target.keptWhen),
+      ],
+      builder: (context, hiddenBy) => _tile(context, ref, hiddenBy),
+    );
+  }
+
+  Widget _tile(
+    BuildContext context,
+    WidgetRef ref,
+    List<VisibilitySwitch> hiddenBy,
+  ) {
+    final l10n = AppLocalizations.of(context);
+    final isHidden = hiddenBy.isNotEmpty;
+
+    final lines = [
+      if (target.section != null) '${target.category} â€¢ ${target.section}',
+      if (target.subtitle case final subtitle? when subtitle.isNotEmpty)
+        subtitle,
+      if (hiddenBy.length == 1)
+        l10n.visibilitySwitch_hiddenStatus(hiddenBy.single.label(context))
+      else if (hiddenBy.length > 1)
+        l10n.visibilitySwitch_hiddenStatusSeveral(
+          formatList(l10n, hiddenBy.map((s) => s.label(context))),
+        ),
+    ];
+
     return ListTile(
-      leading: Icon(icon),
-      title: Text(title),
-      subtitle: Text(
-        subtitle == null || subtitle!.isEmpty
-            ? '$category • $section'
-            : '$category • $section\n$subtitle',
-      ),
-      isThreeLine: subtitle != null && subtitle!.isNotEmpty,
+      leading: Icon(!isHidden ? target.icon : Icons.visibility_off_outlined),
+      title: Text(target.title),
+      subtitle: Text(lines.join('\n')),
+      isThreeLine: lines.length > 1,
       contentPadding: const EdgeInsets.symmetric(
         vertical: 8.0,
         horizontal: 16.0,
       ),
       trailing: const Icon(Icons.chevron_right),
-      onTap: () async {
-        final pendingHighlight = ref.read(
-          pendingSettingsHighlightProvider.notifier,
-        );
-        pendingHighlight.set(title);
-        try {
-          await onTap(context);
-        } catch (_) {
-          pendingHighlight.clear();
-          rethrow;
-        }
-      },
+      onTap: () => target.openFromSearch(context, ref),
     );
   }
 }
@@ -433,6 +631,14 @@ class SettingsSearchTarget {
 
   final IconData icon;
 
+  /// The policy feature the target configures, if any. The search lists a
+  /// hidden one with its status (S1); its screen shows it grayed out.
+  final FeatureId? feature;
+
+  /// See [SettingsEntryDefinition.keptWhen]: while true, [feature] does not
+  /// hide the target.
+  final KeptWhen? keptWhen;
+
   /// Pushes the settings screen. For a single setting, the caller first hands
   /// [title] to `PendingSettingsHighlight` so the screen scrolls to it.
   final Future<void> Function(BuildContext context) open;
@@ -445,9 +651,28 @@ class SettingsSearchTarget {
     required this.section,
     required this.icon,
     required this.open,
+    this.feature,
+    this.keptWhen,
   });
 
   bool get isCategory => section == null;
+
+  /// Opens the target as a search result. A single setting is handed to
+  /// `PendingSettingsHighlight` so its screen opens scrolled to it. A hidden
+  /// one opens too: its screen shows it grayed out, and changing it asks to
+  /// show it there (S1).
+  Future<void> openFromSearch(BuildContext context, WidgetRef ref) async {
+    final pendingHighlight = ref.read(
+      pendingSettingsHighlightProvider.notifier,
+    );
+    if (!isCategory) pendingHighlight.set(title);
+    try {
+      await open(context);
+    } catch (_) {
+      pendingHighlight.clear();
+      rethrow;
+    }
+  }
 }
 
 /// Everything the settings search indexes, for search surfaces outside the
@@ -467,9 +692,14 @@ List<SettingsSearchTarget> settingsSearchTargets(BuildContext context) {
         category: category.title,
         section: null,
         icon: category.icon,
+        feature: category.feature,
+        keptWhen: category.keptWhen,
         open: category.onTap,
       ),
-      for (final section in category.sections)
+      for (final (:section, :sectionLabel, :open) in _searchableSections(
+        category,
+        (sections) => sections,
+      ))
         for (final entry in section.entries)
           SettingsSearchTarget(
             title: entry.title,
@@ -478,9 +708,11 @@ List<SettingsSearchTarget> settingsSearchTargets(BuildContext context) {
             // settings search itself.
             keywords: [...entry.keywords, ...section.keywords],
             category: category.title,
-            section: section.title,
+            section: sectionLabel,
             icon: category.icon,
-            open: category.onTap,
+            feature: settingsEntryFeature(section, entry) ?? category.feature,
+            keptWhen: _entryKeptWhen(category, section, entry),
+            open: open,
           ),
     ],
   ];

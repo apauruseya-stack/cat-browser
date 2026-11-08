@@ -22,6 +22,7 @@ import 'dart:convert';
 
 import 'package:collection/collection.dart';
 import 'package:drift/drift.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_mozilla_components/flutter_mozilla_components.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
@@ -36,7 +37,7 @@ part 'preference_settings.g.dart';
 
 const _preferenceMigrationVersionKey = 'preferenceMigrationVersion';
 const _preferenceMigrationPartitionKey = 'preferenceMigration';
-const _preferenceMigrationSchemaVersion = 4;
+const _preferenceMigrationSchemaVersion = 5;
 const _mainProcessDisableJitPref =
     'javascript.options.main_process_disable_jit';
 
@@ -65,6 +66,56 @@ const _retiredPrefs = [
   'browser.sessionstore.privacy_level',
 ];
 
+/// Preferences nothing in Gecko 159 reads any more, dropped from
+/// `settings.json` together. Same reasoning as [_retiredPrefs]; a separate
+/// list because that step has already run on existing profiles.
+const _retiredGecko159Prefs = [
+  // SpiderMonkey removed asm.js; the pref has no reader.
+  'javascript.options.asmjs',
+  // The network predictor was removed from necko.
+  'network.predictor.enabled',
+  // No reader left in Gecko 159.
+  'privacy.partition.network_state.ocsp_cache',
+  'privacy.partition.network_state.ocsp_cache.pbmode',
+  'dom.private-attribution.submission.enabled',
+  'network.trr.confirmation_telemetry_enabled',
+  'extensions.telemetry.EnvironmentAddonBuilder',
+  'toolkit.coverage.enabled',
+  'toolkit.coverage.endpoint.base',
+  'toolkit.telemetry.collectInterval',
+  'toolkit.telemetry.dap_enabled',
+  'toolkit.telemetry.dap_task1_enabled',
+  'toolkit.telemetry.dap_task1_taskid',
+  'toolkit.telemetry.dap_visit_counting_enabled',
+  'toolkit.telemetry.dap_visit_counting_experiment_list',
+  // Read only by desktop Firefox, Fenix or Marionette, never by GeckoView.
+  'browser.crashReports.crashPull',
+  'browser.tabs.crashReporting.sendReport',
+  'general.useragent.updates.enabled',
+  // Linux GIO only.
+  'network.gio.supported-protocols',
+];
+
+/// Preferences we set and now leave at Gecko's default on purpose.
+const _restoredGeckoDefaults = [
+  // We set it to false to keep add-ons from being granted the optional
+  // technical and interaction data consent. Turned off, Gecko skips the
+  // data-collection checks altogether, so `permissions.contains()` answers
+  // true for that consent. Kept on, the install prompt
+  // (`WebExtensionPromptFeature`) declines it instead.
+  'extensions.dataCollectionPermissions.enabled',
+];
+
+/// Every preference a migration resets because `settings.json` dropped it.
+/// A test keeps them out of `settings.json`: bringing one back takes a new
+/// migration step, not just the entry, or it would reach new profiles only.
+@visibleForTesting
+const retiredPreferences = [
+  ..._retiredPrefs,
+  ..._retiredGecko159Prefs,
+  ..._restoredGeckoDefaults,
+];
+
 @Riverpod(keepAlive: true)
 class StartupPreferenceEnforcementService
     extends _$StartupPreferenceEnforcementService {
@@ -76,7 +127,20 @@ class StartupPreferenceEnforcementService
       0: () => _prefManager.resetPrefs([_mainProcessDisableJitPref]),
       1: _removeFxaProfileDomainFromLocalDnsBlocks,
       2: () => _prefManager.resetPrefs(_retiredPrefs),
-      3: _applyCloudflareChallengeException,
+      3: () => _prefManager.resetPrefs([
+        ..._retiredGecko159Prefs,
+        ..._restoredGeckoDefaults,
+      ]),
+      4: () async {
+        // Profiles that recorded schema 4 on either branch skipped one of
+        // these: the fork only applied the Cloudflare exception, upstream only
+        // reset the retired preferences. Both have to run here.
+        await _prefManager.resetPrefs([
+          ..._retiredGecko159Prefs,
+          ..._restoredGeckoDefaults,
+        ]);
+        await _applyCloudflareChallengeException();
+      },
     },
   );
 
@@ -84,6 +148,35 @@ class StartupPreferenceEnforcementService
     return _prefManager.applyPrefs({
       _cloudflareChallengeSkipPref: _cloudflareChallengeSkipPattern,
     });
+  }
+
+  /// The `system` partition of `settings.json`: engine baseline values no
+  /// setting toggles. They go to Gecko's default branch on every start, so
+  /// they reach existing profiles without a migration, leave nothing behind
+  /// once dropped, and yield to a user-branch value of the same preference.
+  Future<void> _applyEngineBaseline(Map<String, dynamic> content) async {
+    final prefs = {
+      for (final group in deserializePreferenceSettingGroups(
+        PreferencePartition.system,
+        content,
+      ).values)
+        for (final entry in group.settings.entries)
+          entry.key: entry.value.value,
+    };
+
+    if (prefs.isEmpty) {
+      return;
+    }
+
+    try {
+      await _prefManager.applyDefaultPrefs(prefs);
+    } catch (e, s) {
+      logger.w(
+        'Failed to apply the engine baseline, will retry on next launch',
+        error: e,
+        stackTrace: s,
+      );
+    }
   }
 
   Future<void> _removeFxaProfileDomainFromLocalDnsBlocks() async {
@@ -143,6 +236,9 @@ class StartupPreferenceEnforcementService
   }
 
   Future<void> apply() async {
+    final content = await ref.read(_preferenceSettingContentProvider.future);
+    await _applyEngineBaseline(content);
+
     try {
       await _runMigrations();
     } catch (e, s) {
@@ -153,7 +249,6 @@ class StartupPreferenceEnforcementService
       );
     }
 
-    final content = await ref.read(_preferenceSettingContentProvider.future);
     final groups = deserializePreferenceSettingGroups(
       PreferencePartition.user,
       content,

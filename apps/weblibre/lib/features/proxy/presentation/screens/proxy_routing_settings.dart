@@ -19,6 +19,7 @@
  */
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:weblibre/domain/feature_policy/feature_policy.dart';
 import 'package:weblibre/features/proxy/data/proxy_connection.dart';
 import 'package:weblibre/features/proxy/domain/providers/proxy_connection_options.dart';
 import 'package:weblibre/features/proxy/domain/repositories/singbox_proxy_profiles.dart';
@@ -27,10 +28,13 @@ import 'package:weblibre/features/settings/presentation/widgets/settings_detail.
 import 'package:weblibre/features/user/data/models/proxy_routing_settings.dart';
 import 'package:weblibre/features/user/domain/repositories/proxy_routing_settings.dart';
 import 'package:weblibre/l10n/generated/app_localizations.dart';
+import 'package:weblibre/presentation/widgets/hidden_feature_gate.dart';
 
-List<SettingsSectionDefinition> _proxyRoutingSettingsSections(
-  AppLocalizations l10n,
+/// The routing screen's settings, also indexed by the settings search.
+List<SettingsSectionDefinition> proxyRoutingSettingsSections(
+  BuildContext context,
 ) {
+  final l10n = AppLocalizations.of(context);
   return [
     SettingsSectionDefinition(
       title: l10n.proxy_routingSectionRegularTabs,
@@ -74,11 +78,16 @@ class ProxyRoutingSettingsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
 
-    return SettingsDetailScaffold(
-      title: l10n.proxy_routingTitle,
-      subtitle: l10n.proxy_routingSubtitle,
-      icon: Icons.route_outlined,
-      sections: _proxyRoutingSettingsSections(l10n),
+    // A global route in use stays usable, so it can be changed back (P5).
+    return HiddenFeatureScope(
+      feature: FeatureId.connectionsGlobalRouting,
+      keptWhen: KeptWhen.globalRouteInUse,
+      child: SettingsDetailScaffold(
+        title: l10n.proxy_routingTitle,
+        subtitle: l10n.proxy_routingSubtitle,
+        icon: Icons.route_outlined,
+        sections: proxyRoutingSettingsSections(context),
+      ),
     );
   }
 }
@@ -127,6 +136,8 @@ class _GlobalRoutingProxySection extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
     final settings = ref.watch(proxyRoutingSettingsWithDefaultsProvider);
+    final options = ref.watch(proxyConnectionOptionsProvider);
+    final optionsState = ref.watch(singboxProxyProfilesRepositoryProvider);
     if (settings.regularTabsMode != ProxyRegularTabRoutingMode.all) {
       return ListTile(
         leading: const Icon(Icons.info_outline),
@@ -135,8 +146,6 @@ class _GlobalRoutingProxySection extends ConsumerWidget {
       );
     }
 
-    final options = ref.watch(proxyConnectionOptionsProvider);
-    final optionsState = ref.watch(singboxProxyProfilesRepositoryProvider);
     return _ProxyConnectionPicker(
       options: options,
       optionsLoaded: optionsState.hasValue,

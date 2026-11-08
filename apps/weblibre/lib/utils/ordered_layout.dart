@@ -17,6 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
+import 'dart:convert';
 
 /// Reconciles a persisted, user-arranged list with the list the app currently
 /// offers.
@@ -71,4 +72,69 @@ List<E> mergeOrderedLayout<E, D>({
   }
 
   return result;
+}
+
+/// [entries] with one element moved, for a list that shows only the elements
+/// whose keys are in [shown], in saved order: [oldIndex] and [newIndex] (after
+/// removal) index into [shown].
+///
+/// The moved element lands right before the shown element it was dropped on,
+/// or right after the last one. Elements left out of [shown] — the ones a
+/// hidden feature skips — stay in place relative to every element that did
+/// not move, so they return among the same neighbours once their feature is
+/// shown again.
+List<E> moveAmongShown<E, K>(
+  List<E> entries,
+  K Function(E entry) entryKey,
+  List<K> shown,
+  int oldIndex,
+  int newIndex,
+) {
+  final rest = [...shown];
+  final moved = rest.removeAt(oldIndex);
+  if (rest.isEmpty) return entries;
+
+  final list = [...entries];
+  final entry = list.firstWhere((e) => entryKey(e) == moved);
+  list.remove(entry);
+  final insertAt = newIndex < rest.length
+      ? list.indexWhere((e) => entryKey(e) == rest[newIndex])
+      : list.indexWhere((e) => entryKey(e) == rest.last) + 1;
+  list.insert(insertAt, entry);
+  return list;
+}
+
+/// [entries] as a persisted arrangement stores them: a JSON list of their
+/// JSON objects.
+String encodeLayoutEntries<E>(
+  List<E> entries,
+  Map<String, dynamic> Function(E entry) toJson,
+) => jsonEncode([for (final entry in entries) toJson(entry)]);
+
+/// [encoded] (see [encodeLayoutEntries]) decoded entry by entry; see
+/// [layoutEntriesFromJson].
+List<E> decodeLayoutEntries<E>(
+  String encoded,
+  E Function(Map<String, dynamic> json) fromJson,
+) => layoutEntriesFromJson(jsonDecode(encoded), fromJson);
+
+/// The entries of a decoded JSON list. An entry this version cannot read (an
+/// element since removed, say) is skipped rather than failing the whole
+/// arrangement: [mergeOrderedLayout] puts back whatever it is missing.
+List<E> layoutEntriesFromJson<E>(
+  Object? json,
+  E Function(Map<String, dynamic> json) fromJson,
+) => [
+  for (final entry in json! as List<dynamic>) ?_tryFromJson(entry, fromJson),
+];
+
+E? _tryFromJson<E>(
+  Object? entry,
+  E Function(Map<String, dynamic> json) fromJson,
+) {
+  try {
+    return fromJson(entry! as Map<String, dynamic>);
+  } catch (_) {
+    return null;
+  }
 }

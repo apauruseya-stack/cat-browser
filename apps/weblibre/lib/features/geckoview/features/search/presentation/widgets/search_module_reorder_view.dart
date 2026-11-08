@@ -22,6 +22,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:weblibre/features/geckoview/features/search/domain/providers/search_module_order.dart';
 import 'package:weblibre/features/geckoview/features/search/domain/providers/search_modules_view.dart';
 import 'package:weblibre/features/geckoview/features/search/presentation/utils/search_module_type_l10n.dart';
+import 'package:weblibre/features/user/domain/repositories/general_settings.dart';
 import 'package:weblibre/l10n/generated/app_localizations.dart';
 
 class SearchModuleReorderView extends ConsumerWidget {
@@ -32,7 +33,14 @@ class SearchModuleReorderView extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
-    final entries = ref.watch(searchModuleOrderProvider(surface));
+    // Modules that follow a hidden feature are left out, like on the drawn
+    // surface (`home.module_feature_filter`).
+    final shownFeatures = ref.watch(displayedShownFeaturesProvider);
+    final order = ref.watch(editedModuleOrderProvider(surface));
+    final entries = [
+      for (final entry in order)
+        if (isSearchModuleFeatureShown(entry.type, shownFeatures)) entry,
+    ];
     final colorScheme = Theme.of(context).colorScheme;
 
     return SliverMainAxisGroup(
@@ -59,7 +67,7 @@ class SearchModuleReorderView extends ConsumerWidget {
                     MenuItemButton(
                       leadingIcon: const Icon(Icons.restore),
                       onPressed: ref
-                          .read(searchModuleOrderProvider(surface).notifier)
+                          .read(editedModuleOrderProvider(surface).notifier)
                           .resetToDefaults,
                       child: Text(l10n.search_resetToDefaults),
                     ),
@@ -85,8 +93,12 @@ class SearchModuleReorderView extends ConsumerWidget {
           itemCount: entries.length,
           onReorderItem: (oldIndex, newIndex) {
             ref
-                .read(searchModuleOrderProvider(surface).notifier)
-                .reorder(oldIndex, newIndex);
+                .read(editedModuleOrderProvider(surface).notifier)
+                .reorderShown(
+                  [for (final entry in entries) entry.type],
+                  oldIndex,
+                  newIndex,
+                );
           },
           itemBuilder: (context, index) {
             final entry = entries[index];
@@ -102,7 +114,7 @@ class SearchModuleReorderView extends ConsumerWidget {
                         : colorScheme.onSurfaceVariant,
                   ),
                   onPressed: () => ref
-                      .read(searchModuleOrderProvider(surface).notifier)
+                      .read(editedModuleOrderProvider(surface).notifier)
                       .toggleVisibility(entry.type),
                 ),
                 title: Text(

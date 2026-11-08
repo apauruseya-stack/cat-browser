@@ -210,6 +210,21 @@ class SingboxProxyLogMessage {
   final String? profileId;
 }
 
+/// The WireGuard profiles whose peer does not answer its handshakes, as far
+/// as the runtime has seen: every one of them, not a change.
+///
+/// Sent whenever the set changes, and to a listener as it subscribes, so one
+/// that comes late still learns how things stand. A profile is in it once its
+/// handshakes have gone unanswered for a while, and leaves it when one is
+/// answered or the runtime (re)starts — every profile shares one instance, so a
+/// (re)start of any of them forgets all. A profile whose tunnel has not tried
+/// to handshake since is not in it.
+class SingboxProxyTunnelState {
+  SingboxProxyTunnelState({required this.unansweredProfileIds});
+
+  final List<String> unansweredProfileIds;
+}
+
 @HostApi()
 abstract class SingboxProxyApi {
   @async
@@ -244,6 +259,11 @@ abstract class SingboxProxyApi {
   void stopAll();
 
   SingboxProxyRuntimeState getState();
+
+  /// The version of the bundled sing-box core (e.g. "1.14.4"), or null when
+  /// libbox is missing or was built without a version stamp. Does not need the
+  /// runtime to run.
+  String? getVersion();
 }
 
 @EventChannelApi()
@@ -251,4 +271,6 @@ abstract class SingboxProxyEventsApi {
   SingboxProxyRuntimeState streamState();
 
   SingboxProxyLogMessage streamLogs();
+
+  SingboxProxyTunnelState streamTunnels();
 }

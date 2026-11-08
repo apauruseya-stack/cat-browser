@@ -25,22 +25,21 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:weblibre/core/filesystem.dart';
 import 'package:weblibre/domain/entities/profile.dart';
 import 'package:weblibre/features/browser_actions/data/models/browser_action.dart';
+import 'package:weblibre/features/browser_actions/domain/entities/browser_action_policy.dart';
 import 'package:weblibre/features/browser_actions/domain/services/browser_action_dispatcher.dart';
 import 'package:weblibre/features/browser_actions/domain/services/browser_action_search.dart';
 import 'package:weblibre/features/browser_actions/presentation/utils/browser_action_l10n.dart';
 import 'package:weblibre/features/geckoview/domain/providers/tab_state.dart';
 import 'package:weblibre/features/geckoview/features/pwa/domain/providers.dart';
+import 'package:weblibre/features/geckoview/features/search/domain/providers/action_search_sources.dart';
 import 'package:weblibre/features/geckoview/features/search/domain/providers/search_modules_view.dart';
 import 'package:weblibre/features/geckoview/features/search/presentation/widgets/search_modules/search_module_section.dart';
 import 'package:weblibre/features/geckoview/features/tabs/data/models/container_data.dart';
-import 'package:weblibre/features/geckoview/features/tabs/domain/providers.dart';
 import 'package:weblibre/features/keyboard_shortcuts/presentation/widgets/keyboard_shortcut_hint.dart';
 import 'package:weblibre/features/settings/presentation/screens/settings.dart';
 import 'package:weblibre/features/user/domain/repositories/engine_settings.dart';
 import 'package:weblibre/features/user/domain/repositories/general_settings.dart';
-import 'package:weblibre/features/user/domain/repositories/profile.dart';
 import 'package:weblibre/features/web_feed/data/database/definitions.drift.dart';
-import 'package:weblibre/features/web_feed/domain/providers.dart';
 import 'package:weblibre/l10n/generated/app_localizations.dart';
 
 /// One row of the Actions section.
@@ -126,30 +125,32 @@ class ActionSearch extends HookConsumerWidget {
     final readerable = ref.watch(
       tabStateProvider(pageTabId).select((state) => state?.readerableState),
     );
-    final showContainerUi = ref.watch(
-      generalSettingsWithDefaultsProvider.select((s) => s.showContainerUi),
-    );
+    final shownFeatures = ref.watch(shownFeaturesProvider);
     final automaticFontSize = ref.watch(
       engineSettingsWithDefaultsProvider.select(
         (s) => s.automaticFontSizeAdjustment,
       ),
     );
-    final canAddToHomeScreen =
-        ref.watch(isTabInstallableProvider(pageTabId)) ||
-        ref.watch(isTabShortcutableProvider(pageTabId));
+    final isInstallable = ref.watch(isTabInstallableProvider(pageTabId));
+    final isShortcutable = ref.watch(isTabShortcutableProvider(pageTabId));
+    final canAddToHomeScreen = isInstallable || isShortcutable;
+    final sources = ref.watch(
+      actionSearchSourcesProvider(hasQuery: query != null),
+    );
 
     bool isAvailable(BrowserAction action) {
       if (pageTabId == null && BrowserActionDispatcher.requiresTab(action)) {
         return false;
       }
+      // Actions of hidden features are not offered: the container actions,
+      // for one, belong to `container.core`, hidden with the Containers
+      // switch.
+      if (!shownFeatures.contains(action.owningFeature)) return false;
 
       return switch (action) {
         BrowserAction.toggleReaderMode =>
           readerable != null && (readerable.readerable || readerable.active),
         BrowserAction.addToHomeScreen => canAddToHomeScreen,
-        BrowserAction.showContainers ||
-        BrowserAction.newContainer ||
-        BrowserAction.moveTabToContainer => showContainerUi,
         BrowserAction.increaseFontSize ||
         BrowserAction.decreaseFontSize ||
         BrowserAction.resetFontSize => !automaticFontSize,
@@ -171,12 +172,6 @@ class ActionSearch extends HookConsumerWidget {
     if (query == null) {
       items = [for (final action in available) BrowserActionSearchItem(action)];
     } else {
-      final containers = showContainerUi
-          ? ref.watch(watchContainersWithCountProvider).value ?? const []
-          : const <ContainerDataWithCount>[];
-      final profiles = ref.watch(profileRepositoryProvider).value ?? const [];
-      final feeds = ref.watch(feedListProvider).value ?? const [];
-
       items = rankActionSearchEntries<ActionSearchItem>(query, [
         for (final action in available)
           (
@@ -186,7 +181,7 @@ class ActionSearch extends HookConsumerWidget {
             category: action.category.label(context),
             keywords: action.keywords(context),
           ),
-        for (final container in containers)
+        for (final container in sources.containers)
           (
             item: ContainerSearchItem(container),
             label: _containerName(l10n, container),
@@ -194,7 +189,7 @@ class ActionSearch extends HookConsumerWidget {
             category: l10n.search_moduleLabelContainers,
             keywords: const [],
           ),
-        for (final profile in profiles)
+        for (final profile in sources.profiles)
           // Switching to the profile already in use would only restart.
           if (profile.uuidValue != filesystem.selectedProfile)
             (
@@ -204,7 +199,7 @@ class ActionSearch extends HookConsumerWidget {
               category: l10n.browserActions_showProfilesTitle,
               keywords: const [],
             ),
-        for (final feed in feeds)
+        for (final feed in sources.feeds)
           (
             item: FeedSearchItem(feed),
             label: _feedTitle(l10n, feed),

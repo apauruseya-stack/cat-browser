@@ -72,7 +72,6 @@ import 'package:weblibre/features/geckoview/features/tabs/domain/providers/selec
 import 'package:weblibre/features/geckoview/features/tabs/presentation/widgets/compact_container_selector.dart';
 import 'package:weblibre/features/proxy/presentation/controllers/ensure_proxy_started.dart';
 import 'package:weblibre/features/search_credits/domain/repositories/web_search_settings.dart';
-import 'package:weblibre/features/settings/domain/providers/pending_settings_highlight.dart';
 import 'package:weblibre/features/user/data/models/general_settings.dart';
 import 'package:weblibre/features/user/domain/presentation/utils/profile_switch_handler.dart';
 import 'package:weblibre/features/user/domain/repositories/general_settings.dart';
@@ -140,7 +139,7 @@ class SearchScreen extends HookConsumerWidget {
 
     final createChildTabsOption = ref.watch(
       generalSettingsWithDefaultsProvider.select(
-        (value) => value.createChildTabsOption,
+        (value) => value.childTabEntryPointsShown,
       ),
     );
     final settings = ref.watch(generalSettingsWithDefaultsProvider);
@@ -167,9 +166,10 @@ class SearchScreen extends HookConsumerWidget {
 
     // When editing an existing tab, get its state
     // If tab no longer exists (null), fall back to new tab mode
-    final existingTabState = tabId != null
-        ? ref.watch(tabStateProvider(tabId))
-        : null;
+    final existingTabState = ref.watch(tabStateProvider(tabId));
+    final selectedTabIsolationContextId = ref.watch(
+      selectedTabStateProvider.select((state) => state?.isolationContextId),
+    );
 
     // Determine if we're in edit mode (tabId provided AND tab still exists)
     final isEditMode = tabId != null && existingTabState != null;
@@ -183,8 +183,7 @@ class SearchScreen extends HookConsumerWidget {
             TabType.child => switch (currentTabTabType) {
               TabType.private => TabMode.private,
               TabType.isolated => TabMode.isolated(
-                ref.watch(selectedTabStateProvider)?.isolationContextId ??
-                    newIsolatedContextId(),
+                selectedTabIsolationContextId ?? newIsolatedContextId(),
               ),
               _ => TabMode.regular,
             },
@@ -438,10 +437,13 @@ class SearchScreen extends HookConsumerWidget {
     );
 
     // Watch both selection providers - only one should be set at a time
-    // due to mutual exclusion in SmartBangSelector
-    final siteSelectedBang = isEditMode
-        ? ref.watch(selectedBangDataProvider(domain: existingTabState.url.host))
-        : null;
+    // due to mutual exclusion in SmartBangSelector. Outside edit mode there is
+    // no site, and the site selection is the global one.
+    final siteSelectedBang = ref.watch(
+      selectedBangDataProvider(
+        domain: isEditMode ? existingTabState.url.host : null,
+      ),
+    );
     final globalSelectedBang = ref.watch(selectedBangDataProvider());
 
     // The active selection is whichever one is set (site takes priority if both somehow set)
@@ -466,7 +468,7 @@ class SearchScreen extends HookConsumerWidget {
     final selectedBangSiteHost = useRef<String?>(null);
     selectedBangSiteHost.value = isEditMode ? existingTabState.url.host : null;
     useEffect(() {
-      final container = ProviderScope.containerOf(context, listen: false);
+      final container = ref.container;
       return () {
         final siteHost = selectedBangSiteHost.value;
         WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -642,18 +644,7 @@ class SearchScreen extends HookConsumerWidget {
         case FeedSearchItem(:final feed):
           await FeedArticleListRoute(feedId: feed.url).push(context);
         case SettingSearchItem(:final target):
-          // The same hand-off the settings search makes, so the screen opens
-          // scrolled to the setting.
-          final pendingHighlight = ref.read(
-            pendingSettingsHighlightProvider.notifier,
-          );
-          if (!target.isCategory) pendingHighlight.set(target.title);
-          try {
-            await target.open(context);
-          } catch (_) {
-            pendingHighlight.clear();
-            rethrow;
-          }
+          await target.openFromSearch(context, ref);
       }
     }
 
@@ -676,13 +667,13 @@ class SearchScreen extends HookConsumerWidget {
       return null;
     }, [autoSubmitSearch, initialSearchText, activeBang]);
 
+    final metaSearchActive = ref.watch(
+      metaSearchControllerProvider.select(
+        (s) => s.status != WebSearchStatus.idle || s.query.isNotEmpty,
+      ),
+    );
     final showWebSearchResults =
-        isWebSearchBang(activeBang) &&
-        ref.watch(
-          metaSearchControllerProvider.select(
-            (s) => s.status != WebSearchStatus.idle || s.query.isNotEmpty,
-          ),
-        );
+        isWebSearchBang(activeBang) && metaSearchActive;
 
     // By default the field follows the tab bar, so the input opens where the
     // user just tapped (see [SearchFieldPlacement]). At the bottom, the list
@@ -815,6 +806,13 @@ class SearchScreen extends HookConsumerWidget {
         return false;
       }
 
+      // Modules that follow a hidden feature are skipped, never removed from
+      // the saved layout (`home.module_feature_filter`).
+      if (searchModuleFeature(type) case final feature?
+          when !settings.isFeatureShown(feature)) {
+        return false;
+      }
+
       if (!isUrlInput.value) {
         return true;
       }
@@ -861,7 +859,7 @@ class SearchScreen extends HookConsumerWidget {
                       });
                     },
                     showChildOption: createChildTabsOption,
-                    showIsolatedOption: settings.showIsolatedTabUi,
+                    showIsolatedOption: settings.isolatedTabEntryPointsShown,
                     selectedBackgroundColor: switch (selectedTabType.value) {
                       TabType.regular => null,
                       TabType.private => appColors.privateSelectionOverlay,
@@ -875,7 +873,10 @@ class SearchScreen extends HookConsumerWidget {
                   ),
                 );
 
-                if (!settings.showContainerUi) {
+                // A selected container keeps its way out while containers
+                // are hidden (P5): the selector then only leaves it.
+                if (!settings.containerEntryPointsShown &&
+                    selectedContainer == null) {
                   return Center(
                     child: Transform.scale(scale: 1.08, child: tabTypeSwitcher),
                   );

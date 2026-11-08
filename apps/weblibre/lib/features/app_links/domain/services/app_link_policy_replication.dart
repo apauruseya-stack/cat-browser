@@ -24,6 +24,7 @@ import 'package:flutter_mozilla_components/flutter_mozilla_components.dart'
 import 'package:flutter_mozilla_components/flutter_mozilla_components.dart'
     as pigeon
     show ProtectedTargetPattern;
+import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:synchronized/synchronized.dart';
 import 'package:weblibre/core/logger.dart';
@@ -48,12 +49,23 @@ AppLinkProtection appLinkProtection(Ref ref) {
       routing.regularTabsProxyConnectionId != null;
 
   final containers =
-      ref.watch(watchContainersWithCountProvider).value ?? const [];
+      ref.watch(
+        watchContainersWithCountProvider.select((value) => value.value),
+      ) ??
+      const [];
   final isolationMap =
-      ref.watch(watchIsolatedContextContainerMapProvider).value ?? const {};
+      ref.watch(
+        watchIsolatedContextContainerMapProvider.select((value) => value.value),
+      ) ??
+      const {};
   final strict =
-      ref.watch(watchStrictContextAssignmentsProvider).value ?? const {};
-  final sites = ref.watch(watchAllAssignedSitesProvider).value ?? const [];
+      ref.watch(
+        watchStrictContextAssignmentsProvider.select((value) => value.value),
+      ) ??
+      const {};
+  final sites =
+      ref.watch(watchAllAssignedSitesProvider.select((value) => value.value)) ??
+      const [];
 
   return computeAppLinkProtection(
     protectGeneralContext: protectGeneralContext,
@@ -69,7 +81,11 @@ AppLinkProtection appLinkProtection(Ref ref) {
 /// input, §2.8). Combines the user-intent settings with computed protection.
 @Riverpod(keepAlive: true)
 AppLinkPolicySnapshot? appLinkPolicySnapshot(Ref ref) {
-  final settings = ref.watch(generalSettingsRepositoryProvider).value;
+  // As they apply: while per-container app links are hidden, every
+  // container follows the global policy (`containerAppLinksApply`).
+  final settings = ref
+      .watch(generalSettingsRepositoryProvider.select((value) => value.value))
+      ?.effective();
   if (settings == null) return null;
 
   // Don't push a snapshot until the protection/override inputs have actually
@@ -141,9 +157,15 @@ Map<String, NativeContextAppLinkPolicy> _computeContextOverrides(
   GeneralSettings settings,
 ) {
   final containers =
-      ref.watch(watchContainersWithCountProvider).value ?? const [];
+      ref.watch(
+        watchContainersWithCountProvider.select((value) => value.value),
+      ) ??
+      const [];
   final isolationMap =
-      ref.watch(watchIsolatedContextContainerMapProvider).value ?? const {};
+      ref.watch(
+        watchIsolatedContextContainerMapProvider.select((value) => value.value),
+      ) ??
+      const {};
 
   NativeContextAppLinkPolicy toNative(ContextAppLinkPolicy policy) {
     return NativeContextAppLinkPolicy(
@@ -161,7 +183,10 @@ Map<String, NativeContextAppLinkPolicy> _computeContextOverrides(
   final baseContextIdByContainerId = <String, String>{};
   for (final container in containers) {
     final contextId = container.metadata.contextualIdentity;
-    if (contextId == null || !container.metadata.isolatedAppLinkSettings) {
+    if (contextId == null ||
+        !settings.containerAppLinksApply(
+          isolatedAppLinkSettings: container.metadata.isolatedAppLinkSettings,
+        )) {
       continue;
     }
     overrideByBaseContextId[contextId] = toNative(

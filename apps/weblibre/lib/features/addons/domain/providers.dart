@@ -17,6 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter_mozilla_components/flutter_mozilla_components.dart';
@@ -25,6 +26,7 @@ import 'package:riverpod_annotation/experimental/persist.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:weblibre/features/addons/utils/addon_html.dart';
 import 'package:weblibre/features/geckoview/domain/providers.dart';
+import 'package:weblibre/features/onboarding/domain/services/setup_steps.dart';
 import 'package:weblibre/features/user/data/providers.dart';
 
 part 'providers.g.dart';
@@ -56,9 +58,10 @@ sealed class AddonUpdateRunResult {
 }
 
 class AddonUpdateRunDone extends AddonUpdateRunResult {
-  final String? message;
+  /// How it ended; null when nothing ran.
+  final AddonUpdateAttemptInfo? attempt;
 
-  const AddonUpdateRunDone(this.message);
+  const AddonUpdateRunDone(this.attempt);
 }
 
 class AddonUpdateRunNoRemoteSource extends AddonUpdateRunResult {
@@ -69,9 +72,23 @@ class AddonUpdateRunFailed extends AddonUpdateRunResult {
   const AddonUpdateRunFailed();
 }
 
+/// The update stopped to ask for new permissions; the request is now on the
+/// add-on ([AddonInfo.pendingUpdatePermissions]).
+class AddonUpdateRunNeedsPermissions extends AddonUpdateRunResult {
+  const AddonUpdateRunNeedsPermissions();
+}
+
 String _resolveAvailableVersion(AddonInfo addon, AddonStoreInfo? storeInfo) {
   final latest = storeInfo?.latestVersion.trim();
   return (latest != null && latest.isNotEmpty) ? latest : addon.version;
+}
+
+/// After the user removed [addonId]: an onboarding install of it still
+/// waiting for its retry would put it back ([SetupStepRunner.uBlockRemoved]).
+/// Not awaited: dropping the step waits out a retry under way, which may
+/// itself be waiting for its proxy, and the uninstall is done already.
+void _forgetSetupSteps(SetupStepRunner setupSteps, String addonId) {
+  if (addonId == ublockAddonId) unawaited(setupSteps.uBlockRemoved());
 }
 
 @Riverpod()
@@ -108,8 +125,12 @@ class AddonDetails extends _$AddonDetails {
   }
 
   Future<void> uninstall() async {
+    // Read up front: the details screen may be gone once the uninstall
+    // returns.
+    final setupSteps = ref.read(setupStepRunnerProvider.notifier);
     await _run(() async {
       await _service.uninstallAddon(addonId);
+      _forgetSetupSteps(setupSteps, addonId);
       return null;
     });
   }
@@ -132,6 +153,16 @@ class AddonDetails extends _$AddonDetails {
     await _run(
       () => _service.setAddonAutoUpdateEnabledForAddon(addonId, enabled),
     );
+  }
+
+  /// Puts off the pending request [requestId] names, the one on screen, until
+  /// the next update check asks again. The reload shows any request that
+  /// replaced it.
+  Future<void> declineUpdatePermissions(String requestId) async {
+    await _run(() async {
+      await _service.declineAddonUpdatePermissions(addonId, requestId);
+      return await _service.getAddonById(addonId, allowCache: false);
+    });
   }
 
   @override
@@ -223,15 +254,26 @@ class AddonUpdateCheck extends _$AddonUpdateCheck {
 
   /// Triggers a remote update and awaits completion. Invalidates dependent
   /// providers on completion.
-  Future<AddonUpdateRunResult> triggerAndAwait() async {
+  Future<AddonUpdateRunResult> triggerAndAwait() =>
+      _runUpdate((service) => service.triggerAddonUpdate(addonId));
+
+  /// Allows the new permissions of the pending request [requestId] names, the
+  /// one on screen, and runs the update.
+  Future<AddonUpdateRunResult> acceptPermissionsAndUpdate(String requestId) =>
+      _runUpdate(
+        (service) => service.acceptAddonUpdatePermissions(addonId, requestId),
+      );
+
+  Future<AddonUpdateRunResult> _runUpdate(
+    Future<AddonUpdateAttemptInfo?> Function(GeckoAddonService service) start,
+  ) async {
+    final service = ref.read(addonServiceProvider);
     state = const AsyncLoading();
 
     final result = await AsyncValue.guard<AddonUpdateRunResult>(() async {
       final AddonUpdateAttemptInfo? attempt;
       try {
-        attempt = await ref
-            .read(addonServiceProvider)
-            .triggerAddonUpdate(addonId);
+        attempt = await start(service);
       } catch (error) {
         final noRemote = error.toString().contains(
           'No remote update source is available for this locally installed extension.',
@@ -241,9 +283,21 @@ class AddonUpdateCheck extends _$AddonUpdateCheck {
             : const AddonUpdateRunFailed();
       }
 
-      return attempt?.status == AddonUpdateStatus.error
-          ? const AddonUpdateRunFailed()
-          : AddonUpdateRunDone(attempt?.message);
+      if (attempt != null) {
+        return switch (attempt.status) {
+          AddonUpdateStatus.needsPermissions =>
+            const AddonUpdateRunNeedsPermissions(),
+          AddonUpdateStatus.error => const AddonUpdateRunFailed(),
+          _ => AddonUpdateRunDone(attempt),
+        };
+      }
+
+      // Never run, because a later check replaced the request on screen: the
+      // one to review now is on the add-on.
+      final fresh = await service.getAddonById(addonId, allowCache: false);
+      return fresh?.pendingUpdatePermissions != null
+          ? const AddonUpdateRunNeedsPermissions()
+          : const AddonUpdateRunDone(null);
     });
 
     if (!ref.mounted) {
@@ -307,10 +361,12 @@ class AddonList extends _$AddonList {
 
   Future<void> uninstall(AddonInfo addon) async {
     final busyIds = ref.read(addonBusyIdsProvider.notifier);
+    final setupSteps = ref.read(setupStepRunnerProvider.notifier);
     busyIds.add(addon.id);
 
     try {
       await _service.uninstallAddon(addon.id);
+      _forgetSetupSteps(setupSteps, addon.id);
 
       if (!ref.mounted) {
         return;

@@ -38,7 +38,6 @@ import 'package:weblibre/features/geckoview/domain/providers/restore_complete.da
 import 'package:weblibre/features/geckoview/domain/providers/selected_tab.dart';
 import 'package:weblibre/features/geckoview/domain/providers/tab_state.dart';
 import 'package:weblibre/features/geckoview/domain/repositories/tab.dart';
-import 'package:weblibre/features/geckoview/features/browser/domain/entities/quick_tab_switcher_tab_group.dart';
 import 'package:weblibre/features/geckoview/features/browser/domain/entities/sheet.dart';
 import 'package:weblibre/features/geckoview/features/browser/domain/entities/tab_list_scope.dart';
 import 'package:weblibre/features/geckoview/features/browser/domain/providers.dart';
@@ -48,7 +47,9 @@ import 'package:weblibre/features/geckoview/features/browser/features/contextual
 import 'package:weblibre/features/geckoview/features/browser/features/contextual_toolbar/presentation/widgets/contextual_bar_buttons.dart';
 import 'package:weblibre/features/geckoview/features/browser/features/contextual_toolbar/presentation/widgets/contextual_toolbar.dart';
 import 'package:weblibre/features/geckoview/features/browser/features/contextual_toolbar/presentation/widgets/quick_switcher_button_row.dart';
+import 'package:weblibre/features/geckoview/features/browser/presentation/controllers/browser_bar_tint.dart';
 import 'package:weblibre/features/geckoview/features/browser/presentation/controllers/tab_view_controllers.dart';
+import 'package:weblibre/features/geckoview/features/browser/presentation/layout/browser_chrome_layout.dart';
 import 'package:weblibre/features/geckoview/features/browser/presentation/utils/close_tab_helper.dart';
 import 'package:weblibre/features/geckoview/features/browser/presentation/utils/tab_view_reorder.dart';
 import 'package:weblibre/features/geckoview/features/browser/presentation/widgets/browser_modules/app_bar_title.dart';
@@ -69,6 +70,8 @@ import 'package:weblibre/features/geckoview/features/tabs/domain/repositories/ta
 import 'package:weblibre/features/geckoview/features/tabs/utils/container_colors.dart';
 import 'package:weblibre/features/gestures/data/models/built_in_gesture.dart';
 import 'package:weblibre/features/gestures/domain/repositories/gesture_settings.dart';
+import 'package:weblibre/features/user/data/database/definitions.drift.dart'
+    show ToolbarButtonConfig;
 import 'package:weblibre/features/user/data/models/general_settings.dart';
 import 'package:weblibre/features/user/domain/repositories/general_settings.dart';
 import 'package:weblibre/features/web_search/domain/controllers/sandbox_capture_controller.dart';
@@ -82,108 +85,41 @@ export 'package:weblibre/features/geckoview/features/browser/presentation/widget
     show QuickTabSwitcherItem;
 
 class BrowserTopAppBar extends StatelessWidget {
-  /// Whether the address bar is drawn here, i.e. the tab bar is at the top.
-  final bool showMainToolbar;
-  final bool showContextualToolbar;
-  final int quickTabSwitcherRowCount;
-  final QuickTabSwitcherPlacement quickTabSwitcherPlacement;
-  final bool isSmallWebMode;
-  final bool enableGestures;
-  final bool suppressMainToolbar;
+  /// What the bar holds; see [BrowserChromeLayout.topBar].
+  final BrowserBarSpec bar;
 
   /// The sheet over the page, if any, for the buttons that show its state and
   /// toggle it. The sheet covers the bars, so their layout never depends on
   /// it.
   final Sheet? displayedSheet;
 
-  late final BrowserTabBar _tabBar;
-  late final _size = Size.fromHeight(_tabBar.getToolbarHeight());
-
-  BrowserTopAppBar({
-    super.key,
-    required this.showMainToolbar,
-    required this.showContextualToolbar,
-    required this.quickTabSwitcherRowCount,
-    required this.isSmallWebMode,
-    this.quickTabSwitcherPlacement = QuickTabSwitcherPlacement.auto,
-    this.displayedSheet,
-    this.enableGestures = true,
-    this.suppressMainToolbar = false,
-  }) {
-    // The switcher only joins the address bar up here; with no address bar
-    // in this bar it belongs to the bottom one.
-    final switcher = quickTabSwitcherPlacement.resolve(TabBarPosition.top);
-    _tabBar = BrowserTabBar(
-      showMainToolbar: showMainToolbar,
-      displayedSheet: displayedSheet,
-      showContextualToolbar: false,
-      quickTabSwitcherRowCount: showMainToolbar && switcher.inTopBar
-          ? quickTabSwitcherRowCount
-          : 0,
-      quickTabSwitcherOrder: switcher.order,
-      isSmallWebMode: isSmallWebMode,
-      enableGestures: enableGestures,
-      hideMainToolbarButtonsDuplicatedInContextualToolbar:
-          showContextualToolbar,
-      suppressMainToolbar: suppressMainToolbar,
-    );
-  }
+  const BrowserTopAppBar({super.key, required this.bar, this.displayedSheet});
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: SizedBox(height: preferredSize.height, child: _tabBar),
+      child: SizedBox(
+        height: bar.height,
+        child: BrowserTabBar.fromSpec(bar, displayedSheet: displayedSheet),
+      ),
     );
   }
 
-  Size get preferredSize => _size;
+  Size get preferredSize => Size.fromHeight(bar.height);
 }
 
 class BrowserBottomAppBar extends ConsumerWidget {
-  /// Whether the address bar is drawn here, i.e. the tab bar is at the bottom.
-  final bool showMainToolbar;
-  final bool showContextualToolbar;
-  final int quickTabSwitcherRowCount;
-  final QuickTabSwitcherPlacement quickTabSwitcherPlacement;
-  final bool isSmallWebMode;
+  /// What the bar holds; see [BrowserChromeLayout.bottomBar].
+  final BrowserBarSpec bar;
 
   /// See [BrowserTopAppBar.displayedSheet].
   final Sheet? displayedSheet;
-  final bool enableGestures;
-  final bool suppressMainToolbar;
 
-  late final BrowserTabBar _tabBar;
-  late final _size = Size.fromHeight(_tabBar.getToolbarHeight());
-
-  BrowserBottomAppBar({
+  const BrowserBottomAppBar({
     super.key,
-    required this.showMainToolbar,
+    required this.bar,
     this.displayedSheet,
-    required this.showContextualToolbar,
-    required this.quickTabSwitcherRowCount,
-    required this.isSmallWebMode,
-    this.quickTabSwitcherPlacement = QuickTabSwitcherPlacement.auto,
-    this.enableGestures = true,
-    this.suppressMainToolbar = false,
-  }) {
-    final switcher = quickTabSwitcherPlacement.resolve(
-      showMainToolbar ? TabBarPosition.bottom : TabBarPosition.top,
-    );
-    _tabBar = BrowserTabBar(
-      displayedSheet: displayedSheet,
-      showMainToolbar: showMainToolbar,
-      showContextualToolbar: showContextualToolbar,
-      quickTabSwitcherRowCount: switcher.inTopBar
-          ? 0
-          : quickTabSwitcherRowCount,
-      quickTabSwitcherOrder: switcher.order,
-      isSmallWebMode: isSmallWebMode,
-      enableGestures: enableGestures,
-      hideMainToolbarButtonsDuplicatedInContextualToolbar:
-          showContextualToolbar,
-      suppressMainToolbar: suppressMainToolbar,
-    );
-  }
+  });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -204,85 +140,65 @@ class BrowserBottomAppBar extends ConsumerWidget {
         (layout) => layout.outsideFlutter,
       ),
     );
+    final tint = ref.watch(browserBarTintProvider);
 
     return Material(
       shadowColor: Colors.transparent,
       surfaceTintColor: Colors.transparent,
       color: navigationBarOutsideFlutter
           ? Colors.transparent
-          : watchBrowserBarTintColor(context, ref),
+          : browserBarTintColor(context, tint),
       child: Padding(
         padding: EdgeInsets.only(bottom: bottomPadding),
-        child: SizedBox(height: _size.height, child: _tabBar),
+        child: SizedBox(
+          height: bar.height,
+          child: BrowserTabBar.fromSpec(bar, displayedSheet: displayedSheet),
+        ),
       ),
     );
   }
 
-  Size get preferredSize => _size;
+  Size get preferredSize => Size.fromHeight(bar.height);
 }
 
 /// Vertical side-rail wrapper (left/right positions). Exposes a fixed content
 /// [preferredSize] width; the caller adds the horizontal safe-area inset on the
 /// rail's outer edge to compute the browser content offset.
 class BrowserSideRail extends ConsumerWidget {
-  final bool showContextualToolbar;
-  final int quickTabSwitcherRowCount;
-  final bool isSmallWebMode;
+  /// What the rail holds; see [BrowserChromeLayout.rail].
+  final BrowserBarSpec bar;
 
-  /// Resolved by the caller, which already knows the window size class and
-  /// must hand the *same* value to the instance it renders and to the one it
-  /// builds off-tree to measure. A mismatch would inset the browser for a rail
-  /// of a different width than the one drawn.
+  /// Resolved by [BrowserChromeLayout], which the browser also insets the page
+  /// by. A mismatch would inset the browser for a rail of a different width
+  /// than the one drawn.
   final double railWidth;
-
-  /// Which edge the rail is docked to ([TabBarPosition.left] or
-  /// [TabBarPosition.right]).
-  final TabBarPosition position;
-
-  final bool suppressMainToolbar;
 
   /// Whether the rail carries a handle on its inner edge for resizing it.
   final bool resizable;
 
-  late final BrowserTabBar _tabBar;
-
-  /// The rail's footprint, which the browser screen insets the page by.
-  late final _size = Size.fromWidth(railWidth);
-
-  BrowserSideRail({
+  const BrowserSideRail({
     super.key,
-    required this.showContextualToolbar,
-    required this.quickTabSwitcherRowCount,
-    required this.isSmallWebMode,
-    required this.position,
+    required this.bar,
     required this.railWidth,
-    this.suppressMainToolbar = false,
     this.resizable = false,
-  }) {
-    _tabBar = BrowserTabBar(
-      displayedSheet: null,
-      showMainToolbar: true,
-      showContextualToolbar: showContextualToolbar,
-      quickTabSwitcherRowCount: quickTabSwitcherRowCount,
-      isSmallWebMode: isSmallWebMode,
-      enableGestures: true,
-      railWidth: railWidth,
-      hideMainToolbarButtonsDuplicatedInContextualToolbar:
-          showContextualToolbar,
-      suppressMainToolbar: suppressMainToolbar,
-    );
-  }
+  });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final isLeft = position == TabBarPosition.left;
+    final isLeft = bar.position == TabBarPosition.left;
+    final tabBar = BrowserTabBar.fromSpec(
+      bar,
+      displayedSheet: null,
+      railWidth: railWidth,
+    );
 
     // Tint the outer fill with the active container's surface color (same tint
     // the content and BrowserSystemBars use) so the rail's system safe-area
     // strips (status/nav bar, docked-edge notch) blend with the rail instead
     // of showing a neutral surfaceContainer gap. Falls back to surfaceContainer
     // when no container is active.
-    final tintColor = watchBrowserBarTintColor(context, ref);
+    final tint = ref.watch(browserBarTintProvider);
+    final tintColor = browserBarTintColor(context, tint);
 
     return ColoredBox(
       color: tintColor,
@@ -290,11 +206,11 @@ class BrowserSideRail extends ConsumerWidget {
         left: isLeft,
         right: !isLeft,
         child: SizedBox(
-          width: _size.width,
+          width: railWidth,
           child: resizable
               ? Stack(
                   children: [
-                    Positioned.fill(child: _tabBar),
+                    Positioned.fill(child: tabBar),
                     // Inside the rail rather than straddling its edge, so the
                     // handle never takes touches meant for the page. It draws
                     // inside the [BrowserTabBar.panelInset] the panel already
@@ -313,16 +229,33 @@ class BrowserSideRail extends ConsumerWidget {
                     ),
                   ],
                 )
-              : _tabBar,
+              : tabBar,
         ),
       ),
     );
   }
 
-  Size get preferredSize => _size;
+  /// The rail's footprint, which the browser screen insets the page by.
+  Size get preferredSize => Size.fromWidth(railWidth);
+}
+
+/// The address field a [BrowserTabBar] draws; see
+/// [BrowserTabBar.titleStyleFor].
+enum BrowserTabBarTitleStyle {
+  /// Rotated a quarter turn, for a narrow side rail.
+  rail,
+
+  /// [TabBarLayout.compact].
+  compact,
+
+  /// [TabBarLayout.withTitle].
+  regular,
 }
 
 class BrowserTabBar extends HookConsumerWidget {
+  /// The edge the tab bar is docked to; see [BrowserBarSpec.position]. Decides
+  /// the bar's axis, its title and which way its swipes go.
+  final TabBarPosition position;
   final bool showMainToolbar;
   final bool showContextualToolbar;
   final int quickTabSwitcherRowCount;
@@ -357,6 +290,7 @@ class BrowserTabBar extends HookConsumerWidget {
 
   const BrowserTabBar({
     super.key,
+    required this.position,
     required this.showMainToolbar,
     required this.displayedSheet,
     required this.showContextualToolbar,
@@ -368,6 +302,23 @@ class BrowserTabBar extends HookConsumerWidget {
     this.hideMainToolbarButtonsDuplicatedInContextualToolbar = false,
     this.suppressMainToolbar = false,
   });
+
+  /// The bar [bar] describes; see [BrowserChromeLayout].
+  BrowserTabBar.fromSpec(
+    BrowserBarSpec bar, {
+    super.key,
+    required this.displayedSheet,
+    this.railWidth = compactRailWidth,
+  }) : position = bar.position,
+       showMainToolbar = bar.showMainToolbar,
+       showContextualToolbar = bar.showContextualToolbar,
+       quickTabSwitcherRowCount = bar.quickTabSwitcherRowCount,
+       quickTabSwitcherOrder = bar.quickTabSwitcherOrder,
+       hideMainToolbarButtonsDuplicatedInContextualToolbar =
+           bar.hideMainToolbarButtonsDuplicatedInContextualToolbar,
+       isSmallWebMode = bar.isSmallWebMode,
+       enableGestures = bar.enableGestures,
+       suppressMainToolbar = bar.suppressMainToolbar;
 
   static const contextualToolabarHeight = 54.0;
   static const quickTabSwitcherHeight = 48.0;
@@ -539,7 +490,19 @@ class BrowserTabBar extends HookConsumerWidget {
 
   bool get displayQuickTabSwitcher => quickTabSwitcherRowCount > 0;
 
-  double getToolbarHeight() {
+  double getToolbarHeight() => heightFor(
+    displayAppBar: displayAppBar,
+    showContextualToolbar: showContextualToolbar,
+    quickTabSwitcherRowCount: quickTabSwitcherRowCount,
+  );
+
+  /// Height of a horizontal bar holding these rows. The one formula the bar
+  /// and [BrowserBarSpec.height] share.
+  static double heightFor({
+    required bool displayAppBar,
+    required bool showContextualToolbar,
+    required int quickTabSwitcherRowCount,
+  }) {
     var height = 0.0;
 
     if (displayAppBar) {
@@ -550,11 +513,49 @@ class BrowserTabBar extends HookConsumerWidget {
       height += contextualToolabarHeight;
     }
 
-    if (displayQuickTabSwitcher) {
+    if (quickTabSwitcherRowCount > 0) {
       height += quickTabSwitcherHeight * quickTabSwitcherRowCount;
     }
 
     return height;
+  }
+
+  /// Which of the address bar row's own buttons the contextual toolbar
+  /// already shows, and the row therefore leaves out.
+  ///
+  /// Only a button the contextual toolbar really draws counts, and only while
+  /// [hideDuplicates] ([BrowserBarSpec.hideMainToolbarButtonsDuplicatedInContextualToolbar]).
+  /// Shared with the Toolbar & Layout preview, so the two rows agree.
+  static ({bool tabsCount, bool navigationMenu}) mainButtonsInContextual(
+    List<ToolbarButtonConfig> contextualConfigs, {
+    required bool hideDuplicates,
+  }) {
+    bool shown(ToolbarButtonId id) =>
+        hideDuplicates &&
+        contextualConfigs.any((c) => c.buttonId == id.name && c.isVisible);
+    return (
+      tabsCount: shown(ToolbarButtonId.tabsCount),
+      navigationMenu: shown(ToolbarButtonId.navigationMenu),
+    );
+  }
+
+  /// The address field a bar docked to [position], [railWidth] wide, draws.
+  ///
+  /// A wide rail takes the ordinary horizontal title. The rotated rail title
+  /// exists to survive a narrow column; at panel width there is nothing to
+  /// survive and a sideways URL would just be hard to read. Shared with the
+  /// Toolbar & Layout preview.
+  static BrowserTabBarTitleStyle titleStyleFor({
+    required TabBarPosition position,
+    required double railWidth,
+    required TabBarLayout layout,
+  }) {
+    if (position.isVertical && !isWideRailWidth(railWidth)) {
+      return BrowserTabBarTitleStyle.rail;
+    }
+    return layout == TabBarLayout.compact
+        ? BrowserTabBarTitleStyle.compact
+        : BrowserTabBarTitleStyle.regular;
   }
 
   @override
@@ -572,33 +573,17 @@ class BrowserTabBar extends HookConsumerWidget {
         )
         .value;
 
-    final tabsCountInContextual =
-        hideMainToolbarButtonsDuplicatedInContextualToolbar &&
-        contextualConfigs.any(
-          (c) => c.buttonId == ToolbarButtonId.tabsCount.name && c.isVisible,
-        );
+    final inContextual = mainButtonsInContextual(
+      contextualConfigs,
+      hideDuplicates: hideMainToolbarButtonsDuplicatedInContextualToolbar,
+    );
 
-    final menuInContextual =
-        hideMainToolbarButtonsDuplicatedInContextualToolbar &&
-        contextualConfigs.any(
-          (c) =>
-              c.buttonId == ToolbarButtonId.navigationMenu.name && c.isVisible,
-        );
-
-    final showMainToolbarTabsCount = !isSmallWebMode && !tabsCountInContextual;
+    final showMainToolbarTabsCount = !isSmallWebMode && !inContextual.tabsCount;
     final showMainToolbarNavigationButton =
-        !isSmallWebMode && !menuInContextual;
+        !isSmallWebMode && !inContextual.navigationMenu;
 
-    final containerColor = ref.watch(
-      watchTabContainerDataProvider(
-        selectedTabId,
-      ).select((data) => data.value?.color),
-    );
-    final containerUseCustomColor = ref.watch(
-      watchTabContainerDataProvider(
-        selectedTabId,
-      ).select((data) => data.value?.metadata.useCustomColor ?? false),
-    );
+    // The same tint the strips around the bar read, so they stay seamless.
+    final tint = ref.watch(browserBarTintProvider);
 
     final stackingMode = ref.watch(effectiveTabBarStackingModeProvider);
 
@@ -607,27 +592,23 @@ class BrowserTabBar extends HookConsumerWidget {
     // what reserved this bar's height — reading it here is what keeps the
     // rows drawn and the slots reserved for them identical, so an empty row
     // is not a blank band (#628).
-    final twoLevelRows = stackingMode == TabBarStackingMode.twoLevel
-        ? ref.watch(twoLevelQuickTabSwitcherRowsProvider).value
-        : null;
-    final showTwoLevelContainerRow = twoLevelRows?.containerRow ?? false;
-    final showTwoLevelMruRow = twoLevelRows?.mruRow ?? false;
-
     // Tab groups follow the same rule, for the same reason.
-    final tabGroupsRows = stackingMode == TabBarStackingMode.tabGroups
-        ? ref.watch(tabGroupsQuickTabSwitcherRowsProvider).value
-        : null;
-    final showTabGroupRow = tabGroupsRows?.groupRow ?? false;
-    final showActiveTabGroupRow = tabGroupsRows?.activeGroupRow ?? false;
+    final stackedRows = ref.watch(stackedQuickTabSwitcherRowsProvider);
+    final showTwoLevelContainerRow = stackedRows.twoLevelContainerRow;
+    final showTwoLevelMruRow = stackedRows.twoLevelMruRow;
+    final showTabGroupRow = stackedRows.tabGroupRow;
+    final showActiveTabGroupRow = stackedRows.activeTabGroupRow;
 
-    final tabBarPosition = ref.watch(effectiveTabBarPositionProvider);
-    final isVertical = tabBarPosition.isVertical;
+    final hasPinnedAddons = ref.watch(
+      pinnedAddonIdsProvider.select((ids) => ids.isNotEmpty),
+    );
+    final isVertical = position.isVertical;
     // Only a vertical rail has a width to be wide; the horizontal bars leave
     // railWidth at its compact default and never take these branches.
     final wideRail = isVertical && isWideRail;
-    final switcherAxis = tabBarPosition.axis;
+    final switcherAxis = position.axis;
     // Left rail reads bottom-to-top, right rail top-to-bottom.
-    final railQuarterTurns = tabBarPosition == TabBarPosition.left ? 3 : 1;
+    final railQuarterTurns = position == TabBarPosition.left ? 3 : 1;
 
     final dragStartPosition = useRef(Offset.zero);
 
@@ -653,12 +634,8 @@ class BrowserTabBar extends HookConsumerWidget {
       await runSwipe(gesture);
     }
 
-    final effectiveContainerColor =
-        (settings.showContainerUi && containerColor != null)
-        ? containerColor
-        : null;
-    final effectiveUseCustomColor =
-        effectiveContainerColor != null && containerUseCustomColor;
+    final effectiveContainerColor = tint?.color;
+    final effectiveUseCustomColor = tint?.useCustomColor ?? false;
     final effectiveContainerPalette = effectiveContainerColor != null
         ? ContainerColors.palette(
             context,
@@ -671,7 +648,7 @@ class BrowserTabBar extends HookConsumerWidget {
       // A panel lays its actions out in rows, so its add-ons go in a row too.
       // It also spaces them evenly, where the empty box this renders with
       // nothing pinned would still take a share of the gaps.
-      if (!wideRail || ref.watch(pinnedAddonIdsProvider).isNotEmpty)
+      if (!wideRail || hasPinnedAddons)
         PinnedAddonBar(axis: wideRail ? Axis.horizontal : switcherAxis),
       if (isSmallWebMode)
         ReaderButton(
@@ -699,7 +676,7 @@ class BrowserTabBar extends HookConsumerWidget {
     return BrowserTabBarView(
       axis: switcherAxis,
       isWideRail: wideRail,
-      railOnLeft: tabBarPosition == TabBarPosition.left,
+      railOnLeft: position == TabBarPosition.left,
       showMainToolbar: showMainToolbar,
       showContextualToolbar: showContextualToolbar,
       showQuickTabSwitcherBar: quickTabSwitcherRowCount > 0,
@@ -707,28 +684,29 @@ class BrowserTabBar extends HookConsumerWidget {
       displayAppBar: displayAppBar,
       displayQuickTabSwitcher: displayQuickTabSwitcher,
       backgroundColor: effectiveContainerPalette?.surfaceColor,
-      // A wide rail takes the ordinary horizontal title. RailAppBarTitle exists
-      // to survive a 56dp column by rotating 90 degrees; at panel width there
-      // is nothing to survive and a sideways URL would just be hard to read.
-      title: (isVertical && !wideRail)
-          ? RailAppBarTitle(
-              quarterTurns: railQuarterTurns,
-              containerColor: effectiveContainerColor,
-              useCustomColor: effectiveUseCustomColor,
-            )
-          : settings.tabBarLayout == TabBarLayout.compact
-          ? CompactAppBarTitle(
-              containerColor: effectiveContainerColor,
-              useCustomColor: effectiveUseCustomColor,
-            )
-          : AppBarTitle(
-              containerColor: effectiveContainerColor,
-              useCustomColor: effectiveUseCustomColor,
-            ),
+      title: switch (titleStyleFor(
+        position: position,
+        railWidth: railWidth,
+        layout: settings.tabBarLayout,
+      )) {
+        BrowserTabBarTitleStyle.rail => RailAppBarTitle(
+          quarterTurns: railQuarterTurns,
+          containerColor: effectiveContainerColor,
+          useCustomColor: effectiveUseCustomColor,
+        ),
+        BrowserTabBarTitleStyle.compact => CompactAppBarTitle(
+          containerColor: effectiveContainerColor,
+          useCustomColor: effectiveUseCustomColor,
+        ),
+        BrowserTabBarTitleStyle.regular => AppBarTitle(
+          containerColor: effectiveContainerColor,
+          useCustomColor: effectiveUseCustomColor,
+        ),
+      },
       // A panel wraps these together with the contextual buttons instead; see
       // the contextual toolbar below.
       actions: wideRail ? const [] : mainActions,
-      quickTabSwitcher: _wrapQuickTabSwitcherWithButtonRow(
+      quickTabSwitcher: wrapQuickTabSwitcherWithButtonRow(
         axis: switcherAxis,
         // The button row lives on the switcher bar; when stacking is disabled
         // the whole bar is hidden anyway, but skip building it for clarity.
@@ -905,12 +883,12 @@ class BrowserTabBar extends HookConsumerWidget {
                 // Rail: horizontal swipe dismisses toward the docked edge, and
                 // the opposite (inward) swipe opens the tab view.
                 // distance = start - end, so a leftward swipe is positive dx.
-                final shouldDismiss = switch (tabBarPosition) {
+                final shouldDismiss = switch (position) {
                   TabBarPosition.left => distance.dx > dismissThreshold,
                   TabBarPosition.right => distance.dx < -dismissThreshold,
                   _ => false,
                 };
-                final shouldShowTabView = switch (tabBarPosition) {
+                final shouldShowTabView = switch (position) {
                   TabBarPosition.left => distance.dx < -dismissThreshold,
                   TabBarPosition.right => distance.dx > dismissThreshold,
                   _ => false,
@@ -958,7 +936,7 @@ class BrowserTabBar extends HookConsumerWidget {
               // - Bottom bar: swipe down to dismiss, swipe up for the tab view
               // - Top bar: swipe up to dismiss, swipe down for the tab view
               const dismissThreshold = kToolbarHeight * 0.5;
-              final shouldDismiss = switch (tabBarPosition) {
+              final shouldDismiss = switch (position) {
                 TabBarPosition.bottom =>
                   distance.dy.isNegative &&
                       distance.dy.abs() > dismissThreshold,
@@ -967,7 +945,7 @@ class BrowserTabBar extends HookConsumerWidget {
                       distance.dy.abs() > dismissThreshold,
                 _ => false,
               };
-              final shouldShowTabView = switch (tabBarPosition) {
+              final shouldShowTabView = switch (position) {
                 TabBarPosition.bottom =>
                   !distance.dy.isNegative &&
                       distance.dy.abs() > dismissThreshold,
@@ -1216,7 +1194,7 @@ class BrowserTabBarView extends StatelessWidget {
 /// bar so it can never starve the chips; [QuickSwitcherButtonRow] scrolls any
 /// overflow beyond that cap. [buttonRow] collapses to nothing when no buttons
 /// are enabled, so the default state is unchanged.
-Widget _wrapQuickTabSwitcherWithButtonRow({
+Widget wrapQuickTabSwitcherWithButtonRow({
   required Axis axis,
   required Widget? buttonRow,
   required Widget child,
@@ -1323,15 +1301,12 @@ class QuickTabSwitcher extends HookConsumerWidget {
       quickTabSwitcherTabStatesProvider(quickTabSwitcherMode),
     );
     final selectedTabId = ref.watch(selectedTabProvider);
-    final historySuggestions = enableHistoryFallback
-        ? ref
-              .watch(
-                quickTabSwitcherHistorySuggestionsProvider(
-                  quickTabSwitcherMode,
-                ),
-              )
-              .value
-        : null;
+    final historySuggestions = ref.watch(
+      quickTabSwitcherHistoryFallbackProvider(
+        quickTabSwitcherMode,
+        enabled: enableHistoryFallback,
+      ).select((value) => value.value),
+    );
     final sandboxSourceUris = ref.watch(sandboxSourceUrisProvider).value;
     // Reorder is only meaningful when the bar renders the user's actual tab
     // order (containerTabs). Other modes (lastUsedTabs / MRU) sort by recency,
@@ -1342,7 +1317,7 @@ class QuickTabSwitcher extends HookConsumerWidget {
     );
     final hierarchyGlyphs = ref.watch(
       generalSettingsWithDefaultsProvider.select(
-        (s) => s.quickTabSwitcherHierarchyGlyphs,
+        (s) => s.effectiveQuickTabSwitcherHierarchyGlyphs,
       ),
     );
     final showHierarchicalTabs = hierarchyGlyphs > 0;
@@ -1355,14 +1330,9 @@ class QuickTabSwitcher extends HookConsumerWidget {
 
     // The tab groups row lists each group by its root tab; the group supplies
     // the chip's count, its active state and the tab a tap returns to.
-    final tabGroupByRoot =
-        quickTabSwitcherMode == QuickTabSwitcherMode.tabGroups
-        ? {
-            for (final group
-                in ref.watch(selectedContainerTabGroupsProvider).value)
-              group.rootId: group,
-          }
-        : const <String, QuickTabSwitcherTabGroup>{};
+    final tabGroupByRoot = ref
+        .watch(quickTabSwitcherTabGroupsByRootProvider(quickTabSwitcherMode))
+        .value;
 
     final tabDepthById = ref
         .watch(

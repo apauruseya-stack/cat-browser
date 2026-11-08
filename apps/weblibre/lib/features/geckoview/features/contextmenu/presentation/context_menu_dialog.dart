@@ -55,8 +55,10 @@ class ContextMenuDialog extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
     final settings = ref.watch(generalSettingsWithDefaultsProvider);
-    final showContainerUi = settings.showContainerUi;
-    final catalogAsync = ref.watch(urlCleanerCatalogServiceProvider);
+    final showContainerUi = settings.containerEntryPointsShown;
+    final catalogRules = ref.watch(
+      urlCleanerCatalogServiceProvider.select((value) => value.value),
+    );
 
     final effectiveHitResult = useState(hitResult);
 
@@ -66,7 +68,7 @@ class ContextMenuDialog extends HookConsumerWidget {
       sourceUrl: isCleanable
           ? effectiveHitResult.value.tryGetLink()?.toString()
           : null,
-      rules: catalogAsync.value,
+      rules: catalogRules,
       cleanerEnabled: settings.urlCleanerEnabled,
       allowReferralMarketing: settings.urlCleanerAllowReferralMarketing,
       autoApply: settings.urlCleanerAutoApply,

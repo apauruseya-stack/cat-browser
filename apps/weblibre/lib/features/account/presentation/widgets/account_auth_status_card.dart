@@ -62,7 +62,9 @@ class _SignedOutSection extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final unclaimed = ref.watch(unclaimedAccountRecordProvider).value;
+    final unclaimed = ref.watch(
+      unclaimedAccountRecordProvider.select((value) => value.value),
+    );
 
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -360,7 +362,7 @@ class _SignedInTile extends ConsumerWidget {
               onPressed: () => Navigator.of(context).pop(false),
               child: Text(l10n.common_cancel),
             ),
-            FilledButton(
+            TextButton(
               onPressed: () => Navigator.of(context).pop(true),
               child: Text(l10n.account_actionSignOut),
             ),
@@ -455,7 +457,7 @@ class _ResetSyncKeyTile extends ConsumerWidget {
                   onPressed: () => Navigator.of(context).pop(false),
                   child: Text(l10n.common_cancel),
                 ),
-                FilledButton(
+                TextButton(
                   onPressed: () => Navigator.of(context).pop(true),
                   child: Text(l10n.common_reset),
                 ),

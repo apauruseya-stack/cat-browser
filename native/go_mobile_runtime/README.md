@@ -8,7 +8,7 @@ the generated Go runtime/JNI symbols collide. Cat Browser therefore binds sing-b
 
 Pinned inputs are defined in `pins.env`:
 
-- sing-box `v1.13.12`
+- sing-box `v1.14.4`
 - IPtProxy `5.4.2`
 - IPtProxy's `dnstt` submodule commit `f1b9b97a269f83bad41d2ceef291b4d2c161cd11`
 - `github.com/sagernet/gomobile@v0.1.12`
@@ -36,6 +36,10 @@ native/go_mobile_runtime/scripts/build-android.sh \
 ```
 
 The output AAR is written to `native/go_mobile_runtime/build/weblibre-go.aar`.
+
+The build stamps `SING_BOX_TAG` into sing-box's `constant.Version` (as sing-box's
+own Makefile does), which the About dialog shows. An AAR built before that stamp
+reports `unknown`, and the dialog shows "N/A" for sing-box until it is rebuilt.
 
 GitHub release builds clone the pinned sources from `pins.env` and run the same
 Melos command before building the Flutter APK/AAB artifacts. The app Gradle

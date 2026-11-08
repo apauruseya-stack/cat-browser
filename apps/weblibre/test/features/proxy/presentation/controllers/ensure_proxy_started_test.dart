@@ -12,6 +12,8 @@ import 'package:weblibre/features/proxy/domain/repositories/singbox_proxy_runtim
 import 'package:weblibre/features/proxy/presentation/controllers/ensure_proxy_started.dart';
 import 'package:weblibre/features/user/data/database/definitions.drift.dart'
     show ProxyProfile;
+import 'package:weblibre/features/user/data/models/general_settings.dart';
+import 'package:weblibre/features/user/domain/repositories/general_settings.dart';
 import 'package:weblibre/l10n/generated/app_localizations.dart';
 
 void main() {
@@ -31,6 +33,14 @@ void main() {
       await tester.pumpWidget(
         ProviderScope(
           overrides: [
+            // Nothing remembered, so every start asks.
+            generalSettingsWithDefaultsProvider.overrideWithValue(
+              GeneralSettings.withDefaults(),
+            ),
+            // "Don't ask again" writes through it, never the real database.
+            generalSettingsRepositoryProvider.overrideWith(
+              _FakeGeneralSettingsRepository.new,
+            ),
             singboxProxyRuntimeRepositoryProvider.overrideWith(
               () => runtimeRepository,
             ),
@@ -92,6 +102,14 @@ void main() {
       await tester.pumpWidget(
         ProviderScope(
           overrides: [
+            // Nothing remembered, so every start asks.
+            generalSettingsWithDefaultsProvider.overrideWithValue(
+              GeneralSettings.withDefaults(),
+            ),
+            // "Don't ask again" writes through it, never the real database.
+            generalSettingsRepositoryProvider.overrideWith(
+              _FakeGeneralSettingsRepository.new,
+            ),
             singboxProxyRuntimeRepositoryProvider.overrideWith(
               () => runtimeRepository,
             ),
@@ -146,6 +164,14 @@ void main() {
     await tester.pumpWidget(
       ProviderScope(
         overrides: [
+          // Nothing remembered, so every start asks.
+          generalSettingsWithDefaultsProvider.overrideWithValue(
+            GeneralSettings.withDefaults(),
+          ),
+          // "Don't ask again" writes through it, never the real database.
+          generalSettingsRepositoryProvider.overrideWith(
+            _FakeGeneralSettingsRepository.new,
+          ),
           singboxProxyRuntimeRepositoryProvider.overrideWith(
             () => runtimeRepository,
           ),
@@ -276,4 +302,14 @@ class _LoadingProfilesRepository extends SingboxProxyProfilesRepository {
     }
     return null;
   }
+}
+
+class _FakeGeneralSettingsRepository extends GeneralSettingsRepository {
+  @override
+  Stream<GeneralSettings> build() =>
+      Stream.value(GeneralSettings.withDefaults());
+
+  @override
+  Future<void> updateSettings(UpdateGeneralSettingsFunc updateWithCurrent) =>
+      Future.value();
 }

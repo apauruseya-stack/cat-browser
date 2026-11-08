@@ -41,7 +41,7 @@ final class RouterProvider
   }
 }
 
-String _$routerHash() => r'2803b6c2b8aaf84fe18835d4b27ae3ce0540fe14';
+String _$routerHash() => r'e704946e762c4261cfc857ca7ad464d59860114c';
 
 @ProviderFor(CurrentTopRoute)
 final currentTopRouteProvider = CurrentTopRouteProvider._();
@@ -75,7 +75,7 @@ final class CurrentTopRouteProvider
   }
 }
 
-String _$currentTopRouteHash() => r'bf9956935ede399b815348926bb75c6bad22619e';
+String _$currentTopRouteHash() => r'a1a13c4f7c33e0f2b5089786d5a87f9947c9ab49';
 
 abstract class _$CurrentTopRoute extends $Notifier<RouteBase?> {
   RouteBase? build();

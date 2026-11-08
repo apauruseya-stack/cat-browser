@@ -44,6 +44,10 @@ abstract interface class SingboxProxyClient {
 
   Stream<SingboxProxyLogMessage> get logStream;
 
+  /// The WireGuard profiles whose peer does not answer, whenever that changes
+  /// and once as a listener subscribes.
+  Stream<SingboxProxyTunnelState> get tunnelStream;
+
   Future<String?> validateProfile(SingboxProxyProfile profile);
 
   Future<String?> probeProfile(SingboxProxyProfile profile);
@@ -73,6 +77,9 @@ class FlutterSingboxProxyClient implements SingboxProxyClient {
 
   @override
   Stream<SingboxProxyLogMessage> get logStream => _plugin.logStream;
+
+  @override
+  Stream<SingboxProxyTunnelState> get tunnelStream => _plugin.tunnelStream;
 
   @override
   Future<String?> validateProfile(SingboxProxyProfile profile) {
@@ -660,7 +667,7 @@ class SingboxProxyRuntimeRepository extends _$SingboxProxyRuntimeRepository {
     final logLevel =
         (await ref
                 .read(proxyDiagnosticsSettingsRepositoryProvider.notifier)
-                .fetchSettings())
+                .fetchEffectiveSettings())
             .logLevel
             .singboxLevel;
 

@@ -133,7 +133,7 @@ class _HomeTargetTile extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final settings = ref.watch(generalSettingsWithDefaultsProvider);
+    final settings = ref.watch(storedGeneralSettingsProvider);
     final l10n = AppLocalizations.of(context);
 
     Future<void> save(GeneralSettings Function(GeneralSettings) update) {
@@ -219,9 +219,7 @@ class _HomeTargetOnLastTabClosedTile extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final enabled = ref.watch(
-      generalSettingsWithDefaultsProvider.select(
-        (s) => s.homeTargetOnLastTabClosed,
-      ),
+      storedGeneralSettingsProvider.select((s) => s.homeTargetOnLastTabClosed),
     );
     final l10n = AppLocalizations.of(context);
 
@@ -248,8 +246,8 @@ class _HomeSearchBarPlacementTile extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final settings = ref.watch(generalSettingsWithDefaultsProvider);
-    final resolved = ref.watch(effectiveHomeSearchBarPlacementProvider);
+    final settings = ref.watch(storedGeneralSettingsProvider);
+    final resolved = ref.watch(displayedHomeSearchBarPlacementProvider);
     final l10n = AppLocalizations.of(context);
 
     return RadioGroup<HomeSearchBarPlacement>(
@@ -291,9 +289,9 @@ class _SearchFieldPlacementTile extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final stored = ref.watch(
-      generalSettingsWithDefaultsProvider.select((s) => s.searchFieldPlacement),
+      storedGeneralSettingsProvider.select((s) => s.searchFieldPlacement),
     );
-    final resolved = ref.watch(effectiveSearchFieldPlacementProvider);
+    final resolved = ref.watch(displayedSearchFieldPlacementProvider);
     final l10n = AppLocalizations.of(context);
 
     return RadioGroup<SearchFieldPlacement>(
@@ -335,9 +333,7 @@ class _WallpaperTile extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final hasWallpaper = ref.watch(
-      generalSettingsWithDefaultsProvider.select(
-        (s) => s.homeWallpaperFile != null,
-      ),
+      storedGeneralSettingsProvider.select((s) => s.homeWallpaperFile != null),
     );
     final l10n = AppLocalizations.of(context);
 

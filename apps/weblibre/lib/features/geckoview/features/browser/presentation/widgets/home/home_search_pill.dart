@@ -79,7 +79,7 @@ class HomeSearchPill extends ConsumerWidget {
       child: GlassPanel(
         borderRadius: BorderRadius.circular(26),
         blur: true,
-        padding: const EdgeInsets.zero,
+        padding: EdgeInsets.zero,
         child: Material(
           type: MaterialType.transparency,
           child: Row(

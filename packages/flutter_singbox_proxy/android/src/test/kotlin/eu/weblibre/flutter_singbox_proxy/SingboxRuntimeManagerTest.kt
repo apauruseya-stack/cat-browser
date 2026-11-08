@@ -11,6 +11,7 @@ import eu.weblibre.flutter_singbox_proxy.generated.SingboxProxyProfileType
 import eu.weblibre.flutter_singbox_proxy.generated.SingboxProxyRuntimeOptions
 import eu.weblibre.flutter_singbox_proxy.generated.SingboxProxyRuntimeState
 import eu.weblibre.flutter_singbox_proxy.generated.SingboxProxyRuntimeStatus
+import eu.weblibre.flutter_singbox_proxy.generated.SingboxProxyTunnelState
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertIs
@@ -488,6 +489,91 @@ internal class SingboxRuntimeManagerTest {
     }
 }
 
+internal class SingboxRuntimeManagerTunnelTest {
+    private val tag = SingboxTagFormat.outboundTag("wireguard")
+    private val retry = "endpoint/wireguard[$tag]: peer(abcd…wxyz) - " +
+        "handshake did not complete after 5 seconds, retrying (try 2)"
+    private val response = "endpoint/wireguard[$tag]: peer(abcd…wxyz) - received handshake response"
+
+    private fun unanswered(vararg profileIds: String) =
+        SingboxProxyTunnelState(unansweredProfileIds = profileIds.toList())
+
+    /**
+     * Issue #693: the handshakes of a running tunnel went unanswered, and
+     * nothing said so. The verdict reaches Dart for the profile that owns the
+     * endpoint, as the whole set of such profiles.
+     */
+    @Test
+    fun reportsUnansweredHandshakesForTheProfileThatOwnsTheEndpoint() {
+        val runtime = FakeLibboxRuntime()
+        val states = mutableListOf<SingboxProxyTunnelState>()
+        val manager = SingboxRuntimeManager(
+            context = mock(Context::class.java),
+            libboxRuntime = runtime,
+            onTunnelState = { state -> states += state },
+            dispatchToMain = { action -> action() }
+        )
+        manager.awaitStart(listOf(wireguard("peer.example"), profile(id = "socks"))).getOrThrow()
+        val sink = runtime.logSink!!
+
+        repeat(WireGuardHandshakeWatch.UNANSWERED_RETRIES) { sink(5, retry) }
+        sink(5, response)
+        manager.close()
+
+        assertEquals(listOf(unanswered("wireguard"), unanswered()), states)
+    }
+
+    /**
+     * A reload forgets every tunnel's verdict, also of profiles that are not
+     * being started, and says so: Dart cannot tell which profiles a reload
+     * took down with it.
+     */
+    @Test
+    fun aReloadTellsDartThatEveryVerdictIsGone() {
+        val runtime = FakeLibboxRuntime()
+        val states = mutableListOf<SingboxProxyTunnelState>()
+        val manager = SingboxRuntimeManager(
+            context = mock(Context::class.java),
+            libboxRuntime = runtime,
+            onTunnelState = { state -> states += state },
+            dispatchToMain = { action -> action() }
+        )
+        manager.awaitStart(listOf(wireguard("peer.example"))).getOrThrow()
+        repeat(WireGuardHandshakeWatch.UNANSWERED_RETRIES) { runtime.logSink!!(5, retry) }
+
+        manager.awaitStart(listOf(wireguard("peer.example"), profile(id = "socks"))).getOrThrow()
+        manager.close()
+
+        assertEquals(listOf(unanswered("wireguard"), unanswered()), states)
+    }
+
+    /**
+     * A reload closes the old instance inside start(), and the old tunnel's
+     * last retries are logged then. They are not held against the new one.
+     */
+    @Test
+    fun retriesLoggedDuringAReloadDoNotCountForTheNewInstance() {
+        val runtime = FakeLibboxRuntime()
+        val states = mutableListOf<SingboxProxyTunnelState>()
+        val manager = SingboxRuntimeManager(
+            context = mock(Context::class.java),
+            libboxRuntime = runtime,
+            onTunnelState = { state -> states += state },
+            dispatchToMain = { action -> action() }
+        )
+        manager.awaitStart(listOf(wireguard("peer.example"))).getOrThrow()
+        val sink = runtime.logSink!!
+
+        runtime.onStart = { repeat(WireGuardHandshakeWatch.UNANSWERED_RETRIES - 1) { sink(5, retry) } }
+        manager.awaitStart(listOf(wireguard("peer.example"))).getOrThrow()
+        runtime.onStart = null
+        repeat(WireGuardHandshakeWatch.UNANSWERED_RETRIES - 1) { sink(5, retry) }
+        manager.close()
+
+        assertEquals(emptyList(), states)
+    }
+}
+
 private fun profile(id: String) = SingboxProxyProfile(
     id = id,
     name = id,
@@ -592,9 +678,13 @@ private class FakeLibboxRuntime(
     var lastConfigJson: String? = null
         private set
 
+    /** Runs inside [start], as what libbox logs while it (re)starts. */
+    var onStart: (() -> Unit)? = null
+
     override fun start(configJson: String) {
         lastConfigJson = configJson
         startAttempts += 1
+        onStart?.invoke()
         if (startAttempts == failOnStartAttempt) {
             throw IllegalStateException(failureMessage)
         }

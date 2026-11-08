@@ -1129,6 +1129,9 @@ class _FakeSingboxProxyClient implements SingboxProxyClient {
   Stream<SingboxProxyRuntimeState> get stateStream => _stateController.stream;
 
   @override
+  Stream<SingboxProxyTunnelState> get tunnelStream => const Stream.empty();
+
+  @override
   Stream<SingboxProxyLogMessage> get logStream => const Stream.empty();
 
   void emit(SingboxProxyRuntimeState state) {
@@ -1256,6 +1259,10 @@ class _FakeProxyDiagnosticsSettingsRepository
 
   @override
   Future<ProxyDiagnosticsSettings> fetchSettings() async => settings;
+
+  /// Detailed logs shown: what is stored applies.
+  @override
+  Future<ProxyDiagnosticsSettings> fetchEffectiveSettings() async => settings;
 
   @override
   Stream<ProxyDiagnosticsSettings> build() => Stream.value(settings);
