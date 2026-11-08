@@ -2050,6 +2050,408 @@ abstract class AppLocalizations {
   /// **'This update asks for new permissions. Review them to install it.'**
   String get addons_updateNeedsPermissions;
 
+  /// Title of the on-device AI settings screen, also the name of its row in Privacy & Security settings.
+  ///
+  /// In en, this message translates to:
+  /// **'AI (on-device)'**
+  String get ai_settingsTitle;
+
+  /// Master switch for all on-device AI features.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable local AI features'**
+  String get ai_masterTitle;
+
+  /// Explanation under the master AI switch.
+  ///
+  /// In en, this message translates to:
+  /// **'Master switch. All AI runs on this device.'**
+  String get ai_masterSubtitle;
+
+  /// AI capability: summarize the page in front of the user.
+  ///
+  /// In en, this message translates to:
+  /// **'Page summarization'**
+  String get ai_summarizeTitle;
+
+  /// Explanation under the page summarization switch.
+  ///
+  /// In en, this message translates to:
+  /// **'Quote the most important sentences, with keywords.'**
+  String get ai_summarizeSubtitle;
+
+  /// AI capability: compare open tabs with each other.
+  ///
+  /// In en, this message translates to:
+  /// **'Tab comparison'**
+  String get ai_tabCompareTitle;
+
+  /// Explanation under the tab comparison switch.
+  ///
+  /// In en, this message translates to:
+  /// **'Compare 2-5 open tabs and see what they share.'**
+  String get ai_tabCompareSubtitle;
+
+  /// AI capability: rank history results by meaning, on device.
+  ///
+  /// In en, this message translates to:
+  /// **'Semantic search'**
+  String get ai_semanticSearchTitle;
+
+  /// Explanation under the semantic search switch.
+  ///
+  /// In en, this message translates to:
+  /// **'Rank history results by meaning, not just keywords.'**
+  String get ai_semanticSearchSubtitle;
+
+  /// AI capability: rank feed articles by interest.
+  ///
+  /// In en, this message translates to:
+  /// **'Feed triage'**
+  String get ai_feedTriageTitle;
+
+  /// Explanation under the feed triage switch.
+  ///
+  /// In en, this message translates to:
+  /// **'Rank feed articles by interest (chronological stays default).'**
+  String get ai_feedTriageSubtitle;
+
+  /// Settings row that opens the on-device engine status screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Engine and index'**
+  String get ai_engineTileTitle;
+
+  /// Explanation under the engine status row.
+  ///
+  /// In en, this message translates to:
+  /// **'What runs, what is stored, and what it can do.'**
+  String get ai_engineTileSubtitle;
+
+  /// Privacy note at the bottom of AI settings.
+  ///
+  /// In en, this message translates to:
+  /// **'No model is bundled with or downloaded by the app. Summaries and rankings are computed from text the browser already stored on this device. Page content never leaves it.'**
+  String get ai_privacyNote;
+
+  /// Title of the screen that reports the local AI engine's status.
+  ///
+  /// In en, this message translates to:
+  /// **'On-device engine'**
+  String get ai_engineScreenTitle;
+
+  /// Name of the local AI engine.
+  ///
+  /// In en, this message translates to:
+  /// **'Built-in extractive engine'**
+  String get ai_engineName;
+
+  /// How the built-in engine works, under its name.
+  ///
+  /// In en, this message translates to:
+  /// **'TextRank summaries and TF-IDF similarity, written in Dart.'**
+  String get ai_engineSubtitle;
+
+  /// Badge stating that inference is local.
+  ///
+  /// In en, this message translates to:
+  /// **'Runs on this device'**
+  String get ai_runsOnDevice;
+
+  /// Badge stating that no model has to be downloaded.
+  ///
+  /// In en, this message translates to:
+  /// **'No model downloads'**
+  String get ai_noDownloads;
+
+  /// Label of the row showing how much space the AI models take.
+  ///
+  /// In en, this message translates to:
+  /// **'Model storage'**
+  String get ai_storageTitle;
+
+  /// Space used by AI models: none, the engine is built in.
+  ///
+  /// In en, this message translates to:
+  /// **'0 MB'**
+  String get ai_storageValue;
+
+  /// Explanation under the model storage row.
+  ///
+  /// In en, this message translates to:
+  /// **'The engine ships with the app; it reads text the browser already stored.'**
+  String get ai_storageSubtitle;
+
+  /// Label of the row counting pages with readable text in local history.
+  ///
+  /// In en, this message translates to:
+  /// **'Indexed pages'**
+  String get ai_indexedPagesTitle;
+
+  /// Explanation under the indexed pages count.
+  ///
+  /// In en, this message translates to:
+  /// **'Pages with readable text in the local history index.'**
+  String get ai_indexedPagesSubtitle;
+
+  /// Heading of the list of AI capabilities and whether they are on.
+  ///
+  /// In en, this message translates to:
+  /// **'Capabilities'**
+  String get ai_capabilitiesTitle;
+
+  /// Status: a capability is switched on and usable.
+  ///
+  /// In en, this message translates to:
+  /// **'Ready'**
+  String get ai_ready;
+
+  /// Status: a capability is switched off.
+  ///
+  /// In en, this message translates to:
+  /// **'Off'**
+  String get ai_off;
+
+  /// Label of the row counting open tabs that already have readable text.
+  ///
+  /// In en, this message translates to:
+  /// **'Open tabs with text'**
+  String get ai_openTabsTitle;
+
+  /// Explanation under the open tabs count.
+  ///
+  /// In en, this message translates to:
+  /// **'Tabs that can be summarized right now.'**
+  String get ai_openTabsSubtitle;
+
+  /// Footnote on the engine screen about private tabs and data clearing.
+  ///
+  /// In en, this message translates to:
+  /// **'Private tabs are included: the text never leaves the profile\'s database. Clearing browsing data also removes it.'**
+  String get ai_engineFootnote;
+
+  /// Title of the bottom sheet that shows a page summary.
+  ///
+  /// In en, this message translates to:
+  /// **'Page summary'**
+  String get ai_summarySheetTitle;
+
+  /// Progress text while the summary is computed.
+  ///
+  /// In en, this message translates to:
+  /// **'Reading the page...'**
+  String get ai_summaryLoading;
+
+  /// Heading when the page has no extracted text to summarize.
+  ///
+  /// In en, this message translates to:
+  /// **'Not enough readable text'**
+  String get ai_summaryNoTextTitle;
+
+  /// Explanation when a page cannot be summarized yet.
+  ///
+  /// In en, this message translates to:
+  /// **'Let the page finish loading, or open it in Reader Mode first. The summary is built from the text the browser already extracted.'**
+  String get ai_summaryNoTextBody;
+
+  /// Button that re-reads the page and retries the summary.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get ai_summaryRetry;
+
+  /// Heading above the keyword chips of a summary.
+  ///
+  /// In en, this message translates to:
+  /// **'Keywords'**
+  String get ai_summaryKeywords;
+
+  /// Compact statistics line under a summary: original word count, reading time, and the percentage of the page the summary kept.
+  ///
+  /// In en, this message translates to:
+  /// **'{words} words - {minutes} min read - kept {percent}%'**
+  String ai_summaryStats(int words, int minutes, int percent);
+
+  /// Button that copies the summary to the clipboard.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy'**
+  String get ai_summaryCopy;
+
+  /// Confirmation after copying a summary.
+  ///
+  /// In en, this message translates to:
+  /// **'Summary copied'**
+  String get ai_summaryCopied;
+
+  /// Button that shares the summary as text.
+  ///
+  /// In en, this message translates to:
+  /// **'Share'**
+  String get ai_summaryShare;
+
+  /// Button that recomputes the summary.
+  ///
+  /// In en, this message translates to:
+  /// **'Regenerate'**
+  String get ai_summaryRegenerate;
+
+  /// Badge: the summary used the reader-mode extraction.
+  ///
+  /// In en, this message translates to:
+  /// **'Reader text'**
+  String get ai_summarySourceReader;
+
+  /// Badge: the summary used the full-page extraction.
+  ///
+  /// In en, this message translates to:
+  /// **'Full page text'**
+  String get ai_summarySourceFull;
+
+  /// Title of the dialog shown when an AI feature is switched off.
+  ///
+  /// In en, this message translates to:
+  /// **'On-device AI is off'**
+  String get ai_disabledTitle;
+
+  /// Body of the dialog shown when an AI feature is switched off.
+  ///
+  /// In en, this message translates to:
+  /// **'Turn on AI and this capability in Settings, then try again. Nothing is sent anywhere.'**
+  String get ai_disabledBody;
+
+  /// Button that opens the on-device AI settings from the disabled dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Open AI settings'**
+  String get ai_openSettings;
+
+  /// Button that opens the compare-open-tabs sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Compare tabs'**
+  String get ai_compareAction;
+
+  /// Title of the compare-open-tabs sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Compare open tabs'**
+  String get ai_compareTitle;
+
+  /// Heading of the tab picker in the comparison sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick 2 to 5 tabs'**
+  String get ai_compareSelectTitle;
+
+  /// How many tabs are selected for comparison.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} selected'**
+  String ai_compareSelectedCount(int count);
+
+  /// Button that starts the tab comparison.
+  ///
+  /// In en, this message translates to:
+  /// **'Compare'**
+  String get ai_compareButton;
+
+  /// Message when fewer than two selected tabs have text.
+  ///
+  /// In en, this message translates to:
+  /// **'Select at least two tabs with readable text.'**
+  String get ai_compareNeedTwo;
+
+  /// Heading of the keywords found in every compared tab.
+  ///
+  /// In en, this message translates to:
+  /// **'Shared themes'**
+  String get ai_compareSharedTitle;
+
+  /// Shown when the compared tabs have no keywords in common.
+  ///
+  /// In en, this message translates to:
+  /// **'No shared keywords found.'**
+  String get ai_compareSharedNone;
+
+  /// Heading of the keywords unique to one compared tab.
+  ///
+  /// In en, this message translates to:
+  /// **'Only in this tab'**
+  String get ai_compareUniqueTitle;
+
+  /// Heading of the pairwise similarity list.
+  ///
+  /// In en, this message translates to:
+  /// **'Similarity'**
+  String get ai_compareSimilarityTitle;
+
+  /// Average similarity across all pairs of compared tabs.
+  ///
+  /// In en, this message translates to:
+  /// **'Average similarity {percent}%'**
+  String ai_compareAverage(int percent);
+
+  /// Message when the selected tabs cannot be compared.
+  ///
+  /// In en, this message translates to:
+  /// **'Not enough readable text in the selected tabs.'**
+  String get ai_compareNoText;
+
+  /// Button that returns from comparison results to the tab picker.
+  ///
+  /// In en, this message translates to:
+  /// **'Back'**
+  String get ai_compareBack;
+
+  /// Progress text while tabs are compared.
+  ///
+  /// In en, this message translates to:
+  /// **'Comparing tabs...'**
+  String get ai_compareLoading;
+
+  /// Title of the on-device semantic history search screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Search history'**
+  String get ai_historySearchTitle;
+
+  /// Placeholder in the semantic history search field.
+  ///
+  /// In en, this message translates to:
+  /// **'Describe what you remember'**
+  String get ai_historySearchHint;
+
+  /// Empty state before the user has searched history.
+  ///
+  /// In en, this message translates to:
+  /// **'Type a few words. Matches come from the local index and are re-ranked on this device.'**
+  String get ai_historySearchEmpty;
+
+  /// Empty state after a search with no results.
+  ///
+  /// In en, this message translates to:
+  /// **'No matches in the local index.'**
+  String get ai_historySearchNoResults;
+
+  /// How many history results were found.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} results'**
+  String ai_historySearchResults(int count);
+
+  /// Privacy note on the history search screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Results are ranked on this device. Nothing is sent anywhere.'**
+  String get ai_historySearchIndexed;
+
+  /// Button that opens a history result in a new tab.
+  ///
+  /// In en, this message translates to:
+  /// **'Open'**
+  String get ai_historyOpen;
+
   /// Question in the banner shown when a tapped link can be opened by an installed app instead of the browser. appName is that app's name.
   ///
   /// In en, this message translates to:
@@ -3825,6 +4227,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'delete history, clear cache, cookies, erase, wipe, privacy'**
   String get browserActions_clearBrowsingDataKeywords;
+
+  /// Name of the browser action that summarizes the current page on this device.
+  ///
+  /// In en, this message translates to:
+  /// **'Summarize page'**
+  String get browserActions_summarizePageTitle;
+
+  /// Explanation under the summarize page browser action's name in the action lists.
+  ///
+  /// In en, this message translates to:
+  /// **'Summarize the current page on this device'**
+  String get browserActions_summarizePageDescription;
+
+  /// Comma-separated search terms for this browser action in the search screen's Actions section. Not displayed; include synonyms users might type.
+  ///
+  /// In en, this message translates to:
+  /// **'ai, summary, summarize, tldr, key points, highlights'**
+  String get browserActions_summarizePageKeywords;
 
   /// Title of the bookmarks screen.
   ///
@@ -6345,6 +6765,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Find in Page'**
   String get menu_itemFindInPage;
+
+  /// Browser menu row and its name in menu customization: summarize the page on this device.
+  ///
+  /// In en, this message translates to:
+  /// **'Summarize Page'**
+  String get menu_itemSummarizePage;
 
   /// Browser menu row and its name in menu customization: translate the page.
   ///

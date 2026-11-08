@@ -162,8 +162,8 @@ flutter:
 
 flutter_launcher_icons:
   android: "launcher_icon"
-  image_path: "assets/icon/icon.png"
-  adaptive_icon_foreground: "assets/icon/icon.png"
-  adaptive_icon_monochrome: "assets/icon/icon.png"
-  adaptive_icon_foreground_inset: 25
+  image_path: "assets/icon/icon_square.png"
+  adaptive_icon_foreground: "assets/icon/icon_square.png"
+  adaptive_icon_monochrome: "assets/icon/icon_monochrome.png"
+  adaptive_icon_foreground_inset: 15
   adaptive_icon_background: "#FF000000"

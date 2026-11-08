@@ -158,6 +158,7 @@ const _$MenuItemTypeEnumMap = {
   MenuItemType.gestures: 'gestures',
   MenuItemType.addBookmark: 'addBookmark',
   MenuItemType.findInPage: 'findInPage',
+  MenuItemType.summarizePage: 'summarizePage',
   MenuItemType.translatePage: 'translatePage',
   MenuItemType.addToHomeScreen: 'addToHomeScreen',
   MenuItemType.openInApp: 'openInApp',

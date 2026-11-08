@@ -50,6 +50,7 @@ extension MenuItemTypeL10n on MenuItemType {
       MenuItemType.gestures => l10n.menu_itemGestures,
       MenuItemType.addBookmark => l10n.menu_itemAddBookmark,
       MenuItemType.findInPage => l10n.menu_itemFindInPage,
+      MenuItemType.summarizePage => l10n.menu_itemSummarizePage,
       MenuItemType.translatePage => l10n.menu_itemTranslatePage,
       MenuItemType.addToHomeScreen => l10n.menu_itemAddToHomeScreen,
       MenuItemType.openInApp => l10n.menu_itemOpenInApp,

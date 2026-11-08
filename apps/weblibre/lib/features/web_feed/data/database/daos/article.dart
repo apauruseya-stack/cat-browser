@@ -207,6 +207,23 @@ class ArticleDao extends DatabaseAccessor<FeedDatabase> with $ArticleDaoMixin {
     return statement.write(ArticleCompanion(lastRead: Value(read)));
   }
 
+  /// Titles of the most recently read articles, newest read first.
+  ///
+  /// This is the interest profile the on-device feed triage ranks against: the
+  /// user's own reading history, not an inferred model. Titles only, so the
+  /// query stays cheap enough to watch.
+  Selectable<String> getReadArticleTitles({int limit = 50}) {
+    final query = selectOnly(db.article)
+      ..addColumns([db.article.title])
+      ..where(db.article.lastRead.isNotNull() & db.article.title.isNotNull())
+      ..orderBy([
+        OrderingTerm(expression: db.article.lastRead, mode: OrderingMode.desc),
+      ])
+      ..limit(limit);
+
+    return query.map((row) => row.read(db.article.title)!);
+  }
+
   Selectable<(String, int)> getUnreadArticleCount() {
     final count = countAll();
 

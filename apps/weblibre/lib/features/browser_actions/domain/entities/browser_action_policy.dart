@@ -39,6 +39,7 @@ extension BrowserActionPolicy on BrowserAction {
     BrowserAction.findInPage ||
     BrowserAction.findNext ||
     BrowserAction.findPrevious ||
+    BrowserAction.summarizePage ||
     BrowserAction.showBrowserMenu ||
     BrowserAction.openSettings ||
     BrowserAction.showAbout ||

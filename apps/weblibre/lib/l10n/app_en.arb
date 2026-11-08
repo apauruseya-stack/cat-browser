@@ -1486,6 +1486,300 @@
   "@addons_updateNeedsPermissions": {
     "description": "Message after an update check when the update stopped because it needs new permissions, and the status line under the extension's Updates section afterwards. The permissions then show on the extension details screen."
   },
+  "ai_settingsTitle": "AI (on-device)",
+  "@ai_settingsTitle": {
+    "description": "Title of the on-device AI settings screen, also the name of its row in Privacy & Security settings."
+  },
+  "ai_masterTitle": "Enable local AI features",
+  "@ai_masterTitle": {
+    "description": "Master switch for all on-device AI features."
+  },
+  "ai_masterSubtitle": "Master switch. All AI runs on this device.",
+  "@ai_masterSubtitle": {
+    "description": "Explanation under the master AI switch."
+  },
+  "ai_summarizeTitle": "Page summarization",
+  "@ai_summarizeTitle": {
+    "description": "AI capability: summarize the page in front of the user."
+  },
+  "ai_summarizeSubtitle": "Quote the most important sentences, with keywords.",
+  "@ai_summarizeSubtitle": {
+    "description": "Explanation under the page summarization switch."
+  },
+  "ai_tabCompareTitle": "Tab comparison",
+  "@ai_tabCompareTitle": {
+    "description": "AI capability: compare open tabs with each other."
+  },
+  "ai_tabCompareSubtitle": "Compare 2-5 open tabs and see what they share.",
+  "@ai_tabCompareSubtitle": {
+    "description": "Explanation under the tab comparison switch."
+  },
+  "ai_semanticSearchTitle": "Semantic search",
+  "@ai_semanticSearchTitle": {
+    "description": "AI capability: rank history results by meaning, on device."
+  },
+  "ai_semanticSearchSubtitle": "Rank history results by meaning, not just keywords.",
+  "@ai_semanticSearchSubtitle": {
+    "description": "Explanation under the semantic search switch."
+  },
+  "ai_feedTriageTitle": "Feed triage",
+  "@ai_feedTriageTitle": {
+    "description": "AI capability: rank feed articles by interest."
+  },
+  "ai_feedTriageSubtitle": "Rank feed articles by interest (chronological stays default).",
+  "@ai_feedTriageSubtitle": {
+    "description": "Explanation under the feed triage switch."
+  },
+  "ai_engineTileTitle": "Engine and index",
+  "@ai_engineTileTitle": {
+    "description": "Settings row that opens the on-device engine status screen."
+  },
+  "ai_engineTileSubtitle": "What runs, what is stored, and what it can do.",
+  "@ai_engineTileSubtitle": {
+    "description": "Explanation under the engine status row."
+  },
+  "ai_privacyNote": "No model is bundled with or downloaded by the app. Summaries and rankings are computed from text the browser already stored on this device. Page content never leaves it.",
+  "@ai_privacyNote": {
+    "description": "Privacy note at the bottom of AI settings."
+  },
+  "ai_engineScreenTitle": "On-device engine",
+  "@ai_engineScreenTitle": {
+    "description": "Title of the screen that reports the local AI engine's status."
+  },
+  "ai_engineName": "Built-in extractive engine",
+  "@ai_engineName": {
+    "description": "Name of the local AI engine."
+  },
+  "ai_engineSubtitle": "TextRank summaries and TF-IDF similarity, written in Dart.",
+  "@ai_engineSubtitle": {
+    "description": "How the built-in engine works, under its name."
+  },
+  "ai_runsOnDevice": "Runs on this device",
+  "@ai_runsOnDevice": {
+    "description": "Badge stating that inference is local."
+  },
+  "ai_noDownloads": "No model downloads",
+  "@ai_noDownloads": {
+    "description": "Badge stating that no model has to be downloaded."
+  },
+  "ai_storageTitle": "Model storage",
+  "@ai_storageTitle": {
+    "description": "Label of the row showing how much space the AI models take."
+  },
+  "ai_storageValue": "0 MB",
+  "@ai_storageValue": {
+    "description": "Space used by AI models: none, the engine is built in."
+  },
+  "ai_storageSubtitle": "The engine ships with the app; it reads text the browser already stored.",
+  "@ai_storageSubtitle": {
+    "description": "Explanation under the model storage row."
+  },
+  "ai_indexedPagesTitle": "Indexed pages",
+  "@ai_indexedPagesTitle": {
+    "description": "Label of the row counting pages with readable text in local history."
+  },
+  "ai_indexedPagesSubtitle": "Pages with readable text in the local history index.",
+  "@ai_indexedPagesSubtitle": {
+    "description": "Explanation under the indexed pages count."
+  },
+  "ai_capabilitiesTitle": "Capabilities",
+  "@ai_capabilitiesTitle": {
+    "description": "Heading of the list of AI capabilities and whether they are on."
+  },
+  "ai_ready": "Ready",
+  "@ai_ready": {
+    "description": "Status: a capability is switched on and usable."
+  },
+  "ai_off": "Off",
+  "@ai_off": {
+    "description": "Status: a capability is switched off."
+  },
+  "ai_openTabsTitle": "Open tabs with text",
+  "@ai_openTabsTitle": {
+    "description": "Label of the row counting open tabs that already have readable text."
+  },
+  "ai_openTabsSubtitle": "Tabs that can be summarized right now.",
+  "@ai_openTabsSubtitle": {
+    "description": "Explanation under the open tabs count."
+  },
+  "ai_engineFootnote": "Private tabs are included: the text never leaves the profile's database. Clearing browsing data also removes it.",
+  "@ai_engineFootnote": {
+    "description": "Footnote on the engine screen about private tabs and data clearing."
+  },
+  "ai_summarySheetTitle": "Page summary",
+  "@ai_summarySheetTitle": {
+    "description": "Title of the bottom sheet that shows a page summary."
+  },
+  "ai_summaryLoading": "Reading the page...",
+  "@ai_summaryLoading": {
+    "description": "Progress text while the summary is computed."
+  },
+  "ai_summaryNoTextTitle": "Not enough readable text",
+  "@ai_summaryNoTextTitle": {
+    "description": "Heading when the page has no extracted text to summarize."
+  },
+  "ai_summaryNoTextBody": "Let the page finish loading, or open it in Reader Mode first. The summary is built from the text the browser already extracted.",
+  "@ai_summaryNoTextBody": {
+    "description": "Explanation when a page cannot be summarized yet."
+  },
+  "ai_summaryRetry": "Try again",
+  "@ai_summaryRetry": {
+    "description": "Button that re-reads the page and retries the summary."
+  },
+  "ai_summaryKeywords": "Keywords",
+  "@ai_summaryKeywords": {
+    "description": "Heading above the keyword chips of a summary."
+  },
+  "ai_summaryStats": "{words} words - {minutes} min read - kept {percent}%",
+  "@ai_summaryStats": {
+    "description": "Compact statistics line under a summary: original word count, reading time, and the percentage of the page the summary kept.",
+    "placeholders": {
+      "words": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      },
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "ai_summaryCopy": "Copy",
+  "@ai_summaryCopy": {
+    "description": "Button that copies the summary to the clipboard."
+  },
+  "ai_summaryCopied": "Summary copied",
+  "@ai_summaryCopied": {
+    "description": "Confirmation after copying a summary."
+  },
+  "ai_summaryShare": "Share",
+  "@ai_summaryShare": {
+    "description": "Button that shares the summary as text."
+  },
+  "ai_summaryRegenerate": "Regenerate",
+  "@ai_summaryRegenerate": {
+    "description": "Button that recomputes the summary."
+  },
+  "ai_summarySourceReader": "Reader text",
+  "@ai_summarySourceReader": {
+    "description": "Badge: the summary used the reader-mode extraction."
+  },
+  "ai_summarySourceFull": "Full page text",
+  "@ai_summarySourceFull": {
+    "description": "Badge: the summary used the full-page extraction."
+  },
+  "ai_disabledTitle": "On-device AI is off",
+  "@ai_disabledTitle": {
+    "description": "Title of the dialog shown when an AI feature is switched off."
+  },
+  "ai_disabledBody": "Turn on AI and this capability in Settings, then try again. Nothing is sent anywhere.",
+  "@ai_disabledBody": {
+    "description": "Body of the dialog shown when an AI feature is switched off."
+  },
+  "ai_openSettings": "Open AI settings",
+  "@ai_openSettings": {
+    "description": "Button that opens the on-device AI settings from the disabled dialog."
+  },
+  "ai_compareAction": "Compare tabs",
+  "@ai_compareAction": {
+    "description": "Button that opens the compare-open-tabs sheet."
+  },
+  "ai_compareTitle": "Compare open tabs",
+  "@ai_compareTitle": {
+    "description": "Title of the compare-open-tabs sheet."
+  },
+  "ai_compareSelectTitle": "Pick 2 to 5 tabs",
+  "@ai_compareSelectTitle": {
+    "description": "Heading of the tab picker in the comparison sheet."
+  },
+  "ai_compareSelectedCount": "{count} selected",
+  "@ai_compareSelectedCount": {
+    "description": "How many tabs are selected for comparison.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "ai_compareButton": "Compare",
+  "@ai_compareButton": {
+    "description": "Button that starts the tab comparison."
+  },
+  "ai_compareNeedTwo": "Select at least two tabs with readable text.",
+  "@ai_compareNeedTwo": {
+    "description": "Message when fewer than two selected tabs have text."
+  },
+  "ai_compareSharedTitle": "Shared themes",
+  "@ai_compareSharedTitle": {
+    "description": "Heading of the keywords found in every compared tab."
+  },
+  "ai_compareSharedNone": "No shared keywords found.",
+  "@ai_compareSharedNone": {
+    "description": "Shown when the compared tabs have no keywords in common."
+  },
+  "ai_compareUniqueTitle": "Only in this tab",
+  "@ai_compareUniqueTitle": {
+    "description": "Heading of the keywords unique to one compared tab."
+  },
+  "ai_compareSimilarityTitle": "Similarity",
+  "@ai_compareSimilarityTitle": {
+    "description": "Heading of the pairwise similarity list."
+  },
+  "ai_compareAverage": "Average similarity {percent}%",
+  "@ai_compareAverage": {
+    "description": "Average similarity across all pairs of compared tabs.",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "ai_compareNoText": "Not enough readable text in the selected tabs.",
+  "@ai_compareNoText": {
+    "description": "Message when the selected tabs cannot be compared."
+  },
+  "ai_compareBack": "Back",
+  "@ai_compareBack": {
+    "description": "Button that returns from comparison results to the tab picker."
+  },
+  "ai_compareLoading": "Comparing tabs...",
+  "@ai_compareLoading": {
+    "description": "Progress text while tabs are compared."
+  },
+  "ai_historySearchTitle": "Search history",
+  "@ai_historySearchTitle": {
+    "description": "Title of the on-device semantic history search screen."
+  },
+  "ai_historySearchHint": "Describe what you remember",
+  "@ai_historySearchHint": {
+    "description": "Placeholder in the semantic history search field."
+  },
+  "ai_historySearchEmpty": "Type a few words. Matches come from the local index and are re-ranked on this device.",
+  "@ai_historySearchEmpty": {
+    "description": "Empty state before the user has searched history."
+  },
+  "ai_historySearchNoResults": "No matches in the local index.",
+  "@ai_historySearchNoResults": {
+    "description": "Empty state after a search with no results."
+  },
+  "ai_historySearchResults": "{count} results",
+  "@ai_historySearchResults": {
+    "description": "How many history results were found.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "ai_historySearchIndexed": "Results are ranked on this device. Nothing is sent anywhere.",
+  "@ai_historySearchIndexed": {
+    "description": "Privacy note on the history search screen."
+  },
+  "ai_historyOpen": "Open",
+  "@ai_historyOpen": {
+    "description": "Button that opens a history result in a new tab."
+  },
   "appLinks_bannerTitleNamed": "Open this link in {appName}?",
   "@appLinks_bannerTitleNamed": {
     "description": "Question in the banner shown when a tapped link can be opened by an installed app instead of the browser. appName is that app's name.",
@@ -2713,6 +3007,18 @@
   },
   "browserActions_clearBrowsingDataKeywords": "delete history, clear cache, cookies, erase, wipe, privacy",
   "@browserActions_clearBrowsingDataKeywords": {
+    "description": "Comma-separated search terms for this browser action in the search screen's Actions section. Not displayed; include synonyms users might type."
+  },
+  "browserActions_summarizePageTitle": "Summarize page",
+  "@browserActions_summarizePageTitle": {
+    "description": "Name of the browser action that summarizes the current page on this device."
+  },
+  "browserActions_summarizePageDescription": "Summarize the current page on this device",
+  "@browserActions_summarizePageDescription": {
+    "description": "Explanation under the summarize page browser action's name in the action lists."
+  },
+  "browserActions_summarizePageKeywords": "ai, summary, summarize, tldr, key points, highlights",
+  "@browserActions_summarizePageKeywords": {
     "description": "Comma-separated search terms for this browser action in the search screen's Actions section. Not displayed; include synonyms users might type."
   },
   "bookmarks_title": "Bookmarks",
@@ -4585,6 +4891,10 @@
   "menu_itemFindInPage": "Find in Page",
   "@menu_itemFindInPage": {
     "description": "Browser menu row and its name in menu customization: search for text on the page."
+  },
+  "menu_itemSummarizePage": "Summarize Page",
+  "@menu_itemSummarizePage": {
+    "description": "Browser menu row and its name in menu customization: summarize the page on this device."
   },
   "menu_itemTranslatePage": "Translate Page",
   "@menu_itemTranslatePage": {

@@ -27,6 +27,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:weblibre/core/logger.dart';
 import 'package:weblibre/core/providers/router.dart';
 import 'package:weblibre/core/routing/routes.dart';
+import 'package:weblibre/features/ai/presentation/widgets/page_summary_sheet.dart';
 import 'package:weblibre/features/browser_actions/data/models/browser_action.dart';
 import 'package:weblibre/features/browser_actions/domain/entities/browser_action_feedback.dart';
 import 'package:weblibre/features/browser_actions/domain/entities/browser_action_policy.dart';
@@ -463,6 +464,11 @@ class BrowserActionDispatcher extends _$BrowserActionDispatcher {
         await ref
             .read(tabSessionProvider(tabId: pageTabId).notifier)
             .printContent();
+      case BrowserAction.summarizePage:
+        final context = await _navigatorContext();
+        if (context != null && context.mounted) {
+          await showPageSummarySheet(context, ref.container, tabId: pageTabId);
+        }
       case BrowserAction.clearBrowsingData:
         final context = await _navigatorContext();
         if (context != null && context.mounted) {

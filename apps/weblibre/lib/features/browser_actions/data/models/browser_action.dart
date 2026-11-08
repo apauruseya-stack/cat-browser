@@ -87,6 +87,9 @@ enum BrowserAction {
   findInPage(Icons.search, BrowserActionCategory.page),
   findNext(Icons.keyboard_arrow_down, BrowserActionCategory.page),
   findPrevious(Icons.keyboard_arrow_up, BrowserActionCategory.page),
+
+  /// Answers "what does this page say" with an on-device extractive summary.
+  summarizePage(MdiIcons.creation, BrowserActionCategory.page),
   showFontSize(MdiIcons.formatSize, BrowserActionCategory.page),
   increaseFontSize(MdiIcons.formatFontSizeIncrease, BrowserActionCategory.page),
   decreaseFontSize(MdiIcons.formatFontSizeDecrease, BrowserActionCategory.page),

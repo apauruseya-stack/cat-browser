@@ -1248,6 +1248,231 @@ class AppLocalizationsRu extends AppLocalizations {
       '╨¡╤é╨╛ ╨╛╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╨╡ ╨╖╨░╨┐╤Ç╨░╤ê╨╕╨▓╨░╨╡╤é ╨╜╨╛╨▓╤ï╨╡ ╤Ç╨░╨╖╤Ç╨╡╤ê╨╡╨╜╨╕╤Å. ╨ƒ╤Ç╨╛╨▓╨╡╤Ç╤î╤é╨╡ ╨╕╤à, ╤ç╤é╨╛╨▒╤ï ╤â╤ü╤é╨░╨╜╨╛╨▓╨╕╤é╤î ╨╡╨│╨╛.';
 
   @override
+  String get ai_settingsTitle => 'AI (on-device)';
+
+  @override
+  String get ai_masterTitle => 'Enable local AI features';
+
+  @override
+  String get ai_masterSubtitle => 'Master switch. All AI runs on this device.';
+
+  @override
+  String get ai_summarizeTitle => 'Page summarization';
+
+  @override
+  String get ai_summarizeSubtitle =>
+      'Quote the most important sentences, with keywords.';
+
+  @override
+  String get ai_tabCompareTitle => 'Tab comparison';
+
+  @override
+  String get ai_tabCompareSubtitle =>
+      'Compare 2-5 open tabs and see what they share.';
+
+  @override
+  String get ai_semanticSearchTitle => 'Semantic search';
+
+  @override
+  String get ai_semanticSearchSubtitle =>
+      'Rank history results by meaning, not just keywords.';
+
+  @override
+  String get ai_feedTriageTitle => 'Feed triage';
+
+  @override
+  String get ai_feedTriageSubtitle =>
+      'Rank feed articles by interest (chronological stays default).';
+
+  @override
+  String get ai_engineTileTitle => 'Engine and index';
+
+  @override
+  String get ai_engineTileSubtitle =>
+      'What runs, what is stored, and what it can do.';
+
+  @override
+  String get ai_privacyNote =>
+      'No model is bundled with or downloaded by the app. Summaries and rankings are computed from text the browser already stored on this device. Page content never leaves it.';
+
+  @override
+  String get ai_engineScreenTitle => 'On-device engine';
+
+  @override
+  String get ai_engineName => 'Built-in extractive engine';
+
+  @override
+  String get ai_engineSubtitle =>
+      'TextRank summaries and TF-IDF similarity, written in Dart.';
+
+  @override
+  String get ai_runsOnDevice => 'Runs on this device';
+
+  @override
+  String get ai_noDownloads => 'No model downloads';
+
+  @override
+  String get ai_storageTitle => 'Model storage';
+
+  @override
+  String get ai_storageValue => '0 MB';
+
+  @override
+  String get ai_storageSubtitle =>
+      'The engine ships with the app; it reads text the browser already stored.';
+
+  @override
+  String get ai_indexedPagesTitle => 'Indexed pages';
+
+  @override
+  String get ai_indexedPagesSubtitle =>
+      'Pages with readable text in the local history index.';
+
+  @override
+  String get ai_capabilitiesTitle => 'Capabilities';
+
+  @override
+  String get ai_ready => 'Ready';
+
+  @override
+  String get ai_off => 'Off';
+
+  @override
+  String get ai_openTabsTitle => 'Open tabs with text';
+
+  @override
+  String get ai_openTabsSubtitle => 'Tabs that can be summarized right now.';
+
+  @override
+  String get ai_engineFootnote =>
+      'Private tabs are included: the text never leaves the profile\'s database. Clearing browsing data also removes it.';
+
+  @override
+  String get ai_summarySheetTitle => 'Page summary';
+
+  @override
+  String get ai_summaryLoading => 'Reading the page...';
+
+  @override
+  String get ai_summaryNoTextTitle => 'Not enough readable text';
+
+  @override
+  String get ai_summaryNoTextBody =>
+      'Let the page finish loading, or open it in Reader Mode first. The summary is built from the text the browser already extracted.';
+
+  @override
+  String get ai_summaryRetry => 'Try again';
+
+  @override
+  String get ai_summaryKeywords => 'Keywords';
+
+  @override
+  String ai_summaryStats(int words, int minutes, int percent) {
+    return '$words words - $minutes min read - kept $percent%';
+  }
+
+  @override
+  String get ai_summaryCopy => 'Copy';
+
+  @override
+  String get ai_summaryCopied => 'Summary copied';
+
+  @override
+  String get ai_summaryShare => 'Share';
+
+  @override
+  String get ai_summaryRegenerate => 'Regenerate';
+
+  @override
+  String get ai_summarySourceReader => 'Reader text';
+
+  @override
+  String get ai_summarySourceFull => 'Full page text';
+
+  @override
+  String get ai_disabledTitle => 'On-device AI is off';
+
+  @override
+  String get ai_disabledBody =>
+      'Turn on AI and this capability in Settings, then try again. Nothing is sent anywhere.';
+
+  @override
+  String get ai_openSettings => 'Open AI settings';
+
+  @override
+  String get ai_compareAction => 'Compare tabs';
+
+  @override
+  String get ai_compareTitle => 'Compare open tabs';
+
+  @override
+  String get ai_compareSelectTitle => 'Pick 2 to 5 tabs';
+
+  @override
+  String ai_compareSelectedCount(int count) {
+    return '$count selected';
+  }
+
+  @override
+  String get ai_compareButton => 'Compare';
+
+  @override
+  String get ai_compareNeedTwo =>
+      'Select at least two tabs with readable text.';
+
+  @override
+  String get ai_compareSharedTitle => 'Shared themes';
+
+  @override
+  String get ai_compareSharedNone => 'No shared keywords found.';
+
+  @override
+  String get ai_compareUniqueTitle => 'Only in this tab';
+
+  @override
+  String get ai_compareSimilarityTitle => 'Similarity';
+
+  @override
+  String ai_compareAverage(int percent) {
+    return 'Average similarity $percent%';
+  }
+
+  @override
+  String get ai_compareNoText =>
+      'Not enough readable text in the selected tabs.';
+
+  @override
+  String get ai_compareBack => 'Back';
+
+  @override
+  String get ai_compareLoading => 'Comparing tabs...';
+
+  @override
+  String get ai_historySearchTitle => 'Search history';
+
+  @override
+  String get ai_historySearchHint => 'Describe what you remember';
+
+  @override
+  String get ai_historySearchEmpty =>
+      'Type a few words. Matches come from the local index and are re-ranked on this device.';
+
+  @override
+  String get ai_historySearchNoResults => 'No matches in the local index.';
+
+  @override
+  String ai_historySearchResults(int count) {
+    return '$count results';
+  }
+
+  @override
+  String get ai_historySearchIndexed =>
+      'Results are ranked on this device. Nothing is sent anywhere.';
+
+  @override
+  String get ai_historyOpen => 'Open';
+
+  @override
   String appLinks_bannerTitleNamed(String appName) {
     return 'Открыть эту ссылку в $appName?';
   }
@@ -2290,6 +2515,17 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get browserActions_clearBrowsingDataKeywords =>
       'удалить историю, очистить кеш, куки, стереть, очистить, приватность';
+
+  @override
+  String get browserActions_summarizePageTitle => 'Summarize page';
+
+  @override
+  String get browserActions_summarizePageDescription =>
+      'Summarize the current page on this device';
+
+  @override
+  String get browserActions_summarizePageKeywords =>
+      'ai, summary, summarize, tldr, key points, highlights';
 
   @override
   String get bookmarks_title => 'Закладки';
@@ -3814,6 +4050,9 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get menu_itemFindInPage => 'Найти на странице';
+
+  @override
+  String get menu_itemSummarizePage => 'Summarize Page';
 
   @override
   String get menu_itemTranslatePage => 'Перевести страницу';

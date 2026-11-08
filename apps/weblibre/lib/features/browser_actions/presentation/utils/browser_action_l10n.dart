@@ -83,6 +83,7 @@ extension BrowserActionL10n on BrowserAction {
       BrowserAction.sharePage => l10n.browserActions_sharePageTitle,
       BrowserAction.translatePage => l10n.browserActions_translatePageTitle,
       BrowserAction.printPage => l10n.browserActions_printPageTitle,
+      BrowserAction.summarizePage => l10n.browserActions_summarizePageTitle,
       BrowserAction.showBrowserMenu => l10n.browserActions_showBrowserMenuTitle,
       BrowserAction.showHome => l10n.browserActions_showHomeTitle,
       BrowserAction.showHistory => l10n.browserActions_showHistoryTitle,
@@ -203,6 +204,8 @@ extension BrowserActionL10n on BrowserAction {
       BrowserAction.translatePage =>
         l10n.browserActions_translatePageDescription,
       BrowserAction.printPage => l10n.browserActions_printPageDescription,
+      BrowserAction.summarizePage =>
+        l10n.browserActions_summarizePageDescription,
       BrowserAction.showBrowserMenu =>
         l10n.browserActions_showBrowserMenuDescription,
       BrowserAction.showHome => l10n.browserActions_showHomeDescription,
@@ -290,6 +293,7 @@ extension BrowserActionL10n on BrowserAction {
       BrowserAction.subscribeToPageFeed =>
         l10n.browserActions_subscribeToPageFeedKeywords,
       BrowserAction.printPage => l10n.browserActions_printPageKeywords,
+      BrowserAction.summarizePage => l10n.browserActions_summarizePageKeywords,
       BrowserAction.increaseFontSize =>
         l10n.browserActions_increaseFontSizeKeywords,
       BrowserAction.decreaseFontSize =>

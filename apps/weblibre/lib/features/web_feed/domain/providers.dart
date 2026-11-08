@@ -24,6 +24,7 @@ import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:weblibre/core/logger.dart';
+import 'package:weblibre/features/user/domain/repositories/general_settings.dart';
 import 'package:weblibre/features/web_feed/data/database/definitions.drift.dart';
 import 'package:weblibre/features/web_feed/data/models/feed_article.dart';
 import 'package:weblibre/features/web_feed/data/models/feed_article_summary.dart';
@@ -32,6 +33,7 @@ import 'package:weblibre/features/web_feed/data/providers.dart';
 import 'package:weblibre/features/web_feed/domain/providers/article_filter.dart';
 import 'package:weblibre/features/web_feed/domain/repositories/feed_repository.dart';
 import 'package:weblibre/features/web_feed/domain/services/feed_reader.dart';
+import 'package:weblibre/features/web_feed/domain/services/feed_triage.dart';
 
 part 'providers.g.dart';
 
@@ -143,6 +145,14 @@ Stream<List<FeedArticleListEntry>> recentFeedArticles(Ref ref, int count) {
   return repository.watchFeedArticles(null, limit: count);
 }
 
+/// Titles of the most recently read feed articles.
+///
+/// Plain [StreamProvider] rather than generated: it is a one-line mirror of a
+/// repository stream and the on-device triage is its only consumer.
+final readArticleTitlesProvider = StreamProvider<List<String>>((ref) {
+  return ref.read(feedRepositoryProvider.notifier).watchReadArticleTitles();
+});
+
 @Riverpod()
 class FilteredArticleList extends _$FilteredArticleList {
   bool _hasSearch = false;
@@ -165,29 +175,45 @@ class FilteredArticleList extends _$FilteredArticleList {
   AsyncValue<List<FeedArticleSummary>> build(Uri? feedId) {
     final filterTags = ref.watch(articleFilterProvider);
 
+    final triageEnabled = ref.watch(
+      generalSettingsWithDefaultsProvider.select(
+        (settings) => settings.enableLocalAiFeatures && settings.aiFeedTriage,
+      ),
+    );
+    // Watched only while triage is on: a disabled feature must not keep a
+    // database stream alive.
+    final readTitles = triageEnabled
+        ? ref.watch(readArticleTitlesProvider).value
+        : null;
+
     final articlesAsync = _hasSearch
         ? ref.watch(articleSearchProvider(feedId))
         : ref.watch(feedArticleListProvider(feedId));
 
     return articlesAsync.whenData((articles) {
-      if (filterTags.isNotEmpty) {
-        return articles.where((article) {
-          final tags = article.tags?.map((tag) => tag.id).toSet();
+      final filtered = filterTags.isNotEmpty
+          ? articles.where((article) {
+              final tags = article.tags?.map((tag) => tag.id).toSet();
 
-          final authors = article.authors
-              ?.map((author) => author.name.whenNotEmpty)
-              .nonNulls
-              .toSet();
+              final authors = article.authors
+                  ?.map((author) => author.name.whenNotEmpty)
+                  .nonNulls
+                  .toSet();
 
-          return filterTags.every(
-            (filter) =>
-                (tags?.contains(filter) ?? false) ||
-                (authors?.contains(filter) ?? false),
-          );
-        }).toList();
-      }
+              return filterTags.every(
+                (filter) =>
+                    (tags?.contains(filter) ?? false) ||
+                    (authors?.contains(filter) ?? false),
+              );
+            }).toList()
+          : articles;
 
-      return articles;
+      if (readTitles == null) return filtered;
+
+      return rankArticlesByReadingInterest(
+        readTitles: readTitles,
+        articles: filtered,
+      );
     });
   }
 }

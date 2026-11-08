@@ -87,6 +87,15 @@ class FeedRepository extends _$FeedRepository {
         .watch();
   }
 
+  /// Titles of the most recently read articles, for on-device feed triage.
+  Stream<List<String>> watchReadArticleTitles({int limit = 50}) {
+    return ref
+        .read(feedDatabaseProvider)
+        .articleDao
+        .getReadArticleTitles(limit: limit)
+        .watch();
+  }
+
   Stream<FeedArticle?> watchArticle(String articleId) {
     return ref
         .read(feedDatabaseProvider)

@@ -25,6 +25,7 @@ import 'package:flutter_material_design_icons/flutter_material_design_icons.dart
 import 'package:flutter_mozilla_components/flutter_mozilla_components.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:weblibre/core/routing/routes.dart';
+import 'package:weblibre/features/ai/presentation/widgets/page_summary_sheet.dart';
 import 'package:weblibre/features/browser_actions/data/models/browser_action.dart';
 import 'package:weblibre/features/geckoview/domain/controllers/bottom_sheet.dart';
 import 'package:weblibre/features/geckoview/domain/providers/tab_detail_state.dart';
@@ -124,6 +125,21 @@ class PageActionsSection extends HookConsumerWidget {
                   .read(findInPageControllerProvider(selectedTabId).notifier)
                   .show();
               Navigator.pop(context);
+            },
+          );
+
+        case MenuItemType.summarizePage:
+          tiles[item] = ListTile(
+            leading: const Icon(MdiIcons.creation),
+            title: Text(item.label(context)),
+            onTap: () async {
+              final container = ref.container;
+              await showPageSummarySheet(
+                context,
+                container,
+                tabId: selectedTabId,
+              );
+              if (context.mounted) Navigator.pop(context);
             },
           );
 

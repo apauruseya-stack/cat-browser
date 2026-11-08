@@ -54,6 +54,10 @@
   "@menu_itemFindInPage": {
     "description": "Browser menu row and its name in menu customization: search for text on the page."
   },
+  "menu_itemSummarizePage": "Summarize Page",
+  "@menu_itemSummarizePage": {
+    "description": "Browser menu row and its name in menu customization: summarize the page on this device."
+  },
   "menu_itemTranslatePage": "Translate Page",
   "@menu_itemTranslatePage": {
     "description": "Browser menu row and its name in menu customization: translate the page."

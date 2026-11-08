@@ -39,6 +39,7 @@ const searchableBrowserActions = <BrowserAction>{
   BrowserAction.toggleBookmark,
   BrowserAction.quickToggleBookmark,
   BrowserAction.findInPage,
+  BrowserAction.summarizePage,
   BrowserAction.copyLink,
   BrowserAction.sharePage,
   BrowserAction.toggleReaderMode,

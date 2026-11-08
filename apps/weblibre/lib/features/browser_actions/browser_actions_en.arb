@@ -936,5 +936,18 @@
   "browserActions_clearBrowsingDataKeywords": "delete history, clear cache, cookies, erase, wipe, privacy",
   "@browserActions_clearBrowsingDataKeywords": {
     "description": "Comma-separated search terms for this browser action in the search screen's Actions section. Not displayed; include synonyms users might type."
+  },
+
+  "browserActions_summarizePageTitle": "Summarize page",
+  "@browserActions_summarizePageTitle": {
+    "description": "Name of the browser action that summarizes the current page on this device."
+  },
+  "browserActions_summarizePageDescription": "Summarize the current page on this device",
+  "@browserActions_summarizePageDescription": {
+    "description": "Explanation under the summarize page browser action's name in the action lists."
+  },
+  "browserActions_summarizePageKeywords": "ai, summary, summarize, tldr, key points, highlights",
+  "@browserActions_summarizePageKeywords": {
+    "description": "Comma-separated search terms for this browser action in the search screen's Actions section. Not displayed; include synonyms users might type."
   }
 }
