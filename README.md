@@ -57,7 +57,7 @@ Privacy first, real on-device AI second, and a home screen that does not look li
 | **Fullscreen** | Immersive sticky mode, re-applied when the window metrics change, plus an optional hidden status bar. | Shipped |
 | **Branding** | Cat logo, launcher icon, bundled font, and rebranded English strings. | Shipped |
 | **Real CI** | A GitHub Actions pipeline that builds per-ABI APKs and an app bundle, checks the localization template, and publishes the release. | Shipped |
-| **On-device AI** | Summaries, tab comparison and semantic search, all computed locally from the reader text. | Shipped |
+| **On-device AI** | Summaries, tab comparison and semantic search, all computed locally from the reader text. Model management (downloadable models) is in progress. | Shipped (extractive) |
 
 ---
 
