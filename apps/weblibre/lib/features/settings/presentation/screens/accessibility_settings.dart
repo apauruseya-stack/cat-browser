@@ -20,6 +20,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:weblibre/features/settings/presentation/controllers/save_settings.dart';
+import 'package:weblibre/features/settings/presentation/screens/web_content_settings.dart';
 import 'package:weblibre/features/user/data/models/general_settings.dart';
 import 'package:weblibre/features/user/domain/repositories/general_settings.dart';
 
@@ -98,6 +99,17 @@ class AccessibilitySettingsScreen extends HookConsumerWidget {
             selected: {settings.reduceMotionMode},
             onSelectionChanged: (v) =>
                 save((s) => s.copyWith.reduceMotionMode(v.first)),
+          ),
+          const Divider(),
+          ListTile(
+            title: const Text('Web content'),
+            subtitle: const Text('Font size, inflation and zoom for pages'),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute<void>(
+                builder: (_) => const WebContentSettingsScreen(),
+              ),
+            ),
           ),
         ],
       ),
