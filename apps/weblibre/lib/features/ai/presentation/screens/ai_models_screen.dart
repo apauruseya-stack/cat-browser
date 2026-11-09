@@ -21,13 +21,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_material_design_icons/flutter_material_design_icons.dart';
 
 import 'package:weblibre/features/ai/domain/models/ai_model.dart';
+import 'package:weblibre/features/ai/domain/services/model_download_service.dart';
 
-/// Lists the on-device models Cat Browser can use, with their status and the
-/// actions to download, verify or delete them.
-///
-/// This is the first milestone of the model-management work: the registry and
-/// the UI exist, downloads are gated behind an explicit tap and a size
-/// confirmation, and nothing is fetched until that lands.
 class AiModelsScreen extends StatefulWidget {
   const AiModelsScreen({super.key});
 
@@ -36,8 +31,26 @@ class AiModelsScreen extends StatefulWidget {
 }
 
 class _AiModelsScreenState extends State<AiModelsScreen> {
+  final Map<String, double> _progress = <String, double>{};
   final Set<String> _ready = <String>{};
   final Set<String> _downloading = <String>{};
+  String? _error;
+
+  @override
+  void initState() {
+    super.initState();
+    _refreshReady();
+  }
+
+  Future<void> _refreshReady() async {
+    final ready = <String>{};
+    for (final model in aiModelRegistry) {
+      if (await ModelDownloadService.instance.isReady(model.id)) {
+        ready.add(model.id);
+      }
+    }
+    if (mounted) setState(() => _ready..clear()..addAll(ready));
+  }
 
   Future<void> _download(AiModel model) async {
     final confirmed = await showDialog<bool>(
@@ -62,22 +75,39 @@ class _AiModelsScreenState extends State<AiModelsScreen> {
     );
     if (confirmed != true) return;
 
-    setState(() => _downloading.add(model.id));
-    // Download wiring lands with the model runtime. For now we keep the flow
-    // honest: the button exists, the confirmation exists, but no bytes move.
-    await Future<void>.delayed(const Duration(milliseconds: 400));
-    if (!mounted) return;
     setState(() {
-      _downloading.remove(model.id);
+      _downloading.add(model.id);
+      _progress[model.id] = 0;
+      _error = null;
     });
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text(
-          'Model downloads are not wired up yet. '
-          'This is the first milestone of the model-management work.',
-        ),
-      ),
-    );
+    try {
+      await ModelDownloadService.instance.download(
+        model,
+        onProgress: (p) {
+          if (mounted) setState(() => _progress[model.id] = p);
+        },
+      );
+      if (mounted) {
+        setState(() {
+          _downloading.remove(model.id);
+          _ready.add(model.id);
+          _progress.remove(model.id);
+        });
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() {
+          _downloading.remove(model.id);
+          _progress.remove(model.id);
+          _error = '$e';
+        });
+      }
+    }
+  }
+
+  Future<void> _delete(AiModel model) async {
+    await ModelDownloadService.instance.delete(model.id);
+    if (mounted) setState(() => _ready.remove(model.id));
   }
 
   @override
@@ -104,6 +134,14 @@ class _AiModelsScreenState extends State<AiModelsScreen> {
               style: theme.textTheme.bodySmall,
             ),
           ),
+          if (_error != null)
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Text(
+                _error!,
+                style: TextStyle(color: theme.colorScheme.error),
+              ),
+            ),
           for (final model in aiModelRegistry) ...[
             ListTile(
               leading: Icon(
@@ -112,21 +150,27 @@ class _AiModelsScreenState extends State<AiModelsScreen> {
                     : MdiIcons.downloadOutline,
               ),
               title: Text(model.name),
-              subtitle: Text(
-                '${model.task} · ${model.sizeLabel} · ${model.license}',
+              subtitle: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('${model.task} · ${model.sizeLabel} · ${model.license}'),
+                  if (_downloading.contains(model.id))
+                    Padding(
+                      padding: const EdgeInsets.only(top: 8),
+                      child: LinearProgressIndicator(
+                        value: _progress[model.id],
+                      ),
+                    ),
+                ],
               ),
+              isThreeLine: _downloading.contains(model.id),
               trailing: _downloading.contains(model.id)
-                  ? const SizedBox(
-                      width: 24,
-                      height: 24,
-                      child: CircularProgressIndicator(strokeWidth: 2),
-                    )
+                  ? null
                   : (_ready.contains(model.id)
                       ? IconButton(
                           icon: const Icon(MdiIcons.deleteOutline),
                           tooltip: 'Delete',
-                          onPressed: () =>
-                              setState(() => _ready.remove(model.id)),
+                          onPressed: () => _delete(model),
                         )
                       : FilledButton.tonal(
                           onPressed: () => _download(model),
