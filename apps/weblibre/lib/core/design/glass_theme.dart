@@ -110,17 +110,17 @@ class GlassTheme extends ThemeExtension<GlassTheme> {
   /// The pure-black variant: the same glass, but the wall collapses toward
   /// black so an OLED screen still saves the power it was bought for.
   static const darkOled = GlassTheme(
-    panel: Color(0x660E0E14),
-    panelStrong: Color(0xB3121218),
-    chrome: Color(0xE609090D),
-    border: Color(0x2EFFFFFF),
-    highlight: Color(0x17FFFFFF),
-    shadow: Color(0xCC000000),
-    scrim: Color(0xE6000000),
+    panel: Color(0x99000000),
+    panelStrong: Color(0xDD000000),
+    chrome: Color(0xFF000000),
+    border: Color(0x1AFFFFFF),
+    highlight: Color(0x08FFFFFF),
+    shadow: Color(0xFF000000),
+    scrim: Color(0xFF000000),
     wallBase: Color(0xFF000000),
-    wallTopLeft: Color(0xFF070B18),
-    wallTopRight: Color(0xFF14081F),
-    wallBottom: Color(0xFF041317),
+    wallTopLeft: Color(0xFF000000),
+    wallTopRight: Color(0xFF000000),
+    wallBottom: Color(0xFF000000),
   );
 
   static GlassTheme of(BuildContext context) {
