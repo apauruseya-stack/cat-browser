@@ -8093,7 +8093,7 @@
   "@onboarding_ublockApplyDefaultsSubtitle": {
     "description": "Explanation under \"Apply optimized defaults\": turns on Cat Browser's own stricter filter lists in uBlock Origin."
   },
-  "onboarding_welcomeTitle": "Welcome to WebLibre",
+  "onboarding_welcomeTitle": "Welcome to Cat Browser",
   "@onboarding_welcomeTitle": {
     "description": "Heading of the first-run welcome page for a new user. WebLibre is the app name."
   },

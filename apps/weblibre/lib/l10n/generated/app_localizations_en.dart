@@ -6438,7 +6438,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Enable Cat Browser hardening filter lists.';
 
   @override
-  String get onboarding_welcomeTitle => 'Welcome to WebLibre';
+  String get onboarding_welcomeTitle => 'Welcome to Cat Browser';
 
   @override
   String get onboarding_aiUseOnDeviceTitle => 'Use on-device AI';

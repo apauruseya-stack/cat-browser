@@ -11077,7 +11077,7 @@ abstract class AppLocalizations {
   /// Heading of the first-run welcome page for a new user. WebLibre is the app name.
   ///
   /// In en, this message translates to:
-  /// **'Welcome to WebLibre'**
+  /// **'Welcome to Cat Browser'**
   String get onboarding_welcomeTitle;
 
   /// Switch that turns the on-device AI models on, not only shows their settings. Used in the onboarding's Customize step, right under the visibility switch named "On-device AI", and as a goal on the "Your setup" step, where it is off in every preset until the user turns it on.
