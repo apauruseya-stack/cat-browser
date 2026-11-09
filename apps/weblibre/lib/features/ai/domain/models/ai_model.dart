@@ -64,6 +64,17 @@ class AiModel {
 /// version-pinned artifact with no user data in it.
 const List<AiModel> aiModelRegistry = <AiModel>[
   AiModel(
+    id: 'distilbart-cnn-6-6',
+    task: 'summarization',
+    name: 'DistilBART CNN (6-6)',
+    revision: 'main',
+    sizeBytes: 320 * 1024 * 1024,
+    license: 'Apache-2.0 (sshleifer/Xenova on HuggingFace)',
+    source: 'HuggingFace (Xenova)',
+    url: 'https://huggingface.co/Xenova/distilbart-cnn-6-6/resolve/main/onnx/decoder_model_merged.onnx',
+    available: true,
+  ),
+  AiModel(
     id: 'smart-tab-topic',
     task: 'topic',
     name: 'Smart-tab topic classifier',
@@ -72,6 +83,7 @@ const List<AiModel> aiModelRegistry = <AiModel>[
     license: 'Apache-2.0 (Mozilla model hub)',
     source: 'Mozilla model hub',
     url: 'https://example.invalid/smart-tab-topic-1.0.0.onnx',
+    available: false,
   ),
   AiModel(
     id: 'smart-tab-embedding',
@@ -82,5 +94,6 @@ const List<AiModel> aiModelRegistry = <AiModel>[
     license: 'Apache-2.0 (Mozilla model hub)',
     source: 'Mozilla model hub',
     url: 'https://example.invalid/smart-tab-embedding-1.0.0.onnx',
+    available: false,
   ),
 ];
