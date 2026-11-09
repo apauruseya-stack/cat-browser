@@ -272,31 +272,37 @@ class _QuickToggleSegment extends StatelessWidget {
         ? colorScheme.onSecondaryContainer
         : colorScheme.onSurfaceVariant;
 
-    return Material(
-      color: toggle.active
-          ? colorScheme.secondaryContainer
-          : Colors.transparent,
-      child: InkWell(
-        onTap: toggle.enabled ? toggle.onTap : null,
-        onLongPress: toggle.enabled ? toggle.onLongPress : null,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Icon(toggle.icon, color: foregroundColor, size: 22),
-              const SizedBox(height: 6),
-              Text(
-                toggle.label,
-                textAlign: TextAlign.center,
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: Theme.of(context).textTheme.labelMedium?.copyWith(
-                  color: foregroundColor,
-                  fontWeight: FontWeight.w500,
+    return Semantics(
+      button: true,
+      label: toggle.label,
+      enabled: toggle.enabled,
+      selected: toggle.active,
+      child: Material(
+        color: toggle.active
+            ? colorScheme.secondaryContainer
+            : Colors.transparent,
+        child: InkWell(
+          onTap: toggle.enabled ? toggle.onTap : null,
+          onLongPress: toggle.enabled ? toggle.onLongPress : null,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(toggle.icon, color: foregroundColor, size: 22),
+                const SizedBox(height: 6),
+                Text(
+                  toggle.label,
+                  textAlign: TextAlign.center,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: Theme.of(context).textTheme.labelMedium?.copyWith(
+                    color: foregroundColor,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
