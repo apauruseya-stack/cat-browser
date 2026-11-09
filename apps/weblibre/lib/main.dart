@@ -94,6 +94,7 @@ import 'package:weblibre/features/user/data/database/riverpod_storage.dart';
 import 'package:weblibre/features/user/data/providers.dart';
 import 'package:weblibre/features/user/domain/repositories/cache.dart';
 import 'package:weblibre/features/user/domain/repositories/engine_settings.dart';
+import 'package:weblibre/features/user/data/models/general_settings.dart';
 import 'package:weblibre/features/user/domain/repositories/general_settings.dart';
 import 'package:weblibre/features/user/domain/services/external_window_password_check.dart';
 import 'package:weblibre/features/user/domain/services/profile_restart_request.dart';
@@ -508,6 +509,11 @@ class _MainWidget extends HookConsumerWidget {
     final reduceMotionMode = ref.watch(
       generalSettingsWithDefaultsProvider.select(
         (value) => value.reduceMotionMode,
+      ),
+    );
+    final highContrastMode = ref.watch(
+      generalSettingsWithDefaultsProvider.select(
+        (value) => value.highContrastMode,
       ),
     );
     final showModalBarrier = ref.watch(
@@ -1049,6 +1055,22 @@ class _MainWidget extends HookConsumerWidget {
           );
         }
 
+        final highContrastActive = highContrastMode == HighContrastMode.on ||
+            (highContrastMode == HighContrastMode.system &&
+                (MediaQuery.maybeOf(context)?.highContrast ?? false));
+
+        if (highContrastActive) {
+          lightColorScheme = ColorScheme.fromSeed(
+            seedColor: ref.read(lightSeedColorFallbackProvider),
+            contrastLevel: 1.0,
+          );
+          darkColorScheme = ColorScheme.fromSeed(
+            seedColor: ref.read(darkSeedColorFallbackProvider),
+            brightness: Brightness.dark,
+            contrastLevel: 1.0,
+          );
+        }
+
         if (pureBlack) {
           darkColorScheme = _applyPureBlackSurfaces(darkColorScheme);
         }
@@ -1078,6 +1100,7 @@ class _MainWidget extends HookConsumerWidget {
           maxSystemScale: maxSystemScale,
           boldText: boldText,
           reduceMotionMode: reduceMotionMode,
+          highContrastMode: highContrastMode,
         );
       },
     );

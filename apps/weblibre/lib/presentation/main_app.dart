@@ -51,6 +51,7 @@ class MainApp extends HookConsumerWidget {
   final double maxSystemScale;
   final bool boldText;
   final ReduceMotionMode reduceMotionMode;
+  final HighContrastMode highContrastMode;
 
   const MainApp({
     required this.theme,
@@ -64,6 +65,7 @@ class MainApp extends HookConsumerWidget {
     this.maxSystemScale = 1.5,
     this.boldText = false,
     this.reduceMotionMode = ReduceMotionMode.system,
+    this.highContrastMode = HighContrastMode.system,
     super.key,
   });
 
@@ -107,6 +109,7 @@ class MainApp extends HookConsumerWidget {
                   maxSystemScale: maxSystemScale,
                   boldText: boldText,
                   reduceMotionMode: reduceMotionMode,
+                  highContrastMode: highContrastMode,
                   child: GlassWall(
                     child: NavigationBarStyle(
                       child: child ?? const SizedBox.shrink(),
@@ -162,6 +165,7 @@ class MainApp extends HookConsumerWidget {
                 maxSystemScale: maxSystemScale,
                 boldText: boldText,
                 reduceMotionMode: reduceMotionMode,
+                  highContrastMode: highContrastMode,
                 child: GlassWall(
                   child: NavigationBarStyle(
                     child: MultiFingerTapGuard(
@@ -203,6 +207,7 @@ class MainApp extends HookConsumerWidget {
                 maxSystemScale: maxSystemScale,
                 boldText: boldText,
                 reduceMotionMode: reduceMotionMode,
+                  highContrastMode: highContrastMode,
                 child: GlassWall(
                   child: NavigationBarStyle(
                     child: child ?? const SizedBox.shrink(),
@@ -407,6 +412,7 @@ class _AppMediaQueryOverrides extends StatelessWidget {
   final double maxSystemScale;
   final bool boldText;
   final ReduceMotionMode reduceMotionMode;
+  final HighContrastMode highContrastMode;
   final Widget child;
 
   const _AppMediaQueryOverrides({
@@ -417,6 +423,7 @@ class _AppMediaQueryOverrides extends StatelessWidget {
     this.maxSystemScale = 1.5,
     this.boldText = false,
     this.reduceMotionMode = ReduceMotionMode.system,
+    this.highContrastMode = HighContrastMode.system,
     required this.child,
   });
 
@@ -454,6 +461,8 @@ class _AppMediaQueryOverrides extends StatelessWidget {
             ),
       boldText: boldText || mediaQuery.boldText,
       disableAnimations: motionDisabled,
+      highContrast: highContrastMode == HighContrastMode.on ||
+          (highContrastMode == HighContrastMode.system && mediaQuery.highContrast),
     );
 
     return MediaQuery(data: overridden, child: child);
