@@ -20,6 +20,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_material_design_icons/flutter_material_design_icons.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:weblibre/features/ai/presentation/screens/ai_models_screen.dart';
 import 'package:weblibre/features/ai/presentation/widgets/ai_engine_screen.dart';
 import 'package:weblibre/features/ai/presentation/widgets/semantic_history_search_screen.dart';
 import 'package:weblibre/features/ai/presentation/widgets/tab_compare_sheet.dart';
@@ -114,6 +115,16 @@ class AiSettingsScreen extends HookConsumerWidget {
             trailing: const Icon(Icons.chevron_right),
             onTap: () => Navigator.of(context).push(
               MaterialPageRoute<void>(builder: (_) => const AiEngineScreen()),
+            ),
+          ),
+          ListTile(
+            leading: const Icon(MdiIcons.databaseOutline),
+            title: const Text('Models'),
+            subtitle: const Text('Download and manage on-device models'),
+            trailing: const Icon(Icons.chevron_right),
+            enabled: enabled,
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute<void>(builder: (_) => const AiModelsScreen()),
             ),
           ),
           const Divider(),
