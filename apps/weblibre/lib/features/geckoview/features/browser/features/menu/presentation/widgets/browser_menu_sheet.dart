@@ -124,7 +124,8 @@ class _BrowserMenuSheet extends ConsumerWidget {
       child: FittedPointerScrollableSheet(
         builder: (context, scrollController, contentEnd) {
           return BrowserSheetSurface(
-            child: Column(
+            child: FocusTraversalGroup(
+              child: Column(
               children: [
                 const SheetDragHandle(),
 
@@ -167,6 +168,7 @@ class _BrowserMenuSheet extends ConsumerWidget {
                 ],
               ],
             ),
+          ),
           );
         },
       ),
