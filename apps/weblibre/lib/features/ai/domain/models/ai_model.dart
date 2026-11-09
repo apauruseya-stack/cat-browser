@@ -32,6 +32,7 @@ class AiModel {
     required this.license,
     required this.source,
     required this.url,
+    this.available = true,
   });
 
   /// Stable identifier used as the cache key and on-disk directory name.
@@ -46,6 +47,10 @@ class AiModel {
   final String license;
   final String source;
   final String url;
+
+  /// Whether a redistributable artifact exists for this entry. Entries that
+  /// are not available are shown as "coming soon" and cannot be downloaded.
+  final bool available;
 
   String get sizeLabel {
     final mb = sizeBytes / (1024 * 1024);

@@ -134,6 +134,23 @@ class _AiModelsScreenState extends State<AiModelsScreen> {
               style: theme.textTheme.bodySmall,
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Card(
+              color: theme.colorScheme.surfaceContainerHigh,
+              child: Padding(
+                padding: const EdgeInsets.all(12),
+                child: Text(
+                  'Page summaries, tab comparison and semantic search already '
+                  'run fully on-device using the built-in extractive engine '
+                  '(no download, works offline). Optional model-based '
+                  'abstractive summaries will appear here once a redistributable '
+                  'model is available for this GeckoView build.',
+                  style: theme.textTheme.bodySmall,
+                ),
+              ),
+            ),
+          ),
           if (_error != null)
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -166,16 +183,21 @@ class _AiModelsScreenState extends State<AiModelsScreen> {
               isThreeLine: _downloading.contains(model.id),
               trailing: _downloading.contains(model.id)
                   ? null
-                  : (_ready.contains(model.id)
-                      ? IconButton(
-                          icon: const Icon(MdiIcons.deleteOutline),
-                          tooltip: 'Delete',
-                          onPressed: () => _delete(model),
+                  : (!model.available
+                      ? Text(
+                          'Coming soon',
+                          style: theme.textTheme.labelSmall,
                         )
-                      : FilledButton.tonal(
-                          onPressed: () => _download(model),
-                          child: const Text('Download'),
-                        )),
+                      : (_ready.contains(model.id)
+                          ? IconButton(
+                              icon: const Icon(MdiIcons.deleteOutline),
+                              tooltip: 'Delete',
+                              onPressed: () => _delete(model),
+                            )
+                          : FilledButton.tonal(
+                              onPressed: () => _download(model),
+                              child: const Text('Download'),
+                            ))),
             ),
             const Divider(height: 1),
           ],
