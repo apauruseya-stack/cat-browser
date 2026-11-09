@@ -17,6 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
+import 'package:weblibre/features/ai/domain/services/text_processing.dart';
 import 'package:weblibre/features/ai/domain/services/text_similarity.dart';
 import 'package:weblibre/features/web_feed/data/models/feed_article_summary.dart';
 
@@ -52,4 +53,30 @@ List<T> rankArticlesByReadingInterest<T extends FeedArticleSummary>({
     for (final article in articles)
       if (!promotedIds.contains(article.id)) article,
   ];
+}
+
+/// Returns the read article title most similar to [articleText], or null when
+/// nothing is close enough to be a meaningful explanation.
+String? mostSimilarReadTitle({
+  required String articleText,
+  required List<String> readTitles,
+}) {
+  if (readTitles.isEmpty || articleText.trim().isEmpty) return null;
+  final articleTokens = tokenize(articleText).toSet();
+  if (articleTokens.isEmpty) return null;
+
+  String? best;
+  var bestScore = 0.0;
+  for (final title in readTitles) {
+    final titleTokens = tokenize(title).toSet();
+    if (titleTokens.isEmpty) continue;
+    final intersection = articleTokens.intersection(titleTokens).length;
+    final union = articleTokens.union(titleTokens).length;
+    final score = union == 0 ? 0.0 : intersection / union;
+    if (score > bestScore) {
+      bestScore = score;
+      best = title;
+    }
+  }
+  return bestScore >= 0.08 ? best : null;
 }

@@ -27,7 +27,10 @@ import 'package:weblibre/features/web_feed/data/models/feed_article_query_result
 import 'package:weblibre/features/web_feed/data/models/feed_article_summary.dart';
 import 'package:weblibre/features/web_feed/data/models/feed_link.dart';
 import 'package:weblibre/features/web_feed/domain/providers/article_filter.dart';
+import 'package:weblibre/features/web_feed/domain/providers.dart';
 import 'package:weblibre/features/web_feed/domain/repositories/feed_repository.dart';
+import 'package:weblibre/features/web_feed/domain/services/feed_triage.dart';
+import 'package:weblibre/features/user/domain/repositories/general_settings.dart';
 import 'package:weblibre/features/web_feed/extensions/atom.dart';
 import 'package:weblibre/features/web_feed/extensions/feed_article.dart';
 import 'package:weblibre/features/web_feed/presentation/widgets/authors_horizontal_list.dart';
@@ -50,6 +53,22 @@ class FeedArticleCard extends HookConsumerWidget {
     final l10n = AppLocalizations.of(context);
 
     final tags = ref.watch(articleFilterProvider);
+
+    final triageEnabled = ref.watch(
+      generalSettingsWithDefaultsProvider.select(
+        (s) => s.enableLocalAiFeatures && s.aiFeedTriage,
+      ),
+    );
+    final readTitles = triageEnabled
+        ? (ref.watch(readArticleTitlesProvider).value ?? const <String>[])
+        : const <String>[];
+    final whyRead = triageEnabled
+        ? mostSimilarReadTitle(
+            articleText:
+                '${article.displayTitle(context)} ${article.summaryPlain ?? ''}',
+            readTitles: readTitles,
+          )
+        : null;
 
     final titleHighlight = switch (article) {
       final FeedArticleQueryResult result => result.titleHighlight.whenNotEmpty,
@@ -110,6 +129,19 @@ class FeedArticleCard extends HookConsumerWidget {
                           Text(
                             article.displayTitle(context),
                             style: theme.textTheme.titleMedium,
+                          ),
+                        if (whyRead != null)
+                          Padding(
+                            padding: const EdgeInsets.only(top: 4),
+                            child: Text(
+                              'Because you read: $whyRead',
+                              style: theme.textTheme.bodySmall?.copyWith(
+                                fontStyle: FontStyle.italic,
+                                color: theme.colorScheme.primary,
+                              ),
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                            ),
                           ),
                         if (searchSnippet.isNotEmpty)
                           Text.rich(
